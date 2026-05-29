@@ -1,0 +1,2595 @@
+{
+  "form_id": "AD-007",
+  "schema_version": "0.2",
+  "source_pdf": "http://www.maineprobate.net/forms2019/Adoption/AD-007%20Confidential%20Statement.pdf",
+  "artifact_pdf": null,
+  "n_fields": 58,
+  "by_category": {
+    "case_constant": 4,
+    "party_attr": 1,
+    "narrative_derived": 49,
+    "signature": 4
+  },
+  "by_risk_tier": {
+    "green": 57,
+    "orange": 1
+  },
+  "by_data_type": {
+    "text": 51,
+    "docket_number": 2,
+    "person_name": 1,
+    "date": 2,
+    "signature": 2
+  },
+  "_skill_metadata_override": {},
+  "fields": [
+    {
+      "field_id": "county",
+      "widget_id": null,
+      "label": "County",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "county",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.county"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "location",
+      "widget_id": null,
+      "label": "Location",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "location",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.location"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 20,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "eval: 1/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 0,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "probate_docket_no",
+      "widget_id": null,
+      "label": "Probate Docket No",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "docket_no_probate",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_no_probate"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "district_docket_no",
+      "widget_id": null,
+      "label": "District Docket No",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "docket_no_district",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_no_district"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "adoptee_name",
+      "widget_id": null,
+      "label": "Adoptee Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "adoptee",
+      "party": "adoptee",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "adoptee_record.adoptee"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q1",
+      "widget_id": null,
+      "label": "Parent1 Q1",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q1",
+      "widget_id": null,
+      "label": "Parent2 Q1",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q2",
+      "widget_id": null,
+      "label": "Parent1 Q2",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q2",
+      "widget_id": null,
+      "label": "Parent2 Q2",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q3",
+      "widget_id": null,
+      "label": "Parent1 Q3",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q3",
+      "widget_id": null,
+      "label": "Parent2 Q3",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q4",
+      "widget_id": null,
+      "label": "Parent1 Q4",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q4",
+      "widget_id": null,
+      "label": "Parent2 Q4",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q5",
+      "widget_id": null,
+      "label": "Parent1 Q5",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q5",
+      "widget_id": null,
+      "label": "Parent2 Q5",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q6",
+      "widget_id": null,
+      "label": "Parent1 Q6",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q6",
+      "widget_id": null,
+      "label": "Parent2 Q6",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q7",
+      "widget_id": null,
+      "label": "Parent1 Q7",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q7",
+      "widget_id": null,
+      "label": "Parent2 Q7",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q8",
+      "widget_id": null,
+      "label": "Parent1 Q8",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q8",
+      "widget_id": null,
+      "label": "Parent2 Q8",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q9",
+      "widget_id": null,
+      "label": "Parent1 Q9",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 13,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q9",
+      "widget_id": null,
+      "label": "Parent2 Q9",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q10",
+      "widget_id": null,
+      "label": "Parent1 Q10",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q10",
+      "widget_id": null,
+      "label": "Parent2 Q10",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q12",
+      "widget_id": null,
+      "label": "Parent1 Q12",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q12",
+      "widget_id": null,
+      "label": "Parent2 Q12",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q13",
+      "widget_id": null,
+      "label": "Parent1 Q13",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q13",
+      "widget_id": null,
+      "label": "Parent2 Q13",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q14",
+      "widget_id": null,
+      "label": "Parent1 Q14",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q14",
+      "widget_id": null,
+      "label": "Parent2 Q14",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q15",
+      "widget_id": null,
+      "label": "Parent1 Q15",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q15",
+      "widget_id": null,
+      "label": "Parent2 Q15",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q16",
+      "widget_id": null,
+      "label": "Parent1 Q16",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q16",
+      "widget_id": null,
+      "label": "Parent2 Q16",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q17",
+      "widget_id": null,
+      "label": "Parent1 Q17",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q17",
+      "widget_id": null,
+      "label": "Parent2 Q17",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q18",
+      "widget_id": null,
+      "label": "Parent1 Q18",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q18",
+      "widget_id": null,
+      "label": "Parent2 Q18",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q19",
+      "widget_id": null,
+      "label": "Parent1 Q19",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q19",
+      "widget_id": null,
+      "label": "Parent2 Q19",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q20",
+      "widget_id": null,
+      "label": "Parent1 Q20",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q20",
+      "widget_id": null,
+      "label": "Parent2 Q20",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q21",
+      "widget_id": null,
+      "label": "Parent1 Q21",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q21",
+      "widget_id": null,
+      "label": "Parent2 Q21",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q22",
+      "widget_id": null,
+      "label": "Parent1 Q22",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q22",
+      "widget_id": null,
+      "label": "Parent2 Q22",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q23",
+      "widget_id": null,
+      "label": "Parent1 Q23",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q23",
+      "widget_id": null,
+      "label": "Parent2 Q23",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q24",
+      "widget_id": null,
+      "label": "Parent1 Q24",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 1,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q24",
+      "widget_id": null,
+      "label": "Parent2 Q24",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_q25",
+      "widget_id": null,
+      "label": "Parent1 Q25",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_q25",
+      "widget_id": null,
+      "label": "Parent2 Q25",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "additional_explanation",
+      "widget_id": "W055",
+      "label": "Additional Explanation",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_date",
+      "widget_id": null,
+      "label": "Parent1 Date",
+      "type": "date",
+      "data_type": "date",
+      "data_constraints": {
+        "format": "iso8601_or_us"
+      },
+      "category": "signature",
+      "subcategory": "parent_signature_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent1_signature",
+      "widget_id": null,
+      "label": "Parent1 Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "parent1_signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_date",
+      "widget_id": null,
+      "label": "Parent2 Date",
+      "type": "date",
+      "data_type": "date",
+      "data_constraints": {
+        "format": "iso8601_or_us"
+      },
+      "category": "signature",
+      "subcategory": "parent_signature_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "parent2_signature",
+      "widget_id": null,
+      "label": "Parent2 Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "parent2_signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    }
+  ],
+  "source_url": "http://www.maineprobate.net/forms2019/Adoption/AD-007%20Confidential%20Statement.pdf",
+  "artifact_note": "Fillable PDF is generated from this schema (not shipped). Fetch the flat source from source_url, then run the pipeline (docs/automation-quickstart.md)."
+}

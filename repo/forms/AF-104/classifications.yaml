@@ -1,0 +1,24 @@
+# AF-104 — Affidavit of Diligent Search.
+# The form documents efforts to locate an unknown / unreachable person.
+
+overrides:
+  person_unknown_name:
+    category: party_attr
+    subcategory: person_being_sought
+    party: person_being_sought
+    data_type: person_name
+
+  last_known_whereabouts:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  government_agencies:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  reason_not_contacting:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text

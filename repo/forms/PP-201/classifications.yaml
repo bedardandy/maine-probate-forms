@@ -1,0 +1,15 @@
+# PP-201 — Petition for Appointment of Guardian.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 5-301 (Guardian appointment)"
+  service_required: true
+
+overrides:
+  respondent_attorney:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

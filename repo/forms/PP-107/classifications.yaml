@@ -1,0 +1,41 @@
+# PP-107 — Petition for Appointment of Guardian and/or Conservator (Minor).
+
+overrides:
+  minor_residence:
+    category: party_attr
+    subcategory: minor_residence
+    party: minor
+    data_type: address
+
+  notify_persons_name:
+    category: party_attr
+    subcategory: notify_person
+    party: notify_person
+    data_type: person_name
+
+  notify_persons_address:
+    category: party_attr
+    subcategory: notify_person
+    party: notify_person
+    data_type: address
+
+  emergency_conservator:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  minor_attorney:
+    category: party_attr
+    subcategory: minor_attorney
+    party: minor_attorney
+    data_type: text
+
+  minor_assets_asset:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  interpreter_needed:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox

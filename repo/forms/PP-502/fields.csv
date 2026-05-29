@@ -1,0 +1,17 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W002,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_number,Docket Number,W001,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+respondent_name,Respondent Name,W003,text,text,party_attr,respondent,,,0,green,Y,,,respondent_record.respondent,
+plan_type,Plan Type,,select_one,checkbox,legal_choice,plan_type,,,20,yellow,,,Y,human_decision,
+medical_conditions,Medical Conditions,W006,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+living_arrangement,Living Arrangement,W008,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+social_educational_activities,Social Educational Activities,W009,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+relationships_visits,Relationships Visits,W010,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+petitioner_visits_communication,Petitioner Visits Communication,W011,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+goals_restoration_rights,Goals Restoration Rights,W012,text,text,narrative_derived,free_text,,,17,yellow,,Y,,llm_over_narrative,
+consistency_with_existing_plan,Consistency With Existing Plan,W013,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_date,Petitioner Date,W014,date,signature,signature,petitioner_date,,,5,green,,,Y,wet_ink,
+petitioner_signature,Petitioner Signature,W015,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+order_filing_date,Order Filing Date,W016,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+judge_signature,Judge Signature,W017,text,signature,signature,judge_signature,,,5,green,,,Y,wet_ink,
+judge_date,Judge Date,W018,date,date,external,judge_date,,,5,green,,,,left_blank,

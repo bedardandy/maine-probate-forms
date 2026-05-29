@@ -1,0 +1,10 @@
+# APP-2 — Request for Transcript on Appeal.
+
+skill_metadata:
+  filer_role: appellant
+  statutes:
+    - "18-C M.R.S.A. § 1-308 (Appeals)"
+    - "M.R. Prob. P. 73"
+  service_required: true
+  filing_deadline_days: 30
+  filing_deadline_anchor: "judgment_entry_date"

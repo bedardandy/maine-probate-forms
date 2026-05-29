@@ -1,0 +1,9 @@
+{
+  "form_id": "APP-1",
+  "title": "Notice of Appeal to Law Court",
+  "category": "appeals",
+  "source_url": "http://www.maineprobate.net/forms2019/appeals/APP-1%20Notice%20of%20Appeal%20to%20Law%20Court%20(Rev.%209-12-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 15,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

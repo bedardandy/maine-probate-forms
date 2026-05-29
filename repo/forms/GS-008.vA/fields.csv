@@ -1,0 +1,20 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+court_type,Court Type,,select_one,checkbox,legal_choice,court_type,,,20,yellow,,,Y,human_decision,
+county_probate,County Probate,W001,text,entity_name,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+district_court_location,District Court Location,W002,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+docket_no_probate,Docket No Probate,W003,text,text,case_constant,docket_no_probate,,,8,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
+docket_no_district,Docket No District,W004,text,text,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
+minor_name,Minor Name,W005,text,text,party_attr,minor,,,0,green,Y,,,minor_record.minor,
+guardian_name,Guardian Name,W006,text,person_name,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+appointment_type,Appointment Type,,select_one,checkbox,legal_choice,appointment_type,,,20,yellow,,,Y,human_decision,
+duration_type,Duration Type,,select_one,checkbox,legal_choice,duration_type,,,20,yellow,,,Y,human_decision,
+signature_date,Signature Date,W013,date,signature,signature,signature_date,,,5,green,,,Y,wet_ink,
+signature_line,Signature Line,W014,text,signature,signature,signature_line,,,5,green,,,Y,wet_ink,
+guardian_full_name,Guardian Full Name,W015,text,person_name,party_attr,guardian,,,8,green,Y,,,guardian_record.guardian,"equals_field(guardian_name, relaxed)"
+guardian_address,Guardian Address,W016,text,address,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+guardian_phone,Guardian Phone,W018,text,phone,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+guardian_email,Guardian Email,W019,text,email,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+notary_county,Notary County,W020,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_appearer_name,Notary Appearer Name,W021,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_date,Notary Date,W023,text,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,W022,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

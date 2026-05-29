@@ -1,0 +1,62 @@
+# PP-504 — Updated Guardianship/Conservatorship Plan.
+
+skill_metadata:
+  filer_role: guardian_or_conservator
+  statutes:
+    - "18-C M.R.S.A. § 5-314 (Guardian's plan)"
+    - "18-C M.R.S.A. § 5-419 (Conservator's plan)"
+  service_required: true
+  filing_deadline_days: 60
+  filing_deadline_anchor: "circumstance_change_date"
+  # Updated plan due within 60 days of a material change in
+  # circumstances or court order requiring update.
+
+overrides:
+  plan_version:
+    category: legal_choice
+    subcategory: plan_type
+    data_type: text
+    # Allowed values include synonyms ("original" ≡ "initial") since
+    # the form's exact wording isn't yet verified.
+    validators:
+      - "value_in(initial, original, updated, revised, periodic, court_ordered)"
+
+  living_arrangement_services:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  goals_restoration:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  existing_plan_consistency:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  guardian_proposed_charges:
+    category: narrative_derived
+    subcategory: financial_disclosure
+    data_type: currency
+
+  conservator_budget_charges:
+    category: narrative_derived
+    subcategory: financial_disclosure
+    data_type: currency
+
+  respondent_involvement_decisions:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  restore_management_ability:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  duration_estimate:
+    category: narrative_derived
+    subcategory: duration_text
+    data_type: text

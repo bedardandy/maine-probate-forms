@@ -1,0 +1,430 @@
+{
+  "form_id": "N-107",
+  "schema_version": "0.2",
+  "source_pdf": "http://www.maineprobate.net/forms2019/Notices/N-107%20Waiver%20of%20Notice%20(Rev.%2003-01-25).pdf",
+  "artifact_pdf": null,
+  "n_fields": 9,
+  "by_category": {
+    "case_constant": 2,
+    "narrative_derived": 6,
+    "legal_choice": 1
+  },
+  "by_risk_tier": {
+    "green": 8,
+    "yellow": 1
+  },
+  "by_data_type": {
+    "text": 6,
+    "docket_number": 1,
+    "address": 1,
+    "checkbox": 1
+  },
+  "_skill_metadata_override": {
+    "filer_role": "declarant",
+    "statutes": [
+      "18-C M.R.S.A. \u00a7 1-401 (Waiver of notice)"
+    ],
+    "service_required": false,
+    "filing_deadline_days": null
+  },
+  "fields": [
+    {
+      "field_id": "county",
+      "widget_id": null,
+      "label": "County",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "county",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.county"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "docket_number",
+      "widget_id": null,
+      "label": "Docket Number",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {
+        "jurisdiction": "ME"
+      },
+      "category": "case_constant",
+      "subcategory": "docket_number",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_number"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "in_re_name",
+      "widget_id": null,
+      "label": "In Re Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "declarant_name",
+      "widget_id": null,
+      "label": "Declarant Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "declarant_address",
+      "widget_id": null,
+      "label": "Declarant Address",
+      "type": "text",
+      "data_type": "address",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "waiver_type",
+      "widget_id": null,
+      "label": "Waiver Type",
+      "type": "select_one",
+      "data_type": "checkbox",
+      "data_constraints": {},
+      "category": "legal_choice",
+      "subcategory": "waiver_type",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "human_decision"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "legal_choice \u2014 strategic decision, human required"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "limited_proceedings",
+      "widget_id": null,
+      "label": "Limited Proceedings",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      },
+      "when": "waiver_type == 'limited'"
+    },
+    {
+      "field_id": "date",
+      "widget_id": "W009",
+      "label": "Date",
+      "type": "date",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 1,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "person_waiving_notice",
+      "widget_id": null,
+      "label": "Person Waiving Notice",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    }
+  ],
+  "source_url": "http://www.maineprobate.net/forms2019/Notices/N-107%20Waiver%20of%20Notice%20(Rev.%2003-01-25).pdf",
+  "artifact_note": "Fillable PDF is generated from this schema (not shipped). Fetch the flat source from source_url, then run the pipeline (docs/automation-quickstart.md)."
+}

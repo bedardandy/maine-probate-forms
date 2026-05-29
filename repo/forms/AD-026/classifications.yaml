@@ -1,0 +1,34 @@
+# AD-026 — Identifying Information Disclosure Election (Adoption).
+
+skill_metadata:
+  filer_role: adult_adoptee_or_birth_parent
+  statutes:
+    - "22 M.R.S.A. § 4137 (Information sharing — adoption records)"
+  service_required: false
+
+overrides:
+  # "Is there a guardian or conservator appointed for the adoptee?"
+  # — form presents this as yes/no. Eval confirmed the radio is binary.
+  guardian_or_conservator:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  # Consent to share identifying information with the other party
+  # to the adoption (yes/no with optional follow-up details).
+  information_sharing_intent:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  # Birth parent's election to allow inheritance claims by the adoptee.
+  birth_parents_inheritance_request:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

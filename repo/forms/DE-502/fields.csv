@@ -1,0 +1,18 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+decedent_name,Decedent Name,,text,text,case_constant,decedent_name,,,0,green,Y,,,case_dict.decedent_name,populate_from_case_dict
+bond_demand,Bond Demand,,select_one,text,narrative_derived,bond_demand,,,5,green,,Y,,llm_over_narrative,"value_in(no_demand, demanded, waived, court_required, court_assigns)"
+bond_amount,Bond Amount,,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+mailing_method,Mailing Method,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_signed,Date Signed,,date,signature,signature,date_signed,,,13,green,,,Y,wet_ink,
+petitioner_or_attorney_signature,Petitioner Or Attorney Signature,,text,signature,signature,petitioner_or_attorney_signature,,,25,yellow,,,Y,wet_ink,
+attorney_signature,Attorney Signature,,text,signature,signature,attorney_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W014,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+petitioner_name_and_address,Petitioner Name And Address,,text,address,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner.name_and_address,
+petitioner_interest_nature,Petitioner Interest Nature,,text,text,narrative_derived,free_text,,,0,green,Y,,,petitioner_record.petitioner.interest_nature,
+petitioner_interest_value,Petitioner Interest Value,,text,currency,narrative_derived,free_text,,,0,green,Y,,,petitioner_record.petitioner.interest_value,

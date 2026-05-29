@@ -1,0 +1,9 @@
+{
+  "form_id": "PP-209",
+  "title": "Interim and Annual Report of Guardian",
+  "category": "gc_adults",
+  "source_url": "http://www.maineprobate.net/Forms2019/GC%20Adults/PP-209%20Interim%20and%20Annual%20Report%20of%20Guardian%20(Rev.%2007-01-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 25,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

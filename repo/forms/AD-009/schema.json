@@ -1,0 +1,872 @@
+{
+  "form_id": "AD-009",
+  "schema_version": "0.2",
+  "source_pdf": "http://www.maineprobate.net/forms2019/Adoption/AD-009%20Certificate%20of%20Counseling.pdf",
+  "artifact_pdf": null,
+  "n_fields": 19,
+  "by_category": {
+    "case_constant": 3,
+    "narrative_derived": 3,
+    "party_attr": 9,
+    "signature": 4
+  },
+  "by_risk_tier": {
+    "green": 18,
+    "yellow": 1
+  },
+  "by_data_type": {
+    "text": 9,
+    "docket_number": 2,
+    "person_name": 3,
+    "entity_name": 1,
+    "signature": 4
+  },
+  "_skill_metadata_override": {},
+  "fields": [
+    {
+      "field_id": "probate_county",
+      "widget_id": null,
+      "label": "Probate County",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "probate_county",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.probate_county"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "district_location",
+      "widget_id": null,
+      "label": "District Location",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "probate_docket_no",
+      "widget_id": null,
+      "label": "Probate Docket No",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "docket_no_probate",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_no_probate"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "district_docket_no",
+      "widget_id": null,
+      "label": "District Docket No",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "docket_no_district",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_no_district"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "adoptee_name",
+      "widget_id": null,
+      "label": "Adoptee Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "adoptee",
+      "party": "adoptee",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "adoptee_record.adoptee"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "counselor_name",
+      "widget_id": null,
+      "label": "Counselor Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "counselor",
+      "party": "counselor",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "counselor_record.counselor"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "counselor_affiliation",
+      "widget_id": null,
+      "label": "Counselor Affiliation",
+      "type": "select_one",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "counselor_affiliation",
+      "party": "counselor",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "counselor_record.counselor_affiliation"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "agency_name",
+      "widget_id": null,
+      "label": "Agency Name",
+      "type": "text",
+      "data_type": "entity_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "agency",
+      "party": "agency",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "agency_record.agency"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      },
+      "when": "counselor_affiliation == 'agency'"
+    },
+    {
+      "field_id": "counselee_name",
+      "widget_id": null,
+      "label": "Counselee Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "counselee",
+      "party": "counselee",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "counselee_record.counselee"
+      },
+      "risk_score": 8,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "counseling_topic",
+      "widget_id": null,
+      "label": "Counseling Topic",
+      "type": "select_one",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "surrender_recipient",
+      "widget_id": null,
+      "label": "Surrender Recipient",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      },
+      "when": "counseling_topic == 'surrender'"
+    },
+    {
+      "field_id": "refusal_parent_name",
+      "widget_id": null,
+      "label": "Refusal Parent Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "refusal_parent",
+      "party": "refusal_parent",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "refusal_parent_record.refusal_parent"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      },
+      "when": "counseling_topic == 'refusal'"
+    },
+    {
+      "field_id": "date_signed",
+      "widget_id": null,
+      "label": "Date Signed",
+      "type": "date",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "date_signed",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 25,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "signature",
+      "widget_id": null,
+      "label": "Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "counselor_name_title",
+      "widget_id": null,
+      "label": "Counselor Name Title",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "counselor",
+      "party": "counselor",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "counselor_record.counselor"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_county",
+      "widget_id": null,
+      "label": "Notary County",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "notary",
+      "party": "notary",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "notary_record.notary"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_appearer",
+      "widget_id": "W020",
+      "label": "Notary Appearer",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "notary",
+      "party": "notary",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "notary_record.notary"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_date",
+      "widget_id": null,
+      "label": "Notary Date",
+      "type": "date",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "notary_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_signature",
+      "widget_id": null,
+      "label": "Notary Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "notary_signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    }
+  ],
+  "source_url": "http://www.maineprobate.net/forms2019/Adoption/AD-009%20Certificate%20of%20Counseling.pdf",
+  "artifact_note": "Fillable PDF is generated from this schema (not shipped). Fetch the flat source from source_url, then run the pipeline (docs/automation-quickstart.md)."
+}

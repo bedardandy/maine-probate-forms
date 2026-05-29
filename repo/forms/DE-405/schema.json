@@ -1,0 +1,5129 @@
+{
+  "form_id": "DE-405",
+  "schema_version": "0.2",
+  "source_pdf": "http://www.maineprobate.net/Forms2019/Estates/DE-405%20Inventory%20(Rev.%205-6-21).pdf",
+  "artifact_pdf": null,
+  "n_fields": 94,
+  "by_category": {
+    "case_constant": 3,
+    "narrative_derived": 74,
+    "computed": 10,
+    "signature": 2,
+    "party_attr": 3
+  },
+  "by_risk_tier": {
+    "green": 19,
+    "yellow": 39,
+    "red": 16,
+    "orange": 18
+  },
+  "by_data_type": {
+    "entity_name": 1,
+    "docket_number": 1,
+    "person_name": 2,
+    "text": 26,
+    "currency": 58,
+    "date": 1,
+    "signature": 1,
+    "address": 1,
+    "phone": 1
+  },
+  "_skill_metadata_override": {
+    "filer_role": "personal_representative",
+    "statutes": [
+      "18-C M.R.S.A. \u00a7 3-706 (Inventory and appraisement)"
+    ],
+    "service_required": true,
+    "filing_deadline_days": 90,
+    "filing_deadline_anchor": "appointment_date"
+  },
+  "fields": [
+    {
+      "field_id": "county_probate_court",
+      "widget_id": "W001",
+      "label": "County Probate Court",
+      "type": "text",
+      "data_type": "entity_name",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "county_probate_court",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.county_probate_court"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "docket_number",
+      "widget_id": "W002",
+      "label": "Docket No.",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {
+        "jurisdiction": "ME"
+      },
+      "category": "case_constant",
+      "subcategory": "docket_number",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_number"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "estate_of_decedent",
+      "widget_id": "W003",
+      "label": "Estate of Decedent",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "estate_of_decedent",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.estate_of_decedent"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_1_desc",
+      "widget_id": "W004",
+      "label": "Real Prop 1 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 1,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(real_prop_desc)",
+        "cross_section_dedupe(intang_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_1_val",
+      "widget_id": "W005",
+      "label": "Real Prop 1 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 1,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_1_enc",
+      "widget_id": "W006",
+      "label": "Real Prop 1 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 1,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_2_desc",
+      "widget_id": "W007",
+      "label": "Real Prop 2 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 2,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(real_prop_desc)",
+        "cross_section_dedupe(intang_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_2_val",
+      "widget_id": "W008",
+      "label": "Real Prop 2 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 2,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_2_enc",
+      "widget_id": "W009",
+      "label": "Real Prop 2 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 2,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_3_desc",
+      "widget_id": "W010",
+      "label": "Real Prop 3 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 3,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(real_prop_desc)",
+        "cross_section_dedupe(intang_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_3_val",
+      "widget_id": "W011",
+      "label": "Real Prop 3 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 3,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_3_enc",
+      "widget_id": "W012",
+      "label": "Real Prop 3 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 3,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_4_desc",
+      "widget_id": "W013",
+      "label": "Real Prop 4 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 4,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(real_prop_desc)",
+        "cross_section_dedupe(intang_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_4_val",
+      "widget_id": "W014",
+      "label": "Real Prop 4 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 4,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_4_enc",
+      "widget_id": "W015",
+      "label": "Real Prop 4 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 4,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_5_desc",
+      "widget_id": "W016",
+      "label": "Real Prop 5 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 5,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(real_prop_desc)",
+        "cross_section_dedupe(intang_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_5_val",
+      "widget_id": "W017",
+      "label": "Real Prop 5 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 5,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_5_enc",
+      "widget_id": "W018",
+      "label": "Real Prop 5 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 5,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_6_desc",
+      "widget_id": "W019",
+      "label": "Real Prop 6 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 6,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(real_prop_desc)",
+        "cross_section_dedupe(intang_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_6_val",
+      "widget_id": "W020",
+      "label": "Real Prop 6 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 6,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_prop_6_enc",
+      "widget_id": "W021",
+      "label": "Real Prop 6 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "real_prop",
+      "slot_index": 6,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 0,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "gross_value_real_property",
+      "widget_id": "W022",
+      "label": "Gross Value of Real Property (lines 1-6)",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "gross_value_real_property",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "sum_slot",
+        "prefix": "real_prop",
+        "suffix": "val",
+        "from": 1,
+        "to": 6
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "real_prop_1_val",
+        "real_prop_2_val",
+        "real_prop_3_val",
+        "real_prop_4_val",
+        "real_prop_5_val",
+        "real_prop_6_val"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "gross_value_real_encumbrances",
+      "widget_id": "W023",
+      "label": "Gross Value of Encumbrances (lines 1-6)",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "gross_value_real_encumbrances",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "sum_slot",
+        "prefix": "real_prop",
+        "suffix": "enc",
+        "from": 1,
+        "to": 6
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "real_prop_1_enc",
+        "real_prop_2_enc",
+        "real_prop_3_enc",
+        "real_prop_4_enc",
+        "real_prop_5_enc",
+        "real_prop_6_enc"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_7_desc",
+      "widget_id": "W024",
+      "label": "Tang 7 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 7,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_7_val",
+      "widget_id": "W025",
+      "label": "Tang 7 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 7,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_7_enc",
+      "widget_id": "W026",
+      "label": "Tang 7 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 7,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_8_desc",
+      "widget_id": "W027",
+      "label": "Tang 8 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 8,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 52,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_8_val",
+      "widget_id": "W028",
+      "label": "Tang 8 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 8,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 52,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_8_enc",
+      "widget_id": "W029",
+      "label": "Tang 8 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 8,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_9_desc",
+      "widget_id": "W030",
+      "label": "Tang 9 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 9,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 80,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 16,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 3,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_9_val",
+      "widget_id": "W031",
+      "label": "Tang 9 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 9,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 80,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 16,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 3,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_9_enc",
+      "widget_id": "W032",
+      "label": "Tang 9 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 9,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_10_desc",
+      "widget_id": "W033",
+      "label": "Tang 10 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 10,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_10_val",
+      "widget_id": "W034",
+      "label": "Tang 10 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 10,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_10_enc",
+      "widget_id": "W035",
+      "label": "Tang 10 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 10,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_11_desc",
+      "widget_id": "W036",
+      "label": "Tang 11 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 11,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_11_val",
+      "widget_id": "W037",
+      "label": "Tang 11 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 11,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_11_enc",
+      "widget_id": "W038",
+      "label": "Tang 11 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 11,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_12_desc",
+      "widget_id": "W039",
+      "label": "Tang 12 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 12,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_12_val",
+      "widget_id": "W040",
+      "label": "Tang 12 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 12,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_12_enc",
+      "widget_id": "W041",
+      "label": "Tang 12 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 12,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 1,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_13_desc",
+      "widget_id": "W042",
+      "label": "Tang 13 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 13,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 100,
+        "eval_oc": 32,
+        "eval_miscompr": 36
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 5/5 patterns marked WRONG",
+          "eval: 4/5 patterns overconfident",
+          "eval: 3/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 5,
+        "overconfident": 4,
+        "underconfident": 0,
+        "misunderstood": 3,
+        "matches": 0,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_13_val",
+      "widget_id": "W043",
+      "label": "Tang 13 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 13,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 80,
+        "eval_oc": 24,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 4/5 patterns marked WRONG",
+          "eval: 3/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 4,
+        "overconfident": 3,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 0,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_13_enc",
+      "widget_id": "W044",
+      "label": "Tang 13 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 13,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 1,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_14_desc",
+      "widget_id": "W045",
+      "label": "Tang 14 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 14,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 2,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_14_val",
+      "widget_id": "W046",
+      "label": "Tang 14 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 14,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 2,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_14_enc",
+      "widget_id": "W047",
+      "label": "Tang 14 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 14,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_15_desc",
+      "widget_id": "W048",
+      "label": "Tang 15 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 15,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 0,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_15_val",
+      "widget_id": "W049",
+      "label": "Tang 15 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 15,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_15_enc",
+      "widget_id": "W050",
+      "label": "Tang 15 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 15,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_16_desc",
+      "widget_id": "W051",
+      "label": "Tang 16 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 16,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(tang_desc)",
+        "cross_section_dedupe(intang_desc,real_prop_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 88,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 40,
+        "eval_oc": 16,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 2/5 patterns marked WRONG",
+          "eval: 2/5 patterns overconfident"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 2,
+        "overconfident": 2,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 0,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_16_val",
+      "widget_id": "W052",
+      "label": "Tang 16 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 16,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tang_16_enc",
+      "widget_id": "W053",
+      "label": "Tang 16 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "tang",
+      "slot_index": 16,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_18_desc",
+      "widget_id": "W054",
+      "label": "Intang 18 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 18,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_18_val",
+      "widget_id": "W055",
+      "label": "Intang 18 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 18,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_18_enc",
+      "widget_id": "W056",
+      "label": "Intang 18 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 18,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_19_desc",
+      "widget_id": "W057",
+      "label": "Intang 19 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 19,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_19_val",
+      "widget_id": "W058",
+      "label": "Intang 19 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 19,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_19_enc",
+      "widget_id": "W059",
+      "label": "Intang 19 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 19,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_20_desc",
+      "widget_id": "W060",
+      "label": "Intang 20 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 20,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_20_val",
+      "widget_id": "W061",
+      "label": "Intang 20 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 20,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 80,
+        "eval_oc": 32,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 4/5 patterns marked WRONG",
+          "eval: 4/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 4,
+        "overconfident": 4,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 0,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_20_enc",
+      "widget_id": "W062",
+      "label": "Intang 20 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 20,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_21_desc",
+      "widget_id": "W063",
+      "label": "Intang 21 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 21,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 100,
+        "eval_oc": 32,
+        "eval_miscompr": 36
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 5/5 patterns marked WRONG",
+          "eval: 4/5 patterns overconfident",
+          "eval: 3/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 5,
+        "overconfident": 4,
+        "underconfident": 1,
+        "misunderstood": 3,
+        "matches": 0,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_21_val",
+      "widget_id": "W064",
+      "label": "Intang 21 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 21,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 80,
+        "eval_oc": 32,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 4/5 patterns marked WRONG",
+          "eval: 4/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 4,
+        "overconfident": 4,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 0,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_21_enc",
+      "widget_id": "W065",
+      "label": "Intang 21 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 21,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_22_desc",
+      "widget_id": "W066",
+      "label": "Intang 22 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 22,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 60,
+        "eval_oc": 24,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 3/5 patterns marked WRONG",
+          "eval: 3/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 3,
+        "overconfident": 3,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 0,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_22_val",
+      "widget_id": "W067",
+      "label": "Intang 22 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 22,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 100,
+      "risk_tier": "red",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 60,
+        "eval_oc": 32,
+        "eval_miscompr": 24
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 3/5 patterns marked WRONG",
+          "eval: 4/5 patterns overconfident",
+          "eval: 2/5 patterns misunderstood"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 3,
+        "overconfident": 4,
+        "underconfident": 0,
+        "misunderstood": 2,
+        "matches": 0,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_22_enc",
+      "widget_id": "W068",
+      "label": "Intang 22 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 22,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_23_desc",
+      "widget_id": "W069",
+      "label": "Intang 23 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 23,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 60,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 2,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_23_val",
+      "widget_id": "W070",
+      "label": "Intang 23 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 23,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_23_enc",
+      "widget_id": "W071",
+      "label": "Intang 23 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 23,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_24_desc",
+      "widget_id": "W072",
+      "label": "Intang 24 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 24,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 60,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 2,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_24_val",
+      "widget_id": "W073",
+      "label": "Intang 24 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 24,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_24_enc",
+      "widget_id": "W074",
+      "label": "Intang 24 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 24,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_25_desc",
+      "widget_id": "W075",
+      "label": "Intang 25 Desc",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 25,
+      "slot_field": "desc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "dedupe_within(intang_desc)",
+        "cross_section_dedupe(real_prop_desc,tang_desc)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 60,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 1,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_25_val",
+      "widget_id": "W076",
+      "label": "Intang 25 Val",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 25,
+      "slot_field": "val",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 60,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 1,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intang_25_enc",
+      "widget_id": "W077",
+      "label": "Intang 25 Enc",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "repeating_slot",
+      "slot_group": "intang",
+      "slot_index": 25,
+      "slot_field": "enc",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [
+        "nonempty_if_desc"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "repeating_slot \u2014 high duplication risk"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "gross_value_personal_property",
+      "widget_id": "W078",
+      "label": "Gross Value of Personal Property (lines 7-25)",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "gross_value_personal_property",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "add",
+        "args": [
+          {
+            "op": "sum_slot",
+            "prefix": "tang",
+            "suffix": "val",
+            "from": 7,
+            "to": 16
+          },
+          {
+            "op": "sum_slot",
+            "prefix": "intang",
+            "suffix": "val",
+            "from": 18,
+            "to": 25
+          }
+        ]
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "tang_7_val",
+        "tang_8_val",
+        "tang_9_val",
+        "tang_10_val",
+        "tang_11_val",
+        "tang_12_val",
+        "tang_13_val",
+        "tang_14_val",
+        "tang_15_val",
+        "tang_16_val",
+        "intang_18_val",
+        "intang_19_val",
+        "intang_20_val",
+        "intang_21_val",
+        "intang_22_val",
+        "intang_23_val",
+        "intang_24_val",
+        "intang_25_val"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 28,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "gross_value_personal_encumbrances",
+      "widget_id": "W079",
+      "label": "Gross Value of Encumbrances (lines 7-25)",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "gross_value_personal_encumbrances",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "add",
+        "args": [
+          {
+            "op": "sum_slot",
+            "prefix": "tang",
+            "suffix": "enc",
+            "from": 7,
+            "to": 16
+          },
+          {
+            "op": "sum_slot",
+            "prefix": "intang",
+            "suffix": "enc",
+            "from": 18,
+            "to": 25
+          }
+        ]
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "tang_7_enc",
+        "tang_8_enc",
+        "tang_9_enc",
+        "tang_10_enc",
+        "tang_11_enc",
+        "tang_12_enc",
+        "tang_13_enc",
+        "tang_14_enc",
+        "tang_15_enc",
+        "tang_16_enc",
+        "intang_18_enc",
+        "intang_19_enc",
+        "intang_20_enc",
+        "intang_21_enc",
+        "intang_22_enc",
+        "intang_23_enc",
+        "intang_24_enc",
+        "intang_25_enc"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "calc_gross_real_property",
+      "widget_id": "W080",
+      "label": "Gross Value of Real Property",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "calc_gross_real_property",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "field",
+        "id": "gross_value_real_property"
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "gross_value_real_property"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "calc_gross_personal_property",
+      "widget_id": "W081",
+      "label": "Gross Value of Personal Property",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "calc_gross_personal_property",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "field",
+        "id": "gross_value_personal_property"
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "gross_value_personal_property"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "calc_gross_inventory",
+      "widget_id": "W082",
+      "label": "Gross Value of Inventory",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "calc_gross_inventory",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "add",
+        "args": [
+          {
+            "op": "field",
+            "id": "calc_gross_real_property"
+          },
+          {
+            "op": "field",
+            "id": "calc_gross_personal_property"
+          }
+        ]
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "calc_gross_real_property",
+        "calc_gross_personal_property"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "calc_gross_real_encumbrances",
+      "widget_id": "W083",
+      "label": "Gross Value of Real Property Encumbrances",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "calc_gross_real_encumbrances",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "field",
+        "id": "gross_value_real_encumbrances"
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "gross_value_real_encumbrances"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "calc_gross_personal_encumbrances",
+      "widget_id": "W084",
+      "label": "Gross Value of Personal Property Encumbrances",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "calc_gross_personal_encumbrances",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "field",
+        "id": "gross_value_personal_encumbrances"
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "gross_value_personal_encumbrances"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "calc_net_inventory",
+      "widget_id": "W086",
+      "label": "Net Value of Inventory",
+      "type": "text",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "calc_net_inventory",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "sub",
+        "args": [
+          {
+            "op": "field",
+            "id": "calc_gross_inventory"
+          },
+          {
+            "op": "field",
+            "id": "calc_gross_real_encumbrances"
+          },
+          {
+            "op": "field",
+            "id": "calc_gross_personal_encumbrances"
+          }
+        ]
+      },
+      "formula_mode": "at_least",
+      "depends_on": [
+        "calc_gross_inventory",
+        "calc_gross_real_encumbrances",
+        "calc_gross_personal_encumbrances"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "appraisers_info",
+      "widget_id": "W087",
+      "label": "Names and addresses of appraisers employed",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "items_appraised_by_pr",
+      "widget_id": "W088",
+      "label": "Numbers of items of property appraised by Personal Representative",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "pr_dated",
+      "widget_id": "W089",
+      "label": "Dated",
+      "type": "text",
+      "data_type": "date",
+      "data_constraints": {
+        "format": "iso8601_or_us"
+      },
+      "category": "signature",
+      "subcategory": "pr_dated",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "pr_signature",
+      "widget_id": "W090",
+      "label": "Personal Representative Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "pr_signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "attorney_name",
+      "widget_id": "W091",
+      "label": "Attorney Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "attorney",
+      "party": "attorney",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "attorney_record.attorney"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "attorney_address",
+      "widget_id": "W092",
+      "label": "Attorney Address",
+      "type": "text",
+      "data_type": "address",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "attorney",
+      "party": "attorney",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "attorney_record.attorney"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "attorney_phone",
+      "widget_id": "W094",
+      "label": "Attorney Phone Number",
+      "type": "text",
+      "data_type": "phone",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "attorney",
+      "party": "attorney",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "attorney_record.attorney"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "attorney_bar_number",
+      "widget_id": null,
+      "label": "Maine Bar Number",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "attorney",
+      "party": "attorney",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.attorney"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 0,
+        "patterns_scored": 0
+      }
+    },
+    {
+      "field_id": "attorney_email",
+      "widget_id": null,
+      "label": "Email Address",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "attorney",
+      "party": "attorney",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.attorney"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 0,
+        "patterns_scored": 0
+      }
+    }
+  ],
+  "source_url": "http://www.maineprobate.net/Forms2019/Estates/DE-405%20Inventory%20(Rev.%205-6-21).pdf",
+  "artifact_note": "Fillable PDF is generated from this schema (not shipped). Fetch the flat source from source_url, then run the pipeline (docs/automation-quickstart.md)."
+}

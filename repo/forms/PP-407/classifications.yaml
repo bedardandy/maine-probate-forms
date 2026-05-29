@@ -1,0 +1,91 @@
+# PP-407 — Accounting of Conservator.
+
+skill_metadata:
+  filer_role: conservator
+  statutes:
+    - "18-C M.R.S.A. § 5-419 (Conservator's accountings)"
+  service_required: true
+  filing_deadline_days: 365
+  filing_deadline_anchor: "appointment_anniversary"
+
+# Promote prior_* + current_*_balance fields out of `other` into
+# `computed` since they have authored formulas. Also promote income/expenses
+# as narrative_derived currency (LLM-fillable from accounting period).
+
+overrides:
+  # Date-order constraint: accounting period must run forward.
+  period_beginning:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  period_ending:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(period_beginning, >)"
+
+  prior_real_estate_value:
+    category: narrative_derived
+    subcategory: prior_balance
+    data_type: currency
+
+  prior_tangible_personal_property_value:
+    category: narrative_derived
+    subcategory: prior_balance
+    data_type: currency
+
+  prior_intangible_personal_property_value:
+    category: narrative_derived
+    subcategory: prior_balance
+    data_type: currency
+
+  prior_total_value:
+    category: computed
+    subcategory: prior_total
+    data_type: currency
+
+  income_amount:
+    category: narrative_derived
+    subcategory: accounting_total
+    data_type: currency
+
+  expenses_amount:
+    category: narrative_derived
+    subcategory: accounting_total
+    data_type: currency
+
+  distributions_amount:
+    category: narrative_derived
+    subcategory: accounting_total
+    data_type: currency
+
+  current_real_estate_balance:
+    category: narrative_derived
+    subcategory: current_balance
+    data_type: currency
+
+  current_tangible_personal_property_balance:
+    category: narrative_derived
+    subcategory: current_balance
+    data_type: currency
+
+  current_intangible_personal_property_balance:
+    category: narrative_derived
+    subcategory: current_balance
+    data_type: currency
+
+  current_total_balance:
+    category: computed
+    subcategory: balance
+    data_type: currency
+
+  # See formulas.yaml: net_change_value's formula was removed because the
+  # form has additional reconciliation lines that don't map to discrete
+  # fields. Treat as a narrative_derived currency the LLM fills, not as
+  # a deterministic computation.
+  net_change_value:
+    category: narrative_derived
+    subcategory: accounting_total
+    data_type: currency

@@ -1,0 +1,63 @@
+# PP-406 — Inventory for Conservatorship.
+# Same shape as DE-405's inventory; naming differences:
+#   * `_value` instead of `_val`
+#   * `tang_prop_` prefix (rows 7..17, one more row than DE-405's tang 7..16)
+#   * `int_prop_` prefix (rows 18..25)
+#   * calc_* names are calc_gross_real / calc_gross_personal / calc_gross_real_enc /
+#     calc_gross_personal_enc (no "_property" suffix)
+
+formulas:
+  gross_value_real_property:
+    op: sum_slot
+    prefix: real_prop
+    suffix: value
+    from: 1
+    to: 6
+
+  gross_value_real_encumbrances:
+    op: sum_slot
+    prefix: real_prop
+    suffix: enc
+    from: 1
+    to: 6
+
+  gross_value_personal_property:
+    op: add
+    args:
+      - {op: sum_slot, prefix: tang_prop, suffix: value, from: 7,  to: 17}
+      - {op: sum_slot, prefix: int_prop,  suffix: value, from: 18, to: 25}
+
+  gross_value_personal_encumbrances:
+    op: add
+    args:
+      - {op: sum_slot, prefix: tang_prop, suffix: enc, from: 7,  to: 17}
+      - {op: sum_slot, prefix: int_prop,  suffix: enc, from: 18, to: 25}
+
+  calc_gross_real:
+    op: field
+    id: gross_value_real_property
+
+  calc_gross_personal:
+    op: field
+    id: gross_value_personal_property
+
+  calc_gross_inventory:
+    op: add
+    args:
+      - {op: field, id: calc_gross_real}
+      - {op: field, id: calc_gross_personal}
+
+  calc_gross_real_enc:
+    op: field
+    id: gross_value_real_encumbrances
+
+  calc_gross_personal_enc:
+    op: field
+    id: gross_value_personal_encumbrances
+
+  calc_net_inventory:
+    op: sub
+    args:
+      - {op: field, id: calc_gross_inventory}
+      - {op: field, id: calc_gross_real_enc}
+      - {op: field, id: calc_gross_personal_enc}

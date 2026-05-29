@@ -1,0 +1,8 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_number,Docket Number,,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+individual_name,Individual Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notice_recipient,Notice Recipient,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appointee_name,Appointee Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appointment_type,Appointment Type,,select_one,checkbox,legal_choice,appointment_type,,,20,yellow,,,Y,human_decision,
+appointment_date,Appointment Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

@@ -1,0 +1,13 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_name,County Name,,text,text,case_constant,county_name,,,0,green,Y,,,case_dict.county_name,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_of_decedent,Estate Of Decedent,,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+personal_representative_name,Personal Representative Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+further_verify_actions,Further Verify Actions,,select_many,text,narrative_derived,free_text,,,33,yellow,,Y,,llm_over_narrative,
+provisions_details,Provisions Details,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+pr_signature_date,Pr Signature Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+pr_signature,Pr Signature,,text,signature,signature,pr_signature,,,5,green,,,Y,wet_ink,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_appearance_name,Notary Appearance Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notary_officer_name,Notary Officer Name,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,

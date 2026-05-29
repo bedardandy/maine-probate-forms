@@ -1,0 +1,1400 @@
+{
+  "form_id": "PP-406",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "PP-406 Inventory (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            114.0,
+            177.0,
+            133.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            114.0,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "in_re_individual": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            149.0,
+            315.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "real_prop_1_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            127.3,
+            297.4,
+            288.5,
+            355.3
+          ]
+        }
+      ]
+    },
+    "real_prop_1_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.5,
+            297.4,
+            400.0,
+            355.3
+          ]
+        }
+      ]
+    },
+    "real_prop_1_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            400.0,
+            297.4,
+            539.5,
+            355.3
+          ]
+        }
+      ]
+    },
+    "real_prop_2_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            127.3,
+            355.3,
+            288.5,
+            413.3
+          ]
+        }
+      ]
+    },
+    "real_prop_2_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.5,
+            355.3,
+            400.0,
+            413.3
+          ]
+        }
+      ]
+    },
+    "real_prop_2_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            400.0,
+            355.3,
+            539.5,
+            413.3
+          ]
+        }
+      ]
+    },
+    "real_prop_3_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            127.3,
+            413.3,
+            288.5,
+            471.4
+          ]
+        }
+      ]
+    },
+    "real_prop_3_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.5,
+            413.3,
+            400.0,
+            471.4
+          ]
+        }
+      ]
+    },
+    "real_prop_3_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            400.0,
+            413.3,
+            539.5,
+            471.4
+          ]
+        }
+      ]
+    },
+    "real_prop_4_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            127.3,
+            471.4,
+            288.5,
+            529.3
+          ]
+        }
+      ]
+    },
+    "real_prop_4_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.5,
+            471.4,
+            400.0,
+            529.3
+          ]
+        }
+      ]
+    },
+    "real_prop_4_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            400.0,
+            471.4,
+            539.5,
+            529.3
+          ]
+        }
+      ]
+    },
+    "real_prop_5_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            127.3,
+            529.3,
+            288.5,
+            587.3
+          ]
+        }
+      ]
+    },
+    "real_prop_5_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.5,
+            529.3,
+            400.0,
+            587.3
+          ]
+        }
+      ]
+    },
+    "real_prop_5_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            400.0,
+            529.3,
+            539.5,
+            587.3
+          ]
+        }
+      ]
+    },
+    "real_prop_6_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            127.3,
+            587.3,
+            288.5,
+            645.4
+          ]
+        }
+      ]
+    },
+    "real_prop_6_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.5,
+            587.3,
+            400.0,
+            645.4
+          ]
+        }
+      ]
+    },
+    "real_prop_6_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            400.0,
+            587.3,
+            539.5,
+            645.4
+          ]
+        }
+      ]
+    },
+    "gross_value_real_property": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            647.0,
+            542.0,
+            668.0
+          ]
+        }
+      ]
+    },
+    "gross_value_real_encumbrances": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            294.7,
+            656.0,
+            400.0,
+            668.0
+          ]
+        }
+      ]
+    },
+    "tang_prop_7_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            121.3,
+            318.0,
+            144.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_7_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            121.3,
+            438.4,
+            144.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_7_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            121.3,
+            554.3,
+            144.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_8_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            144.8,
+            318.0,
+            168.2
+          ]
+        }
+      ]
+    },
+    "tang_prop_8_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            144.8,
+            438.4,
+            168.2
+          ]
+        }
+      ]
+    },
+    "tang_prop_8_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            144.8,
+            554.3,
+            168.2
+          ]
+        }
+      ]
+    },
+    "tang_prop_9_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            168.2,
+            318.0,
+            191.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_9_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            168.2,
+            438.4,
+            191.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_9_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            168.2,
+            554.3,
+            191.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_10_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            191.8,
+            318.0,
+            215.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_10_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            191.8,
+            438.4,
+            215.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_10_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            191.8,
+            554.3,
+            215.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_11_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            215.3,
+            318.0,
+            238.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_11_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            215.3,
+            438.4,
+            238.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_11_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            215.3,
+            554.3,
+            238.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_12_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            238.8,
+            318.0,
+            262.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_12_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            238.8,
+            438.4,
+            262.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_12_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            238.8,
+            554.3,
+            262.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_13_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            262.3,
+            318.0,
+            285.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_13_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            262.3,
+            438.4,
+            285.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_13_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            262.3,
+            554.3,
+            285.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_14_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            285.8,
+            318.0,
+            309.2
+          ]
+        }
+      ]
+    },
+    "tang_prop_14_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            285.8,
+            438.4,
+            309.2
+          ]
+        }
+      ]
+    },
+    "tang_prop_14_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            285.8,
+            554.3,
+            309.2
+          ]
+        }
+      ]
+    },
+    "tang_prop_15_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            309.2,
+            318.0,
+            332.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_15_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            309.2,
+            438.4,
+            332.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_15_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            309.2,
+            554.3,
+            332.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_16_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            332.8,
+            318.0,
+            356.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_16_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            332.8,
+            438.4,
+            356.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_16_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            332.8,
+            554.3,
+            356.3
+          ]
+        }
+      ]
+    },
+    "tang_prop_17_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            356.3,
+            318.0,
+            379.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_17_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            356.3,
+            438.4,
+            379.8
+          ]
+        }
+      ]
+    },
+    "tang_prop_17_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            356.3,
+            554.3,
+            379.8
+          ]
+        }
+      ]
+    },
+    "int_prop_18_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            440.5,
+            318.0,
+            464.0
+          ]
+        }
+      ]
+    },
+    "int_prop_18_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            440.5,
+            438.4,
+            464.0
+          ]
+        }
+      ]
+    },
+    "int_prop_18_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            440.5,
+            554.3,
+            464.0
+          ]
+        }
+      ]
+    },
+    "int_prop_19_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            464.0,
+            318.0,
+            487.6
+          ]
+        }
+      ]
+    },
+    "int_prop_19_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            464.0,
+            438.4,
+            487.6
+          ]
+        }
+      ]
+    },
+    "int_prop_19_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            464.0,
+            554.3,
+            487.6
+          ]
+        }
+      ]
+    },
+    "int_prop_20_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            487.6,
+            318.0,
+            511.1
+          ]
+        }
+      ]
+    },
+    "int_prop_20_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            487.6,
+            438.4,
+            511.1
+          ]
+        }
+      ]
+    },
+    "int_prop_20_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            487.6,
+            554.3,
+            511.1
+          ]
+        }
+      ]
+    },
+    "int_prop_21_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            511.1,
+            318.0,
+            534.6
+          ]
+        }
+      ]
+    },
+    "int_prop_21_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            511.1,
+            438.4,
+            534.6
+          ]
+        }
+      ]
+    },
+    "int_prop_21_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            511.1,
+            554.3,
+            534.6
+          ]
+        }
+      ]
+    },
+    "int_prop_22_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            534.6,
+            318.0,
+            558.0
+          ]
+        }
+      ]
+    },
+    "int_prop_22_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            534.6,
+            438.4,
+            558.0
+          ]
+        }
+      ]
+    },
+    "int_prop_22_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            534.6,
+            554.3,
+            558.0
+          ]
+        }
+      ]
+    },
+    "int_prop_23_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            558.0,
+            318.0,
+            581.5
+          ]
+        }
+      ]
+    },
+    "int_prop_23_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            558.0,
+            438.4,
+            581.5
+          ]
+        }
+      ]
+    },
+    "int_prop_23_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            558.0,
+            554.3,
+            581.5
+          ]
+        }
+      ]
+    },
+    "int_prop_24_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            581.5,
+            318.0,
+            605.0
+          ]
+        }
+      ]
+    },
+    "int_prop_24_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            581.5,
+            438.4,
+            605.0
+          ]
+        }
+      ]
+    },
+    "int_prop_24_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            581.5,
+            554.3,
+            605.0
+          ]
+        }
+      ]
+    },
+    "int_prop_25_desc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            107.4,
+            605.0,
+            318.0,
+            628.6
+          ]
+        }
+      ]
+    },
+    "int_prop_25_value": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.0,
+            605.0,
+            438.4,
+            628.6
+          ]
+        }
+      ]
+    },
+    "int_prop_25_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            605.0,
+            554.3,
+            628.6
+          ]
+        }
+      ]
+    },
+    "gross_value_personal_property": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            438.4,
+            631.0,
+            554.3,
+            651.0
+          ]
+        }
+      ]
+    },
+    "gross_value_personal_encumbrances": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            324.2,
+            639.0,
+            428.0,
+            651.0
+          ]
+        }
+      ]
+    },
+    "calc_gross_real": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            330.0,
+            94.0,
+            450.0,
+            106.0
+          ]
+        }
+      ]
+    },
+    "calc_gross_personal": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            330.0,
+            124.0,
+            450.0,
+            136.0
+          ]
+        }
+      ]
+    },
+    "calc_gross_inventory": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            139.3,
+            305.0,
+            151.3
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            300.4,
+            137.3,
+            450.0,
+            149.3
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            300.4,
+            150.0,
+            450.0,
+            162.0
+          ]
+        }
+      ]
+    },
+    "calc_gross_real_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            330.0,
+            178.0,
+            450.0,
+            190.0
+          ]
+        }
+      ]
+    },
+    "calc_gross_personal_enc": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            330.0,
+            208.0,
+            450.0,
+            220.0
+          ]
+        }
+      ]
+    },
+    "calc_net_inventory": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            223.6,
+            450.0,
+            235.6
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            300.4,
+            221.7,
+            450.0,
+            233.7
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            300.4,
+            234.0,
+            450.0,
+            246.0
+          ]
+        }
+      ]
+    },
+    "appraisers_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            288.9,
+            450.0,
+            358.0
+          ]
+        }
+      ]
+    },
+    "dated": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            411.0,
+            305.0,
+            430.0
+          ]
+        }
+      ]
+    },
+    "conservator_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            359.0,
+            411.0,
+            540.0,
+            430.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            466.0,
+            305.0,
+            482.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            493.7,
+            305.0,
+            512.0
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            523.3,
+            305.0,
+            541.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            553.0,
+            305.0,
+            570.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            581.5,
+            305.0,
+            598.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            95.0,
+            610.1,
+            305.0,
+            627.0
+          ]
+        }
+      ]
+    }
+  }
+}

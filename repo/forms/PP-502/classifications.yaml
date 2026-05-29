@@ -1,0 +1,11 @@
+# PP-502 — Visitor / Court Evaluator Report (Adult Guardianship).
+
+skill_metadata:
+  filer_role: visitor
+  statutes:
+    - "18-C M.R.S.A. § 5-304 (Visitor's report)"
+  service_required: true
+  filing_deadline_days: null
+  filing_deadline_anchor: "court_order_date"
+  # No fixed statutory days; the visitor's deadline is set in the
+  # appointing order under § 5-304(2)-(3).

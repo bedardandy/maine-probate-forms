@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "maine-probate-forms": {
+      "command": "python3",
+      "args": ["tools/agent_server.py"],
+      "description": "find_forms / get_form / fill_form over the Maine probate forms library"
+    }
+  }
+}

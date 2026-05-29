@@ -1,0 +1,1026 @@
+{
+  "form_id": "DE-401",
+  "schema_version": "0.2",
+  "source_pdf": "http://www.maineprobate.net/Forms2019/Estates/DE-401(A)%20Certificate%20of%20Value%20Resident%20and%20Non%20Resident%20(Rev.%207-1-19).pdf",
+  "artifact_pdf": null,
+  "n_fields": 21,
+  "by_category": {
+    "case_constant": 2,
+    "party_attr": 1,
+    "narrative_derived": 10,
+    "computed": 2,
+    "legal_choice": 3,
+    "signature": 2,
+    "external": 1
+  },
+  "by_risk_tier": {
+    "green": 18,
+    "yellow": 3
+  },
+  "by_data_type": {
+    "text": 4,
+    "docket_number": 1,
+    "person_name": 1,
+    "date": 2,
+    "currency": 9,
+    "checkbox": 2,
+    "signature": 2
+  },
+  "_skill_metadata_override": {
+    "filer_role": "applicant",
+    "statutes": [
+      "18-C M.R.S.A. \u00a7 3-401 (Adjudication of testacy)",
+      "18-C M.R.S.A. \u00a7 3-108 (Three-year statute of repose)",
+      "36 M.R.S.A. \u00a7 4063 (Maine estate tax \u2014 9-month deadline)"
+    ],
+    "service_required": true,
+    "filing_deadline_days": 1095,
+    "filing_deadline_anchor": "decedent_death_date"
+  },
+  "fields": [
+    {
+      "field_id": "county_name",
+      "widget_id": null,
+      "label": "County Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "county_name",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.county_name"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "docket_number",
+      "widget_id": null,
+      "label": "Docket Number",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {
+        "jurisdiction": "ME"
+      },
+      "category": "case_constant",
+      "subcategory": "docket_number",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_number"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "estate_decedent_name",
+      "widget_id": null,
+      "label": "Estate Decedent Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "decedent",
+      "party": "decedent",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "decedent_record.decedent"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "decedent_death_date",
+      "widget_id": null,
+      "label": "Decedent Death Date",
+      "type": "date",
+      "data_type": "date",
+      "data_constraints": {
+        "format": "iso8601_or_us"
+      },
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "real_estate_maine",
+      "widget_id": null,
+      "label": "Real Estate Maine",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "asset_value",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "tangible_personal_property_maine",
+      "widget_id": null,
+      "label": "Tangible Personal Property Maine",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "asset_value",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "intangible_personal_property",
+      "widget_id": null,
+      "label": "Intangible Personal Property",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "asset_value",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "total_probate_estate_value",
+      "widget_id": null,
+      "label": "Total Probate Estate Value",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "total_probate_estate_value",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "add",
+        "args": [
+          {
+            "op": "field",
+            "id": "real_estate_maine"
+          },
+          {
+            "op": "field",
+            "id": "tangible_personal_property_maine"
+          },
+          {
+            "op": "field",
+            "id": "intangible_personal_property"
+          }
+        ]
+      },
+      "depends_on": [
+        "real_estate_maine",
+        "tangible_personal_property_maine",
+        "intangible_personal_property"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "non_mortgage_debts_expenses",
+      "widget_id": null,
+      "label": "Non Mortgage Debts Expenses",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "liability",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "net_value_probate_estate",
+      "widget_id": null,
+      "label": "Net Value Probate Estate",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "computed",
+      "subcategory": "net_value_probate_estate",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": {
+        "op": "sub",
+        "args": [
+          {
+            "op": "field",
+            "id": "total_probate_estate_value"
+          },
+          {
+            "op": "field",
+            "id": "non_mortgage_debts_expenses"
+          }
+        ]
+      },
+      "depends_on": [
+        "total_probate_estate_value",
+        "non_mortgage_debts_expenses"
+      ],
+      "validators": [
+        "recompute_from_dependencies"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "recompute_from_dependencies"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "decedent_interest_maine_real_estate",
+      "widget_id": null,
+      "label": "Decedent Interest Maine Real Estate",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "asset_value",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "federal_estate_tax_return",
+      "widget_id": null,
+      "label": "Federal Estate Tax Return",
+      "type": "select_one",
+      "data_type": "checkbox",
+      "data_constraints": {},
+      "category": "legal_choice",
+      "subcategory": "yes_no",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "value_in(yes, no)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "human_decision"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "legal_choice \u2014 strategic decision, human required"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "maine_estate_tax_return",
+      "widget_id": null,
+      "label": "Maine Estate Tax Return",
+      "type": "select_one",
+      "data_type": "checkbox",
+      "data_constraints": {},
+      "category": "legal_choice",
+      "subcategory": "yes_no",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "value_in(yes, no)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "human_decision"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "legal_choice \u2014 strategic decision, human required"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "estimated_maine_estate_tax",
+      "widget_id": null,
+      "label": "Estimated Maine Estate Tax",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "tax_estimate",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "value_range(0, *)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      },
+      "when": "maine_estate_tax_return == 'yes'"
+    },
+    {
+      "field_id": "cash_collateral_deposited",
+      "widget_id": null,
+      "label": "Cash Collateral Deposited",
+      "type": "select_one",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "yes_no",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "value_in(yes, no)"
+      ],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "applicant_acknowledgment_name",
+      "widget_id": null,
+      "label": "Applicant Acknowledgment Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 13,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "applicant_date",
+      "widget_id": null,
+      "label": "Applicant Date",
+      "type": "date",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "applicant_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "applicant_signature",
+      "widget_id": null,
+      "label": "Applicant Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "applicant_signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 0,
+        "not_applicable": 5,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "estate_tax_action",
+      "widget_id": null,
+      "label": "Estate Tax Action",
+      "type": "select_one",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "legal_choice",
+      "subcategory": "tax_election",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "human_decision"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "legal_choice \u2014 strategic decision, human required"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "estate_tax_bond_amount",
+      "widget_id": null,
+      "label": "Estate Tax Bond Amount",
+      "type": "currency",
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
+      "category": "narrative_derived",
+      "subcategory": "free_text",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      },
+      "when": "estate_tax_action == 'bond_required'"
+    },
+    {
+      "field_id": "judge_date",
+      "widget_id": null,
+      "label": "Judge Date",
+      "type": "date",
+      "data_type": "date",
+      "data_constraints": {
+        "format": "iso8601_or_us"
+      },
+      "category": "external",
+      "subcategory": "judge_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "left_blank"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    }
+  ],
+  "source_url": "http://www.maineprobate.net/Forms2019/Estates/DE-401(A)%20Certificate%20of%20Value%20Resident%20and%20Non%20Resident%20(Rev.%207-1-19).pdf",
+  "artifact_note": "Fillable PDF is generated from this schema (not shipped). Fetch the flat source from source_url, then run the pipeline (docs/automation-quickstart.md)."
+}

@@ -1,0 +1,16 @@
+# DE-401 — Application for Adjudication of Testacy (Decedent Estate Summary).
+# Two computed totals at the top of the form.
+
+formulas:
+  total_probate_estate_value:
+    op: add
+    args:
+      - {op: field, id: real_estate_maine}
+      - {op: field, id: tangible_personal_property_maine}
+      - {op: field, id: intangible_personal_property}
+
+  net_value_probate_estate:
+    op: sub
+    args:
+      - {op: field, id: total_probate_estate_value}
+      - {op: field, id: non_mortgage_debts_expenses}

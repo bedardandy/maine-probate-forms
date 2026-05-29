@@ -1,0 +1,320 @@
+# AD-007 — Adoption Report (Pre-Adoptive Parent Questionnaire).
+# Two parents × 25 questions each = 50 bespoke per-question fields.
+# Each question is narrative_derived; the per-parent grouping isn't a
+# repeating slot (questions are heterogeneous), so we override directly.
+
+overrides:
+  probate_docket_no:
+    category: case_constant
+    subcategory: docket_no_probate
+    data_type: docket_number
+
+  district_docket_no:
+    category: case_constant
+    subcategory: docket_no_district
+    data_type: docket_number
+
+  adoptee_name:
+    category: party_attr
+    subcategory: adoptee
+    party: adoptee
+    data_type: person_name
+
+  parent1_q1:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q10:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q12:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q13:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q14:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q15:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q16:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q17:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q18:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q19:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q2:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q20:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q21:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q22:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q23:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q24:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q25:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q3:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q4:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q5:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q6:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q7:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q8:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent1_q9:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_1
+    data_type: text
+
+  parent2_q1:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q10:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q12:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q13:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q14:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q15:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q16:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q17:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q18:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q19:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q2:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q20:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q21:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q22:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q23:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q24:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q25:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q3:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q4:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q5:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q6:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q7:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q8:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent2_q9:
+    category: narrative_derived
+    subcategory: parent_questionnaire_answer
+    party: parent_2
+    data_type: text
+
+  parent1_date:
+    category: signature
+    subcategory: parent_signature_date
+    data_type: date
+
+  parent2_date:
+    category: signature
+    subcategory: parent_signature_date
+    data_type: date
+

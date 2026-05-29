@@ -1,0 +1,258 @@
+{
+  "form_id": "DE-505",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 1,
+  "source_fused": "DE-505 Petition with Respect to Pretermitted or Omitted Child (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            103.0,
+            176.0,
+            122.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            104.0,
+            542.0,
+            122.0
+          ]
+        }
+      ]
+    },
+    "estate_of": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            137.0,
+            307.0,
+            157.0
+          ]
+        }
+      ]
+    },
+    "omitted_child_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            206.0,
+            542.0,
+            237.0
+          ]
+        }
+      ]
+    },
+    "circumstances_existed": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            263.6,
+            542.0,
+            318.0
+          ]
+        }
+      ]
+    },
+    "omission_intent": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "intentional",
+          "label": "Intentional",
+          "page": 0,
+          "rect": [
+            389.8,
+            319.8,
+            397.8,
+            327.8
+          ]
+        },
+        {
+          "value": "unintentional",
+          "label": "Unintentional",
+          "page": 0,
+          "rect": [
+            447.6,
+            319.8,
+            455.6,
+            327.8
+          ]
+        }
+      ]
+    },
+    "basis_facts": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            344.0,
+            542.0,
+            387.0
+          ]
+        }
+      ]
+    },
+    "intestate_share_prayer": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "should",
+          "label": "Should",
+          "page": 0,
+          "rect": [
+            200.2,
+            388.8,
+            208.2,
+            396.8
+          ]
+        },
+        {
+          "value": "should_not",
+          "label": "Should not",
+          "page": 0,
+          "rect": [
+            241.2,
+            388.8,
+            249.2,
+            396.8
+          ]
+        }
+      ]
+    },
+    "date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            413.0,
+            230.0,
+            433.0
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            323.0,
+            414.0,
+            542.0,
+            432.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            468.6,
+            230.0,
+            485.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            496.5,
+            230.0,
+            514.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            525.4,
+            230.0,
+            543.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            554.4,
+            230.0,
+            571.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "injected": true,
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            583.6,
+            272.0,
+            596.6
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "injected": true,
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            612.0,
+            272.0,
+            625.0
+          ]
+        }
+      ]
+    }
+  }
+}

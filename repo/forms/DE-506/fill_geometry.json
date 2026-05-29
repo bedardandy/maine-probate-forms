@@ -1,0 +1,686 @@
+{
+  "form_id": "DE-506",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "DE-506 Petition for Elective Share (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            95.0,
+            102.0,
+            199.0,
+            122.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            106.0,
+            542.0,
+            122.0
+          ]
+        }
+      ]
+    },
+    "estate_of_decedent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            95.0,
+            137.0,
+            274.0,
+            157.0
+          ]
+        }
+      ]
+    },
+    "petitioner_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            205.9,
+            542.0,
+            250.0
+          ]
+        }
+      ]
+    },
+    "decedent_death_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            263.6,
+            542.0,
+            284.0
+          ]
+        }
+      ]
+    },
+    "probate_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            298.0,
+            542.0,
+            319.0
+          ]
+        }
+      ]
+    },
+    "election_extension_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "extended",
+          "label": "has been extended",
+          "page": 0,
+          "rect": [
+            172.1,
+            320.3,
+            179.1,
+            327.3
+          ]
+        },
+        {
+          "value": "not_extended",
+          "label": "has not been extended",
+          "page": 0,
+          "rect": [
+            199.2,
+            320.3,
+            206.2,
+            327.3
+          ]
+        }
+      ]
+    },
+    "probate_estate_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            421.6,
+            377.0,
+            542.0,
+            389.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            381.0,
+            542.0,
+            398.0
+          ]
+        }
+      ]
+    },
+    "augmented_estate_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            401.4,
+            542.0,
+            423.0
+          ]
+        }
+      ]
+    },
+    "transferees_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            47.2,
+            479.5,
+            195.5,
+            514.6
+          ]
+        }
+      ]
+    },
+    "transferees_address_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            195.5,
+            479.5,
+            348.5,
+            514.6
+          ]
+        }
+      ]
+    },
+    "transferees_property_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.5,
+            479.5,
+            564.5,
+            514.6
+          ]
+        }
+      ]
+    },
+    "transferees_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            47.2,
+            514.6,
+            195.5,
+            549.6
+          ]
+        }
+      ]
+    },
+    "transferees_address_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            195.5,
+            514.6,
+            348.5,
+            549.6
+          ]
+        }
+      ]
+    },
+    "transferees_property_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.5,
+            514.6,
+            564.5,
+            549.6
+          ]
+        }
+      ]
+    },
+    "transferees_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            47.2,
+            549.6,
+            195.5,
+            584.5
+          ]
+        }
+      ]
+    },
+    "transferees_address_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            195.5,
+            549.6,
+            348.5,
+            584.5
+          ]
+        }
+      ]
+    },
+    "transferees_property_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.5,
+            549.6,
+            564.5,
+            584.5
+          ]
+        }
+      ]
+    },
+    "transferees_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            47.2,
+            584.5,
+            195.5,
+            619.6
+          ]
+        }
+      ]
+    },
+    "transferees_address_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            195.5,
+            584.5,
+            348.5,
+            619.6
+          ]
+        }
+      ]
+    },
+    "transferees_property_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.5,
+            584.5,
+            564.5,
+            619.6
+          ]
+        }
+      ]
+    },
+    "transferees_name_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            47.2,
+            619.6,
+            195.5,
+            654.6
+          ]
+        }
+      ]
+    },
+    "transferees_address_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            195.5,
+            619.6,
+            348.5,
+            654.6
+          ]
+        }
+      ]
+    },
+    "transferees_property_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.5,
+            619.6,
+            564.5,
+            654.6
+          ]
+        }
+      ]
+    },
+    "transferees_name_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            47.2,
+            654.6,
+            195.5,
+            689.5
+          ]
+        }
+      ]
+    },
+    "transferees_address_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            195.5,
+            654.6,
+            348.5,
+            689.5
+          ]
+        }
+      ]
+    },
+    "transferees_property_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.5,
+            654.6,
+            564.5,
+            689.5
+          ]
+        }
+      ]
+    },
+    "transferees_name_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            47.2,
+            130.4,
+            195.5,
+            165.5
+          ]
+        }
+      ]
+    },
+    "transferees_address_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            195.5,
+            130.4,
+            348.5,
+            165.5
+          ]
+        }
+      ]
+    },
+    "transferees_property_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            348.5,
+            130.4,
+            564.5,
+            165.5
+          ]
+        }
+      ]
+    },
+    "transferees_name_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            47.2,
+            165.5,
+            195.5,
+            200.5
+          ]
+        }
+      ]
+    },
+    "transferees_address_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            195.5,
+            165.5,
+            348.5,
+            200.5
+          ]
+        }
+      ]
+    },
+    "transferees_property_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            348.5,
+            165.5,
+            564.5,
+            200.5
+          ]
+        }
+      ]
+    },
+    "filing_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            98.0,
+            285.0,
+            229.0,
+            304.0
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            323.0,
+            285.0,
+            529.0,
+            304.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            340.0,
+            229.0,
+            356.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            367.8,
+            229.0,
+            385.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            396.9,
+            229.0,
+            414.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            425.8,
+            229.0,
+            442.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            453.9,
+            229.0,
+            470.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            481.8,
+            229.0,
+            498.0
+          ]
+        }
+      ]
+    },
+    "petitioner_entitled": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            91.0,
+            119.4,
+            98.0,
+            126.4
+          ]
+        }
+      ]
+    },
+    "augmented_estate_value_finding": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            91.0,
+            136.8,
+            98.0,
+            143.8
+          ]
+        }
+      ]
+    },
+    "augmented_estate_value_finding_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            278.0,
+            131.7,
+            396.0,
+            146.0
+          ]
+        }
+      ]
+    },
+    "transferees_control": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            91.0,
+            154.3,
+            98.0,
+            161.3
+          ]
+        }
+      ]
+    },
+    "exceptions": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            301.5,
+            179.8,
+            432.0,
+            191.8
+          ]
+        }
+      ]
+    },
+    "elective_share_determined": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            91.0,
+            183.3,
+            98.0,
+            190.3
+          ]
+        }
+      ]
+    }
+  }
+}

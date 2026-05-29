@@ -1,0 +1,49 @@
+# N-112 — Notice to Interested Persons of Appointment.
+
+overrides:
+  subject_to_guardianship:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  subject_to_conservatorship:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  appointing_court_name:
+    category: case_constant
+    subcategory: court_name
+    data_type: entity_name
+
+  appointing_court_address:
+    category: case_constant
+    subcategory: court_address
+    data_type: address
+
+  i_we_name:
+    category: party_attr
+    subcategory: filer
+    party: filer
+    data_type: person_name
+
+  appointed_as_guardian:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  appointed_as_conservator:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  subject_name:
+    category: party_attr
+    subcategory: subject_of_appointment
+    party: subject
+    data_type: person_name
+
+  filing_county:
+    category: case_constant
+    subcategory: county
+    data_type: entity_name

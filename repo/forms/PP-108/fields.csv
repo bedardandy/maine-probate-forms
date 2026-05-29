@@ -1,0 +1,10 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No.,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+minor_name,Minor Name,W003,text,text,party_attr,minor,,,0,green,Y,,,minor_record.minor,
+filing_date,Dated,W004,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+conservator_signature,Conservator,W005,text,signature,signature,conservator_signature,,,53,orange,,,Y,wet_ink,
+by_signer_name,By (signer for institution),W006,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+by_signer_title,Its (title of signer),W007,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+conservator_address,Address of Conservator for Court records,,text,text,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.address,
+conservator_phone,Telephone Number,,text,text,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.phone,

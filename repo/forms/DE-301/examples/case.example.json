@@ -1,0 +1,87 @@
+{
+  "_comment": "Synthetic formal probate petition case. Demonstrates the multi-party fill pattern: applicant (petitioner), appointee (proposed PR — same person here, but split into two fields), decedent, attorney, and notary. This is the testate-side counterpart to DE-101's intestate case.",
+
+  "case_dict": {
+    "county_probate_court": "Sagadahoc",
+    "docket_no": "2026-SAG-2026-00188",
+    "estate_of_decedent": "Estate of Theodore J. Crawford"
+  },
+
+  "applicant_record": {
+    "applicant": "Margaret L. Crawford-Hines",
+    "applicant_address": "33 Pleasant Hill Road",
+    "applicant_city": "Bath",
+    "applicant_state": "ME",
+    "applicant_zip": "04530",
+    "applicant_phone": "(207) 555-0118",
+    "applicant_email": "mlch@example.com",
+    "applicant_legal_interest": "heir"
+  },
+
+  "appointee_record": {
+    "appointee": "Margaret L. Crawford-Hines",
+    "_note": "appointee == applicant in this case; the form has separate fields so both must be filled"
+  },
+
+  "decedent_record": {
+    "decedent": "Theodore J. Crawford",
+    "decedent_date_of_birth": "1945-06-22",
+    "decedent_date_of_death": "2026-02-08",
+    "decedent_domicile": "144 Brunswick Street, Bath, ME 04530"
+  },
+
+  "attorney_record": {
+    "attorney_name": "Caroline P. Trotter",
+    "attorney_address": "12 Centre Street, Bath, ME 04530",
+    "attorney_phone": "(207) 555-0234",
+    "attorney_bar_number": "3829",
+    "attorney_email": "cptrotter@example.com"
+  },
+
+  "notary_record": {
+    "_note": "Notary fields are filled at the time of signing. The notary commission and identity are not pre-populated from a record but captured at the notarial appearance.",
+    "notary_name": "Jennifer M. Reilly",
+    "notary_title": "Notary Public, Maine",
+    "notary_commission_expires": "2029-04-15"
+  },
+
+  "narrative_facts": {
+    "venue": {
+      "domiciled_in_county": true,
+      "venue_basis_if_not_domiciled": null,
+      "_note": "Decedent domiciled in Sagadahoc County — straightforward venue under § 3-201"
+    },
+
+    "will_posture": {
+      "will_presented_for_probate": true,
+      "will_details": "Will dated 2018-09-14, two-page typed, witnessed by Lawrence Reed and Susan Maddox. No codicils.",
+      "nominated_as_pr_in_will": true,
+      "_note": "Margaret nominated as PR in the will — straight § 3-401 testate path"
+    },
+
+    "appointment_sought": {
+      "person_whose_appointment_is_sought": "Margaret L. Crawford-Hines",
+      "appointee_is_applicant": true,
+      "_note": "Common pattern: applicant nominates herself (the will's named PR) for appointment"
+    },
+
+    "special_admin": {
+      "special_admin_requested": false,
+      "_note": "Standard formal probate; no § 3-614 special administrator needed"
+    },
+
+    "relationships": {
+      "applicant_to_decedent": "daughter — sole surviving child",
+      "other_heirs": "None — decedent's spouse Helen R. Crawford predeceased him in 2019; no other children"
+    }
+  },
+
+  "_what_this_exercises": [
+    "Five distinct parties: applicant, appointee, decedent, attorney, notary (each with its own *_record block)",
+    "applicant == appointee special case (most common — petitioner self-nominates), where same-person info goes into TWO different field groups",
+    "Formal probate path (DE-301) vs informal (DE-101) — applicant_signature_name field is separate from applicant_full_legal_name and must equals_field match (relaxed)",
+    "Yes/no narrative chain: domiciled_in_county → will_presented_for_probate → nominated_as_pr_in_will (all true → minimal-friction testate path)",
+    "Notary fields filled at signing, not from a stored record — pipeline must coordinate with notarial appearance",
+    "Validators encoded: equals_field(applicant_full_legal_name, relaxed) on applicant_signature_name AND notary_appearer_name; date_order(date_of_death, >) on applicant_signature_date"
+  ]
+}

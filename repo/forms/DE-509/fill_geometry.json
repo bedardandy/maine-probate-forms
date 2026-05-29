@@ -1,0 +1,577 @@
+{
+  "form_id": "DE-509",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "DE-509 Petition for Removal of Personal Representative (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            118.0,
+            543.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.4,
+            122.0,
+            176.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "estate_of_decedent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            112.0,
+            157.0,
+            272.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "petitioner_full_legal_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            217.5,
+            543.0,
+            238.0
+          ]
+        }
+      ]
+    },
+    "petitioner_address_email_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            252.1,
+            543.0,
+            295.0
+          ]
+        }
+      ]
+    },
+    "petitioner_legal_interest": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "personal_representative_named_in_will",
+          "label": "Personal Representative named in the Will",
+          "page": 0,
+          "rect": [
+            90.5,
+            319.8,
+            98.5,
+            327.8
+          ]
+        },
+        {
+          "value": "surviving_spouse",
+          "label": "Surviving spouse",
+          "page": 0,
+          "rect": [
+            90.5,
+            331.2,
+            98.5,
+            339.2
+          ]
+        },
+        {
+          "value": "domestic_partner",
+          "label": "Domestic partner",
+          "page": 0,
+          "rect": [
+            90.5,
+            342.8,
+            98.5,
+            350.8
+          ]
+        },
+        {
+          "value": "devisee",
+          "label": "Devisee",
+          "page": 0,
+          "rect": [
+            90.5,
+            354.3,
+            98.5,
+            362.3
+          ]
+        },
+        {
+          "value": "heir",
+          "label": "Heir",
+          "page": 0,
+          "rect": [
+            90.5,
+            365.9,
+            98.5,
+            373.9
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "Creditor",
+          "page": 0,
+          "rect": [
+            90.5,
+            377.4,
+            98.5,
+            385.4
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            90.5,
+            388.8,
+            98.5,
+            396.8
+          ]
+        }
+      ]
+    },
+    "petitioner_legal_interest_other": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            112.0,
+            390.0,
+            177.0,
+            402.0
+          ]
+        }
+      ]
+    },
+    "decedent_full_legal_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            424.5,
+            543.0,
+            455.0
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.8,
+            503.2,
+            220.3,
+            528.1
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.8,
+            503.2,
+            533.2,
+            528.1
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.4,
+            528.1,
+            220.3,
+            553.7
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.3,
+            528.1,
+            533.2,
+            553.7
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.8,
+            553.7,
+            220.3,
+            578.5
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.8,
+            553.7,
+            533.2,
+            578.5
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.8,
+            578.5,
+            220.3,
+            603.4
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.8,
+            578.5,
+            533.2,
+            603.4
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.4,
+            603.4,
+            220.3,
+            629.0
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.3,
+            603.4,
+            533.2,
+            629.0
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.4,
+            629.0,
+            220.3,
+            654.7
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.3,
+            629.0,
+            533.2,
+            654.7
+          ]
+        }
+      ]
+    },
+    "interested_parties_name_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            78.4,
+            654.7,
+            220.3,
+            680.4
+          ]
+        }
+      ]
+    },
+    "interested_parties_address_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            220.3,
+            654.7,
+            533.2,
+            680.4
+          ]
+        }
+      ]
+    },
+    "personal_representative_full_legal_name_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            707.0,
+            543.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "date_of_appointment": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            97.9,
+            542.0,
+            119.0
+          ]
+        }
+      ]
+    },
+    "grounds_for_removal": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            132.4,
+            542.0,
+            195.0
+          ]
+        }
+      ]
+    },
+    "co_representative_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "co_representative_remains",
+          "label": "(a) A Co-Personal Representative is to remain in office",
+          "page": 1,
+          "rect": [
+            108.5,
+            223.3,
+            116.5,
+            231.3
+          ]
+        },
+        {
+          "value": "new_petition_filed",
+          "label": "(b) A new petition for Personal Representative or Special Administrator has been or will be filed",
+          "page": 1,
+          "rect": [
+            108.5,
+            246.2,
+            116.5,
+            254.2
+          ]
+        }
+      ]
+    },
+    "pr_to_remove_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            359.0,
+            259.0,
+            542.0,
+            279.0
+          ]
+        }
+      ]
+    },
+    "date_signed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            305.0,
+            229.0,
+            325.0
+          ]
+        }
+      ]
+    },
+    "petitioner_or_attorney_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            324.0,
+            312.5,
+            542.0,
+            325.9
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            362.8,
+            229.0,
+            379.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            390.6,
+            229.0,
+            408.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            419.7,
+            229.0,
+            437.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            448.6,
+            229.0,
+            465.0
+          ]
+        }
+      ]
+    },
+    "attorney_maine_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            476.7,
+            229.0,
+            493.0
+          ]
+        }
+      ]
+    },
+    "attorney_email_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            504.6,
+            229.0,
+            521.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "form_id": "AD-008",
+  "title": "Report of Disbursements",
+  "category": "adoption",
+  "source_url": "http://www.maineprobate.net/forms2019/Adoption/AD-008%20Report%20of%20Disbursements.pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 26,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

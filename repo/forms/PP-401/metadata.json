@@ -1,0 +1,9 @@
+{
+  "form_id": "PP-401",
+  "title": "Petition for Appointment of Conservator",
+  "category": "gc_adults",
+  "source_url": "http://www.maineprobate.net/Forms2019/GC%20Adults/PP-401%20Petition%20for%20Appointment%20of%20Conservator%20(Rev.%2007-01-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 35,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

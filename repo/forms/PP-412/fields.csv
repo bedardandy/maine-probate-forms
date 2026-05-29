@@ -1,0 +1,23 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+individual_name,Individual Name,W003,text,person_name,party_attr,individual_under_protection,,,40,orange,Y,,,individual_under_protection_record.individual_under_protection,
+conservatorship_grant_date,Conservatorship Grant Date,W004,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+report_reasons,Report Reasons,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+court_order_date,Court Order Date,W009,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+report_period_start,Report Period Start,W011,date,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,
+report_period_end,Report Period End,W012,date,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,
+services_provided,Services Provided,W013,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+recommended_changes,Recommended Changes,W014,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+de_minimis_value_received,De Minimis Value Received,W015,text,currency,narrative_derived,financial_disclosure,,,5,green,,Y,,llm_over_narrative,
+business_relation_provider,Business Relation Provider,W016,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+business_relation_paid,Business Relation Paid,W017,text,currency,narrative_derived,financial_disclosure,,,5,green,,Y,,llm_over_narrative,
+coconservator_status,Coconservator Status,W018,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+approved_plan_date,Approved Plan Date,W019,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+report_date,Report Date,W020,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+conservator_signature,Conservator Signature,W021,text,signature,signature,conservator_signature,,,5,green,,,Y,wet_ink,
+conservator_printed_name,Conservator Printed Name,W022,text,person_name,party_attr,conservator,,,0,green,Y,,,conservator_record.conservator,
+attorney_name,Attorney Name,W023,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W024,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,W026,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,W027,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,

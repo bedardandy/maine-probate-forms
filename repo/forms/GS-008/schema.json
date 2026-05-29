@@ -1,0 +1,803 @@
+{
+  "form_id": "GS-008",
+  "schema_version": "0.2",
+  "source_pdf": "http://www.maineprobate.net/Forms2019/Guardian%20Minor/GS-008%20Acceptance%20of%20Appt%20by%20Guardian.pdf",
+  "artifact_pdf": null,
+  "n_fields": 17,
+  "by_category": {
+    "case_constant": 3,
+    "party_attr": 8,
+    "legal_choice": 2,
+    "signature": 4
+  },
+  "by_risk_tier": {
+    "green": 14,
+    "orange": 2,
+    "yellow": 1
+  },
+  "by_data_type": {
+    "text": 5,
+    "docket_number": 1,
+    "person_name": 2,
+    "checkbox": 2,
+    "signature": 4,
+    "address": 1,
+    "phone": 1,
+    "email": 1
+  },
+  "_skill_metadata_override": {
+    "filer_role": "guardian",
+    "statutes": [
+      "18-C M.R.S.A. \u00a7 5-209 (Acceptance of appointment by guardian of minor)"
+    ],
+    "service_required": false
+  },
+  "fields": [
+    {
+      "field_id": "county",
+      "widget_id": null,
+      "label": "County",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "county",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.county"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "location",
+      "widget_id": null,
+      "label": "Location",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "case_constant",
+      "subcategory": "location",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.location"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "docket_no",
+      "widget_id": "W003",
+      "label": "Docket No",
+      "type": "text",
+      "data_type": "docket_number",
+      "data_constraints": {
+        "jurisdiction": "ME"
+      },
+      "category": "case_constant",
+      "subcategory": "docket_no",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "populate_from_case_dict"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "case_dict.docket_no"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "minor_name",
+      "widget_id": null,
+      "label": "Minor Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "minor",
+      "party": "minor",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "minor_record.minor"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "guardian_name",
+      "widget_id": null,
+      "label": "Guardian Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "guardian",
+      "party": "guardian",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "guardian_record.guardian"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 5,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "appointment_type",
+      "widget_id": null,
+      "label": "Appointment Type",
+      "type": "select_one",
+      "data_type": "checkbox",
+      "data_constraints": {},
+      "category": "legal_choice",
+      "subcategory": "appointment_type",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "human_decision"
+      },
+      "risk_score": 48,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "legal_choice \u2014 strategic decision, human required",
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "duration_type",
+      "widget_id": null,
+      "label": "Duration Type",
+      "type": "select_one",
+      "data_type": "checkbox",
+      "data_constraints": {},
+      "category": "legal_choice",
+      "subcategory": "duration_type",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "human_decision"
+      },
+      "risk_score": 20,
+      "risk_tier": "yellow",
+      "risk_breakdown": {
+        "category_base": 20,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "legal_choice \u2014 strategic decision, human required"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "signature_date",
+      "widget_id": null,
+      "label": "Signature Date",
+      "type": "date",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "signature_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 1,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "signature_line",
+      "widget_id": null,
+      "label": "Signature Line",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "signature_line",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "guardian_full_name",
+      "widget_id": null,
+      "label": "Guardian Full Name",
+      "type": "text",
+      "data_type": "person_name",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "guardian",
+      "party": "guardian",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [
+        "equals_field(guardian_name, relaxed)"
+      ],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "guardian_record.guardian"
+      },
+      "risk_score": 8,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 8,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 4,
+        "not_applicable": 0,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "guardian_address",
+      "widget_id": "W016",
+      "label": "Guardian Address",
+      "type": "text",
+      "data_type": "address",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "guardian",
+      "party": "guardian",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "guardian_record.guardian"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "guardian_phone",
+      "widget_id": null,
+      "label": "Guardian Phone",
+      "type": "text",
+      "data_type": "phone",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "guardian",
+      "party": "guardian",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "guardian_record.guardian"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 3,
+        "not_applicable": 2,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "guardian_email",
+      "widget_id": null,
+      "label": "Guardian Email",
+      "type": "text",
+      "data_type": "email",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "guardian",
+      "party": "guardian",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "guardian_record.guardian"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_county",
+      "widget_id": null,
+      "label": "Notary County",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "notary",
+      "party": "notary",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "notary_record.notary"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_appearer_name",
+      "widget_id": null,
+      "label": "Notary Appearer Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "notary",
+      "party": "notary",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "notary_record.notary"
+      },
+      "risk_score": 40,
+      "risk_tier": "orange",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 20,
+        "eval_oc": 8,
+        "eval_miscompr": 12
+      },
+      "hand_review": {
+        "reasons": [
+          "eval: 1/5 patterns marked WRONG"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 1,
+        "overconfident": 1,
+        "underconfident": 0,
+        "misunderstood": 1,
+        "matches": 1,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_date",
+      "widget_id": null,
+      "label": "Notary Date",
+      "type": "date",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "notary_date",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 2,
+        "not_applicable": 3,
+        "patterns_scored": 5
+      }
+    },
+    {
+      "field_id": "notary_signature",
+      "widget_id": null,
+      "label": "Notary Signature",
+      "type": "text",
+      "data_type": "signature",
+      "data_constraints": {},
+      "category": "signature",
+      "subcategory": "notary_signature",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": [
+          "signature \u2014 wet-ink physical sign"
+        ]
+      },
+      "eval_evidence": {
+        "wrong": 0,
+        "overconfident": 0,
+        "underconfident": 0,
+        "misunderstood": 0,
+        "matches": 1,
+        "not_applicable": 4,
+        "patterns_scored": 5
+      }
+    }
+  ],
+  "source_url": "http://www.maineprobate.net/Forms2019/Guardian%20Minor/GS-008%20Acceptance%20of%20Appt%20by%20Guardian.pdf",
+  "artifact_note": "Fillable PDF is generated from this schema (not shipped). Fetch the flat source from source_url, then run the pipeline (docs/automation-quickstart.md)."
+}

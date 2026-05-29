@@ -1,0 +1,81 @@
+{
+  "_comment": "Expected PB-007 fill for case.expanded.json. appointment_level=expanded path — limited_* and standard_* fields are null; the full expanded_* set is populated.",
+
+  "_writable_when_branching": {
+    "appointment_level=expanded": "writes: all expanded_* fields (26+ entries)",
+    "appointment_level=limited": "NOT triggered — limited_* fields stay null",
+    "appointment_level=standard": "NOT triggered — standard_* fields stay null"
+  },
+
+  "fields": {
+    "county_probate":             "Cumberland",
+    "docket_no_probate":          "2026-CUM-GS-00104",
+    "district_court_location":    "Portland District Court",
+    "docket_no_district":         "2026-CUMD-FM-00237",
+    "case_title":                 "In re Guardianship of M.K.B. and J.E.B. (Minors)",
+
+    "appointment_level":          "expanded",
+    "minor_children_names":       "Maya K. Brennan (DOB 2011-04-18); Jacob E. Brennan (DOB 2014-07-09)",
+    "gal_name":                   "Daniel P. Whitten, Esq.",
+    "gal_contact_info":           "(207) 555-0411 / dwhitten@galroster.example.com",
+    "gal_roster_status":          "rostered",
+
+    "good_cause_findings":        "Disputed allegations of substance abuse and educational neglect on both sides; concurrent family-court proceeding; two minors in different schools. Court finds that an expanded-scope GAL with subpoena power and authority to engage evaluators is necessary under 18-C § 1-115 to assess the children's best interests.",
+    "other_qualifications_detail": null,
+
+    "objection_status":                 "objecting",
+    "objecting_parties_appointment":    "Father (Christopher Brennan) objects to the appointment of D. Whitten specifically due to a prior matter; objection overruled at the appointment hearing on 2026-05-09.",
+    "other_objector_name_appointment":  null,
+    "appointment_factors":              "Court finds that D. Whitten has no actual conflict; the prior matter (closed 2021) does not bear on the current case.",
+
+    "objecting_parties_fee":            "Father objects to bearing 50% of the fee; objection overruled — court allocates 75% petitioner / 25% father based on assets and income.",
+    "other_objector_name_fee":          null,
+    "fee_factors":                      "Cap of 60 hours reflects expanded scope (subpoena work, two record-review subjects, evaluator engagement, mediation appearance).",
+
+    "limited_duties":              null,
+    "limited_hearing_appearance":  null,
+    "limited_other_provisions":    null,
+
+    "standard_other_provisions":   null,
+
+    "expanded_duties":              "Interview both minors separately, both petitioners, the father, and the minors' current teachers. Review school records from Portland Public Schools (Maya) and Cape Elizabeth Public Schools (Jacob) for the past 3 academic years. Review the father's substance-abuse treatment records from Day One Recovery (with consent or subpoena). Engage a licensed psychologist to evaluate both minors' attachment to each potential caretaker. Arrange family counseling for the children if necessary. File a written report 60 days before the contested hearing.",
+    "expanded_interview_teachers":  "yes",
+    "expanded_interview_details":   "Interview Maya's 5th-grade teacher (Ms. Linda Park, Portland Reiche Elementary) and Jacob's 2nd-grade teacher (Mr. Roberto Diaz, Cape Elizabeth Pond Cove Elementary).",
+    "expanded_review_records_1":    "Portland Public Schools records for Maya K. Brennan, AY 2023-2026.",
+    "expanded_person_1_name":       "Maya K. Brennan",
+    "expanded_record_types_1":      "academic_attendance_disciplinary_iep",
+    "expanded_review_records_2":    "Cape Elizabeth Public Schools records for Jacob E. Brennan, AY 2023-2026.",
+    "expanded_person_2_name":       "Jacob E. Brennan",
+    "expanded_record_types_2":      "academic_attendance_disciplinary_iep",
+    "expanded_review_records_3":    "Day One Recovery treatment records for Christopher Brennan, 2024-present.",
+    "expanded_person_3_name":       "Christopher Brennan",
+    "expanded_record_types_3":      "substance_abuse_treatment",
+    "expanded_engage_provider":     "yes",
+    "expanded_provider_type":       "psychologist",
+    "expanded_evaluation_subject":  "Both minors' attachment to each potential caretaker; current developmental and emotional functioning.",
+    "expanded_evaluation_deadline": "2026-07-15",
+    "expanded_evaluation_cost":     "4800",
+    "expanded_arrange_counseling":  "yes",
+    "expanded_counseling_deadline": "2026-06-30",
+    "expanded_counseling_children": "Both minors — bi-weekly sessions through report-filing date.",
+    "expanded_subpoena":            "yes",
+    "expanded_contact_person":      "Dr. Sarah Lin (psychologist) — initial intake by 2026-05-30.",
+    "expanded_contact_details":     "(207) 555-0822 / slin@portlandpsych.example.com",
+    "expanded_mediation_appearance": "yes",
+    "expanded_other_events":        null,
+    "expanded_other_duties":        "Coordinate with the district-court FM matter's GAL (if appointed) to avoid duplicate interviews of the children.",
+    "expanded_other_duties_details": null,
+
+    "appointment_end_event":        "report_filed",
+    "appointment_end_date":         "2026-07-30"
+  },
+
+  "_validator_expectations": {
+    "value_in(limited, standard, expanded)": "appointment_level='expanded' → passes",
+    "value_in for gal_roster_status": "'rostered' → passes",
+    "value_in for objection_status": "'objecting' → passes",
+    "value_in for appointment_end_event": "'report_filed' → passes",
+    "writable_when on limited_*/standard_* fields": "all null → no `not_writable` violations",
+    "what would fail": "if the LLM populated limited_duties or standard_other_provisions while appointment_level='expanded', validator would flag `not_writable` for each one — the cascade-catch that proves writability gating works"
+  }
+}

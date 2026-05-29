@@ -1,0 +1,9 @@
+{
+  "form_id": "N-105",
+  "title": "Demand for Notice",
+  "category": "notices",
+  "source_url": "http://www.maineprobate.net/forms2019/Notices/N-105%20Demand%20for%20Notice%20(Rev.%206-25-23).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 13,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

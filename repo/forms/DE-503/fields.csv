@@ -1,0 +1,27 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_of_decedent,Estate Of Decedent,,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+residence_and_date_of_death,Residence And Date Of Death,,text,text,narrative_derived,free_text,,,21,yellow,,Y,,llm_over_narrative,
+name_of_claimant,Name Of Claimant,,text,text,party_attr,name_of_other,,,0,green,Y,,,name_of_other_record.name_of_other,
+address_of_claimant,Address Of Claimant,,text,text,party_attr,address_of_other,,,0,green,Y,,,address_of_other_record.address_of_other,
+amount_claimed,Amount Claimed,,currency,currency,narrative_derived,financial_declaration,,,5,green,,Y,,llm_over_narrative,
+basis_for_claim,Basis For Claim,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_claim_due,Date Claim Due,,date,date,narrative_derived,event_date,,,17,yellow,,Y,,llm_over_narrative,"date_order(notice_mailed_date, >)"
+nature_of_uncertainty,Nature Of Uncertainty,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+claimant_signature_date,Claimant Signature Date,,date,date,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+claimant_signature,Claimant Signature,,text,signature,signature,claimant_signature,,,5,green,,,Y,wet_ink,
+attorney_for_claimant_name,Attorney For Claimant Name,,text,person_name,party_attr,attorney_for_claimant,,,0,green,Y,,,attorney_for_claimant_record.attorney_for_claimant,
+attorney_for_claimant_address,Attorney For Claimant Address,W014,text,address,party_attr,attorney_for_claimant,,,0,green,Y,,,attorney_for_claimant_record.attorney_for_claimant,
+attorney_for_claimant_phone,Attorney For Claimant Phone,,text,phone,party_attr,attorney_for_claimant,,,0,green,Y,,,attorney_for_claimant_record.attorney_for_claimant,
+attorney_for_claimant_bar_number,Attorney For Claimant Bar Number,,text,bar_number,party_attr,attorney_for_claimant,,,0,green,Y,,,attorney_for_claimant_record.attorney_for_claimant,
+attorney_for_claimant_email,Attorney For Claimant Email,,text,email,party_attr,attorney_for_claimant,,,0,green,Y,,,attorney_for_claimant_record.attorney_for_claimant,
+decision_by_personal_representative,Decision By Personal Representative,,select_one,text,legal_choice,disposition,,,20,yellow,,,Y,human_decision,
+partial_allowance_amount,Partial Allowance Amount,,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notice_mailed_date,Notice Mailed Date,,date,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,
+personal_representative_signature_date,Personal Representative Signature Date,,date,date,narrative_derived,free_text,,,45,orange,,Y,,llm_over_narrative,
+personal_representative_signature,Personal Representative Signature,,text,signature,signature,personal_representative_signature,,,13,green,,,Y,wet_ink,
+attorney_for_personal_rep_name,Attorney For Personal Rep Name,,text,person_name,party_attr,attorney_for_pr,,,40,orange,Y,,,attorney_for_personal_representative_record.attorney_for_pr,
+attorney_for_personal_rep_address,Attorney For Personal Rep Address,W027,text,address,party_attr,attorney_for_pr,,,40,orange,Y,,,attorney_for_personal_representative_record.attorney_for_pr,
+attorney_for_personal_rep_phone,Attorney For Personal Rep Phone,,text,phone,party_attr,attorney_for_pr,,,40,orange,Y,,,attorney_for_personal_representative_record.attorney_for_pr,
+attorney_for_personal_rep_bar_number,Attorney For Personal Rep Bar Number,,text,bar_number,party_attr,attorney_for_pr,,,40,orange,Y,,,attorney_for_personal_representative_record.attorney_for_pr,

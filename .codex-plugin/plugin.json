@@ -1,0 +1,24 @@
+{
+  "name": "maine-probate-forms",
+  "version": "1.0.0",
+  "description": "Route a plain-language fact pattern to the correct Maine probate court form and produce a filled PDF via a deterministic, VLM-free fill path.",
+  "author": {
+    "name": "Maine Probate Forms OSS"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["maine", "probate", "legal-forms", "pdf", "acroform", "routing"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Maine Probate Forms",
+    "shortDescription": "Route + fill Maine probate court forms",
+    "longDescription": "Go from a plain-language situation to the right Maine probate form and a filled PDF. A single-call router selects the form from a compact catalog; the fill path (plan + inject) is deterministic and needs no VLM at fill time. Bundles an MCP server (find_forms / get_form / fill_form) and a routing-and-fill skill. Not legal advice.",
+    "developerName": "Maine Probate Forms OSS",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Help me fill out the right Maine probate court form for my situation"
+    ],
+    "brandColor": "#1F6FB2"
+  }
+}

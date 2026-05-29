@@ -1,0 +1,11 @@
+# DE-602 — Affidavit of Sworn Statement of Closing (Decedent Estate).
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-1003 (Closing by sworn statement)"
+  service_required: true
+  filing_deadline_days: null
+  filing_deadline_anchor: "final_distribution_date"
+  # No statutory hard deadline. Typically filed within 1 year of
+  # the final distribution to terminate the PR's appointment.

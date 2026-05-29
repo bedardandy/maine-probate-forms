@@ -1,0 +1,18 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+location,Location,,text,text,case_constant,location,,,0,green,Y,,,case_dict.location,populate_from_case_dict
+docket_no,Docket No,W003,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+minor_name,Minor Name,,text,text,party_attr,minor,,,0,green,Y,,,minor_record.minor,
+guardian_name,Guardian Name,,text,person_name,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+appointment_type,Appointment Type,,select_one,checkbox,legal_choice,appointment_type,,,48,orange,,,Y,human_decision,
+duration_type,Duration Type,,select_one,checkbox,legal_choice,duration_type,,,20,yellow,,,Y,human_decision,
+signature_date,Signature Date,,date,signature,signature,signature_date,,,5,green,,,Y,wet_ink,
+signature_line,Signature Line,,text,signature,signature,signature_line,,,5,green,,,Y,wet_ink,
+guardian_full_name,Guardian Full Name,,text,person_name,party_attr,guardian,,,8,green,Y,,,guardian_record.guardian,"equals_field(guardian_name, relaxed)"
+guardian_address,Guardian Address,W016,text,address,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+guardian_phone,Guardian Phone,,text,phone,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+guardian_email,Guardian Email,,text,email,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_appearer_name,Notary Appearer Name,,text,text,party_attr,notary,,,40,orange,Y,,,notary_record.notary,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

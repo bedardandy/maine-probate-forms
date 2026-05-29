@@ -1,0 +1,491 @@
+{
+  "form_id": "AF-101.vA",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "AF-101 Jurisdictional Affidavit (Rev. 03-01-2025)_fused.pdf",
+  "fields": {
+    "court_type": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "county_probate",
+          "label": "County Probate Court",
+          "page": 0,
+          "rect": [
+            54.0,
+            108.2,
+            159.1,
+            126.7
+          ]
+        },
+        {
+          "value": "docket_no",
+          "label": "Docket No.",
+          "page": 0,
+          "rect": [
+            404.0,
+            111.0,
+            521.0,
+            127.0
+          ]
+        }
+      ]
+    },
+    "minor_child_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            322.0,
+            384.0,
+            521.0,
+            399.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            398.3,
+            516.0,
+            413.2
+          ]
+        }
+      ]
+    },
+    "first_legal_parent_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            484.0,
+            425.0,
+            533.0,
+            439.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            441.0,
+            516.0,
+            454.0
+          ]
+        }
+      ]
+    },
+    "second_legal_parent_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            484.0,
+            464.0,
+            521.0,
+            478.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            480.8,
+            516.0,
+            493.8
+          ]
+        }
+      ]
+    },
+    "guardian_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            433.0,
+            505.0,
+            513.0,
+            518.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            517.7,
+            522.0,
+            532.7
+          ]
+        }
+      ]
+    },
+    "petitioner_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            404.0,
+            544.0,
+            521.0,
+            558.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            557.5,
+            516.0,
+            572.5
+          ]
+        }
+      ]
+    },
+    "petitioner_relationship": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            584.0,
+            561.0,
+            598.0
+          ]
+        }
+      ]
+    },
+    "oath_no_pending_district": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            612.0,
+            250.0,
+            626.0
+          ]
+        }
+      ]
+    },
+    "oath_no_pending_probate": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            667.0,
+            250.0,
+            681.0
+          ]
+        }
+      ]
+    },
+    "oath_no_pending_other_state": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            721.0,
+            250.0,
+            736.0
+          ]
+        }
+      ]
+    },
+    "oath_no_transferred": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            79.3,
+            59.5,
+            256.3,
+            78.1
+          ]
+        }
+      ]
+    },
+    "checked_first_parent": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            107.3,
+            150.2,
+            116.3,
+            159.2
+          ]
+        }
+      ]
+    },
+    "checked_guardian": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            107.3,
+            177.7,
+            116.3,
+            186.7
+          ]
+        }
+      ]
+    },
+    "checked_second_parent": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            107.3,
+            205.0,
+            116.3,
+            214.0
+          ]
+        }
+      ]
+    },
+    "checked_probate_register": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            107.3,
+            231.3,
+            116.3,
+            240.3
+          ]
+        }
+      ]
+    },
+    "probate_register_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            279.0,
+            229.0,
+            363.0,
+            242.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            264.7,
+            251.0,
+            369.0,
+            269.6
+          ]
+        }
+      ]
+    },
+    "checked_district_clerk": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            107.3,
+            258.9,
+            116.3,
+            267.9
+          ]
+        }
+      ]
+    },
+    "checked_district_clerk_cases": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            107.3,
+            286.0,
+            116.3,
+            295.0
+          ]
+        }
+      ]
+    },
+    "district_clerk_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            200.0,
+            287.1,
+            269.0,
+            299.1
+          ]
+        }
+      ]
+    },
+    "district_case_docket": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            381.0,
+            312.8,
+            480.0,
+            324.8
+          ]
+        }
+      ]
+    },
+    "district_case_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            200.3,
+            318.2,
+            558.1,
+            336.8
+          ]
+        }
+      ]
+    },
+    "oath_district_order_affects": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            349.0,
+            222.0,
+            362.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            54.0,
+            365.8,
+            222.0,
+            377.8
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            54.0,
+            529.9,
+            276.0,
+            542.9
+          ]
+        }
+      ]
+    },
+    "signature_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            306.0,
+            529.9,
+            498.0,
+            542.9
+          ]
+        }
+      ]
+    },
+    "notary_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            125.0,
+            585.0,
+            275.0,
+            597.0
+          ]
+        }
+      ]
+    },
+    "notary_petitioner_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            90.0,
+            604.0,
+            258.0,
+            622.6
+          ]
+        }
+      ]
+    },
+    "notary_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            665.0,
+            275.0,
+            678.0
+          ]
+        }
+      ]
+    },
+    "notary_public_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            348.0,
+            665.0,
+            504.0,
+            678.0
+          ]
+        }
+      ]
+    }
+  }
+}

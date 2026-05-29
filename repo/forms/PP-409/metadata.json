@@ -1,0 +1,9 @@
+{
+  "form_id": "PP-409",
+  "title": "Petition to Resolve Disputed Claim and Petition for Allowance",
+  "category": "gc_adults",
+  "source_url": "http://www.maineprobate.net/Forms2019/GC%20Adults/PP-409%20Petition%20to%20Resolve%20Disputed%20Claim%20and%20Petition%20for%20Allowance%20(Rev.%207-1-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 18,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

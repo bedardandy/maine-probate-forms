@@ -1,0 +1,61 @@
+{
+  "_comment": "Synthetic GAL appointment case demonstrating PB-007's conditional-writability sections. Court is appointing a guardian ad litem in a contested minor-guardianship matter; the appointment_level=limited path is exercised (so only limited_* fields should be written; standard_* and expanded_* fields stay blank).",
+
+  "case_dict": {
+    "county_probate": "York",
+    "docket_no_probate": "2026-YORK-GS-00214",
+    "docket_no_district": null,
+    "case_title": "In re Guardianship of A.M.R. (a Minor)",
+    "district_court_location": null
+  },
+
+  "gal_record": {
+    "gal_name": "Ellen R. Macdonald, Esq.",
+    "gal_phone": "(207) 555-0721",
+    "gal_email": "emacdonald@galroster.example.com",
+    "gal_roster_status": "rostered"
+  },
+
+  "minor_record": {
+    "minor_children": [
+      { "name": "Aiden M. Reyes", "dob": "2014-09-12" }
+    ]
+  },
+
+  "narrative_facts": {
+    "appointment_level": "limited",
+    "context": "Contested guardianship petition filed by maternal grandmother (Theresa Reyes) after the minor's mother (Cara Reyes) was hospitalized following a substance-use crisis. The minor's father (Marcus Hill) opposes the appointment, asserting his own custody. The court is appointing a GAL to assess the minor's best interests before the contested hearing scheduled for 2026-06-08.",
+
+    "good_cause_findings": "Petition and opposition raise disputed material facts about the minor's primary caretaker and the father's involvement. Court finds it necessary under 18-C § 1-115 to appoint a GAL to investigate.",
+
+    "objection_status": "no_objection_to_appointment",
+    "objection_to_fee_status": "no_objection_to_fee",
+
+    "limited_scope": {
+      "duties": "Interview the minor, the petitioner (maternal grandmother), and the father (Marcus Hill). Review the minor's school records. Submit a written report to the court within 30 days.",
+      "hearing_appearance": "Appear at the contested hearing on 2026-06-08 if the report does not resolve the disputed issues.",
+      "other_provisions": null
+    },
+
+    "fees": {
+      "fee_arrangement": "hourly_cap",
+      "hourly_rate": 150.00,
+      "hour_cap": 20,
+      "fee_factors": "Cap of 20 hours reasonable for the limited scope; party responsibility split 50/50 between petitioner and father.",
+      "primary_payor": "petitioner_and_father_50_50"
+    },
+
+    "court_signing": {
+      "judge_name": "Hon. Rebecca J. Marston",
+      "order_date": "2026-05-14"
+    }
+  },
+
+  "_what_this_exercises": [
+    "Conditional writability: appointment_level=limited triggers limited_* fields and DISABLES standard_* and expanded_* fields",
+    "Multi-party fills: gal + minor + objector + payor records",
+    "case_dict with dual probate + district docket numbers (district is null here)",
+    "value_in validators: appointment_level enum (limited/standard/expanded); gal_roster_status enum",
+    "Conditional follow-up: objection_status='no_objection' means objecting_parties_* fields stay blank"
+  ]
+}

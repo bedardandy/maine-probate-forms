@@ -1,0 +1,102 @@
+# DE-507 — Petition for Adjudication of Testacy / Successor PR Appointment.
+# Each override shallow-merges into the auto-classified field. The keys
+# the build_form_schema.py accepts are documented at the top of that
+# script.
+
+overrides:
+  petitioner_interest:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  decedent_domicile:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: address
+
+  former_pr_name:
+    category: party_attr
+    subcategory: former_pr
+    party: former_pr
+    data_type: person_name
+
+  former_pr_address:
+    category: party_attr
+    subcategory: former_pr
+    party: former_pr
+    data_type: address
+
+  # Date-order chain: appointment < termination, termination <= filing.
+  appointment_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  termination_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(appointment_date, >)"
+
+  newly_discovered_property:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  # priority_questions is the radio "are there priority issues about
+  # who should be appointed PR?" — yes triggers the _description field.
+  priority_questions:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  demand_for_notice:
+    category: legal_choice
+    subcategory: notice_election
+    data_type: checkbox
+
+  notice_request:
+    category: legal_choice
+    subcategory: notice_election
+    data_type: checkbox
+
+  other_notice_persons:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  appointed_pr_name:
+    category: party_attr
+    subcategory: appointed_pr
+    party: appointed_pr
+    data_type: person_name
+
+  filing_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(termination_date, >=)"
+
+  filing_fee:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  mailing_notices_fee:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  abstracts_fee:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  other_fees:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency

@@ -1,0 +1,19 @@
+# N-115 — Demand for Notice (filed by interested person).
+
+skill_metadata:
+  filer_role: interested_person
+  statutes:
+    - "18-C M.R.S.A. § 3-204 (Demand for notice)"
+  service_required: true
+  service_recipients: "personal_representative"
+  filing_deadline_days: null
+  # Filed anytime an interested person wants to be notified of probate
+  # events; no statutory deadline.
+
+overrides:
+  bond_status:
+    category: narrative_derived
+    subcategory: bond_status
+    data_type: text
+    validators:
+      - "value_in(required, not_required, waived, satisfied, on_file)"

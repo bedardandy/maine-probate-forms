@@ -1,0 +1,296 @@
+{
+  "form_id": "PP-409",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "PP-409 Petition to Resolve Disputed Claim and Petition for Allowance (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            119.0,
+            163.0,
+            138.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            408.0,
+            119.0,
+            518.0,
+            138.0
+          ]
+        }
+      ]
+    },
+    "in_re_subject": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            154.0,
+            268.0,
+            173.0
+          ]
+        }
+      ]
+    },
+    "petitioner_name_address_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            222.0,
+            518.0,
+            254.0
+          ]
+        }
+      ]
+    },
+    "factual_legal_issues_in_dispute": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            325.5,
+            518.0,
+            369.0
+          ]
+        }
+      ]
+    },
+    "proof_and_evidence": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            394.5,
+            518.0,
+            437.0
+          ]
+        }
+      ]
+    },
+    "petition_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            475.0,
+            189.0,
+            495.0
+          ]
+        }
+      ]
+    },
+    "petitioner_or_attorney_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            310.0,
+            475.0,
+            518.0,
+            494.0
+          ]
+        }
+      ]
+    },
+    "attorney_signature_rule_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            310.0,
+            509.5,
+            518.0,
+            529.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            576.6,
+            216.0,
+            593.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            604.5,
+            216.0,
+            622.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            633.4,
+            216.0,
+            651.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            662.4,
+            216.0,
+            679.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            690.4,
+            216.0,
+            707.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            58.0,
+            718.5,
+            216.0,
+            735.0
+          ]
+        }
+      ]
+    },
+    "order_disposition": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "denied",
+          "label": "Denied",
+          "page": 1,
+          "rect": [
+            94.5,
+            147.6,
+            101.5,
+            154.6
+          ]
+        },
+        {
+          "value": "allowed_in_whole",
+          "label": "Allowed in Whole",
+          "page": 1,
+          "rect": [
+            94.5,
+            170.8,
+            101.5,
+            177.8
+          ]
+        },
+        {
+          "value": "allowed_in_part",
+          "label": "Allowed in Part",
+          "page": 1,
+          "rect": [
+            94.5,
+            193.8,
+            101.5,
+            200.8
+          ]
+        }
+      ]
+    },
+    "allowed_in_part_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            318.7,
+            213.1,
+            453.0,
+            225.1
+          ]
+        }
+      ]
+    },
+    "order_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            470.0,
+            246.0,
+            490.0
+          ]
+        }
+      ]
+    },
+    "judge_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            345.6,
+            478.0,
+            555.0,
+            491.4
+          ]
+        }
+      ]
+    }
+  }
+}

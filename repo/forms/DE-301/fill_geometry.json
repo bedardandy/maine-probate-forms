@@ -1,0 +1,542 @@
+{
+  "form_id": "DE-301",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "DE-301(I) Application for Informal Appt of Special Administrator (Rev. 09-12-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            122.0,
+            201.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            122.0,
+            552.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "estate_of_decedent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            157.0,
+            297.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "applicant_full_legal_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            229.2,
+            552.0,
+            250.0
+          ]
+        }
+      ]
+    },
+    "applicant_address_email_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            263.6,
+            552.0,
+            306.0
+          ]
+        }
+      ]
+    },
+    "applicant_legal_interest": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "personal_representative",
+          "label": "Personal Representative named in the Will",
+          "page": 0,
+          "rect": [
+            90.4,
+            324.3,
+            98.4,
+            332.3
+          ]
+        },
+        {
+          "value": "surviving_spouse",
+          "label": "Surviving spouse",
+          "page": 0,
+          "rect": [
+            90.5,
+            335.9,
+            98.5,
+            343.9
+          ]
+        },
+        {
+          "value": "domestic_partner",
+          "label": "Domestic partner",
+          "page": 0,
+          "rect": [
+            90.5,
+            347.4,
+            98.5,
+            355.4
+          ]
+        },
+        {
+          "value": "devisee",
+          "label": "Devisee",
+          "page": 0,
+          "rect": [
+            90.5,
+            358.8,
+            98.5,
+            366.8
+          ]
+        },
+        {
+          "value": "heir",
+          "label": "Heir",
+          "page": 0,
+          "rect": [
+            90.5,
+            370.3,
+            98.5,
+            378.3
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "Creditor",
+          "page": 0,
+          "rect": [
+            90.5,
+            381.8,
+            98.5,
+            389.8
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            90.5,
+            393.3,
+            98.5,
+            401.3
+          ]
+        }
+      ]
+    },
+    "applicant_legal_interest_other_text": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            394.5,
+            163.0,
+            406.5
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            406.0,
+            552.0,
+            478.0
+          ]
+        }
+      ]
+    },
+    "decedent_full_legal_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            429.1,
+            552.0,
+            450.0
+          ]
+        }
+      ]
+    },
+    "date_of_death": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            463.5,
+            552.0,
+            484.0
+          ]
+        }
+      ]
+    },
+    "domicile_of_decedent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            498.1,
+            552.0,
+            541.0
+          ]
+        }
+      ]
+    },
+    "domiciled_in_county": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 0,
+          "rect": [
+            315.8,
+            543.0,
+            323.8,
+            551.0
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 0,
+          "rect": [
+            348.6,
+            543.0,
+            356.6,
+            551.0
+          ]
+        }
+      ]
+    },
+    "venue_basis_if_not_domiciled": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            555.6,
+            552.0,
+            599.0
+          ]
+        }
+      ]
+    },
+    "person_whose_appointment_is_sought": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            624.5,
+            552.0,
+            666.0
+          ]
+        }
+      ]
+    },
+    "will_presented_for_probate": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 0,
+          "rect": [
+            386.5,
+            669.3,
+            394.5,
+            677.3
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 0,
+          "rect": [
+            419.2,
+            669.3,
+            427.2,
+            677.3
+          ]
+        }
+      ]
+    },
+    "will_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            683.0,
+            552.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "nominated_as_pr_in_will": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 1,
+          "rect": [
+            196.3,
+            85.3,
+            204.3,
+            93.3
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 1,
+          "rect": [
+            229.1,
+            85.3,
+            237.1,
+            93.3
+          ]
+        }
+      ]
+    },
+    "applicant_signature_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            253.0,
+            232.0,
+            272.0
+          ]
+        }
+      ]
+    },
+    "applicant_signature_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            301.0,
+            253.0,
+            513.0,
+            272.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            326.5,
+            232.0,
+            343.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            354.4,
+            232.0,
+            372.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            383.3,
+            232.0,
+            401.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            412.3,
+            232.0,
+            429.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            440.3,
+            232.0,
+            457.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            468.4,
+            232.0,
+            485.0
+          ]
+        }
+      ]
+    },
+    "notary_appearer_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            274.0,
+            509.0,
+            468.0,
+            528.0
+          ]
+        }
+      ]
+    },
+    "notary_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            578.0,
+            295.0,
+            597.0
+          ]
+        }
+      ]
+    },
+    "notary_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            324.0,
+            578.0,
+            543.0,
+            597.0
+          ]
+        }
+      ]
+    },
+    "notary_title": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            324.0,
+            612.0,
+            543.0,
+            632.0
+          ]
+        }
+      ]
+    },
+    "special_admin_acceptance_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            101.0,
+            143.0,
+            291.0,
+            163.0
+          ]
+        }
+      ]
+    },
+    "special_admin_acceptance_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            360.0,
+            144.1,
+            542.0,
+            162.6
+          ]
+        }
+      ]
+    }
+  }
+}

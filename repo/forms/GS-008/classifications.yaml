@@ -1,0 +1,47 @@
+# GS-008 — Acceptance of Appointment by Guardian (Minor).
+
+skill_metadata:
+  filer_role: guardian
+  statutes:
+    - "18-C M.R.S.A. § 5-209 (Acceptance of appointment by guardian of minor)"
+  service_required: false
+
+overrides:
+  county_probate:
+    category: case_constant
+    subcategory: county
+    data_type: entity_name
+
+  guardian_name:
+    category: party_attr
+    subcategory: guardian
+    party: guardian
+    data_type: person_name
+
+  # Cross-field consistency: guardian_full_name must match guardian_name
+  # (catches when LLM puts initials in one field and full name in the other).
+  guardian_full_name:
+    category: party_attr
+    subcategory: guardian
+    party: guardian
+    data_type: person_name
+    validators:
+      - "equals_field(guardian_name, relaxed)"
+
+  guardian_address:
+    category: party_attr
+    subcategory: guardian
+    party: guardian
+    data_type: address
+
+  guardian_phone:
+    category: party_attr
+    subcategory: guardian
+    party: guardian
+    data_type: phone
+
+  guardian_email:
+    category: party_attr
+    subcategory: guardian
+    party: guardian
+    data_type: email

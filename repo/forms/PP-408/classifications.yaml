@@ -1,0 +1,99 @@
+# PP-408 — Notice of Disallowance of Claim (conservatorship analog of DE-503).
+# Two attorneys: one for the claimant, one for the conservator.
+
+skill_metadata:
+  filer_role: conservator
+  statutes:
+    - "18-C M.R.S.A. § 5-428 (Conservatorship claims)"
+  service_required: true
+  filing_deadline_days: 60
+  filing_deadline_anchor: "claim_filing_date"
+
+overrides:
+  individual_name:
+    category: party_attr
+    subcategory: individual_under_protection
+    party: individual_under_protection
+    data_type: person_name
+
+  claimant_name:
+    category: party_attr
+    subcategory: claimant
+    party: claimant
+    data_type: person_name
+
+  claimant_address:
+    category: party_attr
+    subcategory: claimant
+    party: claimant
+    data_type: address
+
+  basis_for_claim:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  security_for_claim:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  claimant_attorney_name:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: person_name
+
+  claimant_attorney_address:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: address
+
+  claimant_attorney_phone:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: phone
+
+  claimant_attorney_bar_number:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: bar_number
+
+  claimant_attorney_email:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: email
+
+  conservator_attorney_name:
+    category: party_attr
+    subcategory: attorney_for_conservator
+    party: attorney_for_conservator
+    data_type: person_name
+
+  conservator_attorney_address:
+    category: party_attr
+    subcategory: attorney_for_conservator
+    party: attorney_for_conservator
+    data_type: address
+
+  conservator_attorney_phone:
+    category: party_attr
+    subcategory: attorney_for_conservator
+    party: attorney_for_conservator
+    data_type: phone
+
+  conservator_attorney_bar_number:
+    category: party_attr
+    subcategory: attorney_for_conservator
+    party: attorney_for_conservator
+    data_type: bar_number
+
+  conservator_attorney_email:
+    category: party_attr
+    subcategory: attorney_for_conservator
+    party: attorney_for_conservator
+    data_type: email

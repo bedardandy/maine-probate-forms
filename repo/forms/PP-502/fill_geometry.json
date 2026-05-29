@@ -1,0 +1,257 @@
+{
+  "form_id": "PP-502",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "PP-502 Guardianship Plan-Adult (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            125.0,
+            194.0,
+            142.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            431.0,
+            119.0,
+            543.0,
+            142.0
+          ]
+        }
+      ]
+    },
+    "respondent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            172.0,
+            302.0,
+            196.0
+          ]
+        }
+      ]
+    },
+    "plan_type": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "original",
+          "label": "Original",
+          "page": 0,
+          "rect": [
+            361.3,
+            199.6,
+            369.3,
+            207.6
+          ]
+        },
+        {
+          "value": "revised",
+          "label": "Revised",
+          "page": 0,
+          "rect": [
+            436.0,
+            199.6,
+            444.0,
+            207.6
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            256.0,
+            122.0,
+            269.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            286.0,
+            543.0,
+            406.0
+          ]
+        }
+      ]
+    },
+    "living_arrangement": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            471.0,
+            543.0,
+            588.0
+          ]
+        }
+      ]
+    },
+    "social_educational_activities": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            623.0,
+            543.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "relationships_visits": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            112.0,
+            542.0,
+            226.0
+          ]
+        }
+      ]
+    },
+    "petitioner_visits_communication": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            266.0,
+            542.0,
+            383.0
+          ]
+        }
+      ]
+    },
+    "goals_restoration_rights": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            422.0,
+            542.0,
+            538.0
+          ]
+        }
+      ]
+    },
+    "consistency_with_existing_plan": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            576.0,
+            542.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "petitioner_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            234.0,
+            239.0,
+            255.0
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            236.0,
+            543.0,
+            256.0
+          ]
+        }
+      ]
+    },
+    "order_filing_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            322.0,
+            420.0,
+            338.0
+          ]
+        }
+      ]
+    },
+    "judge_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            498.0,
+            543.0,
+            518.0
+          ]
+        }
+      ]
+    },
+    "judge_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            501.0,
+            217.0,
+            518.0
+          ]
+        }
+      ]
+    }
+  }
+}

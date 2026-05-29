@@ -1,0 +1,28 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+in_re,In Re,W003,text,text,case_constant,in_re,,,8,green,Y,,,case_dict.in_re,populate_from_case_dict
+affiant_name,Affiant Name,W004,text,text,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
+affiant_residence,Affiant Residence,W005,text,text,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
+interested_party_name,Interested Party Name,W007,text,text,party_attr,interested_party,,,0,green,Y,,,interested_party_record.interested_party,
+last_known_whereabouts,Last Known Whereabouts,W008,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_signed,Date Signed,W009,text,signature,signature,date_signed,,,45,orange,,,Y,wet_ink,
+signature_affiant,Signature Affiant,W010,text,signature,signature,signature_affiant,,,5,green,,,Y,wet_ink,
+state_notary,State Notary,W011,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+county_notary,County Notary,W012,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+affiant_name_jurat,Affiant Name Jurat,W013,text,text,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
+day_notary,Day Notary,W014,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+month_notary,Month Notary,W015,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+year_notary,Year Notary,W016,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_signature,Notary Signature,W017,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,
+person_unknown_name,Person Unknown Name,W019,text,person_name,party_attr,person_being_sought,,,8,green,Y,,,person_being_sought_record.person_being_sought,
+family_friends_results,Family Friends Results,W020,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+family_friends_date,Family Friends Date,W021,text,date,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+family_friends_contacted,Family Friends Contacted,W022,text,text,narrative_derived,free_text,,,33,yellow,,Y,,llm_over_narrative,
+internet_results,Internet Results,W023,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+internet_date,Internet Date,W024,text,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+internet_inquiries,Internet Inquiries,W025,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+government_results,Government Results,W026,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+government_agencies,Government Agencies,W027,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+name_not_contacted,Name Not Contacted,W028,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+reason_not_contacting,Reason Not Contacting,W029,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

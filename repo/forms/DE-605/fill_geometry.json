@@ -1,0 +1,291 @@
+{
+  "form_id": "DE-605",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "DE-605 Verified Application for Certificate of Discharge (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            117.0,
+            192.0,
+            133.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            118.0,
+            542.1,
+            134.0
+          ]
+        }
+      ]
+    },
+    "decedent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            149.0,
+            298.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "applicant_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            122.0,
+            213.9,
+            446.0,
+            227.0
+          ]
+        }
+      ]
+    },
+    "applicant_role_if_not_pr": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            181.0,
+            229.0,
+            421.0,
+            241.0
+          ]
+        }
+      ]
+    },
+    "sworn_statement_filed_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            360.0,
+            249.0,
+            542.1,
+            260.0
+          ]
+        }
+      ]
+    },
+    "court_order_closing_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            297.0,
+            263.6,
+            542.1,
+            275.6
+          ]
+        }
+      ]
+    },
+    "appointment_termination_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            399.1,
+            284.0,
+            542.1,
+            295.0
+          ]
+        }
+      ]
+    },
+    "applicant_signature_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            367.0,
+            298.0,
+            387.0
+          ]
+        }
+      ]
+    },
+    "applicant_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            360.0,
+            367.0,
+            542.1,
+            387.0
+          ]
+        }
+      ]
+    },
+    "notary_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            438.0,
+            192.0,
+            458.0
+          ]
+        }
+      ]
+    },
+    "notary_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            399.1,
+            439.3,
+            542.1,
+            457.8
+          ]
+        }
+      ]
+    },
+    "notary_appearer_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            297.0,
+            470.0,
+            477.0,
+            481.0
+          ]
+        }
+      ]
+    },
+    "notary_appearer_role": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            297.0,
+            484.2,
+            477.0,
+            496.2
+          ]
+        }
+      ]
+    },
+    "notary_officer_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            324.0,
+            538.2,
+            542.1,
+            551.2
+          ]
+        }
+      ]
+    },
+    "notary_officer_printed_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            324.0,
+            584.3,
+            542.1,
+            597.3
+          ]
+        }
+      ]
+    },
+    "cert_county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            110.0,
+            177.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "cert_docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            422.0,
+            114.0,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "cert_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            217.0,
+            226.0,
+            237.0
+          ]
+        }
+      ]
+    },
+    "register_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            360.0,
+            217.0,
+            542.0,
+            237.0
+          ]
+        }
+      ]
+    }
+  }
+}

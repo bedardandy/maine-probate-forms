@@ -1,0 +1,59 @@
+{
+  "_comment": "Synthetic conservatorship inventory case. Demonstrates how slot-row narrative_facts map to the form's repeating slot groups (real_prop_1..6, tang_prop_7..17, int_prop_18..25) and how the LLM-fill pipeline interacts with formulas.yaml subtotals.",
+
+  "case_dict": {
+    "county_probate_court": "Penobscot",
+    "docket_no": "2026-PEN-PP-00078",
+    "in_re_individual": "In re Conservatorship of David K. Reilly"
+  },
+
+  "conservator_record": {
+    "conservator": "Marie A. Reilly-Thompson",
+    "appointment_date": "2026-02-15"
+  },
+
+  "narrative_facts": {
+    "individual_name": "David K. Reilly",
+    "individual_dob": "1942-08-30",
+    "inventory_as_of_date": "2026-04-15",
+
+    "real_property": [
+      {
+        "desc": "Primary residence: 124 Mountain View Lane, Bangor, ME 04401 (Tax Map 7, Lot 19, single-family home, 2200 sq ft, 0.6 acres)",
+        "value": 287500.00,
+        "enc": 92400.00,
+        "enc_note": "Mortgage to Bangor Savings Bank, originated 2007"
+      },
+      {
+        "desc": "Vacant lot: 58 Pine Ridge Road, Hampden, ME 04444 (Tax Map 3, Lot 41, 1.2 wooded acres, undeveloped)",
+        "value": 28000.00,
+        "enc": 0.00
+      }
+    ],
+
+    "tangible_personal_property": [
+      { "desc": "2018 Subaru Outback, VIN ending 7244, ~62K miles", "value": 14200.00, "enc": 0.00 },
+      { "desc": "Household furnishings, primary residence (estimate per appraisal 2026-03-10)", "value": 8500.00, "enc": 0.00 },
+      { "desc": "Power tools and woodworking equipment, garage", "value": 3200.00, "enc": 0.00 },
+      { "desc": "Coin collection (1950-1990 US silver dollars), insured", "value": 4400.00, "enc": 0.00 },
+      { "desc": "Jewelry (wedding band, gold chain, three watches)", "value": 2150.00, "enc": 0.00 }
+    ],
+
+    "intangible_personal_property": [
+      { "desc": "Bangor Savings Bank checking acct ****4421 (statement 2026-04-01)", "value": 8742.18, "enc": 0.00 },
+      { "desc": "Bangor Savings Bank savings acct ****7903 (statement 2026-04-01)", "value": 34521.07, "enc": 0.00 },
+      { "desc": "Fidelity brokerage acct ****8810 (mixed equities + bonds, statement 2026-04-01)", "value": 142800.00, "enc": 0.00 },
+      { "desc": "Series I savings bonds, ten $1,000-face issued 2008-2012 (current redemption value)", "value": 18450.00, "enc": 0.00 },
+      { "desc": "Whole life policy, Northwestern Mutual, cash surrender value (illustration 2026-03-12)", "value": 21300.00, "enc": 0.00 }
+    ]
+  },
+
+  "_what_this_exercises": [
+    "Slot-table fill across three section types (real_prop, tang_prop, int_prop)",
+    "formulas.yaml subtotals: gross_value_real_property = sum_slot(real_prop_*_value)",
+    "Cross-section composition: gross_value_personal_property = sum(tang_prop_*_value) + sum(int_prop_*_value)",
+    "Encumbrance handling: real property has a mortgage, personal property has none",
+    "dedupe_within validator: every slot row has a distinct description",
+    "cross_section_dedupe: no real-prop description appears in tang-prop or int-prop"
+  ]
+}

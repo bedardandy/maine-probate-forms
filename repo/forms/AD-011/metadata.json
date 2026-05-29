@@ -1,0 +1,9 @@
+{
+  "form_id": "AD-011",
+  "title": "Pet to Recognize Foreign Adoption",
+  "category": "adoption",
+  "source_url": "http://www.maineprobate.net/forms2019/Adoption/AD-011%20Pet%20to%20Recognize%20Foreign%20Adoption.pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 28,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

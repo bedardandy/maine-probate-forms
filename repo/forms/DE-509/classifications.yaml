@@ -1,0 +1,21 @@
+# DE-509 — Petition to Remove Personal Representative.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 3-611 (Termination of appointment by removal)"
+  service_required: true
+
+overrides:
+  # Date-order: PR was appointed before this removal petition is signed.
+  date_of_appointment:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  date_signed:
+    category: signature
+    subcategory: petitioner_signature_date
+    data_type: date
+    validators:
+      - "date_order(date_of_appointment, >)"

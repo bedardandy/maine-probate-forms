@@ -1,0 +1,62 @@
+# DE-101 — Application for Informal Probate / Appointment (Intestate).
+
+overrides:
+  # Intestate form — testamentary_instrument is by definition not
+  # applicable; treat as external so validator doesn't flag empty.
+  testamentary_instrument:
+    category: external
+    subcategory: not_applicable_intestate
+    data_type: text
+
+  # decedent_full_name vs decedent_name_caption: caption follows the
+  # "Estate of <name>" convention. Use `caption` mode which strips the
+  # standard probate prefixes before comparing.
+  decedent_full_name:
+    category: party_attr
+    subcategory: decedent
+    party: decedent
+    data_type: person_name
+    validators:
+      - "equals_field(decedent_name_caption, caption)"
+
+  # Date-order constraint: decedent's death must follow their birth.
+  decedent_date_of_death:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(decedent_date_of_birth, >)"
+
+  # Three narrative yes/no fields. The form presents them as radio
+  # buttons, so the LLM's output should be `yes` or `no` (validator
+  # accepts truthy/falsy aliases too).
+  non_registered_domestic_partner:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  prior_personal_representative:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  died_more_than_3_years:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+skill_metadata:
+  filer_role: applicant
+  statutes:
+    - "18-C M.R.S.A. § 3-301 (Informal probate)"
+    - "18-C M.R.S.A. § 3-308 (Informal appointment of PR)"
+    - "18-C M.R.S.A. § 3-108 (Three-year statute of repose)"
+  service_required: true
+  filing_deadline_days: 1095
+  filing_deadline_anchor: "decedent_death_date"

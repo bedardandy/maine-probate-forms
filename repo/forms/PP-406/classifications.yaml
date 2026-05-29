@@ -1,0 +1,54 @@
+# PP-406 — Inventory (Conservatorship).
+
+skill_metadata:
+  filer_role: conservator
+  statutes:
+    - "18-C M.R.S.A. § 5-417 (Conservator's inventory)"
+  service_required: true
+  filing_deadline_days: 90
+  filing_deadline_anchor: "appointment_date"
+
+# formula_mode: at_least on the gross_value/calc_gross fields.
+#
+# Rationale: when narrative provides more assets than the form has slots
+# (e.g., 8 real properties + 6 real_prop slots), the legally-correct
+# gross_value includes the addendum-overflow rows. The sum_slot formula
+# only sums the 6 in-form slots, so actual > computed is legitimate.
+# Validator should flag only when actual < in-form-sum (which would
+# indicate a real arithmetic error). See examples/case.overflow.json.
+overrides:
+  gross_value_real_property:
+    formula_mode: at_least
+
+  gross_value_real_encumbrances:
+    formula_mode: at_least
+
+  gross_value_personal_property:
+    formula_mode: at_least
+
+  gross_value_personal_encumbrances:
+    formula_mode: at_least
+
+  calc_gross_real:
+    formula_mode: at_least
+
+  calc_gross_personal:
+    formula_mode: at_least
+
+  calc_gross_inventory:
+    formula_mode: at_least
+
+  calc_gross_real_enc:
+    formula_mode: at_least
+
+  calc_gross_personal_enc:
+    formula_mode: at_least
+
+  calc_gross_inventory_enc:
+    formula_mode: at_least
+
+  # calc_net_inventory = gross - encumbrances. Typically increases when
+  # addendum assets exceed addendum encumbrances (the common case), so
+  # at_least is the right tolerance.
+  calc_net_inventory:
+    formula_mode: at_least

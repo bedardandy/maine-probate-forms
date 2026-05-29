@@ -1,0 +1,20 @@
+# DE-502 — Statement of Informal Probate / Appointment.
+
+skill_metadata:
+  filer_role: register
+  statutes:
+    - "18-C M.R.S.A. § 3-303 (Informal probate — findings)"
+    - "18-C M.R.S.A. § 3-308 (Informal appointment of PR)"
+  service_required: false
+
+overrides:
+  bond_demand:
+    category: narrative_derived
+    subcategory: bond_demand
+    data_type: text
+    validators:
+      - "value_in(no_demand, demanded, waived, court_required, court_assigns)"
+
+  # mailing_method choice set varies by case posture; eval surfaced an
+  # `enclosed_original` value that doesn't fit a clean enum. Pulling the
+  # rule until I confirm the actual radio set against the source form.

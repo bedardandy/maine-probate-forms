@@ -1,0 +1,22 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_name,County Name,,text,text,case_constant,county_name,,,0,green,Y,,,case_dict.county_name,populate_from_case_dict
+docket_number,Docket Number,,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+estate_decedent_name,Estate Decedent Name,,text,person_name,party_attr,decedent,,,0,green,Y,,,decedent_record.decedent,
+decedent_death_date,Decedent Death Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+real_estate_maine,Real Estate Maine,,currency,currency,narrative_derived,asset_value,,,5,green,,Y,,llm_over_narrative,
+tangible_personal_property_maine,Tangible Personal Property Maine,,currency,currency,narrative_derived,asset_value,,,5,green,,Y,,llm_over_narrative,
+intangible_personal_property,Intangible Personal Property,,currency,currency,narrative_derived,asset_value,,,5,green,,Y,,llm_over_narrative,
+total_probate_estate_value,Total Probate Estate Value,,currency,currency,computed,total_probate_estate_value,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+non_mortgage_debts_expenses,Non Mortgage Debts Expenses,,currency,currency,narrative_derived,liability,,,5,green,,Y,,llm_over_narrative,
+net_value_probate_estate,Net Value Probate Estate,,currency,currency,computed,net_value_probate_estate,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+decedent_interest_maine_real_estate,Decedent Interest Maine Real Estate,,currency,currency,narrative_derived,asset_value,,,5,green,,Y,,llm_over_narrative,
+federal_estate_tax_return,Federal Estate Tax Return,,select_one,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+maine_estate_tax_return,Maine Estate Tax Return,,select_one,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+estimated_maine_estate_tax,Estimated Maine Estate Tax,,currency,currency,narrative_derived,tax_estimate,,,5,green,,Y,,llm_over_narrative,"value_range(0, *)"
+cash_collateral_deposited,Cash Collateral Deposited,,select_one,text,narrative_derived,yes_no,,,5,green,,Y,,llm_over_narrative,"value_in(yes, no)"
+applicant_acknowledgment_name,Applicant Acknowledgment Name,,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+applicant_date,Applicant Date,,date,signature,signature,applicant_date,,,5,green,,,Y,wet_ink,
+applicant_signature,Applicant Signature,,text,signature,signature,applicant_signature,,,5,green,,,Y,wet_ink,
+estate_tax_action,Estate Tax Action,,select_one,text,legal_choice,tax_election,,,20,yellow,,,Y,human_decision,
+estate_tax_bond_amount,Estate Tax Bond Amount,,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+judge_date,Judge Date,,date,date,external,judge_date,,,5,green,,,,left_blank,

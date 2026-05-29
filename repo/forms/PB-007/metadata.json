@@ -1,0 +1,9 @@
+{
+  "form_id": "PB-007",
+  "title": "GAL Joint Appt. Order 3.4.20",
+  "category": "guardian_minor",
+  "source_url": "http://www.maineprobate.net/Forms2019/Guardian%20Minor/PB-007%20GAL%20Joint%20Appt.%20Order%203.4.20.pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 87,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

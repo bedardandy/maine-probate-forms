@@ -1,0 +1,77 @@
+# DE-401 — Application for Adjudication of Testacy.
+
+skill_metadata:
+  filer_role: applicant
+  statutes:
+    - "18-C M.R.S.A. § 3-401 (Adjudication of testacy)"
+    - "18-C M.R.S.A. § 3-108 (Three-year statute of repose)"
+    - "36 M.R.S.A. § 4063 (Maine estate tax — 9-month deadline)"
+  service_required: true
+  filing_deadline_days: 1095  # 3-year statute of repose on probate
+  filing_deadline_anchor: "decedent_death_date"
+  # Note: ME estate tax return (if required) has its own 9-month deadline
+  # under 36 M.R.S.A. § 4063 — separate from this form's filing window.
+
+overrides:
+  estate_decedent_name:
+    category: party_attr
+    subcategory: decedent
+    party: decedent
+    data_type: person_name
+
+  real_estate_maine:
+    category: narrative_derived
+    subcategory: asset_value
+    data_type: currency
+
+  tangible_personal_property_maine:
+    category: narrative_derived
+    subcategory: asset_value
+    data_type: currency
+
+  intangible_personal_property:
+    category: narrative_derived
+    subcategory: asset_value
+    data_type: currency
+
+  non_mortgage_debts_expenses:
+    category: narrative_derived
+    subcategory: liability
+    data_type: currency
+
+  # Despite the name, this is the $-value of the decedent's interest
+  # in Maine real estate (not a yes/no question). Qwen-fill flagged a
+  # mis-classification — corrected to currency.
+  decedent_interest_maine_real_estate:
+    category: narrative_derived
+    subcategory: asset_value
+    data_type: currency
+
+  federal_estate_tax_return:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  maine_estate_tax_return:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  estimated_maine_estate_tax:
+    category: narrative_derived
+    subcategory: tax_estimate
+    data_type: currency
+    validators:
+      - "value_range(0, *)"
+
+  estate_tax_action:
+    category: legal_choice
+    subcategory: tax_election
+    data_type: text
+
+  cash_collateral_deposited:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

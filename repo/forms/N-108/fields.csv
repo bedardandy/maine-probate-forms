@@ -1,0 +1,13 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_name,Estate Name,W003,text,text,case_constant,estate_name,,,0,green,Y,,,case_dict.estate_name,populate_from_case_dict
+petitioner_name,Petitioner Name,W004,text,person_name,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,
+petitioner_address,Petitioner Address,W005,text,address,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,
+fiduciary_role,Fiduciary Role,,select_one,text,narrative_derived,free_text,,,33,yellow,,Y,,llm_over_narrative,
+ward_name,Ward Name,W010,text,text,party_attr,ward,,,0,green,Y,,,ward_record.ward,
+ward_status,Ward Status,,select_one,text,narrative_derived,free_text,,,29,yellow,,Y,,llm_over_narrative,
+ward_status_other,Ward Status Other,W014,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+court_order_details,Court Order Details,W016,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+signature,Signature,W017,text,signature,signature,signature,,,5,green,,,Y,wet_ink,
+date,Date,W018,date,text,narrative_derived,free_text,,,37,orange,,Y,,llm_over_narrative,

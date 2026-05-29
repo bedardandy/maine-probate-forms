@@ -1,0 +1,58 @@
+# DE-501 — Petition with Respect to Supervised Administration.
+# The court-side fields (court_order, order_date, judge_name) are
+# completed by the judge after the hearing, NOT by the petitioner.
+# Marking them `external` so the validator catches LLM encroachment.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 3-502 (Supervised administration — petition)"
+    - "18-C M.R.S.A. § 3-501 (Supervised administration — nature)"
+    - "18-C M.R.S.A. § 3-505 (Supervised administration — interim orders)"
+  service_required: true
+
+overrides:
+  # Petitioner-side narrative fields — kept narrative_derived.
+  # testacy_status is a radio set on the form. Maine probate
+  # recognizes four postures: testate (will admitted via informal
+  # probate), intestate (no will), not_yet_determined (probate not
+  # yet opened), adjudicated (formal § 3-401 adjudication has
+  # occurred).
+  testacy_status:
+    category: narrative_derived
+    subcategory: testacy_status
+    data_type: text
+    validators:
+      - "value_in(testate, intestate, not_yet_determined, adjudicated)"
+
+  circumstances:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  supervision_request:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  special_restrictions_details:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  # Court-side fields — filled by the judge after the hearing.
+  court_order:
+    category: external
+    subcategory: court_order
+    data_type: text
+
+  order_date:
+    category: external
+    subcategory: court_order_date
+    data_type: date
+
+  # judge_name is already classified external — left here for clarity.
+  judge_name:
+    category: external
+    subcategory: judge
+    data_type: text

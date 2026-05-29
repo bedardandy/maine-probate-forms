@@ -1,0 +1,11 @@
+# PP-405 — Surety Bond Schedule.
+# The two "gross_value_*" fields look computed by name, but the form does
+# NOT have per-item value cells to sum from. Per-property valuations are
+# stored as free text in the *_value_detail fields (one cell per category).
+# Without summable dependencies in the schema, we can't author a
+# deterministic recompute formula — leave these as LLM-fill targets.
+#
+# See classifications.yaml — these are promoted to narrative_derived so
+# the validator skips recompute and the LLM is the source of truth.
+
+formulas: {}

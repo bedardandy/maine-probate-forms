@@ -1,0 +1,19 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket Number,W002,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+in_re_subject,In Re Subject,W003,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_name_address_email,Petitioner Name Address Email,W004,text,text,party_attr,petitioner,,,12,green,Y,,,petitioner_record.petitioner,
+factual_legal_issues_in_dispute,Factual Legal Issues In Dispute,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+proof_and_evidence,Proof And Evidence,W006,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petition_date,Petition Date,W007,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_or_attorney_signature,Petitioner Or Attorney Signature,W008,text,signature,signature,petitioner_or_attorney_signature,,,5,green,,,Y,wet_ink,
+attorney_signature_rule_11,Attorney Signature Rule 11,W009,text,text,narrative_derived,repeating_slot,attorney_signature,11,20,yellow,,Y,,llm_over_narrative,
+attorney_name,Attorney Name,W010,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W011,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,W013,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,W014,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,W015,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+order_disposition,Order Disposition,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+allowed_in_part_amount,Allowed In Part Amount,W020,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+order_date,Order Date,W021,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+judge_signature,Judge Signature,W022,text,signature,signature,judge_signature,,,13,green,,,Y,wet_ink,

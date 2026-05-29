@@ -1,0 +1,53 @@
+# NC-001 — Petition for Name Change of Minor.
+
+overrides:
+  provided_documents:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  new_minor_name:
+    category: party_attr
+    subcategory: minor_new_name
+    party: minor
+    data_type: person_name
+
+  # Cross-field consistency: minor_full_name and minor_name should match.
+  minor_full_name:
+    category: party_attr
+    subcategory: minor
+    party: minor
+    data_type: person_name
+    validators:
+      - "equals_field(minor_name, relaxed)"
+
+  reason_for_change:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  copetitioner_printed_name:
+    category: party_attr
+    subcategory: copetitioner
+    party: copetitioner
+    data_type: person_name
+    validators:
+      - "equals_field(copetitioner_name, relaxed)"
+
+  copetitioner_printed_address:
+    category: party_attr
+    subcategory: copetitioner
+    party: copetitioner
+    data_type: address
+
+  copetitioner_printed_phone:
+    category: party_attr
+    subcategory: copetitioner
+    party: copetitioner
+    data_type: phone
+
+  copetitioner_printed_email:
+    category: party_attr
+    subcategory: copetitioner
+    party: copetitioner
+    data_type: email

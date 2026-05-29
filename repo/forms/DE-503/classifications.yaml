@@ -1,0 +1,99 @@
+# DE-503 — Notice of Disallowance of Claim Against Estate.
+# Two attorney contacts (one for claimant, one for PR), plus a few
+# claim-specific narrative fields.
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-806 (Allowance of claims)"
+  service_required: true
+  filing_deadline_days: 60
+  filing_deadline_anchor: "claim_filing_date"
+
+overrides:
+  residence_and_date_of_death:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  amount_claimed:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  basis_for_claim:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  # Date-order: claim due date follows notice mailing per § 3-806.
+  notice_mailed_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  date_claim_due:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(notice_mailed_date, >)"
+
+  decision_by_personal_representative:
+    category: legal_choice
+    subcategory: disposition
+    data_type: text
+
+  attorney_for_claimant_name:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: person_name
+
+  attorney_for_claimant_address:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: address
+
+  attorney_for_claimant_phone:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: phone
+
+  attorney_for_claimant_bar_number:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: bar_number
+
+  attorney_for_claimant_email:
+    category: party_attr
+    subcategory: attorney_for_claimant
+    party: attorney_for_claimant
+    data_type: email
+
+  attorney_for_personal_rep_name:
+    category: party_attr
+    subcategory: attorney_for_pr
+    party: attorney_for_personal_representative
+    data_type: person_name
+
+  attorney_for_personal_rep_address:
+    category: party_attr
+    subcategory: attorney_for_pr
+    party: attorney_for_personal_representative
+    data_type: address
+
+  attorney_for_personal_rep_phone:
+    category: party_attr
+    subcategory: attorney_for_pr
+    party: attorney_for_personal_representative
+    data_type: phone
+
+  attorney_for_personal_rep_bar_number:
+    category: party_attr
+    subcategory: attorney_for_pr
+    party: attorney_for_personal_representative
+    data_type: bar_number

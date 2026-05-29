@@ -1,0 +1,22 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+in_re,In Re,W003,text,text,case_constant,in_re,,,20,yellow,Y,,,case_dict.in_re,populate_from_case_dict
+motion_for,Motion For,W004,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+movant_name_address,Movant Name Address,W006,text,text,party_attr,movant,,,0,green,Y,,,movant_record.movant,
+relationship_basis,Relationship Basis,W008,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+particular_reasons,Particular Reasons,W009,text,text,narrative_derived,free_text,,,17,yellow,,Y,,llm_over_narrative,
+motion_to_continue_reasons,Motion To Continue Reasons,W010,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+motion_to_continue_contact_status,Motion To Continue Contact Status,,select_many,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+motion_to_continue_explanation,Motion To Continue Explanation,W016,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+movant_printed_name,Movant Printed Name,W017,text,text,party_attr,movant,,,48,orange,Y,,,movant_record.movant,
+motion_date,Motion Date,W018,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+certificate_of_service_name,Certificate Of Service Name,W019,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+service_recipients,Service Recipients,W020,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+service_date,Service Date,W021,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+movant_signature,Movant Signature,W022,text,signature,signature,movant_signature,,,5,green,,,Y,wet_ink,
+attorney_bar_no,Attorney Bar No,W023,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,W024,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+order_decision,Order Decision,,select_one,text,external,court_order,,,5,green,,,,left_blank,
+order_date,Order Date,W027,date,date,external,court_order_date,,,5,green,,,,left_blank,
+judge_signature,Judge Signature,W028,text,signature,signature,judge_signature,,,45,orange,,,Y,wet_ink,

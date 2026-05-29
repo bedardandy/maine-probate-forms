@@ -1,0 +1,374 @@
+{
+  "form_id": "PP-209",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "PP-209 Interim and Annual Report of Guardian (Rev. 07-01-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            86.0,
+            111.0,
+            190.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            114.0,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "individual_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            86.0,
+            148.0,
+            311.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "report_type": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "interim",
+          "label": "Interim",
+          "page": 0,
+          "rect": [
+            360.5,
+            158.9,
+            368.5,
+            166.9
+          ]
+        },
+        {
+          "value": "annual",
+          "label": "Annual",
+          "page": 0,
+          "rect": [
+            418.6,
+            158.9,
+            426.6,
+            166.9
+          ]
+        }
+      ]
+    },
+    "guardianship_grant_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            391.0,
+            194.0,
+            501.0,
+            214.0
+          ]
+        }
+      ]
+    },
+    "full_legal_name_address_location": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            263.6,
+            542.0,
+            306.0
+          ]
+        }
+      ]
+    },
+    "current_mental_physical_social_condition": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            321.1,
+            542.0,
+            374.0
+          ]
+        }
+      ]
+    },
+    "living_arrangements": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            391.0,
+            542.0,
+            453.0
+          ]
+        }
+      ]
+    },
+    "supported_decision_making_services": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            494.0,
+            542.0,
+            569.0
+          ]
+        }
+      ]
+    },
+    "guardian_visits": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            597.0,
+            542.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "actions_taken_by_guardian": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            86.4,
+            540.0,
+            150.0
+          ]
+        }
+      ]
+    },
+    "individual_participation_in_decision_making": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            168.0,
+            540.0,
+            230.0
+          ]
+        }
+      ]
+    },
+    "facility_plan_consistency": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            272.0,
+            540.0,
+            334.0
+          ]
+        }
+      ]
+    },
+    "gifts_received_from_individual": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            374.0,
+            540.0,
+            469.0
+          ]
+        }
+      ]
+    },
+    "business_relationships": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            502.0,
+            540.0,
+            610.0
+          ]
+        }
+      ]
+    },
+    "guardian_fees": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            628.0,
+            540.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "delegated_powers": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            97.9,
+            540.0,
+            183.0
+          ]
+        }
+      ]
+    },
+    "plan_deviation_and_revision": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            225.0,
+            540.0,
+            299.0
+          ]
+        }
+      ]
+    },
+    "future_care_plans": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            317.0,
+            540.0,
+            392.0
+          ]
+        }
+      ]
+    },
+    "recommendation_for_continued_guardianship": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            420.0,
+            540.0,
+            495.0
+          ]
+        }
+      ]
+    },
+    "co_guardian_status": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            524.0,
+            540.0,
+            586.0
+          ]
+        }
+      ]
+    },
+    "guardian_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            97.0,
+            623.0,
+            228.0,
+            646.0
+          ]
+        }
+      ]
+    },
+    "guardian_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            627.0,
+            540.0,
+            647.0
+          ]
+        }
+      ]
+    },
+    "co_guardian_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            97.0,
+            649.8,
+            228.0,
+            661.8
+          ]
+        }
+      ]
+    },
+    "co_guardian_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            661.3,
+            540.0,
+            681.0
+          ]
+        }
+      ]
+    }
+  }
+}

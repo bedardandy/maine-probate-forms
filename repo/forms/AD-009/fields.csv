@@ -1,0 +1,20 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+probate_county,Probate County,,text,text,case_constant,probate_county,,,0,green,Y,,,case_dict.probate_county,populate_from_case_dict
+district_location,District Location,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+probate_docket_no,Probate Docket No,,text,docket_number,case_constant,docket_no_probate,,,0,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
+district_docket_no,District Docket No,,text,docket_number,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
+adoptee_name,Adoptee Name,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+counselor_name,Counselor Name,,text,person_name,party_attr,counselor,,,0,green,Y,,,counselor_record.counselor,
+counselor_affiliation,Counselor Affiliation,,select_one,text,party_attr,counselor_affiliation,,,0,green,Y,,,counselor_record.counselor_affiliation,
+agency_name,Agency Name,,text,entity_name,party_attr,agency,,,0,green,Y,,,agency_record.agency,
+counselee_name,Counselee Name,,text,person_name,party_attr,counselee,,,8,green,Y,,,counselee_record.counselee,
+counseling_topic,Counseling Topic,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+surrender_recipient,Surrender Recipient,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+refusal_parent_name,Refusal Parent Name,,text,person_name,party_attr,refusal_parent,,,0,green,Y,,,refusal_parent_record.refusal_parent,
+date_signed,Date Signed,,date,signature,signature,date_signed,,,25,yellow,,,Y,wet_ink,
+signature,Signature,,text,signature,signature,signature,,,5,green,,,Y,wet_ink,
+counselor_name_title,Counselor Name Title,,text,text,party_attr,counselor,,,0,green,Y,,,counselor_record.counselor,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_appearer,Notary Appearer,W020,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

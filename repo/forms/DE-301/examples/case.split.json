@@ -1,0 +1,86 @@
+{
+  "_comment": "Synthetic DE-301 case where applicant != appointee. Petitioner (sister of decedent) is asking the court to appoint a corporate trustee (Bath Savings Trust Co.) as PR — common when the estate is complex or contentious. Demonstrates that applicant_full_legal_name and person_whose_appointment_is_sought are DIFFERENT — the pipeline must NOT duplicate.",
+
+  "case_dict": {
+    "county_probate_court": "Kennebec",
+    "docket_no": "2026-KEN-2026-00422",
+    "estate_of_decedent": "Estate of Charles W. Tilton"
+  },
+
+  "applicant_record": {
+    "applicant": "Rebecca M. Tilton",
+    "applicant_address": "78 Stillwater Road",
+    "applicant_city": "Augusta",
+    "applicant_state": "ME",
+    "applicant_zip": "04330",
+    "applicant_phone": "(207) 555-0901",
+    "applicant_email": "rmt@example.com",
+    "applicant_legal_interest": "heir"
+  },
+
+  "appointee_record": {
+    "appointee": "Bath Savings Trust Company, by James L. Hartwell, Trust Officer",
+    "appointee_type": "corporate_trustee",
+    "appointee_address": "100 Front Street, Bath, ME 04530",
+    "_note": "Appointee is a corporate trustee, not a natural person. The form's person_whose_appointment_is_sought accepts an entity name; the trust officer is identified parenthetically."
+  },
+
+  "decedent_record": {
+    "decedent": "Charles W. Tilton",
+    "decedent_date_of_birth": "1939-11-30",
+    "decedent_date_of_death": "2026-01-04",
+    "decedent_domicile": "412 State Street, Augusta, ME 04330"
+  },
+
+  "attorney_record": {
+    "attorney_name": "Brian K. Lockhart",
+    "attorney_address": "55 Western Avenue, Augusta, ME 04330",
+    "attorney_phone": "(207) 555-0633",
+    "attorney_bar_number": "5118",
+    "attorney_email": "blockhart@example.com"
+  },
+
+  "notary_record": {
+    "notary_name": "Lisa A. Pomeroy",
+    "notary_title": "Notary Public, Maine"
+  },
+
+  "narrative_facts": {
+    "venue": {
+      "domiciled_in_county": true,
+      "_note": "Decedent domiciled in Kennebec County — venue under § 3-201"
+    },
+
+    "will_posture": {
+      "will_presented_for_probate": true,
+      "will_details": "Will dated 2009-07-12 with codicils dated 2014-03-08 and 2019-11-22; both codicils witnessed and self-proved.",
+      "nominated_as_pr_in_will": false,
+      "_note": "Decedent's will named his late wife as PR (predeceased him in 2022); successor PR nomination was contingent on his children, none of whom are willing or able to serve. Will permits the court to appoint any qualified successor."
+    },
+
+    "appointment_sought": {
+      "person_whose_appointment_is_sought": "Bath Savings Trust Company, by James L. Hartwell, Trust Officer",
+      "appointee_is_applicant": false,
+      "_reason_for_corporate_trustee": "Estate has 14 disputed heirs (two prior marriages + cohabiting partner + adopted stepchildren), commercial real estate holdings in three counties, an active business interest (Tilton Tractor Sales, 51% ownership), and an ongoing wrongful-death action where decedent was the defendant. Family agreement: corporate trustee minimizes intra-family conflict and has the operational capacity to manage the business."
+    },
+
+    "special_admin": {
+      "special_admin_requested": false
+    },
+
+    "relationships": {
+      "applicant_to_decedent": "sister — one of 4 surviving siblings; not an heir under the will (decedent had children) but is interested party as the sibling who organized the family agreement",
+      "other_heirs": "Five surviving adult children (2 from first marriage, 3 from second), cohabiting partner Margaret O. Tilton (not a registered domestic partner under Maine law), four adopted stepchildren from the second marriage — all named/served separately."
+    }
+  },
+
+  "_what_this_exercises_beyond_case_example": [
+    "applicant != appointee (the central distinction from case.example.json)",
+    "Corporate appointee — non-natural-person value for person_whose_appointment_is_sought",
+    "nominated_as_pr_in_will=no — the negative branch of the testate posture",
+    "applicant_legal_interest='heir' — but the applicant is NOT being appointed; she's just the interested-party petitioner",
+    "Validators expected to NOT fire on equals_field for person_whose_appointment_is_sought (no such rule encoded) but the pipeline must understand the difference",
+    "applicant_signature_name STILL matches applicant_full_legal_name (Rebecca, not Bath Savings) — the applicant is the affiant signing the petition",
+    "notary_appearer_name STILL matches applicant_full_legal_name — Rebecca is the one appearing before the notary"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "maine-probate-forms-marketplace",
+  "interface": {
+    "displayName": "Maine Probate Forms"
+  },
+  "plugins": [
+    {
+      "name": "maine-probate-forms",
+      "source": {
+        "source": "local",
+        "path": "."
+      },
+      "policy": {
+        "installation": "manual",
+        "authentication": "none"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

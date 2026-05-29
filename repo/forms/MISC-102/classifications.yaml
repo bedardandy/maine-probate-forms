@@ -1,0 +1,95 @@
+# MISC-102 — Subpoena (form residuals after auto-classifier).
+
+overrides:
+  commanded_to_name:
+    category: party_attr
+    subcategory: commanded_party
+    party: commanded_party
+    data_type: person_name
+
+  commanded_to_address:
+    category: party_attr
+    subcategory: commanded_party
+    party: commanded_party
+    data_type: address
+
+  produce_designated_things:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  produce_time:
+    category: narrative_derived
+    subcategory: time_text
+    data_type: text
+
+  produce_additional:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  permit_designated_things:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  permit_time_place:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  issued_on_behalf_of:
+    category: party_attr
+    subcategory: requesting_party
+    party: requesting_party
+    data_type: person_name
+
+  objection_notice_party:
+    category: party_attr
+    subcategory: objection_recipient
+    party: objection_recipient
+    data_type: text
+
+  register_attorney:
+    category: party_attr
+    subcategory: register_attorney
+    party: register_attorney
+    data_type: text
+
+  county_page2:
+    category: case_constant
+    subcategory: county
+    data_type: entity_name
+
+  fees_travel:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  # Date-order: subpoena issued < appear date; subpoena issued < produce date.
+  # Both compliance dates must follow service of the subpoena.
+  subpoena_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  appear_probate_court_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(subpoena_date, >)"
+
+  appear_before_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(subpoena_date, >)"
+
+  produce_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(subpoena_date, >)"

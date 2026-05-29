@@ -1,0 +1,27 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+in_re,In Re,W003,text,text,case_constant,in_re,,,0,green,Y,,,case_dict.in_re,populate_from_case_dict
+petitioner_attorney_info,Petitioner Attorney Info,W004,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+respondent_attorney_info,Respondent Attorney Info,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appellant_attorney_info,Appellant Attorney Info,W006,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+reason_for_transcript,Reason For Transcript,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+reference_specification,Reference Specification,W009,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+proceeding_type,Proceeding Type,,select_one,checkbox,legal_choice,proceeding_type,,,20,yellow,,,Y,human_decision,
+other_proceeding_specification,Other Proceeding Specification,W018,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_civil_proceeding_specification,Other Civil Proceeding Specification,W020,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+payment_method,Payment Method,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+hearing_1_date,Hearing 1 Date,W031,text,date,narrative_derived,repeating_slot,hearing,1,20,yellow,,Y,,llm_over_narrative,
+hearing_1_proceeding,Hearing 1 Proceeding,W032,text,text,narrative_derived,repeating_slot,hearing,1,20,yellow,,Y,,llm_over_narrative,
+hearing_1_reporter,Hearing 1 Reporter,W033,text,text,narrative_derived,repeating_slot,hearing,1,20,yellow,,Y,,llm_over_narrative,
+hearing_2_date,Hearing 2 Date,W034,text,date,narrative_derived,repeating_slot,hearing,2,20,yellow,,Y,,llm_over_narrative,
+hearing_2_proceeding,Hearing 2 Proceeding,W035,text,text,narrative_derived,repeating_slot,hearing,2,20,yellow,,Y,,llm_over_narrative,
+hearing_2_reporter,Hearing 2 Reporter,W036,text,text,narrative_derived,repeating_slot,hearing,2,20,yellow,,Y,,llm_over_narrative,
+hearing_3_date,Hearing 3 Date,W037,text,date,narrative_derived,repeating_slot,hearing,3,20,yellow,,Y,,llm_over_narrative,
+hearing_3_proceeding,Hearing 3 Proceeding,W038,text,text,narrative_derived,repeating_slot,hearing,3,20,yellow,,Y,,llm_over_narrative,
+hearing_3_reporter,Hearing 3 Reporter,W039,text,text,narrative_derived,repeating_slot,hearing,3,20,yellow,,Y,,llm_over_narrative,
+hearing_4_date,Hearing 4 Date,W040,text,date,narrative_derived,repeating_slot,hearing,4,76,red,,Y,,llm_over_narrative,
+hearing_4_proceeding,Hearing 4 Proceeding,W041,text,text,narrative_derived,repeating_slot,hearing,4,76,red,,Y,,llm_over_narrative,
+hearing_4_reporter,Hearing 4 Reporter,W042,text,text,narrative_derived,repeating_slot,hearing,4,48,orange,,Y,,llm_over_narrative,
+dated,Dated,W043,text,signature,signature,dated,,,5,green,,,Y,wet_ink,
+individual_requesting,Individual Requesting,W044,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

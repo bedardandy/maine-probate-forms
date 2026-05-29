@@ -1,0 +1,57 @@
+# PP-412 — Periodic Report of Conservator.
+
+skill_metadata:
+  filer_role: conservator
+  statutes:
+    - "18-C M.R.S.A. § 5-418 (Conservator's reports)"
+  service_required: true
+  filing_deadline_days: 365
+  filing_deadline_anchor: "appointment_anniversary"
+
+overrides:
+  individual_name:
+    category: party_attr
+    subcategory: individual_under_protection
+    party: individual_under_protection
+    data_type: person_name
+
+  report_period_start:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  report_period_end:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  services_provided:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  recommended_changes:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  de_minimis_value_received:
+    category: narrative_derived
+    subcategory: financial_disclosure
+    data_type: currency
+
+  business_relation_provider:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  business_relation_paid:
+    category: narrative_derived
+    subcategory: financial_disclosure
+    data_type: currency
+
+  conservator_printed_name:
+    category: party_attr
+    subcategory: conservator
+    party: conservator
+    data_type: person_name

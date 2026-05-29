@@ -1,0 +1,29 @@
+# AF-105 — Financial Affidavit (Indigency).
+# Three computed totals.
+#
+# Note on medical_support_total: only one `medical_support_payments` field
+# exists on this form, so the total equals that single value. If the form
+# revision adds more medical-support rows, expand this to a sum.
+
+formulas:
+  total_cash_assets:
+    op: add
+    args:
+      - {op: field, id: cash_on_hand}
+      - {op: field, id: checking_amount}
+      - {op: field, id: savings_amount}
+      - {op: field, id: stocks_bonds_amount}
+      - {op: field, id: bail_amount}
+      - {op: field, id: other_assets_amount}
+
+  total_living_expenses:
+    op: add
+    args:
+      - {op: field, id: food_expenses}
+      - {op: field, id: housing_expenses}
+      - {op: field, id: utilities_expenses}
+      - {op: field, id: other_living_expenses}
+
+  medical_support_total:
+    op: field
+    id: medical_support_payments

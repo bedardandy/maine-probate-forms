@@ -1,0 +1,70 @@
+# DE-405 computed-field formulas.
+#
+# Per-field formula expressions interpreted by validate_filled.py.
+# Embedded into schema.json by build_form_schema.py.
+#
+# Expression grammar (recursive JSON):
+#   {op: const, value: <number>}
+#   {op: field, id: <field_id>}
+#   {op: sum_slot, prefix: <p>, suffix: <s>, from: <int>, to: <int>}
+#   {op: add | sub | mul | div | min | max, args: [<expr>, ...]}
+#   {op: abs, arg: <expr>}
+#   {op: if, cond: <bool_expr>, then: <expr>, else: <expr>}
+#
+# Currency values are normalized (commas/$ stripped) before evaluation.
+
+formulas:
+  gross_value_real_property:
+    op: sum_slot
+    prefix: real_prop
+    suffix: val
+    from: 1
+    to: 6
+
+  gross_value_real_encumbrances:
+    op: sum_slot
+    prefix: real_prop
+    suffix: enc
+    from: 1
+    to: 6
+
+  gross_value_personal_property:
+    op: add
+    args:
+      - {op: sum_slot, prefix: tang,   suffix: val, from: 7,  to: 16}
+      - {op: sum_slot, prefix: intang, suffix: val, from: 18, to: 25}
+
+  gross_value_personal_encumbrances:
+    op: add
+    args:
+      - {op: sum_slot, prefix: tang,   suffix: enc, from: 7,  to: 16}
+      - {op: sum_slot, prefix: intang, suffix: enc, from: 18, to: 25}
+
+  calc_gross_real_property:
+    op: field
+    id: gross_value_real_property
+
+  calc_gross_personal_property:
+    op: field
+    id: gross_value_personal_property
+
+  calc_gross_inventory:
+    op: add
+    args:
+      - {op: field, id: calc_gross_real_property}
+      - {op: field, id: calc_gross_personal_property}
+
+  calc_gross_real_encumbrances:
+    op: field
+    id: gross_value_real_encumbrances
+
+  calc_gross_personal_encumbrances:
+    op: field
+    id: gross_value_personal_encumbrances
+
+  calc_net_inventory:
+    op: sub
+    args:
+      - {op: field, id: calc_gross_inventory}
+      - {op: field, id: calc_gross_real_encumbrances}
+      - {op: field, id: calc_gross_personal_encumbrances}

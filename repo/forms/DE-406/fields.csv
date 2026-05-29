@@ -1,0 +1,32 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+decedent_name,Decedent Name,W003,text,text,case_constant,decedent_name,,,0,green,Y,,,case_dict.decedent_name,populate_from_case_dict
+accounting_number,Accounting Number,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+period_begin,Period Begin,W004,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+period_end,Period End,W006,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+inventory_date,Inventory Date,W007,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+inventory_completed_date,Inventory Completed Date,W008,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+inventory_filed_date,Inventory Filed Date,W009,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+prior_accounts_filed,Prior Accounts Filed,W010,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+tangible_personal_property_value,Tangible Personal Property Value,W011,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+real_estate_value,Real Estate Value,W012,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+intangible_personal_property_value,Intangible Personal Property Value,W013,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+total_inventory_value,Total Inventory Value,W014,currency,currency,computed,total_inventory_value,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+income_amount,Income Amount,W015,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+expenses_amount,Expenses Amount,W016,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+exemptions_allowances_amount,Exemptions Allowances Amount,W017,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+distributions_amount,Distributions Amount,W018,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+current_tangible_balance,Current Tangible Balance,W019,currency,currency,narrative_derived,current_balance,,,5,green,,Y,,llm_over_narrative,
+current_intangible_balance,Current Intangible Balance,W020,currency,currency,narrative_derived,current_balance,,,5,green,,Y,,llm_over_narrative,
+current_total_balance,Current Total Balance,W021,currency,currency,computed,balance,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+maine_estate_tax_status,Maine Estate Tax Status,,select_one,text,narrative_derived,tax_status,,,5,green,,Y,,llm_over_narrative,"value_in(required, not_required, extension_requested, filed, paid)"
+pr_name,Pr Name,W026,text,person_name,party_attr,personal_representative,,,0,green,Y,,,personal_representative_record.personal_representative,
+pr_date,Pr Date,W027,date,signature,signature,pr_date,,,5,green,,,Y,wet_ink,
+copr_name,Copr Name,W028,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+copr_date,Copr Date,W029,date,signature,signature,copr_date,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,W030,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W031,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,W033,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,W034,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,W035,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,

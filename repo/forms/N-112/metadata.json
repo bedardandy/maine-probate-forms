@@ -1,0 +1,9 @@
+{
+  "form_id": "N-112",
+  "title": "Notice of Intent to Register Guardianship or Conservatorship",
+  "category": "notices",
+  "source_url": "http://www.maineprobate.net/forms2019/Notices/N-112%20Notice%20of%20Intent%20to%20Register%20Guardianship%20or%20Conservatorship.pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 18,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

@@ -1,0 +1,43 @@
+# PP-505 — Court-Ordered Evaluation Report.
+
+overrides:
+  office_address:
+    category: party_attr
+    subcategory: evaluator_office
+    party: evaluator
+    data_type: address
+
+  cognitive_functional_abilities:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  mental_physical_condition_evaluation:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  prognosis_recommendation:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  guardian_appointment_opinion:
+    category: narrative_derived
+    subcategory: opinion
+    data_type: text
+
+  guardian_tasks_sufficient_capacity:
+    category: narrative_derived
+    subcategory: opinion
+    data_type: text
+
+  conservator_appointment_opinion:
+    category: narrative_derived
+    subcategory: opinion
+    data_type: text
+
+  conservator_tasks_sufficient_capacity:
+    category: narrative_derived
+    subcategory: opinion
+    data_type: text

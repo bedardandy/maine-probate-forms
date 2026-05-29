@@ -1,0 +1,230 @@
+# AF-105 — Financial Affidavit (statement of financial means).
+# Most overrides set the data_type so the currency/date/contact contracts
+# fire in validate_filled.py. Parties: "form_subject" (the affiant) and
+# "spouse" since this form is filled by an individual not a court office.
+
+overrides:
+  party_name:
+    category: party_attr
+    subcategory: form_subject
+    party: form_subject
+    data_type: person_name
+
+  phone:
+    category: party_attr
+    subcategory: form_subject_phone
+    party: form_subject
+    data_type: phone
+
+  address:
+    category: party_attr
+    subcategory: form_subject_address
+    party: form_subject
+    data_type: address
+
+  living_arrangement_other:
+    category: narrative_derived
+    subcategory: radio_other_specify
+    data_type: text
+
+  marital_status:
+    category: narrative_derived
+    subcategory: marital_status
+    data_type: text
+    validators:
+      - "value_in(single, married, divorced, widowed, separated, civil_union)"
+
+  living_arrangement:
+    category: narrative_derived
+    subcategory: living_arrangement
+    data_type: text
+    validators:
+      - "value_in(own, rent, parent_home, room_or_board, institutional, alone, with_relatives, other)"
+
+  employer_name_address:
+    category: party_attr
+    subcategory: employer
+    party: form_subject_employer
+    data_type: text
+
+  length_employed:
+    category: narrative_derived
+    subcategory: duration_text
+    data_type: text
+
+  spouse_name:
+    category: party_attr
+    subcategory: spouse
+    party: spouse
+    data_type: person_name
+
+  spouse_address:
+    category: party_attr
+    subcategory: spouse
+    party: spouse
+    data_type: address
+
+  spouse_dependents_count:
+    category: narrative_derived
+    subcategory: integer_count
+    data_type: number
+
+  spouse_employed:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  money_owed_to_party:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  own_real_estate:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  real_estate_market_value:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  mortgage_holder:
+    category: narrative_derived
+    subcategory: entity_reference
+    data_type: entity_name
+
+  vehicle_value:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  vehicle_title_holder:
+    category: narrative_derived
+    subcategory: party_reference
+    data_type: text
+
+  vehicle_registration:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  other_personal_property:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  insurance_pension_value:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  food_expenses:
+    category: narrative_derived
+    subcategory: monthly_expense
+    data_type: currency
+
+  housing_expenses:
+    category: narrative_derived
+    subcategory: monthly_expense
+    data_type: currency
+
+  utilities_expenses:
+    category: narrative_derived
+    subcategory: monthly_expense
+    data_type: currency
+
+  other_living_expenses:
+    category: narrative_derived
+    subcategory: monthly_expense
+    data_type: currency
+
+  medical_support_payments:
+    category: narrative_derived
+    subcategory: monthly_expense
+    data_type: currency
+
+  medical_support_total:
+    category: computed
+    subcategory: medical_support_total
+    data_type: currency
+
+  additional_statement:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  party_date:
+    category: signature
+    subcategory: party_signature_date
+    data_type: date
+
+  notary_appeared_name:
+    category: party_attr
+    subcategory: notary
+    party: notary
+    data_type: person_name
+
+  notary_date:
+    category: signature
+    subcategory: notary_date
+    data_type: date
+
+  # The eight `*_period` fields are pay-period radio sets — the form
+  # presents weekly / biweekly / semi_monthly / monthly / annually.
+  # `none` is acceptable when the corresponding income line is $0.
+  salary_wages_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  unemployment_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  social_security_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  tanf_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  alimony_child_support_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  other_income_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  spouse_income_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+
+  spouse_income_available_period:
+    category: narrative_derived
+    subcategory: pay_period
+    data_type: text
+    validators:
+      - "value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"

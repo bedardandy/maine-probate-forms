@@ -1,0 +1,9 @@
+{
+  "form_id": "N-108",
+  "title": "Waiver of Notice on Behalf of Minor or Individual Subject to G-C",
+  "category": "notices",
+  "source_url": "http://www.maineprobate.net/forms2019/Notices/N-108%20Waiver%20of%20Notice%20on%20Behalf%20of%20Minor%20or%20Individual%20Subject%20to%20G-C%20(Rev.%206-25-23).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 12,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

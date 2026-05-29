@@ -1,0 +1,66 @@
+# DE-301 — Petition for Formal Probate of Will / Appointment of PR.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 3-401 (Formal testacy proceedings)"
+    - "18-C M.R.S.A. § 3-108 (Three-year statute of repose)"
+  service_required: true
+  filing_deadline_days: 1095
+  filing_deadline_anchor: "decedent_death_date"
+
+overrides:
+  # Date-order: applicant signs the petition AFTER decedent's death.
+  date_of_death:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  applicant_signature_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(date_of_death, >)"
+
+  domicile_of_decedent:
+    category: narrative_derived
+    subcategory: address
+    data_type: address
+
+  domiciled_in_county:
+    category: legal_choice
+    subcategory: venue
+    data_type: checkbox
+
+  venue_basis_if_not_domiciled:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  person_whose_appointment_is_sought:
+    category: party_attr
+    subcategory: appointee
+    party: appointee
+    data_type: person_name
+
+  nominated_as_pr_in_will:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  applicant_signature_name:
+    category: signature
+    subcategory: applicant_signature_print
+    data_type: person_name
+    validators:
+      - "equals_field(applicant_full_legal_name, relaxed)"
+
+  # Applicant appears before notary, so notary_appearer_name should match.
+  notary_appearer_name:
+    category: party_attr
+    subcategory: notary_appearer
+    party: notary
+    data_type: person_name
+    validators:
+      - "equals_field(applicant_full_legal_name, relaxed)"

@@ -1,0 +1,26 @@
+{
+  "default":     {"base": "cf", "stages": [1, 2, 3, 4]},
+
+  "_comment_v2_wins": "From Stage 1.D winner table — these forms beat fused by >=5 issues. Use v2 layout + CF checkboxes only.",
+  "PB-007":      {"base": "v2", "stages": [1]},
+  "AF-105":      {"base": "v2", "stages": [1]},
+  "DE-405":      {"base": "v2", "stages": [1]},
+  "PP-401":      {"base": "v2", "stages": [1]},
+  "DE-403":      {"base": "v2", "stages": [1]},
+  "DE-506":      {"base": "v2", "stages": [1]},
+  "MISC-102":    {"base": "v2", "stages": [1]},
+  "PP-506":      {"base": "v2", "stages": [1]},
+  "N-115":       {"base": "v2", "stages": [1]},
+  "AF-104":      {"base": "v2", "stages": [1]},
+  "CN-1":        {"base": "v2", "stages": [1]},
+  "DE-301(I)":   {"base": "v2", "stages": [1]},
+  "DE-602":      {"base": "v2", "stages": [1]},
+  "AF-102":      {"base": "v2", "stages": [1]},
+  "DE-601":      {"base": "v2", "stages": [1]},
+  "PP-209":      {"base": "v2", "stages": [1]},
+  "PP-405":      {"base": "v2", "stages": [1]},
+  "DE-406":      {"base": "v2", "stages": [1]},
+  "PP-407":      {"base": "v2", "stages": [1]},
+  "DE-104":      {"base": "v2", "stages": [1]},
+  "N-118":       {"base": "v2", "stages": [1]}
+}

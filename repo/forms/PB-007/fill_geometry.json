@@ -1,0 +1,1894 @@
+{
+  "form_id": "PB-007",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 4,
+  "source_fused": "PB-007 GAL Joint Appt. Order 3.4.20_fused.pdf",
+  "fields": {
+    "county_probate": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            89.4,
+            91.7,
+            198.0,
+            103.7
+          ]
+        }
+      ]
+    },
+    "docket_no_probate": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            104.8,
+            106.2,
+            198.0,
+            118.2
+          ]
+        }
+      ]
+    },
+    "district_court_location": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            91.7,
+            558.1,
+            103.7
+          ]
+        }
+      ]
+    },
+    "docket_no_district": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            431.6,
+            106.2,
+            558.1,
+            118.2
+          ]
+        }
+      ]
+    },
+    "case_title": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            150.3,
+            241.0,
+            162.3
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            164.8,
+            241.0,
+            177.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            182.0,
+            241.1,
+            194.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            54.0,
+            196.0,
+            241.0,
+            208.0
+          ]
+        }
+      ]
+    },
+    "appointment_level": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "limited_purpose",
+          "label": "Limited-Purpose",
+          "page": 0,
+          "rect": [
+            314.7,
+            181.7,
+            324.7,
+            191.7
+          ]
+        },
+        {
+          "value": "limited_purpose",
+          "label": "Limited-Purpose",
+          "page": 0,
+          "rect": [
+            72.4,
+            696.0,
+            82.4,
+            706.0
+          ]
+        },
+        {
+          "value": "standard",
+          "label": "Standard",
+          "page": 0,
+          "rect": [
+            406.8,
+            181.7,
+            416.8,
+            191.7
+          ]
+        },
+        {
+          "value": "standard",
+          "label": "Standard",
+          "page": 1,
+          "rect": [
+            72.4,
+            163.6,
+            82.4,
+            173.6
+          ]
+        },
+        {
+          "value": "expanded",
+          "label": "Expanded",
+          "page": 0,
+          "rect": [
+            464.2,
+            181.7,
+            474.2,
+            191.7
+          ]
+        },
+        {
+          "value": "expanded",
+          "label": "Expanded",
+          "page": 1,
+          "rect": [
+            72.6,
+            327.3,
+            82.6,
+            337.3
+          ]
+        }
+      ]
+    },
+    "minor_children_names": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            265.7,
+            556.4,
+            277.7
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            278.9,
+            556.4,
+            290.9
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            292.1,
+            557.0,
+            304.1
+          ]
+        }
+      ]
+    },
+    "gal_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            156.4,
+            318.6,
+            556.5,
+            330.6
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            213.2,
+            331.8,
+            553.5,
+            343.8
+          ]
+        }
+      ]
+    },
+    "gal_contact_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            212.1,
+            345.0,
+            552.1,
+            357.0
+          ]
+        }
+      ]
+    },
+    "gal_roster_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "on_roster",
+          "label": "On roster of qualified Maine GALs",
+          "page": 0,
+          "rect": [
+            72.6,
+            372.3,
+            82.6,
+            382.3
+          ]
+        },
+        {
+          "value": "unrostered_attorney",
+          "label": "Qualified attorney not on roster",
+          "page": 0,
+          "rect": [
+            72.6,
+            386.5,
+            82.6,
+            396.5
+          ]
+        }
+      ]
+    },
+    "good_cause_findings": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "skills_experience",
+          "label": "Necessary skills and experience",
+          "page": 0,
+          "rect": [
+            86.1,
+            413.7,
+            96.1,
+            423.7
+          ]
+        },
+        {
+          "value": "other_qualifications",
+          "label": "Other qualifications",
+          "page": 0,
+          "rect": [
+            87.9,
+            427.8,
+            97.9,
+            437.8
+          ]
+        }
+      ]
+    },
+    "other_qualifications_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            182.8,
+            427.9,
+            547.8,
+            439.9
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            101.7,
+            441.2,
+            546.6,
+            453.2
+          ]
+        }
+      ]
+    },
+    "objection_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "none",
+          "label": "No party objects",
+          "page": 0,
+          "rect": [
+            72.6,
+            468.5,
+            82.6,
+            478.5
+          ]
+        }
+      ]
+    },
+    "objecting_parties_appointment": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "petitioner",
+          "label": "Petitioner",
+          "page": 0,
+          "rect": [
+            72.6,
+            482.6,
+            82.6,
+            492.6
+          ]
+        },
+        {
+          "value": "respondent",
+          "label": "Respondent",
+          "page": 0,
+          "rect": [
+            128.9,
+            482.6,
+            138.9,
+            492.6
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            193.6,
+            482.6,
+            203.6,
+            492.6
+          ]
+        }
+      ]
+    },
+    "other_objector_name_appointment": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            236.9,
+            482.7,
+            376.7,
+            494.7
+          ]
+        }
+      ]
+    },
+    "appointment_factors": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            76.6,
+            509.2,
+            556.6,
+            521.2
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            76.6,
+            522.4,
+            556.0,
+            534.4
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            76.6,
+            535.6,
+            521.5,
+            547.6
+          ]
+        }
+      ]
+    },
+    "objecting_parties_fee": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "petitioner",
+          "label": "Petitioner",
+          "page": 0,
+          "rect": [
+            77.1,
+            549.6,
+            87.1,
+            559.6
+          ]
+        },
+        {
+          "value": "respondent",
+          "label": "Respondent",
+          "page": 0,
+          "rect": [
+            133.3,
+            549.6,
+            143.3,
+            559.6
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            198.2,
+            549.6,
+            208.2,
+            559.6
+          ]
+        }
+      ]
+    },
+    "other_objector_name_fee": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            241.0,
+            549.6,
+            381.0,
+            561.6
+          ]
+        }
+      ]
+    },
+    "fee_factors": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            131.8,
+            576.2,
+            557.0,
+            588.2
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            76.6,
+            589.5,
+            556.0,
+            601.5
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            76.6,
+            602.7,
+            556.7,
+            614.7
+          ]
+        }
+      ]
+    },
+    "limited_duties": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            73.0,
+            723.3,
+            473.2,
+            743.1
+          ]
+        }
+      ]
+    },
+    "limited_hearing_appearance": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "interim",
+          "label": "Interim hearing",
+          "page": 1,
+          "rect": [
+            201.9,
+            56.7,
+            211.9,
+            66.7
+          ]
+        },
+        {
+          "value": "final",
+          "label": "Final hearing",
+          "page": 1,
+          "rect": [
+            280.8,
+            56.7,
+            290.8,
+            66.7
+          ]
+        }
+      ]
+    },
+    "limited_other_provisions": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            266.5,
+            83.7,
+            556.8,
+            95.7
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            86.7,
+            96.9,
+            556.7,
+            108.9
+          ]
+        }
+      ]
+    },
+    "standard_other_provisions": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            272.4,
+            244.9,
+            557.4,
+            256.9
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            86.7,
+            258.2,
+            556.7,
+            270.2
+          ]
+        }
+      ]
+    },
+    "expanded_duties": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            85.6,
+            367.6,
+            555.7,
+            379.6
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            86.7,
+            380.8,
+            556.7,
+            392.8
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            86.7,
+            394.0,
+            556.7,
+            406.0
+          ]
+        }
+      ]
+    },
+    "expanded_interview_teachers": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.1,
+            457.3,
+            96.1,
+            467.3
+          ]
+        }
+      ]
+    },
+    "expanded_interview_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            85.6,
+            471.1,
+            555.7,
+            483.1
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            86.7,
+            484.3,
+            556.7,
+            496.3
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            86.7,
+            495.8,
+            556.7,
+            507.8
+          ]
+        }
+      ]
+    },
+    "expanded_review_records_1": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            88.1,
+            516.1,
+            98.1,
+            526.1
+          ]
+        }
+      ]
+    },
+    "expanded_person_1_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            133.3,
+            516.2,
+            263.3,
+            528.2
+          ]
+        }
+      ]
+    },
+    "expanded_record_types_1": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "mental_health",
+          "label": "Mental health",
+          "page": 1,
+          "rect": [
+            273.3,
+            516.1,
+            283.3,
+            526.1
+          ]
+        },
+        {
+          "value": "medical_educational",
+          "label": "Medical and/or educational",
+          "page": 1,
+          "rect": [
+            342.4,
+            516.1,
+            352.4,
+            526.1
+          ]
+        }
+      ]
+    },
+    "expanded_review_records_2": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.0,
+            534.1,
+            96.0,
+            544.1
+          ]
+        }
+      ]
+    },
+    "expanded_person_2_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            131.2,
+            534.1,
+            261.0,
+            546.1
+          ]
+        }
+      ]
+    },
+    "expanded_record_types_2": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "mental_health",
+          "label": "Mental health",
+          "page": 1,
+          "rect": [
+            271.3,
+            534.1,
+            281.3,
+            544.1
+          ]
+        },
+        {
+          "value": "medical_educational",
+          "label": "Medical and/or educational",
+          "page": 1,
+          "rect": [
+            340.6,
+            534.1,
+            350.6,
+            544.1
+          ]
+        }
+      ]
+    },
+    "expanded_review_records_3": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            87.0,
+            554.5,
+            97.0,
+            564.5
+          ]
+        }
+      ]
+    },
+    "expanded_person_3_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            132.1,
+            554.5,
+            262.1,
+            566.5
+          ]
+        }
+      ]
+    },
+    "expanded_record_types_3": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "mental_health",
+          "label": "Mental health",
+          "page": 1,
+          "rect": [
+            272.3,
+            554.5,
+            282.3,
+            564.5
+          ]
+        },
+        {
+          "value": "medical_educational",
+          "label": "Medical and/or educational",
+          "page": 1,
+          "rect": [
+            341.4,
+            554.5,
+            351.4,
+            564.5
+          ]
+        }
+      ]
+    },
+    "expanded_engage_provider": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.1,
+            574.9,
+            96.1,
+            584.9
+          ]
+        }
+      ]
+    },
+    "expanded_provider_type": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "medical",
+          "label": "Medical",
+          "page": 1,
+          "rect": [
+            175.9,
+            574.9,
+            185.9,
+            584.9
+          ]
+        },
+        {
+          "value": "mental_health",
+          "label": "Mental health",
+          "page": 1,
+          "rect": [
+            222.7,
+            574.9,
+            232.7,
+            584.9
+          ]
+        },
+        {
+          "value": "educational",
+          "label": "Educational",
+          "page": 1,
+          "rect": [
+            291.8,
+            574.9,
+            301.8,
+            584.9
+          ]
+        }
+      ]
+    },
+    "expanded_evaluation_subject": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            437.8,
+            574.9,
+            553.0,
+            586.9
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            85.6,
+            586.4,
+            235.4,
+            598.4
+          ]
+        }
+      ]
+    },
+    "expanded_evaluation_deadline": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            250.5,
+            586.4,
+            320.6,
+            598.4
+          ]
+        }
+      ]
+    },
+    "expanded_evaluation_cost": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            487.4,
+            586.4,
+            552.6,
+            598.4
+          ]
+        }
+      ]
+    },
+    "expanded_arrange_counseling": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.1,
+            601.0,
+            96.1,
+            611.0
+          ]
+        }
+      ]
+    },
+    "expanded_counseling_deadline": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            112.4,
+            601.1,
+            212.3,
+            613.1
+          ]
+        }
+      ]
+    },
+    "expanded_counseling_children": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            436.6,
+            601.1,
+            551.8,
+            613.1
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            85.6,
+            612.6,
+            550.7,
+            624.6
+          ]
+        }
+      ]
+    },
+    "expanded_subpoena": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.1,
+            627.1,
+            96.1,
+            637.1
+          ]
+        }
+      ]
+    },
+    "expanded_contact_person": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.1,
+            641.7,
+            96.1,
+            651.7
+          ]
+        }
+      ]
+    },
+    "expanded_contact_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            468.8,
+            641.9,
+            554.4,
+            653.9
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            85.6,
+            653.4,
+            555.5,
+            665.4
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            85.6,
+            664.9,
+            555.7,
+            676.9
+          ]
+        }
+      ]
+    },
+    "expanded_mediation_appearance": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "mediation_in_person",
+          "label": "Mediation (in person)",
+          "page": 1,
+          "rect": [
+            86.1,
+            679.5,
+            96.1,
+            689.5
+          ]
+        },
+        {
+          "value": "status_telephonic",
+          "label": "Status conference (telephonically)",
+          "page": 1,
+          "rect": [
+            140.2,
+            679.5,
+            150.2,
+            689.5
+          ]
+        },
+        {
+          "value": "other_court_events",
+          "label": "Other court-related events",
+          "page": 1,
+          "rect": [
+            269.3,
+            679.5,
+            279.3,
+            689.5
+          ]
+        },
+        {
+          "value": "listed_events",
+          "label": "Events listed below",
+          "page": 1,
+          "rect": [
+            447.3,
+            679.5,
+            457.3,
+            689.5
+          ]
+        }
+      ]
+    },
+    "expanded_other_events": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            180.4,
+            691.0,
+            550.5,
+            703.0
+          ]
+        }
+      ]
+    },
+    "expanded_other_duties": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            86.1,
+            705.6,
+            96.1,
+            715.6
+          ]
+        }
+      ]
+    },
+    "expanded_other_duties_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            152.7,
+            705.7,
+            552.9,
+            717.7
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            717.2,
+            552.8,
+            729.2
+          ]
+        }
+      ]
+    },
+    "expanded_other_provisions": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            298.9,
+            53.5,
+            553.6,
+            65.5
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            65.0,
+            552.4,
+            77.0
+          ]
+        }
+      ]
+    },
+    "appointment_end_event": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "interim_hearing",
+          "label": "End of interim hearing",
+          "page": 2,
+          "rect": [
+            247.0,
+            140.6,
+            257.0,
+            150.6
+          ]
+        },
+        {
+          "value": "final_hearing",
+          "label": "End of final hearing",
+          "page": 2,
+          "rect": [
+            325.8,
+            140.6,
+            335.8,
+            150.6
+          ]
+        },
+        {
+          "value": "final_judgment",
+          "label": "Entry of final judgment",
+          "page": 2,
+          "rect": [
+            394.2,
+            140.6,
+            404.2,
+            150.6
+          ]
+        },
+        {
+          "value": "further_order",
+          "label": "Further order of the court",
+          "page": 2,
+          "rect": [
+            63.9,
+            155.3,
+            73.9,
+            165.3
+          ]
+        },
+        {
+          "value": "specific_date",
+          "label": "Specific date",
+          "page": 2,
+          "rect": [
+            214.2,
+            155.3,
+            224.2,
+            165.3
+          ]
+        }
+      ]
+    },
+    "appointment_end_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            238.8,
+            155.3,
+            353.7,
+            167.3
+          ]
+        }
+      ]
+    },
+    "report_requirement": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "none",
+          "label": "No written report required",
+          "page": 2,
+          "rect": [
+            63.6,
+            204.3,
+            73.6,
+            214.3
+          ]
+        },
+        {
+          "value": "summary_report",
+          "label": "Summary written/oral report",
+          "page": 2,
+          "rect": [
+            63.6,
+            219.0,
+            73.6,
+            229.0
+          ]
+        },
+        {
+          "value": "full_report_14_days",
+          "label": "Full written report 14 days before hearing",
+          "page": 2,
+          "rect": [
+            63.6,
+            245.2,
+            73.6,
+            255.2
+          ]
+        },
+        {
+          "value": "full_report_14_days",
+          "label": "Full written report 14 days before hearing",
+          "page": 2,
+          "rect": [
+            351.6,
+            245.3,
+            361.6,
+            255.3
+          ]
+        },
+        {
+          "value": "full_report_date",
+          "label": "Full written report by specific date",
+          "page": 2,
+          "rect": [
+            63.6,
+            245.2,
+            73.6,
+            255.2
+          ]
+        },
+        {
+          "value": "full_report_date",
+          "label": "Full written report by specific date",
+          "page": 2,
+          "rect": [
+            63.6,
+            259.9,
+            73.6,
+            269.9
+          ]
+        }
+      ]
+    },
+    "summary_report_deadline": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            171.9,
+            230.5,
+            396.6,
+            242.5
+          ]
+        }
+      ]
+    },
+    "full_report_deadline_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            75.6,
+            259.8,
+            170.5,
+            271.8
+          ]
+        }
+      ]
+    },
+    "report_issues": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            49.4,
+            311.6,
+            554.4,
+            323.6
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            49.4,
+            323.1,
+            554.5,
+            335.1
+          ]
+        }
+      ]
+    },
+    "probate_fee_rate": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            102.2,
+            449.6,
+            142.1,
+            461.6
+          ]
+        }
+      ]
+    },
+    "probate_fee_hours": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            256.0,
+            450.0,
+            306.0,
+            461.0
+          ]
+        }
+      ]
+    },
+    "fee_structure": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "flat_fee",
+          "label": "Flat fee",
+          "page": 2,
+          "rect": [
+            95.1,
+            527.5,
+            105.1,
+            537.5
+          ]
+        },
+        {
+          "value": "hourly_cap",
+          "label": "Hourly rate with cap",
+          "page": 2,
+          "rect": [
+            95.1,
+            565.1,
+            105.1,
+            575.1
+          ]
+        }
+      ]
+    },
+    "flat_fee_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            177.6,
+            539.0,
+            227.5,
+            551.0
+          ]
+        }
+      ]
+    },
+    "flat_fee_additional": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            216.0,
+            550.5,
+            276.2,
+            562.5
+          ]
+        }
+      ]
+    },
+    "hourly_cap_total": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            408.6,
+            565.1,
+            468.4,
+            577.1
+          ]
+        }
+      ]
+    },
+    "hourly_cap_hours": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            127.3,
+            576.7,
+            177.2,
+            588.7
+          ]
+        }
+      ]
+    },
+    "hourly_rate": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            364.7,
+            576.7,
+            419.6,
+            588.7
+          ]
+        }
+      ]
+    },
+    "hourly_additional_cap": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            181.6,
+            599.7,
+            256.4,
+            611.7
+          ]
+        }
+      ]
+    },
+    "payment_method": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "lump_sum",
+          "label": "Lump sum by date",
+          "page": 2,
+          "rect": [
+            108.6,
+            625.7,
+            118.6,
+            635.7
+          ]
+        },
+        {
+          "value": "periodic_bill",
+          "label": "Periodic billing",
+          "page": 2,
+          "rect": [
+            108.6,
+            663.3,
+            118.6,
+            673.3
+          ]
+        },
+        {
+          "value": "periodic_payment",
+          "label": "Periodic payment per week/month",
+          "page": 3,
+          "rect": [
+            126.6,
+            56.6,
+            136.6,
+            66.6
+          ]
+        }
+      ]
+    },
+    "lump_sum_deadline": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            183.6,
+            625.8,
+            258.6,
+            637.8
+          ]
+        }
+      ]
+    },
+    "petitioner_lump_sum": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            390.4,
+            625.8,
+            450.3,
+            637.8
+          ]
+        }
+      ]
+    },
+    "respondent_lump_sum": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            637.3,
+            183.0,
+            649.3
+          ]
+        }
+      ]
+    },
+    "other_lump_sum_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            218.7,
+            637.3,
+            348.5,
+            649.3
+          ]
+        }
+      ]
+    },
+    "other_lump_sum_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            401.7,
+            637.3,
+            466.6,
+            649.3
+          ]
+        }
+      ]
+    },
+    "billing_frequency": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "monthly",
+          "label": "Monthly",
+          "page": 2,
+          "rect": [
+            396.8,
+            663.4,
+            406.8,
+            673.4
+          ]
+        },
+        {
+          "value": "bi_weekly",
+          "label": "Bi-weekly",
+          "page": 2,
+          "rect": [
+            447.7,
+            663.4,
+            457.7,
+            673.4
+          ]
+        }
+      ]
+    },
+    "petitioner_percent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            218.4,
+            678.1,
+            258.5,
+            690.1
+          ]
+        }
+      ]
+    },
+    "respondent_percent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            409.7,
+            678.1,
+            444.6,
+            690.1
+          ]
+        }
+      ]
+    },
+    "other_percent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            169.7,
+            689.6,
+            304.4,
+            701.6
+          ]
+        }
+      ]
+    },
+    "other_percent_amount": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            351.1,
+            689.6,
+            396.0,
+            701.6
+          ]
+        }
+      ]
+    },
+    "payment_days": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "14_days",
+          "label": "14 days",
+          "page": 2,
+          "rect": [
+            126.4,
+            715.7,
+            136.4,
+            725.7
+          ]
+        },
+        {
+          "value": "35_days",
+          "label": "35 days",
+          "page": 2,
+          "rect": [
+            151.3,
+            715.7,
+            161.3,
+            725.7
+          ]
+        }
+      ]
+    },
+    "petitioner_periodic_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            224.1,
+            56.6,
+            274.0,
+            68.6
+          ]
+        }
+      ]
+    },
+    "petitioner_periodic_frequency": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "week",
+          "label": "Week",
+          "page": 3,
+          "rect": [
+            291.4,
+            56.7,
+            301.4,
+            66.7
+          ]
+        },
+        {
+          "value": "month",
+          "label": "Month",
+          "page": 3,
+          "rect": [
+            328.8,
+            56.7,
+            338.8,
+            66.7
+          ]
+        }
+      ]
+    },
+    "respondent_periodic_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            185.0,
+            70.6,
+            240.0,
+            83.0
+          ]
+        }
+      ]
+    },
+    "respondent_periodic_frequency": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "week",
+          "label": "Week",
+          "page": 3,
+          "rect": [
+            258.6,
+            71.3,
+            268.6,
+            81.3
+          ]
+        },
+        {
+          "value": "month",
+          "label": "Month",
+          "page": 3,
+          "rect": [
+            297.0,
+            71.3,
+            307.0,
+            81.3
+          ]
+        }
+      ]
+    },
+    "other_periodic_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            171.9,
+            85.9,
+            296.7,
+            97.9
+          ]
+        }
+      ]
+    },
+    "other_periodic_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            353.0,
+            85.3,
+            413.0,
+            98.0
+          ]
+        }
+      ]
+    },
+    "other_periodic_frequency": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "week",
+          "label": "Week",
+          "page": 3,
+          "rect": [
+            433.2,
+            86.0,
+            443.2,
+            96.0
+          ]
+        },
+        {
+          "value": "month",
+          "label": "Month",
+          "page": 3,
+          "rect": [
+            473.6,
+            86.0,
+            483.6,
+            96.0
+          ]
+        }
+      ]
+    },
+    "judge_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            78.1,
+            603.5,
+            178.0,
+            615.5
+          ]
+        }
+      ]
+    },
+    "judge_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            342.1,
+            603.5,
+            556.9,
+            615.5
+          ]
+        }
+      ]
+    }
+  }
+}

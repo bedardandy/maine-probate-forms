@@ -1,0 +1,933 @@
+{
+  "form_id": "PP-413",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "PP-413 Petition for Termination_ Removal or Resignation (Rev. 9-12-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            110.0,
+            201.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            117.0,
+            552.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "respondent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            149.0,
+            322.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "petition_type": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "termination_of_guardian",
+          "label": "TERMINATION OF GUARDIAN",
+          "page": 0,
+          "rect": [
+            361.0,
+            170.9,
+            368.0,
+            177.9
+          ]
+        },
+        {
+          "value": "termination_of_conservator",
+          "label": "TERMINATION OF CONSERVATOR",
+          "page": 0,
+          "rect": [
+            361.0,
+            182.4,
+            368.0,
+            189.4
+          ]
+        },
+        {
+          "value": "removal_of_guardian",
+          "label": "REMOVAL OF GUARDIAN",
+          "page": 0,
+          "rect": [
+            361.0,
+            193.8,
+            368.0,
+            200.8
+          ]
+        },
+        {
+          "value": "removal_of_conservator",
+          "label": "REMOVAL OF CONSERVATOR",
+          "page": 0,
+          "rect": [
+            361.0,
+            205.3,
+            368.0,
+            212.3
+          ]
+        },
+        {
+          "value": "resignation_of_guardian",
+          "label": "RESIGNATION OF GUARDIAN",
+          "page": 0,
+          "rect": [
+            361.0,
+            216.8,
+            368.0,
+            223.8
+          ]
+        },
+        {
+          "value": "resignation_of_conservator",
+          "label": "RESIGNATION OF CONSERVATOR",
+          "page": 0,
+          "rect": [
+            361.0,
+            228.3,
+            368.0,
+            235.3
+          ]
+        }
+      ]
+    },
+    "petitioner_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            298.2,
+            552.0,
+            330.0
+          ]
+        }
+      ]
+    },
+    "petitioner_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            344.0,
+            552.0,
+            364.0
+          ]
+        }
+      ]
+    },
+    "respondent_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            390.1,
+            552.0,
+            431.0
+          ]
+        }
+      ]
+    },
+    "belief_reason_termination": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.8,
+            458.4,
+            115.8,
+            465.4
+          ]
+        }
+      ]
+    },
+    "termination_reasons_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            470.5,
+            552.0,
+            523.0
+          ]
+        }
+      ]
+    },
+    "belief_reason_removal": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            109.0,
+            527.3,
+            116.0,
+            534.3
+          ]
+        }
+      ]
+    },
+    "removal_reasons_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            539.4,
+            552.0,
+            592.0
+          ]
+        }
+      ]
+    },
+    "belief_reason_resignation": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            109.0,
+            596.3,
+            116.0,
+            603.3
+          ]
+        }
+      ]
+    },
+    "resignation_reasons_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            608.4,
+            552.0,
+            662.0
+          ]
+        }
+      ]
+    },
+    "new_guardianship_required": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 0,
+          "rect": [
+            351.1,
+            665.3,
+            358.1,
+            672.3
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 0,
+          "rect": [
+            383.8,
+            665.3,
+            390.8,
+            672.3
+          ]
+        }
+      ]
+    },
+    "new_guardianship_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            689.0,
+            552.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "visitor_type": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "visitor",
+          "label": "Visitor",
+          "page": 1,
+          "rect": [
+            180.2,
+            74.3,
+            187.2,
+            81.3
+          ]
+        },
+        {
+          "value": "guardian_ad_litem",
+          "label": "Guardian ad litem",
+          "page": 1,
+          "rect": [
+            224.2,
+            74.3,
+            231.2,
+            81.3
+          ]
+        },
+        {
+          "value": "attorney",
+          "label": "Attorney",
+          "page": 1,
+          "rect": [
+            321.4,
+            74.3,
+            328.4,
+            81.3
+          ]
+        }
+      ]
+    },
+    "visitor_required": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 1,
+          "rect": [
+            417.2,
+            74.3,
+            424.2,
+            81.3
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 1,
+          "rect": [
+            452.5,
+            74.3,
+            459.5,
+            81.3
+          ]
+        }
+      ]
+    },
+    "visitor_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            120.9,
+            542.0,
+            186.0
+          ]
+        }
+      ]
+    },
+    "notify_person_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            233.5,
+            203.8,
+            269.3
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            233.5,
+            385.7,
+            269.3
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            233.5,
+            545.2,
+            269.3
+          ]
+        }
+      ]
+    },
+    "notify_person_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            269.3,
+            203.8,
+            304.3
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            269.3,
+            385.7,
+            304.3
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            269.3,
+            545.2,
+            304.3
+          ]
+        }
+      ]
+    },
+    "notify_person_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            304.3,
+            203.8,
+            339.4
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            304.3,
+            385.7,
+            339.4
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            304.3,
+            545.2,
+            339.4
+          ]
+        }
+      ]
+    },
+    "notify_person_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            339.4,
+            203.8,
+            375.1
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            339.4,
+            385.7,
+            375.1
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            339.4,
+            545.2,
+            375.1
+          ]
+        }
+      ]
+    },
+    "notify_person_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            375.1,
+            203.8,
+            410.2
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            375.1,
+            385.7,
+            410.2
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            375.1,
+            545.2,
+            410.2
+          ]
+        }
+      ]
+    },
+    "notify_person_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            410.2,
+            203.8,
+            446.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            410.2,
+            385.7,
+            446.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            410.2,
+            545.2,
+            446.0
+          ]
+        }
+      ]
+    },
+    "notify_person_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            446.0,
+            203.8,
+            481.8
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            446.0,
+            385.7,
+            481.8
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            446.0,
+            545.2,
+            481.8
+          ]
+        }
+      ]
+    },
+    "notify_person_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            481.8,
+            203.8,
+            516.8
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            481.8,
+            385.7,
+            516.8
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            481.8,
+            545.2,
+            516.8
+          ]
+        }
+      ]
+    },
+    "notify_person_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            516.8,
+            203.8,
+            552.6
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            516.8,
+            385.7,
+            552.6
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            516.8,
+            545.2,
+            552.6
+          ]
+        }
+      ]
+    },
+    "notify_person_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            552.6,
+            203.8,
+            588.5
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            552.6,
+            385.7,
+            588.5
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            552.6,
+            545.2,
+            588.5
+          ]
+        }
+      ]
+    },
+    "notify_person_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.4,
+            588.5,
+            203.8,
+            624.2
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            203.8,
+            588.5,
+            385.7,
+            624.2
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            385.7,
+            588.5,
+            545.2,
+            624.2
+          ]
+        }
+      ]
+    },
+    "interpreter_required": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 1,
+          "rect": [
+            265.0,
+            661.4,
+            272.0,
+            668.4
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 1,
+          "rect": [
+            295.7,
+            661.4,
+            302.7,
+            668.4
+          ]
+        }
+      ]
+    },
+    "requested_orders": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "termination_order",
+          "label": "A judicial finding and order that the guardianship and/or conservatorship is terminated.",
+          "page": 2,
+          "rect": [
+            109.0,
+            97.2,
+            116.0,
+            104.2
+          ]
+        },
+        {
+          "value": "removal_order",
+          "label": "A judicial finding and order that the current guardian and/or conservator be removed.",
+          "page": 2,
+          "rect": [
+            109.0,
+            108.7,
+            116.0,
+            115.7
+          ]
+        },
+        {
+          "value": "resignation_order",
+          "label": "A judicial finding and order that the guardian\u2019s and/or conservator\u2019s resignation be accepted by the Court.",
+          "page": 2,
+          "rect": [
+            109.0,
+            120.2,
+            116.0,
+            127.2
+          ]
+        },
+        {
+          "value": "bond_discharge_order",
+          "label": "A judicial finding and order for discharge of a bond.",
+          "page": 2,
+          "rect": [
+            109.0,
+            143.3,
+            116.0,
+            150.3
+          ]
+        }
+      ]
+    },
+    "filing_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            98.0,
+            202.0,
+            230.0,
+            221.0
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            202.0,
+            541.0,
+            221.0
+          ]
+        }
+      ]
+    },
+    "co_petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            235.9,
+            541.0,
+            256.0
+          ]
+        }
+      ]
+    },
+    "attorney_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            324.0,
+            270.4,
+            541.0,
+            290.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            360.5,
+            230.0,
+            377.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            388.3,
+            230.0,
+            406.0
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            417.4,
+            230.0,
+            435.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            446.3,
+            230.0,
+            463.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            474.4,
+            230.0,
+            491.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            502.3,
+            230.0,
+            519.0
+          ]
+        }
+      ]
+    }
+  }
+}

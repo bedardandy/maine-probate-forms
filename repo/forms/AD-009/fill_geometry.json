@@ -1,0 +1,323 @@
+{
+  "form_id": "AD-009",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 1,
+  "source_fused": "AD-009 Certificate of Counseling_fused.pdf",
+  "fields": {
+    "probate_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            92.0,
+            76.9,
+            208.0,
+            88.9
+          ]
+        }
+      ]
+    },
+    "district_location": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            431.0,
+            76.9,
+            546.0,
+            88.9
+          ]
+        }
+      ]
+    },
+    "probate_docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            92.0,
+            89.5,
+            208.0,
+            101.5
+          ]
+        }
+      ]
+    },
+    "district_docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            431.0,
+            89.5,
+            546.0,
+            101.5
+          ]
+        }
+      ]
+    },
+    "adoptee_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            53.0,
+            140.1,
+            269.0,
+            152.1
+          ]
+        }
+      ]
+    },
+    "counselor_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            92.0,
+            187.0,
+            301.0,
+            200.0
+          ]
+        }
+      ]
+    },
+    "counselor_affiliation": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "dhhs",
+          "label": "Caseworker/counselor with the Maine Department of Health and Human Services",
+          "page": 0,
+          "rect": [
+            90.8,
+            218.2,
+            100.8,
+            228.2
+          ]
+        },
+        {
+          "value": "agency",
+          "label": "Caseworker/counselor with a duly licensed child-placing agency in Maine",
+          "page": 0,
+          "rect": [
+            90.8,
+            262.7,
+            100.8,
+            272.7
+          ]
+        }
+      ]
+    },
+    "agency_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            238.0,
+            262.0,
+            479.0,
+            274.0
+          ]
+        }
+      ]
+    },
+    "counselee_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            92.0,
+            336.4,
+            329.0,
+            348.4
+          ]
+        }
+      ]
+    },
+    "counseling_topic": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "consent",
+          "label": "This parent's consent to the above-captioned adoption",
+          "page": 0,
+          "rect": [
+            126.8,
+            365.4,
+            136.8,
+            375.4
+          ]
+        },
+        {
+          "value": "surrender",
+          "label": "This parent's surrender and release of the above-named child for adoption",
+          "page": 0,
+          "rect": [
+            126.8,
+            395.4,
+            136.8,
+            405.4
+          ]
+        },
+        {
+          "value": "refusal",
+          "label": "This parent has refused to accept counseling",
+          "page": 0,
+          "rect": [
+            126.8,
+            439.9,
+            136.8,
+            449.9
+          ]
+        }
+      ]
+    },
+    "surrender_recipient": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            126.0,
+            410.6,
+            329.0,
+            422.6
+          ]
+        }
+      ]
+    },
+    "refusal_parent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            238.0,
+            439.0,
+            479.0,
+            452.0
+          ]
+        }
+      ]
+    },
+    "date_signed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            92.0,
+            483.0,
+            191.0,
+            496.0
+          ]
+        }
+      ]
+    },
+    "signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            342.0,
+            483.0,
+            546.0,
+            495.0
+          ]
+        }
+      ]
+    },
+    "counselor_name_title": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            342.0,
+            513.5,
+            546.0,
+            525.5
+          ]
+        }
+      ]
+    },
+    "notary_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            53.0,
+            572.0,
+            208.0,
+            585.0
+          ]
+        }
+      ]
+    },
+    "notary_appearer": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            208.0,
+            606.0,
+            408.0,
+            619.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            53.0,
+            623.0,
+            269.0,
+            636.0
+          ]
+        }
+      ]
+    },
+    "notary_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            92.0,
+            692.0,
+            208.0,
+            705.0
+          ]
+        }
+      ]
+    },
+    "notary_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            238.0,
+            692.0,
+            479.0,
+            705.0
+          ]
+        }
+      ]
+    }
+  }
+}

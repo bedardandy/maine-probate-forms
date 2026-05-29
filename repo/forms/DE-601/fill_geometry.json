@@ -1,0 +1,375 @@
+{
+  "form_id": "DE-601",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "DE-601 Petition for Order of Complete Settlement (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            111.0,
+            176.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            119.0,
+            543.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "estate_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            104.0,
+            145.0,
+            270.0,
+            157.0
+          ]
+        }
+      ]
+    },
+    "petitioner_contact": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            217.5,
+            543.0,
+            257.6
+          ]
+        }
+      ]
+    },
+    "petitioner_interest": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "personal_representative",
+          "label": "Personal Representative named in the Will",
+          "page": 0,
+          "rect": [
+            90.5,
+            273.8,
+            98.5,
+            281.8
+          ]
+        },
+        {
+          "value": "surviving_spouse",
+          "label": "Surviving spouse",
+          "page": 0,
+          "rect": [
+            90.5,
+            285.4,
+            98.5,
+            293.4
+          ]
+        },
+        {
+          "value": "domestic_partner",
+          "label": "Domestic partner",
+          "page": 0,
+          "rect": [
+            90.5,
+            296.9,
+            98.5,
+            304.9
+          ]
+        },
+        {
+          "value": "devisee",
+          "label": "Devisee",
+          "page": 0,
+          "rect": [
+            90.5,
+            308.4,
+            98.5,
+            316.4
+          ]
+        },
+        {
+          "value": "heir",
+          "label": "Heir",
+          "page": 0,
+          "rect": [
+            90.5,
+            319.8,
+            98.5,
+            327.8
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "Creditor",
+          "page": 0,
+          "rect": [
+            90.5,
+            331.3,
+            98.5,
+            339.3
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            90.5,
+            342.8,
+            98.5,
+            350.8
+          ]
+        }
+      ]
+    },
+    "petitioner_interest_other": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            126.0,
+            344.0,
+            192.0,
+            356.0
+          ]
+        }
+      ]
+    },
+    "court_requests": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "testacy_status",
+          "label": "To make a determination of the testacy status of the Decedent.",
+          "page": 0,
+          "rect": [
+            90.5,
+            383.4,
+            98.5,
+            391.4
+          ]
+        },
+        {
+          "value": "compel_account",
+          "label": "To compel the Personal Representative to file an account with the Court.",
+          "page": 0,
+          "rect": [
+            90.5,
+            400.8,
+            98.5,
+            408.8
+          ]
+        },
+        {
+          "value": "approve_account",
+          "label": "To consider and approve the account of the Personal Representative.",
+          "page": 0,
+          "rect": [
+            90.5,
+            429.8,
+            98.5,
+            437.8
+          ]
+        },
+        {
+          "value": "construe_will",
+          "label": "To construe the Will or a portion thereof.",
+          "page": 0,
+          "rect": [
+            90.5,
+            447.3,
+            98.5,
+            455.3
+          ]
+        },
+        {
+          "value": "determine_heirs",
+          "label": "To determine the heirs of the Decedent.",
+          "page": 0,
+          "rect": [
+            90.5,
+            476.4,
+            98.5,
+            484.4
+          ]
+        },
+        {
+          "value": "determine_distribution",
+          "label": "To determine the persons or entities entitled to distribution and the amounts to be distributed.",
+          "page": 0,
+          "rect": [
+            90.6,
+            493.8,
+            98.6,
+            501.8
+          ]
+        },
+        {
+          "value": "final_settlement",
+          "label": "To order final settlement and distribution of Estate.",
+          "page": 0,
+          "rect": [
+            90.6,
+            522.8,
+            98.6,
+            530.8
+          ]
+        },
+        {
+          "value": "discharge_representative",
+          "label": "To discharge the Personal Representative from further claims or demands of interested persons and to close administration of the Estate.",
+          "page": 0,
+          "rect": [
+            90.6,
+            540.3,
+            98.6,
+            548.3
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            90.6,
+            569.4,
+            98.6,
+            577.4
+          ]
+        }
+      ]
+    },
+    "signature_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            104.0,
+            602.0,
+            234.0,
+            614.0
+          ]
+        }
+      ]
+    },
+    "signature_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            324.0,
+            601.5,
+            543.0,
+            614.9
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            96.0,
+            229.0,
+            112.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            123.9,
+            229.0,
+            141.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            152.9,
+            229.0,
+            170.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            181.8,
+            229.0,
+            198.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            237.9,
+            229.0,
+            255.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "injected": true,
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            211.0,
+            272.0,
+            224.0
+          ]
+        }
+      ]
+    }
+  }
+}

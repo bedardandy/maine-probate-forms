@@ -1,0 +1,27 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+probate_county,Probate County,,text,text,case_constant,probate_county,,,0,green,Y,,,case_dict.probate_county,populate_from_case_dict
+district_court_location,District Court Location,,text,text,narrative_derived,free_text,,,45,orange,,Y,,llm_over_narrative,
+probate_docket_number,Probate Docket Number,,text,text,case_constant,probate_docket_number,,,0,green,Y,,,case_dict.probate_docket_number,populate_from_case_dict
+district_docket_number,District Docket Number,,text,text,case_constant,district_docket_number,,,0,green,Y,,,case_dict.district_docket_number,populate_from_case_dict
+adoptee_name,Adoptee Name,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+petitioner_name,Petitioner Name,,text,person_name,party_attr,petitioner,,,8,green,Y,,,petitioner_record.petitioner,
+certification_text,Certification Text,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+disbursements,Disbursements,,select_many,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+legal_parent_1_details,Legal Parent 1 Details,W009,text,text,narrative_derived,repeating_slot,legal_parent,1,40,orange,,Y,,llm_over_narrative,
+legal_parent_2_details,Legal Parent 2 Details,W012,text,text,narrative_derived,repeating_slot,legal_parent,2,40,orange,,Y,,llm_over_narrative,
+counseling_parent_1_details,Counseling Parent 1 Details,W015,text,text,narrative_derived,repeating_slot,counseling_parent,1,20,yellow,,Y,,llm_over_narrative,
+counseling_parent_2_details,Counseling Parent 2 Details,W018,text,text,narrative_derived,repeating_slot,counseling_parent,2,20,yellow,,Y,,llm_over_narrative,
+medical_expenses_details,Medical Expenses Details,W021,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+transportation_expenses_details,Transportation Expenses Details,W024,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+foster_care_expenses_details,Foster Care Expenses Details,W026,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+living_expenses_details,Living Expenses Details,W030,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_disbursements,Other Disbursements,W032,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+petitioner_1_date,Petitioner 1 Date,,date,date,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_1_signature,Petitioner 1 Signature,,text,signature,signature,petitioner_1_signature,,,5,green,,,Y,wet_ink,
+petitioner_2_date,Petitioner 2 Date,,date,date,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_signature,Petitioner 2 Signature,,text,signature,signature,petitioner_2_signature,,,25,yellow,,,Y,wet_ink,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_appearance_name1,Notary Appearance Name1,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notary_appearance_name2,Notary Appearance Name2,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

@@ -1,0 +1,19 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+in_re,In Re,W003,text,text,case_constant,in_re,,,0,green,Y,,,case_dict.in_re,populate_from_case_dict
+subject_to_guardianship,Subject To Guardianship,W004,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+subject_to_conservatorship,Subject To Conservatorship,W005,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+guardian_conservator_info,Guardian Conservator Info,W006,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+subject_info,Subject Info,W007,text,text,narrative_derived,free_text,,,37,orange,,Y,,llm_over_narrative,
+appointing_court_name,Appointing Court Name,W008,text,entity_name,case_constant,court_name,,,0,green,Y,,,case_dict.court_name,populate_from_case_dict
+appointing_court_address,Appointing Court Address,W009,text,address,case_constant,court_address,,,0,green,Y,,,case_dict.court_address,populate_from_case_dict
+i_we_name,I We Name,W011,text,person_name,party_attr,filer,,,8,green,Y,,,filer_record.filer,
+appointed_as_guardian,Appointed As Guardian,W013,enabler,checkbox,legal_choice,yes_no,,,28,yellow,,,Y,human_decision,"value_in(yes, no)"
+appointed_as_conservator,Appointed As Conservator,W014,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+subject_name,Subject Name,W012,text,person_name,party_attr,subject_of_appointment,,,0,green,Y,,,subject_record.subject_of_appointment,
+date_of_appointment,Date Of Appointment,W015,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+filing_county,Filing County,W016,text,entity_name,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+dated,Dated,W017,date,signature,signature,dated,,,33,yellow,,,Y,wet_ink,
+guardian_conservator_signature,Guardian Conservator Signature,W018,text,signature,signature,guardian_conservator_signature,,,5,green,,,Y,wet_ink,
+certified_true_copy_date,Certified True Copy Date,W019,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

@@ -1,0 +1,19 @@
+# AF-101 — Jurisdictional Affidavit.
+
+skill_metadata:
+  filer_role: affiant
+  statutes:
+    - "18-C M.R.S.A. § 1-303 (Probate Court jurisdiction)"
+  service_required: false
+
+overrides:
+  # Cross-field consistency: the notary-block "appearer" name must
+  # match the affiant who signed (Qwen's "appearer = notary name"
+  # failure mode flagged in eval data, score=100).
+  notary_petitioner_name:
+    category: party_attr
+    subcategory: notary_appearer
+    party: notary
+    data_type: person_name
+    validators:
+      - "equals_field(petitioner_name, relaxed)"

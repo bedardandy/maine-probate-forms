@@ -1,0 +1,21 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+decedent_name,Decedent Name,,text,text,case_constant,decedent_name,,,0,green,Y,,,case_dict.decedent_name,populate_from_case_dict
+petitioner_name,Petitioner Name,,text,person_name,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,
+petitioner_interest,Petitioner Interest,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+testacy_status,Testacy Status,,select_one,text,narrative_derived,testacy_status,,,5,green,,Y,,llm_over_narrative,"value_in(testate, intestate, not_yet_determined, adjudicated)"
+will_supervised_provisions,Will Supervised Provisions,,select_one,checkbox,legal_choice,will_supervised_provisions,,,20,yellow,,,Y,human_decision,
+circumstances,Circumstances,,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+supervision_request,Supervision Request,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+special_restrictions_details,Special Restrictions Details,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+signature_date,Signature Date,,date,signature,signature,signature_date,,,5,green,,,Y,wet_ink,
+petitioner_signature,Petitioner Signature,,text,signature,signature,petitioner_signature,,,13,green,,,Y,wet_ink,
+attorney_name,Attorney Name,,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W018,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+court_order,Court Order,,select_one,text,external,court_order,,,13,green,,,,left_blank,
+order_date,Order Date,,date,date,external,court_order_date,,,5,green,,,,left_blank,
+judge_name,Judge Name,,text,text,external,judge,,,5,green,,,,left_blank,

@@ -1,0 +1,544 @@
+{
+  "form_id": "APP-2",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "APP-2 Transcript Order (Rev. 6-25-20)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            119.0,
+            162.0,
+            136.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            415.0,
+            120.0,
+            475.0,
+            135.0
+          ]
+        }
+      ]
+    },
+    "in_re": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            154.0,
+            251.0,
+            170.0
+          ]
+        }
+      ]
+    },
+    "petitioner_attorney_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            208.0,
+            552.7,
+            225.0
+          ]
+        }
+      ]
+    },
+    "respondent_attorney_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            242.5,
+            552.7,
+            259.6
+          ]
+        }
+      ]
+    },
+    "appellant_attorney_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            277.0,
+            552.7,
+            294.1
+          ]
+        }
+      ]
+    },
+    "reason_for_transcript": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "appeal",
+          "label": "Appeal to the Law Court",
+          "page": 0,
+          "rect": [
+            94.4,
+            322.0,
+            103.4,
+            331.0
+          ]
+        },
+        {
+          "value": "reference",
+          "label": "Reference",
+          "page": 0,
+          "rect": [
+            94.4,
+            335.3,
+            103.4,
+            344.3
+          ]
+        }
+      ]
+    },
+    "reference_specification": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            239.4,
+            333.8,
+            536.7,
+            347.2
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            349.8,
+            552.7,
+            361.8
+          ]
+        }
+      ]
+    },
+    "proceeding_type": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "decedents_estate",
+          "label": "Decedent\u2019s Estate",
+          "page": 0,
+          "rect": [
+            94.4,
+            394.6,
+            103.4,
+            403.6
+          ]
+        },
+        {
+          "value": "adoption",
+          "label": "Adoption",
+          "page": 0,
+          "rect": [
+            202.4,
+            394.6,
+            211.4,
+            403.6
+          ]
+        },
+        {
+          "value": "claims",
+          "label": "Claims",
+          "page": 0,
+          "rect": [
+            310.4,
+            394.6,
+            319.4,
+            403.6
+          ]
+        },
+        {
+          "value": "protective_proceedings",
+          "label": "Protective Proceedings",
+          "page": 0,
+          "rect": [
+            396.9,
+            394.6,
+            405.9,
+            403.6
+          ]
+        },
+        {
+          "value": "decedents_estate_2",
+          "label": "Decedent\u2019s Estate",
+          "page": 0,
+          "rect": [
+            94.4,
+            408.0,
+            103.4,
+            417.0
+          ]
+        },
+        {
+          "value": "change_of_name",
+          "label": "Change of Name",
+          "page": 0,
+          "rect": [
+            202.4,
+            408.0,
+            211.4,
+            417.0
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            310.4,
+            408.0,
+            319.4,
+            417.0
+          ]
+        },
+        {
+          "value": "termination_of_parental_rights",
+          "label": "Termination of Parental Rights",
+          "page": 0,
+          "rect": [
+            94.4,
+            421.2,
+            103.4,
+            430.2
+          ]
+        },
+        {
+          "value": "claims_civil",
+          "label": "Claims",
+          "page": 0,
+          "rect": [
+            94.4,
+            446.1,
+            103.4,
+            455.1
+          ]
+        },
+        {
+          "value": "trust",
+          "label": "Trust",
+          "page": 0,
+          "rect": [
+            202.4,
+            446.1,
+            211.4,
+            455.1
+          ]
+        },
+        {
+          "value": "other_civil",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            310.4,
+            446.1,
+            319.4,
+            455.1
+          ]
+        },
+        {
+          "value": "parental_rights_responsibilities",
+          "label": "Parental Rights & Responsibilities",
+          "page": 0,
+          "rect": [
+            94.4,
+            459.5,
+            103.4,
+            468.5
+          ]
+        }
+      ]
+    },
+    "other_proceeding_specification": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.0,
+            409.1,
+            552.7,
+            421.1
+          ]
+        }
+      ]
+    },
+    "other_civil_proceeding_specification": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            348.0,
+            440.0,
+            552.7,
+            456.0
+          ]
+        }
+      ]
+    },
+    "payment_method": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "private_funds",
+          "label": "Transcript will be paid for with private funds",
+          "page": 0,
+          "rect": [
+            94.4,
+            495.7,
+            103.4,
+            504.7
+          ]
+        },
+        {
+          "value": "indigent",
+          "label": "Petitioner/Respondent has been determined indigent by the trial court.",
+          "page": 0,
+          "rect": [
+            94.4,
+            509.1,
+            103.4,
+            518.1
+          ]
+        },
+        {
+          "value": "government_agency",
+          "label": "Transcript will be paid for from Government Agency funds.",
+          "page": 0,
+          "rect": [
+            94.4,
+            522.5,
+            103.4,
+            531.5
+          ]
+        }
+      ]
+    },
+    "hearing_1_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            594.1,
+            180.0,
+            607.7
+          ]
+        }
+      ]
+    },
+    "hearing_1_proceeding": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            202.0,
+            594.1,
+            354.0,
+            607.7
+          ]
+        }
+      ]
+    },
+    "hearing_1_reporter": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            374.0,
+            594.1,
+            552.7,
+            607.7
+          ]
+        }
+      ]
+    },
+    "hearing_2_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            607.7,
+            180.0,
+            625.2
+          ]
+        }
+      ]
+    },
+    "hearing_2_proceeding": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            202.0,
+            607.7,
+            354.0,
+            625.2
+          ]
+        }
+      ]
+    },
+    "hearing_2_reporter": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            374.0,
+            607.7,
+            552.7,
+            625.2
+          ]
+        }
+      ]
+    },
+    "hearing_3_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            625.2,
+            180.0,
+            642.6
+          ]
+        }
+      ]
+    },
+    "hearing_3_proceeding": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            202.0,
+            625.2,
+            354.0,
+            642.6
+          ]
+        }
+      ]
+    },
+    "hearing_3_reporter": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            374.0,
+            625.2,
+            552.7,
+            642.6
+          ]
+        }
+      ]
+    },
+    "hearing_4_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            642.6,
+            180.0,
+            660.1
+          ]
+        }
+      ]
+    },
+    "hearing_4_proceeding": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            202.0,
+            642.6,
+            354.0,
+            660.1
+          ]
+        }
+      ]
+    },
+    "hearing_4_reporter": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            374.0,
+            642.6,
+            552.7,
+            660.1
+          ]
+        }
+      ]
+    },
+    "dated": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            81.0,
+            684.0,
+            193.0,
+            701.0
+          ]
+        }
+      ]
+    },
+    "individual_requesting": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            310.0,
+            684.0,
+            505.0,
+            701.0
+          ]
+        }
+      ]
+    }
+  }
+}

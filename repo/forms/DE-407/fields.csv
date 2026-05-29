@@ -1,0 +1,12 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_of_decedent,Estate Of Decedent,,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+declarant_name,Declarant Name,,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+renunciation_nomination_actions,Renunciation Nomination Actions,,select_many,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+nominate_pr_name,Nominate Pr Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+concur_in_nominating_name,Concur In Nominating Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+dated,Dated,,date,signature,signature,dated,,,5,green,,,Y,wet_ink,
+signature,Signature,,text,signature,signature,signature,,,5,green,,,Y,wet_ink,
+printed_or_typed_name,Printed Or Typed Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+address,Address,W016,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,

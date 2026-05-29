@@ -1,0 +1,467 @@
+{
+  "form_id": "PP-407",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            112.0,
+            178.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            113.0,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "in_re_subject_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            99.0,
+            146.0,
+            299.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "accounting_type": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            190.0,
+            183.0,
+            285.0,
+            205.0
+          ]
+        }
+      ]
+    },
+    "period_beginning": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            449.0,
+            183.0,
+            542.0,
+            205.0
+          ]
+        }
+      ]
+    },
+    "period_ending": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            121.0,
+            208.3,
+            216.0,
+            220.3
+          ]
+        }
+      ]
+    },
+    "inventory_filed_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            219.7,
+            178.0,
+            231.7
+          ]
+        }
+      ]
+    },
+    "last_approved_account_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            449.0,
+            219.7,
+            534.0,
+            231.7
+          ]
+        }
+      ]
+    },
+    "prior_real_estate_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            284.5,
+            500.0,
+            296.5
+          ]
+        }
+      ]
+    },
+    "prior_tangible_personal_property_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            307.6,
+            500.0,
+            319.6
+          ]
+        }
+      ]
+    },
+    "prior_intangible_personal_property_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            330.5,
+            500.0,
+            342.5
+          ]
+        }
+      ]
+    },
+    "prior_total_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            353.5,
+            500.0,
+            365.5
+          ]
+        }
+      ]
+    },
+    "income_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            422.5,
+            500.0,
+            434.5
+          ]
+        }
+      ]
+    },
+    "expenses_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            445.6,
+            500.0,
+            457.6
+          ]
+        }
+      ]
+    },
+    "net_change_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            468.0,
+            500.0,
+            480.0
+          ]
+        }
+      ]
+    },
+    "distributions_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            491.5,
+            500.0,
+            503.5
+          ]
+        }
+      ]
+    },
+    "current_real_estate_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            560.0,
+            500.0,
+            572.0
+          ]
+        }
+      ]
+    },
+    "current_tangible_personal_property_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            583.6,
+            500.0,
+            595.6
+          ]
+        }
+      ]
+    },
+    "current_intangible_personal_property_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            606.5,
+            500.0,
+            618.5
+          ]
+        }
+      ]
+    },
+    "current_total_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            629.5,
+            500.0,
+            641.5
+          ]
+        }
+      ]
+    },
+    "individual_current_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            679.7,
+            542.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "dated": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            130.0,
+            272.0,
+            149.0
+          ]
+        }
+      ]
+    },
+    "conservator_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            326.0,
+            130.0,
+            528.0,
+            149.0
+          ]
+        }
+      ]
+    },
+    "conservator_print_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            326.0,
+            175.8,
+            528.0,
+            187.8
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            326.0,
+            191.0,
+            528.0,
+            208.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            326.0,
+            212.0,
+            528.0,
+            232.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            326.0,
+            235.6,
+            528.0,
+            247.6
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            256.7,
+            272.0,
+            273.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            284.5,
+            272.0,
+            302.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            313.8,
+            272.0,
+            331.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            343.1,
+            272.0,
+            360.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            371.4,
+            272.0,
+            388.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            399.7,
+            272.0,
+            416.0
+          ]
+        }
+      ]
+    },
+    "marp": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            428.2,
+            528.0,
+            463.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+# PP-205 classification overrides.
+#
+# Promote fields from `other` into the correct category. Each entry
+# shallow-merges into the auto-classified field. See build_form_schema.py
+# for supported keys.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. §§ 5-301, 5-401 (Petition for guardian and/or conservator)"
+    - "M.R. Prob. P. 17"
+  service_required: true
+
+overrides:
+  respondent_name:
+    category: party_attr
+    subcategory: respondent
+    party: respondent
+    data_type: person_name
+
+  respondent_attorney:
+    category: party_attr
+    subcategory: respondent_attorney
+    party: respondent_attorney
+    data_type: text
+
+  # value_in for scope choices — catches LLM picking hallucinated values
+  # like "limited and full" or "partial".
+  guardianship_scope:
+    category: legal_choice
+    subcategory: scope_election
+    data_type: text
+    validators:
+      - "value_in(full, limited, none)"
+
+  conservatorship_scope:
+    category: legal_choice
+    subcategory: scope_election
+    data_type: text
+    validators:
+      - "value_in(full, limited, none)"

@@ -1,0 +1,12 @@
+# N-117 — Notice of Hearing.
+
+skill_metadata:
+  filer_role: court
+  statutes:
+    - "M.R. Prob. P. 6 (Notice of hearing)"
+  service_required: true
+  service_recipients: "all_interested_persons"
+  filing_deadline_days: 14
+  filing_deadline_anchor: "hearing_date"
+  # Notice must be served at least 14 days before the hearing under
+  # M.R. Prob. P. 6(c).

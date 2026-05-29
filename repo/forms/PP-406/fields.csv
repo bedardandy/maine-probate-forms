@@ -1,0 +1,97 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+in_re_individual,In Re Individual,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+real_prop_1_desc,Real Prop 1 Desc,,text,text,narrative_derived,repeating_slot,real_prop,1,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(int_prop_desc,tang_prop_desc)"
+real_prop_1_value,Real Prop 1 Value,,text,currency,narrative_derived,repeating_slot,real_prop,1,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_1_enc,Real Prop 1 Enc,,text,currency,narrative_derived,repeating_slot,real_prop,1,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_2_desc,Real Prop 2 Desc,,text,text,narrative_derived,repeating_slot,real_prop,2,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(int_prop_desc,tang_prop_desc)"
+real_prop_2_value,Real Prop 2 Value,,text,currency,narrative_derived,repeating_slot,real_prop,2,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_2_enc,Real Prop 2 Enc,,text,currency,narrative_derived,repeating_slot,real_prop,2,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_3_desc,Real Prop 3 Desc,,text,text,narrative_derived,repeating_slot,real_prop,3,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(int_prop_desc,tang_prop_desc)"
+real_prop_3_value,Real Prop 3 Value,,text,currency,narrative_derived,repeating_slot,real_prop,3,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_3_enc,Real Prop 3 Enc,,text,currency,narrative_derived,repeating_slot,real_prop,3,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_4_desc,Real Prop 4 Desc,,text,text,narrative_derived,repeating_slot,real_prop,4,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(int_prop_desc,tang_prop_desc)"
+real_prop_4_value,Real Prop 4 Value,,text,currency,narrative_derived,repeating_slot,real_prop,4,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_4_enc,Real Prop 4 Enc,,text,currency,narrative_derived,repeating_slot,real_prop,4,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_5_desc,Real Prop 5 Desc,,text,text,narrative_derived,repeating_slot,real_prop,5,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(int_prop_desc,tang_prop_desc)"
+real_prop_5_value,Real Prop 5 Value,,text,currency,narrative_derived,repeating_slot,real_prop,5,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_5_enc,Real Prop 5 Enc,,text,currency,narrative_derived,repeating_slot,real_prop,5,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_6_desc,Real Prop 6 Desc,,text,text,narrative_derived,repeating_slot,real_prop,6,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(int_prop_desc,tang_prop_desc)"
+real_prop_6_value,Real Prop 6 Value,,text,currency,narrative_derived,repeating_slot,real_prop,6,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_6_enc,Real Prop 6 Enc,,text,currency,narrative_derived,repeating_slot,real_prop,6,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+gross_value_real_property,Gross Value Real Property,,text,currency,computed,gross_value_real_property,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+gross_value_real_encumbrances,Gross Value Real Encumbrances,,text,currency,computed,gross_value_real_encumbrances,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+tang_prop_7_desc,Tang Prop 7 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,7,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_7_value,Tang Prop 7 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,7,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_7_enc,Tang Prop 7 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,7,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_8_desc,Tang Prop 8 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,8,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_8_value,Tang Prop 8 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,8,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_8_enc,Tang Prop 8 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,8,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_9_desc,Tang Prop 9 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,9,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_9_value,Tang Prop 9 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,9,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_9_enc,Tang Prop 9 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,9,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_10_desc,Tang Prop 10 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,10,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_10_value,Tang Prop 10 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,10,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_10_enc,Tang Prop 10 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,10,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_11_desc,Tang Prop 11 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,11,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_11_value,Tang Prop 11 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,11,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_11_enc,Tang Prop 11 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,11,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_12_desc,Tang Prop 12 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,12,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_12_value,Tang Prop 12 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,12,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_12_enc,Tang Prop 12 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,12,60,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_13_desc,Tang Prop 13 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,13,100,red,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_13_value,Tang Prop 13 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,13,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_13_enc,Tang Prop 13 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,13,60,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_14_desc,Tang Prop 14 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,14,100,red,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_14_value,Tang Prop 14 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,14,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_14_enc,Tang Prop 14 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,14,88,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_15_desc,Tang Prop 15 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,15,100,red,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_15_value,Tang Prop 15 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,15,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_15_enc,Tang Prop 15 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,15,60,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_16_desc,Tang Prop 16 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,16,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_16_value,Tang Prop 16 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,16,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_16_enc,Tang Prop 16 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,16,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_17_desc,Tang Prop 17 Desc,,text,text,narrative_derived,repeating_slot,tang_prop,17,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_prop_desc); cross_section_dedupe(int_prop_desc,real_prop_desc)"
+tang_prop_17_value,Tang Prop 17 Value,,text,currency,narrative_derived,repeating_slot,tang_prop,17,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_prop_17_enc,Tang Prop 17 Enc,,text,currency,narrative_derived,repeating_slot,tang_prop,17,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_18_desc,Int Prop 18 Desc,,text,text,narrative_derived,repeating_slot,int_prop,18,20,yellow,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_18_value,Int Prop 18 Value,,text,currency,narrative_derived,repeating_slot,int_prop,18,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_18_enc,Int Prop 18 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,18,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_19_desc,Int Prop 19 Desc,,text,text,narrative_derived,repeating_slot,int_prop,19,100,red,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_19_value,Int Prop 19 Value,,text,currency,narrative_derived,repeating_slot,int_prop,19,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_19_enc,Int Prop 19 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,19,28,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_20_desc,Int Prop 20 Desc,,text,text,narrative_derived,repeating_slot,int_prop,20,52,orange,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_20_value,Int Prop 20 Value,,text,currency,narrative_derived,repeating_slot,int_prop,20,52,orange,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_20_enc,Int Prop 20 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,20,28,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_21_desc,Int Prop 21 Desc,,text,text,narrative_derived,repeating_slot,int_prop,21,52,orange,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_21_value,Int Prop 21 Value,,text,currency,narrative_derived,repeating_slot,int_prop,21,52,orange,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_21_enc,Int Prop 21 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,21,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_22_desc,Int Prop 22 Desc,,text,text,narrative_derived,repeating_slot,int_prop,22,20,yellow,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_22_value,Int Prop 22 Value,,text,currency,narrative_derived,repeating_slot,int_prop,22,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_22_enc,Int Prop 22 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,22,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_23_desc,Int Prop 23 Desc,,text,text,narrative_derived,repeating_slot,int_prop,23,20,yellow,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_23_value,Int Prop 23 Value,,text,currency,narrative_derived,repeating_slot,int_prop,23,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_23_enc,Int Prop 23 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,23,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_24_desc,Int Prop 24 Desc,,text,text,narrative_derived,repeating_slot,int_prop,24,20,yellow,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_24_value,Int Prop 24 Value,,text,currency,narrative_derived,repeating_slot,int_prop,24,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_24_enc,Int Prop 24 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,24,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_25_desc,Int Prop 25 Desc,,text,text,narrative_derived,repeating_slot,int_prop,25,20,yellow,,Y,,llm_over_narrative,"dedupe_within(int_prop_desc); cross_section_dedupe(real_prop_desc,tang_prop_desc)"
+int_prop_25_value,Int Prop 25 Value,,text,currency,narrative_derived,repeating_slot,int_prop,25,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+int_prop_25_enc,Int Prop 25 Enc,,text,currency,narrative_derived,repeating_slot,int_prop,25,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+gross_value_personal_property,Gross Value Personal Property,,text,currency,computed,gross_value_personal_property,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+gross_value_personal_encumbrances,Gross Value Personal Encumbrances,,text,currency,computed,gross_value_personal_encumbrances,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_real,Calc Gross Real,,text,currency,computed,calc_gross_real,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_personal,Calc Gross Personal,,text,currency,computed,calc_gross_personal,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_inventory,Calc Gross Inventory,W085,text,currency,computed,calc_gross_inventory,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_real_enc,Calc Gross Real Enc,,text,currency,computed,calc_gross_real_enc,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_personal_enc,Calc Gross Personal Enc,,text,currency,computed,calc_gross_personal_enc,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_net_inventory,Calc Net Inventory,W090,text,currency,computed,calc_net_inventory,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+appraisers_info,Appraisers Info,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+dated,Dated,,text,signature,signature,dated,,,5,green,,,Y,wet_ink,
+conservator_signature,Conservator Signature,,text,signature,signature,conservator_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W097,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_no,Attorney Bar No,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,

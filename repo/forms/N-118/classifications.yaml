@@ -1,0 +1,76 @@
+# N-118 — Notice of Change (guardianship/conservatorship status updates).
+# The form is a series of conditional sections selected via checkbox.
+# Some sections have only one child field, below my auto-detector's
+# threshold (>=2 kids needed for parent promotion), so we override here.
+
+overrides:
+  revised_guardianship_plan_approved:
+    category: legal_choice
+    subcategory: section_header
+    data_type: checkbox
+    choice_group: revised_guardianship_plan_approved
+
+  revised_guardianship_plan_approved_approval_date:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: revised_guardianship_plan_approved
+    data_type: date
+    writable_when:
+      all_of:
+        - field: revised_guardianship_plan_approved
+          equals: true
+
+  interim_annual_report:
+    category: legal_choice
+    subcategory: section_header
+    data_type: checkbox
+    choice_group: interim_annual_report
+
+  revised_conservatorship_plan_approved:
+    category: legal_choice
+    subcategory: section_header
+    data_type: checkbox
+    choice_group: revised_conservatorship_plan_approved
+
+  revised_conservatorship_plan_approved_approval_date:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: revised_conservatorship_plan_approved
+    data_type: date
+    writable_when:
+      all_of:
+        - field: revised_conservatorship_plan_approved
+          equals: true
+
+  other_notice:
+    category: legal_choice
+    subcategory: section_header
+    data_type: checkbox
+    choice_group: other_notice
+
+  persons_notified:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  role:
+    category: party_attr
+    subcategory: filer_role
+    party: filer
+    data_type: text
+
+  # Did the protected person get advance notice of the dwelling change?
+  change_in_dwelling_advance_notice:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  # Did the protected person object?
+  change_in_dwelling_objection:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

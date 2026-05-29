@@ -1,0 +1,118 @@
+{
+  "form_id": "DE-104",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 1,
+  "source_fused": "DE-104 PR Acceptance (Rev. 07-01-19)_fused.pdf",
+  "fields": {
+    "county_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            110.0,
+            176.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            114.0,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "estate_of_decedent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            110.0,
+            148.0,
+            310.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "personal_representative_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            335.9,
+            542.0,
+            358.0
+          ]
+        }
+      ]
+    },
+    "personal_representative_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            371.9,
+            542.0,
+            393.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            407.8,
+            542.0,
+            429.0
+          ]
+        }
+      ]
+    },
+    "date_signed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            110.0,
+            480.0,
+            200.0,
+            497.0
+          ]
+        }
+      ]
+    },
+    "signature_personal_representative": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            288.3,
+            466.8,
+            486.6,
+            498.0
+          ]
+        }
+      ]
+    }
+  }
+}

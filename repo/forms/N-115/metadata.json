@@ -1,0 +1,9 @@
+{
+  "form_id": "N-115",
+  "title": "Notice re Appointment of PR to Heirs, Devisees",
+  "category": "notices",
+  "source_url": "http://www.maineprobate.net/forms2019/Notices/N-115%20Notice%20re%20Appointment%20of%20PR%20to%20Heirs,%20Devisees%20(Rev.%207-1-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 17,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

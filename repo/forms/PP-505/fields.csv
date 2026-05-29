@@ -1,0 +1,18 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+respondent_name,Respondent Name,W003,text,text,party_attr,respondent,,,0,green,Y,,,respondent_record.respondent,
+medical_professional_name,Medical Professional Name,W004,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+professional_type,Professional Type,,select_many,checkbox,legal_choice,professional_type,,,40,orange,,,Y,human_decision,
+office_address,Office Address,W010,text,address,party_attr,evaluator_office,,,0,green,Y,,,evaluator_record.evaluator_office,
+professional_relationship_description,Professional Relationship Description,W012,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+last_exam_date,Last Exam Date,W015,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+cognitive_functional_abilities,Cognitive Functional Abilities,W016,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+mental_physical_condition_evaluation,Mental Physical Condition Evaluation,W017,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+prognosis_recommendation,Prognosis Recommendation,W018,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_appointment_opinion,Guardian Appointment Opinion,,select_one,text,narrative_derived,opinion,,,5,green,,Y,,llm_over_narrative,
+guardian_tasks_sufficient_capacity,Guardian Tasks Sufficient Capacity,,select_many,text,narrative_derived,opinion,,,17,yellow,,Y,,llm_over_narrative,
+conservator_appointment_opinion,Conservator Appointment Opinion,,select_one,text,narrative_derived,opinion,,,5,green,,Y,,llm_over_narrative,
+conservator_tasks_sufficient_capacity,Conservator Tasks Sufficient Capacity,,select_many,text,narrative_derived,opinion,,,17,yellow,,Y,,llm_over_narrative,
+dated,Dated,W043,date,signature,signature,dated,,,5,green,,,Y,wet_ink,
+signature_of_medical_professional,Signature Of Medical Professional,W042,text,signature,signature,signature_of_medical_professional,,,5,green,,,Y,wet_ink,

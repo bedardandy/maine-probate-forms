@@ -1,0 +1,75 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+location,Location,W002,text,text,case_constant,location,,,0,green,Y,,,case_dict.location,populate_from_case_dict
+docket_no_probate,Docket No Probate,W003,text,text,case_constant,docket_no_probate,,,0,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
+docket_no_district,Docket No District,W004,text,text,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
+minor_name,Minor Name,W005,text,person_name,party_attr,minor,,,0,green,Y,,,minor_record.minor,
+guardianship_grant_date,Guardianship Grant Date,W006,text,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,"date_order(minor_date_of_birth, >)"
+minor_present_age,Minor Present Age,W007,text,number,narrative_derived,integer_count,,,5,green,,Y,,llm_over_narrative,"value_range(0, 21)"
+minor_date_of_birth,Minor Date Of Birth,W008,text,date,party_attr,minor_dob,,,0,green,Y,,,minor_record.minor_dob,
+minor_current_address,Minor Current Address,W009,text,address,party_attr,minor_address,,,0,green,Y,,,minor_record.minor_address,
+address_since_date,Address Since Date,W010,text,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,
+mental_health_status,Mental Health Status,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+mental_health_improved_desc,Mental Health Improved Desc,W013,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+mental_health_deteriorated_desc,Mental Health Deteriorated Desc,W015,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+physical_health_status,Physical Health Status,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+physical_health_improved_desc,Physical Health Improved Desc,W017,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+physical_health_deteriorated_desc,Physical Health Deteriorated Desc,W020,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+treated_by_physician,Treated By Physician,,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+physician_details,Physician Details,W021,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+treated_by_counselor,Treated By Counselor,,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+counselor_details,Counselor Details,W025,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+treated_by_case_worker,Treated By Case Worker,,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+case_worker_details,Case Worker Details,W028,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+treated_by_dentist,Treated By Dentist,,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+dentist_details,Dentist Details,W031,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+treated_by_other,Treated By Other,,enabler,checkbox,legal_choice,yes_no_with_specify,,,100,red,,,Y,human_decision,
+other_treatment_type,Other Treatment Type,W034,text,checkbox,legal_choice,other_treatment_type,,,100,red,,,Y,human_decision,
+other_treatment_details,Other Treatment Details,W035,text,text,narrative_derived,free_text,,,45,orange,,Y,,llm_over_narrative,
+minor_services_participation,Minor Services Participation,W037,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+school_details,School Details,W039,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+minor_grade_level,Minor Grade Level,W041,text,text,narrative_derived,education_level,,,13,green,,Y,,llm_over_narrative,
+minor_educational_achievements,Minor Educational Achievements,W042,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+minor_educational_needs,Minor Educational Needs,W044,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+needs_being_met,Needs Being Met,,select_one,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+needs_not_met_explanation,Needs Not Met Explanation,W048,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+legal_parent_1_name,Legal Parent 1 Name,W051,text,text,narrative_derived,repeating_slot,legal_parent,1,60,orange,,Y,,llm_over_narrative,
+legal_parent_2_name,Legal Parent 2 Name,W052,text,text,narrative_derived,repeating_slot,legal_parent,2,20,yellow,,Y,,llm_over_narrative,
+legal_parent_3_name,Legal Parent 3 Name,W053,text,text,narrative_derived,repeating_slot,legal_parent,3,20,yellow,,Y,,llm_over_narrative,
+legal_parent_1_address,Legal Parent 1 Address,W054,text,address,narrative_derived,repeating_slot,legal_parent,1,20,yellow,,Y,,llm_over_narrative,
+legal_parent_2_address,Legal Parent 2 Address,W055,text,address,narrative_derived,repeating_slot,legal_parent,2,20,yellow,,Y,,llm_over_narrative,
+legal_parent_3_address,Legal Parent 3 Address,W056,text,address,narrative_derived,repeating_slot,legal_parent,3,20,yellow,,Y,,llm_over_narrative,
+legal_parent_1_phone,Legal Parent 1 Phone,W057,text,phone,narrative_derived,repeating_slot,legal_parent,1,48,orange,,Y,,llm_over_narrative,
+legal_parent_2_phone,Legal Parent 2 Phone,W058,text,phone,narrative_derived,repeating_slot,legal_parent,2,48,orange,,Y,,llm_over_narrative,
+legal_parent_3_phone,Legal Parent 3 Phone,W059,text,phone,narrative_derived,repeating_slot,legal_parent,3,48,orange,,Y,,llm_over_narrative,
+contact_with_parents,Contact With Parents,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+parent_contact_details,Parent Contact Details,W062,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+parent_decision_making,Parent Decision Making,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+parent_decision_making_explanation,Parent Decision Making Explanation,W068,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+parent_financial_support,Parent Financial Support,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+parent_financial_support_explanation,Parent Financial Support Explanation,W074,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_responsibilities,Guardian Responsibilities,W076,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+funds_received_amount_1,Funds Received Amount 1,W081,text,text,narrative_derived,repeating_slot,funds_received,1,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+funds_received_source_1,Funds Received Source 1,W082,text,text,narrative_derived,repeating_slot,funds_received,1,20,yellow,,Y,,llm_over_narrative,
+funds_received_purpose_1,Funds Received Purpose 1,W083,text,text,narrative_derived,repeating_slot,funds_received,1,20,yellow,,Y,,llm_over_narrative,
+funds_received_amount_2,Funds Received Amount 2,W084,text,text,narrative_derived,repeating_slot,funds_received,2,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+funds_received_source_2,Funds Received Source 2,W085,text,text,narrative_derived,repeating_slot,funds_received,2,20,yellow,,Y,,llm_over_narrative,
+funds_received_purpose_2,Funds Received Purpose 2,W086,text,text,narrative_derived,repeating_slot,funds_received,2,20,yellow,,Y,,llm_over_narrative,
+funds_received_amount_3,Funds Received Amount 3,W087,text,text,narrative_derived,repeating_slot,funds_received,3,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+funds_received_source_3,Funds Received Source 3,W088,text,text,narrative_derived,repeating_slot,funds_received,3,20,yellow,,Y,,llm_over_narrative,
+funds_received_purpose_3,Funds Received Purpose 3,W089,text,text,narrative_derived,repeating_slot,funds_received,3,20,yellow,,Y,,llm_over_narrative,
+funds_received_amount_4,Funds Received Amount 4,W090,text,text,narrative_derived,repeating_slot,funds_received,4,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+funds_received_source_4,Funds Received Source 4,W091,text,text,narrative_derived,repeating_slot,funds_received,4,20,yellow,,Y,,llm_over_narrative,
+funds_received_purpose_4,Funds Received Purpose 4,W092,text,text,narrative_derived,repeating_slot,funds_received,4,20,yellow,,Y,,llm_over_narrative,
+funds_received_amount_5,Funds Received Amount 5,W093,text,text,narrative_derived,repeating_slot,funds_received,5,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+funds_received_source_5,Funds Received Source 5,W094,text,text,narrative_derived,repeating_slot,funds_received,5,20,yellow,,Y,,llm_over_narrative,
+funds_received_purpose_5,Funds Received Purpose 5,W095,text,text,narrative_derived,repeating_slot,funds_received,5,20,yellow,,Y,,llm_over_narrative,
+other_minor_information,Other Minor Information,W096,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+conclusions_recommendations,Conclusions Recommendations,W100,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_statement_name,Guardian Statement Name,W110,text,person_name,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
+statement_date,Statement Date,W111,text,date,signature,guardian_signature_date,,,5,green,,,Y,wet_ink,
+guardian_signature,Guardian Signature,W112,text,signature,signature,guardian_signature,,,5,green,,,Y,wet_ink,
+co_guardian_signature,Co Guardian Signature,W113,text,signature,signature,co_guardian_signature,,,5,green,,,Y,wet_ink,
+guardian_address,Guardian Address,W114,text,address,party_attr,guardian_address,,,0,green,Y,,,guardian_record.guardian_address,
+guardian_phone,Guardian Phone,W116,text,phone,party_attr,guardian_phone,,,0,green,Y,,,guardian_record.guardian_phone,
+guardian_email,Guardian Email,W117,text,email,party_attr,guardian_email,,,0,green,Y,,,guardian_record.guardian_email,

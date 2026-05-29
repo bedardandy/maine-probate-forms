@@ -1,0 +1,11 @@
+# N-106 — Notice to Creditors (Estate of Decedent).
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-801 (Notice to creditors)"
+  service_required: true
+  # Notice must be published within 30 days of PR appointment (informal),
+  # and creditors then have 4 months from publication to file claims.
+  filing_deadline_days: 30
+  filing_deadline_anchor: "pr_appointment_date"

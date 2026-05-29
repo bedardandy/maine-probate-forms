@@ -1,0 +1,18 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket Number,W002,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+decedent_name,Decedent Name,W003,text,text,case_constant,decedent_name,,,0,green,Y,,,case_dict.decedent_name,populate_from_case_dict
+petitioner_info,Petitioner Info,W004,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+factual_legal_issues,Factual Legal Issues,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+proof_and_evidence,Proof And Evidence,W006,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_signed,Date Signed,W007,date,signature,signature,date_signed,,,5,green,,,Y,wet_ink,
+petitioner_signature,Petitioner Signature,W008,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,W009,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W010,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,W012,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,W013,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,W014,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+order_disposition,Order Disposition,,select_one,text,external,court_order,,,5,green,,,,left_blank,
+allowed_part_amount,Allowed Part Amount,W019,currency,currency,external,court_order_amount,,,5,green,,,,left_blank,
+order_date,Order Date,W020,date,date,external,court_order_date,,,5,green,,,,left_blank,
+judge_signature,Judge Signature,W021,text,signature,signature,judge_signature,,,5,green,,,Y,wet_ink,

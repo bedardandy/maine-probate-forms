@@ -1,0 +1,61 @@
+{
+  "_comment": "Expected DE-301 fill for case.split.json — applicant != appointee scenario. Critical contrast with filled.example.json: applicant_full_legal_name and person_whose_appointment_is_sought hold DIFFERENT values.",
+
+  "_critical_difference_from_example": "In case.example.json, applicant=appointee → both fields hold 'Margaret L. Crawford-Hines'. Here, applicant=Rebecca M. Tilton (sister), appointee=Bath Savings Trust Company. The pipeline must NOT propagate applicant_full_legal_name into person_whose_appointment_is_sought. The signature and notary fields STILL trace to the applicant (Rebecca) because she is the affiant.",
+
+  "fields": {
+    "county_probate_court":           "Kennebec",
+    "docket_no":                      "2026-KEN-2026-00422",
+    "estate_of_decedent":             "Estate of Charles W. Tilton",
+
+    "applicant_full_legal_name":      "Rebecca M. Tilton",
+    "applicant_address_email_phone":  "78 Stillwater Road, Augusta, ME 04330 / (207) 555-0901 / rmt@example.com",
+    "applicant_legal_interest":       "heir",
+    "applicant_legal_interest_other_text": null,
+
+    "decedent_full_legal_name":       "Charles W. Tilton",
+    "date_of_death":                  "2026-01-04",
+    "domicile_of_decedent":           "412 State Street, Augusta, ME 04330",
+
+    "domiciled_in_county":            "yes",
+    "venue_basis_if_not_domiciled":   null,
+
+    "person_whose_appointment_is_sought": "Bath Savings Trust Company, by James L. Hartwell, Trust Officer",
+    "will_presented_for_probate":     "yes",
+    "will_details":                   "Will dated 2009-07-12 with codicils dated 2014-03-08 and 2019-11-22; both codicils witnessed and self-proved.",
+    "nominated_as_pr_in_will":        "no",
+
+    "applicant_signature_date":       "2026-03-18",
+    "applicant_signature_name":       "Rebecca M. Tilton",
+
+    "attorney_name":                  "Brian K. Lockhart",
+    "attorney_address":               "55 Western Avenue, Augusta, ME 04330",
+    "attorney_phone":                 "(207) 555-0633",
+    "attorney_bar_number":            "5118",
+    "attorney_email":                 "blockhart@example.com",
+
+    "notary_appearer_name":           "Rebecca M. Tilton",
+    "notary_date":                    "2026-03-18",
+    "notary_name":                    "Lisa A. Pomeroy",
+    "notary_title":                   "Notary Public, Maine",
+
+    "special_admin_acceptance_date":      null,
+    "special_admin_acceptance_signature": null
+  },
+
+  "_validator_expectations": {
+    "equals_field(applicant_full_legal_name, relaxed)": [
+      "applicant_signature_name='Rebecca M. Tilton' vs applicant_full_legal_name='Rebecca M. Tilton' → passes (applicant signed her own petition)",
+      "notary_appearer_name='Rebecca M. Tilton' vs applicant_full_legal_name='Rebecca M. Tilton' → passes (applicant appeared before notary)",
+      "NOTE: person_whose_appointment_is_sought is NOT checked against applicant_full_legal_name — that would incorrectly fail this case. The encoded validators correctly distinguish 'who signs' (applicant) from 'who serves' (appointee)."
+    ],
+    "date_order(date_of_death, >)": "applicant_signature_date (2026-03-18) > date_of_death (2026-01-04) → passes",
+    "value_in(yes, no)": "(if encoded) domiciled_in_county=yes, will_presented_for_probate=yes, nominated_as_pr_in_will=no → all pass"
+  },
+
+  "_what_would_fail_if_pipeline_is_wrong": {
+    "auto-duplication bug": "If pipeline naively copies applicant_full_legal_name into person_whose_appointment_is_sought, the fill would show 'Rebecca M. Tilton' there — wrong, and would mislead the court into appointing the sister instead of the corporate trustee.",
+    "missed nominated_as_pr_in_will branch": "If LLM doesn't pick up that the will's named PR predeceased, it might check 'nominated_as_pr_in_will=yes' incorrectly.",
+    "wrong signature flow": "If pipeline writes 'Bath Savings Trust Company' in applicant_signature_name (because that's the appointee), equals_field would fail — correctly catching the bug."
+  }
+}

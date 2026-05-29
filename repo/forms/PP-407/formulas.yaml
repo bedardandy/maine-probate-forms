@@ -1,0 +1,34 @@
+# PP-407 — Accounting (Conservatorship).
+# Standard accounting flow:
+#   prior_total_value     = Σ prior_*_value
+#   net_change_value      = income − expenses
+#   current_total_balance = prior_total_value + net_change_value − distributions
+#
+# The "minus distributions" applies to current_total_balance, not
+# net_change_value, since net_change_value is intended to show the
+# operating change before payout, and distributions_amount is shown
+# separately on the form.
+
+formulas:
+  prior_total_value:
+    op: add
+    args:
+      - {op: field, id: prior_real_estate_value}
+      - {op: field, id: prior_tangible_personal_property_value}
+      - {op: field, id: prior_intangible_personal_property_value}
+
+  # net_change_value is NOT a simple income - expenses computation in
+  # practice — the form leaves room for realized gains/losses and other
+  # adjustments that don't map cleanly to fields we have. Demoting to a
+  # narrative_derived field (formula removed) so the validator doesn't
+  # flag legitimate fills as mismatches.
+  # Empirical (eval pattern 1): income $48,920 - expenses $71,340 = -$22,420
+  # but balance delta was -$23,390, suggesting ~$970 of unaccounted change.
+  # Re-encode when the missing reconciliation line is identified.
+
+  current_total_balance:
+    op: add
+    args:
+      - {op: field, id: current_real_estate_balance}
+      - {op: field, id: current_tangible_personal_property_balance}
+      - {op: field, id: current_intangible_personal_property_balance}

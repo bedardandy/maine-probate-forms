@@ -1,0 +1,13 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket Number,W002,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+plaintiff,Plaintiff,W003,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+defendant,Defendant,W004,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+name_of_removing_party,Name Of Removing Party,W005,text,text,party_attr,name_of_other,,,0,green,Y,,,name_of_other_record.name_of_other,
+removal_basis,Removal Basis,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+county_for_order,County For Order,W007,text,text,case_constant,county_for_order,,,0,green,Y,,,case_dict.county_for_order,populate_from_case_dict
+date,Date,W009,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+removing_party_or_attorney,Removing Party Or Attorney,W010,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+attorney_details,Attorney Details,W011,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+fees_received_amount,Fees Received Amount,W012,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+forwarded_date,Forwarded Date,W013,date,date,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,

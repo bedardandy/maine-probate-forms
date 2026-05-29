@@ -1,0 +1,9 @@
+{
+  "form_id": "DE-201",
+  "title": "Application for Informal Probate of Will or Appointment",
+  "category": "estates",
+  "source_url": "http://www.maineprobate.net/Forms2019/Estates/DE-201(I)%20Application%20for%20Informal%20Probate%20of%20Will%20or%20Appointment%20(Rev.%2009-12-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 96,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

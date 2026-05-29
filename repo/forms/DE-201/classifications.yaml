@@ -1,0 +1,143 @@
+# DE-201 — Application for Probate of Will / Adjudication of Testacy.
+
+skill_metadata:
+  filer_role: applicant
+  statutes:
+    - "18-C M.R.S.A. § 3-301 (Informal probate of will)"
+    - "18-C M.R.S.A. § 3-108 (Three-year statute of repose)"
+  service_required: true
+  filing_deadline_days: 1095
+  filing_deadline_anchor: "decedent_death_date"
+
+# 23 residual `other` fields after slot detection. Most are individual
+# narrative items, yes/no legal choices, or party attributes.
+
+overrides:
+  # Date-order constraint
+  decedent_death_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(decedent_birth_date, >)"
+
+  applicant_contact:
+    category: party_attr
+    subcategory: applicant_contact
+    party: applicant
+    data_type: text
+
+  applicant_interest:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  applicant_interest_other_explain:
+    category: narrative_derived
+    subcategory: radio_other_specify
+    data_type: text
+
+  decedent_birth_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  decedent_domicile:
+    category: narrative_derived
+    subcategory: address
+    data_type: address
+
+  non_registered_partner:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  real_estate_maine:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  residuary_real_estate:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  domiciled_outside_maine:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  prior_pr_appointed:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  demand_for_notice:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  register_serve_notices:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  publish_notice_creditors:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  will_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  codicils_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  pr_name_address:
+    category: party_attr
+    subcategory: pr
+    party: personal_representative
+    data_type: text
+
+  pr_designated_in_will:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  bond_requirement:
+    category: legal_choice
+    subcategory: bond_election
+    data_type: checkbox
+
+  request_action:
+    category: legal_choice
+    subcategory: petition_action
+    data_type: text
+
+  filing_fee:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  mailing_notices_fee:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  publication_fee:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  # § 3-108 three-year statute of repose triggers a yes/no narrative
+  # — yes opens the _description follow-up field.
+  died_more_than_3_years:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

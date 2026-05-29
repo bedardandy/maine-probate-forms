@@ -1,0 +1,87 @@
+{
+  "_comment": "Expected PP-406 fill for case.overflow.json — slot-overflow scenario. The 6 form slots are saturated; rows 7-8 go on an addendum sheet (separate document, not in this fill).",
+
+  "_overflow_resolution": "Two valid pipelines:\n1. (current) Fill the 6 slots with the 6 highest-value entities; flag the 2 remainders for addendum; gross_value_real_property = sum of all 8 ($1,155,500) with addendum reference in submission.\n2. (formula-strict) Fill 6 slots; gross_value_real_property = sum_slot of 6 ($1,105,000); add separate adjustment row 'addendum total $50,500' — but PP-406 has no such field. This is why approach #1 is the practical answer.",
+
+  "_packing_strategy": "Pack the 6 form slots with the 6 HIGHEST-value real properties (primary, duplex, lake camp, vacant lot, storage barn, woodlot). The two lower-value overflow entries (1/4 cottage interest, marina slip) go on the addendum.",
+
+  "fields": {
+    "county_probate_court":      "Knox",
+    "docket_no":                 "2026-KNX-PP-00231",
+    "in_re_individual":          "In re Conservatorship of Eleanor F. Sandborn",
+
+    "real_prop_1_desc":          "Primary residence: 14 Camden Harbor Lane, Camden, ME 04843 (Tax Map 8, Lot 41, single-family)",
+    "real_prop_1_value":         "412000",
+    "real_prop_1_enc":           "38000",
+
+    "real_prop_2_desc":          "Rental duplex: 88-90 Mechanic Street, Rockland, ME 04841 (Tax Map 22, Lot 17, two-unit + small lot)",
+    "real_prop_2_value":         "264000",
+    "real_prop_2_enc":           "142500",
+
+    "real_prop_3_desc":          "Lake camp: 27 Megunticook Lake Road, Lincolnville, ME 04849 (Tax Map 14, Lot 7, seasonal cabin + 0.4 ac)",
+    "real_prop_3_value":         "187500",
+    "real_prop_3_enc":           "0",
+
+    "real_prop_4_desc":          "Storage barn parcel: 32 Marquis Road, Hope, ME 04847 (Tax Map 9, Lot 28, 1.4 ac + outbuildings)",
+    "real_prop_4_value":         "95500",
+    "real_prop_4_enc":           "0",
+
+    "real_prop_5_desc":          "Vacant lot: 0 Sea Street, Rockport, ME 04856 (Tax Map 4, Lot 12, 0.18 ac coastal)",
+    "real_prop_5_value":         "82000",
+    "real_prop_5_enc":           "0",
+
+    "real_prop_6_desc":          "Inherited woodlot: 0 Beech Hill Road, Camden, ME 04843 (Tax Map 6, Lot 33, 11 wooded acres) — SEE ADDENDUM for additional real property",
+    "real_prop_6_value":         "64000",
+    "real_prop_6_enc":           "0",
+
+    "gross_value_real_property":      "1155500",
+    "gross_value_real_encumbrances":  "180500",
+
+    "tang_prop_7_desc":          "2021 Volvo XC60, VIN ending 8112",
+    "tang_prop_7_value":         "28500",
+    "tang_prop_7_enc":           "11200",
+    "tang_prop_8_desc":          "Household furnishings, primary residence (appraisal 2026-02-08)",
+    "tang_prop_8_value":         "12400",
+    "tang_prop_8_enc":           "0",
+    "tang_prop_9_desc":          "Antique grandfather clock + roll-top desk (heirloom; insured rider)",
+    "tang_prop_9_value":         "8800",
+    "tang_prop_9_enc":           "0",
+
+    "int_prop_18_desc":          "Bath Savings checking acct ****2118 (statement 2026-03-01)",
+    "int_prop_18_value":         "11200",
+    "int_prop_18_enc":           "0",
+    "int_prop_19_desc":          "Bath Savings money market acct ****3344 (statement 2026-03-01)",
+    "int_prop_19_value":         "42800",
+    "int_prop_19_enc":           "0",
+    "int_prop_20_desc":          "Vanguard brokerage acct ****6622 (statement 2026-03-01)",
+    "int_prop_20_value":         "187600",
+    "int_prop_20_enc":           "0",
+
+    "gross_value_personal_property":     "291300",
+    "gross_value_personal_encumbrances": "11200",
+
+    "calc_gross_real":           "1155500",
+    "calc_gross_personal":       "291300",
+    "calc_gross_inventory":      "1446800",
+    "calc_gross_real_enc":       "180500",
+    "calc_gross_personal_enc":   "11200",
+    "calc_gross_inventory_enc":  "191700",
+    "calc_net_inventory":        "1255100"
+  },
+
+  "_subtotal_arithmetic": {
+    "in_form_real_prop_values":   "412 + 264 + 187.5 + 95.5 + 82 + 64 = $1,105,000",
+    "addendum_real_prop_values":  "38 + 12.5 = $50,500",
+    "total_real_prop_values":     "$1,105,000 + $50,500 = $1,155,500 (matches gross_value_real_property)",
+    "in_form_real_encs":          "38 + 142.5 = $180,500 (no encs on addendum rows; matches gross_value_real_encumbrances)",
+    "total_personal_values":      "28.5 + 12.4 + 8.8 + 11.2 + 42.8 + 187.6 = $291,300",
+    "gross_inventory_check":      "$1,155,500 + $291,300 = $1,446,800"
+  },
+
+  "_validator_tension": {
+    "recompute_from_dependencies expects": "sum_slot(real_prop_*_value, 1..6) = $1,105,000 (in-form slots only)",
+    "human-correct value":                  "$1,155,500 (in-form slots + addendum)",
+    "validator behavior":                   "Will flag a recompute_mismatch error of ~$50,500 because formulas.yaml does not yet know about addendum overflow.",
+    "resolution":                           "OPEN: needs an `addendum_sum` op in the formula DSL, OR a per-form overflow override that disables recompute when an addendum is referenced. See KNOWN_GAPS for follow-up."
+  }
+}

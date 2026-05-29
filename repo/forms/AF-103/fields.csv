@@ -1,0 +1,12 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+docket_number,Docket Number,W001,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+in_re_name,In Re Name,W003,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+affiant_name,Affiant Name,W004,text,text,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
+county_of_residence,County Of Residence,W005,text,text,case_constant,county_of_residence,,,0,green,Y,,,case_dict.county_of_residence,populate_from_case_dict
+new_name,New Name,W007,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+children_status,Children Status,,select_one,text,narrative_derived,children_status,,,5,green,,Y,,llm_over_narrative,"value_in(none, minor_only, adult_only, both)"
+minor_children_details,Minor Children Details,W010,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+new_name_is_former_spouse,New Name Is Former Spouse,,select_one,text,narrative_derived,yes_no,,,5,green,,Y,,llm_over_narrative,"value_in(yes, no)"
+affiant_date,Affiant Date,W013,text,signature,signature,affiant_date,,,25,yellow,,,Y,wet_ink,
+notary_county,Notary County,W015,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_date,Notary Date,W017,text,signature,signature,notary_date,,,5,green,,,Y,wet_ink,

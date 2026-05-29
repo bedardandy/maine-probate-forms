@@ -1,0 +1,7 @@
+# PP-506 — Probate Guardianship Report. One bespoke residual.
+
+overrides:
+  guardianship_recommendations:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text

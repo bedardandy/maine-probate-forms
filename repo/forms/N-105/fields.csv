@@ -1,0 +1,14 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket Number,,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+estate_of_decedent,Estate Of Decedent,,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+residence_of_decedent,Residence Of Decedent,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_death_or_appointment,Date Of Death Or Appointment,W005,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+person_making_demand_contact,Person Making Demand Contact,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+interest_in_estate,Interest In Estate,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_interest_description,Other Interest Description,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+copy_of_docket_sheet,Copy Of Docket Sheet,,enabler,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+copy_of_findings_and_orders,Copy Of Findings And Orders,,enabler,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+attorney_info,Attorney Info,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+signature_of_demand_or_attorney,Signature Of Demand Or Attorney,,text,signature,signature,signature_of_demand_or_attorney,,,5,green,,,Y,wet_ink,
+date_signed,Date Signed,W023,date,signature,signature,date_signed,,,5,green,,,Y,wet_ink,

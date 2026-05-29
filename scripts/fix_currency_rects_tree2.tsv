@@ -1,0 +1,62 @@
+pdf	page	field	old_rect	new_rect	underline_y
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	money_owed_amount	[367.2,731.8,537.2,743.8]	[368.1,731.8,537.2,743.8]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	cash_on_hand	[428.3,261.9,553.3,273.9]	[429.3,261.9,553.3,273.9]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	bail_amount	[428.3,342.4,553.3,354.4]	[429.3,342.4,553.3,354.4]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	other_assets_amount	[428.3,353.9,553.3,365.9]	[429.3,353.9,553.3,365.9]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	total_cash_assets	[428.3,365.4,553.3,377.4]	[429.3,365.4,553.3,377.4]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	checking_amount	[428.3,284.8,553.3,296.8]	[429.3,284.8,553.3,296.8]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	savings_amount	[428.3,307.8,553.3,319.8]	[429.3,307.8,553.3,319.8]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	stocks_bonds_amount	[428.3,330.8,553.3,342.8]	[429.3,330.8,553.3,342.8]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	unemployment_amount	[356.3,554.2,441.5,566.2]	[357.3,554.2,441.5,566.2]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	0	tanf_amount	[356.3,580.9,441.5,592.9]	[357.3,580.9,441.5,592.9]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	loan_row_1_total_owed	[305.8,343.2,411.0,355.2]	[306.9,343.2,411.0,355.2]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	loan_row_2_total_owed	[305.8,354.8,411.0,366.8]	[306.9,354.8,411.0,366.8]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	loan_row_3_total_owed	[305.8,366.3,411.0,378.3]	[306.9,366.3,411.0,378.3]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	housing_expenses	[392.3,261.3,482.5,273.3]	[393.3,261.3,482.5,273.3]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	utilities_expenses	[392.3,274.6,482.5,286.6]	[393.3,274.6,482.5,286.6]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	other_living_expenses	[392.3,288.1,482.5,300.1]	[393.3,288.1,482.5,300.1]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	total_living_expenses	[391.7,299.6,481.5,311.6]	[393.3,299.6,481.5,311.6]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	food_expenses	[392.3,247.8,482.5,259.8]	[393.3,247.8,482.5,259.8]	n/a
+output_tree/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_tree.pdf	1	mortgage_amount	[286.2,129.8,361.2,141.8]	[287.1,129.8,361.2,141.8]	n/a
+output_tree/estates/DE-101(I) Application for Informal - Intestate (Rev. 09-12-19)_tree.pdf	3	filing_fee	[123.2,305.9,183.2,317.9]	[124.1,305.9,183.2,317.9]	n/a
+output_tree/estates/DE-201 Petition for Formal Probate of Will or Appointmet of PR (Rev. 8-6-21)_tree.pdf	4	publication_fee	[444.3,97.9,521.2,109.9]	[445.3,98.0,521.2,110.0]	110.0
+output_tree/estates/DE-201 Petition for Formal Probate of Will or Appointmet of PR (Rev. 8-6-21)_tree.pdf	4	mailing_notices_fee	[273.7,97.9,350.3,109.9]	[274.7,98.0,350.3,110.0]	110.0
+output_tree/estates/DE-201 Petition for Formal Probate of Will or Appointmet of PR (Rev. 8-6-21)_tree.pdf	4	filing_fee	[118.6,97.9,175.6,109.9]	[119.5,98.0,175.6,110.0]	110.0
+output_tree/estates/DE-201(I) Application for Informal Probate of Will or Appointment (Rev. 09-12-19)_tree.pdf	4	publication_fee	[449.2,93.3,516.7,105.3]	[450.1,93.6,516.7,105.6]	105.6
+output_tree/estates/DE-201(I) Application for Informal Probate of Will or Appointment (Rev. 09-12-19)_tree.pdf	4	filing_fee	[120.3,93.3,187.8,105.3]	[121.3,93.6,187.8,105.6]	105.6
+output_tree/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_tree.pdf	0	non_mortgage_debts_expenses	[389.2,437.0,483.3,449.0]	[390.0,437.3,483.3,449.3]	449.3
+output_tree/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_tree.pdf	0	decedent_interest_maine_real_estate	[389.2,515.5,483.3,527.5]	[390.0,515.8,483.3,527.8]	527.8
+output_tree/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_tree.pdf	0	total_probate_estate_value	[389.2,399.0,483.3,411.0]	[390.0,399.2,483.3,411.2]	411.2
+output_tree/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_tree.pdf	0	net_value_probate_estate	[389.2,462.7,483.3,474.7]	[390.0,463.0,483.3,475.0]	475.0
+output_tree/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_tree.pdf	0	estimated_maine_estate_tax	[262.3,604.1,332.3,616.1]	[263.3,604.1,332.3,616.1]	n/a
+output_tree/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_tree.pdf	1	estate_tax_bond_amount	[272.3,194.9,322.8,206.9]	[273.3,195.1,322.8,207.1]	207.1
+output_tree/estates/DE-403 Bond For Personal Representative (Rev. 7-1-19)_tree.pdf	0	penal_sum_numeric	[80.3,335.8,166.7,347.8]	[81.3,335.8,166.7,347.8]	n/a
+output_tree/estates/DE-403 Bond For Personal Representative (Rev. 7-1-19)_tree.pdf	1	personal_property_gross_value	[266.0,116.3,432.0,128.3]	[267.0,116.6,432.0,128.6]	128.6
+output_tree/estates/DE-403 Bond For Personal Representative (Rev. 7-1-19)_tree.pdf	1	real_property_gross_value	[250.0,387.3,432.0,399.3]	[250.9,387.6,432.0,399.6]	399.6
+output_tree/estates/DE-405 Inventory (Rev. 5-6-21)_tree.pdf	1	gross_value_personal_encumbrances	[443.5,627.0,548.7,639.0]	[444.5,627.0,548.7,639.0]	n/a
+output_tree/estates/DE-405 Inventory (Rev. 5-6-21)_tree.pdf	1	gross_value_personal_property	[323.3,627.0,428.3,639.0]	[324.2,627.0,428.3,639.0]	n/a
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	current_tangible_balance	[365.0,525.8,504.0,537.8]	[366.0,526.1,504.0,538.1]	538.1
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	income_amount	[365.0,399.3,504.0,411.3]	[366.0,399.5,504.0,411.5]	411.5
+output_tree/estates/DE-503 Claim Against Estate (Rev. 7-1-19)_tree.pdf	0	amount_claimed	[164.0,316.3,269.2,328.3]	[165.0,316.3,269.2,328.3]	n/a
+output_tree/estates/DE-503 Claim Against Estate (Rev. 7-1-19)_tree.pdf	1	partial_allowance_amount	[263.2,312.2,398.3,324.2]	[264.1,312.2,398.3,324.2]	n/a
+output_tree/estates/DE-504 Petition to Resolve Disputed Claim and Allowance (Rev. 7-1-19)_tree.pdf	1	allowed_part_amount	[377.2,201.5,504.0,213.5]	[378.2,201.7,504.0,213.7]	213.7
+output_tree/estates/DE-506 Petition for Elective Share (Rev. 7-1-19)_tree.pdf	0	probate_estate_value	[330.6,351.2,418.6,363.2]	[331.6,351.2,418.6,363.2]	363.2
+output_tree/estates/DE-506 Petition for Elective Share (Rev. 7-1-19)_tree.pdf	2	augmented_estate_value_finding_amount	[277.8,133.1,396.0,145.1]	[279.0,133.2,396.0,145.2]	145.2
+output_tree/estates/DE-507 Petition to Reopen Estate (Rev. 07-01-19)_tree.pdf	2	filing_fee	[123.2,564.8,183.2,576.8]	[124.1,564.8,183.2,576.8]	n/a
+output_tree/gc_adults/PP-405 Bond for Conservator (Rev. 7-1-19)_tree.pdf	0	penal_sum_numeric	[80.3,335.8,166.7,347.8]	[81.3,335.8,166.7,347.8]	n/a
+output_tree/gc_adults/PP-405 Bond for Conservator (Rev. 7-1-19)_tree.pdf	1	gross_value_personal_property	[266.0,116.3,432.0,128.3]	[267.0,116.6,432.0,128.6]	128.6
+output_tree/gc_adults/PP-405 Bond for Conservator (Rev. 7-1-19)_tree.pdf	1	gross_value_real_property	[250.0,387.3,432.0,399.3]	[250.9,387.6,432.0,399.6]	399.6
+output_tree/gc_adults/PP-406 Inventory (Rev. 7-1-19)_tree.pdf	0	gross_value_real_encumbrances	[410.3,655.3,515.2,667.3]	[411.2,655.3,515.2,667.3]	n/a
+output_tree/gc_adults/PP-406 Inventory (Rev. 7-1-19)_tree.pdf	0	gross_value_real_property	[294.0,655.3,399.0,667.3]	[294.7,655.3,399.0,667.3]	n/a
+output_tree/gc_adults/PP-406 Inventory (Rev. 7-1-19)_tree.pdf	1	gross_value_personal_encumbrances	[443.5,638.7,548.7,650.7]	[444.5,638.7,548.7,650.7]	n/a
+output_tree/gc_adults/PP-406 Inventory (Rev. 7-1-19)_tree.pdf	1	gross_value_personal_property	[323.3,638.7,428.3,650.7]	[324.2,638.7,428.3,650.7]	n/a
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	current_real_estate_balance	[365.0,560.0,505.0,572.0]	[366.0,560.0,505.0,572.0]	n/a
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	net_change_value	[365.0,468.0,505.0,480.0]	[366.0,468.0,505.0,480.0]	n/a
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	distributions_amount	[365.0,491.4,504.0,503.4]	[366.0,491.5,504.0,503.5]	503.5
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	income_amount	[365.0,422.4,504.0,434.4]	[366.0,422.5,504.0,434.5]	434.5
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	current_tangible_personal_property_balance	[365.0,583.4,504.0,595.4]	[366.0,583.6,504.0,595.6]	595.6
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	prior_real_estate_value	[365.0,284.4,504.0,296.4]	[366.0,284.5,504.0,296.5]	296.5
+output_tree/gc_adults/PP-408 Claim Against Estate (Rev. 7-1-19)_tree.pdf	1	partial_amount	[248.8,312.2,384.0,324.2]	[249.7,312.2,384.0,324.2]	n/a
+output_tree/guardian_minor/PB-007 GAL Joint Appt. Order 3.4.20_tree.pdf	2	flat_fee_additional	[216.0,549.2,276.3,561.2]	[217.0,549.2,276.3,561.2]	n/a
+output_tree/guardian_minor/PB-007 GAL Joint Appt. Order 3.4.20_tree.pdf	2	flat_fee_amount	[177.8,537.8,227.6,549.8]	[178.7,537.8,227.6,549.8]	n/a
+output_tree/notices/N-106 Notice of Removal (Rev. 7-1-19)_tree.pdf	0	fees_received_amount	[213.8,564.3,266.3,576.3]	[215.0,564.6,266.3,576.6]	576.6

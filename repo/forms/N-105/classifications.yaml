@@ -1,0 +1,10 @@
+# N-105 — Notice of Right to Demand Notice (Informal Probate).
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-310 (Informal probate — notice)"
+    - "18-C M.R.S.A. § 3-705 (Duty of PR)"
+  service_required: true
+  filing_deadline_days: 30
+  filing_deadline_anchor: "pr_appointment_date"

@@ -1,0 +1,14 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W002,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,W001,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+respondent_name,Respondent Name,W003,text,text,party_attr,respondent,,,0,green,Y,,,respondent_record.respondent,
+plan_version,Plan Version,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+budget_expenses,Budget Expenses,W006,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+respondent_involvement,Respondent Involvement,W007,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+restore_ability_steps,Restore Ability Steps,W008,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+conservatorship_duration,Conservatorship Duration,W009,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+plan_date,Plan Date,W010,date,signature,signature,plan_date,,,13,green,,,Y,wet_ink,
+petitioner_signature,Petitioner Signature,W011,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+order_filing_date,Order Filing Date,W012,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+judge_signature,Judge Signature,W013,text,signature,signature,judge_signature,,,33,yellow,,,Y,wet_ink,
+judge_date,Judge Date,W014,date,date,external,judge_date,,,5,green,,,,left_blank,

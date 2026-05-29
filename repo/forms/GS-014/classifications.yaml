@@ -1,0 +1,170 @@
+# GS-014 — Annual Report of Guardian of Minor.
+# Parties: "minor" (the ward) and "guardian" (the filer).
+
+overrides:
+  minor_name:
+    category: party_attr
+    subcategory: minor
+    party: minor
+    data_type: person_name
+
+  # Date-order: guardianship can only be granted after the minor is born.
+  guardianship_grant_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    validators:
+      - "date_order(minor_date_of_birth, >)"
+
+  minor_present_age:
+    category: narrative_derived
+    subcategory: integer_count
+    data_type: number
+    validators:
+      - "value_range(0, 21)"
+
+  minor_date_of_birth:
+    category: party_attr
+    subcategory: minor_dob
+    party: minor
+    data_type: date
+
+  minor_current_address:
+    category: party_attr
+    subcategory: minor_address
+    party: minor
+    data_type: address
+
+  address_since_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  mental_health_improved_desc:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  mental_health_deteriorated_desc:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  physical_health_improved_desc:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  physical_health_deteriorated_desc:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  treated_by_physician:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  treated_by_counselor:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  treated_by_case_worker:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  treated_by_dentist:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  treated_by_other:
+    category: legal_choice
+    subcategory: yes_no_with_specify
+    data_type: checkbox
+
+  minor_services_participation:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  minor_grade_level:
+    category: narrative_derived
+    subcategory: education_level
+    data_type: text
+
+  minor_educational_achievements:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  minor_educational_needs:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  needs_being_met:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  contact_with_parents:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  parent_decision_making:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  parent_financial_support:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  guardian_responsibilities:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  other_minor_information:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  conclusions_recommendations:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  guardian_statement_name:
+    category: party_attr
+    subcategory: guardian
+    party: guardian
+    data_type: person_name
+
+  statement_date:
+    category: signature
+    subcategory: guardian_signature_date
+    data_type: date
+
+  guardian_address:
+    category: party_attr
+    subcategory: guardian_address
+    party: guardian
+    data_type: address
+
+  guardian_phone:
+    category: party_attr
+    subcategory: guardian_phone
+    party: guardian
+    data_type: phone
+
+  guardian_email:
+    category: party_attr
+    subcategory: guardian_email
+    party: guardian
+    data_type: email

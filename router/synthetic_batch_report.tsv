@@ -1,0 +1,3 @@
+case_id	case_type	status	form_id	confidence	errors	elapsed_sec
+estate_pelletier_arthur_2025_kennebec	estate_intestate	ok	DE-101	1.25	0	248.5
+AND-2024-GA-00842	guardianship_adult	ok	PP-507	0.9	0	363.4

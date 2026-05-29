@@ -1,0 +1,8 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_name,County Name,,text,text,case_constant,county_name,,,0,green,Y,,,case_dict.county_name,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_of_decedent,Estate Of Decedent,,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+personal_representative_name,Personal Representative Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+personal_representative_address,Personal Representative Address,W005,text,address,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_signed,Date Signed,,date,signature,signature,date_signed,,,5,green,,,Y,wet_ink,
+signature_personal_representative,Signature Personal Representative,,text,signature,signature,signature_personal_representative,,,5,green,,,Y,wet_ink,

@@ -1,0 +1,95 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket No.,W002,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+estate_of_decedent,Estate of Decedent,W003,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+real_prop_1_desc,Real Prop 1 Desc,W004,text,text,narrative_derived,repeating_slot,real_prop,1,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(intang_desc,tang_desc)"
+real_prop_1_val,Real Prop 1 Val,W005,text,currency,narrative_derived,repeating_slot,real_prop,1,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_1_enc,Real Prop 1 Enc,W006,text,currency,narrative_derived,repeating_slot,real_prop,1,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_2_desc,Real Prop 2 Desc,W007,text,text,narrative_derived,repeating_slot,real_prop,2,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(intang_desc,tang_desc)"
+real_prop_2_val,Real Prop 2 Val,W008,text,currency,narrative_derived,repeating_slot,real_prop,2,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_2_enc,Real Prop 2 Enc,W009,text,currency,narrative_derived,repeating_slot,real_prop,2,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_3_desc,Real Prop 3 Desc,W010,text,text,narrative_derived,repeating_slot,real_prop,3,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(intang_desc,tang_desc)"
+real_prop_3_val,Real Prop 3 Val,W011,text,currency,narrative_derived,repeating_slot,real_prop,3,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_3_enc,Real Prop 3 Enc,W012,text,currency,narrative_derived,repeating_slot,real_prop,3,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_4_desc,Real Prop 4 Desc,W013,text,text,narrative_derived,repeating_slot,real_prop,4,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(intang_desc,tang_desc)"
+real_prop_4_val,Real Prop 4 Val,W014,text,currency,narrative_derived,repeating_slot,real_prop,4,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_4_enc,Real Prop 4 Enc,W015,text,currency,narrative_derived,repeating_slot,real_prop,4,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_5_desc,Real Prop 5 Desc,W016,text,text,narrative_derived,repeating_slot,real_prop,5,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(intang_desc,tang_desc)"
+real_prop_5_val,Real Prop 5 Val,W017,text,currency,narrative_derived,repeating_slot,real_prop,5,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_5_enc,Real Prop 5 Enc,W018,text,currency,narrative_derived,repeating_slot,real_prop,5,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_6_desc,Real Prop 6 Desc,W019,text,text,narrative_derived,repeating_slot,real_prop,6,20,yellow,,Y,,llm_over_narrative,"dedupe_within(real_prop_desc); cross_section_dedupe(intang_desc,tang_desc)"
+real_prop_6_val,Real Prop 6 Val,W020,text,currency,narrative_derived,repeating_slot,real_prop,6,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+real_prop_6_enc,Real Prop 6 Enc,W021,text,currency,narrative_derived,repeating_slot,real_prop,6,88,red,,Y,,llm_over_narrative,nonempty_if_desc
+gross_value_real_property,Gross Value of Real Property (lines 1-6),W022,text,currency,computed,gross_value_real_property,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+gross_value_real_encumbrances,Gross Value of Encumbrances (lines 1-6),W023,text,currency,computed,gross_value_real_encumbrances,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+tang_7_desc,Tang 7 Desc,W024,text,text,narrative_derived,repeating_slot,tang,7,40,orange,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_7_val,Tang 7 Val,W025,text,currency,narrative_derived,repeating_slot,tang,7,40,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_7_enc,Tang 7 Enc,W026,text,currency,narrative_derived,repeating_slot,tang,7,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_8_desc,Tang 8 Desc,W027,text,text,narrative_derived,repeating_slot,tang,8,52,orange,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_8_val,Tang 8 Val,W028,text,currency,narrative_derived,repeating_slot,tang,8,52,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_8_enc,Tang 8 Enc,W029,text,currency,narrative_derived,repeating_slot,tang,8,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_9_desc,Tang 9 Desc,W030,text,text,narrative_derived,repeating_slot,tang,9,80,red,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_9_val,Tang 9 Val,W031,text,currency,narrative_derived,repeating_slot,tang,9,80,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_9_enc,Tang 9 Enc,W032,text,currency,narrative_derived,repeating_slot,tang,9,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_10_desc,Tang 10 Desc,W033,text,text,narrative_derived,repeating_slot,tang,10,40,orange,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_10_val,Tang 10 Val,W034,text,currency,narrative_derived,repeating_slot,tang,10,40,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_10_enc,Tang 10 Enc,W035,text,currency,narrative_derived,repeating_slot,tang,10,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_11_desc,Tang 11 Desc,W036,text,text,narrative_derived,repeating_slot,tang,11,40,orange,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_11_val,Tang 11 Val,W037,text,currency,narrative_derived,repeating_slot,tang,11,40,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_11_enc,Tang 11 Enc,W038,text,currency,narrative_derived,repeating_slot,tang,11,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_12_desc,Tang 12 Desc,W039,text,text,narrative_derived,repeating_slot,tang,12,20,yellow,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_12_val,Tang 12 Val,W040,text,currency,narrative_derived,repeating_slot,tang,12,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+tang_12_enc,Tang 12 Enc,W041,text,currency,narrative_derived,repeating_slot,tang,12,88,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_13_desc,Tang 13 Desc,W042,text,text,narrative_derived,repeating_slot,tang,13,100,red,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_13_val,Tang 13 Val,W043,text,currency,narrative_derived,repeating_slot,tang,13,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_13_enc,Tang 13 Enc,W044,text,currency,narrative_derived,repeating_slot,tang,13,88,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_14_desc,Tang 14 Desc,W045,text,text,narrative_derived,repeating_slot,tang,14,88,red,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_14_val,Tang 14 Val,W046,text,currency,narrative_derived,repeating_slot,tang,14,88,red,,Y,,llm_over_narrative,nonempty_if_desc
+tang_14_enc,Tang 14 Enc,W047,text,currency,narrative_derived,repeating_slot,tang,14,48,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_15_desc,Tang 15 Desc,W048,text,text,narrative_derived,repeating_slot,tang,15,88,red,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_15_val,Tang 15 Val,W049,text,currency,narrative_derived,repeating_slot,tang,15,48,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_15_enc,Tang 15 Enc,W050,text,currency,narrative_derived,repeating_slot,tang,15,48,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_16_desc,Tang 16 Desc,W051,text,text,narrative_derived,repeating_slot,tang,16,88,red,,Y,,llm_over_narrative,"dedupe_within(tang_desc); cross_section_dedupe(intang_desc,real_prop_desc)"
+tang_16_val,Tang 16 Val,W052,text,currency,narrative_derived,repeating_slot,tang,16,48,orange,,Y,,llm_over_narrative,nonempty_if_desc
+tang_16_enc,Tang 16 Enc,W053,text,currency,narrative_derived,repeating_slot,tang,16,48,orange,,Y,,llm_over_narrative,nonempty_if_desc
+intang_18_desc,Intang 18 Desc,W054,text,text,narrative_derived,repeating_slot,intang,18,20,yellow,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_18_val,Intang 18 Val,W055,text,currency,narrative_derived,repeating_slot,intang,18,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_18_enc,Intang 18 Enc,W056,text,currency,narrative_derived,repeating_slot,intang,18,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_19_desc,Intang 19 Desc,W057,text,text,narrative_derived,repeating_slot,intang,19,20,yellow,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_19_val,Intang 19 Val,W058,text,currency,narrative_derived,repeating_slot,intang,19,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_19_enc,Intang 19 Enc,W059,text,currency,narrative_derived,repeating_slot,intang,19,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_20_desc,Intang 20 Desc,W060,text,text,narrative_derived,repeating_slot,intang,20,20,yellow,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_20_val,Intang 20 Val,W061,text,currency,narrative_derived,repeating_slot,intang,20,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+intang_20_enc,Intang 20 Enc,W062,text,currency,narrative_derived,repeating_slot,intang,20,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_21_desc,Intang 21 Desc,W063,text,text,narrative_derived,repeating_slot,intang,21,100,red,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_21_val,Intang 21 Val,W064,text,currency,narrative_derived,repeating_slot,intang,21,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+intang_21_enc,Intang 21 Enc,W065,text,currency,narrative_derived,repeating_slot,intang,21,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_22_desc,Intang 22 Desc,W066,text,text,narrative_derived,repeating_slot,intang,22,100,red,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_22_val,Intang 22 Val,W067,text,currency,narrative_derived,repeating_slot,intang,22,100,red,,Y,,llm_over_narrative,nonempty_if_desc
+intang_22_enc,Intang 22 Enc,W068,text,currency,narrative_derived,repeating_slot,intang,22,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_23_desc,Intang 23 Desc,W069,text,text,narrative_derived,repeating_slot,intang,23,60,orange,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_23_val,Intang 23 Val,W070,text,currency,narrative_derived,repeating_slot,intang,23,48,orange,,Y,,llm_over_narrative,nonempty_if_desc
+intang_23_enc,Intang 23 Enc,W071,text,currency,narrative_derived,repeating_slot,intang,23,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_24_desc,Intang 24 Desc,W072,text,text,narrative_derived,repeating_slot,intang,24,60,orange,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_24_val,Intang 24 Val,W073,text,currency,narrative_derived,repeating_slot,intang,24,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_24_enc,Intang 24 Enc,W074,text,currency,narrative_derived,repeating_slot,intang,24,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+intang_25_desc,Intang 25 Desc,W075,text,text,narrative_derived,repeating_slot,intang,25,60,orange,,Y,,llm_over_narrative,"dedupe_within(intang_desc); cross_section_dedupe(real_prop_desc,tang_desc)"
+intang_25_val,Intang 25 Val,W076,text,currency,narrative_derived,repeating_slot,intang,25,60,orange,,Y,,llm_over_narrative,nonempty_if_desc
+intang_25_enc,Intang 25 Enc,W077,text,currency,narrative_derived,repeating_slot,intang,25,20,yellow,,Y,,llm_over_narrative,nonempty_if_desc
+gross_value_personal_property,Gross Value of Personal Property (lines 7-25),W078,text,currency,computed,gross_value_personal_property,,,28,yellow,Y,,,recompute_from_dependencies,recompute_from_dependencies
+gross_value_personal_encumbrances,Gross Value of Encumbrances (lines 7-25),W079,text,currency,computed,gross_value_personal_encumbrances,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_real_property,Gross Value of Real Property,W080,text,currency,computed,calc_gross_real_property,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_personal_property,Gross Value of Personal Property,W081,text,currency,computed,calc_gross_personal_property,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_inventory,Gross Value of Inventory,W082,text,currency,computed,calc_gross_inventory,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_real_encumbrances,Gross Value of Real Property Encumbrances,W083,text,currency,computed,calc_gross_real_encumbrances,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_gross_personal_encumbrances,Gross Value of Personal Property Encumbrances,W084,text,currency,computed,calc_gross_personal_encumbrances,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+calc_net_inventory,Net Value of Inventory,W086,text,currency,computed,calc_net_inventory,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+appraisers_info,Names and addresses of appraisers employed,W087,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+items_appraised_by_pr,Numbers of items of property appraised by Personal Representative,W088,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+pr_dated,Dated,W089,text,date,signature,pr_dated,,,5,green,,,Y,wet_ink,
+pr_signature,Personal Representative Signature,W090,text,signature,signature,pr_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,W091,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W092,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone Number,W094,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Maine Bar Number,,text,text,party_attr,attorney,,,5,green,Y,,,case_dict.attorney,
+attorney_email,Email Address,,text,text,party_attr,attorney,,,5,green,Y,,,case_dict.attorney,

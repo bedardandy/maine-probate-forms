@@ -1,0 +1,28 @@
+# DE-603 — Closing Statement (Sworn Statement Closing the Estate).
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-1003 (Closing estates by sworn statement)"
+  service_required: true
+  # No statutory filing deadline; typically filed after final distribution
+  # (often within 1 year of distribution to terminate PR appointment).
+  filing_deadline_days: null
+
+overrides:
+  estate_decedent_name:
+    category: party_attr
+    subcategory: decedent
+    party: decedent
+    data_type: person_name
+
+  pr_name_in_notarization:
+    category: party_attr
+    subcategory: personal_representative
+    party: personal_representative
+    data_type: person_name
+    # Cross-field consistency: the name in the notarization must match
+    # the PR name field elsewhere on the form. Relaxed mode allows
+    # punctuation/case drift (e.g., "John Q. Smith" vs "John Q Smith").
+    validators:
+      - "equals_field(personal_representative_name, relaxed)"

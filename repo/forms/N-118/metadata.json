@@ -1,0 +1,9 @@
+{
+  "form_id": "N-118",
+  "title": "Notice of Guardianship Conservatorship Proceeding",
+  "category": "notices",
+  "source_url": "http://www.maineprobate.net/forms2019/Notices/N-118%20Notice%20of%20Guardianship%20Conservatorship%20Proceeding%20(Rev.%209-28-20).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 61,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

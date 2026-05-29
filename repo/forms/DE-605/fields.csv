@@ -1,0 +1,21 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+decedent_name,Decedent Name,,text,text,case_constant,decedent_name,,,0,green,Y,,,case_dict.decedent_name,populate_from_case_dict
+applicant_name,Applicant Name,,text,person_name,party_attr,applicant,,,0,green,Y,,,applicant_record.applicant,
+applicant_role_if_not_pr,Applicant Role If Not Pr,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+sworn_statement_filed_date,Sworn Statement Filed Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+court_order_closing_date,Court Order Closing Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appointment_termination_date,Appointment Termination Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+applicant_signature_date,Applicant Signature Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+applicant_signature,Applicant Signature,,text,signature,signature,applicant_signature,,,5,green,,,Y,wet_ink,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_appearer_name,Notary Appearer Name,,text,person_name,party_attr,notary_appearer,,,0,green,Y,,,notary_record.notary_appearer,"equals_field(applicant_name, relaxed)"
+notary_appearer_role,Notary Appearer Role,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_officer_signature,Notary Officer Signature,,text,signature,signature,notary_officer_signature,,,5,green,,,Y,wet_ink,
+notary_officer_printed_name,Notary Officer Printed Name,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+cert_county_probate_court,Cert County Probate Court,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+cert_docket_no,Cert Docket No,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+cert_date,Cert Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+register_signature,Register Signature,,text,signature,signature,register_signature,,,5,green,,,Y,wet_ink,

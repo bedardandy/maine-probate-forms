@@ -1,0 +1,16 @@
+# N-108 — Notice of Final Account (Decedent Estate).
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-1001 (Notice of final account)"
+  service_required: true
+  service_recipients: "interested_persons"
+  filing_deadline_days: null
+  filing_deadline_anchor: "final_account_filing_date"
+  # Concurrent with the filing of the final account.
+
+# N-108 is a guardianship-conservatorship Waiver of Notice form — NOT
+# a decedent estate notice. fiduciary_role and ward_status here describe
+# the waiver-signing party's relationship to the ward, not a probate
+# fiduciary class. Choice sets vary across cases; not encoded as value_in.

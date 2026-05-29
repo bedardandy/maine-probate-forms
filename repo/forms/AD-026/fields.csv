@@ -1,0 +1,52 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+adoptee_name_caption,Adoptee Name Caption,,text,text,case_constant,caption,,,0,green,Y,,,case_dict.caption,populate_from_case_dict
+petitioner_caption,Petitioner Caption,,text,text,case_constant,caption,,,0,green,Y,,,case_dict.caption,populate_from_case_dict
+co_petitioner_caption,Co Petitioner Caption,,text,text,case_constant,caption,,,0,green,Y,,,case_dict.caption,populate_from_case_dict
+petitioner_1_name,Petitioner 1 Name,,text,text,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_1_dob,Petitioner 1 Dob,,date,text,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_1_legal_residence,Petitioner 1 Legal Residence,,text,text,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_1_mailing_address,Petitioner 1 Mailing Address,,text,address,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_1_telephone,Petitioner 1 Telephone,,text,phone,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_1_marriage_info,Petitioner 1 Marriage Info,,text,text,narrative_derived,repeating_slot,petitioner,1,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_name,Petitioner 2 Name,,text,text,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_dob,Petitioner 2 Dob,,date,text,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_legal_residence,Petitioner 2 Legal Residence,,text,text,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_mailing_address,Petitioner 2 Mailing Address,,text,address,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_telephone,Petitioner 2 Telephone,,text,phone,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+petitioner_2_marriage_info,Petitioner 2 Marriage Info,,text,text,narrative_derived,repeating_slot,petitioner,2,20,yellow,,Y,,llm_over_narrative,
+adoptee_dob,Adoptee Dob,,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+adoptee_place_of_birth,Adoptee Place Of Birth,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+adoptee_birth_name,Adoptee Birth Name,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+adoptee_other_names,Adoptee Other Names,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+proposed_new_birth_name,Proposed New Birth Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+proposed_current_new_name,Proposed Current New Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+adoptee_legal_residence,Adoptee Legal Residence,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+adoptee_mailing_address,Adoptee Mailing Address,W025,text,address,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
+adoptee_telephone,Adoptee Telephone,,text,phone,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+venue_reason,Venue Reason,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_or_conservator,Guardian Or Conservator,,select_one,text,narrative_derived,yes_no,,,5,green,,Y,,llm_over_narrative,"value_in(yes, no)"
+consent_required,Consent Required,,select_many,checkbox,legal_choice,consent_required,,,20,yellow,,,Y,human_decision,
+relationship_to_adoptee,Relationship To Adoptee,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+dhhs_certificate_attached,Dhhs Certificate Attached,,enabler,checkbox,legal_choice,dhhs_certificate_attached,,,20,yellow,,,Y,human_decision,
+information_sharing_intent,Information Sharing Intent,,select_one,text,narrative_derived,yes_no,,,5,green,,Y,,llm_over_narrative,"value_in(yes, no)"
+information_sharing_details,Information Sharing Details,W039,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+inheritance_acknowledgment,Inheritance Acknowledgment,,enabler,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+birth_parents_inheritance_request,Birth Parents Inheritance Request,,select_one,text,narrative_derived,yes_no,,,5,green,,Y,,llm_over_narrative,"value_in(yes, no)"
+parent_child_relationship_acknowledgment,Parent Child Relationship Acknowledgment,,enabler,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_date,Petitioner Date,,date,signature,signature,petitioner_date,,,5,green,,,Y,wet_ink,
+petitioner_signature,Petitioner Signature,,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+co_petitioner_date,Co Petitioner Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+co_petitioner_signature,Co Petitioner Signature,,text,signature,signature,co_petitioner_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W053,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+unlabeled_widget_after_email,Unlabeled Widget After Email,,text,email,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+oath_petitioner_1_name,Oath Petitioner 1 Name,,text,checkbox,legal_choice,oath_petitioner_1_name,,,20,yellow,,,Y,human_decision,
+oath_petitioner_2_name,Oath Petitioner 2 Name,,text,checkbox,legal_choice,oath_petitioner_2_name,,,32,yellow,,,Y,human_decision,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

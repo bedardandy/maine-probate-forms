@@ -1,0 +1,12 @@
+# DE-407 — Renunciation / Disclaimer.
+
+skill_metadata:
+  filer_role: renouncing_person
+  statutes:
+    - "18-C M.R.S.A. § 2-1102 (Disclaimer of property interest)"
+    - "12 M.R.S.A. § 2-902"
+  service_required: true
+  filing_deadline_days: 270
+  filing_deadline_anchor: "decedent_death_date"
+  # Note: renunciation/disclaimer must be filed within 9 months
+  # of the decedent's death to be effective for estate-tax purposes.

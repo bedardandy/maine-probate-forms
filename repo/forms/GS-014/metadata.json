@@ -1,0 +1,9 @@
+{
+  "form_id": "GS-014",
+  "title": "Status Report of the Guardian",
+  "category": "guardian_minor",
+  "source_url": "http://www.maineprobate.net/Forms2019/Guardian%20Minor/GS-014%20Status%20Report%20of%20the%20Guardian%20.pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 74,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

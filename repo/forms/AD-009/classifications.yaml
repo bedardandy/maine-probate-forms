@@ -1,0 +1,53 @@
+# AD-009 — Adoption Counseling Certificate.
+
+overrides:
+  probate_docket_no:
+    category: case_constant
+    subcategory: docket_no_probate
+    data_type: docket_number
+
+  district_docket_no:
+    category: case_constant
+    subcategory: docket_no_district
+    data_type: docket_number
+
+  counselor_name:
+    category: party_attr
+    subcategory: counselor
+    party: counselor
+    data_type: person_name
+
+  counselor_name_title:
+    category: party_attr
+    subcategory: counselor
+    party: counselor
+    data_type: text
+
+  counselor_affiliation:
+    category: party_attr
+    subcategory: counselor_affiliation
+    party: counselor
+    data_type: text
+
+  agency_name:
+    category: party_attr
+    subcategory: agency
+    party: agency
+    data_type: entity_name
+
+  counselee_name:
+    category: party_attr
+    subcategory: counselee
+    party: counselee
+    data_type: person_name
+
+  counseling_topic:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  refusal_parent_name:
+    category: party_attr
+    subcategory: refusal_parent
+    party: refusal_parent
+    data_type: person_name

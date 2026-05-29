@@ -1,0 +1,539 @@
+{
+  "form_id": "PP-505",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "PP-505 Physician's or Psychologist's Report (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            122.0,
+            176.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            122.0,
+            543.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "respondent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            98.0,
+            157.0,
+            288.0,
+            168.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            339.0,
+            284.0,
+            543.0,
+            296.0
+          ]
+        }
+      ]
+    },
+    "medical_professional_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            117.0,
+            221.0,
+            288.0,
+            233.0
+          ]
+        }
+      ]
+    },
+    "professional_type": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "licensed_physician",
+          "label": "Licensed physician",
+          "page": 0,
+          "rect": [
+            334.2,
+            222.7,
+            342.2,
+            230.7
+          ]
+        },
+        {
+          "value": "licensed_clinical_psychologist",
+          "label": "Licensed clinical psychologist",
+          "page": 0,
+          "rect": [
+            446.6,
+            222.7,
+            454.6,
+            230.7
+          ]
+        },
+        {
+          "value": "registered_physician_assistant",
+          "label": "Registered physician assistant",
+          "page": 0,
+          "rect": [
+            131.6,
+            235.4,
+            139.6,
+            243.4
+          ]
+        },
+        {
+          "value": "certified_psychiatric_clinical_nurse_specialist",
+          "label": "Certified psychiatric clinical nurse specialist",
+          "page": 0,
+          "rect": [
+            279.1,
+            235.4,
+            287.1,
+            243.4
+          ]
+        },
+        {
+          "value": "certified_nurse_practitioner",
+          "label": "Certified nurse practitioner",
+          "page": 0,
+          "rect": [
+            491.6,
+            235.4,
+            499.6,
+            243.4
+          ]
+        }
+      ]
+    },
+    "office_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            261.5,
+            543.0,
+            273.5
+          ]
+        }
+      ]
+    },
+    "professional_relationship_description": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            299.4,
+            543.0,
+            311.4
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            312.1,
+            543.0,
+            324.1
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            320.5,
+            543.0,
+            333.1
+          ]
+        }
+      ]
+    },
+    "last_exam_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            247.0,
+            348.0,
+            417.0,
+            359.0
+          ]
+        }
+      ]
+    },
+    "cognitive_functional_abilities": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            414.0,
+            543.0,
+            507.0
+          ]
+        }
+      ]
+    },
+    "mental_physical_condition_evaluation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            539.7,
+            543.0,
+            622.0
+          ]
+        }
+      ]
+    },
+    "prognosis_recommendation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            653.6,
+            543.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "guardian_appointment_opinion": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "limited_capacity",
+          "label": "A. Respondent's capacity is limited (incapable of tasks in 4B)",
+          "page": 1,
+          "rect": [
+            125.6,
+            99.4,
+            133.6,
+            107.4
+          ]
+        },
+        {
+          "value": "sufficient_capacity",
+          "label": "B. Respondent possesses sufficient capacity (checked below)",
+          "page": 1,
+          "rect": [
+            127.6,
+            150.1,
+            135.6,
+            158.1
+          ]
+        }
+      ]
+    },
+    "guardian_tasks_sufficient_capacity": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "establish_abode",
+          "label": "(1) Establish a place of abode",
+          "page": 1,
+          "rect": [
+            124.6,
+            200.7,
+            132.6,
+            208.7
+          ]
+        },
+        {
+          "value": "pursue_medical_care",
+          "label": "(2) Pursue medical care in any hospital or other institution",
+          "page": 1,
+          "rect": [
+            124.6,
+            213.3,
+            132.6,
+            221.3
+          ]
+        },
+        {
+          "value": "make_provisions_care",
+          "label": "(3) Make provisions for care, comfort and maintenance",
+          "page": 1,
+          "rect": [
+            124.6,
+            225.9,
+            132.6,
+            233.9
+          ]
+        },
+        {
+          "value": "give_withhold_consents",
+          "label": "(4) Give or withhold consents or approvals related to medical or other professional care",
+          "page": 1,
+          "rect": [
+            126.8,
+            238.6,
+            134.8,
+            246.6
+          ]
+        },
+        {
+          "value": "manage_assets",
+          "label": "(5) Manage, protect and expend assets and income appropriately",
+          "page": 1,
+          "rect": [
+            124.6,
+            263.9,
+            132.6,
+            271.9
+          ]
+        }
+      ]
+    },
+    "conservator_appointment_opinion": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "limited_capacity",
+          "label": "A. Respondent's capacity to manage property is limited (incapable of tasks in 5B)",
+          "page": 1,
+          "rect": [
+            125.6,
+            314.6,
+            133.6,
+            322.6
+          ]
+        },
+        {
+          "value": "sufficient_capacity",
+          "label": "B. Respondent possesses sufficient capacity (checked below)",
+          "page": 1,
+          "rect": [
+            127.6,
+            364.9,
+            135.6,
+            372.9
+          ]
+        }
+      ]
+    },
+    "conservator_tasks_sufficient_capacity": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "receive_money",
+          "label": "(1) Receive money and tangible personal property",
+          "page": 1,
+          "rect": [
+            125.2,
+            415.6,
+            133.2,
+            423.6
+          ]
+        },
+        {
+          "value": "collect_hold_assets",
+          "label": "(2) Collect, hold and retain assets (including real estate)",
+          "page": 1,
+          "rect": [
+            124.6,
+            440.9,
+            132.6,
+            448.9
+          ]
+        },
+        {
+          "value": "deposit_withdraw_funds",
+          "label": "(3) Deposit funds in and withdraw funds from any bank account",
+          "page": 1,
+          "rect": [
+            124.6,
+            453.4,
+            132.6,
+            461.4
+          ]
+        },
+        {
+          "value": "invest_reinvest_assets",
+          "label": "(4) Invest and reinvest assets",
+          "page": 1,
+          "rect": [
+            124.6,
+            466.2,
+            132.6,
+            474.2
+          ]
+        },
+        {
+          "value": "dispose_assets",
+          "label": "(5) Dispose of assets",
+          "page": 1,
+          "rect": [
+            124.6,
+            478.8,
+            132.6,
+            486.8
+          ]
+        },
+        {
+          "value": "pay_bills",
+          "label": "(6) Pay bills",
+          "page": 1,
+          "rect": [
+            124.6,
+            491.4,
+            132.6,
+            499.4
+          ]
+        },
+        {
+          "value": "establish_use_credit",
+          "label": "(7) Establish and use credit or borrow money",
+          "page": 1,
+          "rect": [
+            124.6,
+            504.2,
+            132.6,
+            512.2
+          ]
+        },
+        {
+          "value": "pay_settle_claims",
+          "label": "(8) Pay, settle, prosecute or contest any claim involving the Respondent",
+          "page": 1,
+          "rect": [
+            124.6,
+            516.7,
+            132.6,
+            524.7
+          ]
+        },
+        {
+          "value": "sell_stock_rights",
+          "label": "(9) Sell or exercise stock subscription or conversion rights",
+          "page": 1,
+          "rect": [
+            124.6,
+            529.4,
+            132.6,
+            537.4
+          ]
+        },
+        {
+          "value": "enter_contracts",
+          "label": "(10) Enter into any contract, financial commitment or lease arrangement",
+          "page": 1,
+          "rect": [
+            130.1,
+            542.1,
+            138.1,
+            550.1
+          ]
+        },
+        {
+          "value": "operate_business",
+          "label": "(11) Continue or participate in the operation of any business or other enterprise",
+          "page": 1,
+          "rect": [
+            130.1,
+            554.7,
+            138.1,
+            562.7
+          ]
+        },
+        {
+          "value": "vote_security",
+          "label": "(12) Vote a security, in person or by general or limited proxy",
+          "page": 1,
+          "rect": [
+            130.1,
+            567.3,
+            138.1,
+            575.3
+          ]
+        },
+        {
+          "value": "make_repairs",
+          "label": "(13) Make ordinary or extraordinary repairs or alterations to buildings",
+          "page": 1,
+          "rect": [
+            130.3,
+            579.9,
+            138.3,
+            587.9
+          ]
+        },
+        {
+          "value": "employ_persons",
+          "label": "(14) Employ persons, including attorneys, auditors, investment advisors or agents",
+          "page": 1,
+          "rect": [
+            130.2,
+            605.3,
+            138.2,
+            613.3
+          ]
+        }
+      ]
+    },
+    "dated": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            674.0,
+            216.0,
+            691.0
+          ]
+        }
+      ]
+    },
+    "signature_of_medical_professional": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            288.0,
+            669.3,
+            504.0,
+            691.0
+          ]
+        }
+      ]
+    }
+  }
+}

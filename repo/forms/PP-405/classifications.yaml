@@ -1,0 +1,48 @@
+# PP-405 — Surety Bond Schedule.
+# Existing override + the bespoke residuals.
+
+overrides:
+  gross_value_personal_property:
+    category: narrative_derived
+    subcategory: free_form_total
+    data_type: currency
+
+  gross_value_real_property:
+    category: narrative_derived
+    subcategory: free_form_total
+    data_type: currency
+
+  conservator_name_condition:
+    category: party_attr
+    subcategory: conservator
+    party: conservator
+    data_type: person_name
+
+  individual_name_condition:
+    category: party_attr
+    subcategory: individual_under_protection
+    party: individual_under_protection
+    data_type: person_name
+
+  corporate_surety_name:
+    category: party_attr
+    subcategory: corporate_surety
+    party: corporate_surety
+    data_type: entity_name
+
+  corporate_surety_address:
+    category: party_attr
+    subcategory: corporate_surety
+    party: corporate_surety
+    data_type: address
+
+  corporate_surety_officer:
+    category: party_attr
+    subcategory: corporate_surety_officer
+    party: corporate_surety
+    data_type: person_name
+
+  register_of_probate:
+    category: external
+    subcategory: court_official
+    data_type: person_name

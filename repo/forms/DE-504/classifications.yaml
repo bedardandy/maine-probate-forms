@@ -1,0 +1,48 @@
+# DE-504 — Petition to Resolve Disputed Claim and Allowance.
+# Like DE-501, this form has a dual structure: a petitioner section
+# (top) and a court-order section (bottom). The court-side fields
+# must be marked `external` so the validator catches LLM encroachment.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 3-806 (Allowance of claims)"
+    - "18-C M.R.S.A. § 3-807 (Payment of claims)"
+  filing_deadline_days: 60
+  filing_deadline_anchor: "claim_disallowance_notice_date"
+  service_required: true
+
+overrides:
+  petitioner_info:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  factual_legal_issues:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  proof_and_evidence:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  # Court-side fields — judge fills these after the hearing.
+  order_disposition:
+    category: external
+    subcategory: court_order
+    data_type: text
+
+  allowed_part_amount:
+    category: external
+    subcategory: court_order_amount
+    data_type: currency
+
+  order_date:
+    category: external
+    subcategory: court_order_date
+    data_type: date
+
+  # judge_signature is already classified `signature` — left here
+  # for clarity but the schema's signature classification is correct.

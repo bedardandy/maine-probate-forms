@@ -1,0 +1,47 @@
+# DE-405 — Inventory (Decedent Estate).
+#
+# Mirror of PP-406's formula_mode: at_least configuration. When narrative
+# has more assets than the form has slots, the legally-correct gross
+# includes addendum-overflow rows. Validator should flag only when actual
+# < in-form sum (real arithmetic error), not when actual > in-form sum
+# (legitimate overflow). See PP-406/examples/case.overflow.json for the
+# worked example of this pattern.
+
+skill_metadata:
+  filer_role: personal_representative
+  statutes:
+    - "18-C M.R.S.A. § 3-706 (Inventory and appraisement)"
+  service_required: true
+  filing_deadline_days: 90
+  filing_deadline_anchor: "appointment_date"
+
+overrides:
+  gross_value_real_property:
+    formula_mode: at_least
+
+  gross_value_real_encumbrances:
+    formula_mode: at_least
+
+  gross_value_personal_property:
+    formula_mode: at_least
+
+  gross_value_personal_encumbrances:
+    formula_mode: at_least
+
+  calc_gross_real_property:
+    formula_mode: at_least
+
+  calc_gross_personal_property:
+    formula_mode: at_least
+
+  calc_gross_inventory:
+    formula_mode: at_least
+
+  calc_gross_real_encumbrances:
+    formula_mode: at_least
+
+  calc_gross_personal_encumbrances:
+    formula_mode: at_least
+
+  calc_net_inventory:
+    formula_mode: at_least

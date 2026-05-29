@@ -1,0 +1,67 @@
+# PP-510 — Petition to Transfer Guardianship/Conservatorship.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 5-431 (Transfer of conservatorship)"
+    - "18-C M.R.S.A. § 5-321 (Transfer of guardianship)"
+  service_required: true
+
+overrides:
+  # `objection_to_transfer` is only writable when an objection exists
+  # (typically when the individual is moving permanently).
+  objection_to_transfer:
+    writable_when:
+      any_of:
+        - field: individual_move_permanently
+          equals: true
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  # The return-to-Maine question only matters when the move isn't permanent.
+  individual_return_to_maine:
+    required_when:
+      any_of:
+        - field: individual_move_permanently
+          equals: false
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  individual_name:
+    category: party_attr
+    subcategory: individual_under_protection
+    party: individual_under_protection
+    data_type: person_name
+
+  individual_address:
+    category: party_attr
+    subcategory: individual_under_protection
+    party: individual_under_protection
+    data_type: address
+
+  individual_return_to_maine:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  individual_move_permanently:
+    category: legal_choice
+    subcategory: yes_no
+    data_type: checkbox
+
+  individual_connection_to_new_state:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  objection_to_transfer:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  transfer_destination_state:
+    category: narrative_derived
+    subcategory: state_name
+    data_type: text

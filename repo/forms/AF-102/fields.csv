@@ -1,0 +1,15 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+decedent_name,Decedent Name,W001,text,text,case_constant,decedent_name,,,0,green,Y,,,case_dict.decedent_name,populate_from_case_dict
+affiant_name,Affiant Name,W002,text,text,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
+affiant_address,Affiant Address,,text,address,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
+decedent_town,Decedent Town,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+decedent_county,Decedent County,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_death,Date Of Death,W007,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+affidavit_date,Affidavit Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+affiant_signature,Affiant Signature,,text,signature,signature,affiant_signature,,,5,green,,,Y,wet_ink,
+notary_state,Notary State,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notarization_day,Notarization Day,,text,text,other,unclassified,,,30,yellow,,Y,Y,triage,
+notarization_month,Notarization Month,,text,text,other,unclassified,,,30,yellow,,Y,Y,triage,
+notarization_year_suffix,Notarization Year Suffix,,text,text,other,unclassified,,,30,yellow,,Y,Y,triage,
+notary_signature,Notary Signature,W018,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

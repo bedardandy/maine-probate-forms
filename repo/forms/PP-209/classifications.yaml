@@ -1,0 +1,76 @@
+# PP-209 — Annual Report of Guardian.
+
+skill_metadata:
+  filer_role: guardian
+  statutes:
+    - "18-C M.R.S.A. § 5-317 (Annual report of guardian)"
+  service_required: true
+  filing_deadline_days: 365
+  filing_deadline_anchor: "appointment_anniversary"
+
+overrides:
+  individual_name:
+    category: party_attr
+    subcategory: individual_under_protection
+    party: individual_under_protection
+    data_type: person_name
+
+  current_mental_physical_social_condition:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  living_arrangements:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  supported_decision_making_services:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  actions_taken_by_guardian:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  individual_participation_in_decision_making:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  facility_plan_consistency:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  gifts_received_from_individual:
+    category: narrative_derived
+    subcategory: financial_disclosure
+    data_type: text
+
+  business_relationships:
+    category: narrative_derived
+    subcategory: financial_disclosure
+    data_type: text
+
+  guardian_fees:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  plan_deviation_and_revision:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  future_care_plans:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  recommendation_for_continued_guardianship:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text

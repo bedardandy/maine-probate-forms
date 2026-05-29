@@ -1,0 +1,37 @@
+# PP-601 — Petition for Order to Restrict Contact / Modify Residence.
+
+overrides:
+  respondent_proposed_residence:
+    category: narrative_derived
+    subcategory: address
+    data_type: address
+
+  notify_parties:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  arrangement_nature:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  reason_necessary:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  less_restrictive_alternatives:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  limit_contact_parties:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  respondent_property:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text

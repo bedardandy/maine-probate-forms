@@ -1,0 +1,26 @@
+# PP-401 — Petition for Appointment of Conservator.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 5-401 (Conservator appointment)"
+    - "18-C M.R.S.A. § 5-413 (Emergency conservator)"
+  service_required: true
+
+overrides:
+  # Is the petitioner requesting emergency conservatorship under § 5-413?
+  emergency_conservator:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"
+
+  # Does the respondent have an attorney already? yes triggers
+  # respondent_attorney_info follow-up.
+  respondent_attorney:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

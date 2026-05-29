@@ -1,0 +1,859 @@
+{
+  "form_id": "AD-007",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "AD-007 Confidential Statement_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            112.0,
+            80.4,
+            238.8,
+            92.4
+          ]
+        }
+      ]
+    },
+    "location": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            445.0,
+            80.4,
+            568.0,
+            92.4
+          ]
+        }
+      ]
+    },
+    "probate_docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            112.0,
+            94.2,
+            238.8,
+            106.2
+          ]
+        }
+      ]
+    },
+    "district_docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            445.0,
+            94.2,
+            568.0,
+            106.2
+          ]
+        }
+      ]
+    },
+    "adoptee_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            45.0,
+            163.2,
+            261.0,
+            175.2
+          ]
+        }
+      ]
+    },
+    "parent1_q1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            243.5,
+            389.6,
+            285.4
+          ]
+        }
+      ]
+    },
+    "parent2_q1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            243.5,
+            557.5,
+            285.4
+          ]
+        }
+      ]
+    },
+    "parent1_q2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            285.4,
+            389.6,
+            327.2
+          ]
+        }
+      ]
+    },
+    "parent2_q2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            285.4,
+            557.5,
+            327.2
+          ]
+        }
+      ]
+    },
+    "parent1_q3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            327.2,
+            389.6,
+            369.1
+          ]
+        }
+      ]
+    },
+    "parent2_q3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            327.2,
+            557.5,
+            369.1
+          ]
+        }
+      ]
+    },
+    "parent1_q4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            369.1,
+            389.6,
+            411.1
+          ]
+        }
+      ]
+    },
+    "parent2_q4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            369.1,
+            557.5,
+            411.1
+          ]
+        }
+      ]
+    },
+    "parent1_q5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            411.1,
+            389.6,
+            480.6
+          ]
+        }
+      ]
+    },
+    "parent2_q5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            411.1,
+            557.5,
+            480.6
+          ]
+        }
+      ]
+    },
+    "parent1_q6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            480.6,
+            389.6,
+            522.5
+          ]
+        }
+      ]
+    },
+    "parent2_q6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            480.6,
+            557.5,
+            522.5
+          ]
+        }
+      ]
+    },
+    "parent1_q7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            522.5,
+            389.6,
+            550.6
+          ]
+        }
+      ]
+    },
+    "parent2_q7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            522.5,
+            557.5,
+            550.6
+          ]
+        }
+      ]
+    },
+    "parent1_q8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            550.6,
+            389.6,
+            592.4
+          ]
+        }
+      ]
+    },
+    "parent2_q8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            550.6,
+            557.5,
+            592.4
+          ]
+        }
+      ]
+    },
+    "parent1_q9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            592.4,
+            389.6,
+            620.5
+          ]
+        }
+      ]
+    },
+    "parent2_q9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            592.4,
+            557.5,
+            620.5
+          ]
+        }
+      ]
+    },
+    "parent1_q10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            221.8,
+            620.5,
+            389.6,
+            648.6
+          ]
+        }
+      ]
+    },
+    "parent2_q10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.6,
+            620.5,
+            557.5,
+            648.6
+          ]
+        }
+      ]
+    },
+    "parent1_q12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            36.0,
+            389.6,
+            91.7
+          ]
+        }
+      ]
+    },
+    "parent2_q12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            36.0,
+            557.5,
+            91.7
+          ]
+        }
+      ]
+    },
+    "parent1_q13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            91.7,
+            389.6,
+            133.6
+          ]
+        }
+      ]
+    },
+    "parent2_q13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            91.7,
+            557.5,
+            133.6
+          ]
+        }
+      ]
+    },
+    "parent1_q14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            133.6,
+            389.6,
+            189.2
+          ]
+        }
+      ]
+    },
+    "parent2_q14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            133.6,
+            557.5,
+            189.2
+          ]
+        }
+      ]
+    },
+    "parent1_q15": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            189.2,
+            389.6,
+            231.2
+          ]
+        }
+      ]
+    },
+    "parent2_q15": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            189.2,
+            557.5,
+            231.2
+          ]
+        }
+      ]
+    },
+    "parent1_q16": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            231.2,
+            389.6,
+            273.1
+          ]
+        }
+      ]
+    },
+    "parent2_q16": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            231.2,
+            557.5,
+            273.1
+          ]
+        }
+      ]
+    },
+    "parent1_q17": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            273.1,
+            389.6,
+            328.8
+          ]
+        }
+      ]
+    },
+    "parent2_q17": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            273.1,
+            557.5,
+            328.8
+          ]
+        }
+      ]
+    },
+    "parent1_q18": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            328.8,
+            389.6,
+            577.7
+          ]
+        }
+      ]
+    },
+    "parent2_q18": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            328.8,
+            557.5,
+            577.7
+          ]
+        }
+      ]
+    },
+    "parent1_q19": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            221.8,
+            577.7,
+            389.6,
+            619.6
+          ]
+        }
+      ]
+    },
+    "parent2_q19": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            389.6,
+            577.7,
+            557.5,
+            619.6
+          ]
+        }
+      ]
+    },
+    "parent1_q20": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.8,
+            36.0,
+            389.6,
+            133.1
+          ]
+        }
+      ]
+    },
+    "parent2_q20": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            389.6,
+            36.0,
+            557.5,
+            133.1
+          ]
+        }
+      ]
+    },
+    "parent1_q21": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.8,
+            133.1,
+            389.6,
+            161.2
+          ]
+        }
+      ]
+    },
+    "parent2_q21": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            389.6,
+            133.1,
+            557.5,
+            161.2
+          ]
+        }
+      ]
+    },
+    "parent1_q22": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.8,
+            161.2,
+            389.6,
+            203.0
+          ]
+        }
+      ]
+    },
+    "parent2_q22": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            389.6,
+            161.2,
+            557.5,
+            203.0
+          ]
+        }
+      ]
+    },
+    "parent1_q23": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.8,
+            203.0,
+            389.6,
+            231.2
+          ]
+        }
+      ]
+    },
+    "parent2_q23": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            389.6,
+            203.0,
+            557.5,
+            231.2
+          ]
+        }
+      ]
+    },
+    "parent1_q24": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.8,
+            231.2,
+            389.6,
+            273.1
+          ]
+        }
+      ]
+    },
+    "parent2_q24": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            389.6,
+            231.2,
+            557.5,
+            273.1
+          ]
+        }
+      ]
+    },
+    "parent1_q25": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.8,
+            273.1,
+            389.6,
+            328.8
+          ]
+        }
+      ]
+    },
+    "parent2_q25": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            389.6,
+            273.1,
+            557.5,
+            328.8
+          ]
+        }
+      ]
+    },
+    "additional_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            60.0,
+            387.5,
+            558.0,
+            399.5
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            60.0,
+            401.3,
+            558.0,
+            413.3
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            60.0,
+            417.2,
+            558.0,
+            429.2
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            60.0,
+            433.0,
+            558.0,
+            445.0
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            60.0,
+            449.0,
+            558.0,
+            461.0
+          ]
+        }
+      ]
+    },
+    "parent1_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            75.0,
+            476.0,
+            208.8,
+            491.0
+          ]
+        }
+      ]
+    },
+    "parent1_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            342.0,
+            476.0,
+            558.0,
+            491.0
+          ]
+        }
+      ]
+    },
+    "parent2_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            75.0,
+            516.0,
+            208.8,
+            532.0
+          ]
+        }
+      ]
+    },
+    "parent2_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            342.0,
+            516.0,
+            558.0,
+            532.0
+          ]
+        }
+      ]
+    }
+  }
+}

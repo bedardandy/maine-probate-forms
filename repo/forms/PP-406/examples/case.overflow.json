@@ -1,0 +1,61 @@
+{
+  "_comment": "Synthetic conservatorship inventory case with slot OVERFLOW: narrative has 8 real-property entities but PP-406 has only 6 real_prop slots (rows 1..6). Demonstrates the addendum pattern: fill all 6 slots, then continue the remaining 2 entities in an addendum sheet referenced from the narrative.",
+
+  "case_dict": {
+    "county_probate_court": "Knox",
+    "docket_no": "2026-KNX-PP-00231",
+    "in_re_individual": "In re Conservatorship of Eleanor F. Sandborn"
+  },
+
+  "conservator_record": {
+    "conservator": "Henry M. Sandborn",
+    "appointment_date": "2026-01-22"
+  },
+
+  "narrative_facts": {
+    "individual_name": "Eleanor F. Sandborn",
+    "individual_dob": "1937-02-14",
+    "inventory_as_of_date": "2026-03-15",
+
+    "real_property": [
+      { "desc": "Primary residence: 14 Camden Harbor Lane, Camden, ME 04843 (Tax Map 8, Lot 41, single-family)", "value": 412000, "enc": 38000, "enc_note": "HELOC, Bath Savings" },
+      { "desc": "Lake camp: 27 Megunticook Lake Road, Lincolnville, ME 04849 (Tax Map 14, Lot 7, seasonal cabin + 0.4 ac)", "value": 187500, "enc": 0 },
+      { "desc": "Inherited woodlot: 0 Beech Hill Road, Camden, ME 04843 (Tax Map 6, Lot 33, 11 wooded acres)", "value": 64000, "enc": 0 },
+      { "desc": "Rental duplex: 88-90 Mechanic Street, Rockland, ME 04841 (Tax Map 22, Lot 17, two-unit + small lot)", "value": 264000, "enc": 142500, "enc_note": "Mortgage, Camden National Bank" },
+      { "desc": "Vacant lot: 0 Sea Street, Rockport, ME 04856 (Tax Map 4, Lot 12, 0.18 ac coastal)", "value": 82000, "enc": 0 },
+      { "desc": "Storage barn parcel: 32 Marquis Road, Hope, ME 04847 (Tax Map 9, Lot 28, 1.4 ac + outbuildings)", "value": 95500, "enc": 0 },
+      { "desc": "1/4 undivided interest in family cottage: 18 Loon Cove Road, Belfast, ME 04915 (Tax Map 11, Lot 6 — three sibling co-owners hold the remaining 3/4)", "value": 38000, "enc": 0, "_overflow": "row 7 — does not fit in form's 6 real_prop slots" },
+      { "desc": "Marina slip: Slip 14, Camden Yacht Club, Camden, ME 04843 (lease-back arrangement; per inventory appraisal)", "value": 12500, "enc": 0, "_overflow": "row 8 — does not fit in form's 6 real_prop slots" }
+    ],
+
+    "tangible_personal_property": [
+      { "desc": "2021 Volvo XC60, VIN ending 8112", "value": 28500, "enc": 11200, "enc_note": "Auto loan, Bath Savings" },
+      { "desc": "Household furnishings, primary residence (appraisal 2026-02-08)", "value": 12400, "enc": 0 },
+      { "desc": "Antique grandfather clock + roll-top desk (heirloom; insured rider)", "value": 8800, "enc": 0 }
+    ],
+
+    "intangible_personal_property": [
+      { "desc": "Bath Savings checking acct ****2118 (statement 2026-03-01)", "value": 11200, "enc": 0 },
+      { "desc": "Bath Savings money market acct ****3344 (statement 2026-03-01)", "value": 42800, "enc": 0 },
+      { "desc": "Vanguard brokerage acct ****6622 (statement 2026-03-01)", "value": 187600, "enc": 0 }
+    ],
+
+    "addendum": {
+      "title": "PP-406 Addendum — Continuation of Real Property Inventory",
+      "rows": [
+        "Real Property Row 7: 1/4 undivided interest in family cottage at 18 Loon Cove Road, Belfast, ME 04915 (Tax Map 11, Lot 6). Three sibling co-owners hold the remaining 3/4. Inventory value $38,000; encumbrances $0.",
+        "Real Property Row 8: Marina slip — Slip 14, Camden Yacht Club, Camden, ME 04843. Lease-back arrangement; per inventory appraisal. Inventory value $12,500; encumbrances $0."
+      ]
+    }
+  },
+
+  "_what_this_exercises": [
+    "Slot overflow: 8 real-property entities vs 6 form slots",
+    "Addendum pattern: rows 7-8 go on a separate continuation sheet referenced in the narrative `addendum` block",
+    "The inventory subtotal (gross_value_real_property) must INCLUDE the overflow rows — $412k + $187.5k + $64k + $264k + $82k + $95.5k + $38k + $12.5k = $1,155,500",
+    "Validator expectation: formulas.yaml's sum_slot only sums the 6 in-form slots (= $1,105,000), then the LLM/pipeline must add the addendum rows to reach the correct gross total ($1,155,500), OR the form's gross_value_real_property field must explicitly say 'see addendum'",
+    "This is a recompute_from_dependencies tension: the formula gives $1,105,000 from the 6 slots; the human-correct value is $1,155,500. The pipeline must reconcile this."
+  ],
+
+  "_open_question": "Currently the formulas.yaml sum_slot only covers rows 1-6. The validator's recompute_from_dependencies will compute $1,105,000 (sum of in-form slots) and flag the LLM's $1,155,500 (with addendum) as a mismatch. Either the formula needs an `addendum_sum` op (not yet implemented), or the form's gross_value field must point to the addendum and skip formula validation in overflow cases. Flagged for follow-up in KNOWN_GAPS.md."
+}

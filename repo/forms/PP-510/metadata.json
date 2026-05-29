@@ -1,0 +1,9 @@
+{
+  "form_id": "PP-510",
+  "title": "Petition to Transfer of Guardianship-Conservatorship and Provisional Order",
+  "category": "gc_adults",
+  "source_url": "http://www.maineprobate.net/Forms2019/GC%20Adults/PP-510%20Petition%20to%20Transfer%20of%20Guardianship-Conservatorship%20and%20Provisional%20Order%20(Rev.%202-3-21).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 50,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

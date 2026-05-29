@@ -1,0 +1,73 @@
+{
+  "_comment": "Expected DE-301 fill for case.example.json. Demonstrates the multi-party formal probate petition fill. Key validator-relevant patterns: applicant_signature_name must match applicant_full_legal_name (relaxed); notary_appearer_name must match applicant_full_legal_name (relaxed); applicant_signature_date must follow date_of_death.",
+
+  "_pipeline_walkthrough": [
+    "case_constant fields (3): populated from case_dict — county_probate_court, docket_no, estate_of_decedent",
+    "party_attr/applicant (4): populated from applicant_record — note applicant_address_email_phone is a COMPOSITE field, format as 'address / phone / email'",
+    "party_attr/appointee (1): person_whose_appointment_is_sought = appointee_record.appointee (here, same as applicant)",
+    "party_attr/decedent (1): populated from decedent_record",
+    "party_attr/attorney (5): populated from attorney_record",
+    "party_attr/notary (3): populated from notary_record + appearance event",
+    "narrative_derived dates (2): date_of_death + applicant_signature_date — must satisfy date_order(date_of_death, >) on signature",
+    "legal_choice yes/no (3): domiciled_in_county, will_presented_for_probate, nominated_as_pr_in_will — all yes here",
+    "signature (3): applicant_signature_name (printed name), notary_date, special_admin_acceptance_signature (null since no special admin)"
+  ],
+
+  "fields": {
+    "county_probate_court":           "Sagadahoc",
+    "docket_no":                      "2026-SAG-2026-00188",
+    "estate_of_decedent":             "Estate of Theodore J. Crawford",
+
+    "applicant_full_legal_name":      "Margaret L. Crawford-Hines",
+    "applicant_address_email_phone":  "33 Pleasant Hill Road, Bath, ME 04530 / (207) 555-0118 / mlch@example.com",
+    "applicant_legal_interest":       "heir",
+    "applicant_legal_interest_other_text": null,
+
+    "decedent_full_legal_name":       "Theodore J. Crawford",
+    "date_of_death":                  "2026-02-08",
+    "domicile_of_decedent":           "144 Brunswick Street, Bath, ME 04530",
+
+    "domiciled_in_county":            "yes",
+    "venue_basis_if_not_domiciled":   null,
+
+    "person_whose_appointment_is_sought": "Margaret L. Crawford-Hines",
+    "will_presented_for_probate":     "yes",
+    "will_details":                   "Will dated 2018-09-14, two-page typed, witnessed by Lawrence Reed and Susan Maddox. No codicils.",
+    "nominated_as_pr_in_will":        "yes",
+
+    "applicant_signature_date":       "2026-04-21",
+    "applicant_signature_name":       "Margaret L. Crawford-Hines",
+
+    "attorney_name":                  "Caroline P. Trotter",
+    "attorney_address":               "12 Centre Street, Bath, ME 04530",
+    "attorney_phone":                 "(207) 555-0234",
+    "attorney_bar_number":            "3829",
+    "attorney_email":                 "cptrotter@example.com",
+
+    "notary_appearer_name":           "Margaret L. Crawford-Hines",
+    "notary_date":                    "2026-04-21",
+    "notary_name":                    "Jennifer M. Reilly",
+    "notary_title":                   "Notary Public, Maine",
+
+    "special_admin_acceptance_date":     null,
+    "special_admin_acceptance_signature": null
+  },
+
+  "_validator_expectations": {
+    "equals_field(applicant_full_legal_name, relaxed)": [
+      "applicant_signature_name vs applicant_full_legal_name: both 'Margaret L. Crawford-Hines' → passes",
+      "notary_appearer_name vs applicant_full_legal_name: both 'Margaret L. Crawford-Hines' → passes"
+    ],
+    "date_order(date_of_death, >)": "applicant_signature_date (2026-04-21) > date_of_death (2026-02-08) → passes",
+    "populate_from_case_dict": "county_probate_court / docket_no / estate_of_decedent match case_dict → no drift warnings",
+    "data_type checks": "phone, email, bar_number, address all valid per their data_type regexes",
+    "value_in(yes, no)": "(if encoded on the 3 legal_choice booleans) all values are 'yes' → would pass"
+  },
+
+  "_what_could_fail": {
+    "applicant_signature_name drift": "If LLM wrote 'Margaret Crawford-Hines' (dropping middle initial), equals_field(relaxed) still passes (it strips punctuation + case but not the initial). Strict mode would fail.",
+    "notary_appearer_name vs applicant": "If applicant changed names since the will was executed (e.g. signing as 'Margaret L. Crawford' instead of 'Margaret L. Crawford-Hines'), notary check catches it.",
+    "venue inconsistency": "If domiciled_in_county=yes but venue_basis_if_not_domiciled is non-empty, that's contradictory — validator would not catch this directly; encode as required_when or hand review.",
+    "special_admin accidental fill": "If LLM filled special_admin_acceptance_date despite special_admin_requested=false, validator's writable_when (if encoded) would flag not_writable."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_comment": "Expected PP-406 fill for examples/case.example.json. Subtotal fields (gross_value_*, calc_gross_*) are computed by formulas.yaml — the pipeline should recompute them from the slot rows, not ask the LLM to add them up.",
+
+  "_pipeline_note": [
+    "Slot rows (real_prop_*, tang_prop_*, int_prop_*) come from the LLM mapping narrative_facts.real_property[i] → real_prop_<i+1>_{desc,value,enc}.",
+    "Computed fields (gross_value_*, calc_gross_*) are derived from formulas.yaml after the LLM completes the slot rows. Validator's recompute_from_dependencies will flag any drift.",
+    "Empty slot rows (real_prop_3..6, tang_prop_12..17, int_prop_23..25) are left null — the LLM should NOT pad them with placeholder values.",
+    "Currency values are formatted as plain numerics here; the form fill pipeline formats them with $ and commas at write time (currency-purity rule from fill_form prompts)."
+  ],
+
+  "fields": {
+    "county_probate_court":      "Penobscot",
+    "docket_no":                 "2026-PEN-PP-00078",
+    "in_re_individual":          "In re Conservatorship of David K. Reilly",
+
+    "real_prop_1_desc":          "Primary residence: 124 Mountain View Lane, Bangor, ME 04401 (Tax Map 7, Lot 19, single-family home, 2200 sq ft, 0.6 acres)",
+    "real_prop_1_value":         "287500",
+    "real_prop_1_enc":           "92400",
+
+    "real_prop_2_desc":          "Vacant lot: 58 Pine Ridge Road, Hampden, ME 04444 (Tax Map 3, Lot 41, 1.2 wooded acres, undeveloped)",
+    "real_prop_2_value":         "28000",
+    "real_prop_2_enc":           "0",
+
+    "real_prop_3_desc":          null,
+    "real_prop_3_value":         null,
+    "real_prop_3_enc":           null,
+    "real_prop_4_desc":          null,
+    "real_prop_4_value":         null,
+    "real_prop_4_enc":           null,
+    "real_prop_5_desc":          null,
+    "real_prop_5_value":         null,
+    "real_prop_5_enc":           null,
+    "real_prop_6_desc":          null,
+    "real_prop_6_value":         null,
+    "real_prop_6_enc":           null,
+
+    "gross_value_real_property":     "315500",
+    "gross_value_real_encumbrances": "92400",
+
+    "tang_prop_7_desc":          "2018 Subaru Outback, VIN ending 7244, ~62K miles",
+    "tang_prop_7_value":         "14200",
+    "tang_prop_7_enc":           "0",
+    "tang_prop_8_desc":          "Household furnishings, primary residence (estimate per appraisal 2026-03-10)",
+    "tang_prop_8_value":         "8500",
+    "tang_prop_8_enc":           "0",
+    "tang_prop_9_desc":          "Power tools and woodworking equipment, garage",
+    "tang_prop_9_value":         "3200",
+    "tang_prop_9_enc":           "0",
+    "tang_prop_10_desc":         "Coin collection (1950-1990 US silver dollars), insured",
+    "tang_prop_10_value":        "4400",
+    "tang_prop_10_enc":          "0",
+    "tang_prop_11_desc":         "Jewelry (wedding band, gold chain, three watches)",
+    "tang_prop_11_value":        "2150",
+    "tang_prop_11_enc":          "0",
+    "tang_prop_12_desc":         null,
+    "tang_prop_12_value":        null,
+    "tang_prop_12_enc":          null,
+    "tang_prop_13_desc":         null,
+    "tang_prop_14_desc":         null,
+    "tang_prop_15_desc":         null,
+    "tang_prop_16_desc":         null,
+    "tang_prop_17_desc":         null,
+
+    "int_prop_18_desc":          "Bangor Savings Bank checking acct ****4421 (statement 2026-04-01)",
+    "int_prop_18_value":         "8742.18",
+    "int_prop_18_enc":           "0",
+    "int_prop_19_desc":          "Bangor Savings Bank savings acct ****7903 (statement 2026-04-01)",
+    "int_prop_19_value":         "34521.07",
+    "int_prop_19_enc":           "0",
+    "int_prop_20_desc":          "Fidelity brokerage acct ****8810 (mixed equities + bonds, statement 2026-04-01)",
+    "int_prop_20_value":         "142800",
+    "int_prop_20_enc":           "0",
+    "int_prop_21_desc":          "Series I savings bonds, ten $1,000-face issued 2008-2012 (current redemption value)",
+    "int_prop_21_value":         "18450",
+    "int_prop_21_enc":           "0",
+    "int_prop_22_desc":          "Whole life policy, Northwestern Mutual, cash surrender value (illustration 2026-03-12)",
+    "int_prop_22_value":         "21300",
+    "int_prop_22_enc":           "0",
+    "int_prop_23_desc":          null,
+    "int_prop_24_desc":          null,
+    "int_prop_25_desc":          null,
+
+    "gross_value_personal_property":     "258263.25",
+    "gross_value_personal_encumbrances": "0",
+
+    "calc_gross_real":                "315500",
+    "calc_gross_personal":            "258263.25",
+    "calc_gross_inventory":           "573763.25",
+    "calc_gross_real_enc":            "92400",
+    "calc_gross_personal_enc":        "0",
+    "calc_gross_inventory_enc":       "92400",
+    "calc_net_inventory":             "481363.25"
+  },
+
+  "_subtotal_arithmetic": {
+    "real_prop_values":  "287500 + 28000 = 315500 (matches gross_value_real_property)",
+    "real_prop_encs":    "92400 + 0 = 92400 (matches gross_value_real_encumbrances)",
+    "tang_prop_values":  "14200 + 8500 + 3200 + 4400 + 2150 = 32450",
+    "int_prop_values":   "8742.18 + 34521.07 + 142800 + 18450 + 21300 = 225813.25",
+    "gross_personal_check": "32450 + 225813.25 = 258263.25 (matches gross_value_personal_property)",
+    "gross_inventory_check": "315500 + 258263.25 = 573763.25 (matches calc_gross_inventory)"
+  }
+}

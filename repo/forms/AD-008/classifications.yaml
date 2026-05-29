@@ -1,0 +1,9 @@
+# AD-008 — Report of Disbursements (Adoption).
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-A M.R.S.A. § 9-303 (Adoption — disclosure of expenses)"
+  service_required: false
+  # Filed with the adoption petition; no separate statutory deadline.
+  filing_deadline_days: null

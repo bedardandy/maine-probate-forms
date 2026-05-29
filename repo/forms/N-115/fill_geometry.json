@@ -1,0 +1,365 @@
+{
+  "form_id": "N-115",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 1,
+  "source_fused": "N-115 Notice re Appointment of PR to Heirs_ Devisees (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            71.2,
+            103.0,
+            178.2,
+            113.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            408.0,
+            102.0,
+            542.0,
+            113.0
+          ]
+        }
+      ]
+    },
+    "estate_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            117.0,
+            128.0,
+            282.0,
+            139.0
+          ]
+        }
+      ]
+    },
+    "notice_recipient": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            183.9,
+            542.0,
+            225.3
+          ]
+        }
+      ]
+    },
+    "pr_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            71.2,
+            228.0,
+            542.0,
+            238.0
+          ]
+        }
+      ]
+    },
+    "appointment_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            117.0,
+            241.4,
+            327.0,
+            253.4
+          ]
+        }
+      ]
+    },
+    "pr_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            71.2,
+            252.8,
+            302.2,
+            264.8
+          ]
+        }
+      ]
+    },
+    "bond_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "on_file",
+          "label": "(a) Surety bond on file",
+          "page": 0,
+          "rect": [
+            109.0,
+            344.2,
+            116.0,
+            351.2
+          ]
+        },
+        {
+          "value": "no_bond",
+          "label": "(b) No bond has been required or filed",
+          "page": 0,
+          "rect": [
+            109.0,
+            378.6,
+            116.0,
+            385.6
+          ]
+        }
+      ]
+    },
+    "bond_type": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "personal",
+          "label": "Personal",
+          "page": 0,
+          "rect": [
+            143.6,
+            344.2,
+            150.6,
+            351.2
+          ]
+        },
+        {
+          "value": "corporate",
+          "label": "Corporate",
+          "page": 0,
+          "rect": [
+            191.4,
+            344.2,
+            198.4,
+            351.2
+          ]
+        }
+      ]
+    },
+    "bond_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            408.0,
+            343.0,
+            542.0,
+            353.0
+          ]
+        }
+      ]
+    },
+    "probate_court_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            408.0,
+            400.0,
+            484.0,
+            411.0
+          ]
+        }
+      ]
+    },
+    "probate_court_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            413.9,
+            542.0,
+            425.9
+          ]
+        }
+      ]
+    },
+    "interested_capacity": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "heir",
+          "label": "1. Heir",
+          "page": 0,
+          "rect": [
+            109.0,
+            470.8,
+            116.0,
+            477.8
+          ]
+        },
+        {
+          "value": "devisee",
+          "label": "2. Devisee",
+          "page": 0,
+          "rect": [
+            109.0,
+            482.3,
+            116.0,
+            489.3
+          ]
+        },
+        {
+          "value": "child_of_decedent",
+          "label": "3. Child of decedent",
+          "page": 0,
+          "rect": [
+            109.0,
+            493.8,
+            116.0,
+            500.8
+          ]
+        },
+        {
+          "value": "spouse_of_decedent",
+          "label": "4. Spouse of decedent",
+          "page": 0,
+          "rect": [
+            109.0,
+            505.2,
+            116.0,
+            512.2
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "5. Creditor",
+          "page": 0,
+          "rect": [
+            252.9,
+            470.8,
+            259.9,
+            477.8
+          ]
+        },
+        {
+          "value": "beneficiary_of_trust",
+          "label": "6. Beneficiary of trust",
+          "page": 0,
+          "rect": [
+            252.9,
+            482.3,
+            259.9,
+            489.3
+          ]
+        },
+        {
+          "value": "person_with_priority",
+          "label": "7. Person with priority for appointment as personal representative",
+          "page": 0,
+          "rect": [
+            252.9,
+            493.8,
+            259.9,
+            500.8
+          ]
+        },
+        {
+          "value": "fiduciary",
+          "label": "8. Fiduciary representing interested person",
+          "page": 0,
+          "rect": [
+            252.9,
+            505.2,
+            259.9,
+            512.2
+          ]
+        },
+        {
+          "value": "other",
+          "label": "9. Other (Explain)",
+          "page": 0,
+          "rect": [
+            252.9,
+            516.7,
+            259.9,
+            523.7
+          ]
+        }
+      ]
+    },
+    "other_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            71.2,
+            528.8,
+            542.0,
+            540.8
+          ]
+        }
+      ]
+    },
+    "signatory_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            374.4,
+            597.9,
+            542.0,
+            628.7
+          ]
+        }
+      ]
+    },
+    "date_signed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            117.0,
+            618.0,
+            257.0,
+            629.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            324.0,
+            619.0,
+            542.0,
+            629.0
+          ]
+        }
+      ]
+    }
+  }
+}

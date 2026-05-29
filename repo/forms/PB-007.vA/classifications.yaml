@@ -1,0 +1,387 @@
+# PB-007 — Order Appointing Guardian Ad Litem (GAL).
+# Three-tier appointment level (limited / standard / expanded) gates the
+# bulk of the form's fields via writable_when. Fee/payment structure is
+# similarly conditional on payment_method.
+
+overrides:
+  county_probate:
+    category: case_constant
+    subcategory: county
+    data_type: entity_name
+
+  case_title:
+    category: case_constant
+    subcategory: case_caption
+    data_type: text
+
+  appointment_level:
+    category: legal_choice
+    subcategory: appointment_scope
+    data_type: text
+    choice_group: appointment_level
+    validators:
+      - "value_in(limited, standard, expanded)"
+
+  minor_children_names:
+    category: party_attr
+    subcategory: minor_children
+    party: minor
+    data_type: text
+
+  gal_name:
+    category: party_attr
+    subcategory: gal
+    party: gal
+    data_type: person_name
+
+  good_cause_findings:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  other_qualifications_detail:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  objecting_parties_appointment:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  other_objector_name_appointment:
+    category: party_attr
+    subcategory: other_objector
+    party: objector
+    data_type: person_name
+
+  appointment_factors:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  objecting_parties_fee:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  other_objector_name_fee:
+    category: party_attr
+    subcategory: other_objector
+    party: objector
+    data_type: person_name
+
+  fee_factors:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  limited_duties:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "limited"}]}
+
+  limited_hearing_appearance:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "limited"}]}
+
+  limited_other_provisions:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "limited"}]}
+
+  standard_other_provisions:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "standard"}]}
+
+  expanded_duties:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_interview_teachers:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_engage_provider:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_evaluation_subject:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_evaluation_deadline:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: date
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_evaluation_cost:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: currency
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_arrange_counseling:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_counseling_deadline:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: date
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_counseling_children:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_subpoena:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_contact_person:
+    category: party_attr
+    subcategory: expanded_contact
+    party: contact_person
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_mediation_appearance:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_other_events:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_other_duties:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  expanded_other_provisions:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: appointment_level
+    data_type: text
+    writable_when: {all_of: [{field: appointment_level, equals: "expanded"}]}
+
+  appointment_end_event:
+    category: narrative_derived
+    subcategory: termination_condition
+    data_type: text
+
+  appointment_end_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  report_requirement:
+    category: legal_choice
+    subcategory: report_election
+    data_type: text
+
+  summary_report_deadline:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  full_report_deadline_date:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+
+  report_issues:
+    category: narrative_derived
+    subcategory: free_text
+    data_type: text
+
+  probate_fee_rate:
+    category: narrative_derived
+    subcategory: fee_rate
+    data_type: currency
+
+  probate_fee_hours:
+    category: narrative_derived
+    subcategory: number_count
+    data_type: number
+
+  fee_structure:
+    category: legal_choice
+    subcategory: fee_structure
+    data_type: text
+    choice_group: fee_structure
+    validators:
+      - "value_in(hourly_cap, flat_fee, hourly_rate, hourly_cap_with_additional)"
+
+  flat_fee_additional:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  hourly_cap_total:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  hourly_cap_hours:
+    category: narrative_derived
+    subcategory: number_count
+    data_type: number
+
+  hourly_rate:
+    category: narrative_derived
+    subcategory: fee_rate
+    data_type: currency
+
+  hourly_additional_cap:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+
+  payment_method:
+    category: legal_choice
+    subcategory: payment_method
+    data_type: text
+    choice_group: payment_method
+    # Includes "periodic_bill" as a synonym for "periodic" since the
+    # form's exact wording isn't yet verified against the PDF.
+    validators:
+      - "value_in(lump_sum, percent, periodic, periodic_bill, other)"
+
+  lump_sum_deadline:
+    category: narrative_derived
+    subcategory: event_date
+    data_type: date
+    writable_when: {all_of: [{field: payment_method, equals: "lump_sum"}]}
+
+  petitioner_lump_sum:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+    writable_when: {all_of: [{field: payment_method, equals: "lump_sum"}]}
+
+  respondent_lump_sum:
+    category: narrative_derived
+    subcategory: fee
+    data_type: currency
+    writable_when: {all_of: [{field: payment_method, equals: "lump_sum"}]}
+
+  other_lump_sum_name:
+    category: party_attr
+    subcategory: other_payor
+    party: other_payor
+    data_type: person_name
+    writable_when: {all_of: [{field: payment_method, equals: "lump_sum"}]}
+
+  billing_frequency:
+    category: legal_choice
+    subcategory: billing_frequency
+    data_type: text
+
+  petitioner_percent:
+    category: narrative_derived
+    subcategory: percent
+    data_type: number
+
+  respondent_percent:
+    category: narrative_derived
+    subcategory: percent
+    data_type: number
+
+  other_percent_name:
+    category: party_attr
+    subcategory: other_payor
+    party: other_payor
+    data_type: person_name
+
+  payment_days:
+    category: narrative_derived
+    subcategory: number_count
+    data_type: number
+
+  petitioner_periodic_frequency:
+    category: legal_choice
+    subcategory: payment_frequency
+    data_type: text
+
+  respondent_periodic_frequency:
+    category: legal_choice
+    subcategory: payment_frequency
+    data_type: text
+
+  other_periodic_name:
+    category: party_attr
+    subcategory: other_payor
+    party: other_payor
+    data_type: person_name
+
+  other_periodic_frequency:
+    category: legal_choice
+    subcategory: payment_frequency
+    data_type: text
+
+  # Same enumerations as PB-007 main variant (with synonym aliases).
+  gal_roster_status:
+    category: narrative_derived
+    subcategory: gal_roster
+    data_type: text
+    validators:
+      - "value_in(rostered, on_roster, not_rostered, waived)"
+
+  objection_status:
+    category: narrative_derived
+    subcategory: objection_status
+    data_type: text
+    validators:
+      - "value_in(no_objection_to_appointment, none, objecting, objects)"
+
+  appointment_end_event:
+    category: narrative_derived
+    subcategory: termination_condition
+    data_type: text
+    validators:
+      - "value_in(report_filed, hearing_concluded, case_dismissed, date_certain, final_judgment, other)"

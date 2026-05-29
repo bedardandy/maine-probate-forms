@@ -1,0 +1,669 @@
+{
+  "form_id": "DE-603",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "DE-603 Closing Statement for Small Estate (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            102.0,
+            176.0,
+            122.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            423.0,
+            106.0,
+            547.9,
+            122.0
+          ]
+        }
+      ]
+    },
+    "estate_decedent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            109.0,
+            136.0,
+            290.0,
+            156.0
+          ]
+        }
+      ]
+    },
+    "personal_representative_name_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            206.0,
+            547.9,
+            249.0
+          ]
+        }
+      ]
+    },
+    "distributee_1_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            295.6,
+            222.5,
+            330.6
+          ]
+        }
+      ]
+    },
+    "distributee_1_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            295.6,
+            381.4,
+            330.6
+          ]
+        }
+      ]
+    },
+    "distributee_1_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            295.6,
+            547.9,
+            330.6
+          ]
+        }
+      ]
+    },
+    "distributee_2_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            330.6,
+            222.5,
+            365.5
+          ]
+        }
+      ]
+    },
+    "distributee_2_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            330.6,
+            381.4,
+            365.5
+          ]
+        }
+      ]
+    },
+    "distributee_2_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            330.6,
+            547.9,
+            365.5
+          ]
+        }
+      ]
+    },
+    "distributee_3_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            365.5,
+            222.5,
+            400.6
+          ]
+        }
+      ]
+    },
+    "distributee_3_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            365.5,
+            381.4,
+            400.6
+          ]
+        }
+      ]
+    },
+    "distributee_3_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            365.5,
+            547.9,
+            400.6
+          ]
+        }
+      ]
+    },
+    "distributee_4_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            400.6,
+            222.5,
+            435.6
+          ]
+        }
+      ]
+    },
+    "distributee_4_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            400.6,
+            381.4,
+            435.6
+          ]
+        }
+      ]
+    },
+    "distributee_4_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            400.6,
+            547.9,
+            435.6
+          ]
+        }
+      ]
+    },
+    "distributee_5_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            435.6,
+            222.5,
+            470.5
+          ]
+        }
+      ]
+    },
+    "distributee_5_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            435.6,
+            381.4,
+            470.5
+          ]
+        }
+      ]
+    },
+    "distributee_5_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            435.6,
+            547.9,
+            470.5
+          ]
+        }
+      ]
+    },
+    "distributee_6_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            470.5,
+            222.5,
+            505.6
+          ]
+        }
+      ]
+    },
+    "distributee_6_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            470.5,
+            381.4,
+            505.6
+          ]
+        }
+      ]
+    },
+    "distributee_6_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            470.5,
+            547.9,
+            505.6
+          ]
+        }
+      ]
+    },
+    "distributee_7_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            505.6,
+            222.5,
+            540.6
+          ]
+        }
+      ]
+    },
+    "distributee_7_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            505.6,
+            381.4,
+            540.6
+          ]
+        }
+      ]
+    },
+    "distributee_7_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            505.6,
+            547.9,
+            540.6
+          ]
+        }
+      ]
+    },
+    "distributee_8_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            540.6,
+            222.5,
+            575.5
+          ]
+        }
+      ]
+    },
+    "distributee_8_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            540.6,
+            381.4,
+            575.5
+          ]
+        }
+      ]
+    },
+    "distributee_8_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            540.6,
+            547.9,
+            575.5
+          ]
+        }
+      ]
+    },
+    "distributee_9_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            575.5,
+            222.5,
+            610.6
+          ]
+        }
+      ]
+    },
+    "distributee_9_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            575.5,
+            381.4,
+            610.6
+          ]
+        }
+      ]
+    },
+    "distributee_9_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            575.5,
+            547.9,
+            610.6
+          ]
+        }
+      ]
+    },
+    "distributee_10_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            610.6,
+            222.5,
+            645.6
+          ]
+        }
+      ]
+    },
+    "distributee_10_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            610.6,
+            381.4,
+            645.6
+          ]
+        }
+      ]
+    },
+    "distributee_10_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            610.6,
+            547.9,
+            645.6
+          ]
+        }
+      ]
+    },
+    "distributee_11_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            645.6,
+            222.5,
+            680.5
+          ]
+        }
+      ]
+    },
+    "distributee_11_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            645.6,
+            381.4,
+            680.5
+          ]
+        }
+      ]
+    },
+    "distributee_11_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            645.6,
+            547.9,
+            680.5
+          ]
+        }
+      ]
+    },
+    "distributee_12_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            63.5,
+            680.5,
+            222.5,
+            715.6
+          ]
+        }
+      ]
+    },
+    "distributee_12_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            222.5,
+            680.5,
+            381.4,
+            715.6
+          ]
+        }
+      ]
+    },
+    "distributee_12_interest": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            381.4,
+            680.5,
+            547.9,
+            715.6
+          ]
+        }
+      ]
+    },
+    "pr_date_signed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            224.0,
+            291.0,
+            244.0
+          ]
+        }
+      ]
+    },
+    "pr_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            360.0,
+            224.0,
+            550.1,
+            244.0
+          ]
+        }
+      ]
+    },
+    "notary_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            293.0,
+            193.0,
+            315.0
+          ]
+        }
+      ]
+    },
+    "notary_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            399.0,
+            295.0,
+            550.1,
+            315.0
+          ]
+        }
+      ]
+    },
+    "pr_name_in_notarization": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            296.0,
+            318.6,
+            476.0,
+            338.0
+          ]
+        }
+      ]
+    },
+    "notary_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            418.6,
+            550.1,
+            431.7
+          ]
+        }
+      ]
+    },
+    "notary_printed_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            314.9,
+            453.1,
+            550.1,
+            466.2
+          ]
+        }
+      ]
+    }
+  }
+}

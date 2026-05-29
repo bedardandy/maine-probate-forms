@@ -1,0 +1,53 @@
+pdf	page	field	old_rect	new_rect	underline_y
+output_fused/affidavits/AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_fused.pdf	1	b_list_make_model_year_and_value_of_all_motor_ve	[517.0,160.0,552.0,172.0]	[432.0,160.0,552.0,172.0]	rollback
+output_fused/estates/DE-201 Petition for Formal Probate of Will or Appointmet of PR (Rev. 8-6-21)_fused.pdf	4	publication_fee	[444.0,93.0,525.0,110.0]	[445.3,98.0,525.0,110.0]	110.0
+output_fused/estates/DE-201(I) Application for Informal Probate of Will or Appointment (Rev. 09-12-19)_fused.pdf	4	mailing_notices_fee	[288.0,90.0,363.0,106.0]	[289.2,93.6,363.0,105.6]	105.6
+output_fused/estates/DE-201(I) Application for Informal Probate of Will or Appointment (Rev. 09-12-19)_fused.pdf	4	publication_fee	[449.0,90.0,516.0,106.0]	[450.1,93.6,516.0,105.6]	105.6
+output_fused/estates/DE-201(I) Application for Informal Probate of Will or Appointment (Rev. 09-12-19)_fused.pdf	4	filing_fee	[121.0,91.0,188.0,106.0]	[121.3,93.6,188.0,105.6]	105.6
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	non_mortgage_debts_value	[389.0,427.0,483.0,450.0]	[390.0,437.3,483.0,449.3]	449.3
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	real_estate_maine_value	[389.0,300.0,483.0,322.0]	[390.0,309.7,483.0,321.7]	321.7
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	decedent_interest_maine_real_estate_value	[389.0,506.0,483.0,528.0]	[390.0,515.8,483.0,527.8]	527.8
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	tangible_personal_property_value	[389.0,343.0,483.0,360.0]	[390.0,347.8,483.0,359.8]	359.8
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	intangible_personal_property_value	[389.0,369.0,483.0,386.0]	[390.0,373.6,483.0,385.6]	385.6
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	total_probate_estate_value	[389.0,395.0,483.0,411.0]	[390.0,399.2,483.0,411.2]	411.2
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	0	maine_estate_tax_return_value	[262.0,602.8,332.0,617.0]	[263.3,605.0,332.0,617.0]	n/a
+output_fused/estates/DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf	1	estate_tax_bond_amount	[272.0,190.0,322.0,207.0]	[273.3,195.1,322.0,207.1]	207.1
+output_fused/estates/DE-403 Bond For Personal Representative (Rev. 7-1-19)_fused.pdf	1	pledge_personal_property_gross_value	[266.0,111.0,448.0,129.0]	[267.0,116.6,448.0,128.6]	128.6
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	0	value_row7	[288.5,635.0,400.0,656.0]	[294.7,644.0,400.0,656.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	1	gross_value_personal_property	[318.0,623.0,428.0,640.0]	[324.2,628.0,428.0,640.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	2	gross_value_of_real_property	[292.0,86.0,436.0,106.0]	[297.8,94.0,436.0,106.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	2	gross_value_of_real_property_encumbrances	[292.0,170.0,436.0,190.0]	[297.8,178.0,436.0,190.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	2	gross_value_of_personal_property	[292.0,117.0,436.0,136.0]	[297.8,124.0,436.0,136.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	2	gross_value_of_personal_property_encumbrances_2	[292.0,201.0,436.0,220.0]	[297.8,208.0,436.0,220.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	2	calculation_of_gross_and_net_estate_gross_value_of_inventory	[292.0,149.0,436.0,162.0]	[297.8,150.0,436.0,162.0]	n/a
+output_fused/estates/DE-405 Inventory (Rev. 5-6-21)_fused.pdf	2	net_value_of_inventory	[292.0,234.0,436.0,246.0]	[297.8,234.0,436.0,246.0]	n/a
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	real_estate_net_value	[360.0,284.8,499.0,307.8]	[366.0,296.0,499.0,308.0]	308.0
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	intangible_personal_property_net_value	[360.0,307.8,499.0,330.8]	[366.0,319.1,499.0,331.1]	331.1
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	expenses_amount	[360.0,411.2,499.0,434.3]	[366.0,422.5,499.0,434.5]	434.5
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	exemptions_allowances_amount	[360.0,434.3,499.0,457.3]	[366.0,445.6,499.0,457.6]	457.6
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	current_net_total	[360.0,560.8,499.0,583.8]	[366.0,572.0,499.0,584.0]	584.0
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	distributions_amount	[360.0,457.3,499.0,480.2]	[366.0,468.5,499.0,480.5]	480.5
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	total_net_value	[360.0,330.8,499.0,353.8]	[366.0,342.0,499.0,354.0]	354.0
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	current_net_intangible_personal_property	[360.0,537.8,499.0,560.8]	[366.0,549.0,499.0,561.0]	561.0
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	current_net_tangible_personal_property	[360.0,517.0,499.0,539.0]	[366.0,526.1,499.0,538.1]	538.1
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	income_amount	[360.0,392.3,499.0,412.0]	[366.0,399.5,499.0,411.5]	411.5
+output_fused/estates/DE-406 Probate Account (Rev. 7-1-19)_fused.pdf	0	tangible_personal_property_net_value	[360.0,265.8,499.0,285.0]	[366.0,273.0,499.0,285.0]	285.0
+output_fused/estates/DE-502 Demand For Bond (Rev. 7-1-19)_fused.pdf	0	bond_amount	[333.0,253.0,406.0,272.0]	[333.9,259.7,406.0,271.7]	271.7
+output_fused/estates/DE-504 Petition to Resolve Disputed Claim and Allowance (Rev. 7-1-19)_fused.pdf	1	claim_amount	[377.0,194.0,504.0,214.0]	[378.2,201.7,504.0,213.7]	213.7
+output_fused/gc_adults/PP-405 Bond for Conservator (Rev. 7-1-19)_fused.pdf	1	pledge_personal_property_gross_value	[266.0,111.0,448.0,129.0]	[267.0,116.6,448.0,128.6]	128.6
+output_fused/gc_adults/PP-406 Inventory (Rev. 7-1-19)_fused.pdf	2	gross_value_of_real_property	[440.3,94.0,450.0,106.0]	[330.0,94.0,450.0,106.0]	rollback
+output_fused/gc_adults/PP-406 Inventory (Rev. 7-1-19)_fused.pdf	2	gross_value_of_personal_property	[440.3,124.0,450.0,136.0]	[330.0,124.0,450.0,136.0]	rollback
+output_fused/gc_adults/PP-406 Inventory (Rev. 7-1-19)_fused.pdf	2	gross_value_of_real_property_encumbrances	[440.3,178.0,450.0,190.0]	[330.0,178.0,450.0,190.0]	rollback
+output_fused/gc_adults/PP-406 Inventory (Rev. 7-1-19)_fused.pdf	2	gross_value_of_personal_property_encumbrances_2	[440.3,208.0,450.0,220.0]	[330.0,208.0,450.0,220.0]	rollback
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	inventory_total	[360.0,342.2,500.0,365.3]	[366.0,353.5,500.0,365.5]	365.5
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	inventory_tangible_personal_property_value	[360.0,296.3,500.0,319.3]	[366.0,307.6,500.0,319.6]	319.6
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	expenses_amount	[360.0,434.3,500.0,457.3]	[366.0,445.6,500.0,457.6]	457.6
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	current_intangible_personal_property_balance	[360.0,618.2,500.0,641.3]	[366.0,629.5,500.0,641.5]	641.5
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	inventory_intangible_personal_property_value	[360.0,319.3,500.0,342.2]	[366.0,330.5,500.0,342.5]	342.5
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	current_tangible_personal_property_balance	[360.0,595.3,500.0,618.2]	[366.0,606.5,500.0,618.5]	618.5
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	current_total_balance	[360.0,550.0,500.0,572.0]	[366.0,560.0,500.0,572.0]	n/a
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	net_change_in_value	[360.0,459.0,500.0,480.0]	[366.0,468.0,500.0,480.0]	n/a
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	distributions_amount	[360.0,484.2,500.0,504.0]	[366.0,491.5,500.0,503.5]	503.5
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	income_amount	[360.0,415.2,500.0,435.0]	[366.0,422.5,500.0,434.5]	434.5
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	current_real_estate_balance	[360.0,576.3,500.0,596.0]	[366.0,583.6,500.0,595.6]	595.6
+output_fused/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_fused.pdf	0	inventory_real_estate_value	[360.0,277.4,500.0,297.0]	[366.0,284.5,500.0,296.5]	296.5

@@ -1,0 +1,27 @@
+# DE-406 — accounting form. Demote the source-of-truth balance cells to
+# narrative_derived (LLM fills from accounting period); only the actual
+# computed total stays in `computed`.
+
+overrides:
+  current_tangible_balance:
+    category: narrative_derived
+    subcategory: current_balance
+    data_type: currency
+
+  current_intangible_balance:
+    category: narrative_derived
+    subcategory: current_balance
+    data_type: currency
+
+  current_total_balance:
+    category: computed
+    subcategory: balance
+    data_type: currency
+
+  # Maine estate tax filing posture under 36 M.R.S.A. § 4063.
+  maine_estate_tax_status:
+    category: narrative_derived
+    subcategory: tax_status
+    data_type: text
+    validators:
+      - "value_in(required, not_required, extension_requested, filed, paid)"

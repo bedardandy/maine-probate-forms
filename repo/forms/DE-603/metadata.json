@@ -1,0 +1,9 @@
+{
+  "form_id": "DE-603",
+  "title": "Closing Statement for Small Estate",
+  "category": "estates",
+  "source_url": "http://www.maineprobate.net/Forms2019/Estates/DE-603%20Closing%20Statement%20for%20Small%20Estate%20(Rev.%207-1-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 47,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

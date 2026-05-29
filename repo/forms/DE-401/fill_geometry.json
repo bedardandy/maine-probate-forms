@@ -1,0 +1,357 @@
+{
+  "form_id": "DE-401",
+  "page_size": [
+    595,
+    842
+  ],
+  "n_pages": 2,
+  "source_fused": "DE-401(A) Certificate of Value Resident and Non Resident (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            64.0,
+            108.0,
+            173.0,
+            129.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            413.0,
+            108.0,
+            515.0,
+            129.0
+          ]
+        }
+      ]
+    },
+    "estate_decedent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            102.0,
+            143.0,
+            295.0,
+            165.0
+          ]
+        }
+      ]
+    },
+    "decedent_death_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            174.0,
+            180.9,
+            295.0,
+            202.0
+          ]
+        }
+      ]
+    },
+    "real_estate_maine": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            390.0,
+            309.7,
+            483.0,
+            321.7
+          ]
+        }
+      ]
+    },
+    "tangible_personal_property_maine": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            390.0,
+            347.8,
+            483.0,
+            359.8
+          ]
+        }
+      ]
+    },
+    "intangible_personal_property": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            390.0,
+            373.6,
+            483.0,
+            385.6
+          ]
+        }
+      ]
+    },
+    "total_probate_estate_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            390.0,
+            399.2,
+            483.0,
+            411.2
+          ]
+        }
+      ]
+    },
+    "non_mortgage_debts_expenses": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            390.0,
+            437.3,
+            483.0,
+            449.3
+          ]
+        }
+      ]
+    },
+    "net_value_probate_estate": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            389.0,
+            462.0,
+            483.0,
+            475.0
+          ]
+        }
+      ]
+    },
+    "decedent_interest_maine_real_estate": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            390.0,
+            515.8,
+            483.0,
+            527.8
+          ]
+        }
+      ]
+    },
+    "federal_estate_tax_return": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 0,
+          "rect": [
+            265.1,
+            572.6,
+            273.1,
+            580.6
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 0,
+          "rect": [
+            300.5,
+            572.6,
+            308.5,
+            580.6
+          ]
+        }
+      ]
+    },
+    "maine_estate_tax_return": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 0,
+          "rect": [
+            261.3,
+            590.2,
+            269.3,
+            598.2
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 0,
+          "rect": [
+            296.6,
+            590.2,
+            304.6,
+            598.2
+          ]
+        }
+      ]
+    },
+    "estimated_maine_estate_tax": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            263.3,
+            605.0,
+            332.0,
+            617.0
+          ]
+        }
+      ]
+    },
+    "cash_collateral_deposited": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 0,
+          "rect": [
+            325.1,
+            642.8,
+            333.1,
+            650.8
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 0,
+          "rect": [
+            363.0,
+            642.8,
+            371.0,
+            650.8
+          ]
+        }
+      ]
+    },
+    "applicant_acknowledgment_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            102.0,
+            655.5,
+            238.0,
+            676.0
+          ]
+        }
+      ]
+    },
+    "applicant_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            102.0,
+            702.1,
+            238.0,
+            721.0
+          ]
+        }
+      ]
+    },
+    "applicant_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            281.0,
+            702.0,
+            515.0,
+            721.0
+          ]
+        }
+      ]
+    },
+    "estate_tax_action": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "secured_no_bond",
+          "label": "Any Maine Estate Tax due appears to be reasonably secured by lien or deposit; no Estate Tax Bond need be filed",
+          "page": 1,
+          "rect": [
+            101.5,
+            152.3,
+            109.5,
+            160.3
+          ]
+        },
+        {
+          "value": "bond_required",
+          "label": "An Estate Tax Bond is required; no Letters of Authority shall be issued until said bond is approved",
+          "page": 1,
+          "rect": [
+            101.5,
+            198.2,
+            109.5,
+            206.2
+          ]
+        }
+      ]
+    },
+    "estate_tax_bond_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            273.3,
+            195.1,
+            322.0,
+            207.1
+          ]
+        }
+      ]
+    },
+    "judge_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            256.0,
+            234.0,
+            276.0
+          ]
+        }
+      ]
+    }
+  }
+}

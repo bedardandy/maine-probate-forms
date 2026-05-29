@@ -1,0 +1,56 @@
+# PP-413 — Petition for Termination, Removal, or Resignation
+# (Guardianship/Conservatorship).
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 5-318 (Termination of guardianship)"
+    - "18-C M.R.S.A. § 5-432 (Termination of conservatorship)"
+  service_required: true
+
+overrides:
+  # The three grounds checkboxes are non-exclusive — multiple can apply.
+  # Each ground's narrative is required-when the matching ground is true,
+  # and forbidden-when it's not (writable_when).
+
+  termination_reasons_detail:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: belief_reason_termination
+    data_type: text
+    writable_when:
+      all_of:
+        - field: belief_reason_termination
+          equals: true
+    required_when:
+      all_of:
+        - field: belief_reason_termination
+          equals: true
+
+  removal_reasons_detail:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: belief_reason_removal
+    data_type: text
+    writable_when:
+      all_of:
+        - field: belief_reason_removal
+          equals: true
+    required_when:
+      all_of:
+        - field: belief_reason_removal
+          equals: true
+
+  resignation_reasons_detail:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    parent_section: belief_reason_resignation
+    data_type: text
+    writable_when:
+      all_of:
+        - field: belief_reason_resignation
+          equals: true
+    required_when:
+      all_of:
+        - field: belief_reason_resignation
+          equals: true

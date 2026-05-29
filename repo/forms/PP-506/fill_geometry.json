@@ -1,0 +1,972 @@
+{
+  "form_id": "PP-506",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 6,
+  "source_fused": "PP-506 Visitor's Report (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            111.0,
+            177.0,
+            134.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            115.0,
+            543.4,
+            134.0
+          ]
+        }
+      ]
+    },
+    "respondent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            148.0,
+            281.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "nature_of_proceeding": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "joined_petitions",
+          "label": "Joined Petitions for Appointment of Guardian and Conservator",
+          "page": 0,
+          "rect": [
+            109.0,
+            239.9,
+            116.0,
+            246.9
+          ]
+        },
+        {
+          "value": "guardian_only",
+          "label": "Petition for Appointment of Guardian only",
+          "page": 0,
+          "rect": [
+            109.0,
+            251.4,
+            116.0,
+            258.4
+          ]
+        },
+        {
+          "value": "conservator_only",
+          "label": "Petition for Appointment of Conservator only",
+          "page": 0,
+          "rect": [
+            109.0,
+            262.8,
+            116.0,
+            269.8
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            109.0,
+            274.3,
+            116.0,
+            281.3
+          ]
+        }
+      ]
+    },
+    "nature_of_proceeding_other": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            286.5,
+            543.4,
+            306.0
+          ]
+        }
+      ]
+    },
+    "visitor_contact_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            367.0,
+            543.4,
+            406.0
+          ]
+        }
+      ]
+    },
+    "report_filed_by_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            470.5,
+            543.4,
+            482.5
+          ]
+        }
+      ]
+    },
+    "respondent_identifying_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            600.3,
+            543.4,
+            620.0
+          ]
+        }
+      ]
+    },
+    "respondent_marital_status": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            634.7,
+            543.4,
+            656.0
+          ]
+        }
+      ]
+    },
+    "respondent_children_relatives": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            108.0,
+            681.0,
+            543.4,
+            774.0
+          ]
+        }
+      ]
+    },
+    "visitation_dates_places": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            97.9,
+            542.0,
+            129.0
+          ]
+        }
+      ]
+    },
+    "persons_interviewed": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            143.9,
+            542.0,
+            196.0
+          ]
+        }
+      ]
+    },
+    "physical_description": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            260.0,
+            542.0,
+            323.0
+          ]
+        }
+      ]
+    },
+    "dwelling_description": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            352.0,
+            542.0,
+            404.0
+          ]
+        }
+      ]
+    },
+    "communication_level": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            442.9,
+            542.0,
+            507.0
+          ]
+        }
+      ]
+    },
+    "background_info": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            546.5,
+            542.0,
+            611.0
+          ]
+        }
+      ]
+    },
+    "attitude_understanding": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            108.0,
+            651.0,
+            542.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "contest_proceedings": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 2,
+          "rect": [
+            248.5,
+            108.7,
+            255.5,
+            115.7
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 2,
+          "rect": [
+            279.4,
+            108.7,
+            286.4,
+            115.7
+          ]
+        }
+      ]
+    },
+    "contest_proceedings_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            121.0,
+            540.0,
+            163.0
+          ]
+        }
+      ]
+    },
+    "recommend_attorney": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 2,
+          "rect": [
+            130.2,
+            177.6,
+            137.2,
+            184.6
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 2,
+          "rect": [
+            161.1,
+            177.6,
+            168.1,
+            184.6
+          ]
+        }
+      ]
+    },
+    "recommend_attorney_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            189.9,
+            540.0,
+            220.0
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            121.0,
+            248.4,
+            196.1,
+            266.9
+          ]
+        }
+      ]
+    },
+    "medical_condition_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            282.0,
+            540.0,
+            336.0
+          ]
+        }
+      ]
+    },
+    "cognition_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            351.0,
+            540.0,
+            403.0
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            121.0,
+            397.9,
+            200.6,
+            416.4
+          ]
+        }
+      ]
+    },
+    "functional_abilities_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            421.0,
+            540.0,
+            482.0
+          ]
+        }
+      ]
+    },
+    "values_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            512.0,
+            540.0,
+            563.0
+          ]
+        }
+      ]
+    },
+    "risk_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            592.3,
+            540.0,
+            645.0
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            121.0,
+            639.4,
+            179.2,
+            657.8
+          ]
+        }
+      ]
+    },
+    "enhancements_detail": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            108.0,
+            673.0,
+            540.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "self_care_tasks": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            110.0,
+            540.0,
+            173.0
+          ]
+        }
+      ]
+    },
+    "guardianship_recommendations": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            225.0,
+            540.0,
+            289.0
+          ]
+        }
+      ]
+    },
+    "proposed_guardian_qualifications": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            316.4,
+            540.0,
+            359.0
+          ]
+        }
+      ]
+    },
+    "dwelling_needs": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 3,
+          "rect": [
+            240.8,
+            373.3,
+            247.8,
+            380.3
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 3,
+          "rect": [
+            271.6,
+            373.3,
+            278.6,
+            380.3
+          ]
+        }
+      ]
+    },
+    "further_evaluation": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 3,
+          "rect": [
+            445.0,
+            430.8,
+            452.0,
+            437.8
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 3,
+          "rect": [
+            475.7,
+            430.8,
+            482.7,
+            437.8
+          ]
+        }
+      ]
+    },
+    "further_evaluation_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            454.5,
+            540.0,
+            486.0
+          ]
+        }
+      ]
+    },
+    "attend_hearing_ability": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 3,
+          "rect": [
+            130.2,
+            499.8,
+            137.2,
+            506.8
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 3,
+          "rect": [
+            161.1,
+            499.8,
+            168.1,
+            506.8
+          ]
+        }
+      ]
+    },
+    "attend_hearing_ability_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            512.0,
+            540.0,
+            543.0
+          ]
+        }
+      ]
+    },
+    "wish_to_attend_hearing": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 3,
+          "rect": [
+            451.4,
+            557.3,
+            458.4,
+            564.3
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 3,
+          "rect": [
+            482.1,
+            557.3,
+            489.1,
+            564.3
+          ]
+        }
+      ]
+    },
+    "wish_to_attend_hearing_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            569.5,
+            540.0,
+            611.0
+          ]
+        }
+      ]
+    },
+    "participate_hearing_ability": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 3,
+          "rect": [
+            347.5,
+            614.9,
+            354.5,
+            621.9
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 3,
+          "rect": [
+            378.4,
+            614.9,
+            385.4,
+            621.9
+          ]
+        }
+      ]
+    },
+    "participate_hearing_ability_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            108.0,
+            639.0,
+            540.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "conservatorship_appropriateness": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 4,
+          "rect": [
+            487.4,
+            131.8,
+            494.4,
+            138.8
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 4,
+          "rect": [
+            125.8,
+            143.3,
+            132.8,
+            150.3
+          ]
+        }
+      ]
+    },
+    "conservatorship_alternative": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            108.0,
+            155.4,
+            498.0,
+            220.0
+          ]
+        }
+      ]
+    },
+    "financial_functioning": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            108.0,
+            271.0,
+            498.0,
+            335.0
+          ]
+        }
+      ]
+    },
+    "conservatorship_scope": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "limited",
+          "label": "LIMITED",
+          "page": 4,
+          "rect": [
+            434.3,
+            339.4,
+            441.3,
+            346.4
+          ]
+        },
+        {
+          "value": "full",
+          "label": "FULL",
+          "page": 4,
+          "rect": [
+            474.5,
+            339.4,
+            481.5,
+            346.4
+          ]
+        }
+      ]
+    },
+    "conservatorship_scope_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            108.0,
+            351.0,
+            498.0,
+            394.0
+          ]
+        }
+      ]
+    },
+    "limited_conservatorship_powers": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            108.0,
+            420.0,
+            498.0,
+            474.0
+          ]
+        }
+      ]
+    },
+    "proposed_conservator_qualifications": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            108.0,
+            500.6,
+            498.0,
+            554.0
+          ]
+        }
+      ]
+    },
+    "challenge_conservatorship": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 4,
+          "rect": [
+            386.4,
+            580.3,
+            393.4,
+            587.3
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 4,
+          "rect": [
+            417.2,
+            580.3,
+            424.2,
+            587.3
+          ]
+        }
+      ]
+    },
+    "challenge_conservatorship_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            108.0,
+            604.0,
+            498.0,
+            647.0
+          ]
+        }
+      ]
+    },
+    "other_matters": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": true,
+          "label": "YES",
+          "page": 4,
+          "rect": [
+            152.6,
+            660.9,
+            159.6,
+            667.9
+          ]
+        },
+        {
+          "value": false,
+          "label": "NO",
+          "page": 4,
+          "rect": [
+            183.5,
+            660.9,
+            190.5,
+            667.9
+          ]
+        }
+      ]
+    },
+    "other_matters_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            86.0,
+            673.1,
+            498.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "visitor_dated": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 5,
+          "rect": [
+            116.0,
+            307.0,
+            237.0,
+            325.0
+          ]
+        }
+      ]
+    },
+    "visitor_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 5,
+          "rect": [
+            324.0,
+            305.0,
+            504.0,
+            325.0
+          ]
+        }
+      ]
+    },
+    "date_filed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 5,
+          "rect": [
+            116.0,
+            558.0,
+            237.0,
+            578.0
+          ]
+        }
+      ]
+    },
+    "register_of_probate_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 5,
+          "rect": [
+            324.0,
+            558.8,
+            546.0,
+            577.3
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# N-107 — Waiver of Notice.
+
+skill_metadata:
+  filer_role: declarant
+  statutes:
+    - "18-C M.R.S.A. § 1-401 (Waiver of notice)"
+  service_required: false
+  filing_deadline_days: null
+  # No statutory deadline — filed when the interested person waives notice.

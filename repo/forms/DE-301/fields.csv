@@ -1,0 +1,30 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,8,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_of_decedent,Estate Of Decedent,,text,person_name,case_constant,estate_of_decedent,,,0,green,Y,,,case_dict.estate_of_decedent,populate_from_case_dict
+applicant_full_legal_name,Applicant Full Legal Name,,text,text,party_attr,applicant,,,0,green,Y,,,applicant_record.applicant,
+applicant_address_email_phone,Applicant Address Email Phone,,text,text,party_attr,applicant,,,0,green,Y,,,applicant_record.applicant,
+applicant_legal_interest,Applicant Legal Interest,,select_many,text,party_attr,applicant,,,0,green,Y,,,applicant_record.applicant,
+applicant_legal_interest_other_text,Applicant Legal Interest Other Text,W013,text,text,party_attr,applicant,,,0,green,Y,,,applicant_record.applicant,
+decedent_full_legal_name,Decedent Full Legal Name,,text,text,party_attr,decedent,,,0,green,Y,,,decedent_record.decedent,
+date_of_death,Date Of Death,,date,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,
+domicile_of_decedent,Domicile Of Decedent,,text,address,narrative_derived,address,,,5,green,,Y,,llm_over_narrative,
+domiciled_in_county,Domiciled In County,,select_one,checkbox,legal_choice,venue,,,28,yellow,,,Y,human_decision,
+venue_basis_if_not_domiciled,Venue Basis If Not Domiciled,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+person_whose_appointment_is_sought,Person Whose Appointment Is Sought,,text,person_name,party_attr,appointee,,,0,green,Y,,,appointee_record.appointee,
+will_presented_for_probate,Will Presented For Probate,,select_one,checkbox,legal_choice,will_presented_for_probate,,,28,yellow,,,Y,human_decision,
+will_details,Will Details,,text,checkbox,legal_choice,will_details,,,20,yellow,,,Y,human_decision,
+nominated_as_pr_in_will,Nominated As Pr In Will,,select_one,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+applicant_signature_date,Applicant Signature Date,,date,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,"date_order(date_of_death, >)"
+applicant_signature_name,Applicant Signature Name,,text,person_name,signature,applicant_signature_print,,,5,green,,,Y,wet_ink,"equals_field(applicant_full_legal_name, relaxed)"
+attorney_name,Attorney Name,,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W030,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Attorney Bar Number,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+notary_appearer_name,Notary Appearer Name,,text,person_name,party_attr,notary_appearer,,,0,green,Y,,,notary_record.notary_appearer,"equals_field(applicant_full_legal_name, relaxed)"
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_name,Notary Name,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_title,Notary Title,,text,text,party_attr,notary,,,12,green,Y,,,notary_record.notary,
+special_admin_acceptance_date,Special Admin Acceptance Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+special_admin_acceptance_signature,Special Admin Acceptance Signature,,text,signature,signature,special_admin_acceptance_signature,,,5,green,,,Y,wet_ink,

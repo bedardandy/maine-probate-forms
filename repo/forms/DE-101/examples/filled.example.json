@@ -1,0 +1,66 @@
+{
+  "_comment": "Expected DE-101 fill output for examples/case.example.json. Field IDs match repo/forms/DE-101/fields.csv. NULL means the field should be left blank.",
+  "_pipeline": {
+    "case_constant": "populated from case_dict",
+    "party_attr":    "populated from <party>_record",
+    "narrative_derived": "filled by LLM from narrative_facts",
+    "legal_choice":   "filled deterministically from boolean narrative_facts",
+    "signature":     "left blank for wet-ink",
+    "external":      "left blank — does not apply to intestate"
+  },
+
+  "fields": {
+    "county_probate_court":                  "Cumberland",
+    "docket_number":                         "2026-MERR-2024-00451",
+    "decedent_name_caption":                 "Margaret L. Walsh",
+
+    "applicant_full_name":                   "Sarah J. Walsh-Bennett",
+    "applicant_contact_info":                "47 Pine Hill Road, Falmouth, ME 04105 / (207) 555-0142 / sjwb@example.com",
+    "applicant_legal_interest":              "heir",
+    "applicant_legal_interest_other":        null,
+
+    "personal_representative_name_address":  "Sarah J. Walsh-Bennett of 47 Pine Hill Road, Falmouth, ME 04105",
+    "personal_representative_relationship":  "Daughter of decedent",
+    "prior_equal_right_explanation":         null,
+
+    "decedent_full_name":                    "Margaret L. Walsh",
+    "decedent_date_of_death":                "2026-03-18",
+    "decedent_date_of_birth":                "1948-11-04",
+    "decedent_domicile":                     "82 Falmouth Foreside Way, Falmouth, ME 04105",
+
+    "heirs_names_addresses":                 "Sarah J. Walsh-Bennett (daughter, DOB 1976-05-22), 47 Pine Hill Road, Falmouth, ME 04105 — sole surviving heir. Decedent's spouse Robert J. Walsh predeceased her in 2019; her only sibling John Walsh predeceased her in 2014 leaving no issue.",
+    "non_registered_domestic_partner":       "no",
+    "non_registered_domestic_partner_details": null,
+
+    "real_estate_in_maine":                  "yes",
+    "real_estate_details":                   "Single-family residence at 82 Falmouth Foreside Way, Falmouth, ME 04105 (Tax Map 12, Lot 4). Decedent's sole interest.",
+    "domiciled_outside_maine":               "no",
+    "outside_maine_property_details":        null,
+
+    "prior_personal_representative":         "no",
+    "prior_personal_representative_details": null,
+    "died_more_than_3_years":                "no",
+    "died_more_than_3_years_circumstances":  null,
+
+    "demand_for_notice":                     "no",
+    "demand_for_notice_details":             null,
+    "request_register_service_notices":      "yes",
+    "request_publish_notice_creditors":      "yes",
+
+    "bond_requirement":                      "Bond requested: $45,000 (personal property only; no will or codicils — intestate).",
+    "testamentary_instrument":               null,
+
+    "applicant_date":                        null,
+    "applicant_signature":                   null,
+
+    "attorney_name":                         "Patricia M. Goff",
+    "attorney_address":                      "200 Commercial Street, Suite 4, Portland, ME 04101",
+    "attorney_phone":                        "(207) 555-0309",
+    "attorney_bar_number":                   "4271",
+    "attorney_email":                        "pgoff@example.com",
+
+    "filing_fee":                            "$175.00",
+    "mailing_notices_fee":                   "$21.00",
+    "publication_fee":                       "$0.00"
+  }
+}

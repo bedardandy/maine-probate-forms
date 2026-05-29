@@ -1,0 +1,16 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+estate_of,Estate Of,W003,text,text,case_constant,estate_of,,,0,green,Y,,,case_dict.estate_of,populate_from_case_dict
+omitted_child_info,Omitted Child Info,W004,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+circumstances_existed,Circumstances Existed,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+omission_intent,Omission Intent,,select_one,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+basis_facts,Basis Facts,W008,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+intestate_share_prayer,Intestate Share Prayer,,select_one,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+date,Date,W011,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_signature,Petitioner Signature,W012,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,W013,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W014,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,W016,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_bar_number,Maine Bar Number,,text,text,party_attr,attorney,,,5,green,Y,,,case_dict.attorney,
+attorney_email,Email Address,,text,text,party_attr,attorney,,,5,green,Y,,,case_dict.attorney,

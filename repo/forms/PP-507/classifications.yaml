@@ -1,0 +1,33 @@
+# PP-507 — Affidavit for Emergency Guardian and/or Conservator.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "18-C M.R.S.A. § 5-312 (Emergency guardian)"
+    - "18-C M.R.S.A. § 5-403 (Emergency conservator)"
+  service_required: true
+
+overrides:
+  # `requested_powers` and `circumstances_of_harm` are required when
+  # either emergency-type checkbox is true.
+  requested_powers:
+    category: narrative_derived
+    subcategory: emergency_relief_request
+    data_type: text
+    required_when:
+      any_of:
+        - field: emergency_guardian_requested
+          equals: true
+        - field: emergency_conservator_requested
+          equals: true
+
+  circumstances_of_harm:
+    category: narrative_derived
+    subcategory: emergency_circumstances
+    data_type: text
+    required_when:
+      any_of:
+        - field: emergency_guardian_requested
+          equals: true
+        - field: emergency_conservator_requested
+          equals: true

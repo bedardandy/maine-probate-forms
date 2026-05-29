@@ -1,0 +1,92 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+case_name,Case Name,W003,text,text,case_constant,case_name,,,0,green,Y,,,case_dict.case_name,populate_from_case_dict
+party_name,Party Name,W004,text,person_name,party_attr,form_subject,,,0,green,Y,,,form_subject_record.form_subject,
+date_of_birth,Date Of Birth,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+age,Age,W006,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+phone,Phone,W007,text,phone,party_attr,form_subject_phone,,,0,green,Y,,,form_subject_record.form_subject_phone,
+address,Address,W008,text,address,party_attr,form_subject_address,,,0,green,Y,,,form_subject_record.form_subject_address,
+request_type,Request Type,,select_many,checkbox,legal_choice,request_type,,,20,yellow,,,Y,human_decision,
+marital_status,Marital Status,,select_one,text,narrative_derived,marital_status,,,5,green,,Y,,llm_over_narrative,"value_in(single, married, divorced, widowed, separated, civil_union)"
+living_arrangement,Living Arrangement,,select_one,text,narrative_derived,living_arrangement,,,5,green,,Y,,llm_over_narrative,"value_in(own, rent, parent_home, room_or_board, institutional, alone, with_relatives, other)"
+living_arrangement_other,Living Arrangement Other,W024,text,text,narrative_derived,radio_other_specify,,,5,green,,Y,,llm_over_narrative,
+dependents_list,Dependents List,W026,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+cash_on_hand,Cash On Hand,W029,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+checking_institution,Checking Institution,W030,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+checking_amount,Checking Amount,W031,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+savings_institution,Savings Institution,W032,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+savings_amount,Savings Amount,W033,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+stocks_bonds_specify,Stocks Bonds Specify,W034,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+stocks_bonds_amount,Stocks Bonds Amount,W035,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+bail_amount,Bail Amount,W036,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_assets_specify,Other Assets Specify,W037,text,text,narrative_derived,free_text,,,37,orange,,Y,,llm_over_narrative,
+other_assets_amount,Other Assets Amount,W038,text,currency,narrative_derived,free_text,,,37,orange,,Y,,llm_over_narrative,
+total_cash_assets,Total Cash Assets,W039,text,currency,computed,total_cash_assets,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+employer_name_address,Employer Name Address,W041,text,text,party_attr,employer,,,0,green,Y,,,form_subject_employer_record.employer,
+length_employed,Length Employed,W042,text,text,narrative_derived,duration_text,,,5,green,,Y,,llm_over_narrative,
+employment_type,Employment Type,,select_one,checkbox,legal_choice,employment_type,,,20,yellow,,,Y,human_decision,
+last_employment_details,Last Employment Details,W046,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+anticipate_other_employment,Anticipate Other Employment,,select_one,checkbox,legal_choice,anticipate_other_employment,,,20,yellow,,,Y,human_decision,
+other_employment_explanation,Other Employment Explanation,W049,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_compensation_explanation,Other Compensation Explanation,W050,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+salary_wages_amount,Salary Wages Amount,W051,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+salary_wages_period,Salary Wages Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+unemployment_amount,Unemployment Amount,W054,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+unemployment_period,Unemployment Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+social_security_amount,Social Security Amount,W057,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+social_security_period,Social Security Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+tanf_amount,Tanf Amount,W060,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+tanf_period,Tanf Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+alimony_child_support_amount,Alimony Child Support Amount,W063,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+alimony_child_support_period,Alimony Child Support Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+other_income_amount,Other Income Amount,W066,text,currency,narrative_derived,free_text,,,73,red,,Y,,llm_over_narrative,
+other_income_period,Other Income Period,,select_one,text,narrative_derived,pay_period,,,73,red,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+other_income_specify,Other Income Specify,W069,text,text,narrative_derived,free_text,,,73,red,,Y,,llm_over_narrative,
+spouse_name,Spouse Name,W071,text,person_name,party_attr,spouse,,,0,green,Y,,,spouse_record.spouse,
+spouse_relationship,Spouse Relationship,W070,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+spouse_address,Spouse Address,W072,text,address,party_attr,spouse,,,0,green,Y,,,spouse_record.spouse,
+spouse_dependents_count,Spouse Dependents Count,W073,text,number,narrative_derived,integer_count,,,5,green,,Y,,llm_over_narrative,
+spouse_employed,Spouse Employed,,select_one,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
+spouse_income_amount,Spouse Income Amount,W076,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+spouse_income_period,Spouse Income Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+spouse_income_available_amount,Spouse Income Available Amount,W079,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+spouse_income_available_period,Spouse Income Available Period,,select_one,text,narrative_derived,pay_period,,,5,green,,Y,,llm_over_narrative,"value_in(weekly, biweekly, semi_monthly, monthly, annually, none)"
+money_owed_to_party,Money Owed To Party,,select_one,currency,narrative_derived,financial_declaration,,,33,yellow,,Y,,llm_over_narrative,
+money_owed_amount,Money Owed Amount,W084,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+expected_payments_explanation,Expected Payments Explanation,W085,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+own_real_estate,Own Real Estate,,select_one,checkbox,legal_choice,yes_no,,,48,orange,,,Y,human_decision,"value_in(yes, no)"
+real_estate_market_value,Real Estate Market Value,W088,text,currency,narrative_derived,financial_declaration,,,33,yellow,,Y,,llm_over_narrative,
+mortgage_amount,Mortgage Amount,W090,text,currency,narrative_derived,free_text,,,33,yellow,,Y,,llm_over_narrative,
+mortgage_holder,Mortgage Holder,W091,text,entity_name,narrative_derived,entity_reference,,,5,green,,Y,,llm_over_narrative,
+vehicle_details,Vehicle Details,W092,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+vehicle_value,Vehicle Value,W093,text,currency,narrative_derived,financial_declaration,,,5,green,,Y,,llm_over_narrative,
+vehicle_title_holder,Vehicle Title Holder,W094,text,text,narrative_derived,party_reference,,,5,green,,Y,,llm_over_narrative,
+vehicle_registration,Vehicle Registration,W095,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_personal_property,Other Personal Property,W096,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+insurance_pension_value,Insurance Pension Value,W097,text,currency,narrative_derived,financial_declaration,,,5,green,,Y,,llm_over_narrative,
+food_expenses,Food Expenses,W099,text,currency,narrative_derived,monthly_expense,,,5,green,,Y,,llm_over_narrative,
+housing_expenses,Housing Expenses,W100,text,currency,narrative_derived,monthly_expense,,,5,green,,Y,,llm_over_narrative,
+utilities_expenses,Utilities Expenses,W101,text,currency,narrative_derived,monthly_expense,,,5,green,,Y,,llm_over_narrative,
+other_living_expenses,Other Living Expenses,W102,text,currency,narrative_derived,monthly_expense,,,5,green,,Y,,llm_over_narrative,
+total_living_expenses,Total Living Expenses,W103,text,currency,computed,total_living_expenses,,,0,green,Y,,,recompute_from_dependencies,recompute_from_dependencies
+loan_row_1_lender,Loan Row 1 Lender,W104,text,text,narrative_derived,repeating_slot,loan_row,1,20,yellow,,Y,,llm_over_narrative,
+loan_row_1_purpose,Loan Row 1 Purpose,W105,text,text,narrative_derived,repeating_slot,loan_row,1,20,yellow,,Y,,llm_over_narrative,
+loan_row_1_total_owed,Loan Row 1 Total Owed,W106,text,text,narrative_derived,repeating_slot,loan_row,1,20,yellow,,Y,,llm_over_narrative,
+loan_row_1_monthly_payment,Loan Row 1 Monthly Payment,W107,text,text,narrative_derived,repeating_slot,loan_row,1,20,yellow,,Y,,llm_over_narrative,
+loan_row_2_lender,Loan Row 2 Lender,W108,text,text,narrative_derived,repeating_slot,loan_row,2,28,yellow,,Y,,llm_over_narrative,
+loan_row_2_purpose,Loan Row 2 Purpose,W109,text,text,narrative_derived,repeating_slot,loan_row,2,20,yellow,,Y,,llm_over_narrative,
+loan_row_2_total_owed,Loan Row 2 Total Owed,W110,text,text,narrative_derived,repeating_slot,loan_row,2,20,yellow,,Y,,llm_over_narrative,
+loan_row_2_monthly_payment,Loan Row 2 Monthly Payment,W111,text,text,narrative_derived,repeating_slot,loan_row,2,20,yellow,,Y,,llm_over_narrative,
+loan_row_3_lender,Loan Row 3 Lender,W112,text,text,narrative_derived,repeating_slot,loan_row,3,20,yellow,,Y,,llm_over_narrative,
+loan_row_3_purpose,Loan Row 3 Purpose,W113,text,text,narrative_derived,repeating_slot,loan_row,3,20,yellow,,Y,,llm_over_narrative,
+loan_row_3_total_owed,Loan Row 3 Total Owed,W114,text,text,narrative_derived,repeating_slot,loan_row,3,20,yellow,,Y,,llm_over_narrative,
+loan_row_3_monthly_payment,Loan Row 3 Monthly Payment,W115,text,text,narrative_derived,repeating_slot,loan_row,3,20,yellow,,Y,,llm_over_narrative,
+medical_support_payments,Medical Support Payments,W116,text,currency,narrative_derived,monthly_expense,,,45,orange,,Y,,llm_over_narrative,
+medical_support_total,Medical Support Total,W117,text,currency,computed,medical_support_total,,,40,orange,Y,,,recompute_from_dependencies,recompute_from_dependencies
+additional_statement,Additional Statement,W118,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+party_date,Party Date,W120,date,date,signature,party_signature_date,,,5,green,,,Y,wet_ink,
+party_signature,Party Signature,W121,text,signature,signature,party_signature,,,5,green,,,Y,wet_ink,
+notary_appeared_name,Notary Appeared Name,W122,text,person_name,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_date,Notary Date,W123,date,date,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,W124,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,

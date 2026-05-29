@@ -1,0 +1,489 @@
+{
+  "form_id": "DE-406",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 2,
+  "source_fused": "DE-406 Probate Account (Rev. 7-1-19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            112.0,
+            176.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            113.0,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "decedent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            118.0,
+            149.0,
+            317.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "accounting_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            196.0,
+            186.0,
+            291.0,
+            205.0
+          ]
+        }
+      ]
+    },
+    "period_begin": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            450.0,
+            183.0,
+            542.0,
+            205.0
+          ]
+        }
+      ]
+    },
+    "period_end": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            118.0,
+            208.3,
+            213.0,
+            220.3
+          ]
+        }
+      ]
+    },
+    "inventory_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            300.0,
+            208.3,
+            391.0,
+            220.3
+          ]
+        }
+      ]
+    },
+    "inventory_completed_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            219.7,
+            176.0,
+            231.7
+          ]
+        }
+      ]
+    },
+    "inventory_filed_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            360.0,
+            219.7,
+            465.0,
+            231.7
+          ]
+        }
+      ]
+    },
+    "prior_accounts_filed": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            232.0,
+            231.3,
+            438.0,
+            243.3
+          ]
+        }
+      ]
+    },
+    "tangible_personal_property_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            273.0,
+            499.0,
+            285.0
+          ]
+        }
+      ]
+    },
+    "real_estate_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            296.0,
+            499.0,
+            308.0
+          ]
+        }
+      ]
+    },
+    "intangible_personal_property_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            319.1,
+            499.0,
+            331.1
+          ]
+        }
+      ]
+    },
+    "total_inventory_value": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            342.0,
+            499.0,
+            354.0
+          ]
+        }
+      ]
+    },
+    "income_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            399.5,
+            499.0,
+            411.5
+          ]
+        }
+      ]
+    },
+    "expenses_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            422.5,
+            499.0,
+            434.5
+          ]
+        }
+      ]
+    },
+    "exemptions_allowances_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            445.6,
+            499.0,
+            457.6
+          ]
+        }
+      ]
+    },
+    "distributions_amount": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            468.5,
+            499.0,
+            480.5
+          ]
+        }
+      ]
+    },
+    "current_tangible_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            526.1,
+            499.0,
+            538.1
+          ]
+        }
+      ]
+    },
+    "current_intangible_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            549.0,
+            499.0,
+            561.0
+          ]
+        }
+      ]
+    },
+    "current_total_balance": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            366.0,
+            572.0,
+            499.0,
+            584.0
+          ]
+        }
+      ]
+    },
+    "maine_estate_tax_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "paid",
+          "label": "Maine Estate Taxes have been paid and proof of the same is attached",
+          "page": 0,
+          "rect": [
+            91.0,
+            633.1,
+            98.0,
+            640.1
+          ]
+        },
+        {
+          "value": "not_due",
+          "label": "Maine Estate Taxes are not due",
+          "page": 0,
+          "rect": [
+            91.0,
+            656.2,
+            98.0,
+            663.2
+          ]
+        },
+        {
+          "value": "uncertain",
+          "label": "Maine Estate Taxes are still uncertain",
+          "page": 0,
+          "rect": [
+            91.0,
+            679.0,
+            98.0,
+            686.0
+          ]
+        },
+        {
+          "value": "certain_not_paid",
+          "label": "Maine Estate Taxes are certain but payment has not been made",
+          "page": 0,
+          "rect": [
+            91.0,
+            702.1,
+            98.0,
+            709.1
+          ]
+        }
+      ]
+    },
+    "pr_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            324.1,
+            142.5,
+            526.0,
+            174.9
+          ]
+        }
+      ]
+    },
+    "pr_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            156.0,
+            258.0,
+            175.0
+          ]
+        }
+      ]
+    },
+    "copr_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            324.1,
+            197.1,
+            526.0,
+            229.5
+          ]
+        }
+      ]
+    },
+    "copr_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            211.0,
+            258.0,
+            230.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            277.5,
+            302.0,
+            294.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            305.3,
+            302.0,
+            323.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            334.6,
+            302.0,
+            352.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            363.9,
+            302.0,
+            380.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            392.2,
+            302.0,
+            409.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            101.0,
+            420.5,
+            302.0,
+            437.0
+          ]
+        }
+      ]
+    }
+  }
+}

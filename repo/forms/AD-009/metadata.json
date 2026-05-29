@@ -1,0 +1,9 @@
+{
+  "form_id": "AD-009",
+  "title": "Certificate of Counseling",
+  "category": "adoption",
+  "source_url": "http://www.maineprobate.net/forms2019/Adoption/AD-009%20Certificate%20of%20Counseling.pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 19,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

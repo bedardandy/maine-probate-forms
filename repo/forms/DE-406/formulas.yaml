@@ -1,0 +1,18 @@
+# DE-406 — Accounting (Decedent Estate).
+# total_inventory_value is the auto-detected computed cell.
+# current_*_balance fields are also computed (in `other` until promoted in
+# classifications.yaml), so we author formulas for them too.
+
+formulas:
+  total_inventory_value:
+    op: add
+    args:
+      - {op: field, id: real_estate_value}
+      - {op: field, id: tangible_personal_property_value}
+      - {op: field, id: intangible_personal_property_value}
+
+  current_total_balance:
+    op: add
+    args:
+      - {op: field, id: current_tangible_balance}
+      - {op: field, id: current_intangible_balance}

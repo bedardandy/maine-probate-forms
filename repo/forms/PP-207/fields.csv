@@ -1,0 +1,9 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,W001,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket No.,W002,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+respondent_name,Respondent,W003,text,text,party_attr,respondent,,,0,green,Y,,,respondent_record.respondent,
+guardian_address,Address of Guardian and Conservator for Court records,W004,text,address,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_signature,Guardian and Conservator signature,W005,text,signature,signature,guardian_signature,,,5,green,,,Y,wet_ink,
+date_signed,Dated,W006,date,signature,signature,date_signed,,,17,yellow,,,Y,wet_ink,
+guardian_by,By,W007,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
+guardian_its,Its,W008,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,

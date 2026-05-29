@@ -1,0 +1,60 @@
+{
+  "_doc": "Anchor overrides for forms whose skill.md doesn't declare a filing_deadline_anchor. These let build_form_index.py emit a usable anchor so the router can match companion forms to their parent event. Mapping: form_id -> anchor (must be a CANONICAL_EVENT_TYPE in router/schemas.py).",
+
+  "DE-104": "decedent_death_date",
+  "DE-301": "special_admin_petition",
+  "DE-403": "bond_filing",
+  "DE-407": "renunciation_filing",
+  "DE-501": "supervised_admin_petition",
+  "DE-502": "pr_appointment_date",
+  "DE-506": "elective_share_filing",
+  "DE-509": "pr_removal_filing",
+
+  "PP-107": "petition_filing_date",
+  "PP-108": "appointment_order_date",
+  "PP-201": "petition_filing_date",
+  "PP-203": "appointment_order_date",
+  "PP-205": "petition_filing_date",
+  "PP-207": "appointment_order_date",
+  "PP-401": "petition_filing_date",
+  "PP-402": "appointment_order_date",
+  "PP-405": "bond_filing",
+  "PP-406": "pr_appointment_date",
+  "PP-410": "petition_filing_date",
+  "PP-413": "circumstance_change_date",
+  "GS-008": "appointment_order_date",
+  "GS-014": "appointment_anniversary",
+  "PP-209": "appointment_anniversary",
+  "PP-503": "pr_appointment_date",
+  "PP-505": "petition_filing_date",
+
+  "AF-101": "decedent_death_date",
+  "AF-102": "decedent_death_date",
+  "AF-103": "judgment_entry_date",
+  "AF-104": "decedent_death_date",
+  "AF-105": "pr_appointment_date",
+
+  "N-107": "petition_filing_date",
+  "N-108": "petition_filing_date",
+  "N-112": "appointment_order_date",
+  "N-115": "pr_appointment_date",
+
+  "AD-007": "petition_filing_date",
+  "AD-008": "adoption_finalization_date",
+  "AD-009": "petition_filing_date",
+
+  "NC-001": "petition_filing_date",
+
+  "CN-1": "petition_filing_date",
+
+  "PP-409": "claim_disallowance_notice_date",
+  "AF-101.vA": "decedent_death_date",
+  "DE-601": "final_distribution_date",
+  "DE-507": "final_distribution_date",
+  "MISC-102": "hearing_date",
+  "N-117": "hearing_date",
+  "N-118": "change_event_date",
+  "PP-502": "court_order_date",
+  "PB-007": "petition_filing_date",
+  "PB-007.vA": "petition_filing_date"
+}

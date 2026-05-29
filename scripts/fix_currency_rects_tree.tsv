@@ -1,0 +1,22 @@
+pdf	page	field	old_rect	new_rect	underline_y
+output_tree/affidavits/AF-101 Jurisdictional Affidavit (Rev. 03-01-2025)_tree.pdf	0	second_legal_parent_info	[483.8,465.8,520.7,477.8]	[400.7,466.1,520.7,478.1]	rollback
+output_tree/estates/DE-201(I) Application for Informal Probate of Will or Appointment (Rev. 09-12-19)_tree.pdf	4	mailing_notices_fee	[288.0,90.0,363.0,106.0]	[289.2,93.6,363.0,105.6]	105.6
+output_tree/estates/DE-405 Inventory (Rev. 5-6-21)_tree.pdf	0	gross_value_real_property	[288.5,635.0,400.0,656.0]	[294.7,644.0,400.0,656.0]	n/a
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	real_estate_value	[360.0,284.8,499.0,307.8]	[366.0,296.0,499.0,308.0]	308.0
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	intangible_personal_property_value	[360.0,307.8,499.0,330.8]	[366.0,319.1,499.0,331.1]	331.1
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	expenses_amount	[360.0,411.2,499.0,434.3]	[366.0,422.5,499.0,434.5]	434.5
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	exemptions_allowances_amount	[360.0,434.3,499.0,457.3]	[366.0,445.6,499.0,457.6]	457.6
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	current_total_balance	[360.0,560.8,499.0,583.8]	[366.0,572.0,499.0,584.0]	584.0
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	distributions_amount	[360.0,457.3,499.0,480.2]	[366.0,468.5,499.0,480.5]	480.5
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	total_inventory_value	[360.0,330.8,499.0,353.8]	[366.0,342.0,499.0,354.0]	354.0
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	current_intangible_balance	[360.0,537.8,499.0,560.8]	[366.0,549.0,499.0,561.0]	561.0
+output_tree/estates/DE-406 Probate Account (Rev. 7-1-19)_tree.pdf	0	tangible_personal_property_value	[360.0,265.8,499.0,285.0]	[366.0,273.0,499.0,285.0]	285.0
+output_tree/estates/DE-502 Demand For Bond (Rev. 7-1-19)_tree.pdf	0	bond_amount	[333.0,253.0,406.0,272.0]	[333.9,259.7,406.0,271.7]	271.7
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	prior_total_value	[360.0,342.2,500.0,365.3]	[366.0,353.5,500.0,365.5]	365.5
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	prior_tangible_personal_property_value	[360.0,296.3,500.0,319.3]	[366.0,307.6,500.0,319.6]	319.6
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	expenses_amount	[360.0,434.3,500.0,457.3]	[366.0,445.6,500.0,457.6]	457.6
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	current_total_balance	[360.0,618.2,500.0,641.3]	[366.0,629.5,500.0,641.5]	641.5
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	prior_intangible_personal_property_value	[360.0,319.3,500.0,342.2]	[366.0,330.5,500.0,342.5]	342.5
+output_tree/gc_adults/PP-407 Conservator Account (Rev. 09-12-2019)_tree.pdf	0	current_intangible_personal_property_balance	[360.0,595.3,500.0,618.2]	[366.0,606.5,500.0,618.5]	618.5
+output_tree/gc_adults/PP-409 Petition to Resolve Disputed Claim and Petition for Allowance (Rev. 7-1-19)_tree.pdf	1	allowed_in_part_amount	[315.0,206.0,453.0,226.0]	[316.3,213.1,453.0,225.1]	225.1
+output_tree/gc_adults/PP-410 Petition for Interim Order (Rev. 09-12-19)_tree.pdf	0	petitioner_interest	[72.0,252.1,106.0,269.1]	[-14.0,257.1,106.0,269.1]	rollback

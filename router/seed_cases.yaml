@@ -1,0 +1,129 @@
+# Seed cases for router validation.
+#
+# Each case is a hand-grounded fixture: (case_state, event) → expected
+# form recommendations. Used by router/tests to confirm v0 routing
+# precision before adding LLM rerank.
+#
+# `expected_forms` is the set of form_ids the router SHOULD propose for
+# the given event. The router may propose more; the test asserts that
+# every expected form appears in the candidate list. Forms that should
+# NOT appear can be listed under `negative_forms` to catch over-fire.
+
+cases:
+
+  - id: case_intestate_death_spouse_minors
+    description: >
+      Decedent dies intestate in Cumberland County, survived by spouse
+      and two minor children. No real estate. Surviving spouse petitions
+      for informal appointment as PR.
+    case:
+      case_id: SEED-001
+      case_type: estate_intestate
+      county: Cumberland
+      opened_date: "2026-04-15"
+      parties:
+        decedent:
+          full_name: "John Q. Sample"
+          dod: "2026-04-12"
+        applicant:
+          full_name: "Mary R. Sample"
+          relationship_to_subject: surviving_spouse
+        personal_representative:
+          full_name: "Mary R. Sample"
+        spouse:
+          full_name: "Mary R. Sample"
+      party_lists:
+        heirs:
+          - full_name: "Mary R. Sample"
+            relationship_to_subject: surviving_spouse
+          - full_name: "Annie K. Sample"
+            dob: "2014-08-30"
+            relationship_to_subject: minor_child
+          - full_name: "Owen T. Sample"
+            dob: "2017-02-11"
+            relationship_to_subject: minor_child
+      facts:
+        testacy: intestate
+        has_minor_heirs: true
+        spouse_surviving: true
+        real_estate_in_estate: false
+        bond_requested: false
+    event:
+      type: decedent_death_date
+      date: "2026-04-12"
+      case_id: SEED-001
+      payload:
+        deceased_party_role: decedent
+    expected_forms:
+      - DE-101            # intestate informal probate application
+    negative_forms:
+      - PP-507            # emergency guardianship — wrong case type
+
+  - id: case_emergency_adult_guardianship
+    description: >
+      Adult son with cognitive injury after stroke; daughter petitions
+      for emergency guardianship and conservatorship. 4-day hospital
+      discharge horizon forces emergency posture.
+    case:
+      case_id: SEED-002
+      case_type: guardianship_adult
+      county: Penobscot
+      opened_date: "2026-05-09"
+      parties:
+        petitioner:
+          full_name: "Lisa T. Whittaker"
+          relationship_to_subject: adult_daughter
+        respondent:
+          full_name: "Robert J. Whittaker"
+          dob: "1958-03-14"
+        individual_under_protection:
+          full_name: "Robert J. Whittaker"
+      party_lists:
+        notify_person:
+          - full_name: "Susan A. Whittaker"
+            relationship_to_subject: spouse
+          - full_name: "Karl J. Whittaker"
+            relationship_to_subject: adult_son
+      facts:
+        emergency_basis: imminent_harm
+        proposed_powers: full
+    event:
+      type: petition_filing_date
+      date: "2026-05-10"
+      case_id: SEED-002
+    expected_forms:
+      - PP-507            # affidavit for emergency G/C
+    negative_forms:
+      - DE-101            # intestate probate — wrong case type
+
+  - id: case_conservator_anniversary_account
+    description: >
+      Year-one anniversary of conservator appointment for an adult
+      protected person. Conservator must file the annual account.
+    case:
+      case_id: SEED-003
+      case_type: conservatorship
+      county: York
+      docket_number: "2025-1234-PC"
+      opened_date: "2025-05-01"
+      parties:
+        conservator:
+          full_name: "Eleanor D. Brockton"
+        individual_under_protection:
+          full_name: "Patrick M. Brockton"
+          dob: "1948-11-22"
+        attorney:
+          full_name: "Hannah Wright, Esq."
+          attrs:
+            bar_number: "ME-9087"
+      facts:
+        appointment_date: "2025-05-12"
+        filing_type: financial_account
+    event:
+      type: appointment_anniversary
+      date: "2026-05-12"
+      case_id: SEED-003
+    expected_forms:
+      - PP-407            # conservator account
+    negative_forms:
+      - DE-101

@@ -1,0 +1,98 @@
+# DE-403 — Bond (Personal Representative).
+# Similar pattern to PP-405: no per-item value cells to sum, so the
+# `*_gross_value` fields are demoted to narrative_derived.
+
+overrides:
+  personal_representative_names:
+    category: party_attr
+    subcategory: personal_representative
+    party: personal_representative
+    data_type: person_name
+
+  personal_representative_address:
+    category: party_attr
+    subcategory: personal_representative
+    party: personal_representative
+    data_type: address
+
+  penal_sum_numeric:
+    category: narrative_derived
+    subcategory: bond_amount
+    data_type: currency
+    validators:
+      - "value_range(1, *)"
+
+  penal_sum_words:
+    category: narrative_derived
+    subcategory: bond_amount_words
+    data_type: text
+
+  condition_personal_rep_name:
+    category: party_attr
+    subcategory: personal_representative
+    party: personal_representative
+    data_type: person_name
+
+  condition_decedent_name:
+    category: party_attr
+    subcategory: decedent
+    party: decedent
+    data_type: person_name
+
+  condition_decedent_residence:
+    category: narrative_derived
+    subcategory: address
+    data_type: address
+
+  bond_date:
+    category: signature
+    subcategory: bond_signed_date
+    data_type: date
+
+  witness_for_personal_rep:
+    category: party_attr
+    subcategory: witness
+    party: witness
+    data_type: person_name
+
+  witness_for_co_personal_rep:
+    category: party_attr
+    subcategory: witness
+    party: witness
+    data_type: person_name
+
+  personal_property_gross_value:
+    category: narrative_derived
+    subcategory: free_form_total
+    data_type: currency
+
+  real_property_gross_value:
+    category: narrative_derived
+    subcategory: free_form_total
+    data_type: currency
+
+  corporate_surety_name:
+    category: party_attr
+    subcategory: corporate_surety
+    party: corporate_surety
+    data_type: entity_name
+
+  corporate_surety_address_phone:
+    category: party_attr
+    subcategory: corporate_surety
+    party: corporate_surety
+    data_type: text
+
+  corporate_surety_officer_name_authority:
+    category: party_attr
+    subcategory: corporate_surety_officer
+    party: corporate_surety
+    data_type: text
+
+  # Date-order: court approval must follow the bond signing date.
+  bond_approval_date:
+    category: external
+    subcategory: court_approval
+    data_type: date
+    validators:
+      - "date_order(bond_date, >=)"

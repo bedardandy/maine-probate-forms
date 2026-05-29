@@ -1,0 +1,22 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+respondent_name,Respondent Name,,text,text,party_attr,respondent,,,0,green,Y,,,respondent_record.respondent,
+plan_version,Plan Version,,select_one,text,legal_choice,plan_type,,,20,yellow,,,Y,human_decision,"value_in(initial, original, updated, revised, periodic, court_ordered)"
+medical_conditions,Medical Conditions,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+living_arrangement_services,Living Arrangement Services,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+social_educational_activities,Social Educational Activities,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+relationships_visits,Relationships Visits,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_visits_communication,Guardian Visits Communication,W010,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+goals_restoration,Goals Restoration,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+existing_plan_consistency,Existing Plan Consistency,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+guardian_proposed_charges,Guardian Proposed Charges,,text,currency,narrative_derived,financial_disclosure,,,5,green,,Y,,llm_over_narrative,
+conservator_budget_charges,Conservator Budget Charges,W015,text,currency,narrative_derived,financial_disclosure,,,5,green,,Y,,llm_over_narrative,
+respondent_involvement_decisions,Respondent Involvement Decisions,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+restore_management_ability,Restore Management Ability,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+duration_estimate,Duration Estimate,,text,text,narrative_derived,duration_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_dated,Petitioner Dated,,date,date,signature,petitioner_dated,,,5,green,,,Y,wet_ink,
+petitioner_signature,Petitioner Signature,,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+order_plan_filed_date,Order Plan Filed Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+judge_dated,Judge Dated,,date,date,signature,judge_dated,,,5,green,,,Y,wet_ink,
+judge_signature,Judge Signature,,text,signature,signature,judge_signature,,,25,yellow,,,Y,wet_ink,

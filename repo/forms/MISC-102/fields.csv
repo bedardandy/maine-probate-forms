@@ -1,0 +1,39 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_number,Docket No.,,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+witness_name,Witness Subpoena For,,text,text,party_attr,witness,,,0,green,Y,,,witness_record.witness,
+subpoena_purpose,Subpoena Purpose,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+commanded_to_name,Commanded To (Name),,text,person_name,party_attr,commanded_party,,,0,green,Y,,,commanded_party_record.commanded_party,
+commanded_to_address,Commanded To (Address),,text,address,party_attr,commanded_party,,,0,green,Y,,,commanded_party_record.commanded_party,
+appear_probate_court_enabler,Appear at Probate Court for Testifying (Enabler),,enabler,checkbox,legal_choice,section_header,,,20,yellow,,,Y,human_decision,
+appear_probate_court_name,Probate Court Name,,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+appear_probate_court_location,Probate Court Location,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appear_probate_court_date,Appear Date,,text,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,"date_order(subpoena_date, >)"
+appear_probate_court_time,Appear Time,,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+appear_before_enabler,Appear Before (Enabler),,enabler,checkbox,legal_choice,section_header,,,20,yellow,,,Y,human_decision,
+appear_before_who,Appear Before (Who),,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+appear_before_where,Appear Before (Where),,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+appear_before_offices,Appear Before (Offices),,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+appear_before_location_detail,Appear Before (Location Detail),,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appear_before_date,Appear Before (Date),,text,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,"date_order(subpoena_date, >)"
+appear_before_time_detail,Appear Before (Time Detail),,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appear_before_additional,Appear Before (Additional),,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+appear_before_final,Appear Before (Final),,text,text,narrative_derived,conditional_section_child,,,5,green,,Y,,llm_over_narrative,
+produce_inspect_enabler,Produce and Permit Inspection (Enabler),,enabler,checkbox,legal_choice,produce_inspect_enabler,,,20,yellow,,,Y,human_decision,
+produce_designated_things,Produce Designated Things,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+produce_date,Produce Date,,text,date,narrative_derived,event_date,,,5,green,,Y,,llm_over_narrative,"date_order(subpoena_date, >)"
+produce_time,Produce Time,,text,text,narrative_derived,time_text,,,5,green,,Y,,llm_over_narrative,
+produce_location,Produce Location,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+produce_additional,Produce Additional,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+permit_inspect_enabler,Permit Inspection and Copying (Enabler),,enabler,checkbox,legal_choice,permit_inspect_enabler,,,20,yellow,,,Y,human_decision,
+permit_designated_things,Designated Things or Premises,W031,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+permit_time_place,Time and Place of Inspection,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+issued_on_behalf_of,Issued On Behalf Of,,text,person_name,party_attr,requesting_party,,,0,green,Y,,,requesting_party_record.requesting_party,
+objection_notice_party,Objection Notice Party,,text,text,party_attr,objection_recipient,,,0,green,Y,,,objection_recipient_record.objection_recipient,
+objection_notice_date,Objection Notice Date,,text,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+issue_date,Issue Date,,text,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+register_attorney,Register/Attorney,,text,text,party_attr,register_attorney,,,0,green,Y,,,register_attorney_record.register_attorney,
+county_page2,County (Page 2),,text,entity_name,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+subpoena_date,Subpoena Date,,text,date,narrative_derived,event_date,,,21,yellow,,Y,,llm_over_narrative,
+fees_travel,Fees: Travel,,text,currency,narrative_derived,fee,,,5,green,,Y,,llm_over_narrative,
+witness_fee_agency,Witness Fee Agency,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

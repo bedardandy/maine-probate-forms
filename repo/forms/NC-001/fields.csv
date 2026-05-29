@@ -1,0 +1,37 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+probate_county,Probate County,,text,text,case_constant,probate_county,,,0,green,Y,,,case_dict.probate_county,populate_from_case_dict
+district_court_location,District Court Location,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+probate_docket_number,Probate Docket Number,,text,text,case_constant,probate_docket_number,,,0,green,Y,,,case_dict.probate_docket_number,populate_from_case_dict
+district_docket_number,District Docket Number,,text,text,case_constant,district_docket_number,,,0,green,Y,,,case_dict.district_docket_number,populate_from_case_dict
+minor_name,Minor Name,,text,text,party_attr,minor,,,0,green,Y,,,minor_record.minor,
+petitioner_name,Petitioner Name,,text,person_name,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,
+petitioner_address,Petitioner Address,W007,text,address,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,
+petitioner_relationship,Petitioner Relationship,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+copetitioner_name,Copetitioner Name,,text,text,party_attr,co_petitioner,,,0,green,Y,,,co_petitioner_record.co_petitioner,
+copetitioner_address,Copetitioner Address,W011,text,address,party_attr,co_petitioner,,,0,green,Y,,,co_petitioner_record.co_petitioner,
+copetitioner_relationship,Copetitioner Relationship,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+provided_documents,Provided Documents,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+minor_full_name,Minor Full Name,,text,person_name,party_attr,minor,,,8,green,Y,,,minor_record.minor,"equals_field(minor_name, relaxed)"
+minor_dob,Minor Dob,,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+minor_address,Minor Address,W020,text,address,party_attr,minor,,,0,green,Y,,,minor_record.minor,
+new_minor_name,New Minor Name,,text,person_name,party_attr,minor_new_name,,,0,green,Y,,,minor_record.minor_new_name,
+reason_for_change,Reason For Change,W024,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_signature_date,Petitioner Signature Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+petitioner_signature,Petitioner Signature,,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,
+copetitioner_signature_date,Copetitioner Signature Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+copetitioner_signature,Copetitioner Signature,,text,signature,signature,copetitioner_signature,,,5,green,,,Y,wet_ink,
+copetitioner_printed_name,Copetitioner Printed Name,,text,person_name,party_attr,copetitioner,,,40,orange,Y,,,copetitioner_record.copetitioner,"equals_field(copetitioner_name, relaxed)"
+copetitioner_printed_address,Copetitioner Printed Address,W034,text,address,party_attr,copetitioner,,,40,orange,Y,,,copetitioner_record.copetitioner,
+copetitioner_printed_phone,Copetitioner Printed Phone,,text,phone,party_attr,copetitioner,,,40,orange,Y,,,copetitioner_record.copetitioner,
+copetitioner_printed_email,Copetitioner Printed Email,,text,email,party_attr,copetitioner,,,0,green,Y,,,copetitioner_record.copetitioner,
+attorney_signature,Attorney Signature,,text,signature,signature,attorney_signature,,,5,green,,,Y,wet_ink,
+attorney_name,Attorney Name,,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_address,Attorney Address,W040,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
+notary_appearance_name1,Notary Appearance Name1,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notary_appearance_name2,Notary Appearance Name2,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+notary_date,Notary Date,,date,signature,signature,notary_date,,,5,green,,,Y,wet_ink,
+notary_signature,Notary Signature,,text,signature,signature,notary_signature,,,5,green,,,Y,wet_ink,
+attorney_bar_number,Maine Bar Registration Number,,text,text,party_attr,attorney,,,5,green,Y,,,case_dict.attorney,

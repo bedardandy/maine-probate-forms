@@ -1,0 +1,1397 @@
+{
+  "form_id": "PP-507",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "PP-507 Affidavit for Emergency Guardian and-or Conservator (Rev. 07-01-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            86.0,
+            114.0,
+            190.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            114.0,
+            540.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "respondent_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            86.0,
+            149.0,
+            318.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "guardian_checkbox": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            360.5,
+            170.4,
+            368.5,
+            178.4
+          ]
+        }
+      ]
+    },
+    "conservator_checkbox": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            360.3,
+            181.9,
+            368.3,
+            189.9
+          ]
+        }
+      ]
+    },
+    "petitioner_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            158.0,
+            194.0,
+            318.0,
+            214.0
+          ]
+        }
+      ]
+    },
+    "petitioner_city": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            331.0,
+            194.6,
+            441.0,
+            214.0
+          ]
+        }
+      ]
+    },
+    "circumstances_of_harm": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            313.0,
+            540.0,
+            610.0
+          ]
+        }
+      ]
+    },
+    "requested_powers": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            654.7,
+            540.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "notice_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            199.0,
+            171.0,
+            234.8
+          ]
+        }
+      ]
+    },
+    "notice_address_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            199.0,
+            305.3,
+            234.8
+          ]
+        }
+      ]
+    },
+    "notice_relationship_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            199.0,
+            376.0,
+            234.8
+          ]
+        }
+      ]
+    },
+    "notice_datetime_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            199.0,
+            454.3,
+            234.8
+          ]
+        }
+      ]
+    },
+    "notice_location_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            199.0,
+            567.2,
+            234.8
+          ]
+        }
+      ]
+    },
+    "notice_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            234.8,
+            171.0,
+            269.9
+          ]
+        }
+      ]
+    },
+    "notice_address_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            234.8,
+            305.3,
+            269.9
+          ]
+        }
+      ]
+    },
+    "notice_relationship_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            234.8,
+            376.0,
+            269.9
+          ]
+        }
+      ]
+    },
+    "notice_datetime_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            234.8,
+            454.3,
+            269.9
+          ]
+        }
+      ]
+    },
+    "notice_location_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            234.8,
+            567.2,
+            269.9
+          ]
+        }
+      ]
+    },
+    "notice_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            269.9,
+            171.0,
+            304.8
+          ]
+        }
+      ]
+    },
+    "notice_address_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            269.9,
+            305.3,
+            304.8
+          ]
+        }
+      ]
+    },
+    "notice_relationship_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            269.9,
+            376.0,
+            304.8
+          ]
+        }
+      ]
+    },
+    "notice_datetime_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            269.9,
+            454.3,
+            304.8
+          ]
+        }
+      ]
+    },
+    "notice_location_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            269.9,
+            567.2,
+            304.8
+          ]
+        }
+      ]
+    },
+    "notice_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            304.8,
+            171.0,
+            340.7
+          ]
+        }
+      ]
+    },
+    "notice_address_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            304.8,
+            305.3,
+            340.7
+          ]
+        }
+      ]
+    },
+    "notice_relationship_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            304.8,
+            376.0,
+            340.7
+          ]
+        }
+      ]
+    },
+    "notice_datetime_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            304.8,
+            454.3,
+            340.7
+          ]
+        }
+      ]
+    },
+    "notice_location_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            304.8,
+            567.2,
+            340.7
+          ]
+        }
+      ]
+    },
+    "notice_name_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            340.7,
+            171.0,
+            375.7
+          ]
+        }
+      ]
+    },
+    "notice_address_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            340.7,
+            305.3,
+            375.7
+          ]
+        }
+      ]
+    },
+    "notice_relationship_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            340.7,
+            376.0,
+            375.7
+          ]
+        }
+      ]
+    },
+    "notice_datetime_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            340.7,
+            454.3,
+            375.7
+          ]
+        }
+      ]
+    },
+    "notice_location_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            340.7,
+            567.2,
+            375.7
+          ]
+        }
+      ]
+    },
+    "notice_name_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            375.7,
+            171.0,
+            411.5
+          ]
+        }
+      ]
+    },
+    "notice_address_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            375.7,
+            305.3,
+            411.5
+          ]
+        }
+      ]
+    },
+    "notice_relationship_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            375.7,
+            376.0,
+            411.5
+          ]
+        }
+      ]
+    },
+    "notice_datetime_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            375.7,
+            454.3,
+            411.5
+          ]
+        }
+      ]
+    },
+    "notice_location_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            375.7,
+            567.2,
+            411.5
+          ]
+        }
+      ]
+    },
+    "notice_name_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            411.5,
+            171.0,
+            447.2
+          ]
+        }
+      ]
+    },
+    "notice_address_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            411.5,
+            305.3,
+            447.2
+          ]
+        }
+      ]
+    },
+    "notice_relationship_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            411.5,
+            376.0,
+            447.2
+          ]
+        }
+      ]
+    },
+    "notice_datetime_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            411.5,
+            454.3,
+            447.2
+          ]
+        }
+      ]
+    },
+    "notice_location_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            411.5,
+            567.2,
+            447.2
+          ]
+        }
+      ]
+    },
+    "notice_name_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            447.2,
+            171.0,
+            482.3
+          ]
+        }
+      ]
+    },
+    "notice_address_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            447.2,
+            305.3,
+            482.3
+          ]
+        }
+      ]
+    },
+    "notice_relationship_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            447.2,
+            376.0,
+            482.3
+          ]
+        }
+      ]
+    },
+    "notice_datetime_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            447.2,
+            454.3,
+            482.3
+          ]
+        }
+      ]
+    },
+    "notice_location_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            447.2,
+            567.2,
+            482.3
+          ]
+        }
+      ]
+    },
+    "notice_name_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            482.3,
+            171.0,
+            518.2
+          ]
+        }
+      ]
+    },
+    "notice_address_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            482.3,
+            305.3,
+            518.2
+          ]
+        }
+      ]
+    },
+    "notice_relationship_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            482.3,
+            376.0,
+            518.2
+          ]
+        }
+      ]
+    },
+    "notice_datetime_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            482.3,
+            454.3,
+            518.2
+          ]
+        }
+      ]
+    },
+    "notice_location_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            482.3,
+            567.2,
+            518.2
+          ]
+        }
+      ]
+    },
+    "notice_name_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            518.2,
+            171.0,
+            553.9
+          ]
+        }
+      ]
+    },
+    "notice_address_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            518.2,
+            305.3,
+            553.9
+          ]
+        }
+      ]
+    },
+    "notice_relationship_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            518.2,
+            376.0,
+            553.9
+          ]
+        }
+      ]
+    },
+    "notice_datetime_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            518.2,
+            454.3,
+            553.9
+          ]
+        }
+      ]
+    },
+    "notice_location_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            518.2,
+            567.2,
+            553.9
+          ]
+        }
+      ]
+    },
+    "notice_name_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            553.9,
+            171.0,
+            589.0
+          ]
+        }
+      ]
+    },
+    "notice_address_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            553.9,
+            305.3,
+            589.0
+          ]
+        }
+      ]
+    },
+    "notice_relationship_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            553.9,
+            376.0,
+            589.0
+          ]
+        }
+      ]
+    },
+    "notice_datetime_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            553.9,
+            454.3,
+            589.0
+          ]
+        }
+      ]
+    },
+    "notice_location_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            553.9,
+            567.2,
+            589.0
+          ]
+        }
+      ]
+    },
+    "notice_name_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            589.0,
+            171.0,
+            624.8
+          ]
+        }
+      ]
+    },
+    "notice_address_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            589.0,
+            305.3,
+            624.8
+          ]
+        }
+      ]
+    },
+    "notice_relationship_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            589.0,
+            376.0,
+            624.8
+          ]
+        }
+      ]
+    },
+    "notice_datetime_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            589.0,
+            454.3,
+            624.8
+          ]
+        }
+      ]
+    },
+    "notice_location_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            589.0,
+            567.2,
+            624.8
+          ]
+        }
+      ]
+    },
+    "notice_name_13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            624.8,
+            171.0,
+            660.6
+          ]
+        }
+      ]
+    },
+    "notice_address_13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            624.8,
+            305.3,
+            660.6
+          ]
+        }
+      ]
+    },
+    "notice_relationship_13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            624.8,
+            376.0,
+            660.6
+          ]
+        }
+      ]
+    },
+    "notice_datetime_13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            624.8,
+            454.3,
+            660.6
+          ]
+        }
+      ]
+    },
+    "notice_location_13": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            624.8,
+            567.2,
+            660.6
+          ]
+        }
+      ]
+    },
+    "notice_name_14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            44.3,
+            660.6,
+            171.0,
+            696.4
+          ]
+        }
+      ]
+    },
+    "notice_address_14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            171.0,
+            660.6,
+            305.3,
+            696.4
+          ]
+        }
+      ]
+    },
+    "notice_relationship_14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.3,
+            660.6,
+            376.0,
+            696.4
+          ]
+        }
+      ]
+    },
+    "notice_datetime_14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            376.0,
+            660.6,
+            454.3,
+            696.4
+          ]
+        }
+      ]
+    },
+    "notice_location_14": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            454.3,
+            660.6,
+            567.2,
+            696.4
+          ]
+        }
+      ]
+    },
+    "no_notice_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            66.4,
+            118.4,
+            203.8,
+            154.3
+          ]
+        }
+      ]
+    },
+    "no_notice_relationship_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            203.8,
+            118.4,
+            385.7,
+            154.3
+          ]
+        }
+      ]
+    },
+    "no_notice_reason_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            385.7,
+            118.4,
+            545.2,
+            154.3
+          ]
+        }
+      ]
+    },
+    "no_notice_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            66.4,
+            154.3,
+            203.8,
+            189.4
+          ]
+        }
+      ]
+    },
+    "no_notice_relationship_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            203.8,
+            154.3,
+            385.7,
+            189.4
+          ]
+        }
+      ]
+    },
+    "no_notice_reason_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            385.7,
+            154.3,
+            545.2,
+            189.4
+          ]
+        }
+      ]
+    },
+    "no_notice_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            66.4,
+            189.4,
+            203.8,
+            224.4
+          ]
+        }
+      ]
+    },
+    "no_notice_relationship_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            203.8,
+            189.4,
+            385.7,
+            224.4
+          ]
+        }
+      ]
+    },
+    "no_notice_reason_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            385.7,
+            189.4,
+            545.2,
+            224.4
+          ]
+        }
+      ]
+    },
+    "no_notice_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            66.4,
+            224.4,
+            203.8,
+            260.2
+          ]
+        }
+      ]
+    },
+    "no_notice_relationship_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            203.8,
+            224.4,
+            385.7,
+            260.2
+          ]
+        }
+      ]
+    },
+    "no_notice_reason_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            385.7,
+            224.4,
+            545.2,
+            260.2
+          ]
+        }
+      ]
+    },
+    "affiant_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            131.0,
+            278.0,
+            266.0,
+            295.0
+          ]
+        }
+      ]
+    },
+    "affidavit_day": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            385.7,
+            277.0,
+            418.0,
+            294.0
+          ]
+        }
+      ]
+    },
+    "affidavit_month": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            448.0,
+            279.0,
+            528.0,
+            294.0
+          ]
+        }
+      ]
+    },
+    "affidavit_year": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            295.0,
+            112.6,
+            306.0
+          ]
+        }
+      ]
+    },
+    "notary_state": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            131.0,
+            367.0,
+            266.0,
+            379.0
+          ]
+        }
+      ]
+    },
+    "notary_county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            314.0,
+            382.0,
+            350.0,
+            398.0
+          ]
+        }
+      ]
+    },
+    "notary_day": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            131.0,
+            389.0,
+            161.0,
+            398.0
+          ]
+        }
+      ]
+    },
+    "notary_appearer_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            131.0,
+            401.6,
+            266.0,
+            413.6
+          ]
+        }
+      ]
+    }
+  }
+}

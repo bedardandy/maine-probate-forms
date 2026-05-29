@@ -1,0 +1,22 @@
+# DE-605 — Affidavit of Pickup (Personal Property of Decedent).
+
+skill_metadata:
+  filer_role: claimant_or_pr
+  statutes:
+    - "18-C M.R.S.A. § 3-1201 (Collection of personal property by affidavit)"
+  service_required: false
+  filing_deadline_days: null
+  filing_deadline_anchor: "decedent_death_date"
+  # Filed when a small-estate claimant collects personal property
+  # without formal probate. No fixed filing deadline.
+
+overrides:
+  # The applicant is the person appearing before the notary — these
+  # name fields must reference the same person.
+  notary_appearer_name:
+    category: party_attr
+    subcategory: notary_appearer
+    party: notary
+    data_type: person_name
+    validators:
+      - "equals_field(applicant_name, relaxed)"

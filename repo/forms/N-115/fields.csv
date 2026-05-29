@@ -1,0 +1,18 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county,County,,text,text,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
+docket_number,Docket Number,,text,docket_number,case_constant,docket_number,,,0,green,Y,,,case_dict.docket_number,populate_from_case_dict
+estate_name,Estate Name,,text,text,case_constant,estate_name,,,8,green,Y,,,case_dict.estate_name,populate_from_case_dict
+notice_recipient,Notice Recipient,,text,text,narrative_derived,free_text,,,17,yellow,,Y,,llm_over_narrative,
+pr_name,Pr Name,,text,person_name,party_attr,personal_representative,,,0,green,Y,,,personal_representative_record.personal_representative,
+appointment_date,Appointment Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+pr_address,Pr Address,,text,address,party_attr,personal_representative,,,8,green,Y,,,personal_representative_record.personal_representative,
+bond_status,Bond Status,,select_one,text,narrative_derived,bond_status,,,5,green,,Y,,llm_over_narrative,"value_in(required, not_required, waived, satisfied, on_file)"
+bond_type,Bond Type,,select_one,checkbox,legal_choice,bond_type,,,20,yellow,,,Y,human_decision,
+bond_amount,Bond Amount,,currency,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+probate_court_county,Probate Court County,,text,text,case_constant,probate_court_county,,,0,green,Y,,,case_dict.probate_court_county,populate_from_case_dict
+probate_court_address,Probate Court Address,,text,address,case_constant,probate_court_address,,,0,green,Y,,,case_dict.probate_court_address,populate_from_case_dict
+interested_capacity,Interested Capacity,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+other_explanation,Other Explanation,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+signatory_signature,Signatory Signature,,text,signature,signature,signatory_signature,,,5,green,,,Y,wet_ink,
+date_signed,Date Signed,,date,signature,signature,date_signed,,,5,green,,,Y,wet_ink,
+attorney_bar_number,Attorney Bar Number,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,

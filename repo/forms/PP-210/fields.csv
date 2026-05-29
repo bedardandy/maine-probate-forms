@@ -1,0 +1,16 @@
+field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
+in_re,In Re,,text,text,case_constant,in_re,,,0,green,Y,,,case_dict.in_re,populate_from_case_dict
+registration_type,Registration Type,,select_one,checkbox,legal_choice,registration_type,,,20,yellow,,,Y,human_decision,
+guardian_conservator_info,Guardian Conservator Info,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+subject_name_address,Subject Name Address,W007,text,text,party_attr,form_subject,,,0,green,Y,,,form_subject_record.form_subject,
+appointee_name,Appointee Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appointment_role,Appointment Role,,select_many,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+subject_of_appointment_name,Subject Of Appointment Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+appointing_court_info,Appointing Court Info,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_appointment,Date Of Appointment,,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+order_attached_marker,Order Attached Marker,,text,checkbox,legal_choice,order_attached_marker,,,28,yellow,,,Y,human_decision,
+notice_of_intent_date_filed,Notice Of Intent Date Filed,,date,text,narrative_derived,free_text,,,17,yellow,,Y,,llm_over_narrative,
+petition_not_pending_marker,Petition Not Pending Marker,,text,checkbox,legal_choice,petition_not_pending_marker,,,20,yellow,,,Y,human_decision,
+subject_of_registration_name,Subject Of Registration Name,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

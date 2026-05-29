@@ -1,0 +1,75 @@
+{
+  "_comment": "Expected PB-007 fill for examples/case.example.json. This case exercises the appointment_level=limited path. NOTE: only fields gated to that path (or unconditional fields) get a value; the standard_* and expanded_* fields MUST be null because their writable_when conditions evaluate to false.",
+
+  "_writable_when_branching": {
+    "appointment_level=limited": "writes: limited_duties, limited_hearing_appearance, limited_other_provisions",
+    "appointment_level=standard": "writes: standard_other_provisions (NOT written here — gated to standard)",
+    "appointment_level=expanded": "writes: expanded_duties + 30+ expanded_* sub-fields (NOT written here)"
+  },
+
+  "fields": {
+    "county_probate":             "York",
+    "docket_no_probate":          "2026-YORK-GS-00214",
+    "district_court_location":    null,
+    "docket_no_district":         null,
+    "case_title":                 "In re Guardianship of A.M.R. (a Minor)",
+
+    "appointment_level":          "limited",
+    "minor_children_names":       "Aiden M. Reyes (DOB 2014-09-12)",
+    "gal_name":                   "Ellen R. Macdonald, Esq.",
+    "gal_contact_info":           "(207) 555-0721 / emacdonald@galroster.example.com",
+    "gal_roster_status":          "rostered",
+
+    "good_cause_findings":        "Petition and opposition raise disputed material facts about the minor's primary caretaker and the father's involvement. Court finds it necessary under 18-C § 1-115 to appoint a GAL to investigate.",
+    "other_qualifications_detail": null,
+
+    "objection_status":                 "no_objection_to_appointment",
+    "objecting_parties_appointment":    null,
+    "other_objector_name_appointment":  null,
+    "appointment_factors":              null,
+
+    "objecting_parties_fee":            null,
+    "other_objector_name_fee":          null,
+    "fee_factors":                      "Cap of 20 hours reasonable for the limited scope; party responsibility split 50/50 between petitioner and father.",
+
+    "limited_duties":              "Interview the minor, the petitioner (maternal grandmother), and the father (Marcus Hill). Review the minor's school records. Submit a written report to the court within 30 days.",
+    "limited_hearing_appearance":  "Appear at the contested hearing on 2026-06-08 if the report does not resolve the disputed issues.",
+    "limited_other_provisions":    null,
+
+    "standard_other_provisions":   null,
+
+    "expanded_duties":                  null,
+    "expanded_interview_teachers":      null,
+    "expanded_interview_details":       null,
+    "expanded_review_records_1":        null,
+    "expanded_person_1_name":           null,
+    "expanded_record_types_1":          null,
+    "expanded_review_records_2":        null,
+    "expanded_person_2_name":           null,
+    "expanded_record_types_2":          null,
+    "expanded_review_records_3":        null,
+    "expanded_person_3_name":           null,
+    "expanded_record_types_3":          null,
+    "expanded_engage_provider":         null,
+    "expanded_provider_type":           null,
+    "expanded_evaluation_subject":      null,
+    "expanded_evaluation_deadline":     null,
+    "expanded_evaluation_cost":         null,
+    "expanded_arrange_counseling":      null,
+    "expanded_counseling_deadline":     null,
+    "expanded_counseling_children":     null,
+    "expanded_subpoena":                null,
+    "expanded_contact_person":          null,
+    "expanded_contact_details":         null,
+    "expanded_mediation_appearance":    null,
+    "expanded_other_events":            null,
+    "expanded_other_duties":            null,
+    "expanded_other_duties_details":    null
+  },
+
+  "_validator_expectations": {
+    "value_in(limited, standard, expanded)": "appointment_level='limited' → passes",
+    "writable_when on standard_*/expanded_* fields": "all null → no `not_writable` violations (these fields are gated and stay blank)",
+    "what would fail": "if the LLM populated any expanded_* or standard_* field while appointment_level='limited', validator would flag `not_writable` for each one — this is exactly the writability-cascade catch the form needs"
+  }
+}

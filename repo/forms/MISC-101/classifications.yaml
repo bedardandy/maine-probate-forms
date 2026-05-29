@@ -1,0 +1,25 @@
+# MISC-101 — Motion (General Probate).
+
+skill_metadata:
+  filer_role: movant
+  statutes:
+    - "M.R. Prob. P. 7 (Motions)"
+  service_required: true
+
+overrides:
+  # The court fills the order section, not the movant.
+  order_decision:
+    category: external
+    subcategory: court_order
+    data_type: text
+
+  order_date:
+    category: external
+    subcategory: court_order_date
+    data_type: date
+
+  # Footnote reference is published form text, not movant-fillable.
+  footnote_reference:
+    category: external
+    subcategory: form_boilerplate
+    data_type: text

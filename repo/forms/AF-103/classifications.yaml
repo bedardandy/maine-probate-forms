@@ -1,0 +1,24 @@
+# AF-103 — Name Change After Divorce / Annulment.
+
+skill_metadata:
+  filer_role: petitioner
+  statutes:
+    - "19-A M.R.S.A. § 1051 (Name change incident to divorce)"
+  service_required: false
+
+overrides:
+  # Children-status radio set: presence of minor and/or adult
+  # children determines downstream notice obligations.
+  children_status:
+    category: narrative_derived
+    subcategory: children_status
+    data_type: text
+    validators:
+      - "value_in(none, minor_only, adult_only, both)"
+
+  new_name_is_former_spouse:
+    category: narrative_derived
+    subcategory: yes_no
+    data_type: text
+    validators:
+      - "value_in(yes, no)"

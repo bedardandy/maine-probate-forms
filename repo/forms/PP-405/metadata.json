@@ -1,0 +1,9 @@
+{
+  "form_id": "PP-405",
+  "title": "Bond for Conservator",
+  "category": "gc_adults",
+  "source_url": "http://www.maineprobate.net/Forms2019/GC%20Adults/PP-405%20Bond%20for%20Conservator%20(Rev.%207-1-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 71,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}

@@ -1,0 +1,11 @@
+# PP-503 — Guardian's Plan / Conservator's Plan.
+
+skill_metadata:
+  filer_role: guardian_or_conservator
+  statutes:
+    - "18-C M.R.S.A. § 5-314 (Guardian's plan)"
+    - "18-C M.R.S.A. § 5-419 (Conservator's plan)"
+  service_required: true
+  filing_deadline_days: 60
+  filing_deadline_anchor: "appointment_order_date"
+  # Plan must be filed within 60 days of appointment.

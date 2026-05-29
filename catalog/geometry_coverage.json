@@ -1,0 +1,1092 @@
+{
+  "n_forms": 79,
+  "n_unmapped_widgets": 37,
+  "unmapped_by_category": {
+    "candidate_field": 22,
+    "court_or_sig": 3,
+    "likely_static": 11,
+    "mirror": 1
+  },
+  "unmapped_by_assessment": {
+    "ambiguous": 4,
+    "candidate_input": 6,
+    "leave_unmapped": 12,
+    "spurious": 15
+  },
+  "note": "widget detected_name is auto-generated and unreliable; category/assessment are review hints for a pipeline binding pass, not authoritative. Confirm each via the alignment + vision-audit loop before binding (see docs/architecture.md).",
+  "assessment_legend": {
+    "candidate_input": "apparent blank with no field \u2014 bind after confirming",
+    "ambiguous": "overlaps/abuts a bound widget \u2014 verify duplicate vs mis-bind",
+    "spurious": "not a real input (over static text or a table corner)",
+    "review_marker": "checkbox-sized \u2014 confirm it is a real input",
+    "bind_as_duplicate": "mirror of a mapped field \u2014 bind to the same field",
+    "leave_unmapped": "static text or court/signature widget \u2014 leave as-is"
+  },
+  "binding_pass": "A 2026-05 binding pass (renders + geometry vs bound widgets) found 0 of these safely auto-bindable: most are detector over-captures of headers/labels/statements; a few are redundant (value already in a combined field), court-filled, or tangled with the attorney-inject step. The candidate_input/ambiguous entries are real review items but need per-form intent + the fill-validation loop, not an automated pass.",
+  "forms": {
+    "AD-007": {
+      "form_id": "AD-007",
+      "n_mapped": 62,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W006",
+          "page": 0,
+          "rect": [
+            54.0,
+            229.2,
+            221.8,
+            243.5
+          ],
+          "widget_type": "Text",
+          "detected_name": "adopting_parent_2_q2_minor_children",
+          "category": "candidate_field",
+          "assessment": "candidate_input",
+          "reason": "apparent blank with no field \u2014 confirm via alignment/vision audit, then bind",
+          "suggested_field_id": "adopting_parent_2_q2_minor_children"
+        }
+      ]
+    },
+    "AD-008": {
+      "form_id": "AD-008",
+      "n_mapped": 45,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AD-009": {
+      "form_id": "AD-009",
+      "n_mapped": 23,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AD-011": {
+      "form_id": "AD-011",
+      "n_mapped": 32,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AD-026": {
+      "form_id": "AD-026",
+      "n_mapped": 63,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AD-028": {
+      "form_id": "AD-028",
+      "n_mapped": 38,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AF-101": {
+      "form_id": "AF-101",
+      "n_mapped": 36,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AF-101.vA": {
+      "form_id": "AF-101.vA",
+      "n_mapped": 36,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AF-102": {
+      "form_id": "AF-102",
+      "n_mapped": 18,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AF-103": {
+      "form_id": "AF-103",
+      "n_mapped": 18,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "AF-104": {
+      "form_id": "AF-104",
+      "n_mapped": 28,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W018",
+          "page": 0,
+          "rect": [
+            54.0,
+            701.3,
+            198.0,
+            720.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "footnote_1",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "AF-105": {
+      "form_id": "AF-105",
+      "n_mapped": 124,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "APP-1": {
+      "form_id": "APP-1",
+      "n_mapped": 18,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "APP-2": {
+      "form_id": "APP-2",
+      "n_mapped": 41,
+      "n_unmapped": 3,
+      "unmapped": [
+        {
+          "widget_id": "W028",
+          "page": 0,
+          "rect": [
+            93.6,
+            572.2,
+            167.8,
+            590.6
+          ],
+          "widget_type": "Text",
+          "detected_name": "hearing_date_row1",
+          "category": "mirror",
+          "assessment": "spurious",
+          "reason": "overlays the HEARING-DATE column header; data rows W031-W042 bound"
+        },
+        {
+          "widget_id": "W030",
+          "page": 0,
+          "rect": [
+            374.0,
+            582.6,
+            552.7,
+            594.6
+          ],
+          "widget_type": "Text",
+          "detected_name": "court_reporter_index_no_row1",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "overlays the REPORTER/INDEX column header; data rows bound"
+        },
+        {
+          "widget_id": "W029",
+          "page": 0,
+          "rect": [
+            202.0,
+            582.6,
+            354.0,
+            594.6
+          ],
+          "widget_type": "Text",
+          "detected_name": "proceeding_row1",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "overlays the PROCEEDING column header; data rows bound"
+        }
+      ]
+    },
+    "CN-1": {
+      "form_id": "CN-1",
+      "n_mapped": 45,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W041",
+          "page": 1,
+          "rect": [
+            58.0,
+            668.0,
+            209.0,
+            687.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "footnote_reference",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "DE-101": {
+      "form_id": "DE-101",
+      "n_mapped": 102,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-104": {
+      "form_id": "DE-104",
+      "n_mapped": 8,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-201": {
+      "form_id": "DE-201",
+      "n_mapped": 116,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-301": {
+      "form_id": "DE-301",
+      "n_mapped": 40,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W035",
+          "page": 1,
+          "rect": [
+            72.0,
+            496.7,
+            543.0,
+            514.2
+          ],
+          "widget_type": "Text",
+          "detected_name": "applicant_name_appearance",
+          "category": "candidate_field",
+          "assessment": "ambiguous",
+          "reason": "overlaps/abuts a bound widget \u2014 verify duplicate vs mis-bind",
+          "suggested_field_id": "applicant_name_appearance"
+        }
+      ]
+    },
+    "DE-401": {
+      "form_id": "DE-401",
+      "n_mapped": 25,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-403": {
+      "form_id": "DE-403",
+      "n_mapped": 70,
+      "n_unmapped": 4,
+      "unmapped": [
+        {
+          "widget_id": "W030",
+          "page": 1,
+          "rect": [
+            72.0,
+            186.0,
+            521.5,
+            365.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "description_of_pledged_personal_property",
+          "category": "candidate_field",
+          "assessment": "ambiguous",
+          "reason": "large area below the Pledged-Personal-Property labels; surety_1/2_description are bound to small boxes (W028/W029) \u2014 verify W030 is a real shared area vs redundant",
+          "suggested_field_id": "description_of_pledged_personal_property"
+        },
+        {
+          "widget_id": "W053",
+          "page": 1,
+          "rect": [
+            72.0,
+            706.0,
+            521.5,
+            774.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "no_property_is_described_the_sureties_enter_this",
+          "category": "candidate_field",
+          "assessment": "candidate_input",
+          "reason": "'general pledge of personal assets' writing area; appears unmodeled \u2014 needs form-intent review",
+          "suggested_field_id": "no_property_is_described_the_sureties_enter_this"
+        },
+        {
+          "widget_id": "W061",
+          "page": 2,
+          "rect": [
+            324.0,
+            348.6,
+            572.0,
+            365.3
+          ],
+          "widget_type": "Text",
+          "detected_name": "notary_printed_name_2",
+          "category": "court_or_sig",
+          "assessment": "leave_unmapped",
+          "reason": "court/clerk/signature widget (not litigant-filled)"
+        },
+        {
+          "widget_id": "W072",
+          "page": 3,
+          "rect": [
+            72.0,
+            213.1,
+            542.0,
+            241.1
+          ],
+          "widget_type": "Text",
+          "detected_name": "officer_executing_bond_name",
+          "category": "candidate_field",
+          "assessment": "candidate_input",
+          "reason": "officer-executing-bond name area; verify vs bound corporate_surety_officer_name_authority (W071) above",
+          "suggested_field_id": "officer_executing_bond_name"
+        }
+      ]
+    },
+    "DE-405": {
+      "form_id": "DE-405",
+      "n_mapped": 93,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W085",
+          "page": 2,
+          "rect": [
+            72.0,
+            223.6,
+            542.0,
+            235.6
+          ],
+          "widget_type": "Text",
+          "detected_name": "gross_value_of_personal_property_encumbrances",
+          "category": "candidate_field",
+          "assessment": "ambiguous",
+          "reason": "overlaps/abuts a bound widget \u2014 verify duplicate vs mis-bind",
+          "suggested_field_id": "gross_value_of_personal_property_encumbrances"
+        }
+      ]
+    },
+    "DE-406": {
+      "form_id": "DE-406",
+      "n_mapped": 35,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-407": {
+      "form_id": "DE-407",
+      "n_mapped": 16,
+      "n_unmapped": 2,
+      "unmapped": [
+        {
+          "widget_id": "W005",
+          "page": 0,
+          "rect": [
+            72.0,
+            232.3,
+            152.4,
+            250.8
+          ],
+          "widget_type": "Text",
+          "detected_name": "nominee_name",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        },
+        {
+          "widget_id": "W018",
+          "page": 0,
+          "rect": [
+            72.0,
+            579.0,
+            209.5,
+            590.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "statutory_reference",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "DE-501": {
+      "form_id": "DE-501",
+      "n_mapped": 27,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W023",
+          "page": 2,
+          "rect": [
+            208.3,
+            62.4,
+            403.6,
+            80.9
+          ],
+          "widget_type": "Text",
+          "detected_name": "order_heading",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "DE-502": {
+      "form_id": "DE-502",
+      "n_mapped": 18,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W019",
+          "page": 0,
+          "rect": [
+            208.2,
+            657.0,
+            393.7,
+            675.5
+          ],
+          "widget_type": "Text",
+          "detected_name": "notice_signature",
+          "category": "court_or_sig",
+          "assessment": "leave_unmapped",
+          "reason": "court/clerk/signature widget (not litigant-filled)"
+        }
+      ]
+    },
+    "DE-503": {
+      "form_id": "DE-503",
+      "n_mapped": 30,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W031",
+          "page": 2,
+          "rect": [
+            72.0,
+            258.9,
+            216.0,
+            276.1
+          ],
+          "widget_type": "Text",
+          "detected_name": "notice_to_claimant_and_warning_text",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "DE-504": {
+      "form_id": "DE-504",
+      "n_mapped": 20,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W015",
+          "page": 0,
+          "rect": [
+            72.0,
+            753.9,
+            542.0,
+            774.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "petitioner_email_address",
+          "category": "candidate_field",
+          "assessment": "ambiguous",
+          "reason": "footer email box; petitioner email is already captured in petitioner_info (item 1) \u2014 likely redundant",
+          "suggested_field_id": "petitioner_email_address"
+        }
+      ]
+    },
+    "DE-505": {
+      "form_id": "DE-505",
+      "n_mapped": 16,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-506": {
+      "form_id": "DE-506",
+      "n_mapped": 49,
+      "n_unmapped": 2,
+      "unmapped": [
+        {
+          "widget_id": "W009",
+          "page": 0,
+          "rect": [
+            72.0,
+            332.5,
+            542.0,
+            353.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "date_of_decedent_s_death_the_time_for_election_has_has_not_been_extended_",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        },
+        {
+          "widget_id": "W010",
+          "page": 0,
+          "rect": [
+            334.1,
+            351.2,
+            418.6,
+            363.2
+          ],
+          "widget_type": "Text",
+          "detected_name": "probate_estate_value",
+          "category": "candidate_field",
+          "assessment": "candidate_input",
+          "reason": "apparent blank with no field \u2014 confirm via alignment/vision audit, then bind",
+          "suggested_field_id": "probate_estate_value"
+        }
+      ]
+    },
+    "DE-507": {
+      "form_id": "DE-507",
+      "n_mapped": 74,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W071",
+          "page": 2,
+          "rect": [
+            72.0,
+            542.2,
+            154.1,
+            559.8
+          ],
+          "widget_type": "Text",
+          "detected_name": "filing_fee",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        }
+      ]
+    },
+    "DE-509": {
+      "form_id": "DE-509",
+      "n_mapped": 42,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-601": {
+      "form_id": "DE-601",
+      "n_mapped": 28,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W029",
+          "page": 1,
+          "rect": [
+            72.0,
+            269.0,
+            288.0,
+            288.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "attorney_footnote_1",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "DE-602": {
+      "form_id": "DE-602",
+      "n_mapped": 13,
+      "n_unmapped": 3,
+      "unmapped": [
+        {
+          "widget_id": "W005",
+          "page": 0,
+          "rect": [
+            72.0,
+            263.6,
+            542.0,
+            284.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "date_original_appointment",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "overlays declarative statement item 1 (no blank)"
+        },
+        {
+          "widget_id": "W006",
+          "page": 0,
+          "rect": [
+            72.0,
+            298.0,
+            542.0,
+            319.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "representative_closing_estate_the_time_limit_for_the_presentation_of_creditors",
+          "category": "likely_static",
+          "assessment": "spurious",
+          "reason": "overlays declarative statement item 2 (no blank)"
+        },
+        {
+          "widget_id": "W010",
+          "page": 0,
+          "rect": [
+            72.0,
+            620.0,
+            542.0,
+            774.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "aware_whose_claims_are_neither_paid_nor_barred",
+          "category": "likely_static",
+          "assessment": "spurious",
+          "reason": "overlays declarative statement item 4 (no blank)"
+        }
+      ]
+    },
+    "DE-603": {
+      "form_id": "DE-603",
+      "n_mapped": 47,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "DE-605": {
+      "form_id": "DE-605",
+      "n_mapped": 20,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "GS-008": {
+      "form_id": "GS-008",
+      "n_mapped": 23,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "GS-008.vA": {
+      "form_id": "GS-008.vA",
+      "n_mapped": 23,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "GS-014": {
+      "form_id": "GS-014",
+      "n_mapped": 116,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W050",
+          "page": 1,
+          "rect": [
+            54.0,
+            271.1,
+            134.8,
+            300.6
+          ],
+          "widget_type": "Text",
+          "detected_name": "parent_1_address",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "table-corner widget in the row-label column; the real legal_parent_1_address is W054 (already bound)"
+        }
+      ]
+    },
+    "MISC-101": {
+      "form_id": "MISC-101",
+      "n_mapped": 28,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W029",
+          "page": 1,
+          "rect": [
+            72.0,
+            678.7,
+            216.0,
+            697.3
+          ],
+          "widget_type": "Text",
+          "detected_name": "footnote_legal_reference",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "MISC-102": {
+      "form_id": "MISC-102",
+      "n_mapped": 45,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-105": {
+      "form_id": "N-105",
+      "n_mapped": 23,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W008",
+          "page": 0,
+          "rect": [
+            43.0,
+            349.6,
+            571.0,
+            361.6
+          ],
+          "widget_type": "Text",
+          "detected_name": "text_field_p1_y1021",
+          "category": "likely_static",
+          "assessment": "leave_unmapped",
+          "reason": "printed/static text the detector over-captured"
+        }
+      ]
+    },
+    "N-106": {
+      "form_id": "N-106",
+      "n_mapped": 13,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-107": {
+      "form_id": "N-107",
+      "n_mapped": 11,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-108": {
+      "form_id": "N-108",
+      "n_mapped": 18,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-112": {
+      "form_id": "N-112",
+      "n_mapped": 19,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-115": {
+      "form_id": "N-115",
+      "n_mapped": 27,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-117": {
+      "form_id": "N-117",
+      "n_mapped": 9,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "N-118": {
+      "form_id": "N-118",
+      "n_mapped": 86,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "NC-001": {
+      "form_id": "NC-001",
+      "n_mapped": 48,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PB-007": {
+      "form_id": "PB-007",
+      "n_mapped": 147,
+      "n_unmapped": 2,
+      "unmapped": [
+        {
+          "widget_id": "W129",
+          "page": 2,
+          "rect": [
+            126.6,
+            678.0,
+            136.6,
+            688.0
+          ],
+          "widget_type": "CheckBox",
+          "detected_name": "petitioner_shall_pay_of_each_bill_respondent_sha_2",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        },
+        {
+          "widget_id": "W136",
+          "page": 3,
+          "rect": [
+            81.0,
+            18.0,
+            575.0,
+            50.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "petitioner_shall_pay_per",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        }
+      ]
+    },
+    "PB-007.vA": {
+      "form_id": "PB-007.vA",
+      "n_mapped": 147,
+      "n_unmapped": 2,
+      "unmapped": [
+        {
+          "widget_id": "W129",
+          "page": 2,
+          "rect": [
+            126.6,
+            678.0,
+            136.6,
+            688.0
+          ],
+          "widget_type": "CheckBox",
+          "detected_name": "petitioner_shall_pay_of_each_bill_respondent_sha_2",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        },
+        {
+          "widget_id": "W136",
+          "page": 3,
+          "rect": [
+            81.0,
+            18.0,
+            575.0,
+            50.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "petitioner_shall_pay_per",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        }
+      ]
+    },
+    "PP-107": {
+      "form_id": "PP-107",
+      "n_mapped": 102,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-108": {
+      "form_id": "PP-108",
+      "n_mapped": 7,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-201": {
+      "form_id": "PP-201",
+      "n_mapped": 107,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-203": {
+      "form_id": "PP-203",
+      "n_mapped": 7,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-205": {
+      "form_id": "PP-205",
+      "n_mapped": 115,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-207": {
+      "form_id": "PP-207",
+      "n_mapped": 8,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-209": {
+      "form_id": "PP-209",
+      "n_mapped": 26,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-210": {
+      "form_id": "PP-210",
+      "n_mapped": 18,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-401": {
+      "form_id": "PP-401",
+      "n_mapped": 106,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-402": {
+      "form_id": "PP-402",
+      "n_mapped": 8,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-405": {
+      "form_id": "PP-405",
+      "n_mapped": 71,
+      "n_unmapped": 2,
+      "unmapped": [
+        {
+          "widget_id": "W073",
+          "page": 3,
+          "rect": [
+            360.0,
+            354.0,
+            542.0,
+            374.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "register_of_probate_signature",
+          "category": "court_or_sig",
+          "assessment": "leave_unmapped",
+          "reason": "court/clerk/signature widget (not litigant-filled)"
+        },
+        {
+          "widget_id": "W072",
+          "page": 3,
+          "rect": [
+            103.0,
+            354.0,
+            259.0,
+            374.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "bond_approval_date",
+          "category": "candidate_field",
+          "assessment": "candidate_input",
+          "reason": "apparent blank with no field \u2014 confirm via alignment/vision audit, then bind",
+          "suggested_field_id": "bond_approval_date"
+        }
+      ]
+    },
+    "PP-406": {
+      "form_id": "PP-406",
+      "n_mapped": 101,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-407": {
+      "form_id": "PP-407",
+      "n_mapped": 34,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-408": {
+      "form_id": "PP-408",
+      "n_mapped": 30,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-409": {
+      "form_id": "PP-409",
+      "n_mapped": 21,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W016",
+          "page": 0,
+          "rect": [
+            58.0,
+            746.8,
+            518.0,
+            774.0
+          ],
+          "widget_type": "Text",
+          "detected_name": "petitioner_email_address",
+          "category": "candidate_field",
+          "assessment": "candidate_input",
+          "reason": "apparent blank with no field \u2014 confirm via alignment/vision audit, then bind",
+          "suggested_field_id": "petitioner_email_address"
+        }
+      ]
+    },
+    "PP-410": {
+      "form_id": "PP-410",
+      "n_mapped": 78,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-412": {
+      "form_id": "PP-412",
+      "n_mapped": 27,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-413": {
+      "form_id": "PP-413",
+      "n_mapped": 76,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-502": {
+      "form_id": "PP-502",
+      "n_mapped": 18,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-503": {
+      "form_id": "PP-503",
+      "n_mapped": 14,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-504": {
+      "form_id": "PP-504",
+      "n_mapped": 24,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-505": {
+      "form_id": "PP-505",
+      "n_mapped": 43,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-506": {
+      "form_id": "PP-506",
+      "n_mapped": 71,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-507": {
+      "form_id": "PP-507",
+      "n_mapped": 99,
+      "n_unmapped": 0,
+      "unmapped": []
+    },
+    "PP-509": {
+      "form_id": "PP-509",
+      "n_mapped": 49,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W049",
+          "page": 1,
+          "rect": [
+            72.0,
+            463.6,
+            472.0,
+            501.7
+          ],
+          "widget_type": "Text",
+          "detected_name": "attorney_email_address_2",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        }
+      ]
+    },
+    "PP-510": {
+      "form_id": "PP-510",
+      "n_mapped": 62,
+      "n_unmapped": 1,
+      "unmapped": [
+        {
+          "widget_id": "W056",
+          "page": 1,
+          "rect": [
+            72.0,
+            507.7,
+            472.0,
+            545.9
+          ],
+          "widget_type": "Text",
+          "detected_name": "attorney_email_address_2",
+          "category": "candidate_field",
+          "assessment": "spurious",
+          "reason": "header/label band directly above a bound data column"
+        }
+      ]
+    },
+    "PP-601": {
+      "form_id": "PP-601",
+      "n_mapped": 80,
+      "n_unmapped": 0,
+      "unmapped": []
+    }
+  }
+}
