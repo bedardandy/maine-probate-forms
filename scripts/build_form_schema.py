@@ -788,12 +788,34 @@ def _load_classifications(form_id: str, out_dir: pathlib.Path) -> dict:
 
 
 def _load_skill_metadata(form_id: str, out_dir: pathlib.Path) -> dict:
-    """Load skill_metadata override if present in classifications.yaml."""
+    """Load skill_metadata override if present in classifications.yaml.
+
+    Also folds in the per-form statutes.json sidecar (authored by
+    scripts/author_statutes.py) under `statute_considerations`, so the
+    statute-consideration layer flows into the built schema's
+    `_skill_metadata_override` and is available to tools/fill_plan.py at fill time.
+    """
+    meta: dict = {}
     path = out_dir / form_id / "classifications.yaml"
-    if not path.exists():
-        return {}
-    data = yaml.safe_load(path.read_text()) or {}
-    return data.get("skill_metadata", {}) or {}
+    if path.exists():
+        data = yaml.safe_load(path.read_text()) or {}
+        meta = data.get("skill_metadata", {}) or {}
+    statutes_path = out_dir / form_id / "statutes.json"
+    if statutes_path.exists():
+        try:
+            sidecar = json.loads(statutes_path.read_text())
+        except Exception:
+            sidecar = None
+        if sidecar:
+            meta["statute_considerations"] = {
+                "governing": sidecar.get("governing", []),
+                "per_question": sidecar.get("per_question", []),
+                "transition_18a": sidecar.get("transition_18a", ""),
+                "cross_refs": sidecar.get("cross_refs", []),
+                "caselaw": sidecar.get("caselaw", []),
+                "disclaimer": sidecar.get("disclaimer", ""),
+            }
+    return meta
 
 
 def detect_conditional_sections(all_ids: list[str]) -> dict:

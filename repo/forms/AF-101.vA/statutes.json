@@ -1,0 +1,54 @@
+{
+  "form_id": "AF-101.vA",
+  "summary": "Jurisdictional affidavit (minor guardianship) — variant A.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-104",
+      "title": "Subject matter jurisdiction",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-104.html",
+      "why": "Subject-matter jurisdiction over guardianship/conservatorship."
+    },
+    {
+      "cite": "18-C §5-106",
+      "title": "Venue",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-106.html",
+      "why": "Venue."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "oath_no_pending_other_state",
+      "considerations": [
+        {
+          "cite": "19-A M.R.S.",
+          "title": "Maine domestic relations law (incl. UCCJEA)",
+          "url": "https://legislature.maine.gov/statutes/19-A/title19-Ach0sec0.html",
+          "note": "Out-of-state custody/guardianship proceedings can divest Maine of jurisdiction under the UCCJEA."
+        }
+      ]
+    },
+    {
+      "field_id": "oath_no_transferred",
+      "considerations": [
+        {
+          "cite": "18-C §5-105",
+          "title": "Transfer of proceeding",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-105.html",
+          "note": "A transferred proceeding affects which court has jurisdiction."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "Procedural form under current Title 18-C and the Maine Rules of Probate Procedure; the date-of-death substantive transition rules are generally not implicated, though the underlying estate or guardianship matter carries its own transition posture.",
+  "cross_refs": [
+    {
+      "cite": "19-A M.R.S.",
+      "title": "Maine domestic relations law (incl. UCCJEA)",
+      "url": "https://legislature.maine.gov/statutes/19-A/title19-Ach0sec0.html"
+    }
+  ],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

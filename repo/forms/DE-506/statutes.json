@@ -1,0 +1,127 @@
+{
+  "form_id": "DE-506",
+  "summary": "Petition for elective share of the surviving spouse.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §2-202",
+      "title": "Elective share",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-202.html",
+      "why": "The elective-share amount = 50% of the marital-property portion of the augmented estate."
+    },
+    {
+      "cite": "18-C §2-203",
+      "title": "Composition of the augmented estate; marital-property portion",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-203.html",
+      "why": "Composition of the augmented estate and the length-of-marriage scaling."
+    },
+    {
+      "cite": "18-C §2-209",
+      "title": "Sources from which elective share payable",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-209.html",
+      "why": "Sources from which the elective share is payable."
+    },
+    {
+      "cite": "18-C §2-211",
+      "title": "Proceeding for elective share; time limit",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-211.html",
+      "why": "Proceeding for elective share and its time limit."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "election_extension_status",
+      "considerations": [
+        {
+          "cite": "18-C §2-211",
+          "title": "Proceeding for elective share; time limit",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-211.html",
+          "note": "The election has a deadline (tied to death and probate); extensions are limited."
+        }
+      ]
+    },
+    {
+      "field_id": "probate_estate_value",
+      "considerations": [
+        {
+          "cite": "18-C §2-204",
+          "title": "Decedent's net probate estate",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-204.html",
+          "note": "The net probate estate is one component of the augmented estate."
+        }
+      ]
+    },
+    {
+      "field_id": "augmented_estate_value",
+      "considerations": [
+        {
+          "cite": "18-C §2-203",
+          "title": "Composition of the augmented estate; marital-property portion",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-203.html",
+          "note": "Augmented estate aggregates probate + nonprobate transfers, then applies the marital-property percentage."
+        }
+      ]
+    },
+    {
+      "field_id": "transferees_name_1",
+      "considerations": [
+        {
+          "cite": "18-C §2-205",
+          "title": "Decedent's nonprobate transfers to others",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-205.html",
+          "note": "Nonprobate transfers to others are pulled into the augmented estate."
+        },
+        {
+          "cite": "18-C §2-210",
+          "title": "Personal liability of recipients",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-210.html",
+          "note": "Recipients can be personally liable to make up the elective share."
+        }
+      ]
+    },
+    {
+      "field_id": "elective_share_determined",
+      "considerations": [
+        {
+          "cite": "18-C §2-202",
+          "title": "Elective share",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-202.html",
+          "note": "Final elective-share amount the court determines."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "MATERIAL DIFFERENCE: under former 18-A the elective share was a flat 1/3 of the augmented estate; under 18-C §2-202 it is 50% of the MARITAL-PROPERTY PORTION of the augmented estate, which scales with length of marriage (§2-203). Date of death selects which regime applies. Title 18-C applies to estates of decedents who die on or after 2019-09-01, and to any proceeding pending on or commenced after that date. For a decedent who died before 2019-09-01, former Title 18-A supplies the substantive succession rules even though the proceeding itself runs under 18-C. See _index/18a-key-diffs.json (governing rule: 18-C §8-301).",
+  "cross_refs": [],
+  "caselaw": [
+    {
+      "name": "Estate of Fisher",
+      "cite": "545 A.2d 1266",
+      "year": 1988,
+      "url": "https://law.justia.com/cases/maine/supreme-court/1988/545-a-2d-1266-0.html",
+      "topic": "Elective share — sources and valuation",
+      "holding": "In satisfying the surviving spouse's elective share, the court must determine the sources from which the share is payable and value property passing to the spouse that is charged against the share. NOTE: decided under the former 18-A elective-share regime (flat 1/3 of the augmented estate); 18-C replaced that with 50% of the marital-property portion (§2-202/§2-203), so the computation differs for deaths on/after 2019-09-01.",
+      "via": [
+        "18-C §2-209"
+      ],
+      "decided_under": "18-A",
+      "holding_source": "secondary"
+    },
+    {
+      "name": "Estate of Galluzzo",
+      "cite": "615 A.2d 236",
+      "year": 1992,
+      "url": "https://law.justia.com/cases/maine/supreme-court/1992/615-a-2d-236-0.html",
+      "topic": "Elective share — augmented estate; timing of petition",
+      "holding": "Addressed what property is included in the augmented estate and the elective-share petition in an estate. NOTE: decided under the former 18-A flat-1/3 elective-share regime; the 18-C marital-property-portion approach (§2-202/§2-203) governs deaths on/after 2019-09-01, so inclusion/valuation analysis differs.",
+      "via": [
+        "18-C §2-202",
+        "18-C §2-211"
+      ],
+      "decided_under": "18-A",
+      "holding_source": "secondary"
+    }
+  ],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

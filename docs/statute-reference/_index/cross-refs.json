@@ -1,0 +1,53 @@
+{
+  "title": "Non-Title-18-C citations the probate forms touch",
+  "note": "Curated cross-reference table for statutes outside Title 18-C that the per-form statute-consideration layer may cite. Citations here are also accepted by scripts/verify_statutes.py. Verified against legislature.maine.gov / Maine Revenue Services as of 2026-05.",
+  "cross_refs": {
+    "36 M.R.S. §4102": {
+      "title": "Maine estate tax (after 2012): definitions; Maine exclusion amount",
+      "note": "Chapter 577 governs estates of decedents dying on or after 2013-01-01. The Maine exclusion amount determines whether any estate tax is owed.",
+      "url": "https://legislature.maine.gov/statutes/36/title36sec4102.html"
+    },
+    "36 M.R.S. §4103": {
+      "title": "Maine estate tax: tax on estate of resident",
+      "note": "Imposes the Maine estate tax on a resident decedent's Maine taxable estate above the exclusion amount.",
+      "url": "https://legislature.maine.gov/statutes/36/title36sec4103.html"
+    },
+    "36 M.R.S. §4104": {
+      "title": "Maine estate tax: tax on estate of nonresident",
+      "note": "Applies to Maine-situs real and tangible personal property of a nonresident decedent.",
+      "url": "https://legislature.maine.gov/statutes/36/title36sec4104.html"
+    },
+    "36 M.R.S. §4107": {
+      "title": "Maine estate tax: tax due date; filing of return and payment",
+      "note": "Return and payment are due 9 months after the date of death. This is the operative estate-tax deadline an estate-administration filer must track.",
+      "url": "https://legislature.maine.gov/statutes/36/title36sec4107.html"
+    },
+    "36 M.R.S. §4063": {
+      "title": "Former Maine estate tax (pre-2013)",
+      "note": "SUPERSEDED for deaths on or after 2013-01-01 by Chapter 577 (36 M.R.S. §§4101-4118). Some legacy form annotations cite §4063; for any current estate use §4102/§4103/§4107 instead.",
+      "superseded": true,
+      "url": "https://legislature.maine.gov/statutes/36/title36sec4063.html"
+    },
+    "18 U.S.C. §2701 et seq.": {
+      "title": "Federal Stored Communications Act (SCA)",
+      "note": "Federal privacy law that restricts custodians (Google, Apple, Meta, Microsoft, etc.) from disclosing the contents of electronic communications without lawful consent or process. It is the reason a personal representative often cannot get message/email CONTENT on letters alone and a provider may require a U.S. court order. Maine RUFADAA (18-C §10-107) is the state-law counterpart that supplies the consent/authority pathway.",
+      "federal": true,
+      "url": "https://www.law.cornell.edu/uscode/text/18/2701"
+    },
+    "M.R. Prob. P.": {
+      "title": "Maine Rules of Probate Procedure",
+      "note": "Court rules governing service, notice, motions, and practice in the Probate Courts. Procedural companion to Title 18-C; consult the current rules for service/notice mechanics referenced by many forms.",
+      "url": "https://www.courts.maine.gov/rules-forms/rules/index.html"
+    },
+    "19-A M.R.S.": {
+      "title": "Maine domestic relations law (incl. UCCJEA)",
+      "note": "Where a minor is the subject of a guardianship or name-change petition and a parental rights/custody matter is or could be pending, jurisdiction and competing custody determinations may be governed by Title 19-A (including the Uniform Child Custody Jurisdiction and Enforcement Act). Relevant to the jurisdictional affidavits (AF-101) and minor name change (NC-001).",
+      "url": "https://legislature.maine.gov/statutes/19-A/title19-Ach0sec0.html"
+    },
+    "22 M.R.S.": {
+      "title": "Maine health and welfare law (DHHS; child welfare; vital records)",
+      "note": "Adoption practice intersects Title 22 (Department of Health and Human Services placement, the adoption registry, and vital records / birth certificate amendment). Relevant to the AD-* adoption forms.",
+      "url": "https://legislature.maine.gov/statutes/22/title22ch0sec0.html"
+    }
+  }
+}
