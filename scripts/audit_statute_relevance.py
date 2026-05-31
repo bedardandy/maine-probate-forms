@@ -119,25 +119,27 @@ def main() -> int:
         units = units[: args.limit]
     print(f"adjudicating {len(units)} consideration(s)"
           + (f" for {args.form}" if args.form else " across all forms"))
+
+    cols = ["form", "field_id", "label", "cite", "title", "verdict", "confidence",
+            "reason", "note"]
+    args.out_tsv.parent.mkdir(parents=True, exist_ok=True)
+    # Line-buffered append so a long run survives interruption with partial data.
+    fh = open(args.out_tsv, "w", buffering=1)
+    fh.write("\t".join(cols) + "\n")
     rows, flagged = [], []
     for i, u in enumerate(units, 1):
         v = _adjudicate(u["label"], u["cite"], u["title"], u["note"],
                         _statute_text(u["url"]), args.model)
         verdict = (v or {}).get("verdict", "error")
-        rows.append({**u, **(v or {}), "verdict": verdict})
+        rec = {**u, **(v or {}), "verdict": verdict}
+        rows.append(rec)
+        fh.write("\t".join(str(rec.get(c, "")).replace("\t", " ") for c in cols) + "\n")
         mark = "" if verdict == "relevant" else "  <-- review"
         if verdict not in ("relevant", "error"):
-            flagged.append(rows[-1])
+            flagged.append(rec)
         print(f"  [{i}/{len(units)}] {u['form']}/{u['field_id']} -> {u['cite']}: "
-              f"{verdict} ({(v or {}).get('confidence','?')}){mark}")
-
-    args.out_tsv.parent.mkdir(parents=True, exist_ok=True)
-    cols = ["form", "field_id", "label", "cite", "title", "verdict", "confidence",
-            "reason", "note"]
-    with open(args.out_tsv, "w") as fh:
-        fh.write("\t".join(cols) + "\n")
-        for r in rows:
-            fh.write("\t".join(str(r.get(c, "")).replace("\t", " ") for c in cols) + "\n")
+              f"{verdict} ({(v or {}).get('confidence','?')}){mark}", flush=True)
+    fh.close()
     print(f"\n{len(rows)} adjudicated; {len(flagged)} flagged (tangential/mis_tied). "
           f"Wrote {args.out_tsv}")
     for r in flagged:
