@@ -3,7 +3,7 @@
 PIPELINE ?= ../detection-pipeline
 REPO     ?= .
 
-.PHONY: help verify check geometry geometry-commit statutes statutes-check
+.PHONY: help verify check geometry geometry-commit statutes statutes-check align align-check
 
 help:
 	@echo "make verify                            validate shipped fill_geometry.json (CI gate)"
@@ -12,10 +12,18 @@ help:
 	@echo "make geometry-commit PIPELINE=<path>   regenerate + commit (push stays manual)"
 	@echo "make statutes                          rebuild statute index + sidecars + reference docs"
 	@echo "make statutes-check                    validate the statute-consideration layer (CI gate)"
+	@echo "make align                             rebuild per-field text-justification map from the schema"
+	@echo "make align-check                       validate field_alignment.json vs schema + review flags (CI gate)"
 	@echo "  (see docs/maintenance.md)"
 
 verify:
 	python3 scripts/verify_fill_geometry.py --repo $(REPO)
+
+align:
+	python3 scripts/author_field_align.py
+
+align-check:
+	python3 scripts/verify_field_align.py
 
 statutes:
 	python3 scripts/build_statute_index.py
