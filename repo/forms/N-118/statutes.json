@@ -1,0 +1,70 @@
+{
+  "form_id": "N-118",
+  "summary": "Notice of guardianship/conservatorship proceeding and post-appointment events.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-113",
+      "title": "Notice of hearing",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-113.html",
+      "why": "Notice of hearing in a guardianship/conservatorship proceeding."
+    },
+    {
+      "cite": "18-C §5-315",
+      "title": "Special limitations on guardian's power",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-315.html",
+      "why": "Special limitations on a guardian's power (dwelling change, contact)."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "change_in_permanent_dwelling",
+      "considerations": [
+        {
+          "cite": "18-C §5-315",
+          "title": "Special limitations on guardian's power",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-315.html",
+          "note": "Moving the protected person's dwelling triggers notice/limits on guardian power."
+        }
+      ]
+    },
+    {
+      "field_id": "restrictions_on_contact",
+      "considerations": [
+        {
+          "cite": "18-C §5-315",
+          "title": "Special limitations on guardian's power",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-315.html",
+          "note": "Restricting contact with others is a specially limited guardian power requiring notice."
+        }
+      ]
+    },
+    {
+      "field_id": "revised_guardianship_plan_filed",
+      "considerations": [
+        {
+          "cite": "18-C §5-316",
+          "title": "Guardian's plan",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-316.html",
+          "note": "A revised guardian's plan must be filed/approved."
+        }
+      ]
+    },
+    {
+      "field_id": "conservators_report_and_accounting",
+      "considerations": [
+        {
+          "cite": "18-C §5-423",
+          "title": "Conservator's report and accounting; monitoring",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-423.html",
+          "note": "Conservator's report and accounting is filed and noticed."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 5 (Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act) governs proceedings pending on or commenced after 2019-09-01. Orders entered under former Title 18-A may rest on different standards; the modern least-restrictive / supported-decision-making framework applies going forward. See _index/18a-key-diffs.json.",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

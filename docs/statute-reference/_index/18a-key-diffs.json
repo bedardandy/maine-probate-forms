@@ -1,0 +1,68 @@
+{
+  "title": "Title 18-A (former Maine Probate Code) — transition rule and material differences",
+  "scope": "Per the project decision, the old code is covered as a transition note plus the handful of material substantive differences — NOT a full section-by-section derivation table.",
+  "disclaimer": "Statutes for consideration only — not legal advice. Which code applies to a given estate is a legal determination; verify against current law and consult a Maine attorney.",
+  "transition": {
+    "effective_date": "2019-09-01",
+    "governing_section": "18-C §8-301",
+    "governing_section_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec8-301.html",
+    "rule": "Title 18-C took effect 2019-09-01. It applies to: (a) wills of, and intestate succession / elective share / exempt property / wrongful-death matters for, decedents who die on or after 2019-09-01; and (b) any probate proceeding pending on, or commenced on or after, the effective date, regardless of when the decedent died. Title 18-A (the former code) continues to govern the substantive succession rights for estates of decedents who died BEFORE 2019-09-01.",
+    "savings": "An act done before 2019-09-01 in any proceeding, and any accrued right, is not impaired by Title 18-C (§8-301).",
+    "interest_of_justice": "A court may apply the former procedure where the new Code's application would be infeasible or work an injustice (§8-301(2)).",
+    "practical_test": "The single most useful upstream question for almost every estate form: did the decedent die before or on/after 2019-09-01? Date of death selects the substantive code; the procedural code in a pending/new case is 18-C either way."
+  },
+  "material_differences": [
+    {
+      "topic": "Elective share of surviving spouse",
+      "current_18c": "18-C §2-202: elective share = 50% of the marital-property portion of the augmented estate. The marital-property portion (§2-203) is a percentage of the augmented estate that scales with marriage length — roughly 3% at <1 year, increasing to 100% at 15+ years.",
+      "former_18a": "Former 18-A: a flat one-third (1/3) of the augmented estate, not scaled by marriage length.",
+      "why_it_matters": "For the same surviving spouse and same assets, the elective-share amount can differ dramatically depending on whether the decedent died before or on/after 2019-09-01. Critical for DE-506 (Petition for Elective Share) and any intake that turns on a spouse's election.",
+      "cites": ["18-C §2-202", "18-C §2-203", "18-C §2-211"],
+      "sources": [
+        "https://legislature.maine.gov/statutes/18-C/title18-Csec2-202.html",
+        "https://www.leveyandwagley.com/maines-new-probate-code-now-in-effect",
+        "https://maineestateattorney.com/2019/12/10/maines-new-elective-share-is-a-marriage-more-worthy-with-age/"
+      ]
+    },
+    {
+      "topic": "Intestate share of surviving spouse",
+      "current_18c": "18-C §2-102: spouse takes the entire estate if no descendant or parent survives; first $300,000 plus 3/4 of the balance if a parent (but no descendant) survives; first $100,000 plus 1/2 of the balance where all of the decedent's surviving descendants are also the spouse's and the spouse has other descendants; and 1/2 of the estate where one or more surviving descendants are not the spouse's.",
+      "former_18a": "Former 18-A used lower base dollar amounts for the spouse's share. Treat any recalled 18-A figure as unverified — for a pre-2019 death, look up the 18-A figure that applied on the date of death.",
+      "why_it_matters": "Drives the heirship/share analysis behind DE-101 (intestate) and any heir-determination question.",
+      "cites": ["18-C §2-102", "18-C §2-103"],
+      "sources": ["https://legislature.maine.gov/statutes/18-C/title18-Csec2-102.html"]
+    },
+    {
+      "topic": "Guardianship, conservatorship and protective proceedings",
+      "current_18c": "18-C Article 5 is the Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act (based on the 2017 uniform act): least-restrictive-alternative standard, supported decision-making, expanded categories of interested persons entitled to notice, and mandatory guardian/conservator plans and periodic reports.",
+      "former_18a": "Former 18-A Article 5 used a structurally different guardianship/conservatorship scheme with narrower notice and without the modern plan/report and least-restrictive framework.",
+      "why_it_matters": "All PP-*, GS-*, and N-1xx guardianship/conservatorship forms map to the new Article 5. Orders entered before 2019-09-01 may rest on different standards; registrations/transfers should be checked against the current act.",
+      "cites": ["18-C §5-301", "18-C §5-401", "18-C §5-316", "18-C §5-317", "18-C §5-419", "18-C §5-423"],
+      "sources": ["https://legislature.maine.gov/statutes/18-C/title18-Cch5sec0.html"]
+    },
+    {
+      "topic": "Small-estate collection by affidavit (threshold)",
+      "current_18c": "18-C §3-1201: available when the entire estate, less liens and encumbrances, does not exceed $40,000 (adjusted for inflation), at least 30 days after death.",
+      "former_18a": "The former 18-A small-estate threshold was lower than $40,000. For a pre-2019 death, confirm the threshold and waiting period that applied then.",
+      "why_it_matters": "Eligibility for AF-102 (Small Estate Affidavit) and DE-603 (Closing Statement for Small Estate) turns on the threshold in effect.",
+      "cites": ["18-C §3-1201", "18-C §3-1204"],
+      "sources": ["https://legislature.maine.gov/statutes/18-C/title18-Csec3-1201.html"]
+    },
+    {
+      "topic": "Transfer-on-death (TOD) real property deeds",
+      "current_18c": "18-C added the Uniform Real Property Transfer on Death Act (§§6-401 to 6-420), authorizing TOD deeds for real estate as a nonprobate transfer.",
+      "former_18a": "Former 18-A did not include a real-property transfer-on-death deed mechanism.",
+      "why_it_matters": "Affects what passes outside probate (and therefore what the inventory/estate actually contains) for deaths on or after 2019-09-01.",
+      "cites": ["18-C §6-405", "18-C §6-409", "18-C §6-414"],
+      "sources": ["https://legislature.maine.gov/statutes/18-C/title18-Cch6sec0.html"]
+    },
+    {
+      "topic": "Fiduciary access to digital assets (RUFADAA)",
+      "current_18c": "18-C Article 10 is the Maine Revised Uniform Fiduciary Access to Digital Assets Act (§§10-101 to 10-118).",
+      "former_18a": "Maine first enacted RUFADAA in 2017 as Article 10 of the then-current code; it was carried into 18-C Article 10. Substance is continuous.",
+      "why_it_matters": "This is the statutory hook for a personal representative or conservator seeking access to a decedent's online accounts — see docs/digital-assets-access.md.",
+      "cites": ["18-C §10-104", "18-C §10-107", "18-C §10-108", "18-C §10-115"],
+      "sources": ["https://legislature.maine.gov/statutes/18-C/title18-Cch10sec0.html"]
+    }
+  ]
+}

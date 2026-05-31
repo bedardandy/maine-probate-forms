@@ -1,0 +1,48 @@
+{
+  "form_id": "GS-014",
+  "summary": "Status report of the guardian (minor).",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-207",
+      "title": "Duties of guardian",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-207.html",
+      "why": "Duties of a guardian of a minor."
+    },
+    {
+      "cite": "18-C §5-210",
+      "title": "Modification or termination of guardianship; other proceedings after appointment",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-210.html",
+      "why": "Modification or termination of a minor guardianship; review."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "conclusions_recommendations",
+      "considerations": [
+        {
+          "cite": "18-C §5-210",
+          "title": "Modification or termination of guardianship; other proceedings after appointment",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-210.html",
+          "note": "Report supports the court's periodic review of the minor guardianship."
+        }
+      ]
+    },
+    {
+      "field_id": "parent_contact_details",
+      "considerations": [
+        {
+          "cite": "18-C §5-207",
+          "title": "Duties of guardian",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-207.html",
+          "note": "Guardian's duties include facilitating appropriate parental contact."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 5 (Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act) governs proceedings pending on or commenced after 2019-09-01. Orders entered under former Title 18-A may rest on different standards; the modern least-restrictive / supported-decision-making framework applies going forward. See _index/18a-key-diffs.json.",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

@@ -28,3 +28,7 @@ _audit_excluded/
 *.bak_*
 *.before_phase*
 repo/forms/**/*.pdf
+
+# local geometry backups (not deliverables)
+*.bak
+*.preC.bak

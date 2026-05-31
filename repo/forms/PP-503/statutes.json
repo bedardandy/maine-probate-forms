@@ -1,0 +1,56 @@
+{
+  "form_id": "PP-503",
+  "summary": "Conservator plan.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-419",
+      "title": "Conservator's plan",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-419.html",
+      "why": "Conservator's plan for managing the protected estate."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "budget_expenses",
+      "considerations": [
+        {
+          "cite": "18-C §5-419",
+          "title": "Conservator's plan",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-419.html",
+          "note": "Plan sets the budget for the protected person's needs."
+        }
+      ]
+    },
+    {
+      "field_id": "restore_ability_steps",
+      "considerations": [
+        {
+          "cite": "18-C §5-431",
+          "title": "Termination or modification of conservatorship",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-431.html",
+          "note": "Plan should consider steps toward restoring the person's management ability."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 5 (Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act) governs proceedings pending on or commenced after 2019-09-01. Orders entered under former Title 18-A may rest on different standards; the modern least-restrictive / supported-decision-making framework applies going forward. See _index/18a-key-diffs.json.",
+  "cross_refs": [],
+  "caselaw": [
+    {
+      "name": "Adult Guardianship and Conservatorship of R.",
+      "cite": "2026 ME 43",
+      "year": 2026,
+      "url": "https://law.justia.com/cases/maine/supreme-court/2026/2026-me-43.html",
+      "topic": "Guardianship/conservatorship — right to effective assistance of counsel; termination",
+      "holding": "Affirming the denial of a protected person's petition to terminate his guardianship and the appointment of DHHS as conservator; the Court recognized for the first time that a person subject to guardianship or conservatorship proceedings has a right to the effective assistance of counsel, and articulated a procedure for challenging an order on that ground.",
+      "via": [
+        "18-C §5-431"
+      ],
+      "decided_under": "18-C",
+      "holding_source": "primary"
+    }
+  ],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

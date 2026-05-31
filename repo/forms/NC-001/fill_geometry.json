@@ -1,626 +1,617 @@
 {
-  "form_id": "NC-001",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "NC-001 Petition for Name Change of Minor_fused.pdf",
-  "fields": {
-    "probate_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            100.3,
-            97.3,
-            230.1,
-            109.3
-          ]
-        }
-      ]
-    },
-    "district_court_location": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            445.0,
-            97.3,
-            565.0,
-            109.3
-          ]
-        }
-      ]
-    },
-    "probate_docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            100.3,
-            111.2,
-            208.3,
-            124.0
-          ]
-        }
-      ]
-    },
-    "district_docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            445.0,
-            111.2,
-            565.0,
-            124.0
-          ]
-        }
-      ]
-    },
-    "minor_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            100.3,
-            157.0,
-            253.1,
-            172.0
-          ]
-        }
-      ]
-    },
-    "petitioner_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            237.0,
-            512.0,
-            251.0
-          ]
-        }
-      ]
-    },
-    "petitioner_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            285.9,
-            512.0,
-            299.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            301.8,
-            512.0,
-            315.0
-          ]
-        }
-      ]
-    },
-    "petitioner_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            305.0,
-            332.0,
-            512.0,
-            346.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            364.0,
-            512.0,
-            378.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            413.0,
-            512.0,
-            426.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            428.8,
-            512.0,
-            442.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            305.0,
-            458.0,
-            455.0,
-            473.0
-          ]
-        }
-      ]
-    },
-    "provided_documents": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "birth_certificate",
-          "label": "Birth certificate of minor",
-          "page": 0,
-          "rect": [
-            90.6,
-            524.3,
-            100.6,
-            534.3
-          ]
-        },
-        {
-          "value": "divorce_judgment",
-          "label": "Divorce Judgment, if any, including any modifications",
-          "page": 0,
-          "rect": [
-            90.6,
-            541.0,
-            100.6,
-            551.0
-          ]
-        },
-        {
-          "value": "court_order_custody",
-          "label": "Court order pertaining to custody of the child, if any, including any modifications",
-          "page": 0,
-          "rect": [
-            90.6,
-            557.8,
-            100.6,
-            567.8
-          ]
-        },
-        {
-          "value": "death_certificate",
-          "label": "Death certificate of deceased custodian, if any",
-          "page": 0,
-          "rect": [
-            90.6,
-            575.0,
-            100.6,
-            585.0
-          ]
-        }
-      ]
-    },
-    "minor_full_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            621.1,
-            512.0,
-            634.0
-          ]
-        }
-      ]
-    },
-    "minor_dob": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            202.0,
-            651.0,
-            352.0,
-            666.0
-          ]
-        }
-      ]
-    },
-    "minor_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            700.5,
-            512.0,
-            714.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            716.4,
-            565.0,
-            729.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            18.0,
-            559.0,
-            62.0
-          ]
-        }
-      ]
-    },
-    "new_minor_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            85.7,
-            559.0,
-            99.0
-          ]
-        }
-      ]
-    },
-    "reason_for_change": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            133.3,
-            559.0,
-            147.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            149.4,
-            559.0,
-            162.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            165.2,
-            559.0,
-            178.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            181.0,
-            559.0,
-            194.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            196.9,
-            559.0,
-            210.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            227.0,
-            214.0,
-            241.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            227.0,
-            559.0,
-            241.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            264.0,
-            214.0,
-            279.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            264.0,
-            559.0,
-            279.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_printed_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            302.0,
-            559.0,
-            316.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_printed_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            329.5,
-            559.0,
-            341.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            341.0,
-            559.0,
-            355.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_printed_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            369.8,
-            559.0,
-            381.8
-          ]
-        }
-      ]
-    },
-    "copetitioner_printed_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            392.9,
-            559.0,
-            404.9
-          ]
-        }
-      ]
-    },
-    "attorney_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            415.9,
-            297.0,
-            427.9
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            446.0,
-            297.0,
-            459.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            471.0,
-            297.0,
-            482.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            484.8,
-            297.0,
-            499.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            513.6,
-            297.0,
-            525.6
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            536.6,
-            297.0,
-            548.6
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            586.0,
-            214.0,
-            600.0
-          ]
-        }
-      ]
-    },
-    "notary_appearance_name1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            216.0,
-            613.0,
-            436.0,
-            628.0
-          ]
-        }
-      ]
-    },
-    "notary_appearance_name2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            630.5,
-            297.0,
-            643.0
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            700.0,
-            559.0,
-            715.0
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            71.0,
-            700.0,
-            214.0,
-            715.0
-          ]
-        }
-      ]
+ "form_id": "NC-001",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "NC-001 Petition for Name Change of Minor_fused.pdf",
+ "fields": {
+  "probate_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      100.3,
+      96.3,
+      230.1,
+      109.3
+     ]
     }
+   ]
+  },
+  "district_court_location": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      445.0,
+      96.3,
+      565.0,
+      109.3
+     ]
+    }
+   ]
+  },
+  "probate_docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      100.3,
+      111.2,
+      208.3,
+      124.0
+     ]
+    }
+   ]
+  },
+  "district_docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      445.0,
+      111.2,
+      565.0,
+      124.0
+     ]
+    }
+   ]
+  },
+  "minor_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      100.3,
+      159.0,
+      253.1,
+      172.0
+     ]
+    }
+   ]
+  },
+  "petitioner_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      238.0,
+      512.0,
+      251.0
+     ]
+    }
+   ]
+  },
+  "petitioner_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      285.9,
+      512.0,
+      299.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      301.8,
+      512.0,
+      315.0
+     ]
+    }
+   ]
+  },
+  "petitioner_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      305.0,
+      333.0,
+      512.0,
+      346.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      365.0,
+      512.0,
+      378.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      413.0,
+      512.0,
+      426.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      428.8,
+      512.0,
+      442.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      305.0,
+      460.0,
+      455.0,
+      473.0
+     ]
+    }
+   ]
+  },
+  "provided_documents": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "birth_certificate",
+     "label": "Birth certificate of minor",
+     "page": 0,
+     "rect": [
+      90.6,
+      524.3,
+      100.6,
+      534.3
+     ]
+    },
+    {
+     "value": "divorce_judgment",
+     "label": "Divorce Judgment, if any, including any modifications",
+     "page": 0,
+     "rect": [
+      90.6,
+      541.0,
+      100.6,
+      551.0
+     ]
+    },
+    {
+     "value": "court_order_custody",
+     "label": "Court order pertaining to custody of the child, if any, including any modifications",
+     "page": 0,
+     "rect": [
+      90.6,
+      557.8,
+      100.6,
+      567.8
+     ]
+    },
+    {
+     "value": "death_certificate",
+     "label": "Death certificate of deceased custodian, if any",
+     "page": 0,
+     "rect": [
+      90.6,
+      575.0,
+      100.6,
+      585.0
+     ]
+    }
+   ]
+  },
+  "minor_full_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      621.1,
+      512.0,
+      634.0
+     ]
+    }
+   ]
+  },
+  "minor_dob": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      202.0,
+      653.0,
+      352.0,
+      666.0
+     ]
+    }
+   ]
+  },
+  "minor_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      700.5,
+      512.0,
+      714.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      716.4,
+      565.0,
+      729.0
+     ]
+    }
+   ]
+  },
+  "new_minor_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      85.7,
+      559.0,
+      99.0
+     ]
+    }
+   ]
+  },
+  "reason_for_change": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      134.0,
+      559.0,
+      147.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      149.4,
+      559.0,
+      162.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      165.2,
+      559.0,
+      178.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      181.0,
+      559.0,
+      194.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      196.9,
+      559.0,
+      210.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      228.0,
+      214.0,
+      241.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      228.0,
+      559.0,
+      241.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      266.0,
+      214.0,
+      279.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      266.0,
+      559.0,
+      279.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_printed_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      303.0,
+      559.0,
+      316.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_printed_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      328.5,
+      559.0,
+      341.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      342.0,
+      559.0,
+      355.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_printed_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      368.8,
+      559.0,
+      381.8
+     ]
+    }
+   ]
+  },
+  "copetitioner_printed_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      391.9,
+      559.0,
+      404.9
+     ]
+    }
+   ]
+  },
+  "attorney_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      414.9,
+      297.0,
+      427.9
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      446.0,
+      297.0,
+      459.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      469.0,
+      297.0,
+      482.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      486.0,
+      297.0,
+      499.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      512.6,
+      297.0,
+      525.6
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      535.6,
+      297.0,
+      548.6
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      587.0,
+      214.0,
+      600.0
+     ]
+    }
+   ]
+  },
+  "notary_appearance_name1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      216.0,
+      615.0,
+      436.0,
+      628.0
+     ]
+    }
+   ]
+  },
+  "notary_appearance_name2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      630.5,
+      297.0,
+      643.0
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      702.0,
+      559.0,
+      715.0
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      71.0,
+      702.0,
+      214.0,
+      715.0
+     ]
+    }
+   ]
   }
+ }
 }

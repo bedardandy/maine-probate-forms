@@ -1,0 +1,31 @@
+{
+  "form_id": "PP-509",
+  "summary": "Petition to accept transfer of guardianship/conservatorship from another state.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-632",
+      "title": "Accepting guardianship or conservatorship transferred from another state",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-632.html",
+      "why": "Accepting a guardianship/conservatorship transferred from another state."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "transferring_state",
+      "considerations": [
+        {
+          "cite": "18-C §5-632",
+          "title": "Accepting guardianship or conservatorship transferred from another state",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-632.html",
+          "note": "Maine's acceptance follows the sending state's provisional transfer order."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 5 (Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act) governs proceedings pending on or commenced after 2019-09-01. Orders entered under former Title 18-A may rest on different standards; the modern least-restrictive / supported-decision-making framework applies going forward. See _index/18a-key-diffs.json.",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

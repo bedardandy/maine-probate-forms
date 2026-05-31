@@ -1,0 +1,48 @@
+{
+  "form_id": "PP-505",
+  "summary": "Physician's or psychologist's report.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-306",
+      "title": "Professional evaluation",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-306.html",
+      "why": "Professional evaluation in a guardianship proceeding."
+    },
+    {
+      "cite": "18-C §5-407",
+      "title": "Professional evaluation",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-407.html",
+      "why": "Professional evaluation in a conservatorship proceeding."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "cognitive_functional_abilities",
+      "considerations": [
+        {
+          "cite": "18-C §5-306",
+          "title": "Professional evaluation",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-306.html",
+          "note": "Evaluation of functional ability is central to the need determination."
+        }
+      ]
+    },
+    {
+      "field_id": "conservator_appointment_opinion",
+      "considerations": [
+        {
+          "cite": "18-C §5-407",
+          "title": "Professional evaluation",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-407.html",
+          "note": "Opinion supports/contradicts the conservatorship basis."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 5 (Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act) governs proceedings pending on or commenced after 2019-09-01. Orders entered under former Title 18-A may rest on different standards; the modern least-restrictive / supported-decision-making framework applies going forward. See _index/18a-key-diffs.json.",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

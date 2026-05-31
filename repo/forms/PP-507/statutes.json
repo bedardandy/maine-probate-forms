@@ -1,0 +1,80 @@
+{
+  "form_id": "PP-507",
+  "summary": "Affidavit for emergency guardian and/or conservator.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-312",
+      "title": "Emergency guardian",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-312.html",
+      "why": "Emergency guardian standard and procedure."
+    },
+    {
+      "cite": "18-C §5-413",
+      "title": "Emergency conservator",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-413.html",
+      "why": "Emergency conservator standard and procedure."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "circumstances_of_harm",
+      "considerations": [
+        {
+          "cite": "18-C §5-312",
+          "title": "Emergency guardian",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-312.html",
+          "note": "Must show likelihood of substantial harm without immediate appointment."
+        },
+        {
+          "cite": "18-C §5-413",
+          "title": "Emergency conservator",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-413.html",
+          "note": "Property-risk counterpart for an emergency conservator."
+        }
+      ]
+    },
+    {
+      "field_id": "requested_powers",
+      "considerations": [
+        {
+          "cite": "18-C §5-312",
+          "title": "Emergency guardian",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-312.html",
+          "note": "Emergency powers are limited to those needed to prevent the harm."
+        }
+      ]
+    },
+    {
+      "field_id": "no_notice_name_1",
+      "considerations": [
+        {
+          "cite": "18-C §5-312",
+          "title": "Emergency guardian",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-312.html",
+          "note": "Notice may be abbreviated/deferred only as the emergency statute allows."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 5 (Maine Uniform Guardianship, Conservatorship and Protective Proceedings Act) governs proceedings pending on or commenced after 2019-09-01. Orders entered under former Title 18-A may rest on different standards; the modern least-restrictive / supported-decision-making framework applies going forward. See _index/18a-key-diffs.json.",
+  "cross_refs": [],
+  "caselaw": [
+    {
+      "name": "Adult Guardianship and Conservatorship of T.",
+      "cite": "2022 ME 51",
+      "year": 2022,
+      "url": "https://www.courts.maine.gov/courts/sjc/lawcourt/2022/22me051.pdf",
+      "topic": "Adult guardianship/conservatorship — unified proceeding",
+      "holding": "Appointing DHHS as an adult's full guardian and conservator under 18-C M.R.S. §§ 5-301 and 5-401(2): the guardianship statutes create a single 'unified proceeding,' so a court may consider evidence admitted at an earlier emergency hearing when it rules after the final hearing.",
+      "via": [
+        "18-C §5-312",
+        "18-C §5-413"
+      ],
+      "decided_under": "18-C",
+      "holding_source": "primary"
+    }
+  ],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

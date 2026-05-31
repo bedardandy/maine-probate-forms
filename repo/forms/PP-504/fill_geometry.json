@@ -1,336 +1,336 @@
 {
-  "form_id": "PP-504",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 4,
-  "source_fused": "PP-504 Joined Plan (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            86.0,
-            111.0,
-            183.0,
-            129.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            432.0,
-            108.0,
-            543.0,
-            129.0
-          ]
-        }
-      ]
-    },
-    "respondent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            86.0,
-            148.0,
-            272.0,
-            169.0
-          ]
-        }
-      ]
-    },
-    "plan_version": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "original",
-          "label": "Original",
-          "page": 0,
-          "rect": [
-            361.6,
-            187.5,
-            370.6,
-            196.5
-          ]
-        },
-        {
-          "value": "revised",
-          "label": "Revised",
-          "page": 0,
-          "rect": [
-            441.1,
-            187.5,
-            450.1,
-            196.5
-          ]
-        }
-      ]
-    },
-    "medical_conditions": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            258.0,
-            543.0,
-            334.0
-          ]
-        }
-      ]
-    },
-    "living_arrangement_services": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            369.0,
-            543.0,
-            458.0
-          ]
-        }
-      ]
-    },
-    "social_educational_activities": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            492.0,
-            543.0,
-            582.0
-          ]
-        }
-      ]
-    },
-    "relationships_visits": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            618.0,
-            543.0,
-            680.0
-          ]
-        }
-      ]
-    },
-    "guardian_visits_communication": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            714.0,
-            543.0,
-            774.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            67.6,
-            540.0,
-            152.0
-          ]
-        }
-      ]
-    },
-    "goals_restoration": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            190.0,
-            540.0,
-            278.0
-          ]
-        }
-      ]
-    },
-    "existing_plan_consistency": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            316.0,
-            540.0,
-            402.0
-          ]
-        }
-      ]
-    },
-    "guardian_proposed_charges": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            441.0,
-            540.0,
-            668.0
-          ]
-        }
-      ]
-    },
-    "conservator_budget_charges": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            706.0,
-            540.0,
-            774.0
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            107.0,
-            540.0,
-            318.0
-          ]
-        }
-      ]
-    },
-    "respondent_involvement_decisions": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            355.0,
-            540.0,
-            445.0
-          ]
-        }
-      ]
-    },
-    "restore_management_ability": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            479.0,
-            540.0,
-            554.0
-          ]
-        }
-      ]
-    },
-    "duration_estimate": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            575.1,
-            540.0,
-            613.0
-          ]
-        }
-      ]
-    },
-    "petitioner_dated": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            113.0,
-            129.4,
-            242.0,
-            145.2
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            324.0,
-            129.4,
-            501.0,
-            145.2
-          ]
-        }
-      ]
-    },
-    "order_plan_filed_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            465.0,
-            210.0,
-            540.0,
-            226.0
-          ]
-        }
-      ]
-    },
-    "judge_dated": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            113.0,
-            361.0,
-            242.0,
-            378.0
-          ]
-        }
-      ]
-    },
-    "judge_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            360.0,
-            359.4,
-            540.0,
-            378.0
-          ]
-        }
-      ]
+ "form_id": "PP-504",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 4,
+ "source_fused": "PP-504 Joined Plan (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      86.0,
+      116.0,
+      183.0,
+      129.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      432.0,
+      116.0,
+      543.0,
+      129.0
+     ]
+    }
+   ]
+  },
+  "respondent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      86.0,
+      156.0,
+      272.0,
+      169.0
+     ]
+    }
+   ]
+  },
+  "plan_version": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "original",
+     "label": "Original",
+     "page": 0,
+     "rect": [
+      361.6,
+      187.5,
+      370.6,
+      196.5
+     ]
+    },
+    {
+     "value": "revised",
+     "label": "Revised",
+     "page": 0,
+     "rect": [
+      441.1,
+      187.5,
+      450.1,
+      196.5
+     ]
+    }
+   ]
+  },
+  "medical_conditions": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      258.0,
+      543.0,
+      334.0
+     ]
+    }
+   ]
+  },
+  "living_arrangement_services": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      369.0,
+      543.0,
+      458.0
+     ]
+    }
+   ]
+  },
+  "social_educational_activities": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      492.0,
+      543.0,
+      582.0
+     ]
+    }
+   ]
+  },
+  "relationships_visits": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      618.0,
+      543.0,
+      680.0
+     ]
+    }
+   ]
+  },
+  "guardian_visits_communication": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      714.0,
+      543.0,
+      774.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      67.6,
+      540.0,
+      152.0
+     ]
+    }
+   ]
+  },
+  "goals_restoration": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      190.0,
+      540.0,
+      278.0
+     ]
+    }
+   ]
+  },
+  "existing_plan_consistency": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      316.0,
+      540.0,
+      402.0
+     ]
+    }
+   ]
+  },
+  "guardian_proposed_charges": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      441.0,
+      540.0,
+      668.0
+     ]
+    }
+   ]
+  },
+  "conservator_budget_charges": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      706.0,
+      540.0,
+      774.0
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      107.0,
+      540.0,
+      318.0
+     ]
+    }
+   ]
+  },
+  "respondent_involvement_decisions": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      355.0,
+      540.0,
+      445.0
+     ]
+    }
+   ]
+  },
+  "restore_management_ability": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      479.0,
+      540.0,
+      554.0
+     ]
+    }
+   ]
+  },
+  "duration_estimate": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      575.1,
+      540.0,
+      613.0
+     ]
+    }
+   ]
+  },
+  "petitioner_dated": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      113.0,
+      132.2,
+      242.0,
+      145.2
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      324.0,
+      132.2,
+      501.0,
+      145.2
+     ]
+    }
+   ]
+  },
+  "order_plan_filed_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      465.0,
+      213.0,
+      540.0,
+      226.0
+     ]
+    }
+   ]
+  },
+  "judge_dated": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      113.0,
+      365.0,
+      242.0,
+      378.0
+     ]
+    }
+   ]
+  },
+  "judge_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      360.0,
+      365.0,
+      540.0,
+      378.0
+     ]
+    }
+   ]
   }
+ }
 }

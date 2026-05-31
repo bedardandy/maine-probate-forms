@@ -1,903 +1,903 @@
 {
-  "form_id": "PP-601",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 4,
-  "source_fused": "PP-601 Petition for Other Protective Arrangements (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            115.0,
-            176.0,
-            138.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            118.0,
-            542.0,
-            138.0
-          ]
-        }
-      ]
-    },
-    "respondent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            144.0,
-            309.0,
-            163.0
-          ]
-        }
-      ]
-    },
-    "petition_type": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "adult_guardianship",
-          "label": "Petition for protective arrangement(s) instead of guardianship for an adult",
-          "page": 0,
-          "rect": [
-            109.0,
-            237.5,
-            116.0,
-            244.5
-          ]
-        },
-        {
-          "value": "adult_conservatorship",
-          "label": "Petition for protective arrangement(s) instead of conservatorship for an adult",
-          "page": 0,
-          "rect": [
-            109.0,
-            260.6,
-            116.0,
-            267.6
-          ]
-        },
-        {
-          "value": "minor_guardianship",
-          "label": "Petition for protective arrangement(s) instead of guardianship for a minor",
-          "page": 0,
-          "rect": [
-            109.0,
-            283.5,
-            116.0,
-            290.5
-          ]
-        },
-        {
-          "value": "minor_conservatorship",
-          "label": "Petition for protective arrangement(s) instead of conservatorship for a minor",
-          "page": 0,
-          "rect": [
-            109.0,
-            306.5,
-            116.0,
-            313.5
-          ]
-        }
-      ]
-    },
-    "petitioner_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            318.8,
-            542.0,
-            345.0
-          ]
-        }
-      ]
-    },
-    "petitioner_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            357.9,
-            542.0,
-            401.0
-          ]
-        }
-      ]
-    },
-    "petitioner_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            415.4,
-            542.0,
-            458.0
-          ]
-        }
-      ]
-    },
-    "respondent_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            484.4,
-            542.0,
-            526.0
-          ]
-        }
-      ]
-    },
-    "respondent_proposed_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            542.0,
-            542.0,
-            585.0
-          ]
-        }
-      ]
-    },
-    "notify_parties": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            599.4,
-            542.0,
-            642.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            261.1,
-            206.2,
-            297.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            261.1,
-            383.8,
-            297.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            261.1,
-            539.5,
-            297.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            297.0,
-            206.2,
-            332.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            297.0,
-            383.8,
-            332.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            297.0,
-            539.5,
-            332.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            332.0,
-            206.2,
-            367.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            332.0,
-            383.8,
-            367.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            332.0,
-            539.5,
-            367.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            367.0,
-            206.2,
-            402.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            367.0,
-            383.8,
-            402.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            367.0,
-            539.5,
-            402.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            402.8,
-            206.2,
-            437.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            402.8,
-            383.8,
-            437.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            402.8,
-            539.5,
-            437.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            437.9,
-            206.2,
-            473.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            437.9,
-            383.8,
-            473.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            437.9,
-            539.5,
-            473.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            473.6,
-            206.2,
-            509.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            473.6,
-            383.8,
-            509.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            473.6,
-            539.5,
-            509.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            509.4,
-            206.2,
-            544.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            509.4,
-            383.8,
-            544.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            509.4,
-            539.5,
-            544.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            544.4,
-            206.2,
-            580.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            544.4,
-            383.8,
-            580.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            544.4,
-            539.5,
-            580.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            580.3,
-            206.2,
-            616.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            580.3,
-            383.8,
-            616.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            580.3,
-            539.5,
-            616.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            616.1,
-            206.2,
-            651.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            206.2,
-            616.1,
-            383.8,
-            651.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            383.8,
-            616.1,
-            539.5,
-            651.1
-          ]
-        }
-      ]
-    },
-    "arrangement_nature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            114.2,
-            540.0,
-            190.0
-          ]
-        }
-      ]
-    },
-    "reason_necessary": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            206.1,
-            540.0,
-            281.0
-          ]
-        }
-      ]
-    },
-    "nature_extent_need": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            310.0,
-            540.0,
-            384.0
-          ]
-        }
-      ]
-    },
-    "less_restrictive_alternatives": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            401.6,
-            540.0,
-            455.0
-          ]
-        }
-      ]
-    },
-    "limit_contact_parties": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            85.9,
-            502.7,
-            223.0,
-            526.1
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            223.4,
-            502.7,
-            526.1,
-            526.1
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            85.9,
-            526.1,
-            223.0,
-            549.6
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            223.4,
-            526.1,
-            526.1,
-            549.6
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            85.9,
-            549.6,
-            223.0,
-            573.1
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            223.4,
-            549.6,
-            526.1,
-            573.1
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            85.9,
-            573.1,
-            223.0,
-            596.6
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            223.4,
-            573.1,
-            526.1,
-            596.6
-          ]
-        }
-      ]
-    },
-    "interpreter_required": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "YES",
-          "page": 2,
-          "rect": [
-            265.0,
-            622.3,
-            272.0,
-            629.3
-          ]
-        },
-        {
-          "value": "no",
-          "label": "NO",
-          "page": 2,
-          "rect": [
-            295.7,
-            622.3,
-            302.7,
-            629.3
-          ]
-        }
-      ]
-    },
-    "interpreter_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            634.5,
-            540.0,
-            655.0
-          ]
-        }
-      ]
-    },
-    "attorney_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            670.0,
-            540.0,
-            774.0
-          ]
-        }
-      ]
-    },
-    "respondent_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            156.6,
-            305.8,
-            186.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.8,
-            156.6,
-            539.5,
-            186.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            186.6,
-            305.8,
-            216.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.8,
-            186.6,
-            539.5,
-            216.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            216.6,
-            305.8,
-            246.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.8,
-            216.6,
-            539.5,
-            246.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            246.6,
-            305.8,
-            276.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.8,
-            246.6,
-            539.5,
-            276.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            276.6,
-            305.8,
-            306.6
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.8,
-            276.6,
-            539.5,
-            306.6
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            98.0,
-            356.0,
-            228.0,
-            375.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            324.0,
-            357.0,
-            532.0,
-            375.0
-          ]
-        }
-      ]
-    },
-    "copetitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            324.0,
-            391.0,
-            532.0,
-            410.0
-          ]
-        }
-      ]
-    },
-    "attorney_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            324.0,
-            426.0,
-            532.0,
-            444.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            480.6,
-            272.0,
-            497.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            508.3,
-            272.0,
-            525.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            537.0,
-            272.0,
-            554.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            565.7,
-            272.0,
-            582.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "injected": true,
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            594.3,
-            272.0,
-            607.3
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "injected": true,
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            622.6,
-            272.0,
-            635.6
-          ]
-        }
-      ]
+ "form_id": "PP-601",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 4,
+ "source_fused": "PP-601 Petition for Other Protective Arrangements (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      125.0,
+      176.0,
+      138.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      125.0,
+      542.0,
+      138.0
+     ]
+    }
+   ]
+  },
+  "respondent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      150.0,
+      309.0,
+      163.0
+     ]
+    }
+   ]
+  },
+  "petition_type": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "adult_guardianship",
+     "label": "Petition for protective arrangement(s) instead of guardianship for an adult",
+     "page": 0,
+     "rect": [
+      109.0,
+      237.5,
+      116.0,
+      244.5
+     ]
+    },
+    {
+     "value": "adult_conservatorship",
+     "label": "Petition for protective arrangement(s) instead of conservatorship for an adult",
+     "page": 0,
+     "rect": [
+      109.0,
+      260.6,
+      116.0,
+      267.6
+     ]
+    },
+    {
+     "value": "minor_guardianship",
+     "label": "Petition for protective arrangement(s) instead of guardianship for a minor",
+     "page": 0,
+     "rect": [
+      109.0,
+      283.5,
+      116.0,
+      290.5
+     ]
+    },
+    {
+     "value": "minor_conservatorship",
+     "label": "Petition for protective arrangement(s) instead of conservatorship for a minor",
+     "page": 0,
+     "rect": [
+      109.0,
+      306.5,
+      116.0,
+      313.5
+     ]
+    }
+   ]
+  },
+  "petitioner_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      318.8,
+      542.0,
+      345.0
+     ]
+    }
+   ]
+  },
+  "petitioner_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      357.9,
+      542.0,
+      401.0
+     ]
+    }
+   ]
+  },
+  "petitioner_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      415.4,
+      542.0,
+      458.0
+     ]
+    }
+   ]
+  },
+  "respondent_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      484.4,
+      542.0,
+      526.0
+     ]
+    }
+   ]
+  },
+  "respondent_proposed_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      542.0,
+      542.0,
+      585.0
+     ]
+    }
+   ]
+  },
+  "notify_parties": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      599.4,
+      542.0,
+      642.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      261.1,
+      206.2,
+      297.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      261.1,
+      383.8,
+      297.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      261.1,
+      539.5,
+      297.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      297.0,
+      206.2,
+      332.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      297.0,
+      383.8,
+      332.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      297.0,
+      539.5,
+      332.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      332.0,
+      206.2,
+      367.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      332.0,
+      383.8,
+      367.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      332.0,
+      539.5,
+      367.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      367.0,
+      206.2,
+      402.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      367.0,
+      383.8,
+      402.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      367.0,
+      539.5,
+      402.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      402.8,
+      206.2,
+      437.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      402.8,
+      383.8,
+      437.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      402.8,
+      539.5,
+      437.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      437.9,
+      206.2,
+      473.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      437.9,
+      383.8,
+      473.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      437.9,
+      539.5,
+      473.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      473.6,
+      206.2,
+      509.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      473.6,
+      383.8,
+      509.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      473.6,
+      539.5,
+      509.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      509.4,
+      206.2,
+      544.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      509.4,
+      383.8,
+      544.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      509.4,
+      539.5,
+      544.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      544.4,
+      206.2,
+      580.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      544.4,
+      383.8,
+      580.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      544.4,
+      539.5,
+      580.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      580.3,
+      206.2,
+      616.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      580.3,
+      383.8,
+      616.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      580.3,
+      539.5,
+      616.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      616.1,
+      206.2,
+      651.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      206.2,
+      616.1,
+      383.8,
+      651.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      383.8,
+      616.1,
+      539.5,
+      651.1
+     ]
+    }
+   ]
+  },
+  "arrangement_nature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      114.2,
+      540.0,
+      190.0
+     ]
+    }
+   ]
+  },
+  "reason_necessary": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      206.1,
+      540.0,
+      281.0
+     ]
+    }
+   ]
+  },
+  "nature_extent_need": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      310.0,
+      540.0,
+      384.0
+     ]
+    }
+   ]
+  },
+  "less_restrictive_alternatives": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      401.6,
+      540.0,
+      455.0
+     ]
+    }
+   ]
+  },
+  "limit_contact_parties": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      85.9,
+      513.1,
+      223.0,
+      526.1
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      223.4,
+      513.1,
+      526.1,
+      526.1
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      85.9,
+      536.6,
+      223.0,
+      549.6
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      223.4,
+      536.6,
+      526.1,
+      549.6
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      85.9,
+      560.1,
+      223.0,
+      573.1
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      223.4,
+      560.1,
+      526.1,
+      573.1
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      85.9,
+      583.6,
+      223.0,
+      596.6
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      223.4,
+      583.6,
+      526.1,
+      596.6
+     ]
+    }
+   ]
+  },
+  "interpreter_required": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "YES",
+     "page": 2,
+     "rect": [
+      265.0,
+      622.3,
+      272.0,
+      629.3
+     ]
+    },
+    {
+     "value": "no",
+     "label": "NO",
+     "page": 2,
+     "rect": [
+      295.7,
+      622.3,
+      302.7,
+      629.3
+     ]
+    }
+   ]
+  },
+  "interpreter_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      642.0,
+      540.0,
+      655.0
+     ]
+    }
+   ]
+  },
+  "attorney_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      670.0,
+      540.0,
+      774.0
+     ]
+    }
+   ]
+  },
+  "respondent_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      156.6,
+      305.8,
+      186.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.8,
+      156.6,
+      539.5,
+      186.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      186.6,
+      305.8,
+      216.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.8,
+      186.6,
+      539.5,
+      216.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      216.6,
+      305.8,
+      246.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.8,
+      216.6,
+      539.5,
+      246.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      246.6,
+      305.8,
+      276.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.8,
+      246.6,
+      539.5,
+      276.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      276.6,
+      305.8,
+      306.6
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.8,
+      276.6,
+      539.5,
+      306.6
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      98.0,
+      362.0,
+      228.0,
+      375.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      324.0,
+      362.0,
+      532.0,
+      375.0
+     ]
+    }
+   ]
+  },
+  "copetitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      324.0,
+      397.0,
+      532.0,
+      410.0
+     ]
+    }
+   ]
+  },
+  "attorney_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      324.0,
+      431.0,
+      532.0,
+      444.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      484.0,
+      272.0,
+      497.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      512.0,
+      272.0,
+      525.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      541.0,
+      272.0,
+      554.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      569.0,
+      272.0,
+      582.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "injected": true,
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      594.3,
+      272.0,
+      607.3
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "injected": true,
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      622.6,
+      272.0,
+      635.6
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,0 +1,37 @@
+{
+  "form_id": "N-108",
+  "summary": "Waiver of notice on behalf of a minor or individual subject to guardianship/conservatorship.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §5-114",
+      "title": "Waiver of notice",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-114.html",
+      "why": "Waiver of notice on behalf of a protected person."
+    },
+    {
+      "cite": "18-C §1-403",
+      "title": "Pleadings; when parties bound by others; notice",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec1-403.html",
+      "why": "When one party's action binds others / representation."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "fiduciary_role",
+      "considerations": [
+        {
+          "cite": "18-C §5-114",
+          "title": "Waiver of notice",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec5-114.html",
+          "note": "The fiduciary's authority to waive on the protected person's behalf must exist."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "Procedural form under current Title 18-C and the Maine Rules of Probate Procedure; the date-of-death substantive transition rules are generally not implicated, though the underlying estate or guardianship matter carries its own transition posture.",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

@@ -1,123 +1,123 @@
 {
-  "form_id": "PP-207",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "PP-207 Acceptance of Appointment by Guardian and Conservator (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            121.0,
-            176.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            121.0,
-            547.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "respondent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            156.0,
-            303.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "guardian_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            359.2,
-            547.0,
-            399.6
-          ]
-        }
-      ]
-    },
-    "guardian_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            339.0,
-            536.2,
-            547.0,
-            554.6
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            542.0,
-            218.0,
-            554.0
-          ]
-        }
-      ]
-    },
-    "guardian_by": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            339.0,
-            571.3,
-            547.0,
-            583.3
-          ]
-        }
-      ]
-    },
-    "guardian_its": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            339.0,
-            580.6,
-            547.0,
-            593.8
-          ]
-        }
-      ]
+ "form_id": "PP-207",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "PP-207 Acceptance of Appointment by Guardian and Conservator (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      121.0,
+      176.0,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      547.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "respondent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      155.0,
+      303.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "guardian_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      359.2,
+      547.0,
+      399.6
+     ]
+    }
+   ]
+  },
+  "guardian_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      339.0,
+      541.6,
+      547.0,
+      554.6
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      541.0,
+      218.0,
+      554.0
+     ]
+    }
+   ]
+  },
+  "guardian_by": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      339.0,
+      570.3,
+      547.0,
+      583.3
+     ]
+    }
+   ]
+  },
+  "guardian_its": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      339.0,
+      580.6,
+      547.0,
+      593.8
+     ]
+    }
+   ]
   }
+ }
 }

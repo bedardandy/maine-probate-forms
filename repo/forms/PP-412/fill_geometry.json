@@ -1,374 +1,374 @@
 {
-  "form_id": "PP-412",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 4,
-  "source_fused": "PP-412 Conservators Report (Rev. 8-6-21)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            125.0,
-            222.0,
-            146.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            431.0,
-            125.0,
-            552.0,
-            146.0
-          ]
-        }
-      ]
-    },
-    "individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            164.0,
-            295.0,
-            185.0
-          ]
-        }
-      ]
-    },
-    "conservatorship_grant_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            268.0,
-            214.0,
-            400.0,
-            238.0
-          ]
-        }
-      ]
-    },
-    "report_reasons": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "annual_report",
-          "label": "Annual report",
-          "page": 0,
-          "rect": [
-            109.1,
-            270.7,
-            117.1,
-            278.7
-          ]
-        },
-        {
-          "value": "resignation",
-          "label": "Resignation of Conservator",
-          "page": 0,
-          "rect": [
-            109.1,
-            286.8,
-            117.1,
-            294.8
-          ]
-        },
-        {
-          "value": "removal",
-          "label": "Removal of Conservator",
-          "page": 0,
-          "rect": [
-            109.1,
-            302.7,
-            117.1,
-            310.7
-          ]
-        },
-        {
-          "value": "termination",
-          "label": "Termination of Conservatorship",
-          "page": 0,
-          "rect": [
-            109.1,
-            318.6,
-            117.1,
-            326.6
-          ]
-        },
-        {
-          "value": "court_order",
-          "label": "As directed by the Court",
-          "page": 0,
-          "rect": [
-            109.1,
-            334.6,
-            117.1,
-            342.6
-          ]
-        }
-      ]
-    },
-    "court_order_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            314.0,
-            325.0,
-            446.0,
-            345.0
-          ]
-        }
-      ]
-    },
-    "report_period_start": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            268.0,
-            354.3,
-            364.0,
-            373.0
-          ]
-        }
-      ]
-    },
-    "report_period_end": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            431.0,
-            354.3,
-            552.0,
-            373.0
-          ]
-        }
-      ]
-    },
-    "services_provided": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            418.0,
-            552.0,
-            601.0
-          ]
-        }
-      ]
-    },
-    "recommended_changes": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            636.3,
-            552.0,
-            774.0
-          ]
-        }
-      ]
-    },
-    "de_minimis_value_received": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            135.6,
-            540.0,
-            226.0
-          ]
-        }
-      ]
-    },
-    "business_relation_provider": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            261.0,
-            540.0,
-            377.0
-          ]
-        }
-      ]
-    },
-    "business_relation_paid": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            414.0,
-            540.0,
-            514.0
-          ]
-        }
-      ]
-    },
-    "coconservator_status": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            550.0,
-            540.0,
-            774.0
-          ]
-        }
-      ]
-    },
-    "approved_plan_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            427.0,
-            235.0,
-            536.0,
-            256.0
-          ]
-        }
-      ]
-    },
-    "report_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            108.0,
-            663.0,
-            265.0,
-            684.0
-          ]
-        }
-      ]
-    },
-    "conservator_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            664.0,
-            510.0,
-            684.0
-          ]
-        }
-      ]
-    },
-    "conservator_printed_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            108.0,
-            687.6,
-            265.0,
-            699.6
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            108.0,
-            273.0,
-            122.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            138.9,
-            273.0,
-            151.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            168.3,
-            273.0,
-            181.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            197.6,
-            273.0,
-            209.6
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            225.9,
-            273.0,
-            237.9
-          ]
-        }
-      ]
+ "form_id": "PP-412",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 4,
+ "source_fused": "PP-412 Conservators Report (Rev. 8-6-21)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      133.0,
+      222.0,
+      146.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      431.0,
+      133.0,
+      552.0,
+      146.0
+     ]
+    }
+   ]
+  },
+  "individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      172.0,
+      295.0,
+      185.0
+     ]
+    }
+   ]
+  },
+  "conservatorship_grant_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      268.0,
+      225.0,
+      400.0,
+      238.0
+     ]
+    }
+   ]
+  },
+  "report_reasons": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "annual_report",
+     "label": "Annual report",
+     "page": 0,
+     "rect": [
+      109.1,
+      270.7,
+      117.1,
+      278.7
+     ]
+    },
+    {
+     "value": "resignation",
+     "label": "Resignation of Conservator",
+     "page": 0,
+     "rect": [
+      109.1,
+      286.8,
+      117.1,
+      294.8
+     ]
+    },
+    {
+     "value": "removal",
+     "label": "Removal of Conservator",
+     "page": 0,
+     "rect": [
+      109.1,
+      302.7,
+      117.1,
+      310.7
+     ]
+    },
+    {
+     "value": "termination",
+     "label": "Termination of Conservatorship",
+     "page": 0,
+     "rect": [
+      109.1,
+      318.6,
+      117.1,
+      326.6
+     ]
+    },
+    {
+     "value": "court_order",
+     "label": "As directed by the Court",
+     "page": 0,
+     "rect": [
+      109.1,
+      334.6,
+      117.1,
+      342.6
+     ]
+    }
+   ]
+  },
+  "court_order_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      314.0,
+      332.0,
+      446.0,
+      345.0
+     ]
+    }
+   ]
+  },
+  "report_period_start": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      268.0,
+      360.0,
+      364.0,
+      373.0
+     ]
+    }
+   ]
+  },
+  "report_period_end": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      431.0,
+      360.0,
+      552.0,
+      373.0
+     ]
+    }
+   ]
+  },
+  "services_provided": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      418.0,
+      552.0,
+      601.0
+     ]
+    }
+   ]
+  },
+  "recommended_changes": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      636.3,
+      552.0,
+      774.0
+     ]
+    }
+   ]
+  },
+  "de_minimis_value_received": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      135.6,
+      540.0,
+      226.0
+     ]
+    }
+   ]
+  },
+  "business_relation_provider": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      261.0,
+      540.0,
+      377.0
+     ]
+    }
+   ]
+  },
+  "business_relation_paid": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      414.0,
+      540.0,
+      514.0
+     ]
+    }
+   ]
+  },
+  "coconservator_status": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      550.0,
+      540.0,
+      774.0
+     ]
+    }
+   ]
+  },
+  "approved_plan_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      427.0,
+      243.0,
+      536.0,
+      256.0
+     ]
+    }
+   ]
+  },
+  "report_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      108.0,
+      671.0,
+      265.0,
+      684.0
+     ]
+    }
+   ]
+  },
+  "conservator_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      671.0,
+      510.0,
+      684.0
+     ]
+    }
+   ]
+  },
+  "conservator_printed_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      108.0,
+      686.6,
+      265.0,
+      699.6
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      109.0,
+      273.0,
+      122.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      138.0,
+      273.0,
+      151.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      168.3,
+      273.0,
+      181.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      196.6,
+      273.0,
+      209.6
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      224.9,
+      273.0,
+      237.9
+     ]
+    }
+   ]
   }
+ }
 }

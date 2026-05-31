@@ -1,0 +1,37 @@
+{
+  "form_id": "AD-028",
+  "summary": "Affidavit of parentage (adoption).",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §9-201",
+      "title": "Determination of parentage",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec9-201.html",
+      "why": "Determination of parentage."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "putative_parent_name",
+      "considerations": [
+        {
+          "cite": "18-C §9-201",
+          "title": "Determination of parentage",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec9-201.html",
+          "note": "Identifies a putative parent whose rights must be addressed."
+        },
+        {
+          "cite": "18-C §2-115",
+          "title": "Determination of parentage for purposes of intestate succession",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-115.html",
+          "note": "Parentage determination also affects intestate succession."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "18-C Article 9 governs adoption proceedings under the current code; §9-108 addresses application of prior laws to pending matters.",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

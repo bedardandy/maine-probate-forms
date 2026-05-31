@@ -1,315 +1,315 @@
 {
-  "form_id": "GS-008",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "GS-008 Acceptance of Appt by Guardian_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            92.0,
-            90.7,
-            217.0,
-            102.7
-          ]
-        }
-      ]
-    },
-    "location": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            431.0,
-            90.7,
-            546.0,
-            102.7
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            92.0,
-            103.4,
-            191.0,
-            115.4
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            431.0,
-            103.4,
-            546.0,
-            115.4
-          ]
-        }
-      ]
-    },
-    "minor_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            92.0,
-            129.0,
-            246.0,
-            141.0
-          ]
-        }
-      ]
-    },
-    "guardian_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            92.0,
-            181.0,
-            301.0,
-            192.0
-          ]
-        }
-      ]
-    },
-    "appointment_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "emergency",
-          "label": "Guardian of minor on an emergency basis",
-          "page": 0,
-          "rect": [
-            126.4,
-            244.5,
-            137.4,
-            255.5
-          ]
-        },
-        {
-          "value": "interim",
-          "label": "Guardian of a minor on an interim basis",
-          "page": 0,
-          "rect": [
-            126.6,
-            263.7,
-            137.6,
-            274.7
-          ]
-        },
-        {
-          "value": "standard",
-          "label": "Guardian of minor",
-          "page": 0,
-          "rect": [
-            126.4,
-            283.4,
-            137.4,
-            294.4
-          ]
-        }
-      ]
-    },
-    "duration_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "emergency_90",
-          "label": "No more than 90 days (emergency)",
-          "page": 0,
-          "rect": [
-            126.4,
-            339.4,
-            137.4,
-            350.4
-          ]
-        },
-        {
-          "value": "interim_6mo",
-          "label": "No more than 6 months or pending final order",
-          "page": 0,
-          "rect": [
-            126.4,
-            358.9,
-            137.4,
-            369.9
-          ]
-        },
-        {
-          "value": "majority",
-          "label": "Until minor reaches majority",
-          "page": 0,
-          "rect": [
-            126.3,
-            391.4,
-            137.3,
-            402.4
-          ]
-        }
-      ]
-    },
-    "signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            92.0,
-            486.0,
-            217.0,
-            498.0
-          ]
-        }
-      ]
-    },
-    "signature_line": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            306.0,
-            487.0,
-            546.0,
-            498.0
-          ]
-        }
-      ]
-    },
-    "guardian_full_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            337.0,
-            514.3,
-            546.0,
-            526.3
-          ]
-        }
-      ]
-    },
-    "guardian_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            337.0,
-            526.9,
-            546.0,
-            538.9
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            306.0,
-            539.5,
-            546.0,
-            551.5
-          ]
-        }
-      ]
-    },
-    "guardian_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            377.0,
-            551.1,
-            546.0,
-            563.1
-          ]
-        }
-      ]
-    },
-    "guardian_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            337.0,
-            563.7,
-            546.0,
-            575.7
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            44.0,
-            614.0,
-            160.0,
-            626.0
-          ]
-        }
-      ]
-    },
-    "notary_appearer_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            198.0,
-            635.0,
-            398.0,
-            646.0
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            92.0,
-            688.0,
-            217.0,
-            699.0
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            269.0,
-            687.0,
-            546.0,
-            699.0
-          ]
-        }
-      ]
+ "form_id": "GS-008",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "GS-008 Acceptance of Appt by Guardian_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      92.0,
+      89.7,
+      217.0,
+      102.7
+     ]
     }
+   ]
+  },
+  "location": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      431.0,
+      89.7,
+      546.0,
+      102.7
+     ]
+    }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      92.0,
+      102.4,
+      191.0,
+      115.4
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      431.0,
+      102.4,
+      546.0,
+      115.4
+     ]
+    }
+   ]
+  },
+  "minor_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      92.0,
+      128.0,
+      246.0,
+      141.0
+     ]
+    }
+   ]
+  },
+  "guardian_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      92.0,
+      179.0,
+      301.0,
+      192.0
+     ]
+    }
+   ]
+  },
+  "appointment_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "emergency",
+     "label": "Guardian of minor on an emergency basis",
+     "page": 0,
+     "rect": [
+      126.4,
+      244.5,
+      137.4,
+      255.5
+     ]
+    },
+    {
+     "value": "interim",
+     "label": "Guardian of a minor on an interim basis",
+     "page": 0,
+     "rect": [
+      126.6,
+      263.7,
+      137.6,
+      274.7
+     ]
+    },
+    {
+     "value": "standard",
+     "label": "Guardian of minor",
+     "page": 0,
+     "rect": [
+      126.4,
+      283.4,
+      137.4,
+      294.4
+     ]
+    }
+   ]
+  },
+  "duration_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "emergency_90",
+     "label": "No more than 90 days (emergency)",
+     "page": 0,
+     "rect": [
+      126.4,
+      339.4,
+      137.4,
+      350.4
+     ]
+    },
+    {
+     "value": "interim_6mo",
+     "label": "No more than 6 months or pending final order",
+     "page": 0,
+     "rect": [
+      126.4,
+      358.9,
+      137.4,
+      369.9
+     ]
+    },
+    {
+     "value": "majority",
+     "label": "Until minor reaches majority",
+     "page": 0,
+     "rect": [
+      126.3,
+      391.4,
+      137.3,
+      402.4
+     ]
+    }
+   ]
+  },
+  "signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      92.0,
+      485.0,
+      217.0,
+      498.0
+     ]
+    }
+   ]
+  },
+  "signature_line": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      306.0,
+      485.0,
+      546.0,
+      498.0
+     ]
+    }
+   ]
+  },
+  "guardian_full_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      337.0,
+      513.3,
+      546.0,
+      526.3
+     ]
+    }
+   ]
+  },
+  "guardian_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      337.0,
+      525.9,
+      546.0,
+      538.9
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      306.0,
+      538.5,
+      546.0,
+      551.5
+     ]
+    }
+   ]
+  },
+  "guardian_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      377.0,
+      550.1,
+      546.0,
+      563.1
+     ]
+    }
+   ]
+  },
+  "guardian_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      337.0,
+      562.7,
+      546.0,
+      575.7
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      44.0,
+      613.0,
+      160.0,
+      626.0
+     ]
+    }
+   ]
+  },
+  "notary_appearer_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      198.0,
+      633.0,
+      398.0,
+      646.0
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      92.0,
+      686.0,
+      217.0,
+      699.0
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      269.0,
+      686.0,
+      546.0,
+      699.0
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,412 +1,412 @@
 {
-  "form_id": "PP-408",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "PP-408 Claim Against Estate (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            84.0,
-            122.0,
-            189.0,
-            145.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            408.0,
-            126.0,
-            525.0,
-            145.0
-          ]
-        }
-      ]
-    },
-    "individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            84.0,
-            171.0,
-            289.0,
-            191.0
-          ]
-        }
-      ]
-    },
-    "claimant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            84.0,
-            239.3,
-            312.0,
-            260.0
-          ]
-        }
-      ]
-    },
-    "claimant_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            84.0,
-            273.9,
-            312.0,
-            300.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            149.0,
-            298.0,
-            255.0,
-            317.0
-          ]
-        }
-      ]
-    },
-    "basis_for_claim": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            58.0,
-            342.9,
-            555.0,
-            397.0
-          ]
-        }
-      ]
-    },
-    "nature_of_uncertainty": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            58.0,
-            434.9,
-            555.0,
-            511.0
-          ]
-        }
-      ]
-    },
-    "security_for_claim": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            58.0,
-            526.9,
-            555.0,
-            591.0
-          ]
-        }
-      ]
-    },
-    "claimant_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            84.0,
-            631.0,
-            214.0,
-            650.0
-          ]
-        }
-      ]
-    },
-    "claimant_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            309.5,
-            638.4,
-            525.0,
-            651.4
-          ]
-        }
-      ]
-    },
-    "claimant_attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            84.6,
-            229.0,
-            101.0
-          ]
-        }
-      ]
-    },
-    "claimant_attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            112.3,
-            229.0,
-            130.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            141.4,
-            229.0,
-            159.0
-          ]
-        }
-      ]
-    },
-    "claimant_attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            170.4,
-            229.0,
-            187.0
-          ]
-        }
-      ]
-    },
-    "claimant_attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            198.4,
-            229.0,
-            215.0
-          ]
-        }
-      ]
-    },
-    "claimant_attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            226.3,
-            229.0,
-            243.0
-          ]
-        }
-      ]
-    },
-    "decision_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "allowed",
-          "label": "Allowed",
-          "page": 1,
-          "rect": [
-            94.5,
-            281.2,
-            101.5,
-            288.2
-          ]
-        },
-        {
-          "value": "disallowed",
-          "label": "Disallowed",
-          "page": 1,
-          "rect": [
-            94.5,
-            298.7,
-            101.5,
-            305.7
-          ]
-        },
-        {
-          "value": "partially_allowed",
-          "label": "Partially allowed",
-          "page": 1,
-          "rect": [
-            94.5,
-            316.2,
-            101.5,
-            323.2
-          ]
-        }
-      ]
-    },
-    "partial_amount": {
-      "type": "currency",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            248.0,
-            306.0,
-            384.0,
-            325.0
-          ]
-        }
-      ]
-    },
-    "notice_mailed_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            224.0,
-            335.0,
-            384.0,
-            353.0
-          ]
-        }
-      ]
-    },
-    "conservator_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            83.0,
-            370.0,
-            229.0,
-            389.0
-          ]
-        }
-      ]
-    },
-    "conservator_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            309.0,
-            370.0,
-            555.0,
-            388.0
-          ]
-        }
-      ]
-    },
-    "conservator_attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            424.5,
-            262.0,
-            441.0
-          ]
-        }
-      ]
-    },
-    "conservator_attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            452.3,
-            262.0,
-            470.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            481.6,
-            262.0,
-            499.0
-          ]
-        }
-      ]
-    },
-    "conservator_attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            510.9,
-            262.0,
-            527.0
-          ]
-        }
-      ]
-    },
-    "conservator_attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            539.2,
-            262.0,
-            556.0
-          ]
-        }
-      ]
-    },
-    "conservator_attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            567.5,
-            262.0,
-            583.0
-          ]
-        }
-      ]
+ "form_id": "PP-408",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "PP-408 Claim Against Estate (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      84.0,
+      132.0,
+      189.0,
+      145.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      408.0,
+      132.0,
+      525.0,
+      145.0
+     ]
+    }
+   ]
+  },
+  "individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      84.0,
+      178.0,
+      289.0,
+      191.0
+     ]
+    }
+   ]
+  },
+  "claimant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      84.0,
+      247.0,
+      312.0,
+      260.0
+     ]
+    }
+   ]
+  },
+  "claimant_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      84.0,
+      273.9,
+      312.0,
+      300.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      149.0,
+      304.0,
+      255.0,
+      317.0
+     ]
+    }
+   ]
+  },
+  "basis_for_claim": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      58.0,
+      342.9,
+      555.0,
+      397.0
+     ]
+    }
+   ]
+  },
+  "nature_of_uncertainty": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      58.0,
+      434.9,
+      555.0,
+      511.0
+     ]
+    }
+   ]
+  },
+  "security_for_claim": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      58.0,
+      526.9,
+      555.0,
+      591.0
+     ]
+    }
+   ]
+  },
+  "claimant_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      84.0,
+      637.0,
+      214.0,
+      650.0
+     ]
+    }
+   ]
+  },
+  "claimant_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      309.5,
+      638.4,
+      525.0,
+      651.4
+     ]
+    }
+   ]
+  },
+  "claimant_attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      88.0,
+      229.0,
+      101.0
+     ]
+    }
+   ]
+  },
+  "claimant_attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      117.0,
+      229.0,
+      130.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      146.0,
+      229.0,
+      159.0
+     ]
+    }
+   ]
+  },
+  "claimant_attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      174.0,
+      229.0,
+      187.0
+     ]
+    }
+   ]
+  },
+  "claimant_attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      202.0,
+      229.0,
+      215.0
+     ]
+    }
+   ]
+  },
+  "claimant_attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      230.0,
+      229.0,
+      243.0
+     ]
+    }
+   ]
+  },
+  "decision_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "allowed",
+     "label": "Allowed",
+     "page": 1,
+     "rect": [
+      94.5,
+      281.2,
+      101.5,
+      288.2
+     ]
+    },
+    {
+     "value": "disallowed",
+     "label": "Disallowed",
+     "page": 1,
+     "rect": [
+      94.5,
+      298.7,
+      101.5,
+      305.7
+     ]
+    },
+    {
+     "value": "partially_allowed",
+     "label": "Partially allowed",
+     "page": 1,
+     "rect": [
+      94.5,
+      316.2,
+      101.5,
+      323.2
+     ]
+    }
+   ]
+  },
+  "partial_amount": {
+   "type": "currency",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      248.0,
+      312.0,
+      384.0,
+      325.0
+     ]
+    }
+   ]
+  },
+  "notice_mailed_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      224.0,
+      340.0,
+      384.0,
+      353.0
+     ]
+    }
+   ]
+  },
+  "conservator_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      83.0,
+      376.0,
+      229.0,
+      389.0
+     ]
+    }
+   ]
+  },
+  "conservator_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      309.0,
+      375.0,
+      555.0,
+      388.0
+     ]
+    }
+   ]
+  },
+  "conservator_attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      428.0,
+      262.0,
+      441.0
+     ]
+    }
+   ]
+  },
+  "conservator_attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      457.0,
+      262.0,
+      470.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      486.0,
+      262.0,
+      499.0
+     ]
+    }
+   ]
+  },
+  "conservator_attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      514.0,
+      262.0,
+      527.0
+     ]
+    }
+   ]
+  },
+  "conservator_attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      543.0,
+      262.0,
+      556.0
+     ]
+    }
+   ]
+  },
+  "conservator_attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      570.0,
+      262.0,
+      583.0
+     ]
+    }
+   ]
   }
+ }
 }

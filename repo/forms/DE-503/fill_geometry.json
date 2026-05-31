@@ -1,417 +1,417 @@
 {
-  "form_id": "DE-503",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 3,
-  "source_fused": "DE-503 Claim Against Estate (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            110.0,
-            201.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            114.0,
-            540.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "estate_of_decedent": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            148.0,
-            302.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "residence_and_date_of_death": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            217.5,
-            540.0,
-            239.0
-          ]
-        }
-      ]
-    },
-    "name_of_claimant": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            252.1,
-            540.0,
-            273.0
-          ]
-        }
-      ]
-    },
-    "address_of_claimant": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            286.5,
-            540.0,
-            310.0
-          ]
-        }
-      ]
-    },
-    "amount_claimed": {
-      "type": "currency",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            164.0,
-            310.0,
-            269.0,
-            329.0
-          ]
-        }
-      ]
-    },
-    "basis_for_claim": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            355.5,
-            540.0,
-            410.0
-          ]
-        }
-      ]
-    },
-    "date_claim_due": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            424.5,
-            540.0,
-            446.0
-          ]
-        }
-      ]
-    },
-    "nature_of_uncertainty": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            459.1,
-            540.0,
-            513.0
-          ]
-        }
-      ]
-    },
-    "claimant_signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            619.0,
-            227.0,
-            639.0
-          ]
-        }
-      ]
-    },
-    "claimant_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            323.9,
-            628.1,
-            540.0,
-            641.1
-          ]
-        }
-      ]
-    },
-    "attorney_for_claimant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            84.6,
-            243.0,
-            101.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_claimant_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            112.3,
-            243.0,
-            130.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            141.4,
-            243.0,
-            159.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_claimant_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            170.4,
-            243.0,
-            187.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_claimant_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            198.4,
-            243.0,
-            215.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_claimant_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            226.3,
-            243.0,
-            243.0
-          ]
-        }
-      ]
-    },
-    "decision_by_personal_representative": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "allowed",
-          "label": "Allowed",
-          "page": 1,
-          "rect": [
-            108.5,
-            280.6,
-            116.5,
-            288.6
-          ]
-        },
-        {
-          "value": "disallowed",
-          "label": "Disallowed",
-          "page": 1,
-          "rect": [
-            108.5,
-            298.1,
-            116.5,
-            306.1
-          ]
-        },
-        {
-          "value": "partially_allowed",
-          "label": "Partially allowed",
-          "page": 1,
-          "rect": [
-            108.5,
-            315.6,
-            116.5,
-            323.6
-          ]
-        }
-      ]
-    },
-    "partial_allowance_amount": {
-      "type": "currency",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            263.0,
-            306.0,
-            398.0,
-            325.0
-          ]
-        }
-      ]
-    },
-    "notice_mailed_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            237.0,
-            335.0,
-            398.0,
-            353.0
-          ]
-        }
-      ]
-    },
-    "personal_representative_signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            98.0,
-            358.0,
-            243.0,
-            377.0
-          ]
-        }
-      ]
-    },
-    "personal_representative_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            287.0,
-            359.0,
-            528.0,
-            377.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_personal_rep_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            424.5,
-            243.0,
-            441.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_personal_rep_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            452.3,
-            243.0,
-            470.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            481.6,
-            243.0,
-            499.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_personal_rep_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            510.9,
-            243.0,
-            528.0
-          ]
-        }
-      ]
-    },
-    "attorney_for_personal_rep_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            539.2,
-            243.0,
-            556.0
-          ]
-        }
-      ]
+ "form_id": "DE-503",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 3,
+ "source_fused": "DE-503 Claim Against Estate (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      121.0,
+      201.0,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      540.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "estate_of_decedent": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      155.0,
+      302.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "residence_and_date_of_death": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      226.0,
+      540.0,
+      239.0
+     ]
+    }
+   ]
+  },
+  "name_of_claimant": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      260.0,
+      540.0,
+      273.0
+     ]
+    }
+   ]
+  },
+  "address_of_claimant": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      297.0,
+      540.0,
+      310.0
+     ]
+    }
+   ]
+  },
+  "amount_claimed": {
+   "type": "currency",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      164.0,
+      316.0,
+      269.0,
+      329.0
+     ]
+    }
+   ]
+  },
+  "basis_for_claim": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      355.5,
+      540.0,
+      410.0
+     ]
+    }
+   ]
+  },
+  "date_claim_due": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      433.0,
+      540.0,
+      446.0
+     ]
+    }
+   ]
+  },
+  "nature_of_uncertainty": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      459.1,
+      540.0,
+      513.0
+     ]
+    }
+   ]
+  },
+  "claimant_signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      626.0,
+      227.0,
+      639.0
+     ]
+    }
+   ]
+  },
+  "claimant_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      323.9,
+      628.1,
+      540.0,
+      641.1
+     ]
+    }
+   ]
+  },
+  "attorney_for_claimant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      88.0,
+      243.0,
+      101.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_claimant_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      117.0,
+      243.0,
+      130.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      146.0,
+      243.0,
+      159.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_claimant_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      174.0,
+      243.0,
+      187.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_claimant_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      202.0,
+      243.0,
+      215.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_claimant_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      230.0,
+      243.0,
+      243.0
+     ]
+    }
+   ]
+  },
+  "decision_by_personal_representative": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "allowed",
+     "label": "Allowed",
+     "page": 1,
+     "rect": [
+      108.5,
+      280.6,
+      116.5,
+      288.6
+     ]
+    },
+    {
+     "value": "disallowed",
+     "label": "Disallowed",
+     "page": 1,
+     "rect": [
+      108.5,
+      298.1,
+      116.5,
+      306.1
+     ]
+    },
+    {
+     "value": "partially_allowed",
+     "label": "Partially allowed",
+     "page": 1,
+     "rect": [
+      108.5,
+      315.6,
+      116.5,
+      323.6
+     ]
+    }
+   ]
+  },
+  "partial_allowance_amount": {
+   "type": "currency",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      263.0,
+      312.0,
+      398.0,
+      325.0
+     ]
+    }
+   ]
+  },
+  "notice_mailed_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      237.0,
+      340.0,
+      398.0,
+      353.0
+     ]
+    }
+   ]
+  },
+  "personal_representative_signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      98.0,
+      364.0,
+      243.0,
+      377.0
+     ]
+    }
+   ]
+  },
+  "personal_representative_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      287.0,
+      364.0,
+      528.0,
+      377.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_personal_rep_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      428.0,
+      243.0,
+      441.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_personal_rep_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      457.0,
+      243.0,
+      470.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      486.0,
+      243.0,
+      499.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_personal_rep_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      515.0,
+      243.0,
+      528.0
+     ]
+    }
+   ]
+  },
+  "attorney_for_personal_rep_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      543.0,
+      243.0,
+      556.0
+     ]
+    }
+   ]
   }
+ }
 }

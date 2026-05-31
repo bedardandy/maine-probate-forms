@@ -1,220 +1,220 @@
 {
-  "form_id": "DE-407",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "DE-407_fresh_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            113.0,
-            177.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            115.0,
-            542.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "estate_of_decedent": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            149.0,
-            316.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "declarant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            186.0,
-            352.0,
-            205.0
-          ]
-        }
-      ]
-    },
-    "renunciation_nomination_actions": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "nominate_pr",
-          "label": "1. Nominate [Name] to be appointed Personal Representative",
-          "page": 0,
-          "rect": [
-            90.5,
-            264.6,
-            98.5,
-            272.6
-          ]
-        },
-        {
-          "value": "renounce_right_to_nominate",
-          "label": "2. Renounce my right to nominate a personal representative",
-          "page": 0,
-          "rect": [
-            90.5,
-            282.1,
-            98.5,
-            290.1
-          ]
-        },
-        {
-          "value": "renounce_right_to_be_appointed",
-          "label": "3. Renounce my right to be appointed personal representative",
-          "page": 0,
-          "rect": [
-            90.5,
-            299.6,
-            98.5,
-            307.6
-          ]
-        },
-        {
-          "value": "concur_in_nominating",
-          "label": "4. Concur in nominating [Name], whose appointment is sought",
-          "page": 0,
-          "rect": [
-            90.5,
-            317.1,
-            98.5,
-            325.1
-          ]
-        },
-        {
-          "value": "waive_notice",
-          "label": "5. Waive notice thereon",
-          "page": 0,
-          "rect": [
-            90.5,
-            334.6,
-            98.5,
-            342.6
-          ]
-        }
-      ]
-    },
-    "nominate_pr_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            153.0,
-            255.0,
-            352.0,
-            274.0
-          ]
-        }
-      ]
-    },
-    "concur_in_nominating_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            199.0,
-            311.4,
-            374.0,
-            327.0
-          ]
-        }
-      ]
-    },
-    "dated": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            417.0,
-            316.0,
-            436.0
-          ]
-        }
-      ]
-    },
-    "signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            361.0,
-            418.0,
-            542.0,
-            436.0
-          ]
-        }
-      ]
-    },
-    "printed_or_typed_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            361.0,
-            451.0,
-            542.0,
-            470.0
-          ]
-        }
-      ]
-    },
-    "address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            361.0,
-            484.0,
-            542.0,
-            503.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            361.0,
-            517.0,
-            542.0,
-            535.0
-          ]
-        }
-      ]
+ "form_id": "DE-407",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "DE-407_fresh_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      121.0,
+      177.0,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      542.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "estate_of_decedent": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      155.0,
+      316.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "declarant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      192.0,
+      352.0,
+      205.0
+     ]
+    }
+   ]
+  },
+  "renunciation_nomination_actions": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "nominate_pr",
+     "label": "1. Nominate [Name] to be appointed Personal Representative",
+     "page": 0,
+     "rect": [
+      90.5,
+      264.6,
+      98.5,
+      272.6
+     ]
+    },
+    {
+     "value": "renounce_right_to_nominate",
+     "label": "2. Renounce my right to nominate a personal representative",
+     "page": 0,
+     "rect": [
+      90.5,
+      282.1,
+      98.5,
+      290.1
+     ]
+    },
+    {
+     "value": "renounce_right_to_be_appointed",
+     "label": "3. Renounce my right to be appointed personal representative",
+     "page": 0,
+     "rect": [
+      90.5,
+      299.6,
+      98.5,
+      307.6
+     ]
+    },
+    {
+     "value": "concur_in_nominating",
+     "label": "4. Concur in nominating [Name], whose appointment is sought",
+     "page": 0,
+     "rect": [
+      90.5,
+      317.1,
+      98.5,
+      325.1
+     ]
+    },
+    {
+     "value": "waive_notice",
+     "label": "5. Waive notice thereon",
+     "page": 0,
+     "rect": [
+      90.5,
+      334.6,
+      98.5,
+      342.6
+     ]
+    }
+   ]
+  },
+  "nominate_pr_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      153.0,
+      261.0,
+      352.0,
+      274.0
+     ]
+    }
+   ]
+  },
+  "concur_in_nominating_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      199.0,
+      314.0,
+      374.0,
+      327.0
+     ]
+    }
+   ]
+  },
+  "dated": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      423.0,
+      316.0,
+      436.0
+     ]
+    }
+   ]
+  },
+  "signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      361.0,
+      423.0,
+      542.0,
+      436.0
+     ]
+    }
+   ]
+  },
+  "printed_or_typed_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      361.0,
+      457.0,
+      542.0,
+      470.0
+     ]
+    }
+   ]
+  },
+  "address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      361.0,
+      490.0,
+      542.0,
+      503.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      361.0,
+      522.0,
+      542.0,
+      535.0
+     ]
+    }
+   ]
   }
+ }
 }

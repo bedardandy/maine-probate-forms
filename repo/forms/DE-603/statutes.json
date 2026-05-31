@@ -1,0 +1,37 @@
+{
+  "form_id": "DE-603",
+  "summary": "Closing statement for a small estate.",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §3-1204",
+      "title": "Small estates; closing by sworn statement of personal representative",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-1204.html",
+      "why": "Small estates: closing by sworn statement of the PR."
+    },
+    {
+      "cite": "18-C §3-1203",
+      "title": "Small estates; summary administrative procedure",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-1203.html",
+      "why": "Small-estate summary administrative procedure."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "distributee_1_name",
+      "considerations": [
+        {
+          "cite": "18-C §3-1204",
+          "title": "Small estates; closing by sworn statement of personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-1204.html",
+          "note": "Each distributee who received estate property is listed."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "Small-estate eligibility turns on the current §3-1201 threshold ($40,000, inflation-adjusted), raised from the lower former-18-A figure. Title 18-C applies to estates of decedents who die on or after 2019-09-01, and to any proceeding pending on or commenced after that date. For a decedent who died before 2019-09-01, former Title 18-A supplies the substantive succession rules even though the proceeding itself runs under 18-C. See _index/18a-key-diffs.json (governing rule: 18-C §8-301).",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

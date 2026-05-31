@@ -1,853 +1,853 @@
 {
-  "form_id": "PP-510",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "PP-510 Petition to Transfer of Guardianship-Conservatorship and Provisional Order (Rev. 2-3-21)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.2,
-            111.0,
-            177.6,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            112.0,
-            542.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            148.0,
-            333.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "petition_type": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "guardianship",
-          "label": "Guardianship",
-          "page": 0,
-          "rect": [
-            361.0,
-            170.9,
-            368.0,
-            177.9
-          ]
-        },
-        {
-          "value": "conservatorship",
-          "label": "Conservatorship",
-          "page": 0,
-          "rect": [
-            361.0,
-            182.4,
-            368.0,
-            189.4
-          ]
-        }
-      ]
-    },
-    "petitioner_contact": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            216.4,
-            542.0,
-            247.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            348.5,
-            240.0,
-            442.9,
-            260.0
-          ]
-        }
-      ]
-    },
-    "petitioner_interest": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "guardian",
-          "label": "Guardian",
-          "page": 0,
-          "rect": [
-            181.8,
-            250.9,
-            188.8,
-            257.9
-          ]
-        },
-        {
-          "value": "conservator",
-          "label": "Conservator",
-          "page": 0,
-          "rect": [
-            237.4,
-            250.9,
-            244.4,
-            257.9
-          ]
-        },
-        {
-          "value": "other",
-          "label": "Other",
-          "page": 0,
-          "rect": [
-            304.8,
-            250.9,
-            311.8,
-            257.9
-          ]
-        }
-      ]
-    },
-    "petitioner_interest_other": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            264.4,
-            542.0,
-            285.0
-          ]
-        }
-      ]
-    },
-    "individual_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            298.7,
-            542.0,
-            330.0
-          ]
-        }
-      ]
-    },
-    "individual_location": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            344.7,
-            542.0,
-            365.0
-          ]
-        }
-      ]
-    },
-    "individual_return_to_maine": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 0,
-          "rect": [
-            141.5,
-            378.4,
-            148.5,
-            385.4
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 0,
-          "rect": [
-            175.8,
-            378.4,
-            182.8,
-            385.4
-          ]
-        }
-      ]
-    },
-    "individual_return_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            390.7,
-            542.0,
-            411.0
-          ]
-        }
-      ]
-    },
-    "individual_move_permanently": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 0,
-          "rect": [
-            171.8,
-            424.4,
-            178.8,
-            431.4
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 0,
-          "rect": [
-            206.2,
-            424.4,
-            213.2,
-            431.4
-          ]
-        }
-      ]
-    },
-    "individual_move_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            436.6,
-            542.0,
-            457.0
-          ]
-        }
-      ]
-    },
-    "individual_connection_to_new_state": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 0,
-          "rect": [
-            314.5,
-            470.5,
-            321.5,
-            477.5
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 0,
-          "rect": [
-            350.5,
-            470.5,
-            357.5,
-            477.5
-          ]
-        }
-      ]
-    },
-    "individual_connection_description": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            494.2,
-            542.0,
-            515.0
-          ]
-        }
-      ]
-    },
-    "notified_person_1_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.2,
-            595.2,
-            177.6,
-            631.6
-          ]
-        }
-      ]
-    },
-    "notified_person_1_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            177.6,
-            595.2,
-            348.5,
-            631.6
-          ]
-        }
-      ]
-    },
-    "notified_person_1_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            348.5,
-            595.2,
-            442.9,
-            631.6
-          ]
-        }
-      ]
-    },
-    "notified_person_1_waivers": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            442.9,
-            595.2,
-            537.4,
-            631.6
-          ]
-        }
-      ]
-    },
-    "notified_person_2_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.2,
-            631.6,
-            177.6,
-            667.1
-          ]
-        }
-      ]
-    },
-    "notified_person_2_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            177.6,
-            631.6,
-            348.5,
-            667.1
-          ]
-        }
-      ]
-    },
-    "notified_person_2_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            348.5,
-            631.6,
-            442.9,
-            667.1
-          ]
-        }
-      ]
-    },
-    "notified_person_2_waivers": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            442.9,
-            631.6,
-            537.4,
-            667.1
-          ]
-        }
-      ]
-    },
-    "notified_person_3_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.2,
-            667.1,
-            177.6,
-            702.1
-          ]
-        }
-      ]
-    },
-    "notified_person_3_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            177.6,
-            667.1,
-            348.5,
-            702.1
-          ]
-        }
-      ]
-    },
-    "notified_person_3_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            348.5,
-            667.1,
-            442.9,
-            702.1
-          ]
-        }
-      ]
-    },
-    "notified_person_3_waivers": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            442.9,
-            667.1,
-            537.4,
-            702.1
-          ]
-        }
-      ]
-    },
-    "notified_person_4_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.2,
-            702.1,
-            177.6,
-            738.4
-          ]
-        }
-      ]
-    },
-    "notified_person_4_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            177.6,
-            702.1,
-            348.5,
-            738.4
-          ]
-        }
-      ]
-    },
-    "notified_person_4_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            348.5,
-            702.1,
-            442.9,
-            738.4
-          ]
-        }
-      ]
-    },
-    "notified_person_4_waivers": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            442.9,
-            702.1,
-            537.4,
-            738.4
-          ]
-        }
-      ]
-    },
-    "notified_person_5_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.2,
-            738.4,
-            177.6,
-            774.0
-          ]
-        }
-      ]
-    },
-    "notified_person_5_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            177.6,
-            738.4,
-            348.5,
-            774.0
-          ]
-        }
-      ]
-    },
-    "notified_person_5_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            348.5,
-            738.4,
-            442.9,
-            774.0
-          ]
-        }
-      ]
-    },
-    "notified_person_5_waivers": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            442.9,
-            738.4,
-            537.4,
-            774.0
-          ]
-        }
-      ]
-    },
-    "objection_to_transfer": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            295.5,
-            85.8,
-            302.5,
-            92.8
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            329.9,
-            85.8,
-            336.9,
-            92.8
-          ]
-        }
-      ]
-    },
-    "objection_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            97.9,
-            544.0,
-            141.0
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            214.0,
-            230.0,
-            233.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            214.0,
-            544.0,
-            233.0
-          ]
-        }
-      ]
-    },
-    "co_petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            249.0,
-            544.0,
-            267.0
-          ]
-        }
-      ]
-    },
-    "attorney_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            283.0,
-            544.0,
-            302.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            337.6,
-            230.0,
-            354.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            365.3,
-            230.0,
-            383.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            394.3,
-            230.0,
-            412.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            423.4,
-            230.0,
-            440.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            451.3,
-            230.0,
-            468.0
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            479.3,
-            230.0,
-            496.0
-          ]
-        }
-      ]
-    },
-    "transfer_destination_state": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            250.0,
-            563.3,
-            396.0,
-            575.3
-          ]
-        }
-      ]
-    },
-    "transfer_type": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "guardianship",
-          "label": "Guardianship",
-          "page": 1,
-          "rect": [
-            168.1,
-            574.0,
-            175.1,
-            581.0
-          ]
-        },
-        {
-          "value": "conservatorship",
-          "label": "Conservatorship",
-          "page": 1,
-          "rect": [
-            263.9,
-            574.0,
-            270.9,
-            581.0
-          ]
-        }
-      ]
-    },
-    "transfer_destination_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            350.0,
-            574.8,
-            544.0,
-            586.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            444.0,
-            586.2,
-            529.0,
-            606.0
-          ]
-        }
-      ]
-    },
-    "new_petition_type": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "guardianship",
-          "label": "Guardianship",
-          "page": 1,
-          "rect": [
-            259.7,
-            597.1,
-            266.7,
-            604.1
-          ]
-        },
-        {
-          "value": "conservatorship",
-          "label": "Conservatorship",
-          "page": 1,
-          "rect": [
-            355.5,
-            597.1,
-            362.5,
-            604.1
-          ]
-        }
-      ]
+ "form_id": "PP-510",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "PP-510 Petition to Transfer of Guardianship-Conservatorship and Provisional Order (Rev. 2-3-21)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.2,
+      121.0,
+      177.6,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      542.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      155.0,
+      333.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "petition_type": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "guardianship",
+     "label": "Guardianship",
+     "page": 0,
+     "rect": [
+      361.0,
+      170.9,
+      368.0,
+      177.9
+     ]
+    },
+    {
+     "value": "conservatorship",
+     "label": "Conservatorship",
+     "page": 0,
+     "rect": [
+      361.0,
+      182.4,
+      368.0,
+      189.4
+     ]
+    }
+   ]
+  },
+  "petitioner_contact": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      216.4,
+      542.0,
+      247.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      348.5,
+      247.0,
+      442.9,
+      260.0
+     ]
+    }
+   ]
+  },
+  "petitioner_interest": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "guardian",
+     "label": "Guardian",
+     "page": 0,
+     "rect": [
+      181.8,
+      250.9,
+      188.8,
+      257.9
+     ]
+    },
+    {
+     "value": "conservator",
+     "label": "Conservator",
+     "page": 0,
+     "rect": [
+      237.4,
+      250.9,
+      244.4,
+      257.9
+     ]
+    },
+    {
+     "value": "other",
+     "label": "Other",
+     "page": 0,
+     "rect": [
+      304.8,
+      250.9,
+      311.8,
+      257.9
+     ]
+    }
+   ]
+  },
+  "petitioner_interest_other": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      272.0,
+      542.0,
+      285.0
+     ]
+    }
+   ]
+  },
+  "individual_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      298.7,
+      542.0,
+      330.0
+     ]
+    }
+   ]
+  },
+  "individual_location": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      352.0,
+      542.0,
+      365.0
+     ]
+    }
+   ]
+  },
+  "individual_return_to_maine": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 0,
+     "rect": [
+      141.5,
+      378.4,
+      148.5,
+      385.4
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 0,
+     "rect": [
+      175.8,
+      378.4,
+      182.8,
+      385.4
+     ]
+    }
+   ]
+  },
+  "individual_return_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      398.0,
+      542.0,
+      411.0
+     ]
+    }
+   ]
+  },
+  "individual_move_permanently": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 0,
+     "rect": [
+      171.8,
+      424.4,
+      178.8,
+      431.4
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 0,
+     "rect": [
+      206.2,
+      424.4,
+      213.2,
+      431.4
+     ]
+    }
+   ]
+  },
+  "individual_move_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      444.0,
+      542.0,
+      457.0
+     ]
+    }
+   ]
+  },
+  "individual_connection_to_new_state": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 0,
+     "rect": [
+      314.5,
+      470.5,
+      321.5,
+      477.5
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 0,
+     "rect": [
+      350.5,
+      470.5,
+      357.5,
+      477.5
+     ]
+    }
+   ]
+  },
+  "individual_connection_description": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      502.0,
+      542.0,
+      515.0
+     ]
+    }
+   ]
+  },
+  "notified_person_1_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.2,
+      595.2,
+      177.6,
+      631.6
+     ]
+    }
+   ]
+  },
+  "notified_person_1_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      177.6,
+      595.2,
+      348.5,
+      631.6
+     ]
+    }
+   ]
+  },
+  "notified_person_1_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      348.5,
+      595.2,
+      442.9,
+      631.6
+     ]
+    }
+   ]
+  },
+  "notified_person_1_waivers": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      442.9,
+      595.2,
+      537.4,
+      631.6
+     ]
+    }
+   ]
+  },
+  "notified_person_2_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.2,
+      631.6,
+      177.6,
+      667.1
+     ]
+    }
+   ]
+  },
+  "notified_person_2_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      177.6,
+      631.6,
+      348.5,
+      667.1
+     ]
+    }
+   ]
+  },
+  "notified_person_2_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      348.5,
+      631.6,
+      442.9,
+      667.1
+     ]
+    }
+   ]
+  },
+  "notified_person_2_waivers": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      442.9,
+      631.6,
+      537.4,
+      667.1
+     ]
+    }
+   ]
+  },
+  "notified_person_3_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.2,
+      667.1,
+      177.6,
+      702.1
+     ]
+    }
+   ]
+  },
+  "notified_person_3_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      177.6,
+      667.1,
+      348.5,
+      702.1
+     ]
+    }
+   ]
+  },
+  "notified_person_3_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      348.5,
+      667.1,
+      442.9,
+      702.1
+     ]
+    }
+   ]
+  },
+  "notified_person_3_waivers": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      442.9,
+      667.1,
+      537.4,
+      702.1
+     ]
+    }
+   ]
+  },
+  "notified_person_4_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.2,
+      702.1,
+      177.6,
+      738.4
+     ]
+    }
+   ]
+  },
+  "notified_person_4_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      177.6,
+      702.1,
+      348.5,
+      738.4
+     ]
+    }
+   ]
+  },
+  "notified_person_4_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      348.5,
+      702.1,
+      442.9,
+      738.4
+     ]
+    }
+   ]
+  },
+  "notified_person_4_waivers": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      442.9,
+      702.1,
+      537.4,
+      738.4
+     ]
+    }
+   ]
+  },
+  "notified_person_5_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.2,
+      738.4,
+      177.6,
+      774.0
+     ]
+    }
+   ]
+  },
+  "notified_person_5_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      177.6,
+      738.4,
+      348.5,
+      774.0
+     ]
+    }
+   ]
+  },
+  "notified_person_5_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      348.5,
+      738.4,
+      442.9,
+      774.0
+     ]
+    }
+   ]
+  },
+  "notified_person_5_waivers": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      442.9,
+      738.4,
+      537.4,
+      774.0
+     ]
+    }
+   ]
+  },
+  "objection_to_transfer": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      295.5,
+      85.8,
+      302.5,
+      92.8
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      329.9,
+      85.8,
+      336.9,
+      92.8
+     ]
+    }
+   ]
+  },
+  "objection_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      97.9,
+      544.0,
+      141.0
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      220.0,
+      230.0,
+      233.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      220.0,
+      544.0,
+      233.0
+     ]
+    }
+   ]
+  },
+  "co_petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      254.0,
+      544.0,
+      267.0
+     ]
+    }
+   ]
+  },
+  "attorney_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      289.0,
+      544.0,
+      302.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      341.0,
+      230.0,
+      354.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      370.0,
+      230.0,
+      383.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      399.0,
+      230.0,
+      412.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      427.0,
+      230.0,
+      440.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      455.0,
+      230.0,
+      468.0
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      483.0,
+      230.0,
+      496.0
+     ]
+    }
+   ]
+  },
+  "transfer_destination_state": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      250.0,
+      562.3,
+      396.0,
+      575.3
+     ]
+    }
+   ]
+  },
+  "transfer_type": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "guardianship",
+     "label": "Guardianship",
+     "page": 1,
+     "rect": [
+      168.1,
+      574.0,
+      175.1,
+      581.0
+     ]
+    },
+    {
+     "value": "conservatorship",
+     "label": "Conservatorship",
+     "page": 1,
+     "rect": [
+      263.9,
+      574.0,
+      270.9,
+      581.0
+     ]
+    }
+   ]
+  },
+  "transfer_destination_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      350.0,
+      573.8,
+      544.0,
+      586.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      444.0,
+      593.0,
+      529.0,
+      606.0
+     ]
+    }
+   ]
+  },
+  "new_petition_type": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "guardianship",
+     "label": "Guardianship",
+     "page": 1,
+     "rect": [
+      259.7,
+      597.1,
+      266.7,
+      604.1
+     ]
+    },
+    {
+     "value": "conservatorship",
+     "label": "Conservatorship",
+     "page": 1,
+     "rect": [
+      355.5,
+      597.1,
+      362.5,
+      604.1
+     ]
+    }
+   ]
   }
+ }
 }

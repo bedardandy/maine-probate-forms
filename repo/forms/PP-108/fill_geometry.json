@@ -1,139 +1,139 @@
 {
-  "form_id": "PP-108",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "PP-108 Acceptance of Appt by Conservator - Minor (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            109.0,
-            176.0,
-            122.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            109.0,
-            555.0,
-            122.0
-          ]
-        }
-      ]
-    },
-    "minor_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            144.0,
-            303.0,
-            157.0
-          ]
-        }
-      ]
-    },
-    "filing_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            519.0,
-            219.0,
-            532.0
-          ]
-        }
-      ]
-    },
-    "conservator_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            339.0,
-            519.0,
-            555.0,
-            532.0
-          ]
-        }
-      ]
-    },
-    "by_signer_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            339.0,
-            548.3,
-            555.0,
-            560.3
-          ]
-        }
-      ]
-    },
-    "by_signer_title": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            339.0,
-            557.5,
-            555.0,
-            570.8
-          ]
-        }
-      ]
-    },
-    "conservator_address": {
-      "type": "text",
-      "injected": true,
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            144.0,
-            335.0,
-            540.0,
-            398.0
-          ]
-        }
-      ]
-    },
-    "conservator_phone": {
-      "type": "text",
-      "injected": true,
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            235.0,
-            402.0,
-            450.0,
-            415.0
-          ]
-        }
-      ]
+ "form_id": "PP-108",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "PP-108 Acceptance of Appt by Conservator - Minor (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      109.0,
+      176.0,
+      122.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      109.0,
+      555.0,
+      122.0
+     ]
+    }
+   ]
+  },
+  "minor_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      144.0,
+      303.0,
+      157.0
+     ]
+    }
+   ]
+  },
+  "filing_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      519.0,
+      219.0,
+      532.0
+     ]
+    }
+   ]
+  },
+  "conservator_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      339.0,
+      519.0,
+      555.0,
+      532.0
+     ]
+    }
+   ]
+  },
+  "by_signer_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      339.0,
+      547.3,
+      555.0,
+      560.3
+     ]
+    }
+   ]
+  },
+  "by_signer_title": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      339.0,
+      557.5,
+      555.0,
+      570.8
+     ]
+    }
+   ]
+  },
+  "conservator_address": {
+   "type": "text",
+   "injected": true,
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      144.0,
+      335.0,
+      540.0,
+      398.0
+     ]
+    }
+   ]
+  },
+  "conservator_phone": {
+   "type": "text",
+   "injected": true,
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      235.0,
+      402.0,
+      450.0,
+      415.0
+     ]
+    }
+   ]
   }
+ }
 }

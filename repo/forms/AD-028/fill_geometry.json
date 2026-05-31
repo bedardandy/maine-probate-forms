@@ -1,487 +1,487 @@
 {
-  "form_id": "AD-028",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "AD-028 Affidavit of Parentage (Rev. 5-6-21)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            58.0,
-            123.0,
-            165.0,
-            138.0
-          ]
-        }
-      ]
-    },
-    "name_of_adoptee": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            109.0,
-            149.0,
-            298.0,
-            163.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            433.0,
-            125.0,
-            523.0,
-            138.0
-          ]
-        }
-      ]
-    },
-    "birth_mother_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            100.9,
-            191.8,
-            414.5,
-            210.2
-          ]
-        }
-      ]
-    },
-    "name_of_child": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            94.0,
-            220.0,
-            464.0,
-            234.0
-          ]
-        }
-      ]
-    },
-    "surrender_release_recipient": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            359.0,
-            255.0,
-            556.0,
-            268.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            94.0,
-            278.0,
-            512.0,
-            291.0
-          ]
-        }
-      ]
-    },
-    "putative_parent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            247.0,
-            360.0,
-            556.0,
-            372.0
-          ]
-        }
-      ]
-    },
-    "putative_parent_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            157.0,
-            388.0,
-            556.0,
-            401.0
-          ]
-        }
-      ]
-    },
-    "putative_parent_statements": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "named_in_birth_record",
-          "label": "Is named in the birth record.",
-          "page": 0,
-          "rect": [
-            130.5,
-            447.8,
-            138.5,
-            455.8
-          ]
-        },
-        {
-          "value": "provides_support",
-          "label": "Currently provides or has attempted to provide support for the child.",
-          "page": 0,
-          "rect": [
-            130.5,
-            472.3,
-            138.5,
-            480.3
-          ]
-        },
-        {
-          "value": "involved_in_family_relationship",
-          "label": "Currently is involved in or has attempted to become involved in a family relationship with the child.",
-          "page": 0,
-          "rect": [
-            130.5,
-            496.8,
-            138.5,
-            504.8
-          ]
-        },
-        {
-          "value": "never_provided_support",
-          "label": "Has never provided any support for this child of any description.",
-          "page": 0,
-          "rect": [
-            130.5,
-            532.8,
-            138.5,
-            540.8
-          ]
-        },
-        {
-          "value": "never_attempted_family_relationship",
-          "label": "Has never attempted to form a family relationship with this child.",
-          "page": 0,
-          "rect": [
-            130.5,
-            557.3,
-            138.5,
-            565.3
-          ]
-        },
-        {
-          "value": "knows_they_are_putative_parent",
-          "label": "Knows that they are the putative parent of this child.",
-          "page": 0,
-          "rect": [
-            130.5,
-            581.8,
-            138.5,
-            589.8
-          ]
-        },
-        {
-          "value": "does_not_know_they_are_putative_parent",
-          "label": "Does not know they are the putative parent of this child.",
-          "page": 0,
-          "rect": [
-            130.5,
-            606.1,
-            138.5,
-            614.1
-          ]
-        }
-      ]
-    },
-    "pregnancy_town_state": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            247.0,
-            633.0,
-            392.0,
-            645.0
-          ]
-        }
-      ]
-    },
-    "pregnancy_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            433.0,
-            631.0,
-            525.0,
-            645.0
-          ]
-        }
-      ]
-    },
-    "putative_parent_likely_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            398.0,
-            664.0,
-            556.0,
-            675.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            94.0,
-            678.5,
-            556.0,
-            690.5
-          ]
-        }
-      ]
-    },
-    "location_reasons": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            94.0,
-            686.0,
-            556.0,
-            697.6
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            94.0,
-            705.0,
-            556.0,
-            716.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            94.0,
-            718.0,
-            556.0,
-            733.0
-          ]
-        }
-      ]
-    },
-    "newspaper_name_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            458.0,
-            74.0,
-            556.0,
-            90.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            93.0,
-            565.6,
-            106.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            106.2,
-            565.6,
-            123.5
-          ]
-        }
-      ]
-    },
-    "newspaper_reasons": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            138.0,
-            565.6,
-            154.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            157.3,
-            565.6,
-            170.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            58.0,
-            170.6,
-            565.6,
-            187.9
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            79.0,
-            200.0,
-            202.0,
-            217.0
-          ]
-        }
-      ]
-    },
-    "mother_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            354.6,
-            201.0,
-            565.6,
-            217.0
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            114.0,
-            266.5,
-            234.6,
-            278.5
-          ]
-        }
-      ]
-    },
-    "notary_acknowledgment_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            354.6,
-            258.0,
-            492.6,
-            275.0
-          ]
-        }
-      ]
-    },
-    "notary_acknowledgment_year": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            488.0,
-            258.0,
-            546.0,
-            274.0
-          ]
-        }
-      ]
-    },
-    "name_of_appearer": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            270.5,
-            279.1,
-            543.2,
-            297.6
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            354.6,
-            348.1,
-            565.6,
-            366.6
-          ]
-        }
-      ]
-    },
-    "notary_print_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            354.6,
-            371.0,
-            565.6,
-            389.5
-          ]
-        }
-      ]
-    },
-    "date_commission_expires": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            310.0,
-            422.0,
-            565.6,
-            434.8
-          ]
-        }
-      ]
+ "form_id": "AD-028",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "AD-028 Affidavit of Parentage (Rev. 5-6-21)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      58.0,
+      125.0,
+      165.0,
+      138.0
+     ]
     }
+   ]
+  },
+  "name_of_adoptee": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      109.0,
+      150.0,
+      298.0,
+      163.0
+     ]
+    }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      433.0,
+      125.0,
+      523.0,
+      138.0
+     ]
+    }
+   ]
+  },
+  "birth_mother_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      100.9,
+      197.2,
+      414.5,
+      210.2
+     ]
+    }
+   ]
+  },
+  "name_of_child": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      94.0,
+      221.0,
+      464.0,
+      234.0
+     ]
+    }
+   ]
+  },
+  "surrender_release_recipient": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      359.0,
+      255.0,
+      556.0,
+      268.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      94.0,
+      278.0,
+      512.0,
+      291.0
+     ]
+    }
+   ]
+  },
+  "putative_parent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      247.0,
+      359.0,
+      556.0,
+      372.0
+     ]
+    }
+   ]
+  },
+  "putative_parent_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      157.0,
+      388.0,
+      556.0,
+      401.0
+     ]
+    }
+   ]
+  },
+  "putative_parent_statements": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "named_in_birth_record",
+     "label": "Is named in the birth record.",
+     "page": 0,
+     "rect": [
+      130.5,
+      447.8,
+      138.5,
+      455.8
+     ]
+    },
+    {
+     "value": "provides_support",
+     "label": "Currently provides or has attempted to provide support for the child.",
+     "page": 0,
+     "rect": [
+      130.5,
+      472.3,
+      138.5,
+      480.3
+     ]
+    },
+    {
+     "value": "involved_in_family_relationship",
+     "label": "Currently is involved in or has attempted to become involved in a family relationship with the child.",
+     "page": 0,
+     "rect": [
+      130.5,
+      496.8,
+      138.5,
+      504.8
+     ]
+    },
+    {
+     "value": "never_provided_support",
+     "label": "Has never provided any support for this child of any description.",
+     "page": 0,
+     "rect": [
+      130.5,
+      532.8,
+      138.5,
+      540.8
+     ]
+    },
+    {
+     "value": "never_attempted_family_relationship",
+     "label": "Has never attempted to form a family relationship with this child.",
+     "page": 0,
+     "rect": [
+      130.5,
+      557.3,
+      138.5,
+      565.3
+     ]
+    },
+    {
+     "value": "knows_they_are_putative_parent",
+     "label": "Knows that they are the putative parent of this child.",
+     "page": 0,
+     "rect": [
+      130.5,
+      581.8,
+      138.5,
+      589.8
+     ]
+    },
+    {
+     "value": "does_not_know_they_are_putative_parent",
+     "label": "Does not know they are the putative parent of this child.",
+     "page": 0,
+     "rect": [
+      130.5,
+      606.1,
+      138.5,
+      614.1
+     ]
+    }
+   ]
+  },
+  "pregnancy_town_state": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      247.0,
+      632.0,
+      392.0,
+      645.0
+     ]
+    }
+   ]
+  },
+  "pregnancy_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      433.0,
+      632.0,
+      525.0,
+      645.0
+     ]
+    }
+   ]
+  },
+  "putative_parent_likely_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      398.0,
+      662.0,
+      556.0,
+      675.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      94.0,
+      677.5,
+      556.0,
+      690.5
+     ]
+    }
+   ]
+  },
+  "location_reasons": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      94.0,
+      684.6,
+      556.0,
+      697.6
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      94.0,
+      703.0,
+      556.0,
+      716.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      94.0,
+      720.0,
+      556.0,
+      733.0
+     ]
+    }
+   ]
+  },
+  "newspaper_name_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      458.0,
+      77.0,
+      556.0,
+      90.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      93.0,
+      565.6,
+      106.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      110.5,
+      565.6,
+      123.5
+     ]
+    }
+   ]
+  },
+  "newspaper_reasons": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      141.0,
+      565.6,
+      154.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      157.3,
+      565.6,
+      170.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      58.0,
+      174.9,
+      565.6,
+      187.9
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      79.0,
+      204.0,
+      202.0,
+      217.0
+     ]
+    }
+   ]
+  },
+  "mother_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      354.6,
+      204.0,
+      565.6,
+      217.0
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      114.0,
+      265.5,
+      234.6,
+      278.5
+     ]
+    }
+   ]
+  },
+  "notary_acknowledgment_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      354.6,
+      262.0,
+      492.6,
+      275.0
+     ]
+    }
+   ]
+  },
+  "notary_acknowledgment_year": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      488.0,
+      261.0,
+      546.0,
+      274.0
+     ]
+    }
+   ]
+  },
+  "name_of_appearer": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      270.5,
+      284.6,
+      543.2,
+      297.6
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      354.6,
+      353.6,
+      565.6,
+      366.6
+     ]
+    }
+   ]
+  },
+  "notary_print_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      354.6,
+      376.5,
+      565.6,
+      389.5
+     ]
+    }
+   ]
+  },
+  "date_commission_expires": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      310.0,
+      422.0,
+      565.6,
+      434.8
+     ]
+    }
+   ]
   }
+ }
 }

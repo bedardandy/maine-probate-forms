@@ -1,562 +1,562 @@
 {
-  "form_id": "AD-008",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "AD-008 Report of Disbursements_fused.pdf",
-  "fields": {
-    "probate_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            80.4,
-            221.0,
-            92.4
-          ]
-        }
-      ]
-    },
-    "district_court_location": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            436.0,
-            80.4,
-            570.0,
-            92.4
-          ]
-        }
-      ]
-    },
-    "probate_docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            94.2,
-            199.2,
-            106.2
-          ]
-        }
-      ]
-    },
-    "district_docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            436.0,
-            94.2,
-            570.0,
-            106.2
-          ]
-        }
-      ]
-    },
-    "adoptee_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            45.0,
-            149.4,
-            261.0,
-            161.4
-          ]
-        }
-      ]
-    },
-    "petitioner_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            45.0,
-            190.8,
-            570.0,
-            202.8
-          ]
-        }
-      ]
-    },
-    "certification_text": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            45.0,
-            313.6,
-            570.0,
-            326.5
-          ]
-        }
-      ]
-    },
-    "disbursements": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "legal_parent_1",
-          "label": "Legal services provided to legal parent 1",
-          "page": 0,
-          "rect": [
-            90.6,
-            329.9,
-            101.6,
-            340.9
-          ]
-        },
-        {
-          "value": "legal_parent_2",
-          "label": "Legal services provided to legal parent 2",
-          "page": 0,
-          "rect": [
-            90.6,
-            378.5,
-            101.6,
-            389.5
-          ]
-        },
-        {
-          "value": "counseling_parent_1",
-          "label": "Counseling services provided to legal parent 1",
-          "page": 0,
-          "rect": [
-            90.6,
-            427.2,
-            101.6,
-            438.2
-          ]
-        },
-        {
-          "value": "counseling_parent_2",
-          "label": "Counseling services provided to legal parent 2",
-          "page": 0,
-          "rect": [
-            90.6,
-            475.4,
-            101.6,
-            486.4
-          ]
-        },
-        {
-          "value": "medical_expenses",
-          "label": "Prenatal, birthing, and other related medical expenses for the birth mother",
-          "page": 0,
-          "rect": [
-            90.6,
-            524.3,
-            101.6,
-            535.3
-          ]
-        },
-        {
-          "value": "transportation_expenses",
-          "label": "Transportation expenses associated with any of the above services",
-          "page": 0,
-          "rect": [
-            90.6,
-            572.8,
-            101.6,
-            583.8
-          ]
-        },
-        {
-          "value": "foster_care_expenses",
-          "label": "Foster care expenses for the child",
-          "page": 0,
-          "rect": [
-            90.6,
-            621.4,
-            101.6,
-            632.4
-          ]
-        },
-        {
-          "value": "living_expenses",
-          "label": "Living expenses for the birth mother",
-          "page": 0,
-          "rect": [
-            90.6,
-            654.2,
-            101.6,
-            665.2
-          ]
-        }
-      ]
-    },
-    "legal_parent_1_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            346.2,
-            570.0,
-            359.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            362.2,
-            570.0,
-            374.2
-          ]
-        }
-      ]
-    },
-    "legal_parent_2_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            394.8,
-            570.0,
-            407.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            410.8,
-            570.0,
-            423.0
-          ]
-        }
-      ]
-    },
-    "counseling_parent_1_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            443.4,
-            570.0,
-            456.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            459.4,
-            570.0,
-            472.0
-          ]
-        }
-      ]
-    },
-    "counseling_parent_2_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            492.0,
-            570.0,
-            504.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            508.0,
-            570.0,
-            520.0
-          ]
-        }
-      ]
-    },
-    "medical_expenses_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            540.5,
-            570.0,
-            553.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.2,
-            556.6,
-            570.0,
-            569.0
-          ]
-        }
-      ]
-    },
-    "transportation_expenses_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            589.1,
-            570.0,
-            602.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            605.1,
-            570.0,
-            618.0
-          ]
-        }
-      ]
-    },
-    "foster_care_expenses_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            298.2,
-            620.0,
-            561.0,
-            635.7
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            637.7,
-            570.0,
-            650.0
-          ]
-        }
-      ]
-    },
-    "living_expenses_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            311.6,
-            652.7,
-            561.0,
-            668.5
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            670.5,
-            570.0,
-            683.0
-          ]
-        }
-      ]
-    },
-    "other_disbursements": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            68.7,
-            561.0,
-            81.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            84.5,
-            561.0,
-            97.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            100.5,
-            561.0,
-            112.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            116.3,
-            561.0,
-            128.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            132.2,
-            561.0,
-            144.2
-          ]
-        }
-      ]
-    },
-    "petitioner_1_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            209.0,
-            222.0,
-            224.0
-          ]
-        }
-      ]
-    },
-    "petitioner_1_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            208.0,
-            561.0,
-            224.0
-          ]
-        }
-      ]
-    },
-    "petitioner_2_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            256.0,
-            222.0,
-            271.0
-          ]
-        }
-      ]
-    },
-    "petitioner_2_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            342.0,
-            256.0,
-            561.0,
-            271.0
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            350.0,
-            185.0,
-            366.0
-          ]
-        }
-      ]
-    },
-    "notary_appearance_name1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            239.0,
-            382.0,
-            473.0,
-            398.0
-          ]
-        }
-      ]
-    },
-    "notary_appearance_name2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            401.9,
-            252.0,
-            414.0
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            54.0,
-            462.0,
-            561.0,
-            477.0
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            462.0,
-            222.0,
-            477.0
-          ]
-        }
-      ]
+ "form_id": "AD-008",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "AD-008 Report of Disbursements_fused.pdf",
+ "fields": {
+  "probate_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      79.4,
+      221.0,
+      92.4
+     ]
     }
+   ]
+  },
+  "district_court_location": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      436.0,
+      79.4,
+      570.0,
+      92.4
+     ]
+    }
+   ]
+  },
+  "probate_docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      93.2,
+      199.2,
+      106.2
+     ]
+    }
+   ]
+  },
+  "district_docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      436.0,
+      93.2,
+      570.0,
+      106.2
+     ]
+    }
+   ]
+  },
+  "adoptee_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      45.0,
+      148.4,
+      261.0,
+      161.4
+     ]
+    }
+   ]
+  },
+  "petitioner_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      45.0,
+      189.8,
+      570.0,
+      202.8
+     ]
+    }
+   ]
+  },
+  "certification_text": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      45.0,
+      313.6,
+      570.0,
+      326.5
+     ]
+    }
+   ]
+  },
+  "disbursements": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "legal_parent_1",
+     "label": "Legal services provided to legal parent 1",
+     "page": 0,
+     "rect": [
+      90.6,
+      329.9,
+      101.6,
+      340.9
+     ]
+    },
+    {
+     "value": "legal_parent_2",
+     "label": "Legal services provided to legal parent 2",
+     "page": 0,
+     "rect": [
+      90.6,
+      378.5,
+      101.6,
+      389.5
+     ]
+    },
+    {
+     "value": "counseling_parent_1",
+     "label": "Counseling services provided to legal parent 1",
+     "page": 0,
+     "rect": [
+      90.6,
+      427.2,
+      101.6,
+      438.2
+     ]
+    },
+    {
+     "value": "counseling_parent_2",
+     "label": "Counseling services provided to legal parent 2",
+     "page": 0,
+     "rect": [
+      90.6,
+      475.4,
+      101.6,
+      486.4
+     ]
+    },
+    {
+     "value": "medical_expenses",
+     "label": "Prenatal, birthing, and other related medical expenses for the birth mother",
+     "page": 0,
+     "rect": [
+      90.6,
+      524.3,
+      101.6,
+      535.3
+     ]
+    },
+    {
+     "value": "transportation_expenses",
+     "label": "Transportation expenses associated with any of the above services",
+     "page": 0,
+     "rect": [
+      90.6,
+      572.8,
+      101.6,
+      583.8
+     ]
+    },
+    {
+     "value": "foster_care_expenses",
+     "label": "Foster care expenses for the child",
+     "page": 0,
+     "rect": [
+      90.6,
+      621.4,
+      101.6,
+      632.4
+     ]
+    },
+    {
+     "value": "living_expenses",
+     "label": "Living expenses for the birth mother",
+     "page": 0,
+     "rect": [
+      90.6,
+      654.2,
+      101.6,
+      665.2
+     ]
+    }
+   ]
+  },
+  "legal_parent_1_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      346.2,
+      570.0,
+      359.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      361.2,
+      570.0,
+      374.2
+     ]
+    }
+   ]
+  },
+  "legal_parent_2_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      394.0,
+      570.0,
+      407.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      410.0,
+      570.0,
+      423.0
+     ]
+    }
+   ]
+  },
+  "counseling_parent_1_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      443.4,
+      570.0,
+      456.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      459.4,
+      570.0,
+      472.0
+     ]
+    }
+   ]
+  },
+  "counseling_parent_2_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      491.0,
+      570.0,
+      504.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      507.0,
+      570.0,
+      520.0
+     ]
+    }
+   ]
+  },
+  "medical_expenses_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      540.5,
+      570.0,
+      553.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.2,
+      556.0,
+      570.0,
+      569.0
+     ]
+    }
+   ]
+  },
+  "transportation_expenses_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      589.1,
+      570.0,
+      602.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      605.1,
+      570.0,
+      618.0
+     ]
+    }
+   ]
+  },
+  "foster_care_expenses_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      298.2,
+      622.7,
+      561.0,
+      635.7
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      637.0,
+      570.0,
+      650.0
+     ]
+    }
+   ]
+  },
+  "living_expenses_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      311.6,
+      655.5,
+      561.0,
+      668.5
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      670.5,
+      570.0,
+      683.0
+     ]
+    }
+   ]
+  },
+  "other_disbursements": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      68.0,
+      561.0,
+      81.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      84.5,
+      561.0,
+      97.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      99.5,
+      561.0,
+      112.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      115.3,
+      561.0,
+      128.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      131.2,
+      561.0,
+      144.2
+     ]
+    }
+   ]
+  },
+  "petitioner_1_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      211.0,
+      222.0,
+      224.0
+     ]
+    }
+   ]
+  },
+  "petitioner_1_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      211.0,
+      561.0,
+      224.0
+     ]
+    }
+   ]
+  },
+  "petitioner_2_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      258.0,
+      222.0,
+      271.0
+     ]
+    }
+   ]
+  },
+  "petitioner_2_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      342.0,
+      258.0,
+      561.0,
+      271.0
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      353.0,
+      185.0,
+      366.0
+     ]
+    }
+   ]
+  },
+  "notary_appearance_name1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      239.0,
+      385.0,
+      473.0,
+      398.0
+     ]
+    }
+   ]
+  },
+  "notary_appearance_name2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      401.0,
+      252.0,
+      414.0
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      54.0,
+      464.0,
+      561.0,
+      477.0
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      464.0,
+      222.0,
+      477.0
+     ]
+    }
+   ]
   }
+ }
 }

@@ -32,7 +32,7 @@ import tempfile
 import urllib.request
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel
 
 import sys
@@ -42,6 +42,9 @@ from canonical_adapter import to_case_object       # noqa: E402
 from fill_plan import build_plan                    # noqa: E402
 from fill_pdf import fill_pdf as _fill_pdf          # noqa: E402
 import route_form                                   # noqa: E402
+import enhance                                      # noqa: E402
+
+STATIC = ROOT / "tools" / "static"
 
 app = FastAPI(title="Maine Probate Forms API", version="1.0",
               description="Route / plan / fill Maine probate forms. Not legal advice.")
@@ -133,6 +136,49 @@ def fill(req: FillReq):
                         filename=f"{req.form_id}.filled.pdf")
 
 
+class EnhanceReq(BaseModel):
+    form_id: str
+    steps: list[str] | None = None      # explicit step ids
+    preset: str | None = None           # or a named preset
+    case: dict | None = None            # required if 'fill' is included
+    fresh: bool = False                 # re-download the blank from court
+
+
+@app.get("/", response_class=HTMLResponse)
+def control_panel():
+    """The one-page enhancement control panel."""
+    page = STATIC / "index.html"
+    if not page.exists():
+        raise HTTPException(404, "control panel not installed (tools/static/index.html)")
+    return HTMLResponse(page.read_text())
+
+
+@app.get("/enhance/catalog")
+def enhance_catalog():
+    """Forms + enhancement steps + presets + external-tool availability (for the UI)."""
+    return enhance.catalog()
+
+
+@app.post("/enhance")
+def enhance_run(req: EnhanceReq):
+    """Run a composed enhancement pipeline; return the resulting PDF.
+
+    Only registered step ids / presets and a known form_id are accepted (enum-
+    gated — no arbitrary commands). The run log is returned in X-Enhance-Log.
+    """
+    steps = enhance.PRESETS.get(req.preset) if req.preset else req.steps
+    if not steps:
+        raise HTTPException(400, "provide 'steps' or a known 'preset'")
+    res = enhance.run(req.form_id, list(steps), case=req.case, fresh=req.fresh)
+    if not res.get("ok"):
+        raise HTTPException(400, res.get("error", "enhancement failed"))
+    summary = json.dumps({"ran": res["ran"], "skipped": res["skipped"],
+                          "log": res["log"]})
+    return FileResponse(res["out"], media_type="application/pdf",
+                        filename=f"{req.form_id}.enhanced.pdf",
+                        headers={"X-Enhance-Log": summary})
+
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8077)
+    uvicorn.run(app, host="127.0.0.1", port=8077)
