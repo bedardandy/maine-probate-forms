@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maine Probate Forms — Enhancement Panel</title>
+<style>
+  :root { --bd:#d8d8e0; --ink:#1c1c28; --muted:#6b6b7b; --accent:#2b5fd0; --bg:#f6f7fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 system-ui,Segoe UI,Roboto,sans-serif; color:var(--ink); background:var(--bg); }
+  header { padding:16px 22px; background:#fff; border-bottom:1px solid var(--bd); }
+  header h1 { margin:0; font-size:17px; } header p { margin:4px 0 0; color:var(--muted); font-size:12.5px; }
+  .wrap { display:flex; gap:18px; padding:18px 22px; align-items:flex-start; flex-wrap:wrap; }
+  .panel { background:#fff; border:1px solid var(--bd); border-radius:10px; padding:16px; width:430px; }
+  .preview { background:#fff; border:1px solid var(--bd); border-radius:10px; padding:10px; flex:1; min-width:360px; }
+  label.row { display:flex; gap:8px; align-items:flex-start; padding:4px 0; }
+  .group { margin:12px 0 4px; font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .desc { color:var(--muted); font-size:12px; }
+  .step.disabled { opacity:.5; }
+  select, input[type=text], textarea { width:100%; padding:7px 9px; border:1px solid var(--bd); border-radius:7px; font:inherit; }
+  textarea { height:84px; font-family:ui-monospace,monospace; font-size:12px; }
+  .presets button { margin:3px 4px 3px 0; padding:6px 10px; border:1px solid var(--bd); background:#fff; border-radius:20px; cursor:pointer; font-size:12.5px; }
+  .presets button:hover { border-color:var(--accent); color:var(--accent); }
+  .build { margin-top:14px; width:100%; padding:11px; background:var(--accent); color:#fff; border:0; border-radius:8px; font-size:15px; cursor:pointer; }
+  .build:disabled { opacity:.6; cursor:default; }
+  .badge { display:inline-block; font-size:11px; padding:2px 7px; border-radius:20px; margin-right:5px; }
+  .ok { background:#e3f5e8; color:#1d7a39; } .no { background:#fdeaea; color:#b22; }
+  iframe { width:100%; height:78vh; border:1px solid var(--bd); border-radius:6px; }
+  #log { white-space:pre-wrap; font-family:ui-monospace,monospace; font-size:11.5px; color:var(--muted); margin-top:8px; max-height:130px; overflow:auto; }
+  .foot { color:var(--muted); font-size:11.5px; margin-top:10px; }
+  a.dl { display:inline-block; margin-top:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Maine Probate Forms — Enhancement Panel</h1>
+  <p>Pick a form and the enhancements to apply. The blank form is fetched from the court at run time. Outputs are drafts — not legal advice.</p>
+</header>
+
+<div class="wrap">
+  <div class="panel">
+    <div class="group">Form</div>
+    <select id="form"></select>
+    <label class="row" style="margin-top:8px"><input type="checkbox" id="fresh"> Download a fresh copy from the court (else use cache)</label>
+
+    <div class="group">Quick presets</div>
+    <div class="presets" id="presets"></div>
+
+    <div id="steps"></div>
+
+    <div class="group">Case data <span class="desc">(needed for “Fill with case data”)</span></div>
+    <input type="file" id="casefile" accept="application/json,.json">
+    <textarea id="casejson" placeholder='Optional: paste a case JSON here (or choose a file). Used by the Fill step.'></textarea>
+
+    <button class="build" id="build">Build PDF</button>
+    <div class="foot" id="tools"></div>
+  </div>
+
+  <div class="preview">
+    <div id="status" class="desc">Result preview will appear here.</div>
+    <a class="dl" id="dl" style="display:none">⬇ Download PDF</a>
+    <div id="log"></div>
+    <iframe id="frame" style="display:none"></iframe>
+  </div>
+</div>
+
+<script>
+let CAT = null;
+
+async function load() {
+  CAT = await (await fetch('enhance/catalog')).json();
+  // form picker
+  const f = document.getElementById('form');
+  f.innerHTML = CAT.forms.map(x => `<option>${x}</option>`).join('');
+  // tool badges
+  document.getElementById('tools').innerHTML = 'External tools: ' +
+    Object.entries(CAT.tools).map(([k,v]) => `<span class="badge ${v?'ok':'no'}">${k} ${v?'✓':'✗'}</span>`).join('');
+  // steps grouped
+  const groups = {};
+  CAT.steps.forEach(s => (groups[s.group] = groups[s.group] || []).push(s));
+  const sd = document.getElementById('steps');
+  sd.innerHTML = Object.entries(groups).map(([g, arr]) => `<div class="group">${g}</div>` +
+    arr.map(s => `<label class="row step ${s.available?'':'disabled'}">
+        <input type="checkbox" class="step-cb" value="${s.id}" ${s.available?'':'disabled'}>
+        <span><b>${s.label}</b>${s.needs_tool?` <span class="desc">(needs ${s.needs_tool})</span>`:''}<br>
+        <span class="desc">${s.desc}</span></span></label>`).join('')).join('');
+  // presets
+  document.getElementById('presets').innerHTML = Object.keys(CAT.presets)
+    .map(p => `<button data-p="${p}">${p}</button>`).join('');
+  document.querySelectorAll('#presets button').forEach(b =>
+    b.onclick = () => setSteps(CAT.presets[b.dataset.p]));
+}
+
+function setSteps(ids) {
+  document.querySelectorAll('.step-cb').forEach(cb => cb.checked = ids.includes(cb.value));
+}
+function selected() {
+  return [...document.querySelectorAll('.step-cb:checked')].map(cb => cb.value);
+}
+
+document.getElementById('casefile').onchange = e => {
+  const file = e.target.files[0]; if (!file) return;
+  file.text().then(t => document.getElementById('casejson').value = t);
+};
+
+document.getElementById('build').onclick = async () => {
+  const steps = selected();
+  if (!steps.length) { alert('Select at least one enhancement (or a preset).'); return; }
+  let body = { form_id: document.getElementById('form').value, steps,
+               fresh: document.getElementById('fresh').checked };
+  if (steps.includes('fill')) {
+    const raw = document.getElementById('casejson').value.trim();
+    if (!raw) { alert('“Fill with case data” is selected — paste or choose a case JSON.'); return; }
+    try { body.case = JSON.parse(raw); } catch (e) { alert('Case JSON is invalid: ' + e); return; }
+  }
+  const btn = document.getElementById('build'); btn.disabled = true; btn.textContent = 'Building…';
+  const st = document.getElementById('status'); st.textContent = 'Running: ' + steps.join(' → ');
+  try {
+    const r = await fetch('enhance', { method:'POST', headers:{'Content-Type':'application/json'},
+                                       body: JSON.stringify(body) });
+    if (!r.ok) { const e = await r.json().catch(()=>({detail:r.statusText}));
+      st.textContent = '✖ ' + (e.detail || 'failed'); return; }
+    const logHdr = r.headers.get('X-Enhance-Log');
+    const blob = await r.blob(); const url = URL.createObjectURL(blob);
+    const frame = document.getElementById('frame'); frame.src = url; frame.style.display = 'block';
+    const dl = document.getElementById('dl'); dl.href = url;
+    dl.download = body.form_id + '.enhanced.pdf'; dl.style.display = 'inline-block';
+    st.textContent = '✓ Done.';
+    if (logHdr) { const L = JSON.parse(logHdr);
+      document.getElementById('log').textContent =
+        'ran: ' + L.ran.join(', ') + (L.skipped.length?'\nskipped: '+L.skipped.join(', '):'') +
+        '\n\n' + L.log.map(x => '· ' + x).join('\n'); }
+  } catch (e) { st.textContent = '✖ ' + e; }
+  finally { btn.disabled = false; btn.textContent = 'Build PDF'; }
+};
+
+load();
+</script>
+</body>
+</html>
