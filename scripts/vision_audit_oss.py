@@ -52,9 +52,13 @@ INTENTIONAL, NOT defects:
     "ORDER"/"DECREE" fields, "(if applicable)"/"(if any)" fields, footer codes,
     and trailing blank rows in multi-row list tables (rows 2+ when row 1 is filled).
 
+Do NOT report blank or empty fields. This is a PARTIAL deterministic fill —
+narrative/LLM-composed fields are intentionally left empty and are tracked
+separately by the fill plan, not by you. Report only how the PRESENT typed values
+sit on the page.
+
 Defect kinds: overlaps_glyph, above_underline, below_underline, truncated,
-wrong_column, illegible, blank_required (only if a clearly-required, non-excluded
-field is empty).
+wrong_column, illegible.
 
 Return STRICTLY JSON, no prose, no fences:
 {"page_ok": <bool>, "issues": [{"label":"<visible label>","value":"<what shows>",
@@ -84,6 +88,17 @@ def _verify_prompt(label: str, value: str, kind: str, evidence: str) -> str:
             .replace("@KIND@", kind).replace("@EVIDENCE@", evidence))
 
 _JSON_RE = re.compile(r"\{[\s\S]*\}")
+
+# A typed value that looks like a Python literal (list/dict repr) is an
+# unambiguous serialization defect — readable text never contains these. The
+# skeptic gate once DROPPED such a finding (PB-007 `[{'name': ...}]`), so when the
+# rendered value carries a repr signature we confirm deterministically and skip
+# the vote rather than let a vision call talk itself out of it.
+_REPR_SIG = re.compile(r"\[\{|\{'|\{\"|': '|\": \"|OrderedDict\(|, dtype=")
+
+
+def _looks_like_repr(value: str) -> bool:
+    return bool(value) and bool(_REPR_SIG.search(value))
 
 
 def _extract_json(text: str) -> dict | None:
@@ -163,6 +178,12 @@ def audit_form(form_id: str, votes: int, model: str, dpi: int,
             rec = {"form_id": form_id, "page": pi, **iss}
             if not verify:
                 rec["confirmed"] = None; findings.append(rec); continue
+            if _looks_like_repr(str(iss.get("value", ""))):
+                rec["confirmed"] = True; rec["votes"] = "repr-signature"
+                findings.append(rec)
+                print(f"     - {iss.get('kind')} @ {iss.get('label')!r}: "
+                      f"CONFIRMED (deterministic repr-signature)")
+                continue
             yes = 0
             for _ in range(votes):
                 vr = _claude_vision(
