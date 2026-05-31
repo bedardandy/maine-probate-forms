@@ -66,7 +66,7 @@ VERIFY_PROMPT = """You are a SKEPTICAL reviewer re-checking a single claimed def
 on a rendered, filled Maine probate form page. Another reviewer flagged it; most
 such flags are false alarms.
 
-Claim: field labeled "{label}" (shows "{value}") has defect "{kind}" — {evidence}
+Claim: field labeled "@LABEL@" (shows "@VALUE@") has defect "@KIND@" — @EVIDENCE@
 
 Look at the page yourself. Default to NOT a defect unless it is unmistakable.
 Remember these are INTENTIONAL and must be rejected as defects:
@@ -76,6 +76,12 @@ Remember these are INTENTIONAL and must be rejected as defects:
 
 Return STRICTLY JSON: {"confirmed": <bool>, "reason": "<one short sentence>"}
 """
+
+
+def _verify_prompt(label: str, value: str, kind: str, evidence: str) -> str:
+    # Token replace (not str.format) so the literal JSON braces survive.
+    return (VERIFY_PROMPT.replace("@LABEL@", label).replace("@VALUE@", value)
+            .replace("@KIND@", kind).replace("@EVIDENCE@", evidence))
 
 _JSON_RE = re.compile(r"\{[\s\S]*\}")
 
@@ -161,10 +167,8 @@ def audit_form(form_id: str, votes: int, model: str, dpi: int,
             for _ in range(votes):
                 vr = _claude_vision(
                     png, "You are a skeptical defect verifier. JSON only.",
-                    VERIFY_PROMPT.format(label=iss.get("label", ""),
-                                         value=iss.get("value", ""),
-                                         kind=iss.get("kind", ""),
-                                         evidence=iss.get("evidence", "")), model)
+                    _verify_prompt(iss.get("label", ""), iss.get("value", ""),
+                                   iss.get("kind", ""), iss.get("evidence", "")), model)
                 if vr and vr.get("confirmed") is True:
                     yes += 1
             rec["confirmed"] = yes > votes // 2
