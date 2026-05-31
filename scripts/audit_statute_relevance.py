@@ -98,6 +98,12 @@ def collect(form: str | None) -> list[dict]:
         for q in json.loads(sp.read_text()).get("per_question", []):
             fid = q.get("field_id", "")
             for c in q.get("considerations", []):
+                # Skip no-cite considerations: they are intentional procedural /
+                # cross-reference notes (e.g. "no will -> use DE-201", "federal
+                # tax is IRC, not Maine") with no statute to adjudicate. Feeding
+                # them an empty cite made Opus spuriously return mis_tied.
+                if not (c.get("cite") or "").strip():
+                    continue
                 units.append({"form": f, "field_id": fid,
                               "label": labels.get(fid, fid),
                               "cite": c.get("cite", ""), "title": c.get("title", ""),
