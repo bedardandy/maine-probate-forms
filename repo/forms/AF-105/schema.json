@@ -19,13 +19,13 @@
     "red": 3
   },
   "by_data_type": {
-    "text": 46,
+    "text": 39,
     "docket_number": 1,
     "person_name": 3,
     "phone": 1,
     "address": 2,
     "checkbox": 5,
-    "currency": 27,
+    "currency": 34,
     "number": 1,
     "entity_name": 1,
     "date": 2,
@@ -615,8 +615,11 @@
       "widget_id": "W029",
       "label": "Cash On Hand",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "free_text",
       "writable_when": null,
@@ -3387,8 +3390,11 @@
       "widget_id": "W106",
       "label": "Loan Row 1 Total Owed",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "repeating_slot",
       "slot_group": "loan_row",
@@ -3435,8 +3441,11 @@
       "widget_id": "W107",
       "label": "Loan Row 1 Monthly Payment",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "repeating_slot",
       "slot_group": "loan_row",
@@ -3579,8 +3588,11 @@
       "widget_id": "W110",
       "label": "Loan Row 2 Total Owed",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "repeating_slot",
       "slot_group": "loan_row",
@@ -3627,8 +3639,11 @@
       "widget_id": "W111",
       "label": "Loan Row 2 Monthly Payment",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "repeating_slot",
       "slot_group": "loan_row",
@@ -3771,8 +3786,11 @@
       "widget_id": "W114",
       "label": "Loan Row 3 Total Owed",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "repeating_slot",
       "slot_group": "loan_row",
@@ -3819,8 +3837,11 @@
       "widget_id": "W115",
       "label": "Loan Row 3 Monthly Payment",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "repeating_slot",
       "slot_group": "loan_row",

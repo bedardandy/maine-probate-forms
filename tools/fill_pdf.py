@@ -55,13 +55,33 @@ _CURRENCY_RE = re.compile(
     r"gross_value|net_value|estimated_maine_estate_tax)(?:$|_)", re.I)
 
 
+_ALIGN_CONST = {"left": fitz.TEXT_ALIGN_LEFT, "center": fitz.TEXT_ALIGN_CENTER,
+                "right": fitz.TEXT_ALIGN_RIGHT}
+
+
 def _text_align(name: str) -> int:
+    """Fallback name heuristic, used only when the declared map has no entry."""
     n = name.lower()
     if "caption" in n:
         return fitz.TEXT_ALIGN_CENTER
     if _CURRENCY_RE.search(n):
         return fitz.TEXT_ALIGN_RIGHT
     return fitz.TEXT_ALIGN_LEFT
+
+
+def _load_alignment(form_id: str, root: pathlib.Path) -> dict[str, str]:
+    """Declared per-field justification from catalog/field_alignment.json.
+
+    Authoritative (derived from the schema data_type by author_field_align.py).
+    Returns {field_id: 'center'|'right'}; absent fields default to left.
+    """
+    p = root / "catalog" / "field_alignment.json"
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text()).get("forms", {}).get(form_id, {})
+    except Exception:
+        return {}
 
 
 def _fontsize_for(value: str, r: fitz.Rect, multiline: bool) -> float:
@@ -79,7 +99,8 @@ def _fontsize_for(value: str, r: fitz.Rect, multiline: bool) -> float:
     return round(fs, 1)
 
 
-def _add_text(page: fitz.Page, rect, name: str, value: str) -> None:
+def _add_text(page: fitz.Page, rect, name: str, value: str,
+              align: int | None = None) -> None:
     w = fitz.Widget()
     w.field_name = name
     w.field_type = fitz.PDF_WIDGET_TYPE_TEXT
@@ -98,8 +119,11 @@ def _add_text(page: fitz.Page, rect, name: str, value: str) -> None:
     annot = page.add_widget(w)
     # B: type-aware justification via /Q (1=center, 2=right). PyMuPDF bakes a
     # left-aligned appearance and omits /Q, so set it low-level; fill_pdf() flags
-    # NeedAppearances so conforming viewers (Acrobat/print) re-render aligned.
-    align = _text_align(name)
+    # NeedAppearances so conforming viewers re-render aligned (verified: both
+    # poppler and PyMuPDF's own renderer honor it). `align` comes from the
+    # declared map; falls back to the name heuristic when not supplied.
+    if align is None:
+        align = _text_align(name)
     if align != fitz.TEXT_ALIGN_LEFT and annot is not None:
         try:
             page.parent.xref_set_key(annot.xref, "Q", str(int(align)))
@@ -152,6 +176,7 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
                 "likely outdated or the wrong document; re-fetch from "
                 "metadata.json.source_url"}
     _strip_widgets(doc)
+    align_map = _load_alignment(form_id, root)
     written_text = checked = 0
     skipped_no_geom = []
     for fid, val in resolved.items():
@@ -159,11 +184,12 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
         if not spec:
             skipped_no_geom.append(fid); continue
         if spec.get("widgets"):                       # text field(s)
+            align = _ALIGN_CONST.get(align_map.get(fid))   # None -> name heuristic
             for i, wdg in enumerate(spec["widgets"]):
                 # full value in the first widget; extra widgets are continuation
                 _add_text(doc[wdg["page"]], wdg["rect"],
                           fid if i == 0 else f"{fid}__{i}",
-                          val if i == 0 else "")
+                          val if i == 0 else "", align=align)
                 written_text += 1
         elif spec.get("options"):                     # choice field
             wants = {str(v).lower() for v in (

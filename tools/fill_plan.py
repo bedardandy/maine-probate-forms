@@ -82,6 +82,34 @@ _TRUTHY = {"yes", "true", "1", "on", "y", "checked"}
 _FALSY = {"no", "false", "0", "off", "n", "", "none", "unchecked"}
 
 
+def _render_value(val):
+    """Coerce a resolved source value to display text for a text widget.
+
+    A deterministic `<record>.<key>` source can hold structured data — e.g.
+    DE-101's `minor_record.minor_children` is `[{name, dob}, ...]`. Without this,
+    fill writes the raw Python repr (`[{'name': 'Aiden M. Reyes', ...}]`) onto the
+    form. Render lists/dicts as readable text: each item's values joined by ", ",
+    items by "; ". Scalars/strings pass through unchanged.
+    """
+    if isinstance(val, str) or val is None:
+        return val
+    if isinstance(val, bool):
+        return "yes" if val else "no"
+    if isinstance(val, (int, float)):
+        return str(val)
+    if isinstance(val, dict):
+        return ", ".join(str(v).strip() for v in val.values()
+                         if v not in (None, ""))
+    if isinstance(val, (list, tuple, set)):
+        parts = []
+        for item in val:
+            rendered = _render_value(item)
+            if rendered not in (None, ""):
+                parts.append(rendered)
+        return "; ".join(parts)
+    return str(val)
+
+
 def _truthy(v) -> bool:
     if isinstance(v, bool):
         return v
@@ -193,13 +221,13 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
         if src.startswith("case_dict.") or src.split(".", 1)[0].endswith("_record"):
             val = _lookup(case, src, fid)
             if val is not None:
-                resolved[fid] = val
+                resolved[fid] = _render_value(val)
             else:
                 unresolved.append({"field_id": fid, "label": label,
                                    "source": src})
         elif src == "llm_over_narrative" or fs.get("llm_eligible"):
             if fid in narrative_facts and narrative_facts[fid] not in (None, ""):
-                resolved[fid] = narrative_facts[fid]
+                resolved[fid] = _render_value(narrative_facts[fid])
             else:
                 narrative.append({"field_id": fid, "label": label,
                                   "data_type": f.get("data_type"),
