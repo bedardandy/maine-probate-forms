@@ -9,10 +9,17 @@
   "AF-105": {
    "alimony_child_support_amount": "right",
    "bail_amount": "right",
+   "cash_on_hand": "right",
    "checking_amount": "right",
    "food_expenses": "right",
    "housing_expenses": "right",
    "insurance_pension_value": "right",
+   "loan_row_1_monthly_payment": "right",
+   "loan_row_1_total_owed": "right",
+   "loan_row_2_monthly_payment": "right",
+   "loan_row_2_total_owed": "right",
+   "loan_row_3_monthly_payment": "right",
+   "loan_row_3_total_owed": "right",
    "medical_support_payments": "right",
    "medical_support_total": "right",
    "money_owed_amount": "right",
@@ -230,7 +237,8 @@
   },
   "PP-405": {
    "gross_value_personal_property": "right",
-   "gross_value_real_property": "right"
+   "gross_value_real_property": "right",
+   "penal_sum_numeric": "right"
   },
   "PP-406": {
    "calc_gross_inventory": "right",

@@ -2,6 +2,14 @@
 # Existing override + the bespoke residuals.
 
 overrides:
+  # The bond penal sum entered as digits ("Penal Sum ($ numeric)"). Detected as
+  # text (penal_sum_word, written out, stays text); typed currency so it
+  # validates/canonicalizes as money and right-justifies.
+  penal_sum_numeric:
+    category: narrative_derived
+    subcategory: free_form_total
+    data_type: currency
+
   gross_value_personal_property:
     category: narrative_derived
     subcategory: free_form_total

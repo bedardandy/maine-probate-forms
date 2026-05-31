@@ -9,7 +9,7 @@ name_of_surety_1,Name of Surety (1),,text,text,party_attr,name_of_other,,,0,gree
 city_state_of_surety_1,"City, State of Surety (1)",,text,text,narrative_derived,repeating_slot,city_state_of,1,20,yellow,,Y,,llm_over_narrative,
 name_of_surety_2,Name of Surety (2),,text,text,party_attr,name_of_other,,,0,green,Y,,,name_of_other_record.name_of_other,
 city_state_of_surety_2,"City, State of Surety (2)",,text,text,narrative_derived,repeating_slot,city_state_of,2,20,yellow,,Y,,llm_over_narrative,
-penal_sum_numeric,Penal Sum ($ numeric),,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+penal_sum_numeric,Penal Sum ($ numeric),,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 penal_sum_word,Penal Sum (word),,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 conservator_name_condition,Conservator(s) name in condition,,text,person_name,party_attr,conservator,,,0,green,Y,,,conservator_record.conservator,
 individual_name_condition,Individual subject to conservatorship name in condition,,text,person_name,party_attr,individual_under_protection,,,0,green,Y,,,individual_under_protection_record.individual_under_protection,

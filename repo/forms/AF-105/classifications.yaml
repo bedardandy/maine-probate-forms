@@ -79,6 +79,45 @@ overrides:
     subcategory: financial_declaration
     data_type: currency
 
+  # Dollar fields that detect_data_type left as text (no currency token in the
+  # name): cash on hand and the debt-table amount columns. Typed currency so the
+  # currency contract fires in validate_filled.py / canonicalize_enums.py and so
+  # they right-justify.
+  cash_on_hand:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  loan_row_1_total_owed:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  loan_row_1_monthly_payment:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  loan_row_2_total_owed:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  loan_row_2_monthly_payment:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  loan_row_3_total_owed:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
+  loan_row_3_monthly_payment:
+    category: narrative_derived
+    subcategory: financial_declaration
+    data_type: currency
+
   own_real_estate:
     category: legal_choice
     subcategory: yes_no

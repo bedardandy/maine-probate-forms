@@ -19,10 +19,10 @@
   "by_data_type": {
     "entity_name": 2,
     "docket_number": 1,
-    "text": 53,
+    "text": 52,
+    "currency": 3,
     "person_name": 4,
     "signature": 5,
-    "currency": 2,
     "date": 3,
     "address": 1
   },
@@ -484,8 +484,11 @@
       "widget_id": null,
       "label": "Penal Sum ($ numeric)",
       "type": "text",
-      "data_type": "text",
-      "data_constraints": {},
+      "data_type": "currency",
+      "data_constraints": {
+        "min": 0,
+        "decimals": 2
+      },
       "category": "narrative_derived",
       "subcategory": "free_text",
       "writable_when": null,
