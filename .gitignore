@@ -32,3 +32,7 @@ repo/forms/**/*.pdf
 # local geometry backups (not deliverables)
 *.bak
 *.preC.bak
+
+# vision-audit run artifacts
+router/vision_audit*.tsv
+router/vision_audit*.log
