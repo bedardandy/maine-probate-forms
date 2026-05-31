@@ -27,6 +27,8 @@ slot_groups:
   - real_property_surety_2
 ---
 
+> ⚠️ **Statute references are experimental and AI/LLM-generated — not legal advice.** The statute cites in this file identify the form's legal basis and issues to consider; the per-field statute and case-law considerations (`docs/statute-reference/`) are model annotations, not attorney-reviewed, and may be wrong. Verify against current law.
+
 ## Pipeline routing
 
 | category | n | path |

@@ -1376,6 +1376,8 @@ n_fields: {schema['n_fields']}
 addendum_supported: true{parties_frontmatter}{sections_frontmatter}{elections_frontmatter}{slot_frontmatter}
 ---
 
+> ⚠️ **Statute references are experimental and AI/LLM-generated — not legal advice.** The statute cites in this file identify the form's legal basis and issues to consider; the per-field statute and case-law considerations (`docs/statute-reference/`) are model annotations, not attorney-reviewed, and may be wrong. Verify against current law.
+
 ## Pipeline routing
 
 | category | n | path |
