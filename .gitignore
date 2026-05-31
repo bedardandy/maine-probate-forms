@@ -36,3 +36,4 @@ repo/forms/**/*.pdf
 # vision-audit run artifacts
 router/vision_audit*.tsv
 router/vision_audit*.log
+router/*audit*.tsv
