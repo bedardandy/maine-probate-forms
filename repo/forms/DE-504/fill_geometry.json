@@ -1,282 +1,282 @@
 {
-  "form_id": "DE-504",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "DE-504 Petition to Resolve Disputed Claim and Allowance (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            103.0,
-            176.0,
-            122.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            423.0,
-            105.0,
-            542.0,
-            122.0
-          ]
-        }
-      ]
-    },
-    "decedent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            125.5,
-            307.0,
-            145.0
-          ]
-        }
-      ]
-    },
-    "petitioner_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            194.5,
-            542.0,
-            226.0
-          ]
-        }
-      ]
-    },
-    "factual_legal_issues": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            300.0,
-            542.0,
-            384.0
-          ]
-        }
-      ]
-    },
-    "proof_and_evidence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            414.0,
-            542.0,
-            498.0
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            528.0,
-            229.0,
-            548.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            535.6,
-            542.0,
-            549.1
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            583.6,
-            229.0,
-            600.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            611.4,
-            229.0,
-            629.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            640.5,
-            229.0,
-            658.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            669.4,
-            229.0,
-            686.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            697.5,
-            229.0,
-            714.0
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            725.4,
-            229.0,
-            742.0
-          ]
-        }
-      ]
-    },
-    "order_disposition": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "denied",
-          "label": "Denied",
-          "page": 1,
-          "rect": [
-            109.0,
-            136.3,
-            116.0,
-            143.3
-          ]
-        },
-        {
-          "value": "allowed_whole",
-          "label": "Allowed in Whole",
-          "page": 1,
-          "rect": [
-            109.0,
-            159.3,
-            116.0,
-            166.3
-          ]
-        },
-        {
-          "value": "allowed_part",
-          "label": "Allowed in Part",
-          "page": 1,
-          "rect": [
-            109.0,
-            182.4,
-            116.0,
-            189.4
-          ]
-        }
-      ]
-    },
-    "allowed_part_amount": {
-      "type": "currency",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            378.2,
-            201.7,
-            504.0,
-            213.7
-          ]
-        }
-      ]
-    },
-    "order_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            101.0,
-            251.0,
-            261.0,
-            271.0
-          ]
-        }
-      ]
-    },
-    "judge_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            259.5,
-            531.4,
-            273.0
-          ]
-        }
-      ]
+ "form_id": "DE-504",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "DE-504 Petition to Resolve Disputed Claim and Allowance (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      109.0,
+      176.0,
+      122.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      423.0,
+      109.0,
+      542.0,
+      122.0
+     ]
+    }
+   ]
+  },
+  "decedent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      132.0,
+      307.0,
+      145.0
+     ]
+    }
+   ]
+  },
+  "petitioner_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      194.5,
+      542.0,
+      226.0
+     ]
+    }
+   ]
+  },
+  "factual_legal_issues": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      300.0,
+      542.0,
+      384.0
+     ]
+    }
+   ]
+  },
+  "proof_and_evidence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      414.0,
+      542.0,
+      498.0
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      535.0,
+      229.0,
+      548.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      535.6,
+      542.0,
+      549.1
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      587.0,
+      229.0,
+      600.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      616.0,
+      229.0,
+      629.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      645.0,
+      229.0,
+      658.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      673.0,
+      229.0,
+      686.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      701.0,
+      229.0,
+      714.0
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      729.0,
+      229.0,
+      742.0
+     ]
+    }
+   ]
+  },
+  "order_disposition": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "denied",
+     "label": "Denied",
+     "page": 1,
+     "rect": [
+      109.0,
+      136.3,
+      116.0,
+      143.3
+     ]
+    },
+    {
+     "value": "allowed_whole",
+     "label": "Allowed in Whole",
+     "page": 1,
+     "rect": [
+      109.0,
+      159.3,
+      116.0,
+      166.3
+     ]
+    },
+    {
+     "value": "allowed_part",
+     "label": "Allowed in Part",
+     "page": 1,
+     "rect": [
+      109.0,
+      182.4,
+      116.0,
+      189.4
+     ]
+    }
+   ]
+  },
+  "allowed_part_amount": {
+   "type": "currency",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      378.2,
+      200.7,
+      504.0,
+      213.7
+     ]
+    }
+   ]
+  },
+  "order_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      101.0,
+      258.0,
+      261.0,
+      271.0
+     ]
+    }
+   ]
+  },
+  "judge_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      259.5,
+      531.4,
+      273.0
+     ]
+    }
+   ]
   }
+ }
 }

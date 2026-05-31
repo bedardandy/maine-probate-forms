@@ -1,133 +1,133 @@
 {
-  "form_id": "N-117",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "N-117 Notice of Appointment of GC (Rev. 2-20-20)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            102.0,
-            179.0,
-            113.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            409.0,
-            102.0,
-            542.0,
-            113.0
-          ]
-        }
-      ]
-    },
-    "individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            104.0,
-            127.0,
-            270.0,
-            138.0
-          ]
-        }
-      ]
-    },
-    "notice_recipient": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            192.2,
-            542.0,
-            219.9
-          ]
-        }
-      ]
-    },
-    "appointee_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            225.0,
-            542.0,
-            238.0
-          ]
-        }
-      ]
-    },
-    "appointment_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "guardian",
-          "label": "Guardian",
-          "page": 0,
-          "rect": [
-            130.1,
-            242.5,
-            140.1,
-            252.5
-          ]
-        },
-        {
-          "value": "conservator",
-          "label": "Conservator",
-          "page": 0,
-          "rect": [
-            201.6,
-            242.5,
-            211.6,
-            252.5
-          ]
-        },
-        {
-          "value": "guardian_and_conservator",
-          "label": "Guardian and Conservator",
-          "page": 0,
-          "rect": [
-            308.1,
-            242.5,
-            318.1,
-            252.5
-          ]
-        }
-      ]
-    },
-    "appointment_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            248.0,
-            259.0,
-            464.0,
-            270.0
-          ]
-        }
-      ]
+ "form_id": "N-117",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "N-117 Notice of Appointment of GC (Rev. 2-20-20)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      100.0,
+      179.0,
+      113.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      409.0,
+      100.0,
+      542.0,
+      113.0
+     ]
+    }
+   ]
+  },
+  "individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      104.0,
+      125.0,
+      270.0,
+      138.0
+     ]
+    }
+   ]
+  },
+  "notice_recipient": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      192.2,
+      542.0,
+      219.9
+     ]
+    }
+   ]
+  },
+  "appointee_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      225.0,
+      542.0,
+      238.0
+     ]
+    }
+   ]
+  },
+  "appointment_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "guardian",
+     "label": "Guardian",
+     "page": 0,
+     "rect": [
+      130.1,
+      242.5,
+      140.1,
+      252.5
+     ]
+    },
+    {
+     "value": "conservator",
+     "label": "Conservator",
+     "page": 0,
+     "rect": [
+      201.6,
+      242.5,
+      211.6,
+      252.5
+     ]
+    },
+    {
+     "value": "guardian_and_conservator",
+     "label": "Guardian and Conservator",
+     "page": 0,
+     "rect": [
+      308.1,
+      242.5,
+      318.1,
+      252.5
+     ]
+    }
+   ]
+  },
+  "appointment_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      248.0,
+      257.0,
+      464.0,
+      270.0
+     ]
+    }
+   ]
   }
+ }
 }

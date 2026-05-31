@@ -1,1172 +1,1172 @@
 {
-  "form_id": "PP-401",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 5,
-  "source_fused": "PP-401 Petition for Appointment of Conservator (Rev. 07-01-19)_fused.pdf",
-  "fields": {
-    "county_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            110.0,
-            176.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            113.0,
-            542.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "respondent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            148.0,
-            324.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "petition_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "conservator",
-          "label": "Conservator",
-          "page": 0,
-          "rect": [
-            361.0,
-            170.9,
-            368.0,
-            177.9
-          ]
-        },
-        {
-          "value": "successor_conservator",
-          "label": "Successor Conservator",
-          "page": 0,
-          "rect": [
-            360.9,
-            182.4,
-            367.9,
-            189.4
-          ]
-        }
-      ]
-    },
-    "petitioner_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            240.7,
-            542.0,
-            282.0
-          ]
-        }
-      ]
-    },
-    "petitioner_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            309.6,
-            542.0,
-            341.0
-          ]
-        }
-      ]
-    },
-    "nominee_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            367.0,
-            542.0,
-            409.0
-          ]
-        }
-      ]
-    },
-    "respondent_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            436.1,
-            542.0,
-            478.0
-          ]
-        }
-      ]
-    },
-    "respondent_age": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            493.6,
-            542.0,
-            514.0
-          ]
-        }
-      ]
-    },
-    "nominee_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            528.1,
-            542.0,
-            559.0
-          ]
-        }
-      ]
-    },
-    "persons_to_notify": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            141.5,
-            203.8,
-            177.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            141.5,
-            385.7,
-            177.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            141.5,
-            545.2,
-            177.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            177.2,
-            203.8,
-            212.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            177.2,
-            385.7,
-            212.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            177.2,
-            545.2,
-            212.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            212.4,
-            203.8,
-            247.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            212.4,
-            385.7,
-            247.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            212.4,
-            545.2,
-            247.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            247.3,
-            203.8,
-            283.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            247.3,
-            385.7,
-            283.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            247.3,
-            545.2,
-            283.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            283.2,
-            203.8,
-            318.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            283.2,
-            385.7,
-            318.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            283.2,
-            545.2,
-            318.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            318.2,
-            203.8,
-            354.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            318.2,
-            385.7,
-            354.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            318.2,
-            545.2,
-            354.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            354.0,
-            203.8,
-            389.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            354.0,
-            385.7,
-            389.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            354.0,
-            545.2,
-            389.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            389.8,
-            203.8,
-            424.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            389.8,
-            385.7,
-            424.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            389.8,
-            545.2,
-            424.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            424.8,
-            203.8,
-            460.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            424.8,
-            385.7,
-            460.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            424.8,
-            545.2,
-            460.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            460.7,
-            203.8,
-            496.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            460.7,
-            385.7,
-            496.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            460.7,
-            545.2,
-            496.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            496.4,
-            203.8,
-            531.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            496.4,
-            385.7,
-            531.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            496.4,
-            545.2,
-            531.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            531.5,
-            203.8,
-            567.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            531.5,
-            385.7,
-            567.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            531.5,
-            545.2,
-            567.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            567.2,
-            203.8,
-            603.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            567.2,
-            385.7,
-            603.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            567.2,
-            545.2,
-            603.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            603.1,
-            203.8,
-            638.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            603.1,
-            385.7,
-            638.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            603.1,
-            545.2,
-            638.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            638.9,
-            203.8,
-            674.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            638.9,
-            385.7,
-            674.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            638.9,
-            545.2,
-            674.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            66.4,
-            674.6,
-            203.8,
-            710.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            203.8,
-            674.6,
-            385.7,
-            710.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            385.7,
-            674.6,
-            545.2,
-            710.5
-          ]
-        }
-      ]
-    },
-    "emergency_conservator": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 2,
-          "rect": [
-            270.5,
-            85.8,
-            277.5,
-            92.8
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 2,
-          "rect": [
-            301.2,
-            85.8,
-            308.2,
-            92.8
-          ]
-        }
-      ]
-    },
-    "emergency_conservator_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            133.0,
-            543.0,
-            217.0
-          ]
-        }
-      ]
-    },
-    "conservatorship_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "limited",
-          "label": "Limited",
-          "page": 2,
-          "rect": [
-            355.7,
-            223.8,
-            362.7,
-            230.8
-          ]
-        },
-        {
-          "value": "full",
-          "label": "Full",
-          "page": 2,
-          "rect": [
-            398.2,
-            223.8,
-            405.2,
-            230.8
-          ]
-        }
-      ]
-    },
-    "conservatorship_type_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            272.0,
-            543.0,
-            390.0
-          ]
-        }
-      ]
-    },
-    "respondent_need_description": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            502.0,
-            543.0,
-            774.0
-          ]
-        }
-      ]
-    },
-    "nominee_justification": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            86.4,
-            542.0,
-            160.0
-          ]
-        }
-      ]
-    },
-    "respondent_attorney": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 3,
-          "rect": [
-            338.1,
-            166.2,
-            345.1,
-            173.2
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 3,
-          "rect": [
-            372.6,
-            166.2,
-            379.6,
-            173.2
-          ]
-        }
-      ]
-    },
-    "respondent_attorney_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            268.5,
-            183.4,
-            275.5,
-            190.4
-          ]
-        }
-      ]
-    },
-    "respondent_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            256.0,
-            305.4,
-            286.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            256.0,
-            544.3,
-            286.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            286.0,
-            305.4,
-            316.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            286.0,
-            544.3,
-            316.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            316.0,
-            305.4,
-            346.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            316.0,
-            544.3,
-            346.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            346.0,
-            305.4,
-            376.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            346.0,
-            544.3,
-            376.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            376.0,
-            305.4,
-            406.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            376.0,
-            544.3,
-            406.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            406.0,
-            305.4,
-            436.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            406.0,
-            544.3,
-            436.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            436.0,
-            305.4,
-            466.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            436.0,
-            544.3,
-            466.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            66.4,
-            466.0,
-            305.4,
-            496.0
-          ]
-        },
-        {
-          "page": 3,
-          "rect": [
-            305.4,
-            466.0,
-            544.3,
-            496.0
-          ]
-        }
-      ]
-    },
-    "interpreter_required": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 3,
-          "rect": [
-            265.0,
-            521.8,
-            272.0,
-            528.8
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 3,
-          "rect": [
-            295.7,
-            521.7,
-            302.7,
-            528.7
-          ]
-        }
-      ]
-    },
-    "nominee_bankruptcy": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 3,
-          "rect": [
-            149.4,
-            567.6,
-            156.4,
-            574.6
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 3,
-          "rect": [
-            180.2,
-            567.7,
-            187.2,
-            574.7
-          ]
-        }
-      ]
-    },
-    "nominee_bankruptcy_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            579.9,
-            542.0,
-            601.0
-          ]
-        }
-      ]
-    },
-    "nominee_conviction": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 3,
-          "rect": [
-            319.4,
-            625.2,
-            326.4,
-            632.2
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 3,
-          "rect": [
-            350.2,
-            625.2,
-            357.2,
-            632.2
-          ]
-        }
-      ]
-    },
-    "nominee_conviction_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            637.4,
-            542.0,
-            668.0
-          ]
-        }
-      ]
-    },
-    "incapacity_basis": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "limitation_in_ability",
-          "label": "(1) limitation in ability to receive/evaluate information or make/communicate decisions",
-          "page": 3,
-          "rect": [
-            175.4,
-            681.4,
-            182.4,
-            688.4
-          ]
-        },
-        {
-          "value": "missing_detained",
-          "label": "(2) Respondent is missing, detained or unable to return to the United States",
-          "page": 3,
-          "rect": [
-            365.2,
-            704.5,
-            372.2,
-            711.5
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            98.0,
-            144.0,
-            229.0,
-            163.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            324.0,
-            145.0,
-            540.0,
-            164.0
-          ]
-        }
-      ]
-    },
-    "co_petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            324.0,
-            178.3,
-            540.0,
-            198.0
-          ]
-        }
-      ]
-    },
-    "attorney_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            324.0,
-            213.0,
-            540.0,
-            233.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            72.0,
-            303.0,
-            229.0,
-            319.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            72.0,
-            330.9,
-            229.0,
-            348.0
-          ]
-        },
-        {
-          "page": 4,
-          "rect": [
-            72.0,
-            359.9,
-            229.0,
-            377.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            72.0,
-            388.8,
-            229.0,
-            405.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            72.0,
-            416.9,
-            229.0,
-            433.0
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 4,
-          "rect": [
-            72.0,
-            444.9,
-            229.0,
-            462.0
-          ]
-        }
-      ]
+ "form_id": "PP-401",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 5,
+ "source_fused": "PP-401 Petition for Appointment of Conservator (Rev. 07-01-19)_fused.pdf",
+ "fields": {
+  "county_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      121.0,
+      176.0,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      542.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "respondent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      155.0,
+      324.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "petition_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "conservator",
+     "label": "Conservator",
+     "page": 0,
+     "rect": [
+      361.0,
+      170.9,
+      368.0,
+      177.9
+     ]
+    },
+    {
+     "value": "successor_conservator",
+     "label": "Successor Conservator",
+     "page": 0,
+     "rect": [
+      360.9,
+      182.4,
+      367.9,
+      189.4
+     ]
+    }
+   ]
+  },
+  "petitioner_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      240.7,
+      542.0,
+      282.0
+     ]
+    }
+   ]
+  },
+  "petitioner_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      309.6,
+      542.0,
+      341.0
+     ]
+    }
+   ]
+  },
+  "nominee_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      367.0,
+      542.0,
+      409.0
+     ]
+    }
+   ]
+  },
+  "respondent_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      436.1,
+      542.0,
+      478.0
+     ]
+    }
+   ]
+  },
+  "respondent_age": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      501.0,
+      542.0,
+      514.0
+     ]
+    }
+   ]
+  },
+  "nominee_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      528.1,
+      542.0,
+      559.0
+     ]
+    }
+   ]
+  },
+  "persons_to_notify": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      141.5,
+      203.8,
+      177.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      141.5,
+      385.7,
+      177.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      141.5,
+      545.2,
+      177.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      177.2,
+      203.8,
+      212.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      177.2,
+      385.7,
+      212.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      177.2,
+      545.2,
+      212.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      212.4,
+      203.8,
+      247.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      212.4,
+      385.7,
+      247.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      212.4,
+      545.2,
+      247.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      247.3,
+      203.8,
+      283.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      247.3,
+      385.7,
+      283.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      247.3,
+      545.2,
+      283.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      283.2,
+      203.8,
+      318.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      283.2,
+      385.7,
+      318.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      283.2,
+      545.2,
+      318.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      318.2,
+      203.8,
+      354.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      318.2,
+      385.7,
+      354.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      318.2,
+      545.2,
+      354.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      354.0,
+      203.8,
+      389.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      354.0,
+      385.7,
+      389.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      354.0,
+      545.2,
+      389.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      389.8,
+      203.8,
+      424.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      389.8,
+      385.7,
+      424.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      389.8,
+      545.2,
+      424.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      424.8,
+      203.8,
+      460.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      424.8,
+      385.7,
+      460.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      424.8,
+      545.2,
+      460.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      460.7,
+      203.8,
+      496.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      460.7,
+      385.7,
+      496.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      460.7,
+      545.2,
+      496.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      496.4,
+      203.8,
+      531.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      496.4,
+      385.7,
+      531.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      496.4,
+      545.2,
+      531.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      531.5,
+      203.8,
+      567.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      531.5,
+      385.7,
+      567.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      531.5,
+      545.2,
+      567.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      567.2,
+      203.8,
+      603.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      567.2,
+      385.7,
+      603.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      567.2,
+      545.2,
+      603.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      603.1,
+      203.8,
+      638.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      603.1,
+      385.7,
+      638.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      603.1,
+      545.2,
+      638.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      638.9,
+      203.8,
+      674.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      638.9,
+      385.7,
+      674.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      638.9,
+      545.2,
+      674.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      66.4,
+      674.6,
+      203.8,
+      710.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      203.8,
+      674.6,
+      385.7,
+      710.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      385.7,
+      674.6,
+      545.2,
+      710.5
+     ]
+    }
+   ]
+  },
+  "emergency_conservator": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 2,
+     "rect": [
+      270.5,
+      85.8,
+      277.5,
+      92.8
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 2,
+     "rect": [
+      301.2,
+      85.8,
+      308.2,
+      92.8
+     ]
+    }
+   ]
+  },
+  "emergency_conservator_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      133.0,
+      543.0,
+      217.0
+     ]
+    }
+   ]
+  },
+  "conservatorship_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "limited",
+     "label": "Limited",
+     "page": 2,
+     "rect": [
+      355.7,
+      223.8,
+      362.7,
+      230.8
+     ]
+    },
+    {
+     "value": "full",
+     "label": "Full",
+     "page": 2,
+     "rect": [
+      398.2,
+      223.8,
+      405.2,
+      230.8
+     ]
+    }
+   ]
+  },
+  "conservatorship_type_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      272.0,
+      543.0,
+      390.0
+     ]
+    }
+   ]
+  },
+  "respondent_need_description": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      502.0,
+      543.0,
+      774.0
+     ]
+    }
+   ]
+  },
+  "nominee_justification": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      86.4,
+      542.0,
+      160.0
+     ]
+    }
+   ]
+  },
+  "respondent_attorney": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 3,
+     "rect": [
+      338.1,
+      166.2,
+      345.1,
+      173.2
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 3,
+     "rect": [
+      372.6,
+      166.2,
+      379.6,
+      173.2
+     ]
+    }
+   ]
+  },
+  "respondent_attorney_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      268.5,
+      183.4,
+      275.5,
+      190.4
+     ]
+    }
+   ]
+  },
+  "respondent_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      256.0,
+      305.4,
+      286.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      256.0,
+      544.3,
+      286.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      286.0,
+      305.4,
+      316.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      286.0,
+      544.3,
+      316.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      316.0,
+      305.4,
+      346.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      316.0,
+      544.3,
+      346.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      346.0,
+      305.4,
+      376.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      346.0,
+      544.3,
+      376.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      376.0,
+      305.4,
+      406.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      376.0,
+      544.3,
+      406.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      406.0,
+      305.4,
+      436.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      406.0,
+      544.3,
+      436.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      436.0,
+      305.4,
+      466.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      436.0,
+      544.3,
+      466.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      66.4,
+      466.0,
+      305.4,
+      496.0
+     ]
+    },
+    {
+     "page": 3,
+     "rect": [
+      305.4,
+      466.0,
+      544.3,
+      496.0
+     ]
+    }
+   ]
+  },
+  "interpreter_required": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 3,
+     "rect": [
+      265.0,
+      521.8,
+      272.0,
+      528.8
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 3,
+     "rect": [
+      295.7,
+      521.7,
+      302.7,
+      528.7
+     ]
+    }
+   ]
+  },
+  "nominee_bankruptcy": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 3,
+     "rect": [
+      149.4,
+      567.6,
+      156.4,
+      574.6
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 3,
+     "rect": [
+      180.2,
+      567.7,
+      187.2,
+      574.7
+     ]
+    }
+   ]
+  },
+  "nominee_bankruptcy_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      588.0,
+      542.0,
+      601.0
+     ]
+    }
+   ]
+  },
+  "nominee_conviction": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 3,
+     "rect": [
+      319.4,
+      625.2,
+      326.4,
+      632.2
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 3,
+     "rect": [
+      350.2,
+      625.2,
+      357.2,
+      632.2
+     ]
+    }
+   ]
+  },
+  "nominee_conviction_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      637.4,
+      542.0,
+      668.0
+     ]
+    }
+   ]
+  },
+  "incapacity_basis": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "limitation_in_ability",
+     "label": "(1) limitation in ability to receive/evaluate information or make/communicate decisions",
+     "page": 3,
+     "rect": [
+      175.4,
+      681.4,
+      182.4,
+      688.4
+     ]
+    },
+    {
+     "value": "missing_detained",
+     "label": "(2) Respondent is missing, detained or unable to return to the United States",
+     "page": 3,
+     "rect": [
+      365.2,
+      704.5,
+      372.2,
+      711.5
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      98.0,
+      150.0,
+      229.0,
+      163.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      324.0,
+      151.0,
+      540.0,
+      164.0
+     ]
+    }
+   ]
+  },
+  "co_petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      324.0,
+      185.0,
+      540.0,
+      198.0
+     ]
+    }
+   ]
+  },
+  "attorney_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      324.0,
+      220.0,
+      540.0,
+      233.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      72.0,
+      306.0,
+      229.0,
+      319.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      72.0,
+      335.0,
+      229.0,
+      348.0
+     ]
+    },
+    {
+     "page": 4,
+     "rect": [
+      72.0,
+      364.0,
+      229.0,
+      377.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      72.0,
+      392.0,
+      229.0,
+      405.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      72.0,
+      420.0,
+      229.0,
+      433.0
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 4,
+     "rect": [
+      72.0,
+      449.0,
+      229.0,
+      462.0
+     ]
+    }
+   ]
   }
+ }
 }

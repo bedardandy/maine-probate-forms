@@ -1,1338 +1,1338 @@
 {
-  "form_id": "DE-405",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 3,
-  "source_fused": "DE-405 Inventory (Rev. 5-6-21)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            110.0,
-            176.0,
-            133.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            111.0,
-            542.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "estate_of_decedent": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            149.0,
-            315.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "real_prop_1_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            285.8,
-            288.5,
-            343.8
-          ]
-        }
-      ]
-    },
-    "real_prop_1_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            288.5,
-            285.8,
-            400.0,
-            343.8
-          ]
-        }
-      ]
-    },
-    "real_prop_1_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            285.8,
-            539.5,
-            343.8
-          ]
-        }
-      ]
-    },
-    "real_prop_2_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            343.8,
-            288.5,
-            401.9
-          ]
-        }
-      ]
-    },
-    "real_prop_2_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            288.5,
-            343.8,
-            400.0,
-            401.9
-          ]
-        }
-      ]
-    },
-    "real_prop_2_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            343.8,
-            539.5,
-            401.9
-          ]
-        }
-      ]
-    },
-    "real_prop_3_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            401.9,
-            288.5,
-            459.8
-          ]
-        }
-      ]
-    },
-    "real_prop_3_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            288.5,
-            401.9,
-            400.0,
-            459.8
-          ]
-        }
-      ]
-    },
-    "real_prop_3_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            401.9,
-            539.5,
-            459.8
-          ]
-        }
-      ]
-    },
-    "real_prop_4_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            459.8,
-            288.5,
-            517.8
-          ]
-        }
-      ]
-    },
-    "real_prop_4_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            288.5,
-            459.8,
-            400.0,
-            517.8
-          ]
-        }
-      ]
-    },
-    "real_prop_4_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            459.8,
-            539.5,
-            517.8
-          ]
-        }
-      ]
-    },
-    "real_prop_5_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            517.8,
-            288.5,
-            575.8
-          ]
-        }
-      ]
-    },
-    "real_prop_5_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            288.5,
-            517.8,
-            400.0,
-            575.8
-          ]
-        }
-      ]
-    },
-    "real_prop_5_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            517.8,
-            539.5,
-            575.8
-          ]
-        }
-      ]
-    },
-    "real_prop_6_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            127.3,
-            575.8,
-            288.5,
-            633.8
-          ]
-        }
-      ]
-    },
-    "real_prop_6_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            288.5,
-            575.8,
-            400.0,
-            633.8
-          ]
-        }
-      ]
-    },
-    "real_prop_6_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            575.8,
-            539.5,
-            633.8
-          ]
-        }
-      ]
-    },
-    "gross_value_real_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            635.0,
-            542.0,
-            656.0
-          ]
-        }
-      ]
-    },
-    "gross_value_real_encumbrances": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            294.7,
-            644.0,
-            400.0,
-            656.0
-          ]
-        }
-      ]
-    },
-    "tang_7_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            133.3,
-            318.0,
-            156.8
-          ]
-        }
-      ]
-    },
-    "tang_7_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            133.3,
-            438.4,
-            156.8
-          ]
-        }
-      ]
-    },
-    "tang_7_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            133.3,
-            554.3,
-            156.8
-          ]
-        }
-      ]
-    },
-    "tang_8_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            156.8,
-            318.0,
-            180.2
-          ]
-        }
-      ]
-    },
-    "tang_8_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            156.8,
-            438.4,
-            180.2
-          ]
-        }
-      ]
-    },
-    "tang_8_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            156.8,
-            554.3,
-            180.2
-          ]
-        }
-      ]
-    },
-    "tang_9_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            180.2,
-            318.0,
-            203.8
-          ]
-        }
-      ]
-    },
-    "tang_9_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            180.2,
-            438.4,
-            203.8
-          ]
-        }
-      ]
-    },
-    "tang_9_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            180.2,
-            554.3,
-            203.8
-          ]
-        }
-      ]
-    },
-    "tang_10_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            203.8,
-            318.0,
-            227.3
-          ]
-        }
-      ]
-    },
-    "tang_10_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            203.8,
-            438.4,
-            227.3
-          ]
-        }
-      ]
-    },
-    "tang_10_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            203.8,
-            554.3,
-            227.3
-          ]
-        }
-      ]
-    },
-    "tang_11_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            227.3,
-            318.0,
-            250.8
-          ]
-        }
-      ]
-    },
-    "tang_11_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            227.3,
-            438.4,
-            250.8
-          ]
-        }
-      ]
-    },
-    "tang_11_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            227.3,
-            554.3,
-            250.8
-          ]
-        }
-      ]
-    },
-    "tang_12_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            250.8,
-            318.0,
-            274.3
-          ]
-        }
-      ]
-    },
-    "tang_12_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            250.8,
-            438.4,
-            274.3
-          ]
-        }
-      ]
-    },
-    "tang_12_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            250.8,
-            554.3,
-            274.3
-          ]
-        }
-      ]
-    },
-    "tang_13_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            274.3,
-            318.0,
-            297.8
-          ]
-        }
-      ]
-    },
-    "tang_13_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            274.3,
-            438.4,
-            297.8
-          ]
-        }
-      ]
-    },
-    "tang_13_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            274.3,
-            554.3,
-            297.8
-          ]
-        }
-      ]
-    },
-    "tang_14_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            297.8,
-            318.0,
-            321.2
-          ]
-        }
-      ]
-    },
-    "tang_14_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            297.8,
-            438.4,
-            321.2
-          ]
-        }
-      ]
-    },
-    "tang_14_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            297.8,
-            554.3,
-            321.2
-          ]
-        }
-      ]
-    },
-    "tang_15_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            321.2,
-            318.0,
-            344.8
-          ]
-        }
-      ]
-    },
-    "tang_15_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            321.2,
-            438.4,
-            344.8
-          ]
-        }
-      ]
-    },
-    "tang_15_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            321.2,
-            554.3,
-            344.8
-          ]
-        }
-      ]
-    },
-    "tang_16_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            344.8,
-            318.0,
-            368.3
-          ]
-        }
-      ]
-    },
-    "tang_16_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            344.8,
-            438.4,
-            368.3
-          ]
-        }
-      ]
-    },
-    "tang_16_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            344.8,
-            554.3,
-            368.3
-          ]
-        }
-      ]
-    },
-    "intang_18_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            429.1,
-            318.0,
-            452.5
-          ]
-        }
-      ]
-    },
-    "intang_18_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            429.1,
-            438.4,
-            452.5
-          ]
-        }
-      ]
-    },
-    "intang_18_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            429.1,
-            554.3,
-            452.5
-          ]
-        }
-      ]
-    },
-    "intang_19_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            452.5,
-            318.0,
-            476.0
-          ]
-        }
-      ]
-    },
-    "intang_19_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            452.5,
-            438.4,
-            476.0
-          ]
-        }
-      ]
-    },
-    "intang_19_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            452.5,
-            554.3,
-            476.0
-          ]
-        }
-      ]
-    },
-    "intang_20_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            476.0,
-            318.0,
-            499.6
-          ]
-        }
-      ]
-    },
-    "intang_20_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            476.0,
-            438.4,
-            499.6
-          ]
-        }
-      ]
-    },
-    "intang_20_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            476.0,
-            554.3,
-            499.6
-          ]
-        }
-      ]
-    },
-    "intang_21_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            499.6,
-            318.0,
-            523.1
-          ]
-        }
-      ]
-    },
-    "intang_21_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            499.6,
-            438.4,
-            523.1
-          ]
-        }
-      ]
-    },
-    "intang_21_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            499.6,
-            554.3,
-            523.1
-          ]
-        }
-      ]
-    },
-    "intang_22_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            523.1,
-            318.0,
-            546.6
-          ]
-        }
-      ]
-    },
-    "intang_22_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            523.1,
-            438.4,
-            546.6
-          ]
-        }
-      ]
-    },
-    "intang_22_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            523.1,
-            554.3,
-            546.6
-          ]
-        }
-      ]
-    },
-    "intang_23_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            546.6,
-            318.0,
-            570.0
-          ]
-        }
-      ]
-    },
-    "intang_23_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            546.6,
-            438.4,
-            570.0
-          ]
-        }
-      ]
-    },
-    "intang_23_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            546.6,
-            554.3,
-            570.0
-          ]
-        }
-      ]
-    },
-    "intang_24_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            570.0,
-            318.0,
-            593.5
-          ]
-        }
-      ]
-    },
-    "intang_24_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            570.0,
-            438.4,
-            593.5
-          ]
-        }
-      ]
-    },
-    "intang_24_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            570.0,
-            554.3,
-            593.5
-          ]
-        }
-      ]
-    },
-    "intang_25_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.4,
-            593.5,
-            318.0,
-            617.0
-          ]
-        }
-      ]
-    },
-    "intang_25_val": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            318.0,
-            593.5,
-            438.4,
-            617.0
-          ]
-        }
-      ]
-    },
-    "intang_25_enc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            593.5,
-            554.3,
-            617.0
-          ]
-        }
-      ]
-    },
-    "gross_value_personal_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            438.4,
-            623.0,
-            554.3,
-            640.0
-          ]
-        }
-      ]
-    },
-    "gross_value_personal_encumbrances": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.2,
-            628.0,
-            428.0,
-            640.0
-          ]
-        }
-      ]
-    },
-    "calc_gross_real_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            297.8,
-            94.0,
-            436.0,
-            106.0
-          ]
-        }
-      ]
-    },
-    "calc_gross_personal_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            297.8,
-            124.0,
-            436.0,
-            136.0
-          ]
-        }
-      ]
-    },
-    "calc_gross_inventory": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            297.8,
-            150.0,
-            436.0,
-            162.0
-          ]
-        }
-      ]
-    },
-    "calc_gross_real_encumbrances": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            297.8,
-            178.0,
-            436.0,
-            190.0
-          ]
-        }
-      ]
-    },
-    "calc_gross_personal_encumbrances": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            297.8,
-            208.0,
-            436.0,
-            220.0
-          ]
-        }
-      ]
-    },
-    "calc_net_inventory": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            297.8,
-            234.0,
-            436.0,
-            246.0
-          ]
-        }
-      ]
-    },
-    "appraisers_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            288.9,
-            542.0,
-            359.0
-          ]
-        }
-      ]
-    },
-    "items_appraised_by_pr": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            375.7,
-            162.6,
-            392.1
-          ]
-        }
-      ]
-    },
-    "pr_dated": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            95.0,
-            411.0,
-            283.0,
-            430.0
-          ]
-        }
-      ]
-    },
-    "pr_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            359.0,
-            411.0,
-            542.0,
-            430.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            95.0,
-            466.0,
-            305.0,
-            482.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            95.0,
-            493.7,
-            305.0,
-            512.0
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            95.0,
-            523.3,
-            305.0,
-            541.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            95.0,
-            553.0,
-            305.0,
-            570.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "injected": true,
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            94.6,
-            583.3,
-            294.6,
-            596.3
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "injected": true,
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            94.6,
-            611.7,
-            294.6,
-            624.7
-          ]
-        }
-      ]
+ "form_id": "DE-405",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 3,
+ "source_fused": "DE-405 Inventory (Rev. 5-6-21)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      120.0,
+      176.0,
+      133.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      542.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "estate_of_decedent": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      155.0,
+      315.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "real_prop_1_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      285.8,
+      288.5,
+      343.8
+     ]
+    }
+   ]
+  },
+  "real_prop_1_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      288.5,
+      285.8,
+      400.0,
+      343.8
+     ]
+    }
+   ]
+  },
+  "real_prop_1_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      285.8,
+      539.5,
+      343.8
+     ]
+    }
+   ]
+  },
+  "real_prop_2_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      343.8,
+      288.5,
+      401.9
+     ]
+    }
+   ]
+  },
+  "real_prop_2_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      288.5,
+      343.8,
+      400.0,
+      401.9
+     ]
+    }
+   ]
+  },
+  "real_prop_2_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      343.8,
+      539.5,
+      401.9
+     ]
+    }
+   ]
+  },
+  "real_prop_3_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      401.9,
+      288.5,
+      459.8
+     ]
+    }
+   ]
+  },
+  "real_prop_3_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      288.5,
+      401.9,
+      400.0,
+      459.8
+     ]
+    }
+   ]
+  },
+  "real_prop_3_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      401.9,
+      539.5,
+      459.8
+     ]
+    }
+   ]
+  },
+  "real_prop_4_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      459.8,
+      288.5,
+      517.8
+     ]
+    }
+   ]
+  },
+  "real_prop_4_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      288.5,
+      459.8,
+      400.0,
+      517.8
+     ]
+    }
+   ]
+  },
+  "real_prop_4_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      459.8,
+      539.5,
+      517.8
+     ]
+    }
+   ]
+  },
+  "real_prop_5_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      517.8,
+      288.5,
+      575.8
+     ]
+    }
+   ]
+  },
+  "real_prop_5_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      288.5,
+      517.8,
+      400.0,
+      575.8
+     ]
+    }
+   ]
+  },
+  "real_prop_5_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      517.8,
+      539.5,
+      575.8
+     ]
+    }
+   ]
+  },
+  "real_prop_6_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      127.3,
+      575.8,
+      288.5,
+      633.8
+     ]
+    }
+   ]
+  },
+  "real_prop_6_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      288.5,
+      575.8,
+      400.0,
+      633.8
+     ]
+    }
+   ]
+  },
+  "real_prop_6_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      575.8,
+      539.5,
+      633.8
+     ]
+    }
+   ]
+  },
+  "gross_value_real_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      643.0,
+      542.0,
+      656.0
+     ]
+    }
+   ]
+  },
+  "gross_value_real_encumbrances": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      294.7,
+      643.0,
+      400.0,
+      656.0
+     ]
+    }
+   ]
+  },
+  "tang_7_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      143.8,
+      318.0,
+      156.8
+     ]
+    }
+   ]
+  },
+  "tang_7_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      143.8,
+      438.4,
+      156.8
+     ]
+    }
+   ]
+  },
+  "tang_7_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      143.8,
+      554.3,
+      156.8
+     ]
+    }
+   ]
+  },
+  "tang_8_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      167.2,
+      318.0,
+      180.2
+     ]
+    }
+   ]
+  },
+  "tang_8_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      167.2,
+      438.4,
+      180.2
+     ]
+    }
+   ]
+  },
+  "tang_8_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      167.2,
+      554.3,
+      180.2
+     ]
+    }
+   ]
+  },
+  "tang_9_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      190.8,
+      318.0,
+      203.8
+     ]
+    }
+   ]
+  },
+  "tang_9_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      190.8,
+      438.4,
+      203.8
+     ]
+    }
+   ]
+  },
+  "tang_9_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      190.8,
+      554.3,
+      203.8
+     ]
+    }
+   ]
+  },
+  "tang_10_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      214.3,
+      318.0,
+      227.3
+     ]
+    }
+   ]
+  },
+  "tang_10_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      214.3,
+      438.4,
+      227.3
+     ]
+    }
+   ]
+  },
+  "tang_10_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      214.3,
+      554.3,
+      227.3
+     ]
+    }
+   ]
+  },
+  "tang_11_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      237.8,
+      318.0,
+      250.8
+     ]
+    }
+   ]
+  },
+  "tang_11_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      237.8,
+      438.4,
+      250.8
+     ]
+    }
+   ]
+  },
+  "tang_11_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      237.8,
+      554.3,
+      250.8
+     ]
+    }
+   ]
+  },
+  "tang_12_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      261.3,
+      318.0,
+      274.3
+     ]
+    }
+   ]
+  },
+  "tang_12_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      261.3,
+      438.4,
+      274.3
+     ]
+    }
+   ]
+  },
+  "tang_12_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      261.3,
+      554.3,
+      274.3
+     ]
+    }
+   ]
+  },
+  "tang_13_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      284.8,
+      318.0,
+      297.8
+     ]
+    }
+   ]
+  },
+  "tang_13_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      284.8,
+      438.4,
+      297.8
+     ]
+    }
+   ]
+  },
+  "tang_13_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      284.8,
+      554.3,
+      297.8
+     ]
+    }
+   ]
+  },
+  "tang_14_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      308.2,
+      318.0,
+      321.2
+     ]
+    }
+   ]
+  },
+  "tang_14_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      308.2,
+      438.4,
+      321.2
+     ]
+    }
+   ]
+  },
+  "tang_14_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      308.2,
+      554.3,
+      321.2
+     ]
+    }
+   ]
+  },
+  "tang_15_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      331.8,
+      318.0,
+      344.8
+     ]
+    }
+   ]
+  },
+  "tang_15_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      331.8,
+      438.4,
+      344.8
+     ]
+    }
+   ]
+  },
+  "tang_15_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      331.8,
+      554.3,
+      344.8
+     ]
+    }
+   ]
+  },
+  "tang_16_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      355.3,
+      318.0,
+      368.3
+     ]
+    }
+   ]
+  },
+  "tang_16_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      355.3,
+      438.4,
+      368.3
+     ]
+    }
+   ]
+  },
+  "tang_16_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      355.3,
+      554.3,
+      368.3
+     ]
+    }
+   ]
+  },
+  "intang_18_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      439.5,
+      318.0,
+      452.5
+     ]
+    }
+   ]
+  },
+  "intang_18_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      439.5,
+      438.4,
+      452.5
+     ]
+    }
+   ]
+  },
+  "intang_18_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      439.5,
+      554.3,
+      452.5
+     ]
+    }
+   ]
+  },
+  "intang_19_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      463.0,
+      318.0,
+      476.0
+     ]
+    }
+   ]
+  },
+  "intang_19_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      463.0,
+      438.4,
+      476.0
+     ]
+    }
+   ]
+  },
+  "intang_19_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      463.0,
+      554.3,
+      476.0
+     ]
+    }
+   ]
+  },
+  "intang_20_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      486.6,
+      318.0,
+      499.6
+     ]
+    }
+   ]
+  },
+  "intang_20_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      486.6,
+      438.4,
+      499.6
+     ]
+    }
+   ]
+  },
+  "intang_20_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      486.6,
+      554.3,
+      499.6
+     ]
+    }
+   ]
+  },
+  "intang_21_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      510.1,
+      318.0,
+      523.1
+     ]
+    }
+   ]
+  },
+  "intang_21_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      510.1,
+      438.4,
+      523.1
+     ]
+    }
+   ]
+  },
+  "intang_21_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      510.1,
+      554.3,
+      523.1
+     ]
+    }
+   ]
+  },
+  "intang_22_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      533.6,
+      318.0,
+      546.6
+     ]
+    }
+   ]
+  },
+  "intang_22_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      533.6,
+      438.4,
+      546.6
+     ]
+    }
+   ]
+  },
+  "intang_22_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      533.6,
+      554.3,
+      546.6
+     ]
+    }
+   ]
+  },
+  "intang_23_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      557.0,
+      318.0,
+      570.0
+     ]
+    }
+   ]
+  },
+  "intang_23_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      557.0,
+      438.4,
+      570.0
+     ]
+    }
+   ]
+  },
+  "intang_23_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      557.0,
+      554.3,
+      570.0
+     ]
+    }
+   ]
+  },
+  "intang_24_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      580.5,
+      318.0,
+      593.5
+     ]
+    }
+   ]
+  },
+  "intang_24_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      580.5,
+      438.4,
+      593.5
+     ]
+    }
+   ]
+  },
+  "intang_24_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      580.5,
+      554.3,
+      593.5
+     ]
+    }
+   ]
+  },
+  "intang_25_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.4,
+      604.0,
+      318.0,
+      617.0
+     ]
+    }
+   ]
+  },
+  "intang_25_val": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      318.0,
+      604.0,
+      438.4,
+      617.0
+     ]
+    }
+   ]
+  },
+  "intang_25_enc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      604.0,
+      554.3,
+      617.0
+     ]
+    }
+   ]
+  },
+  "gross_value_personal_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      438.4,
+      627.0,
+      554.3,
+      640.0
+     ]
+    }
+   ]
+  },
+  "gross_value_personal_encumbrances": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.2,
+      627.0,
+      428.0,
+      640.0
+     ]
+    }
+   ]
+  },
+  "calc_gross_real_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      297.8,
+      93.0,
+      436.0,
+      106.0
+     ]
+    }
+   ]
+  },
+  "calc_gross_personal_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      297.8,
+      123.0,
+      436.0,
+      136.0
+     ]
+    }
+   ]
+  },
+  "calc_gross_inventory": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      297.8,
+      149.0,
+      436.0,
+      162.0
+     ]
+    }
+   ]
+  },
+  "calc_gross_real_encumbrances": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      297.8,
+      177.0,
+      436.0,
+      190.0
+     ]
+    }
+   ]
+  },
+  "calc_gross_personal_encumbrances": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      297.8,
+      207.0,
+      436.0,
+      220.0
+     ]
+    }
+   ]
+  },
+  "calc_net_inventory": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      297.8,
+      233.0,
+      436.0,
+      246.0
+     ]
+    }
+   ]
+  },
+  "appraisers_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      288.9,
+      542.0,
+      359.0
+     ]
+    }
+   ]
+  },
+  "items_appraised_by_pr": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      379.1,
+      162.6,
+      392.1
+     ]
+    }
+   ]
+  },
+  "pr_dated": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      95.0,
+      417.0,
+      283.0,
+      430.0
+     ]
+    }
+   ]
+  },
+  "pr_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      359.0,
+      417.0,
+      542.0,
+      430.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      95.0,
+      469.0,
+      305.0,
+      482.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      95.0,
+      499.0,
+      305.0,
+      512.0
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      95.0,
+      528.0,
+      305.0,
+      541.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      95.0,
+      557.0,
+      305.0,
+      570.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "injected": true,
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      94.6,
+      583.3,
+      294.6,
+      596.3
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "injected": true,
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      94.6,
+      611.7,
+      294.6,
+      624.7
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,254 +1,254 @@
 {
-  "form_id": "APP-1",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "APP-1 Notice of Appeal to Law Court (Rev. 9-12-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            117.0,
-            153.0,
-            136.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            415.0,
-            117.0,
-            475.0,
-            136.0
-          ]
-        }
-      ]
-    },
-    "case_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            151.0,
-            273.0,
-            170.0
-          ]
-        }
-      ]
-    },
-    "appellant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            174.0,
-            238.0,
-            193.0
-          ]
-        }
-      ]
-    },
-    "appellant_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            253.0,
-            174.0,
-            467.0,
-            193.0
-          ]
-        }
-      ]
-    },
-    "judgment_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            376.0,
-            196.5,
-            456.0,
-            208.5
-          ]
-        }
-      ]
-    },
-    "statement_of_issues": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            242.5,
-            542.0,
-            334.0
-          ]
-        }
-      ]
-    },
-    "transcript_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "transcript_attached",
-          "label": "The Transcript Order form is attached.",
-          "page": 0,
-          "rect": [
-            94.4,
-            368.0,
-            103.4,
-            377.0
-          ]
-        },
-        {
-          "value": "no_transcript",
-          "label": "No transcript will be ordered.",
-          "page": 0,
-          "rect": [
-            94.4,
-            381.3,
-            103.4,
-            390.3
-          ]
-        },
-        {
-          "value": "statement_in_lieu",
-          "label": "No electronic or other recording of the proceedings can be prepared; a statement in lieu of a transcript will be prepared pursuant to M.R.App.P. 5(d).",
-          "page": 0,
-          "rect": [
-            94.4,
-            394.6,
-            103.4,
-            403.6
-          ]
-        }
-      ]
-    },
-    "filing_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            103.0,
-            435.0,
-            238.0,
-            453.0
-          ]
-        }
-      ]
-    },
-    "appellant_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            304.0,
-            435.0,
-            519.0,
-            454.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            547.3,
-            238.0,
-            563.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            575.2,
-            238.0,
-            592.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            604.1,
-            238.0,
-            621.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            633.1,
-            238.0,
-            649.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            661.1,
-            238.0,
-            677.0
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            689.2,
-            238.0,
-            706.0
-          ]
-        }
-      ]
+ "form_id": "APP-1",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "APP-1 Notice of Appeal to Law Court (Rev. 9-12-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      123.0,
+      153.0,
+      136.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      415.0,
+      123.0,
+      475.0,
+      136.0
+     ]
+    }
+   ]
+  },
+  "case_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      157.0,
+      273.0,
+      170.0
+     ]
+    }
+   ]
+  },
+  "appellant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      180.0,
+      238.0,
+      193.0
+     ]
+    }
+   ]
+  },
+  "appellant_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      253.0,
+      180.0,
+      467.0,
+      193.0
+     ]
+    }
+   ]
+  },
+  "judgment_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      376.0,
+      195.5,
+      456.0,
+      208.5
+     ]
+    }
+   ]
+  },
+  "statement_of_issues": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      242.5,
+      542.0,
+      334.0
+     ]
+    }
+   ]
+  },
+  "transcript_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "transcript_attached",
+     "label": "The Transcript Order form is attached.",
+     "page": 0,
+     "rect": [
+      94.4,
+      368.0,
+      103.4,
+      377.0
+     ]
+    },
+    {
+     "value": "no_transcript",
+     "label": "No transcript will be ordered.",
+     "page": 0,
+     "rect": [
+      94.4,
+      381.3,
+      103.4,
+      390.3
+     ]
+    },
+    {
+     "value": "statement_in_lieu",
+     "label": "No electronic or other recording of the proceedings can be prepared; a statement in lieu of a transcript will be prepared pursuant to M.R.App.P. 5(d).",
+     "page": 0,
+     "rect": [
+      94.4,
+      394.6,
+      103.4,
+      403.6
+     ]
+    }
+   ]
+  },
+  "filing_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      103.0,
+      440.0,
+      238.0,
+      453.0
+     ]
+    }
+   ]
+  },
+  "appellant_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      304.0,
+      441.0,
+      519.0,
+      454.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      550.0,
+      238.0,
+      563.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      579.0,
+      238.0,
+      592.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      608.0,
+      238.0,
+      621.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      636.0,
+      238.0,
+      649.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      664.0,
+      238.0,
+      677.0
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      693.0,
+      238.0,
+      706.0
+     ]
+    }
+   ]
   }
+ }
 }

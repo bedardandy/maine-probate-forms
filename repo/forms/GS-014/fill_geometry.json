@@ -1,1453 +1,1453 @@
 {
-  "form_id": "GS-014",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 3,
-  "source_fused": "GS-014 Status Report of the Guardian _fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.1,
-            76.9,
-            208.0,
-            88.9
-          ]
-        }
-      ]
-    },
-    "location": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            76.9,
-            576.0,
-            88.9
-          ]
-        }
-      ]
-    },
-    "docket_no_probate": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.1,
-            89.5,
-            208.0,
-            101.5
-          ]
-        }
-      ]
-    },
-    "docket_no_district": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            89.5,
-            576.0,
-            101.5
-          ]
-        }
-      ]
-    },
-    "minor_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.1,
-            122.0,
-            239.0,
-            136.0
-          ]
-        }
-      ]
-    },
-    "guardianship_grant_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            309.0,
-            175.0,
-            441.0,
-            189.0
-          ]
-        }
-      ]
-    },
-    "minor_present_age": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            233.0,
-            219.0,
-            316.0,
-            233.0
-          ]
-        }
-      ]
-    },
-    "minor_date_of_birth": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            219.0,
-            576.0,
-            233.0
-          ]
-        }
-      ]
-    },
-    "minor_current_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            91.1,
-            266.2,
-            576.0,
-            278.2
-          ]
-        }
-      ]
-    },
-    "address_since_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            280.0,
-            576.0,
-            292.0
-          ]
-        }
-      ]
-    },
-    "mental_health_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "same",
-          "label": "Remained about the same",
-          "page": 0,
-          "rect": [
-            90.5,
-            368.9,
-            100.5,
-            378.9
-          ]
-        },
-        {
-          "value": "improved",
-          "label": "Improved",
-          "page": 0,
-          "rect": [
-            90.5,
-            385.9,
-            100.5,
-            395.9
-          ]
-        },
-        {
-          "value": "deteriorated",
-          "label": "Deteriorated",
-          "page": 0,
-          "rect": [
-            90.5,
-            402.6,
-            100.5,
-            412.6
-          ]
-        }
-      ]
-    },
-    "mental_health_improved_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            207.1,
-            384.3,
-            555.4,
-            398.8
-          ]
-        }
-      ]
-    },
-    "mental_health_deteriorated_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            225.4,
-            401.1,
-            554.8,
-            415.6
-          ]
-        }
-      ]
-    },
-    "physical_health_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "same",
-          "label": "Remained about the same",
-          "page": 0,
-          "rect": [
-            90.4,
-            448.2,
-            100.4,
-            458.2
-          ]
-        },
-        {
-          "value": "improved",
-          "label": "Improved",
-          "page": 0,
-          "rect": [
-            90.4,
-            465.1,
-            100.4,
-            475.1
-          ]
-        },
-        {
-          "value": "deteriorated",
-          "label": "Deteriorated",
-          "page": 0,
-          "rect": [
-            90.5,
-            482.2,
-            100.5,
-            492.2
-          ]
-        }
-      ]
-    },
-    "physical_health_improved_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            207.1,
-            463.8,
-            555.4,
-            478.4
-          ]
-        }
-      ]
-    },
-    "physical_health_deteriorated_desc": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            225.4,
-            480.6,
-            554.8,
-            495.1
-          ]
-        }
-      ]
-    },
-    "treated_by_physician": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.5,
-            528.1,
-            100.5,
-            538.1
-          ]
-        }
-      ]
-    },
-    "physician_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            309.0,
-            526.5,
-            576.0,
-            539.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            543.1,
-            576.0,
-            555.1
-          ]
-        }
-      ]
-    },
-    "treated_by_counselor": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.5,
-            559.6,
-            100.5,
-            569.6
-          ]
-        }
-      ]
-    },
-    "counselor_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            309.0,
-            558.0,
-            576.0,
-            571.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.1,
-            574.5,
-            576.0,
-            586.5
-          ]
-        }
-      ]
-    },
-    "treated_by_case_worker": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.5,
-            591.0,
-            100.5,
-            601.0
-          ]
-        }
-      ]
-    },
-    "case_worker_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            309.0,
-            589.3,
-            576.0,
-            602.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            606.0,
-            576.0,
-            618.0
-          ]
-        }
-      ]
-    },
-    "treated_by_dentist": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.5,
-            622.4,
-            100.5,
-            632.4
-          ]
-        }
-      ]
-    },
-    "dentist_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            316.5,
-            620.8,
-            553.7,
-            635.3
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            637.3,
-            576.0,
-            649.3
-          ]
-        }
-      ]
-    },
-    "treated_by_other": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.5,
-            653.7,
-            100.5,
-            663.7
-          ]
-        }
-      ]
-    },
-    "other_treatment_type": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            121.0,
-            652.2,
-            239.0,
-            665.0
-          ]
-        }
-      ]
-    },
-    "other_treatment_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            652.2,
-            576.0,
-            665.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            91.1,
-            668.7,
-            576.0,
-            680.7
-          ]
-        }
-      ]
-    },
-    "minor_services_participation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            309.0,
-            695.0,
-            576.0,
-            709.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            712.7,
-            576.0,
-            724.7
-          ]
-        }
-      ]
-    },
-    "school_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            80.7,
-            558.0,
-            92.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            95.4,
-            558.0,
-            107.4
-          ]
-        }
-      ]
-    },
-    "minor_grade_level": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            180.0,
-            109.9,
-            246.0,
-            121.9
-          ]
-        }
-      ]
-    },
-    "minor_educational_achievements": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            248.0,
-            121.0,
-            562.3,
-            135.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            138.9,
-            558.0,
-            150.9
-          ]
-        }
-      ]
-    },
-    "minor_educational_needs": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            153.6,
-            558.0,
-            165.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            168.1,
-            558.0,
-            180.1
-          ]
-        }
-      ]
-    },
-    "needs_being_met": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            214.7,
-            183.9,
-            224.7,
-            193.9
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            247.2,
-            183.9,
-            257.2,
-            193.9
-          ]
-        }
-      ]
-    },
-    "needs_not_met_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            316.0,
-            182.6,
-            558.0,
-            196.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            199.2,
-            558.0,
-            211.2
-          ]
-        }
-      ]
-    },
-    "legal_parent_1_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            134.8,
-            300.6,
-            283.3,
-            315.7
-          ]
-        }
-      ]
-    },
-    "legal_parent_2_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            283.3,
-            300.6,
-            431.6,
-            315.7
-          ]
-        }
-      ]
-    },
-    "legal_parent_3_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            431.6,
-            300.6,
-            562.3,
-            315.7
-          ]
-        }
-      ]
-    },
-    "legal_parent_1_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            134.8,
-            315.7,
-            283.3,
-            345.2
-          ]
-        }
-      ]
-    },
-    "legal_parent_2_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            283.3,
-            315.7,
-            431.6,
-            345.2
-          ]
-        }
-      ]
-    },
-    "legal_parent_3_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            431.6,
-            315.7,
-            562.3,
-            345.2
-          ]
-        }
-      ]
-    },
-    "legal_parent_1_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            134.8,
-            345.2,
-            283.3,
-            360.4
-          ]
-        }
-      ]
-    },
-    "legal_parent_2_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            283.3,
-            345.2,
-            431.6,
-            360.4
-          ]
-        }
-      ]
-    },
-    "legal_parent_3_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            431.6,
-            345.2,
-            562.3,
-            360.4
-          ]
-        }
-      ]
-    },
-    "contact_with_parents": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            293.8,
-            377.9,
-            303.8,
-            387.9
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            329.2,
-            377.9,
-            339.2,
-            387.9
-          ]
-        }
-      ]
-    },
-    "parent_contact_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            407.9,
-            558.0,
-            419.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            422.5,
-            558.0,
-            434.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            437.0,
-            558.0,
-            449.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            451.5,
-            558.0,
-            463.5
-          ]
-        }
-      ]
-    },
-    "parent_decision_making": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            383.9,
-            482.0,
-            393.9,
-            492.0
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            419.3,
-            482.0,
-            429.3,
-            492.0
-          ]
-        }
-      ]
-    },
-    "parent_decision_making_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            497.3,
-            558.0,
-            509.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            512.0,
-            558.0,
-            524.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            526.5,
-            558.0,
-            538.5
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            541.2,
-            558.0,
-            553.2
-          ]
-        }
-      ]
-    },
-    "parent_financial_support": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            378.8,
-            571.5,
-            388.8,
-            581.5
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            414.0,
-            571.5,
-            424.0,
-            581.5
-          ]
-        }
-      ]
-    },
-    "parent_financial_support_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            586.8,
-            558.0,
-            598.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            601.7,
-            558.0,
-            613.7
-          ]
-        }
-      ]
-    },
-    "guardian_responsibilities": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            215.4,
-            657.0,
-            562.3,
-            671.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            674.4,
-            558.0,
-            686.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            688.9,
-            558.0,
-            700.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            703.4,
-            558.0,
-            715.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            90.0,
-            717.9,
-            558.0,
-            729.9
-          ]
-        }
-      ]
-    },
-    "funds_received_amount_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            109.2,
-            246.0,
-            124.3
-          ]
-        }
-      ]
-    },
-    "funds_received_source_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            246.0,
-            109.2,
-            401.5,
-            124.3
-          ]
-        }
-      ]
-    },
-    "funds_received_purpose_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            401.5,
-            109.2,
-            557.5,
-            124.3
-          ]
-        }
-      ]
-    },
-    "funds_received_amount_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            124.3,
-            246.0,
-            139.3
-          ]
-        }
-      ]
-    },
-    "funds_received_source_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            246.0,
-            124.3,
-            401.5,
-            139.3
-          ]
-        }
-      ]
-    },
-    "funds_received_purpose_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            401.5,
-            124.3,
-            557.5,
-            139.3
-          ]
-        }
-      ]
-    },
-    "funds_received_amount_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            139.3,
-            246.0,
-            154.3
-          ]
-        }
-      ]
-    },
-    "funds_received_source_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            246.0,
-            139.3,
-            401.5,
-            154.3
-          ]
-        }
-      ]
-    },
-    "funds_received_purpose_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            401.5,
-            139.3,
-            557.5,
-            154.3
-          ]
-        }
-      ]
-    },
-    "funds_received_amount_4": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            154.3,
-            246.0,
-            169.4
-          ]
-        }
-      ]
-    },
-    "funds_received_source_4": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            246.0,
-            154.3,
-            401.5,
-            169.4
-          ]
-        }
-      ]
-    },
-    "funds_received_purpose_4": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            401.5,
-            154.3,
-            557.5,
-            169.4
-          ]
-        }
-      ]
-    },
-    "funds_received_amount_5": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            169.4,
-            246.0,
-            184.4
-          ]
-        }
-      ]
-    },
-    "funds_received_source_5": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            246.0,
-            169.4,
-            401.5,
-            184.4
-          ]
-        }
-      ]
-    },
-    "funds_received_purpose_5": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            401.5,
-            169.4,
-            557.5,
-            184.4
-          ]
-        }
-      ]
-    },
-    "other_minor_information": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            246.0,
-            242.0,
-            557.5,
-            255.0
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            258.8,
-            559.0,
-            270.8
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            273.3,
-            559.0,
-            285.3
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            288.0,
-            559.0,
-            300.0
-          ]
-        }
-      ]
-    },
-    "conclusions_recommendations": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            360.7,
-            559.0,
-            372.7
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            375.2,
-            559.0,
-            387.2
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            389.7,
-            559.0,
-            401.7
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            404.2,
-            559.0,
-            416.2
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            418.9,
-            559.0,
-            430.9
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            433.4,
-            559.0,
-            445.4
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            447.9,
-            559.0,
-            459.9
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            462.4,
-            559.0,
-            474.4
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            477.1,
-            559.0,
-            489.1
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            491.6,
-            559.0,
-            503.6
-          ]
-        }
-      ]
-    },
-    "guardian_statement_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            90.0,
-            532.0,
-            559.0,
-            546.0
-          ]
-        }
-      ]
-    },
-    "statement_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            116.0,
-            576.0,
-            246.0,
-            590.0
-          ]
-        }
-      ]
-    },
-    "guardian_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            342.0,
-            576.0,
-            559.0,
-            590.0
-          ]
-        }
-      ]
-    },
-    "co_guardian_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            342.0,
-            608.0,
-            559.0,
-            620.0
-          ]
-        }
-      ]
-    },
-    "guardian_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            342.0,
-            637.0,
-            559.0,
-            649.0
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            342.0,
-            651.5,
-            559.0,
-            663.5
-          ]
-        }
-      ]
-    },
-    "guardian_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            342.0,
-            680.7,
-            559.0,
-            692.7
-          ]
-        }
-      ]
-    },
-    "guardian_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            342.0,
-            709.7,
-            559.0,
-            721.7
-          ]
-        }
-      ]
+ "form_id": "GS-014",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 3,
+ "source_fused": "GS-014 Status Report of the Guardian _fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.1,
+      75.9,
+      208.0,
+      88.9
+     ]
     }
+   ]
+  },
+  "location": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      75.9,
+      576.0,
+      88.9
+     ]
+    }
+   ]
+  },
+  "docket_no_probate": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.1,
+      88.5,
+      208.0,
+      101.5
+     ]
+    }
+   ]
+  },
+  "docket_no_district": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      88.5,
+      576.0,
+      101.5
+     ]
+    }
+   ]
+  },
+  "minor_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.1,
+      123.0,
+      239.0,
+      136.0
+     ]
+    }
+   ]
+  },
+  "guardianship_grant_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      309.0,
+      176.0,
+      441.0,
+      189.0
+     ]
+    }
+   ]
+  },
+  "minor_present_age": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      233.0,
+      220.0,
+      316.0,
+      233.0
+     ]
+    }
+   ]
+  },
+  "minor_date_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      220.0,
+      576.0,
+      233.0
+     ]
+    }
+   ]
+  },
+  "minor_current_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      91.1,
+      265.2,
+      576.0,
+      278.2
+     ]
+    }
+   ]
+  },
+  "address_since_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      279.0,
+      576.0,
+      292.0
+     ]
+    }
+   ]
+  },
+  "mental_health_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "same",
+     "label": "Remained about the same",
+     "page": 0,
+     "rect": [
+      90.5,
+      368.9,
+      100.5,
+      378.9
+     ]
+    },
+    {
+     "value": "improved",
+     "label": "Improved",
+     "page": 0,
+     "rect": [
+      90.5,
+      385.9,
+      100.5,
+      395.9
+     ]
+    },
+    {
+     "value": "deteriorated",
+     "label": "Deteriorated",
+     "page": 0,
+     "rect": [
+      90.5,
+      402.6,
+      100.5,
+      412.6
+     ]
+    }
+   ]
+  },
+  "mental_health_improved_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      207.1,
+      385.8,
+      555.4,
+      398.8
+     ]
+    }
+   ]
+  },
+  "mental_health_deteriorated_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      225.4,
+      402.6,
+      554.8,
+      415.6
+     ]
+    }
+   ]
+  },
+  "physical_health_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "same",
+     "label": "Remained about the same",
+     "page": 0,
+     "rect": [
+      90.4,
+      448.2,
+      100.4,
+      458.2
+     ]
+    },
+    {
+     "value": "improved",
+     "label": "Improved",
+     "page": 0,
+     "rect": [
+      90.4,
+      465.1,
+      100.4,
+      475.1
+     ]
+    },
+    {
+     "value": "deteriorated",
+     "label": "Deteriorated",
+     "page": 0,
+     "rect": [
+      90.5,
+      482.2,
+      100.5,
+      492.2
+     ]
+    }
+   ]
+  },
+  "physical_health_improved_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      207.1,
+      465.4,
+      555.4,
+      478.4
+     ]
+    }
+   ]
+  },
+  "physical_health_deteriorated_desc": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      225.4,
+      482.1,
+      554.8,
+      495.1
+     ]
+    }
+   ]
+  },
+  "treated_by_physician": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.5,
+      525.1,
+      100.5,
+      538.1
+     ]
+    }
+   ]
+  },
+  "physician_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      309.0,
+      526.5,
+      576.0,
+      539.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      542.1,
+      576.0,
+      555.1
+     ]
+    }
+   ]
+  },
+  "treated_by_counselor": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.5,
+      556.6,
+      100.5,
+      569.6
+     ]
+    }
+   ]
+  },
+  "counselor_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      309.0,
+      558.0,
+      576.0,
+      571.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.1,
+      573.5,
+      576.0,
+      586.5
+     ]
+    }
+   ]
+  },
+  "treated_by_case_worker": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.5,
+      588.0,
+      100.5,
+      601.0
+     ]
+    }
+   ]
+  },
+  "case_worker_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      309.0,
+      589.3,
+      576.0,
+      602.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      605.0,
+      576.0,
+      618.0
+     ]
+    }
+   ]
+  },
+  "treated_by_dentist": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.5,
+      619.4,
+      100.5,
+      632.4
+     ]
+    }
+   ]
+  },
+  "dentist_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      316.5,
+      622.3,
+      553.7,
+      635.3
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      636.3,
+      576.0,
+      649.3
+     ]
+    }
+   ]
+  },
+  "treated_by_other": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.5,
+      650.7,
+      100.5,
+      663.7
+     ]
+    }
+   ]
+  },
+  "other_treatment_type": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      121.0,
+      652.2,
+      239.0,
+      665.0
+     ]
+    }
+   ]
+  },
+  "other_treatment_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      652.2,
+      576.0,
+      665.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      91.1,
+      667.7,
+      576.0,
+      680.7
+     ]
+    }
+   ]
+  },
+  "minor_services_participation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      309.0,
+      696.0,
+      576.0,
+      709.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      711.7,
+      576.0,
+      724.7
+     ]
+    }
+   ]
+  },
+  "school_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      79.7,
+      558.0,
+      92.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      94.4,
+      558.0,
+      107.4
+     ]
+    }
+   ]
+  },
+  "minor_grade_level": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      180.0,
+      108.9,
+      246.0,
+      121.9
+     ]
+    }
+   ]
+  },
+  "minor_educational_achievements": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      248.0,
+      122.0,
+      562.3,
+      135.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      137.9,
+      558.0,
+      150.9
+     ]
+    }
+   ]
+  },
+  "minor_educational_needs": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      152.6,
+      558.0,
+      165.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      167.1,
+      558.0,
+      180.1
+     ]
+    }
+   ]
+  },
+  "needs_being_met": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      214.7,
+      183.9,
+      224.7,
+      193.9
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      247.2,
+      183.9,
+      257.2,
+      193.9
+     ]
+    }
+   ]
+  },
+  "needs_not_met_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      316.0,
+      182.6,
+      558.0,
+      196.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      198.2,
+      558.0,
+      211.2
+     ]
+    }
+   ]
+  },
+  "legal_parent_1_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      134.8,
+      302.7,
+      283.3,
+      315.7
+     ]
+    }
+   ]
+  },
+  "legal_parent_2_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      283.3,
+      302.7,
+      431.6,
+      315.7
+     ]
+    }
+   ]
+  },
+  "legal_parent_3_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      431.6,
+      302.7,
+      562.3,
+      315.7
+     ]
+    }
+   ]
+  },
+  "legal_parent_1_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      134.8,
+      315.7,
+      283.3,
+      345.2
+     ]
+    }
+   ]
+  },
+  "legal_parent_2_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      283.3,
+      315.7,
+      431.6,
+      345.2
+     ]
+    }
+   ]
+  },
+  "legal_parent_3_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      431.6,
+      315.7,
+      562.3,
+      345.2
+     ]
+    }
+   ]
+  },
+  "legal_parent_1_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      134.8,
+      347.4,
+      283.3,
+      360.4
+     ]
+    }
+   ]
+  },
+  "legal_parent_2_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      283.3,
+      347.4,
+      431.6,
+      360.4
+     ]
+    }
+   ]
+  },
+  "legal_parent_3_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      431.6,
+      347.4,
+      562.3,
+      360.4
+     ]
+    }
+   ]
+  },
+  "contact_with_parents": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      293.8,
+      377.9,
+      303.8,
+      387.9
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      329.2,
+      377.9,
+      339.2,
+      387.9
+     ]
+    }
+   ]
+  },
+  "parent_contact_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      406.9,
+      558.0,
+      419.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      421.5,
+      558.0,
+      434.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      436.0,
+      558.0,
+      449.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      450.5,
+      558.0,
+      463.5
+     ]
+    }
+   ]
+  },
+  "parent_decision_making": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      383.9,
+      482.0,
+      393.9,
+      492.0
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      419.3,
+      482.0,
+      429.3,
+      492.0
+     ]
+    }
+   ]
+  },
+  "parent_decision_making_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      496.3,
+      558.0,
+      509.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      511.0,
+      558.0,
+      524.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      525.5,
+      558.0,
+      538.5
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      540.2,
+      558.0,
+      553.2
+     ]
+    }
+   ]
+  },
+  "parent_financial_support": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      378.8,
+      571.5,
+      388.8,
+      581.5
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      414.0,
+      571.5,
+      424.0,
+      581.5
+     ]
+    }
+   ]
+  },
+  "parent_financial_support_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      585.8,
+      558.0,
+      598.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      600.7,
+      558.0,
+      613.7
+     ]
+    }
+   ]
+  },
+  "guardian_responsibilities": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      215.4,
+      658.0,
+      562.3,
+      671.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      673.4,
+      558.0,
+      686.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      687.9,
+      558.0,
+      700.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      702.4,
+      558.0,
+      715.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      90.0,
+      716.9,
+      558.0,
+      729.9
+     ]
+    }
+   ]
+  },
+  "funds_received_amount_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      111.3,
+      246.0,
+      124.3
+     ]
+    }
+   ]
+  },
+  "funds_received_source_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      246.0,
+      111.3,
+      401.5,
+      124.3
+     ]
+    }
+   ]
+  },
+  "funds_received_purpose_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      401.5,
+      111.3,
+      557.5,
+      124.3
+     ]
+    }
+   ]
+  },
+  "funds_received_amount_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      126.3,
+      246.0,
+      139.3
+     ]
+    }
+   ]
+  },
+  "funds_received_source_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      246.0,
+      126.3,
+      401.5,
+      139.3
+     ]
+    }
+   ]
+  },
+  "funds_received_purpose_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      401.5,
+      126.3,
+      557.5,
+      139.3
+     ]
+    }
+   ]
+  },
+  "funds_received_amount_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      141.3,
+      246.0,
+      154.3
+     ]
+    }
+   ]
+  },
+  "funds_received_source_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      246.0,
+      141.3,
+      401.5,
+      154.3
+     ]
+    }
+   ]
+  },
+  "funds_received_purpose_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      401.5,
+      141.3,
+      557.5,
+      154.3
+     ]
+    }
+   ]
+  },
+  "funds_received_amount_4": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      156.4,
+      246.0,
+      169.4
+     ]
+    }
+   ]
+  },
+  "funds_received_source_4": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      246.0,
+      156.4,
+      401.5,
+      169.4
+     ]
+    }
+   ]
+  },
+  "funds_received_purpose_4": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      401.5,
+      156.4,
+      557.5,
+      169.4
+     ]
+    }
+   ]
+  },
+  "funds_received_amount_5": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      171.4,
+      246.0,
+      184.4
+     ]
+    }
+   ]
+  },
+  "funds_received_source_5": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      246.0,
+      171.4,
+      401.5,
+      184.4
+     ]
+    }
+   ]
+  },
+  "funds_received_purpose_5": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      401.5,
+      171.4,
+      557.5,
+      184.4
+     ]
+    }
+   ]
+  },
+  "other_minor_information": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      246.0,
+      242.0,
+      557.5,
+      255.0
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      257.8,
+      559.0,
+      270.8
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      272.3,
+      559.0,
+      285.3
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      287.0,
+      559.0,
+      300.0
+     ]
+    }
+   ]
+  },
+  "conclusions_recommendations": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      359.7,
+      559.0,
+      372.7
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      374.2,
+      559.0,
+      387.2
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      388.7,
+      559.0,
+      401.7
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      403.2,
+      559.0,
+      416.2
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      417.9,
+      559.0,
+      430.9
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      432.4,
+      559.0,
+      445.4
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      446.9,
+      559.0,
+      459.9
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      461.4,
+      559.0,
+      474.4
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      476.1,
+      559.0,
+      489.1
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      490.6,
+      559.0,
+      503.6
+     ]
+    }
+   ]
+  },
+  "guardian_statement_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      90.0,
+      533.0,
+      559.0,
+      546.0
+     ]
+    }
+   ]
+  },
+  "statement_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      116.0,
+      577.0,
+      246.0,
+      590.0
+     ]
+    }
+   ]
+  },
+  "guardian_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      342.0,
+      577.0,
+      559.0,
+      590.0
+     ]
+    }
+   ]
+  },
+  "co_guardian_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      342.0,
+      607.0,
+      559.0,
+      620.0
+     ]
+    }
+   ]
+  },
+  "guardian_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      342.0,
+      636.0,
+      559.0,
+      649.0
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      342.0,
+      650.5,
+      559.0,
+      663.5
+     ]
+    }
+   ]
+  },
+  "guardian_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      342.0,
+      679.7,
+      559.0,
+      692.7
+     ]
+    }
+   ]
+  },
+  "guardian_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      342.0,
+      708.7,
+      559.0,
+      721.7
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,256 +1,256 @@
 {
-  "form_id": "PP-210",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "PP-210 Registration of Guardianship or Conservatorship_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            81.0,
-            110.0,
-            129.0,
-            123.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            435.0,
-            110.0,
-            504.0,
-            123.0
-          ]
-        }
-      ]
-    },
-    "in_re": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            151.0,
-            289.0,
-            164.0
-          ]
-        }
-      ]
-    },
-    "registration_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "guardianship",
-          "label": "Guardianship",
-          "page": 0,
-          "rect": [
-            361.3,
-            167.6,
-            369.3,
-            175.6
-          ]
-        },
-        {
-          "value": "conservatorship",
-          "label": "Conservatorship",
-          "page": 0,
-          "rect": [
-            361.3,
-            181.4,
-            369.3,
-            189.4
-          ]
-        }
-      ]
-    },
-    "guardian_conservator_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            223.0,
-            547.0,
-            262.0
-          ]
-        }
-      ]
-    },
-    "subject_name_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            278.2,
-            547.0,
-            299.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            138.0,
-            297.2,
-            486.0,
-            315.8
-          ]
-        }
-      ]
-    },
-    "appointee_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            81.0,
-            302.0,
-            105.0,
-            316.0
-          ]
-        }
-      ]
-    },
-    "appointment_role": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "guardian",
-          "label": "Guardian(s)",
-          "page": 0,
-          "rect": [
-            147.9,
-            333.1,
-            155.9,
-            341.1
-          ]
-        },
-        {
-          "value": "conservator",
-          "label": "Conservator(s)",
-          "page": 0,
-          "rect": [
-            255.6,
-            333.1,
-            263.6,
-            341.1
-          ]
-        }
-      ]
-    },
-    "subject_of_appointment_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            360.0,
-            330.0,
-            547.0,
-            343.0
-          ]
-        }
-      ]
-    },
-    "appointing_court_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            357.4,
-            547.0,
-            369.4
-          ]
-        }
-      ]
-    },
-    "date_of_appointment": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            81.0,
-            381.3,
-            226.0,
-            393.3
-          ]
-        }
-      ]
-    },
-    "order_attached_marker": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            81.0,
-            416.0,
-            105.0,
-            429.0
-          ]
-        }
-      ]
-    },
-    "notice_of_intent_date_filed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            291.0,
-            487.5,
-            396.0,
-            499.5
-          ]
-        }
-      ]
-    },
-    "petition_not_pending_marker": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            81.0,
-            511.0,
-            106.0,
-            525.0
-          ]
-        }
-      ]
-    },
-    "subject_of_registration_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            556.5,
-            396.0,
-            568.5
-          ]
-        }
-      ]
+ "form_id": "PP-210",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "PP-210 Registration of Guardianship or Conservatorship_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      81.0,
+      110.0,
+      129.0,
+      123.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      435.0,
+      110.0,
+      504.0,
+      123.0
+     ]
+    }
+   ]
+  },
+  "in_re": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      151.0,
+      289.0,
+      164.0
+     ]
+    }
+   ]
+  },
+  "registration_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "guardianship",
+     "label": "Guardianship",
+     "page": 0,
+     "rect": [
+      361.3,
+      167.6,
+      369.3,
+      175.6
+     ]
+    },
+    {
+     "value": "conservatorship",
+     "label": "Conservatorship",
+     "page": 0,
+     "rect": [
+      361.3,
+      181.4,
+      369.3,
+      189.4
+     ]
+    }
+   ]
+  },
+  "guardian_conservator_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      223.0,
+      547.0,
+      262.0
+     ]
+    }
+   ]
+  },
+  "subject_name_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      286.0,
+      547.0,
+      299.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      138.0,
+      302.8,
+      486.0,
+      315.8
+     ]
+    }
+   ]
+  },
+  "appointee_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      81.0,
+      303.0,
+      105.0,
+      316.0
+     ]
+    }
+   ]
+  },
+  "appointment_role": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "guardian",
+     "label": "Guardian(s)",
+     "page": 0,
+     "rect": [
+      147.9,
+      333.1,
+      155.9,
+      341.1
+     ]
+    },
+    {
+     "value": "conservator",
+     "label": "Conservator(s)",
+     "page": 0,
+     "rect": [
+      255.6,
+      333.1,
+      263.6,
+      341.1
+     ]
+    }
+   ]
+  },
+  "subject_of_appointment_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      360.0,
+      330.0,
+      547.0,
+      343.0
+     ]
+    }
+   ]
+  },
+  "appointing_court_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      356.4,
+      547.0,
+      369.4
+     ]
+    }
+   ]
+  },
+  "date_of_appointment": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      81.0,
+      380.3,
+      226.0,
+      393.3
+     ]
+    }
+   ]
+  },
+  "order_attached_marker": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      81.0,
+      416.0,
+      105.0,
+      429.0
+     ]
+    }
+   ]
+  },
+  "notice_of_intent_date_filed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      291.0,
+      486.5,
+      396.0,
+      499.5
+     ]
+    }
+   ]
+  },
+  "petition_not_pending_marker": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      81.0,
+      512.0,
+      106.0,
+      525.0
+     ]
+    }
+   ]
+  },
+  "subject_of_registration_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      555.5,
+      396.0,
+      568.5
+     ]
+    }
+   ]
   }
+ }
 }

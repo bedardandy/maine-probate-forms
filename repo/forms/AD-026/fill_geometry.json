@@ -1,853 +1,853 @@
 {
-  "form_id": "AD-026",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 3,
-  "source_fused": "AD-026 Petition for Adult Adoption (Rev. 11-03-24)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            137.0,
-            180.0,
-            149.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            480.0,
-            136.0,
-            540.0,
-            149.0
-          ]
-        }
-      ]
-    },
-    "adoptee_name_caption": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            178.8,
-            242.0,
-            190.8
-          ]
-        }
-      ]
-    },
-    "petitioner_caption": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            225.0,
-            242.0,
-            236.0
-          ]
-        }
-      ]
-    },
-    "co_petitioner_caption": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            333.0,
-            225.0,
-            509.0,
-            237.0
-          ]
-        }
-      ]
-    },
-    "petitioner_1_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            165.0,
-            279.0,
-            361.0,
-            290.0
-          ]
-        }
-      ]
-    },
-    "petitioner_1_dob": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            392.0,
-            277.0,
-            509.0,
-            290.0
-          ]
-        }
-      ]
-    },
-    "petitioner_1_legal_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            107.0,
-            304.7,
-            454.0,
-            316.7
-          ]
-        }
-      ]
-    },
-    "petitioner_1_mailing_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            107.0,
-            328.2,
-            454.0,
-            340.2
-          ]
-        }
-      ]
-    },
-    "petitioner_1_telephone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            165.0,
-            351.7,
-            260.0,
-            363.7
-          ]
-        }
-      ]
-    },
-    "petitioner_1_marriage_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            333.0,
-            372.0,
-            509.0,
-            384.0
-          ]
-        }
-      ]
-    },
-    "petitioner_2_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            165.0,
-            413.0,
-            361.0,
-            424.0
-          ]
-        }
-      ]
-    },
-    "petitioner_2_dob": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            392.0,
-            411.0,
-            509.0,
-            424.0
-          ]
-        }
-      ]
-    },
-    "petitioner_2_legal_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            107.0,
-            438.3,
-            509.0,
-            450.3
-          ]
-        }
-      ]
-    },
-    "petitioner_2_mailing_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            107.0,
-            461.9,
-            509.0,
-            473.9
-          ]
-        }
-      ]
-    },
-    "petitioner_2_telephone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            165.0,
-            485.4,
-            260.0,
-            497.4
-          ]
-        }
-      ]
-    },
-    "petitioner_2_marriage_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            333.0,
-            506.0,
-            509.0,
-            518.0
-          ]
-        }
-      ]
-    },
-    "adoptee_dob": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            165.0,
-            550.0,
-            270.0,
-            563.0
-          ]
-        }
-      ]
-    },
-    "adoptee_place_of_birth": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            333.0,
-            552.0,
-            509.0,
-            563.0
-          ]
-        }
-      ]
-    },
-    "adoptee_birth_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            165.0,
-            569.0,
-            305.0,
-            580.0
-          ]
-        }
-      ]
-    },
-    "adoptee_other_names": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            306.0,
-            587.0,
-            454.0,
-            598.0
-          ]
-        }
-      ]
-    },
-    "proposed_new_birth_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            225.0,
-            621.0,
-            454.0,
-            632.0
-          ]
-        }
-      ]
-    },
-    "proposed_current_new_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            225.0,
-            659.1,
-            454.0,
-            671.1
-          ]
-        }
-      ]
-    },
-    "adoptee_legal_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            107.0,
-            686.0,
-            509.0,
-            697.0
-          ]
-        }
-      ]
-    },
-    "adoptee_mailing_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            223.0,
-            65.0,
-            356.0,
-            76.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            360.0,
-            65.0,
-            464.0,
-            76.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            467.0,
-            65.0,
-            505.0,
-            76.0
-          ]
-        }
-      ]
-    },
-    "adoptee_telephone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            198.0,
-            90.2,
-            293.0,
-            102.2
-          ]
-        }
-      ]
-    },
-    "venue_reason": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "adoptee_resides",
-          "label": "Adoptee resides in this county",
-          "page": 1,
-          "rect": [
-            109.4,
-            134.8,
-            118.4,
-            143.8
-          ]
-        },
-        {
-          "value": "petitioner_resides",
-          "label": "Petitioner(s) resides in this county",
-          "page": 1,
-          "rect": [
-            109.6,
-            158.1,
-            118.6,
-            167.1
-          ]
-        }
-      ]
-    },
-    "guardian_or_conservator": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            108.8,
-            210.9,
-            117.8,
-            219.9
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            144.8,
-            210.9,
-            153.8,
-            219.9
-          ]
-        }
-      ]
-    },
-    "consent_required": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "adoptee",
-          "label": "Adoptee",
-          "page": 1,
-          "rect": [
-            107.8,
-            268.5,
-            116.8,
-            277.5
-          ]
-        },
-        {
-          "value": "guardian",
-          "label": "Guardian",
-          "page": 1,
-          "rect": [
-            194.2,
-            268.5,
-            203.2,
-            277.5
-          ]
-        }
-      ]
-    },
-    "relationship_to_adoptee": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            308.2,
-            505.0,
-            343.0
-          ]
-        }
-      ]
-    },
-    "dhhs_certificate_attached": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            109.4,
-            344.7,
-            118.4,
-            353.7
-          ]
-        }
-      ]
-    },
-    "information_sharing_intent": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "do_not_intend",
-          "label": "The petitioner(s) do(es) not intend to share information with the birth/legal parents and/or birth family",
-          "page": 1,
-          "rect": [
-            145.4,
-            457.1,
-            154.4,
-            466.1
-          ]
-        },
-        {
-          "value": "intend_to_share",
-          "label": "The petitioner(s) intend(s) to share information with the birth/legal parent(s) and/or birth family",
-          "page": 1,
-          "rect": [
-            145.4,
-            487.9,
-            154.4,
-            496.9
-          ]
-        }
-      ]
-    },
-    "information_sharing_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            539.3,
-            505.0,
-            551.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            551.8,
-            505.0,
-            563.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            563.7,
-            505.0,
-            575.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            575.7,
-            505.0,
-            587.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            587.6,
-            505.0,
-            599.6
-          ]
-        }
-      ]
-    },
-    "inheritance_acknowledgment": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            109.4,
-            615.4,
-            118.4,
-            624.4
-          ]
-        }
-      ]
-    },
-    "birth_parents_inheritance_request": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "have_requested",
-          "label": "have requested",
-          "page": 2,
-          "rect": [
-            237.1,
-            68.2,
-            246.1,
-            77.2
-          ]
-        },
-        {
-          "value": "have_not_requested",
-          "label": "have not requested",
-          "page": 2,
-          "rect": [
-            278.7,
-            68.2,
-            287.7,
-            77.2
-          ]
-        }
-      ]
-    },
-    "parent_child_relationship_acknowledgment": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            109.4,
-            121.6,
-            118.4,
-            130.6
-          ]
-        }
-      ]
-    },
-    "petitioner_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            108.0,
-            191.0,
-            268.0,
-            206.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            360.0,
-            191.0,
-            530.0,
-            206.0
-          ]
-        }
-      ]
-    },
-    "co_petitioner_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            108.0,
-            219.6,
-            268.0,
-            232.0
-          ]
-        }
-      ]
-    },
-    "co_petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            360.0,
-            219.6,
-            530.0,
-            233.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            112.9,
-            303.7,
-            270.0,
-            316.7
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            94.5,
-            326.6,
-            251.6,
-            339.6
-          ]
-        },
-        {
-          "page": 2,
-          "rect": [
-            94.5,
-            354.6,
-            251.6,
-            367.6
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            94.5,
-            382.9,
-            251.6,
-            395.9
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            94.5,
-            410.9,
-            251.6,
-            423.9
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            94.5,
-            439.1,
-            251.6,
-            452.1
-          ]
-        }
-      ]
-    },
-    "unlabeled_widget_after_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            108.0,
-            461.8,
-            530.0,
-            489.7
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            133.9,
-            503.2,
-            254.6,
-            516.2
-          ]
-        }
-      ]
-    },
-    "oath_petitioner_1_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            309.0,
-            524.0,
-            530.0,
-            540.0
-          ]
-        }
-      ]
-    },
-    "oath_petitioner_2_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            71.0,
-            542.3,
-            268.0,
-            554.3
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            108.0,
-            606.0,
-            213.0,
-            622.0
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            288.0,
-            606.0,
-            530.0,
-            622.0
-          ]
-        }
-      ]
+ "form_id": "AD-026",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 3,
+ "source_fused": "AD-026 Petition for Adult Adoption (Rev. 11-03-24)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      136.0,
+      180.0,
+      149.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      480.0,
+      136.0,
+      540.0,
+      149.0
+     ]
+    }
+   ]
+  },
+  "adoptee_name_caption": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      177.8,
+      242.0,
+      190.8
+     ]
+    }
+   ]
+  },
+  "petitioner_caption": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      223.0,
+      242.0,
+      236.0
+     ]
+    }
+   ]
+  },
+  "co_petitioner_caption": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      333.0,
+      224.0,
+      509.0,
+      237.0
+     ]
+    }
+   ]
+  },
+  "petitioner_1_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      165.0,
+      277.0,
+      361.0,
+      290.0
+     ]
+    }
+   ]
+  },
+  "petitioner_1_dob": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      392.0,
+      277.0,
+      509.0,
+      290.0
+     ]
+    }
+   ]
+  },
+  "petitioner_1_legal_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      107.0,
+      303.7,
+      454.0,
+      316.7
+     ]
+    }
+   ]
+  },
+  "petitioner_1_mailing_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      107.0,
+      327.2,
+      454.0,
+      340.2
+     ]
+    }
+   ]
+  },
+  "petitioner_1_telephone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      165.0,
+      350.7,
+      260.0,
+      363.7
+     ]
+    }
+   ]
+  },
+  "petitioner_1_marriage_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      333.0,
+      371.0,
+      509.0,
+      384.0
+     ]
+    }
+   ]
+  },
+  "petitioner_2_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      165.0,
+      411.0,
+      361.0,
+      424.0
+     ]
+    }
+   ]
+  },
+  "petitioner_2_dob": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      392.0,
+      411.0,
+      509.0,
+      424.0
+     ]
+    }
+   ]
+  },
+  "petitioner_2_legal_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      107.0,
+      437.3,
+      509.0,
+      450.3
+     ]
+    }
+   ]
+  },
+  "petitioner_2_mailing_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      107.0,
+      460.9,
+      509.0,
+      473.9
+     ]
+    }
+   ]
+  },
+  "petitioner_2_telephone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      165.0,
+      484.4,
+      260.0,
+      497.4
+     ]
+    }
+   ]
+  },
+  "petitioner_2_marriage_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      333.0,
+      505.0,
+      509.0,
+      518.0
+     ]
+    }
+   ]
+  },
+  "adoptee_dob": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      165.0,
+      550.0,
+      270.0,
+      563.0
+     ]
+    }
+   ]
+  },
+  "adoptee_place_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      333.0,
+      550.0,
+      509.0,
+      563.0
+     ]
+    }
+   ]
+  },
+  "adoptee_birth_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      165.0,
+      567.0,
+      305.0,
+      580.0
+     ]
+    }
+   ]
+  },
+  "adoptee_other_names": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      306.0,
+      585.0,
+      454.0,
+      598.0
+     ]
+    }
+   ]
+  },
+  "proposed_new_birth_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      225.0,
+      619.0,
+      454.0,
+      632.0
+     ]
+    }
+   ]
+  },
+  "proposed_current_new_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      225.0,
+      658.1,
+      454.0,
+      671.1
+     ]
+    }
+   ]
+  },
+  "adoptee_legal_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      107.0,
+      684.0,
+      509.0,
+      697.0
+     ]
+    }
+   ]
+  },
+  "adoptee_mailing_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      223.0,
+      63.0,
+      356.0,
+      76.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      360.0,
+      63.0,
+      464.0,
+      76.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      467.0,
+      63.0,
+      505.0,
+      76.0
+     ]
+    }
+   ]
+  },
+  "adoptee_telephone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      198.0,
+      89.2,
+      293.0,
+      102.2
+     ]
+    }
+   ]
+  },
+  "venue_reason": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "adoptee_resides",
+     "label": "Adoptee resides in this county",
+     "page": 1,
+     "rect": [
+      109.4,
+      134.8,
+      118.4,
+      143.8
+     ]
+    },
+    {
+     "value": "petitioner_resides",
+     "label": "Petitioner(s) resides in this county",
+     "page": 1,
+     "rect": [
+      109.6,
+      158.1,
+      118.6,
+      167.1
+     ]
+    }
+   ]
+  },
+  "guardian_or_conservator": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      108.8,
+      210.9,
+      117.8,
+      219.9
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      144.8,
+      210.9,
+      153.8,
+      219.9
+     ]
+    }
+   ]
+  },
+  "consent_required": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "adoptee",
+     "label": "Adoptee",
+     "page": 1,
+     "rect": [
+      107.8,
+      268.5,
+      116.8,
+      277.5
+     ]
+    },
+    {
+     "value": "guardian",
+     "label": "Guardian",
+     "page": 1,
+     "rect": [
+      194.2,
+      268.5,
+      203.2,
+      277.5
+     ]
+    }
+   ]
+  },
+  "relationship_to_adoptee": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      308.2,
+      505.0,
+      343.0
+     ]
+    }
+   ]
+  },
+  "dhhs_certificate_attached": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      109.4,
+      340.7,
+      118.4,
+      353.7
+     ]
+    }
+   ]
+  },
+  "information_sharing_intent": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "do_not_intend",
+     "label": "The petitioner(s) do(es) not intend to share information with the birth/legal parents and/or birth family",
+     "page": 1,
+     "rect": [
+      145.4,
+      457.1,
+      154.4,
+      466.1
+     ]
+    },
+    {
+     "value": "intend_to_share",
+     "label": "The petitioner(s) intend(s) to share information with the birth/legal parent(s) and/or birth family",
+     "page": 1,
+     "rect": [
+      145.4,
+      487.9,
+      154.4,
+      496.9
+     ]
+    }
+   ]
+  },
+  "information_sharing_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      538.3,
+      505.0,
+      551.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      550.8,
+      505.0,
+      563.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      562.7,
+      505.0,
+      575.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      574.7,
+      505.0,
+      587.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      586.6,
+      505.0,
+      599.6
+     ]
+    }
+   ]
+  },
+  "inheritance_acknowledgment": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      109.4,
+      611.4,
+      118.4,
+      624.4
+     ]
+    }
+   ]
+  },
+  "birth_parents_inheritance_request": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "have_requested",
+     "label": "have requested",
+     "page": 2,
+     "rect": [
+      237.1,
+      68.2,
+      246.1,
+      77.2
+     ]
+    },
+    {
+     "value": "have_not_requested",
+     "label": "have not requested",
+     "page": 2,
+     "rect": [
+      278.7,
+      68.2,
+      287.7,
+      77.2
+     ]
+    }
+   ]
+  },
+  "parent_child_relationship_acknowledgment": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      109.4,
+      117.6,
+      118.4,
+      130.6
+     ]
+    }
+   ]
+  },
+  "petitioner_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      108.0,
+      193.0,
+      268.0,
+      206.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      360.0,
+      193.0,
+      530.0,
+      206.0
+     ]
+    }
+   ]
+  },
+  "co_petitioner_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      108.0,
+      219.6,
+      268.0,
+      232.0
+     ]
+    }
+   ]
+  },
+  "co_petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      360.0,
+      219.6,
+      530.0,
+      233.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      112.9,
+      303.7,
+      270.0,
+      316.7
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      94.5,
+      326.6,
+      251.6,
+      339.6
+     ]
+    },
+    {
+     "page": 2,
+     "rect": [
+      94.5,
+      354.6,
+      251.6,
+      367.6
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      94.5,
+      382.9,
+      251.6,
+      395.9
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      94.5,
+      410.9,
+      251.6,
+      423.9
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      94.5,
+      439.1,
+      251.6,
+      452.1
+     ]
+    }
+   ]
+  },
+  "unlabeled_widget_after_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      108.0,
+      461.8,
+      530.0,
+      489.7
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      133.9,
+      503.2,
+      254.6,
+      516.2
+     ]
+    }
+   ]
+  },
+  "oath_petitioner_1_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      309.0,
+      527.0,
+      530.0,
+      540.0
+     ]
+    }
+   ]
+  },
+  "oath_petitioner_2_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      71.0,
+      541.3,
+      268.0,
+      554.3
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      108.0,
+      609.0,
+      213.0,
+      622.0
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      288.0,
+      609.0,
+      530.0,
+      622.0
+     ]
+    }
+   ]
   }
+ }
 }

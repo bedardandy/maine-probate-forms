@@ -1,159 +1,159 @@
 {
-  "form_id": "N-107",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "N-107 Waiver of Notice (Rev. 03-01-25)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            106.0,
-            191.0,
-            130.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            435.0,
-            112.0,
-            542.0,
-            130.0
-          ]
-        }
-      ]
-    },
-    "in_re_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            140.0,
-            274.0,
-            161.0
-          ]
-        }
-      ]
-    },
-    "declarant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            174.8,
-            542.0,
-            198.0
-          ]
-        }
-      ]
-    },
-    "declarant_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            212.0,
-            542.0,
-            235.0
-          ]
-        }
-      ]
-    },
-    "waiver_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "general",
-          "label": "General waiver",
-          "page": 0,
-          "rect": [
-            73.3,
-            365.4,
-            81.3,
-            373.4
-          ]
-        },
-        {
-          "value": "limited",
-          "label": "Limited waiver",
-          "page": 0,
-          "rect": [
-            73.3,
-            432.2,
-            81.3,
-            440.2
-          ]
-        }
-      ]
-    },
-    "limited_proceedings": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            469.2,
-            542.0,
-            500.2
-          ]
-        }
-      ]
-    },
-    "date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            550.0,
-            249.0,
-            570.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            256.0,
-            554.0,
-            287.0,
-            570.0
-          ]
-        }
-      ]
-    },
-    "person_waiving_notice": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            360.0,
-            550.0,
-            542.0,
-            570.0
-          ]
-        }
-      ]
+ "form_id": "N-107",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "N-107 Waiver of Notice (Rev. 03-01-25)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      117.0,
+      191.0,
+      130.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      435.0,
+      117.0,
+      542.0,
+      130.0
+     ]
+    }
+   ]
+  },
+  "in_re_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      148.0,
+      274.0,
+      161.0
+     ]
+    }
+   ]
+  },
+  "declarant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      185.0,
+      542.0,
+      198.0
+     ]
+    }
+   ]
+  },
+  "declarant_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      222.0,
+      542.0,
+      235.0
+     ]
+    }
+   ]
+  },
+  "waiver_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "general",
+     "label": "General waiver",
+     "page": 0,
+     "rect": [
+      73.3,
+      365.4,
+      81.3,
+      373.4
+     ]
+    },
+    {
+     "value": "limited",
+     "label": "Limited waiver",
+     "page": 0,
+     "rect": [
+      73.3,
+      432.2,
+      81.3,
+      440.2
+     ]
+    }
+   ]
+  },
+  "limited_proceedings": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      469.2,
+      542.0,
+      500.2
+     ]
+    }
+   ]
+  },
+  "date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      557.0,
+      249.0,
+      570.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      256.0,
+      557.0,
+      287.0,
+      570.0
+     ]
+    }
+   ]
+  },
+  "person_waiving_notice": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      360.0,
+      557.0,
+      542.0,
+      570.0
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,301 +1,301 @@
 {
-  "form_id": "N-105",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "N-105 Demand for Notice (Rev. 6-25-23)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            43.2,
-            107.7,
-            115.2,
-            126.1
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            400.0,
-            110.0,
-            521.0,
-            126.0
-          ]
-        }
-      ]
-    },
-    "estate_of_decedent": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            61.0,
-            133.0,
-            271.0,
-            152.0
-          ]
-        }
-      ]
-    },
-    "residence_of_decedent": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            61.0,
-            180.0,
-            571.0,
-            198.0
-          ]
-        }
-      ]
-    },
-    "date_of_death_or_appointment": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            43.0,
-            213.0,
-            571.0,
-            233.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            43.0,
-            248.4,
-            571.0,
-            270.1
-          ]
-        }
-      ]
-    },
-    "person_making_demand_contact": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            43.0,
-            286.3,
-            571.0,
-            323.0
-          ]
-        }
-      ]
-    },
-    "interest_in_estate": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "heir",
-          "label": "Heir",
-          "page": 0,
-          "rect": [
-            79.6,
-            388.1,
-            87.6,
-            396.1
-          ]
-        },
-        {
-          "value": "devisee",
-          "label": "Devisee",
-          "page": 0,
-          "rect": [
-            79.6,
-            400.8,
-            87.6,
-            408.8
-          ]
-        },
-        {
-          "value": "child",
-          "label": "Child",
-          "page": 0,
-          "rect": [
-            79.6,
-            413.6,
-            87.6,
-            421.6
-          ]
-        },
-        {
-          "value": "spouse",
-          "label": "Spouse",
-          "page": 0,
-          "rect": [
-            79.6,
-            426.1,
-            87.6,
-            434.1
-          ]
-        },
-        {
-          "value": "creditor",
-          "label": "Creditor",
-          "page": 0,
-          "rect": [
-            79.6,
-            438.9,
-            87.6,
-            446.9
-          ]
-        },
-        {
-          "value": "beneficiary_of_trust",
-          "label": "Beneficiary of trust",
-          "page": 0,
-          "rect": [
-            223.6,
-            388.1,
-            231.6,
-            396.1
-          ]
-        },
-        {
-          "value": "person_with_priority",
-          "label": "Person with priority for appointment as Personal Representative",
-          "page": 0,
-          "rect": [
-            223.6,
-            400.8,
-            231.6,
-            408.8
-          ]
-        },
-        {
-          "value": "fiduciary",
-          "label": "Fiduciary representing interested party",
-          "page": 0,
-          "rect": [
-            223.6,
-            413.6,
-            231.6,
-            421.6
-          ]
-        },
-        {
-          "value": "other",
-          "label": "Other",
-          "page": 0,
-          "rect": [
-            223.6,
-            426.1,
-            231.6,
-            434.1
-          ]
-        }
-      ]
-    },
-    "other_interest_description": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            279.0,
-            425.5,
-            521.0,
-            437.5
-          ]
-        }
-      ]
-    },
-    "copy_of_docket_sheet": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            79.6,
-            476.9,
-            87.6,
-            484.9
-          ]
-        }
-      ]
-    },
-    "copy_of_findings_and_orders": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            79.6,
-            489.4,
-            87.6,
-            497.4
-          ]
-        }
-      ]
-    },
-    "attorney_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            43.0,
-            552.0,
-            571.0,
-            586.5
-          ]
-        }
-      ]
-    },
-    "signature_of_demand_or_attorney": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            322.0,
-            580.0,
-            548.0,
-            600.0
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            61.0,
-            584.0,
-            178.0,
-            600.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            192.0,
-            585.0,
-            230.0,
-            600.0
-          ]
-        }
-      ]
+ "form_id": "N-105",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "N-105 Demand for Notice (Rev. 6-25-23)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      43.2,
+      113.1,
+      115.2,
+      126.1
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      400.0,
+      113.0,
+      521.0,
+      126.0
+     ]
+    }
+   ]
+  },
+  "estate_of_decedent": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      61.0,
+      139.0,
+      271.0,
+      152.0
+     ]
+    }
+   ]
+  },
+  "residence_of_decedent": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      61.0,
+      185.0,
+      571.0,
+      198.0
+     ]
+    }
+   ]
+  },
+  "date_of_death_or_appointment": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      43.0,
+      220.0,
+      571.0,
+      233.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      43.0,
+      257.1,
+      571.0,
+      270.1
+     ]
+    }
+   ]
+  },
+  "person_making_demand_contact": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      43.0,
+      286.3,
+      571.0,
+      323.0
+     ]
+    }
+   ]
+  },
+  "interest_in_estate": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "heir",
+     "label": "Heir",
+     "page": 0,
+     "rect": [
+      79.6,
+      388.1,
+      87.6,
+      396.1
+     ]
+    },
+    {
+     "value": "devisee",
+     "label": "Devisee",
+     "page": 0,
+     "rect": [
+      79.6,
+      400.8,
+      87.6,
+      408.8
+     ]
+    },
+    {
+     "value": "child",
+     "label": "Child",
+     "page": 0,
+     "rect": [
+      79.6,
+      413.6,
+      87.6,
+      421.6
+     ]
+    },
+    {
+     "value": "spouse",
+     "label": "Spouse",
+     "page": 0,
+     "rect": [
+      79.6,
+      426.1,
+      87.6,
+      434.1
+     ]
+    },
+    {
+     "value": "creditor",
+     "label": "Creditor",
+     "page": 0,
+     "rect": [
+      79.6,
+      438.9,
+      87.6,
+      446.9
+     ]
+    },
+    {
+     "value": "beneficiary_of_trust",
+     "label": "Beneficiary of trust",
+     "page": 0,
+     "rect": [
+      223.6,
+      388.1,
+      231.6,
+      396.1
+     ]
+    },
+    {
+     "value": "person_with_priority",
+     "label": "Person with priority for appointment as Personal Representative",
+     "page": 0,
+     "rect": [
+      223.6,
+      400.8,
+      231.6,
+      408.8
+     ]
+    },
+    {
+     "value": "fiduciary",
+     "label": "Fiduciary representing interested party",
+     "page": 0,
+     "rect": [
+      223.6,
+      413.6,
+      231.6,
+      421.6
+     ]
+    },
+    {
+     "value": "other",
+     "label": "Other",
+     "page": 0,
+     "rect": [
+      223.6,
+      426.1,
+      231.6,
+      434.1
+     ]
+    }
+   ]
+  },
+  "other_interest_description": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      279.0,
+      424.5,
+      521.0,
+      437.5
+     ]
+    }
+   ]
+  },
+  "copy_of_docket_sheet": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      79.6,
+      476.9,
+      87.6,
+      484.9
+     ]
+    }
+   ]
+  },
+  "copy_of_findings_and_orders": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      79.6,
+      489.4,
+      87.6,
+      497.4
+     ]
+    }
+   ]
+  },
+  "attorney_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      43.0,
+      552.0,
+      571.0,
+      586.5
+     ]
+    }
+   ]
+  },
+  "signature_of_demand_or_attorney": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      322.0,
+      587.0,
+      548.0,
+      600.0
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      61.0,
+      587.0,
+      178.0,
+      600.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      192.0,
+      587.0,
+      230.0,
+      600.0
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,443 +1,443 @@
 {
-  "form_id": "AD-011",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "AD-011 Pet to Recognize Foreign Adoption_fused.pdf",
-  "fields": {
-    "county_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            96.0,
-            179.0,
-            116.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            432.0,
-            100.0,
-            517.0,
-            116.0
-          ]
-        }
-      ]
-    },
-    "name_of_adoptee": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            123.0,
-            328.0,
-            143.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            161.1,
-            590.0,
-            178.0
-          ]
-        }
-      ]
-    },
-    "petitioner_full_name_address_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            225.4,
-            517.0,
-            264.0
-          ]
-        }
-      ]
-    },
-    "petitioner_legal_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            280.6,
-            517.0,
-            319.0
-          ]
-        }
-      ]
-    },
-    "petitioner_date_of_birth": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            335.8,
-            544.0,
-            357.4
-          ]
-        }
-      ]
-    },
-    "adoptee_other_names": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            487.6,
-            544.0,
-            509.2
-          ]
-        }
-      ]
-    },
-    "adoptee_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            556.6,
-            517.0,
-            614.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            198.0,
-            618.0,
-            420.0,
-            638.0
-          ]
-        }
-      ]
-    },
-    "name_of_adoptee_in_decree": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            333.0,
-            641.7,
-            517.0,
-            659.0
-          ]
-        }
-      ]
-    },
-    "date_of_decree": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            274.0,
-            662.4,
-            517.0,
-            679.0
-          ]
-        }
-      ]
-    },
-    "name_of_foreign_country": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            683.1,
-            517.0,
-            700.0
-          ]
-        }
-      ]
-    },
-    "name_and_location_of_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            470.0,
-            703.8,
-            517.0,
-            721.0
-          ]
-        }
-      ]
-    },
-    "name_of_adoptee_under_laws": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            108.0,
-            724.5,
-            235.0,
-            742.0
-          ]
-        }
-      ]
-    },
-    "change_of_name_requested": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "is_requested",
-          "label": "IS requested",
-          "page": 1,
-          "rect": [
-            199.3,
-            148.7,
-            208.3,
-            157.7
-          ]
-        },
-        {
-          "value": "is_not_requested",
-          "label": "IS NOT requested",
-          "page": 1,
-          "rect": [
-            226.8,
-            148.7,
-            235.8,
-            157.7
-          ]
-        }
-      ]
-    },
-    "adoptee_new_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            239.2,
-            166.1,
-            512.9,
-            181.9
-          ]
-        }
-      ]
-    },
-    "petitioner_signature_date_1": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            197.0,
-            221.0,
-            215.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            197.0,
-            527.0,
-            215.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature_date_2": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            108.0,
-            239.0,
-            221.0,
-            256.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            239.0,
-            527.0,
-            256.0
-          ]
-        }
-      ]
-    },
-    "date_of_affidavit": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            358.0,
-            294.0,
-            527.0,
-            311.0
-          ]
-        }
-      ]
-    },
-    "county_of_affidavit": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            143.0,
-            301.2,
-            265.0,
-            313.2
-          ]
-        }
-      ]
-    },
-    "name_of_appearer": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            321.0,
-            527.0,
-            339.0
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            390.0,
-            527.0,
-            408.0
-          ]
-        }
-      ]
-    },
-    "notary_print_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            418.0,
-            527.0,
-            435.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            476.3,
-            265.0,
-            492.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            504.1,
-            265.0,
-            519.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            530.9,
-            265.0,
-            546.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            557.8,
-            265.0,
-            572.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            583.6,
-            265.0,
-            598.0
-          ]
-        }
-      ]
+ "form_id": "AD-011",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "AD-011 Pet to Recognize Foreign Adoption_fused.pdf",
+ "fields": {
+  "county_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      103.0,
+      179.0,
+      116.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      432.0,
+      103.0,
+      517.0,
+      116.0
+     ]
+    }
+   ]
+  },
+  "name_of_adoptee": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      130.0,
+      328.0,
+      143.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      165.0,
+      590.0,
+      178.0
+     ]
+    }
+   ]
+  },
+  "petitioner_full_name_address_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      225.4,
+      517.0,
+      264.0
+     ]
+    }
+   ]
+  },
+  "petitioner_legal_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      280.6,
+      517.0,
+      319.0
+     ]
+    }
+   ]
+  },
+  "petitioner_date_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      344.4,
+      544.0,
+      357.4
+     ]
+    }
+   ]
+  },
+  "adoptee_other_names": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      496.2,
+      544.0,
+      509.2
+     ]
+    }
+   ]
+  },
+  "adoptee_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      556.6,
+      517.0,
+      614.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      198.0,
+      625.0,
+      420.0,
+      638.0
+     ]
+    }
+   ]
+  },
+  "name_of_adoptee_in_decree": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      333.0,
+      646.0,
+      517.0,
+      659.0
+     ]
+    }
+   ]
+  },
+  "date_of_decree": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      274.0,
+      666.0,
+      517.0,
+      679.0
+     ]
+    }
+   ]
+  },
+  "name_of_foreign_country": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      687.0,
+      517.0,
+      700.0
+     ]
+    }
+   ]
+  },
+  "name_and_location_of_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      470.0,
+      708.0,
+      517.0,
+      721.0
+     ]
+    }
+   ]
+  },
+  "name_of_adoptee_under_laws": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.0,
+      729.0,
+      235.0,
+      742.0
+     ]
+    }
+   ]
+  },
+  "change_of_name_requested": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "is_requested",
+     "label": "IS requested",
+     "page": 1,
+     "rect": [
+      199.3,
+      148.7,
+      208.3,
+      157.7
+     ]
+    },
+    {
+     "value": "is_not_requested",
+     "label": "IS NOT requested",
+     "page": 1,
+     "rect": [
+      226.8,
+      148.7,
+      235.8,
+      157.7
+     ]
+    }
+   ]
+  },
+  "adoptee_new_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      239.2,
+      168.9,
+      512.9,
+      181.9
+     ]
+    }
+   ]
+  },
+  "petitioner_signature_date_1": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      202.0,
+      221.0,
+      215.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      202.0,
+      527.0,
+      215.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature_date_2": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      108.0,
+      243.0,
+      221.0,
+      256.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      243.0,
+      527.0,
+      256.0
+     ]
+    }
+   ]
+  },
+  "date_of_affidavit": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      358.0,
+      298.0,
+      527.0,
+      311.0
+     ]
+    }
+   ]
+  },
+  "county_of_affidavit": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      143.0,
+      300.2,
+      265.0,
+      313.2
+     ]
+    }
+   ]
+  },
+  "name_of_appearer": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      326.0,
+      527.0,
+      339.0
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      395.0,
+      527.0,
+      408.0
+     ]
+    }
+   ]
+  },
+  "notary_print_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      422.0,
+      527.0,
+      435.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      479.0,
+      265.0,
+      492.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      506.0,
+      265.0,
+      519.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      533.0,
+      265.0,
+      546.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      559.0,
+      265.0,
+      572.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      585.0,
+      265.0,
+      598.0
+     ]
+    }
+   ]
   }
+ }
 }

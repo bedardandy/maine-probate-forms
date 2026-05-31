@@ -1,243 +1,243 @@
 {
-  "form_id": "AF-102",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "AF-102 Small Estate Affidavit for Collection of Personal Property (Rev. 4-8-20)_fused.pdf",
-  "fields": {
-    "decedent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            121.0,
-            330.0,
-            133.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            156.0,
-            200.6,
-            330.0,
-            212.6
-          ]
-        }
-      ]
+ "form_id": "AF-102",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "AF-102 Small Estate Affidavit for Collection of Personal Property (Rev. 4-8-20)_fused.pdf",
+ "fields": {
+  "decedent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      120.0,
+      330.0,
+      133.0
+     ]
     },
-    "affiant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            185.0,
-            277.0,
-            198.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            488.0,
-            277.0,
-            500.0
-          ]
-        }
-      ]
-    },
-    "affiant_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            345.0,
-            185.0,
-            489.0,
-            198.0
-          ]
-        }
-      ]
-    },
-    "decedent_town": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            54.0,
-            214.4,
-            210.0,
-            226.4
-          ]
-        }
-      ]
-    },
-    "decedent_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            286.0,
-            214.4,
-            407.0,
-            226.4
-          ]
-        }
-      ]
-    },
-    "date_of_death": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            54.0,
-            228.2,
-            210.0,
-            240.2
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            210.0,
-            228.2,
-            252.0,
-            240.2
-          ]
-        }
-      ]
-    },
-    "affidavit_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            404.0,
-            277.0,
-            418.0
-          ]
-        }
-      ]
-    },
-    "affiant_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            306.0,
-            403.0,
-            528.0,
-            417.0
-          ]
-        }
-      ]
-    },
-    "notary_state": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            446.0,
-            210.0,
-            459.0
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            102.0,
-            462.8,
-            277.0,
-            474.8
-          ]
-        }
-      ]
-    },
-    "notarization_day": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            491.0,
-            487.0,
-            515.0,
-            500.0
-          ]
-        }
-      ]
-    },
-    "notarization_month": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            54.0,
-            504.2,
-            210.0,
-            516.2
-          ]
-        }
-      ]
-    },
-    "notarization_year_suffix": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            187.0,
-            504.2,
-            223.0,
-            516.2
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            306.0,
-            556.0,
-            528.0,
-            569.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            456.0,
-            550.8,
-            522.0,
-            569.4
-          ]
-        }
-      ]
+    {
+     "page": 0,
+     "rect": [
+      156.0,
+      199.6,
+      330.0,
+      212.6
+     ]
     }
+   ]
+  },
+  "affiant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      185.0,
+      277.0,
+      198.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      487.0,
+      277.0,
+      500.0
+     ]
+    }
+   ]
+  },
+  "affiant_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      345.0,
+      185.0,
+      489.0,
+      198.0
+     ]
+    }
+   ]
+  },
+  "decedent_town": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      54.0,
+      213.4,
+      210.0,
+      226.4
+     ]
+    }
+   ]
+  },
+  "decedent_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      286.0,
+      213.4,
+      407.0,
+      226.4
+     ]
+    }
+   ]
+  },
+  "date_of_death": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      54.0,
+      227.2,
+      210.0,
+      240.2
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      210.0,
+      227.2,
+      252.0,
+      240.2
+     ]
+    }
+   ]
+  },
+  "affidavit_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      405.0,
+      277.0,
+      418.0
+     ]
+    }
+   ]
+  },
+  "affiant_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      306.0,
+      404.0,
+      528.0,
+      417.0
+     ]
+    }
+   ]
+  },
+  "notary_state": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      446.0,
+      210.0,
+      459.0
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      102.0,
+      461.8,
+      277.0,
+      474.8
+     ]
+    }
+   ]
+  },
+  "notarization_day": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      491.0,
+      487.0,
+      515.0,
+      500.0
+     ]
+    }
+   ]
+  },
+  "notarization_month": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      54.0,
+      503.2,
+      210.0,
+      516.2
+     ]
+    }
+   ]
+  },
+  "notarization_year_suffix": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      187.0,
+      503.2,
+      223.0,
+      516.2
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      306.0,
+      556.0,
+      528.0,
+      569.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      456.0,
+      556.4,
+      522.0,
+      569.4
+     ]
+    }
+   ]
   }
+ }
 }

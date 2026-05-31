@@ -1,1666 +1,1666 @@
 {
-  "form_id": "AF-105",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            63.4,
-            103.0,
-            171.4,
-            113.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            102.0,
-            509.0,
-            113.0
-          ]
-        }
-      ]
-    },
-    "case_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            119.0,
-            125.0,
-            336.0,
-            135.0
-          ]
-        }
-      ]
-    },
-    "party_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            119.0,
-            149.0,
-            255.0,
-            160.0
-          ]
-        }
-      ]
-    },
-    "date_of_birth": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            282.0,
-            149.0,
-            367.0,
-            160.0
-          ]
-        }
-      ]
-    },
-    "age": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            393.0,
-            149.0,
-            438.0,
-            160.0
-          ]
-        }
-      ]
-    },
-    "phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            471.0,
-            149.0,
-            537.0,
-            159.0
-          ]
-        }
-      ]
-    },
-    "address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            163.1,
-            560.0,
-            175.1
-          ]
-        }
-      ]
-    },
-    "request_type": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "court_appointed_lawyer_guardian",
-          "label": "court appointed lawyer and/or guardian ad litem",
-          "page": 0,
-          "rect": [
-            135.0,
-            175.4,
-            143.0,
-            183.4
-          ]
-        },
-        {
-          "value": "waiver_fees_service_costs",
-          "label": "waiver of fees and/or all or part of service costs",
-          "page": 0,
-          "rect": [
-            342.9,
-            173.1,
-            350.9,
-            181.1
-          ]
-        }
-      ]
-    },
-    "marital_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "single",
-          "label": "single",
-          "page": 0,
-          "rect": [
-            135.0,
-            185.1,
-            143.0,
-            193.1
-          ]
-        },
-        {
-          "value": "married",
-          "label": "married",
-          "page": 0,
-          "rect": [
-            185.4,
-            185.1,
-            193.4,
-            193.1
-          ]
-        },
-        {
-          "value": "divorced",
-          "label": "divorced",
-          "page": 0,
-          "rect": [
-            249.9,
-            185.9,
-            257.9,
-            193.9
-          ]
-        },
-        {
-          "value": "separated",
-          "label": "separated",
-          "page": 0,
-          "rect": [
-            309.9,
-            185.9,
-            317.9,
-            193.9
-          ]
-        },
-        {
-          "value": "widowed",
-          "label": "widowed",
-          "page": 0,
-          "rect": [
-            381.9,
-            185.9,
-            389.9,
-            193.9
-          ]
-        },
-        {
-          "value": "partnered",
-          "label": "partnered",
-          "page": 0,
-          "rect": [
-            459.9,
-            185.9,
-            467.9,
-            193.9
-          ]
-        }
-      ]
-    },
-    "living_arrangement": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "alone",
-          "label": "alone",
-          "page": 0,
-          "rect": [
-            109.9,
-            196.8,
-            117.9,
-            204.8
-          ]
-        },
-        {
-          "value": "with_spouse",
-          "label": "with spouse",
-          "page": 0,
-          "rect": [
-            153.4,
-            196.8,
-            161.4,
-            204.8
-          ]
-        },
-        {
-          "value": "with_parent",
-          "label": "with parent",
-          "page": 0,
-          "rect": [
-            216.7,
-            195.6,
-            224.7,
-            203.6
-          ]
-        },
-        {
-          "value": "with_children",
-          "label": "with children",
-          "page": 0,
-          "rect": [
-            276.6,
-            196.3,
-            284.6,
-            204.3
-          ]
-        },
-        {
-          "value": "with_friends",
-          "label": "with friend(s)",
-          "page": 0,
-          "rect": [
-            342.2,
-            197.2,
-            350.2,
-            205.2
-          ]
-        },
-        {
-          "value": "with_partner",
-          "label": "with partner",
-          "page": 0,
-          "rect": [
-            412.5,
-            196.0,
-            420.5,
-            204.0
-          ]
-        },
-        {
-          "value": "other",
-          "label": "other",
-          "page": 0,
-          "rect": [
-            475.8,
-            196.8,
-            483.8,
-            204.8
-          ]
-        }
-      ]
-    },
-    "living_arrangement_other": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            510.0,
-            197.5,
-            536.0,
-            209.5
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            209.1,
-            560.0,
-            221.1
-          ]
-        }
-      ]
-    },
-    "dependents_list": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            220.6,
-            560.0,
-            232.6
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            63.4,
-            232.1,
-            560.0,
-            244.1
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            63.4,
-            244.6,
-            134.2,
-            263.5
-          ]
-        }
-      ]
-    },
-    "cash_on_hand": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            266.7,
-            560.0,
-            278.7
-          ]
-        }
-      ]
-    },
-    "checking_institution": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            250.0,
-            287.0,
-            382.0,
-            298.0
-          ]
-        }
-      ]
-    },
-    "checking_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            287.0,
-            560.0,
-            298.0
-          ]
-        }
-      ]
-    },
-    "savings_institution": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            250.0,
-            310.0,
-            382.0,
-            321.0
-          ]
-        }
-      ]
-    },
-    "savings_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            310.0,
-            560.0,
-            321.0
-          ]
-        }
-      ]
-    },
-    "stocks_bonds_specify": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            335.6,
-            560.0,
-            347.6
-          ]
-        }
-      ]
-    },
-    "stocks_bonds_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            333.0,
-            560.0,
-            344.0
-          ]
-        }
-      ]
-    },
-    "bail_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            347.1,
-            560.0,
-            359.1
-          ]
-        }
-      ]
-    },
-    "other_assets_specify": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            282.0,
-            356.0,
-            382.0,
-            367.0
-          ]
-        }
-      ]
-    },
-    "other_assets_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            358.6,
-            560.0,
-            370.6
-          ]
-        }
-      ]
-    },
-    "total_cash_assets": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            119.0,
-            370.1,
-            227.2,
-            382.1
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            370.1,
-            560.0,
-            382.1
-          ]
-        }
-      ]
-    },
-    "employer_name_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            416.4,
-            560.0,
-            428.4
-          ]
-        }
-      ]
-    },
-    "length_employed": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            206.0,
-            427.3,
-            336.0,
-            439.3
-          ]
-        }
-      ]
-    },
-    "employment_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "full_time",
-          "label": "full time",
-          "page": 0,
-          "rect": [
-            343.8,
-            426.3,
-            351.8,
-            434.3
-          ]
-        },
-        {
-          "value": "part_time",
-          "label": "part time",
-          "page": 0,
-          "rect": [
-            400.2,
-            426.7,
-            408.2,
-            434.7
-          ]
-        },
-        {
-          "value": "seasonal",
-          "label": "seasonal",
-          "page": 0,
-          "rect": [
-            458.2,
-            425.8,
-            466.2,
-            433.8
-          ]
-        }
-      ]
-    },
-    "last_employment_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            450.3,
-            560.0,
-            462.3
-          ]
-        }
-      ]
-    },
-    "anticipate_other_employment": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 0,
-          "rect": [
-            428.2,
-            460.4,
-            436.2,
-            468.4
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 0,
-          "rect": [
-            462.9,
-            461.2,
-            470.9,
-            469.2
-          ]
-        }
-      ]
-    },
-    "other_employment_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            473.2,
-            560.0,
-            485.2
-          ]
-        }
-      ]
-    },
-    "other_compensation_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            508.0,
-            560.0,
-            520.0
-          ]
-        }
-      ]
-    },
-    "salary_wages_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            543.0,
-            443.0,
-            554.0
-          ]
-        }
-      ]
-    },
-    "salary_wages_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            466.2,
-            543.7,
-            474.2,
-            551.7
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            502.2,
-            543.7,
-            510.2,
-            551.7
-          ]
-        }
-      ]
-    },
-    "unemployment_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            556.8,
-            443.0,
-            568.8
-          ]
-        }
-      ]
-    },
-    "unemployment_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            466.2,
-            557.9,
-            474.2,
-            565.9
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            502.2,
-            557.9,
-            510.2,
-            565.9
-          ]
-        }
-      ]
-    },
-    "social_security_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            570.3,
-            443.0,
-            582.3
-          ]
-        }
-      ]
-    },
-    "social_security_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            466.2,
-            572.0,
-            474.2,
-            580.0
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            502.2,
-            572.0,
-            510.2,
-            580.0
-          ]
-        }
-      ]
-    },
-    "tanf_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            583.6,
-            443.0,
-            595.6
-          ]
-        }
-      ]
-    },
-    "tanf_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            466.2,
-            586.0,
-            474.2,
-            594.0
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            502.2,
-            586.0,
-            510.2,
-            594.0
-          ]
-        }
-      ]
-    },
-    "alimony_child_support_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            597.0,
-            443.0,
-            609.0
-          ]
-        }
-      ]
-    },
-    "alimony_child_support_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            466.2,
-            600.1,
-            474.2,
-            608.1
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            502.2,
-            600.1,
-            510.2,
-            608.1
-          ]
-        }
-      ]
-    },
-    "other_income_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            610.3,
-            443.0,
-            622.3
-          ]
-        }
-      ]
-    },
-    "other_income_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            466.2,
-            614.2,
-            474.2,
-            622.2
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            502.2,
-            614.2,
-            510.2,
-            622.2
-          ]
-        }
-      ]
-    },
-    "other_income_specify": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            99.0,
-            635.3,
-            560.0,
-            647.3
-          ]
-        }
-      ]
-    },
-    "spouse_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            166.0,
-            669.8,
-            336.0,
-            681.8
-          ]
-        }
-      ]
-    },
-    "spouse_relationship": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            428.0,
-            667.0,
-            560.0,
-            678.0
-          ]
-        }
-      ]
-    },
-    "spouse_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            119.0,
-            681.3,
-            336.0,
-            693.3
-          ]
-        }
-      ]
-    },
-    "spouse_dependents_count": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            510.0,
-            681.3,
-            558.0,
-            693.3
-          ]
-        }
-      ]
-    },
-    "spouse_employed": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 0,
-          "rect": [
-            202.5,
-            692.2,
-            210.5,
-            700.2
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 0,
-          "rect": [
-            230.5,
-            692.2,
-            238.5,
-            700.2
-          ]
-        }
-      ]
-    },
-    "spouse_income_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            393.0,
-            701.0,
-            448.0,
-            712.0
-          ]
-        }
-      ]
-    },
-    "spouse_income_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            474.9,
-            703.8,
-            482.9,
-            711.8
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            511.8,
-            703.0,
-            519.8,
-            711.0
-          ]
-        }
-      ]
-    },
-    "spouse_income_available_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            393.0,
-            715.9,
-            453.0,
-            727.9
-          ]
-        }
-      ]
-    },
-    "spouse_income_available_period": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "week",
-          "label": "week",
-          "page": 0,
-          "rect": [
-            474.2,
-            715.4,
-            482.2,
-            723.4
-          ]
-        },
-        {
-          "value": "month",
-          "label": "month",
-          "page": 0,
-          "rect": [
-            512.5,
-            715.0,
-            520.5,
-            723.0
-          ]
-        }
-      ]
-    },
-    "money_owed_to_party": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 0,
-          "rect": [
-            222.6,
-            735.3,
-            230.6,
-            743.3
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 0,
-          "rect": [
-            254.2,
-            735.7,
-            262.2,
-            743.7
-          ]
-        }
-      ]
-    },
-    "money_owed_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            358.0,
-            734.0,
-            560.0,
-            745.0
-          ]
-        }
-      ]
-    },
-    "expected_payments_explanation": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            88.3,
-            554.0,
-            100.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            100.9,
-            141.5,
-            119.9
-          ]
-        }
-      ]
-    },
-    "own_real_estate": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "yes",
-          "label": "Yes",
-          "page": 1,
-          "rect": [
-            259.8,
-            121.3,
-            267.8,
-            129.3
-          ]
-        },
-        {
-          "value": "no",
-          "label": "No",
-          "page": 1,
-          "rect": [
-            512.5,
-            122.4,
-            520.5,
-            130.4
-          ]
-        }
-      ]
-    },
-    "real_estate_market_value": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            471.0,
-            120.0,
-            511.0,
-            130.0
-          ]
-        }
-      ]
-    },
-    "mortgage_amount": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            286.0,
-            134.3,
-            361.0,
-            146.3
-          ]
-        }
-      ]
-    },
-    "mortgage_holder": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            471.0,
-            134.3,
-            556.0,
-            146.3
-          ]
-        }
-      ]
-    },
-    "vehicle_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            209.2,
-            155.2,
-            502.6,
-            168.7
-          ]
-        }
-      ]
-    },
-    "vehicle_value": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            432.0,
-            160.0,
-            552.0,
-            172.0
-          ]
-        }
-      ]
-    },
-    "vehicle_title_holder": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            87.0,
-            170.7,
-            172.0,
-            182.7
-          ]
-        }
-      ]
-    },
-    "vehicle_registration": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            170.7,
-            554.0,
-            182.7
-          ]
-        }
-      ]
-    },
-    "other_personal_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            159.5,
-            189.8,
-            545.2,
-            203.2
-          ]
-        }
-      ]
-    },
-    "insurance_pension_value": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            205.2,
-            554.0,
-            217.2
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            216.8,
-            114.6,
-            234.4
-          ]
-        }
-      ]
-    },
-    "food_expenses": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            392.0,
-            250.0,
-            482.0,
-            261.0
-          ]
-        }
-      ]
-    },
-    "housing_expenses": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            392.0,
-            264.1,
-            482.0,
-            276.1
-          ]
-        }
-      ]
-    },
-    "utilities_expenses": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            392.0,
-            277.5,
-            482.0,
-            289.5
-          ]
-        }
-      ]
-    },
-    "other_living_expenses": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            392.0,
-            290.8,
-            482.0,
-            302.8
-          ]
-        }
-      ]
-    },
-    "total_living_expenses": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            392.0,
-            304.2,
-            482.0,
-            316.2
-          ]
-        }
-      ]
-    },
-    "loan_row_1_lender": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            347.9,
-            183.0,
-            359.9
-          ]
-        }
-      ]
-    },
-    "loan_row_1_purpose": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            194.0,
-            347.9,
-            295.0,
-            359.9
-          ]
-        }
-      ]
-    },
-    "loan_row_1_total_owed": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            305.0,
-            347.9,
-            410.0,
-            359.9
-          ]
-        }
-      ]
-    },
-    "loan_row_1_monthly_payment": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            347.9,
-            554.0,
-            359.9
-          ]
-        }
-      ]
-    },
-    "loan_row_2_lender": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            359.4,
-            183.0,
-            371.4
-          ]
-        }
-      ]
-    },
-    "loan_row_2_purpose": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            194.0,
-            359.4,
-            295.0,
-            371.4
-          ]
-        }
-      ]
-    },
-    "loan_row_2_total_owed": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            305.0,
-            359.4,
-            410.0,
-            371.4
-          ]
-        }
-      ]
-    },
-    "loan_row_2_monthly_payment": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            359.4,
-            554.0,
-            371.4
-          ]
-        }
-      ]
-    },
-    "loan_row_3_lender": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            370.9,
-            183.0,
-            382.9
-          ]
-        }
-      ]
-    },
-    "loan_row_3_purpose": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            194.0,
-            370.9,
-            295.0,
-            382.9
-          ]
-        }
-      ]
-    },
-    "loan_row_3_total_owed": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            305.0,
-            370.9,
-            410.0,
-            382.9
-          ]
-        }
-      ]
-    },
-    "loan_row_3_monthly_payment": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            370.9,
-            554.0,
-            382.9
-          ]
-        }
-      ]
-    },
-    "medical_support_payments": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            405.7,
-            554.0,
-            417.7
-          ]
-        }
-      ]
-    },
-    "medical_support_total": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            420.0,
-            405.7,
-            501.0,
-            417.7
-          ]
-        }
-      ]
-    },
-    "additional_statement": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            448.7,
-            554.0,
-            460.7
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            63.0,
-            460.2,
-            554.0,
-            472.2
-          ]
-        }
-      ]
-    },
-    "party_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            87.0,
-            582.0,
-            222.0,
-            593.0
-          ]
-        }
-      ]
-    },
-    "party_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            351.0,
-            583.0,
-            554.0,
-            593.0
-          ]
-        }
-      ]
-    },
-    "notary_appeared_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            230.0,
-            617.0,
-            384.0,
-            627.0
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            87.0,
-            672.0,
-            222.0,
-            682.0
-          ]
-        }
-      ]
-    },
-    "notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            351.0,
-            672.0,
-            554.0,
-            682.0
-          ]
-        }
-      ]
+ "form_id": "AF-105",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "AF-105 Indigency-Financial Affidavit (Rev. 11-12-20)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      63.4,
+      100.0,
+      171.4,
+      113.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      100.0,
+      509.0,
+      113.0
+     ]
+    }
+   ]
+  },
+  "case_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      119.0,
+      122.0,
+      336.0,
+      135.0
+     ]
+    }
+   ]
+  },
+  "party_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      119.0,
+      147.0,
+      255.0,
+      160.0
+     ]
+    }
+   ]
+  },
+  "date_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      282.0,
+      147.0,
+      367.0,
+      160.0
+     ]
+    }
+   ]
+  },
+  "age": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      393.0,
+      147.0,
+      438.0,
+      160.0
+     ]
+    }
+   ]
+  },
+  "phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      471.0,
+      146.0,
+      537.0,
+      159.0
+     ]
+    }
+   ]
+  },
+  "address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      162.1,
+      560.0,
+      175.1
+     ]
+    }
+   ]
+  },
+  "request_type": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "court_appointed_lawyer_guardian",
+     "label": "court appointed lawyer and/or guardian ad litem",
+     "page": 0,
+     "rect": [
+      135.0,
+      175.4,
+      143.0,
+      183.4
+     ]
+    },
+    {
+     "value": "waiver_fees_service_costs",
+     "label": "waiver of fees and/or all or part of service costs",
+     "page": 0,
+     "rect": [
+      342.9,
+      173.1,
+      350.9,
+      181.1
+     ]
+    }
+   ]
+  },
+  "marital_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "single",
+     "label": "single",
+     "page": 0,
+     "rect": [
+      135.0,
+      185.1,
+      143.0,
+      193.1
+     ]
+    },
+    {
+     "value": "married",
+     "label": "married",
+     "page": 0,
+     "rect": [
+      185.4,
+      185.1,
+      193.4,
+      193.1
+     ]
+    },
+    {
+     "value": "divorced",
+     "label": "divorced",
+     "page": 0,
+     "rect": [
+      249.9,
+      185.9,
+      257.9,
+      193.9
+     ]
+    },
+    {
+     "value": "separated",
+     "label": "separated",
+     "page": 0,
+     "rect": [
+      309.9,
+      185.9,
+      317.9,
+      193.9
+     ]
+    },
+    {
+     "value": "widowed",
+     "label": "widowed",
+     "page": 0,
+     "rect": [
+      381.9,
+      185.9,
+      389.9,
+      193.9
+     ]
+    },
+    {
+     "value": "partnered",
+     "label": "partnered",
+     "page": 0,
+     "rect": [
+      459.9,
+      185.9,
+      467.9,
+      193.9
+     ]
+    }
+   ]
+  },
+  "living_arrangement": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "alone",
+     "label": "alone",
+     "page": 0,
+     "rect": [
+      109.9,
+      196.8,
+      117.9,
+      204.8
+     ]
+    },
+    {
+     "value": "with_spouse",
+     "label": "with spouse",
+     "page": 0,
+     "rect": [
+      153.4,
+      196.8,
+      161.4,
+      204.8
+     ]
+    },
+    {
+     "value": "with_parent",
+     "label": "with parent",
+     "page": 0,
+     "rect": [
+      216.7,
+      195.6,
+      224.7,
+      203.6
+     ]
+    },
+    {
+     "value": "with_children",
+     "label": "with children",
+     "page": 0,
+     "rect": [
+      276.6,
+      196.3,
+      284.6,
+      204.3
+     ]
+    },
+    {
+     "value": "with_friends",
+     "label": "with friend(s)",
+     "page": 0,
+     "rect": [
+      342.2,
+      197.2,
+      350.2,
+      205.2
+     ]
+    },
+    {
+     "value": "with_partner",
+     "label": "with partner",
+     "page": 0,
+     "rect": [
+      412.5,
+      196.0,
+      420.5,
+      204.0
+     ]
+    },
+    {
+     "value": "other",
+     "label": "other",
+     "page": 0,
+     "rect": [
+      475.8,
+      196.8,
+      483.8,
+      204.8
+     ]
+    }
+   ]
+  },
+  "living_arrangement_other": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      510.0,
+      196.5,
+      536.0,
+      209.5
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      208.1,
+      560.0,
+      221.1
+     ]
+    }
+   ]
+  },
+  "dependents_list": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      219.6,
+      560.0,
+      232.6
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      63.4,
+      231.1,
+      560.0,
+      244.1
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      63.4,
+      250.5,
+      134.2,
+      263.5
+     ]
+    }
+   ]
+  },
+  "cash_on_hand": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      265.7,
+      560.0,
+      278.7
+     ]
+    }
+   ]
+  },
+  "checking_institution": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      250.0,
+      285.0,
+      382.0,
+      298.0
+     ]
+    }
+   ]
+  },
+  "checking_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      285.0,
+      560.0,
+      298.0
+     ]
+    }
+   ]
+  },
+  "savings_institution": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      250.0,
+      308.0,
+      382.0,
+      321.0
+     ]
+    }
+   ]
+  },
+  "savings_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      308.0,
+      560.0,
+      321.0
+     ]
+    }
+   ]
+  },
+  "stocks_bonds_specify": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      334.6,
+      560.0,
+      347.6
+     ]
+    }
+   ]
+  },
+  "stocks_bonds_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      331.0,
+      560.0,
+      344.0
+     ]
+    }
+   ]
+  },
+  "bail_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      346.1,
+      560.0,
+      359.1
+     ]
+    }
+   ]
+  },
+  "other_assets_specify": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      282.0,
+      354.0,
+      382.0,
+      367.0
+     ]
+    }
+   ]
+  },
+  "other_assets_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      357.6,
+      560.0,
+      370.6
+     ]
+    }
+   ]
+  },
+  "total_cash_assets": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      119.0,
+      369.1,
+      227.2,
+      382.1
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      369.1,
+      560.0,
+      382.1
+     ]
+    }
+   ]
+  },
+  "employer_name_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      415.4,
+      560.0,
+      428.4
+     ]
+    }
+   ]
+  },
+  "length_employed": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      206.0,
+      426.3,
+      336.0,
+      439.3
+     ]
+    }
+   ]
+  },
+  "employment_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "full_time",
+     "label": "full time",
+     "page": 0,
+     "rect": [
+      343.8,
+      426.3,
+      351.8,
+      434.3
+     ]
+    },
+    {
+     "value": "part_time",
+     "label": "part time",
+     "page": 0,
+     "rect": [
+      400.2,
+      426.7,
+      408.2,
+      434.7
+     ]
+    },
+    {
+     "value": "seasonal",
+     "label": "seasonal",
+     "page": 0,
+     "rect": [
+      458.2,
+      425.8,
+      466.2,
+      433.8
+     ]
+    }
+   ]
+  },
+  "last_employment_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      449.3,
+      560.0,
+      462.3
+     ]
+    }
+   ]
+  },
+  "anticipate_other_employment": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 0,
+     "rect": [
+      428.2,
+      460.4,
+      436.2,
+      468.4
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 0,
+     "rect": [
+      462.9,
+      461.2,
+      470.9,
+      469.2
+     ]
+    }
+   ]
+  },
+  "other_employment_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      472.2,
+      560.0,
+      485.2
+     ]
+    }
+   ]
+  },
+  "other_compensation_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      507.0,
+      560.0,
+      520.0
+     ]
+    }
+   ]
+  },
+  "salary_wages_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      541.0,
+      443.0,
+      554.0
+     ]
+    }
+   ]
+  },
+  "salary_wages_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      466.2,
+      543.7,
+      474.2,
+      551.7
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      502.2,
+      543.7,
+      510.2,
+      551.7
+     ]
+    }
+   ]
+  },
+  "unemployment_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      555.8,
+      443.0,
+      568.8
+     ]
+    }
+   ]
+  },
+  "unemployment_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      466.2,
+      557.9,
+      474.2,
+      565.9
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      502.2,
+      557.9,
+      510.2,
+      565.9
+     ]
+    }
+   ]
+  },
+  "social_security_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      569.3,
+      443.0,
+      582.3
+     ]
+    }
+   ]
+  },
+  "social_security_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      466.2,
+      572.0,
+      474.2,
+      580.0
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      502.2,
+      572.0,
+      510.2,
+      580.0
+     ]
+    }
+   ]
+  },
+  "tanf_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      582.6,
+      443.0,
+      595.6
+     ]
+    }
+   ]
+  },
+  "tanf_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      466.2,
+      586.0,
+      474.2,
+      594.0
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      502.2,
+      586.0,
+      510.2,
+      594.0
+     ]
+    }
+   ]
+  },
+  "alimony_child_support_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      596.0,
+      443.0,
+      609.0
+     ]
+    }
+   ]
+  },
+  "alimony_child_support_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      466.2,
+      600.1,
+      474.2,
+      608.1
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      502.2,
+      600.1,
+      510.2,
+      608.1
+     ]
+    }
+   ]
+  },
+  "other_income_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      609.3,
+      443.0,
+      622.3
+     ]
+    }
+   ]
+  },
+  "other_income_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      466.2,
+      614.2,
+      474.2,
+      622.2
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      502.2,
+      614.2,
+      510.2,
+      622.2
+     ]
+    }
+   ]
+  },
+  "other_income_specify": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      99.0,
+      634.3,
+      560.0,
+      647.3
+     ]
+    }
+   ]
+  },
+  "spouse_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      166.0,
+      668.8,
+      336.0,
+      681.8
+     ]
+    }
+   ]
+  },
+  "spouse_relationship": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      428.0,
+      665.0,
+      560.0,
+      678.0
+     ]
+    }
+   ]
+  },
+  "spouse_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      119.0,
+      680.3,
+      336.0,
+      693.3
+     ]
+    }
+   ]
+  },
+  "spouse_dependents_count": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      510.0,
+      680.3,
+      558.0,
+      693.3
+     ]
+    }
+   ]
+  },
+  "spouse_employed": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 0,
+     "rect": [
+      202.5,
+      692.2,
+      210.5,
+      700.2
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 0,
+     "rect": [
+      230.5,
+      692.2,
+      238.5,
+      700.2
+     ]
+    }
+   ]
+  },
+  "spouse_income_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      393.0,
+      699.0,
+      448.0,
+      712.0
+     ]
+    }
+   ]
+  },
+  "spouse_income_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      474.9,
+      703.8,
+      482.9,
+      711.8
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      511.8,
+      703.0,
+      519.8,
+      711.0
+     ]
+    }
+   ]
+  },
+  "spouse_income_available_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      393.0,
+      714.9,
+      453.0,
+      727.9
+     ]
+    }
+   ]
+  },
+  "spouse_income_available_period": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "week",
+     "label": "week",
+     "page": 0,
+     "rect": [
+      474.2,
+      715.4,
+      482.2,
+      723.4
+     ]
+    },
+    {
+     "value": "month",
+     "label": "month",
+     "page": 0,
+     "rect": [
+      512.5,
+      715.0,
+      520.5,
+      723.0
+     ]
+    }
+   ]
+  },
+  "money_owed_to_party": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 0,
+     "rect": [
+      222.6,
+      735.3,
+      230.6,
+      743.3
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 0,
+     "rect": [
+      254.2,
+      735.7,
+      262.2,
+      743.7
+     ]
+    }
+   ]
+  },
+  "money_owed_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      358.0,
+      732.0,
+      560.0,
+      745.0
+     ]
+    }
+   ]
+  },
+  "expected_payments_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      87.3,
+      554.0,
+      100.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      106.9,
+      141.5,
+      119.9
+     ]
+    }
+   ]
+  },
+  "own_real_estate": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "yes",
+     "label": "Yes",
+     "page": 1,
+     "rect": [
+      259.8,
+      121.3,
+      267.8,
+      129.3
+     ]
+    },
+    {
+     "value": "no",
+     "label": "No",
+     "page": 1,
+     "rect": [
+      512.5,
+      122.4,
+      520.5,
+      130.4
+     ]
+    }
+   ]
+  },
+  "real_estate_market_value": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      471.0,
+      117.0,
+      511.0,
+      130.0
+     ]
+    }
+   ]
+  },
+  "mortgage_amount": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      286.0,
+      133.3,
+      361.0,
+      146.3
+     ]
+    }
+   ]
+  },
+  "mortgage_holder": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      471.0,
+      133.3,
+      556.0,
+      146.3
+     ]
+    }
+   ]
+  },
+  "vehicle_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      209.2,
+      155.2,
+      502.6,
+      168.7
+     ]
+    }
+   ]
+  },
+  "vehicle_value": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      432.0,
+      159.0,
+      552.0,
+      172.0
+     ]
+    }
+   ]
+  },
+  "vehicle_title_holder": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      87.0,
+      169.7,
+      172.0,
+      182.7
+     ]
+    }
+   ]
+  },
+  "vehicle_registration": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      169.7,
+      554.0,
+      182.7
+     ]
+    }
+   ]
+  },
+  "other_personal_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      159.5,
+      189.8,
+      545.2,
+      203.2
+     ]
+    }
+   ]
+  },
+  "insurance_pension_value": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      204.2,
+      554.0,
+      217.2
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      221.4,
+      114.6,
+      234.4
+     ]
+    }
+   ]
+  },
+  "food_expenses": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      392.0,
+      248.0,
+      482.0,
+      261.0
+     ]
+    }
+   ]
+  },
+  "housing_expenses": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      392.0,
+      263.1,
+      482.0,
+      276.1
+     ]
+    }
+   ]
+  },
+  "utilities_expenses": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      392.0,
+      276.5,
+      482.0,
+      289.5
+     ]
+    }
+   ]
+  },
+  "other_living_expenses": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      392.0,
+      289.8,
+      482.0,
+      302.8
+     ]
+    }
+   ]
+  },
+  "total_living_expenses": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      392.0,
+      303.2,
+      482.0,
+      316.2
+     ]
+    }
+   ]
+  },
+  "loan_row_1_lender": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      346.9,
+      183.0,
+      359.9
+     ]
+    }
+   ]
+  },
+  "loan_row_1_purpose": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      194.0,
+      346.9,
+      295.0,
+      359.9
+     ]
+    }
+   ]
+  },
+  "loan_row_1_total_owed": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      305.0,
+      346.9,
+      410.0,
+      359.9
+     ]
+    }
+   ]
+  },
+  "loan_row_1_monthly_payment": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      346.9,
+      554.0,
+      359.9
+     ]
+    }
+   ]
+  },
+  "loan_row_2_lender": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      358.4,
+      183.0,
+      371.4
+     ]
+    }
+   ]
+  },
+  "loan_row_2_purpose": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      194.0,
+      358.4,
+      295.0,
+      371.4
+     ]
+    }
+   ]
+  },
+  "loan_row_2_total_owed": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      305.0,
+      358.4,
+      410.0,
+      371.4
+     ]
+    }
+   ]
+  },
+  "loan_row_2_monthly_payment": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      358.4,
+      554.0,
+      371.4
+     ]
+    }
+   ]
+  },
+  "loan_row_3_lender": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      369.9,
+      183.0,
+      382.9
+     ]
+    }
+   ]
+  },
+  "loan_row_3_purpose": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      194.0,
+      369.9,
+      295.0,
+      382.9
+     ]
+    }
+   ]
+  },
+  "loan_row_3_total_owed": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      305.0,
+      369.9,
+      410.0,
+      382.9
+     ]
+    }
+   ]
+  },
+  "loan_row_3_monthly_payment": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      369.9,
+      554.0,
+      382.9
+     ]
+    }
+   ]
+  },
+  "medical_support_payments": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      404.7,
+      554.0,
+      417.7
+     ]
+    }
+   ]
+  },
+  "medical_support_total": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      420.0,
+      404.7,
+      501.0,
+      417.7
+     ]
+    }
+   ]
+  },
+  "additional_statement": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      447.7,
+      554.0,
+      460.7
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      63.0,
+      459.2,
+      554.0,
+      472.2
+     ]
+    }
+   ]
+  },
+  "party_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      87.0,
+      580.0,
+      222.0,
+      593.0
+     ]
+    }
+   ]
+  },
+  "party_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      351.0,
+      580.0,
+      554.0,
+      593.0
+     ]
+    }
+   ]
+  },
+  "notary_appeared_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      230.0,
+      614.0,
+      384.0,
+      627.0
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      87.0,
+      669.0,
+      222.0,
+      682.0
+     ]
+    }
+   ]
+  },
+  "notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      351.0,
+      669.0,
+      554.0,
+      682.0
+     ]
+    }
+   ]
   }
+ }
 }

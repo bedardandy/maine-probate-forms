@@ -1,192 +1,192 @@
 {
-  "form_id": "DE-602",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "DE-602 Sworn Statement (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            110.0,
-            202.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            423.0,
-            117.0,
-            542.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "estate_of_decedent": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            97.0,
-            148.0,
-            277.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "personal_representative_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            121.6,
-            200.3,
-            409.8,
-            214.3
-          ]
-        }
-      ]
-    },
-    "further_verify_actions": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "fully_administered",
-          "label": "(a) Fully administered the Estate of the Decedent...",
-          "page": 0,
-          "rect": [
-            90.8,
-            343.4,
-            97.8,
-            350.4
-          ]
-        },
-        {
-          "value": "made_provisions",
-          "label": "(b) Made the following provisions as permitted by 18-C M.R.S. \u00a73-1003(1)(B)",
-          "page": 0,
-          "rect": [
-            90.8,
-            412.4,
-            97.8,
-            419.4
-          ]
-        }
-      ]
-    },
-    "provisions_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            427.0,
-            542.0,
-            588.0
-          ]
-        }
-      ]
-    },
-    "pr_signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            101.0,
-            109.0,
-            291.0,
-            129.0
-          ]
-        }
-      ]
-    },
-    "pr_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            109.0,
-            519.0,
-            129.0
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            181.0,
-            192.0,
-            203.0
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            399.0,
-            183.0,
-            542.0,
-            203.0
-          ]
-        }
-      ]
-    },
-    "notary_appearance_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            262.0,
-            206.0,
-            408.0,
-            226.0
-          ]
-        }
-      ]
-    },
-    "notary_officer_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            287.0,
-            542.0,
-            306.0
-          ]
-        }
-      ]
+ "form_id": "DE-602",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "DE-602 Sworn Statement (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      121.0,
+      202.0,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      423.0,
+      121.0,
+      542.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "estate_of_decedent": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      97.0,
+      155.0,
+      277.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "personal_representative_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      121.6,
+      201.3,
+      409.8,
+      214.3
+     ]
+    }
+   ]
+  },
+  "further_verify_actions": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "fully_administered",
+     "label": "(a) Fully administered the Estate of the Decedent...",
+     "page": 0,
+     "rect": [
+      90.8,
+      343.4,
+      97.8,
+      350.4
+     ]
+    },
+    {
+     "value": "made_provisions",
+     "label": "(b) Made the following provisions as permitted by 18-C M.R.S. \u00a73-1003(1)(B)",
+     "page": 0,
+     "rect": [
+      90.8,
+      412.4,
+      97.8,
+      419.4
+     ]
+    }
+   ]
+  },
+  "provisions_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      427.0,
+      542.0,
+      588.0
+     ]
+    }
+   ]
+  },
+  "pr_signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      101.0,
+      116.0,
+      291.0,
+      129.0
+     ]
+    }
+   ]
+  },
+  "pr_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      116.0,
+      519.0,
+      129.0
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      190.0,
+      192.0,
+      203.0
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      399.0,
+      190.0,
+      542.0,
+      203.0
+     ]
+    }
+   ]
+  },
+  "notary_appearance_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      262.0,
+      213.0,
+      408.0,
+      226.0
+     ]
+    }
+   ]
+  },
+  "notary_officer_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      293.0,
+      542.0,
+      306.0
+     ]
+    }
+   ]
   }
+ }
 }

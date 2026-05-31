@@ -1,374 +1,374 @@
 {
-  "form_id": "DE-501",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 3,
-  "source_fused": "DE-501 Petition with Respect to Supervised Administration (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            69.0,
-            96.0,
-            199.0,
-            115.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            403.0,
-            99.0,
-            468.0,
-            115.0
-          ]
-        }
-      ]
-    },
-    "decedent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            123.0,
-            144.0,
-            289.0,
-            163.0
-          ]
-        }
-      ]
-    },
-    "petitioner_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            79.0,
-            213.3,
-            546.0,
-            251.0
-          ]
-        }
-      ]
-    },
-    "petitioner_interest": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            79.0,
-            266.2,
-            546.0,
-            308.0
-          ]
-        }
-      ]
-    },
-    "testacy_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "adjudicated",
-          "label": "(A) The testacy and priority and qualification of the Personal Representative have been adjudicated and copies of all orders relating to those matters are attached hereto.",
-          "page": 0,
-          "rect": [
-            91.9,
-            334.3,
-            98.9,
-            341.3
-          ]
-        },
-        {
-          "value": "petition_attached",
-          "label": "(B) A Petition to adjudicate the testacy, priority and qualification of the Personal Representative is attached.",
-          "page": 0,
-          "rect": [
-            91.9,
-            362.0,
-            98.9,
-            369.0
-          ]
-        }
-      ]
-    },
-    "will_supervised_provisions": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": true,
-          "label": "YES",
-          "page": 0,
-          "rect": [
-            449.4,
-            396.4,
-            456.4,
-            403.4
-          ]
-        },
-        {
-          "value": false,
-          "label": "NO",
-          "page": 0,
-          "rect": [
-            477.1,
-            396.4,
-            484.1,
-            403.4
-          ]
-        }
-      ]
-    },
-    "circumstances": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            107.4,
-            546.0,
-            178.0
-          ]
-        }
-      ]
-    },
-    "supervision_request": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "supervised",
-          "label": "That this Estate be supervised.",
-          "page": 1,
-          "rect": [
-            117.5,
-            208.0,
-            124.5,
-            215.0
-          ]
-        },
-        {
-          "value": "not_supervised",
-          "label": "That this Estate not be supervised.",
-          "page": 1,
-          "rect": [
-            117.5,
-            231.1,
-            124.5,
-            238.1
-          ]
-        },
-        {
-          "value": "special_restrictions",
-          "label": "That the following special restrictions apply to the powers of the Personal Representative of this estate:",
-          "page": 1,
-          "rect": [
-            117.5,
-            254.1,
-            124.5,
-            261.1
-          ]
-        }
-      ]
-    },
-    "special_restrictions_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            277.7,
-            546.0,
-            341.0
-          ]
-        }
-      ]
-    },
-    "signature_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            99.0,
-            347.0,
-            223.0,
-            366.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            293.0,
-            348.0,
-            505.0,
-            366.0
-          ]
-        }
-      ]
-    },
-    "attorney_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            398.2,
-            223.0,
-            414.0
-          ]
-        }
-      ]
-    },
-    "attorney_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            426.0,
-            223.0,
-            443.0
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            455.1,
-            223.0,
-            472.0
-          ]
-        }
-      ]
-    },
-    "attorney_phone": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            484.0,
-            223.0,
-            500.0
-          ]
-        }
-      ]
-    },
-    "attorney_bar_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            512.1,
-            223.0,
-            528.0
-          ]
-        }
-      ]
-    },
-    "attorney_email": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            64.0,
-            540.0,
-            223.0,
-            557.0
-          ]
-        }
-      ]
-    },
-    "court_order": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "supervised",
-          "label": "This Estate will be SUPERVISED. The Personal Representative may make no distributions without approval by further order of this Court.",
-          "page": 2,
-          "rect": [
-            136.8,
-            202.3,
-            143.8,
-            209.3
-          ]
-        },
-        {
-          "value": "unsupervised",
-          "label": "This Estate will be UNSUPERVISED.",
-          "page": 2,
-          "rect": [
-            136.8,
-            236.9,
-            143.8,
-            243.9
-          ]
-        },
-        {
-          "value": "other_restrictions",
-          "label": "There are no other restrictions on the powers of Personal Representative, except:",
-          "page": 2,
-          "rect": [
-            136.8,
-            259.8,
-            143.8,
-            266.8
-          ]
-        }
-      ]
-    },
-    "order_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            105.0,
-            350.0,
-            250.0,
-            371.0
-          ]
-        }
-      ]
-    },
-    "judge_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            312.0,
-            351.0,
-            516.0,
-            371.0
-          ]
-        }
-      ]
+ "form_id": "DE-501",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 3,
+ "source_fused": "DE-501 Petition with Respect to Supervised Administration (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      69.0,
+      102.0,
+      199.0,
+      115.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      403.0,
+      102.0,
+      468.0,
+      115.0
+     ]
+    }
+   ]
+  },
+  "decedent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      123.0,
+      150.0,
+      289.0,
+      163.0
+     ]
+    }
+   ]
+  },
+  "petitioner_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      79.0,
+      213.3,
+      546.0,
+      251.0
+     ]
+    }
+   ]
+  },
+  "petitioner_interest": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      79.0,
+      266.2,
+      546.0,
+      308.0
+     ]
+    }
+   ]
+  },
+  "testacy_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "adjudicated",
+     "label": "(A) The testacy and priority and qualification of the Personal Representative have been adjudicated and copies of all orders relating to those matters are attached hereto.",
+     "page": 0,
+     "rect": [
+      91.9,
+      334.3,
+      98.9,
+      341.3
+     ]
+    },
+    {
+     "value": "petition_attached",
+     "label": "(B) A Petition to adjudicate the testacy, priority and qualification of the Personal Representative is attached.",
+     "page": 0,
+     "rect": [
+      91.9,
+      362.0,
+      98.9,
+      369.0
+     ]
+    }
+   ]
+  },
+  "will_supervised_provisions": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": true,
+     "label": "YES",
+     "page": 0,
+     "rect": [
+      449.4,
+      396.4,
+      456.4,
+      403.4
+     ]
+    },
+    {
+     "value": false,
+     "label": "NO",
+     "page": 0,
+     "rect": [
+      477.1,
+      396.4,
+      484.1,
+      403.4
+     ]
+    }
+   ]
+  },
+  "circumstances": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      107.4,
+      546.0,
+      178.0
+     ]
+    }
+   ]
+  },
+  "supervision_request": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "supervised",
+     "label": "That this Estate be supervised.",
+     "page": 1,
+     "rect": [
+      117.5,
+      208.0,
+      124.5,
+      215.0
+     ]
+    },
+    {
+     "value": "not_supervised",
+     "label": "That this Estate not be supervised.",
+     "page": 1,
+     "rect": [
+      117.5,
+      231.1,
+      124.5,
+      238.1
+     ]
+    },
+    {
+     "value": "special_restrictions",
+     "label": "That the following special restrictions apply to the powers of the Personal Representative of this estate:",
+     "page": 1,
+     "rect": [
+      117.5,
+      254.1,
+      124.5,
+      261.1
+     ]
+    }
+   ]
+  },
+  "special_restrictions_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      277.7,
+      546.0,
+      341.0
+     ]
+    }
+   ]
+  },
+  "signature_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      99.0,
+      353.0,
+      223.0,
+      366.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      293.0,
+      353.0,
+      505.0,
+      366.0
+     ]
+    }
+   ]
+  },
+  "attorney_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      401.0,
+      223.0,
+      414.0
+     ]
+    }
+   ]
+  },
+  "attorney_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      430.0,
+      223.0,
+      443.0
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      459.0,
+      223.0,
+      472.0
+     ]
+    }
+   ]
+  },
+  "attorney_phone": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      487.0,
+      223.0,
+      500.0
+     ]
+    }
+   ]
+  },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      515.0,
+      223.0,
+      528.0
+     ]
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      64.0,
+      544.0,
+      223.0,
+      557.0
+     ]
+    }
+   ]
+  },
+  "court_order": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "supervised",
+     "label": "This Estate will be SUPERVISED. The Personal Representative may make no distributions without approval by further order of this Court.",
+     "page": 2,
+     "rect": [
+      136.8,
+      202.3,
+      143.8,
+      209.3
+     ]
+    },
+    {
+     "value": "unsupervised",
+     "label": "This Estate will be UNSUPERVISED.",
+     "page": 2,
+     "rect": [
+      136.8,
+      236.9,
+      143.8,
+      243.9
+     ]
+    },
+    {
+     "value": "other_restrictions",
+     "label": "There are no other restrictions on the powers of Personal Representative, except:",
+     "page": 2,
+     "rect": [
+      136.8,
+      259.8,
+      143.8,
+      266.8
+     ]
+    }
+   ]
+  },
+  "order_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      105.0,
+      358.0,
+      250.0,
+      371.0
+     ]
+    }
+   ]
+  },
+  "judge_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      312.0,
+      358.0,
+      516.0,
+      371.0
+     ]
+    }
+   ]
   }
+ }
 }

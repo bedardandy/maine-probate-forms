@@ -1,236 +1,236 @@
 {
-  "form_id": "AF-103",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "AF-103 Affidavit of Name Change for Adult_fused.pdf",
-  "fields": {
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            108.0,
-            197.0,
-            121.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            445.0,
-            108.0,
-            535.0,
-            121.0
-          ]
-        }
-      ]
+ "form_id": "AF-103",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "AF-103 Affidavit of Name Change for Adult_fused.pdf",
+ "fields": {
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      108.0,
+      197.0,
+      121.0
+     ]
     },
-    "in_re_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            126.0,
-            152.0,
-            348.0,
-            165.0
-          ]
-        }
-      ]
-    },
-    "affiant_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            205.0,
-            305.0,
-            218.0
-          ]
-        }
-      ]
-    },
-    "county_of_residence": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            221.6,
-            348.0,
-            233.6
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            423.0,
-            221.6,
-            521.0,
-            233.6
-          ]
-        }
-      ]
-    },
-    "new_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            310.0,
-            235.4,
-            521.0,
-            247.4
-          ]
-        }
-      ]
-    },
-    "children_status": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "no_minor_children",
-          "label": "I have no minor children.",
-          "page": 0,
-          "rect": [
-            127.3,
-            331.7,
-            135.3,
-            339.7
-          ]
-        },
-        {
-          "value": "has_minor_children",
-          "label": "I have the following minor children...",
-          "page": 0,
-          "rect": [
-            127.3,
-            345.5,
-            135.3,
-            353.5
-          ]
-        }
-      ]
-    },
-    "minor_children_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            90.0,
-            359.6,
-            521.0,
-            399.0
-          ]
-        }
-      ]
-    },
-    "new_name_is_former_spouse": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "is",
-          "label": "is",
-          "page": 0,
-          "rect": [
-            344.4,
-            498.9,
-            352.4,
-            506.9
-          ]
-        },
-        {
-          "value": "is_not",
-          "label": "is not",
-          "page": 0,
-          "rect": [
-            369.3,
-            498.9,
-            377.3,
-            506.9
-          ]
-        }
-      ]
-    },
-    "affiant_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            126.0,
-            538.0,
-            274.0,
-            551.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            310.0,
-            538.0,
-            521.0,
-            551.0
-          ]
-        }
-      ]
-    },
-    "notary_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            161.0,
-            596.3,
-            274.0,
-            608.3
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            302.9,
-            619.9,
-            427.0,
-            638.5
-          ]
-        }
-      ]
-    },
-    "notary_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            126.0,
-            694.0,
-            274.0,
-            707.0
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            342.0,
-            695.0,
-            521.0,
-            707.0
-          ]
-        }
-      ]
+    {
+     "page": 0,
+     "rect": [
+      445.0,
+      108.0,
+      535.0,
+      121.0
+     ]
     }
+   ]
+  },
+  "in_re_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      126.0,
+      152.0,
+      348.0,
+      165.0
+     ]
+    }
+   ]
+  },
+  "affiant_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      205.0,
+      305.0,
+      218.0
+     ]
+    }
+   ]
+  },
+  "county_of_residence": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      220.6,
+      348.0,
+      233.6
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      423.0,
+      220.6,
+      521.0,
+      233.6
+     ]
+    }
+   ]
+  },
+  "new_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      310.0,
+      234.4,
+      521.0,
+      247.4
+     ]
+    }
+   ]
+  },
+  "children_status": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "no_minor_children",
+     "label": "I have no minor children.",
+     "page": 0,
+     "rect": [
+      127.3,
+      331.7,
+      135.3,
+      339.7
+     ]
+    },
+    {
+     "value": "has_minor_children",
+     "label": "I have the following minor children...",
+     "page": 0,
+     "rect": [
+      127.3,
+      345.5,
+      135.3,
+      353.5
+     ]
+    }
+   ]
+  },
+  "minor_children_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      90.0,
+      359.6,
+      521.0,
+      399.0
+     ]
+    }
+   ]
+  },
+  "new_name_is_former_spouse": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "is",
+     "label": "is",
+     "page": 0,
+     "rect": [
+      344.4,
+      498.9,
+      352.4,
+      506.9
+     ]
+    },
+    {
+     "value": "is_not",
+     "label": "is not",
+     "page": 0,
+     "rect": [
+      369.3,
+      498.9,
+      377.3,
+      506.9
+     ]
+    }
+   ]
+  },
+  "affiant_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      126.0,
+      538.0,
+      274.0,
+      551.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      310.0,
+      538.0,
+      521.0,
+      551.0
+     ]
+    }
+   ]
+  },
+  "notary_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      161.0,
+      595.3,
+      274.0,
+      608.3
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      302.9,
+      625.5,
+      427.0,
+      638.5
+     ]
+    }
+   ]
+  },
+  "notary_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      126.0,
+      694.0,
+      274.0,
+      707.0
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      342.0,
+      694.0,
+      521.0,
+      707.0
+     ]
+    }
+   ]
   }
+ }
 }

@@ -1,1106 +1,1106 @@
 {
-  "form_id": "N-118",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "N-118 Notice of Guardianship Conservatorship Proceeding (Rev. 9-28-20)_fused.pdf",
-  "fields": {
-    "county_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            119.0,
-            202.0,
-            130.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            426.0,
-            119.0,
-            516.0,
-            129.0
-          ]
-        }
-      ]
-    },
-    "in_re": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            161.0,
-            313.0,
-            171.0
-          ]
-        }
-      ]
-    },
-    "appointment_of_guardian": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            208.0,
-            81.5,
-            217.0
-          ]
-        }
-      ]
-    },
-    "appointment_of_guardian_court_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            462.0,
-            207.0,
-            523.0,
-            218.0
-          ]
-        }
-      ]
-    },
-    "appointment_of_guardian_order_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            156.0,
-            221.3,
-            231.0,
-            233.3
-          ]
-        }
-      ]
-    },
-    "appointment_of_guardian_guardian_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            314.0,
-            221.3,
-            474.0,
-            233.3
-          ]
-        }
-      ]
-    },
-    "appointment_of_guardian_individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            233.5,
-            202.0,
-            245.5
-          ]
-        }
-      ]
-    },
-    "appointment_of_conservator": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            267.2,
-            81.5,
-            276.2
-          ]
-        }
-      ]
-    },
-    "appointment_of_conservator_court_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            280.3,
-            132.0,
-            292.3
-          ]
-        }
-      ]
-    },
-    "appointment_of_conservator_order_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            247.0,
-            280.3,
-            322.0,
-            292.3
-          ]
-        }
-      ]
-    },
-    "appointment_of_conservator_conservator_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            360.0,
-            280.3,
-            562.0,
-            292.3
-          ]
-        }
-      ]
-    },
-    "appointment_of_conservator_individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            156.0,
-            292.5,
-            286.0,
-            304.5
-          ]
-        }
-      ]
-    },
-    "change_in_permanent_dwelling": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            326.0,
-            81.5,
-            335.0
-          ]
-        }
-      ]
-    },
-    "change_in_permanent_dwelling_individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            247.0,
-            325.0,
-            382.0,
-            336.0
-          ]
-        }
-      ]
-    },
-    "change_in_permanent_dwelling_new_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            339.3,
-            562.0,
-            351.3
-          ]
-        }
-      ]
-    },
-    "change_in_permanent_dwelling_nature_of_dwelling": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            351.5,
-            286.0,
-            363.5
-          ]
-        }
-      ]
-    },
-    "change_in_permanent_dwelling_reason_for_change": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            426.0,
-            351.5,
-            562.0,
-            363.5
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            363.0,
-            562.0,
-            375.0
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            396.5,
-            81.5,
-            405.5
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling_individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            156.0,
-            395.0,
-            286.0,
-            406.0
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling_new_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            409.7,
-            286.0,
-            421.7
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling_nature_of_dwelling": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            426.0,
-            409.7,
-            562.0,
-            421.7
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            421.9,
-            202.0,
-            433.9
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling_notified_person": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            215.0,
-            421.9,
-            360.0,
-            433.9
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling_advance_notice": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "was",
-          "label": "Was given advance notice",
-          "page": 0,
-          "rect": [
-            350.1,
-            420.9,
-            359.1,
-            429.9
-          ]
-        },
-        {
-          "value": "was_not",
-          "label": "Was not given advance notice",
-          "page": 0,
-          "rect": [
-            378.1,
-            420.9,
-            387.1,
-            429.9
-          ]
-        }
-      ]
-    },
-    "change_in_dwelling_objection": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "did",
-          "label": "Did object",
-          "page": 0,
-          "rect": [
-            187.6,
-            433.9,
-            196.6,
-            442.9
-          ]
-        },
-        {
-          "value": "did_not",
-          "label": "Did not object",
-          "page": 0,
-          "rect": [
-            215.5,
-            433.9,
-            224.5,
-            442.9
-          ]
-        }
-      ]
-    },
-    "sale_or_surrender_of_dwelling": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            458.4,
-            81.5,
-            467.4
-          ]
-        }
-      ]
-    },
-    "sale_or_surrender_of_dwelling_individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            426.0,
-            458.0,
-            562.0,
-            468.0
-          ]
-        }
-      ]
-    },
-    "sale_or_surrender_of_dwelling_sale_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            247.0,
-            471.6,
-            338.0,
-            483.6
-          ]
-        }
-      ]
-    },
-    "sale_or_surrender_of_dwelling_surrender_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            483.9,
-            202.0,
-            495.9
-          ]
-        }
-      ]
-    },
-    "restrictions_on_contact": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            517.3,
-            81.5,
-            526.3
-          ]
-        }
-      ]
-    },
-    "restrictions_on_contact_restricted_person": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            156.0,
-            516.0,
-            286.0,
-            527.0
-          ]
-        }
-      ]
-    },
-    "restrictions_on_contact_individual_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            156.0,
-            530.5,
-            313.0,
-            542.5
-          ]
-        }
-      ]
-    },
-    "restrictions_on_contact_effective_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            462.0,
-            530.5,
-            542.0,
-            542.5
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            542.8,
-            202.0,
-            554.8
-          ]
-        }
-      ]
-    },
-    "restrictions_on_contact_restrictions_description": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            340.0,
-            542.8,
-            562.0,
-            554.8
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            554.3,
-            562.0,
-            566.3
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            565.8,
-            562.0,
-            577.8
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            577.4,
-            562.0,
-            589.4
-          ]
-        },
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            588.9,
-            562.0,
-            600.9
-          ]
-        }
-      ]
-    },
-    "restrictions_on_contact_court_contact_info": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            611.8,
-            562.0,
-            623.8
-          ]
-        }
-      ]
-    },
-    "revised_guardianship_plan_filed": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            645.3,
-            81.5,
-            654.3
-          ]
-        }
-      ]
-    },
-    "revised_guardianship_plan_filed_filing_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            314.0,
-            645.0,
-            434.0,
-            655.0
-          ]
-        }
-      ]
-    },
-    "revised_guardianship_plan_filed_court_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            670.8,
-            562.0,
-            682.8
-          ]
-        }
-      ]
-    },
-    "revised_guardianship_plan_approved": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.5,
-            704.3,
-            81.5,
-            713.3
-          ]
-        }
-      ]
-    },
-    "revised_guardianship_plan_approved_approval_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            386.0,
-            704.0,
-            562.0,
-            714.0
-          ]
-        }
-      ]
-    },
-    "interim_annual_report": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.5,
-            88.5,
-            81.5,
-            97.5
-          ]
-        }
-      ]
-    },
-    "interim_annual_report_type": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "interim",
-          "label": "Interim",
-          "page": 1,
-          "rect": [
-            196.3,
-            88.5,
-            205.3,
-            97.5
-          ]
-        },
-        {
-          "value": "annual",
-          "label": "Annual",
-          "page": 1,
-          "rect": [
-            238.3,
-            88.5,
-            247.3,
-            97.5
-          ]
-        }
-      ]
-    },
-    "revised_conservatorship_plan_filed": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.5,
-            124.4,
-            81.5,
-            133.4
-          ]
-        }
-      ]
-    },
-    "revised_conservatorship_plan_filed_filing_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            326.0,
-            123.0,
-            446.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "revised_conservatorship_plan_filed_court_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            149.9,
-            535.0,
-            161.9
-          ]
-        }
-      ]
-    },
-    "revised_conservatorship_plan_approved": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.5,
-            183.4,
-            81.5,
-            192.4
-          ]
-        }
-      ]
-    },
-    "revised_conservatorship_plan_approved_approval_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            398.0,
-            182.0,
-            535.0,
-            193.0
-          ]
-        }
-      ]
-    },
-    "inventory_filed": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.5,
-            207.9,
-            81.5,
-            216.9
-          ]
-        }
-      ]
-    },
-    "inventory_filed_filing_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            236.0,
-            207.0,
-            371.0,
-            218.0
-          ]
-        }
-      ]
-    },
-    "inventory_filed_court_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            398.0,
-            206.0,
-            463.0,
-            217.0
-          ]
-        }
-      ]
-    },
-    "inventory_filed_court_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            221.2,
-            535.0,
-            233.2
-          ]
-        }
-      ]
-    },
-    "conservators_report_and_accounting": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.5,
-            243.8,
-            81.5,
-            252.8
-          ]
-        }
-      ]
-    },
-    "conservators_report_and_accounting_filing_date": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            85.0,
-            257.1,
-            230.0,
-            269.1
-          ]
-        }
-      ]
-    },
-    "conservators_report_and_accounting_court_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            255.0,
-            257.1,
-            320.0,
-            269.1
-          ]
-        }
-      ]
-    },
-    "conservators_report_and_accounting_court_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            398.0,
-            257.1,
-            535.0,
-            269.1
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            85.0,
-            269.3,
-            230.0,
-            281.3
-          ]
-        }
-      ]
-    },
-    "other_notice": {
-      "type": "enabler",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.5,
-            291.4,
-            81.5,
-            300.4
-          ]
-        }
-      ]
-    },
-    "other_notice_description": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            304.6,
-            535.0,
-            316.6
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            316.8,
-            535.0,
-            328.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            328.3,
-            535.0,
-            340.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            339.8,
-            535.0,
-            351.8
-          ]
-        }
-      ]
-    },
-    "persons_notified": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            385.8,
-            535.0,
-            397.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            397.4,
-            535.0,
-            409.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            408.8,
-            535.0,
-            420.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            420.3,
-            535.0,
-            432.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            431.8,
-            535.0,
-            443.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            443.3,
-            535.0,
-            455.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            454.9,
-            535.0,
-            466.9
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            466.4,
-            535.0,
-            478.4
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            477.8,
-            535.0,
-            489.8
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            489.3,
-            535.0,
-            501.3
-          ]
-        },
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            500.8,
-            535.0,
-            512.8
-          ]
-        }
-      ]
-    },
-    "date_signed": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            85.0,
-            521.0,
-            190.0,
-            531.0
-          ]
-        }
-      ]
-    },
-    "signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            287.0,
-            521.0,
-            535.0,
-            531.0
-          ]
-        }
-      ]
-    },
-    "role": {
-      "type": "select_many",
-      "options": [
-        {
-          "value": "guardian",
-          "label": "Guardian",
-          "page": 1,
-          "rect": [
-            288.5,
-            534.3,
-            297.5,
-            543.3
-          ]
-        },
-        {
-          "value": "conservator",
-          "label": "Conservator",
-          "page": 1,
-          "rect": [
-            343.4,
-            534.4,
-            352.4,
-            543.4
-          ]
-        }
-      ]
+ "form_id": "N-118",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "N-118 Notice of Guardianship Conservatorship Proceeding (Rev. 9-28-20)_fused.pdf",
+ "fields": {
+  "county_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      117.0,
+      202.0,
+      130.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      426.0,
+      116.0,
+      516.0,
+      129.0
+     ]
+    }
+   ]
+  },
+  "in_re": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      158.0,
+      313.0,
+      171.0
+     ]
+    }
+   ]
+  },
+  "appointment_of_guardian": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      204.0,
+      81.5,
+      217.0
+     ]
+    }
+   ]
+  },
+  "appointment_of_guardian_court_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      462.0,
+      205.0,
+      523.0,
+      218.0
+     ]
+    }
+   ]
+  },
+  "appointment_of_guardian_order_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      156.0,
+      220.3,
+      231.0,
+      233.3
+     ]
+    }
+   ]
+  },
+  "appointment_of_guardian_guardian_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      314.0,
+      220.3,
+      474.0,
+      233.3
+     ]
+    }
+   ]
+  },
+  "appointment_of_guardian_individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      232.5,
+      202.0,
+      245.5
+     ]
+    }
+   ]
+  },
+  "appointment_of_conservator": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      263.2,
+      81.5,
+      276.2
+     ]
+    }
+   ]
+  },
+  "appointment_of_conservator_court_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      279.3,
+      132.0,
+      292.3
+     ]
+    }
+   ]
+  },
+  "appointment_of_conservator_order_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      247.0,
+      279.3,
+      322.0,
+      292.3
+     ]
+    }
+   ]
+  },
+  "appointment_of_conservator_conservator_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      360.0,
+      279.3,
+      562.0,
+      292.3
+     ]
+    }
+   ]
+  },
+  "appointment_of_conservator_individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      156.0,
+      291.5,
+      286.0,
+      304.5
+     ]
+    }
+   ]
+  },
+  "change_in_permanent_dwelling": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      322.0,
+      81.5,
+      335.0
+     ]
+    }
+   ]
+  },
+  "change_in_permanent_dwelling_individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      247.0,
+      323.0,
+      382.0,
+      336.0
+     ]
+    }
+   ]
+  },
+  "change_in_permanent_dwelling_new_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      338.3,
+      562.0,
+      351.3
+     ]
+    }
+   ]
+  },
+  "change_in_permanent_dwelling_nature_of_dwelling": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      350.5,
+      286.0,
+      363.5
+     ]
+    }
+   ]
+  },
+  "change_in_permanent_dwelling_reason_for_change": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      426.0,
+      350.5,
+      562.0,
+      363.5
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      362.0,
+      562.0,
+      375.0
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      392.5,
+      81.5,
+      405.5
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling_individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      156.0,
+      393.0,
+      286.0,
+      406.0
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling_new_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      408.7,
+      286.0,
+      421.7
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling_nature_of_dwelling": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      426.0,
+      408.7,
+      562.0,
+      421.7
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      420.9,
+      202.0,
+      433.9
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling_notified_person": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      215.0,
+      420.9,
+      360.0,
+      433.9
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling_advance_notice": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "was",
+     "label": "Was given advance notice",
+     "page": 0,
+     "rect": [
+      350.1,
+      420.9,
+      359.1,
+      429.9
+     ]
+    },
+    {
+     "value": "was_not",
+     "label": "Was not given advance notice",
+     "page": 0,
+     "rect": [
+      378.1,
+      420.9,
+      387.1,
+      429.9
+     ]
+    }
+   ]
+  },
+  "change_in_dwelling_objection": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "did",
+     "label": "Did object",
+     "page": 0,
+     "rect": [
+      187.6,
+      433.9,
+      196.6,
+      442.9
+     ]
+    },
+    {
+     "value": "did_not",
+     "label": "Did not object",
+     "page": 0,
+     "rect": [
+      215.5,
+      433.9,
+      224.5,
+      442.9
+     ]
+    }
+   ]
+  },
+  "sale_or_surrender_of_dwelling": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      454.4,
+      81.5,
+      467.4
+     ]
+    }
+   ]
+  },
+  "sale_or_surrender_of_dwelling_individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      426.0,
+      455.0,
+      562.0,
+      468.0
+     ]
+    }
+   ]
+  },
+  "sale_or_surrender_of_dwelling_sale_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      247.0,
+      470.6,
+      338.0,
+      483.6
+     ]
+    }
+   ]
+  },
+  "sale_or_surrender_of_dwelling_surrender_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      482.9,
+      202.0,
+      495.9
+     ]
+    }
+   ]
+  },
+  "restrictions_on_contact": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      513.3,
+      81.5,
+      526.3
+     ]
+    }
+   ]
+  },
+  "restrictions_on_contact_restricted_person": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      156.0,
+      514.0,
+      286.0,
+      527.0
+     ]
+    }
+   ]
+  },
+  "restrictions_on_contact_individual_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      156.0,
+      529.5,
+      313.0,
+      542.5
+     ]
+    }
+   ]
+  },
+  "restrictions_on_contact_effective_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      462.0,
+      529.5,
+      542.0,
+      542.5
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      541.8,
+      202.0,
+      554.8
+     ]
+    }
+   ]
+  },
+  "restrictions_on_contact_restrictions_description": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      340.0,
+      541.8,
+      562.0,
+      554.8
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      553.3,
+      562.0,
+      566.3
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      564.8,
+      562.0,
+      577.8
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      576.4,
+      562.0,
+      589.4
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      587.9,
+      562.0,
+      600.9
+     ]
+    }
+   ]
+  },
+  "restrictions_on_contact_court_contact_info": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      610.8,
+      562.0,
+      623.8
+     ]
+    }
+   ]
+  },
+  "revised_guardianship_plan_filed": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      641.3,
+      81.5,
+      654.3
+     ]
+    }
+   ]
+  },
+  "revised_guardianship_plan_filed_filing_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      314.0,
+      642.0,
+      434.0,
+      655.0
+     ]
+    }
+   ]
+  },
+  "revised_guardianship_plan_filed_court_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      669.8,
+      562.0,
+      682.8
+     ]
+    }
+   ]
+  },
+  "revised_guardianship_plan_approved": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.5,
+      700.3,
+      81.5,
+      713.3
+     ]
+    }
+   ]
+  },
+  "revised_guardianship_plan_approved_approval_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      386.0,
+      701.0,
+      562.0,
+      714.0
+     ]
+    }
+   ]
+  },
+  "interim_annual_report": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      84.5,
+      81.5,
+      97.5
+     ]
+    }
+   ]
+  },
+  "interim_annual_report_type": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "interim",
+     "label": "Interim",
+     "page": 1,
+     "rect": [
+      196.3,
+      88.5,
+      205.3,
+      97.5
+     ]
+    },
+    {
+     "value": "annual",
+     "label": "Annual",
+     "page": 1,
+     "rect": [
+      238.3,
+      88.5,
+      247.3,
+      97.5
+     ]
+    }
+   ]
+  },
+  "revised_conservatorship_plan_filed": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      120.4,
+      81.5,
+      133.4
+     ]
+    }
+   ]
+  },
+  "revised_conservatorship_plan_filed_filing_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      326.0,
+      121.0,
+      446.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "revised_conservatorship_plan_filed_court_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      148.9,
+      535.0,
+      161.9
+     ]
+    }
+   ]
+  },
+  "revised_conservatorship_plan_approved": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      179.4,
+      81.5,
+      192.4
+     ]
+    }
+   ]
+  },
+  "revised_conservatorship_plan_approved_approval_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      398.0,
+      180.0,
+      535.0,
+      193.0
+     ]
+    }
+   ]
+  },
+  "inventory_filed": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      203.9,
+      81.5,
+      216.9
+     ]
+    }
+   ]
+  },
+  "inventory_filed_filing_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      236.0,
+      205.0,
+      371.0,
+      218.0
+     ]
+    }
+   ]
+  },
+  "inventory_filed_court_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      398.0,
+      204.0,
+      463.0,
+      217.0
+     ]
+    }
+   ]
+  },
+  "inventory_filed_court_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      220.2,
+      535.0,
+      233.2
+     ]
+    }
+   ]
+  },
+  "conservators_report_and_accounting": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      239.8,
+      81.5,
+      252.8
+     ]
+    }
+   ]
+  },
+  "conservators_report_and_accounting_filing_date": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      85.0,
+      256.1,
+      230.0,
+      269.1
+     ]
+    }
+   ]
+  },
+  "conservators_report_and_accounting_court_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      255.0,
+      256.1,
+      320.0,
+      269.1
+     ]
+    }
+   ]
+  },
+  "conservators_report_and_accounting_court_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      398.0,
+      256.1,
+      535.0,
+      269.1
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      85.0,
+      268.3,
+      230.0,
+      281.3
+     ]
+    }
+   ]
+  },
+  "other_notice": {
+   "type": "enabler",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      287.4,
+      81.5,
+      300.4
+     ]
+    }
+   ]
+  },
+  "other_notice_description": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      303.6,
+      535.0,
+      316.6
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      315.8,
+      535.0,
+      328.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      327.3,
+      535.0,
+      340.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      338.8,
+      535.0,
+      351.8
+     ]
+    }
+   ]
+  },
+  "persons_notified": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      384.8,
+      535.0,
+      397.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      396.4,
+      535.0,
+      409.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      407.8,
+      535.0,
+      420.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      419.3,
+      535.0,
+      432.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      430.8,
+      535.0,
+      443.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      442.3,
+      535.0,
+      455.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      453.9,
+      535.0,
+      466.9
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      465.4,
+      535.0,
+      478.4
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      476.8,
+      535.0,
+      489.8
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      488.3,
+      535.0,
+      501.3
+     ]
+    },
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      499.8,
+      535.0,
+      512.8
+     ]
+    }
+   ]
+  },
+  "date_signed": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      85.0,
+      518.0,
+      190.0,
+      531.0
+     ]
+    }
+   ]
+  },
+  "signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      287.0,
+      518.0,
+      535.0,
+      531.0
+     ]
+    }
+   ]
+  },
+  "role": {
+   "type": "select_many",
+   "options": [
+    {
+     "value": "guardian",
+     "label": "Guardian",
+     "page": 1,
+     "rect": [
+      288.5,
+      534.3,
+      297.5,
+      543.3
+     ]
+    },
+    {
+     "value": "conservator",
+     "label": "Conservator",
+     "page": 1,
+     "rect": [
+      343.4,
+      534.4,
+      352.4,
+      543.4
+     ]
+    }
+   ]
   }
+ }
 }

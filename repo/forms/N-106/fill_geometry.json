@@ -1,192 +1,192 @@
 {
-  "form_id": "N-106",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 1,
-  "source_fused": "N-106 Notice of Removal (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            50.0,
-            96.0,
-            165.0,
-            113.0
-          ]
-        }
-      ]
-    },
-    "docket_number": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            443.0,
-            97.0,
-            564.0,
-            114.0
-          ]
-        }
-      ]
-    },
-    "plaintiff": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            50.0,
-            131.0,
-            239.7,
-            151.0
-          ]
-        }
-      ]
-    },
-    "defendant": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            50.0,
-            199.5,
-            239.7,
-            214.0
-          ]
-        }
-      ]
-    },
-    "name_of_removing_party": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            171.0,
-            229.0,
-            564.0,
-            248.0
-          ]
-        }
-      ]
-    },
-    "removal_basis": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "right_to_remove",
-          "label": "The undersigned hereby exercises his right to remove this proceeding to Superior Court in this county.",
-          "page": 0,
-          "rect": [
-            51.4,
-            289.8,
-            58.4,
-            296.8
-          ]
-        },
-        {
-          "value": "order_of_court",
-          "label": "The undersigned hereby removes this proceeding to the Superior Court in [County] pursuant to the attached order of said court.",
-          "page": 0,
-          "rect": [
-            51.4,
-            315.1,
-            58.4,
-            322.1
-          ]
-        }
-      ]
-    },
-    "county_for_order": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            402.0,
-            307.0,
-            517.0,
-            324.0
-          ]
-        }
-      ]
-    },
-    "date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            74.0,
-            405.0,
-            266.0,
-            425.0
-          ]
-        }
-      ]
-    },
-    "removing_party_or_attorney": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            338.0,
-            406.0,
-            564.0,
-            425.0
-          ]
-        }
-      ]
-    },
-    "attorney_details": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            50.0,
-            466.7,
-            564.0,
-            498.8
-          ]
-        }
-      ]
-    },
-    "fees_received_amount": {
-      "type": "currency",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            217.6,
-            564.6,
-            266.0,
-            576.6
-          ]
-        }
-      ]
-    },
-    "forwarded_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            257.0,
-            586.0,
-            338.0,
-            602.0
-          ]
-        }
-      ]
+ "form_id": "N-106",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 1,
+ "source_fused": "N-106 Notice of Removal (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      50.0,
+      100.0,
+      165.0,
+      113.0
+     ]
     }
+   ]
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      443.0,
+      101.0,
+      564.0,
+      114.0
+     ]
+    }
+   ]
+  },
+  "plaintiff": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      50.0,
+      138.0,
+      239.7,
+      151.0
+     ]
+    }
+   ]
+  },
+  "defendant": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      50.0,
+      201.0,
+      239.7,
+      214.0
+     ]
+    }
+   ]
+  },
+  "name_of_removing_party": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      171.0,
+      235.0,
+      564.0,
+      248.0
+     ]
+    }
+   ]
+  },
+  "removal_basis": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "right_to_remove",
+     "label": "The undersigned hereby exercises his right to remove this proceeding to Superior Court in this county.",
+     "page": 0,
+     "rect": [
+      51.4,
+      289.8,
+      58.4,
+      296.8
+     ]
+    },
+    {
+     "value": "order_of_court",
+     "label": "The undersigned hereby removes this proceeding to the Superior Court in [County] pursuant to the attached order of said court.",
+     "page": 0,
+     "rect": [
+      51.4,
+      315.1,
+      58.4,
+      322.1
+     ]
+    }
+   ]
+  },
+  "county_for_order": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      402.0,
+      311.0,
+      517.0,
+      324.0
+     ]
+    }
+   ]
+  },
+  "date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      74.0,
+      412.0,
+      266.0,
+      425.0
+     ]
+    }
+   ]
+  },
+  "removing_party_or_attorney": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      338.0,
+      412.0,
+      564.0,
+      425.0
+     ]
+    }
+   ]
+  },
+  "attorney_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      50.0,
+      466.7,
+      564.0,
+      498.8
+     ]
+    }
+   ]
+  },
+  "fees_received_amount": {
+   "type": "currency",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      217.6,
+      563.6,
+      266.0,
+      576.6
+     ]
+    }
+   ]
+  },
+  "forwarded_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      257.0,
+      589.0,
+      338.0,
+      602.0
+     ]
+    }
+   ]
   }
+ }
 }

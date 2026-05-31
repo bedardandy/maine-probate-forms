@@ -1,206 +1,206 @@
 {
-  "form_id": "PP-503",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 2,
-  "source_fused": "PP-503 Conservator Plan (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            104.0,
-            106.9,
-            229.0,
-            118.9
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            432.0,
-            96.0,
-            543.0,
-            116.0
-          ]
-        }
-      ]
-    },
-    "respondent_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            104.0,
-            135.0,
-            302.0,
-            155.0
-          ]
-        }
-      ]
-    },
-    "plan_version": {
-      "type": "select_one",
-      "options": [
-        {
-          "value": "original",
-          "label": "Original",
-          "page": 0,
-          "rect": [
-            361.6,
-            159.8,
-            370.6,
-            168.8
-          ]
-        },
-        {
-          "value": "revised",
-          "label": "Revised",
-          "page": 0,
-          "rect": [
-            438.1,
-            159.8,
-            447.1,
-            168.8
-          ]
-        }
-      ]
-    },
-    "budget_expenses": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            255.0,
-            543.0,
-            459.0
-          ]
-        }
-      ]
-    },
-    "respondent_involvement": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            493.1,
-            543.0,
-            579.0
-          ]
-        }
-      ]
-    },
-    "restore_ability_steps": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            612.2,
-            543.0,
-            686.0
-          ]
-        }
-      ]
-    },
-    "conservatorship_duration": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            706.0,
-            543.0,
-            774.0
-          ]
-        }
-      ]
-    },
-    "plan_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.0,
-            164.0,
-            240.0,
-            185.0
-          ]
-        }
-      ]
-    },
-    "petitioner_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            170.8,
-            504.0,
-            186.6
-          ]
-        }
-      ]
-    },
-    "order_filing_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            356.0,
-            263.0,
-            452.0,
-            281.0
-          ]
-        }
-      ]
-    },
-    "judge_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            324.0,
-            440.0,
-            504.0,
-            461.0
-          ]
-        }
-      ]
-    },
-    "judge_date": {
-      "type": "date",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            107.0,
-            444.0,
-            217.0,
-            461.0
-          ]
-        }
-      ]
+ "form_id": "PP-503",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 2,
+ "source_fused": "PP-503 Conservator Plan (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      104.0,
+      105.9,
+      229.0,
+      118.9
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      432.0,
+      103.0,
+      543.0,
+      116.0
+     ]
+    }
+   ]
+  },
+  "respondent_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      104.0,
+      142.0,
+      302.0,
+      155.0
+     ]
+    }
+   ]
+  },
+  "plan_version": {
+   "type": "select_one",
+   "options": [
+    {
+     "value": "original",
+     "label": "Original",
+     "page": 0,
+     "rect": [
+      361.6,
+      159.8,
+      370.6,
+      168.8
+     ]
+    },
+    {
+     "value": "revised",
+     "label": "Revised",
+     "page": 0,
+     "rect": [
+      438.1,
+      159.8,
+      447.1,
+      168.8
+     ]
+    }
+   ]
+  },
+  "budget_expenses": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      255.0,
+      543.0,
+      459.0
+     ]
+    }
+   ]
+  },
+  "respondent_involvement": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      493.1,
+      543.0,
+      579.0
+     ]
+    }
+   ]
+  },
+  "restore_ability_steps": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      612.2,
+      543.0,
+      686.0
+     ]
+    }
+   ]
+  },
+  "conservatorship_duration": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      706.0,
+      543.0,
+      774.0
+     ]
+    }
+   ]
+  },
+  "plan_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.0,
+      172.0,
+      240.0,
+      185.0
+     ]
+    }
+   ]
+  },
+  "petitioner_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      173.6,
+      504.0,
+      186.6
+     ]
+    }
+   ]
+  },
+  "order_filing_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      356.0,
+      268.0,
+      452.0,
+      281.0
+     ]
+    }
+   ]
+  },
+  "judge_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      448.0,
+      504.0,
+      461.0
+     ]
+    }
+   ]
+  },
+  "judge_date": {
+   "type": "date",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      107.0,
+      448.0,
+      217.0,
+      461.0
+     ]
+    }
+   ]
   }
+ }
 }

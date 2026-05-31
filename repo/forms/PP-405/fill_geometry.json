@@ -1,1005 +1,1005 @@
 {
-  "form_id": "PP-405",
-  "page_size": [
-    612,
-    792
-  ],
-  "n_pages": 4,
-  "source_fused": "PP-405 Bond for Conservator (Rev. 7-1-19)_fused.pdf",
-  "fields": {
-    "county_probate_court": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            116.0,
-            176.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "docket_no": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            422.0,
-            116.0,
-            543.0,
-            134.0
-          ]
-        }
-      ]
-    },
-    "bond_for_conservator": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            151.0,
-            308.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "name_of_conservator": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            148.6,
-            191.5,
-            529.6,
-            204.5
-          ]
-        }
-      ]
-    },
-    "address_of_conservator_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            215.7,
-            543.0,
-            230.0
-          ]
-        }
-      ]
-    },
-    "address_of_conservator_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            242.4,
-            543.0,
-            257.0
-          ]
-        }
-      ]
-    },
-    "name_of_surety_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            150.8,
-            264.7,
-            324.0,
-            283.2
-          ]
-        }
-      ]
-    },
-    "city_state_of_surety_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            269.1,
-            543.0,
-            283.0
-          ]
-        }
-      ]
-    },
-    "name_of_surety_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            295.8,
-            308.0,
-            310.0
-          ]
-        }
-      ]
-    },
-    "city_state_of_surety_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            295.8,
-            543.0,
-            310.0
-          ]
-        }
-      ]
-    },
-    "penal_sum_numeric": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            340.1,
-            157.0,
-            352.1
-          ]
-        }
-      ]
-    },
-    "penal_sum_word": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            157.0,
-            340.1,
-            308.0,
-            352.1
-          ]
-        }
-      ]
-    },
-    "conservator_name_condition": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            376.0,
-            375.0,
-            543.0,
-            393.0
-          ]
-        }
-      ]
-    },
-    "individual_name_condition": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            201.0,
-            396.0,
-            346.0,
-            408.0
-          ]
-        }
-      ]
-    },
-    "dated": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            516.0,
-            308.0,
-            534.0
-          ]
-        }
-      ]
-    },
-    "witness_conservator": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            550.0,
-            308.0,
-            569.0
-          ]
-        }
-      ]
-    },
-    "witness_co_conservator": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            550.0,
-            543.0,
-            569.0
-          ]
-        }
-      ]
-    },
-    "witness_surety_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            585.0,
-            308.0,
-            603.0
-          ]
-        }
-      ]
-    },
-    "witness_surety_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            585.0,
-            543.0,
-            603.0
-          ]
-        }
-      ]
-    },
-    "witness_surety_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            619.0,
-            308.0,
-            638.0
-          ]
-        }
-      ]
-    },
-    "witness_surety_4": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            620.0,
-            543.0,
-            638.0
-          ]
-        }
-      ]
-    },
-    "witness_surety_5": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            72.0,
-            654.0,
-            308.0,
-            672.0
-          ]
-        }
-      ]
-    },
-    "witness_surety_6": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 0,
-          "rect": [
-            324.0,
-            654.0,
-            543.0,
-            672.0
-          ]
-        }
-      ]
-    },
-    "gross_value_personal_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            267.0,
-            116.6,
-            448.0,
-            128.6
-          ]
-        }
-      ]
-    },
-    "personal_property_value_detail": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            329.0,
-            128.4,
-            565.9,
-            147.0
-          ]
-        }
-      ]
-    },
-    "name_surety_1_personal": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            132.4,
-            313.0,
-            147.0
-          ]
-        }
-      ]
-    },
-    "name_surety_2_personal": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            163.0,
-            263.0,
-            181.4
-          ]
-        }
-      ]
-    },
-    "desc_personal_property_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            355.6,
-            163.0,
-            521.5,
-            181.4
-          ]
-        }
-      ]
-    },
-    "desc_personal_property_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            186.0,
-            521.5,
-            365.0
-          ]
-        }
-      ]
-    },
-    "gross_value_real_property": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            266.0,
-            383.0,
-            448.0,
-            400.0
-          ]
-        }
-      ]
-    },
-    "real_property_value_detail": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            329.0,
-            399.4,
-            565.9,
-            418.0
-          ]
-        }
-      ]
-    },
-    "name_surety_1_real": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            403.3,
-            313.0,
-            418.0
-          ]
-        }
-      ]
-    },
-    "name_surety_2_real": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            103.6,
-            428.4,
-            253.4,
-            446.9
-          ]
-        }
-      ]
-    },
-    "desc_real_property_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            355.6,
-            430.5,
-            521.5,
-            446.9
-          ]
-        }
-      ]
-    },
-    "desc_real_property_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            450.4,
-            197.0,
-            468.0
-          ]
-        }
-      ]
-    },
-    "county_registry_deeds_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            329.0,
-            450.4,
-            448.0,
-            469.0
-          ]
-        }
-      ]
-    },
-    "county_registry_deeds_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            471.9,
-            167.0,
-            490.0
-          ]
-        }
-      ]
-    },
-    "book_page_1_book": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            205.0,
-            471.9,
-            275.0,
-            490.0
-          ]
-        }
-      ]
-    },
-    "book_page_1_page": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            355.6,
-            471.9,
-            425.6,
-            490.0
-          ]
-        }
-      ]
-    },
-    "book_page_2_book": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            457.0,
-            471.9,
-            527.0,
-            490.0
-          ]
-        }
-      ]
-    },
-    "book_page_2_page": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            516.4,
-            521.5,
-            556.8
-          ]
-        }
-      ]
-    },
-    "physical_address_real_1": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            355.6,
-            516.4,
-            565.9,
-            556.8
-          ]
-        }
-      ]
-    },
-    "physical_address_real_2": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            103.6,
-            551.9,
-            253.4,
-            570.4
-          ]
-        }
-      ]
-    },
-    "desc_real_property_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            355.6,
-            551.9,
-            521.5,
-            570.4
-          ]
-        }
-      ]
-    },
-    "desc_real_property_4": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            573.9,
-            197.0,
-            592.0
-          ]
-        }
-      ]
-    },
-    "county_registry_deeds_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            329.0,
-            573.9,
-            448.0,
-            592.0
-          ]
-        }
-      ]
-    },
-    "county_registry_deeds_4": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            97.0,
-            595.3,
-            167.0,
-            613.0
-          ]
-        }
-      ]
-    },
-    "book_page_3_book": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            205.0,
-            595.3,
-            275.0,
-            613.0
-          ]
-        }
-      ]
-    },
-    "book_page_3_page": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            355.6,
-            595.3,
-            425.6,
-            613.0
-          ]
-        }
-      ]
-    },
-    "book_page_4_book": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            457.0,
-            595.3,
-            527.0,
-            613.0
-          ]
-        }
-      ]
-    },
-    "book_page_4_page": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            639.9,
-            521.5,
-            691.0
-          ]
-        }
-      ]
-    },
-    "physical_address_real_3": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 1,
-          "rect": [
-            72.0,
-            706.0,
-            521.5,
-            774.0
-          ]
-        }
-      ]
-    },
-    "surety_1_affidavit_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            116.0,
-            91.4,
-            287.0,
-            111.0
-          ]
-        }
-      ]
-    },
-    "surety_1_affidavit_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            149.0,
-            504.0,
-            168.0
-          ]
-        }
-      ]
-    },
-    "surety_1_affidavit_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            210.0,
-            193.0,
-            230.0
-          ]
-        }
-      ]
-    },
-    "surety_1_affidavit_dated": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            399.0,
-            211.0,
-            543.0,
-            230.0
-          ]
-        }
-      ]
-    },
-    "surety_1_affidavit_appearance_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            263.0,
-            233.5,
-            408.0,
-            253.0
-          ]
-        }
-      ]
-    },
-    "surety_1_notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            279.6,
-            543.0,
-            299.0
-          ]
-        }
-      ]
-    },
-    "surety_1_notary_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            314.1,
-            543.0,
-            334.0
-          ]
-        }
-      ]
-    },
-    "surety_2_affidavit_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            348.6,
-            572.0,
-            365.3
-          ]
-        }
-      ]
-    },
-    "surety_2_affidavit_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            116.0,
-            388.0,
-            287.0,
-            407.0
-          ]
-        }
-      ]
-    },
-    "surety_2_affidavit_county": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            445.0,
-            504.0,
-            465.0
-          ]
-        }
-      ]
-    },
-    "surety_2_affidavit_dated": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            72.0,
-            505.0,
-            193.0,
-            527.0
-          ]
-        }
-      ]
-    },
-    "surety_2_affidavit_appearance_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            399.0,
-            507.0,
-            543.0,
-            527.0
-          ]
-        }
-      ]
-    },
-    "surety_2_notary_signature": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            263.0,
-            530.3,
-            408.0,
-            550.0
-          ]
-        }
-      ]
-    },
-    "surety_2_notary_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            577.0,
-            543.0,
-            596.0
-          ]
-        }
-      ]
-    },
-    "corporate_surety_name": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 2,
-          "rect": [
-            324.0,
-            610.7,
-            543.0,
-            630.0
-          ]
-        }
-      ]
-    },
-    "corporate_surety_address": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            120.9,
-            542.0,
-            132.9
-          ]
-        }
-      ]
-    },
-    "corporate_surety_officer": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            144.1,
-            542.0,
-            164.0
-          ]
-        }
-      ]
-    },
-    "bond_approval_dated": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            178.5,
-            542.0,
-            195.9
-          ]
-        }
-      ]
-    },
-    "register_of_probate": {
-      "type": "text",
-      "widgets": [
-        {
-          "page": 3,
-          "rect": [
-            72.0,
-            213.1,
-            542.0,
-            241.1
-          ]
-        }
-      ]
+ "form_id": "PP-405",
+ "page_size": [
+  612,
+  792
+ ],
+ "n_pages": 4,
+ "source_fused": "PP-405 Bond for Conservator (Rev. 7-1-19)_fused.pdf",
+ "fields": {
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      121.0,
+      176.0,
+      134.0
+     ]
     }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      121.0,
+      543.0,
+      134.0
+     ]
+    }
+   ]
+  },
+  "bond_for_conservator": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      155.0,
+      308.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "name_of_conservator": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      148.6,
+      191.5,
+      529.6,
+      204.5
+     ]
+    }
+   ]
+  },
+  "address_of_conservator_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      217.0,
+      543.0,
+      230.0
+     ]
+    }
+   ]
+  },
+  "address_of_conservator_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      244.0,
+      543.0,
+      257.0
+     ]
+    }
+   ]
+  },
+  "name_of_surety_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      150.8,
+      270.2,
+      324.0,
+      283.2
+     ]
+    }
+   ]
+  },
+  "city_state_of_surety_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      270.0,
+      543.0,
+      283.0
+     ]
+    }
+   ]
+  },
+  "name_of_surety_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      297.0,
+      308.0,
+      310.0
+     ]
+    }
+   ]
+  },
+  "city_state_of_surety_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      297.0,
+      543.0,
+      310.0
+     ]
+    }
+   ]
+  },
+  "penal_sum_numeric": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      339.1,
+      157.0,
+      352.1
+     ]
+    }
+   ]
+  },
+  "penal_sum_word": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      157.0,
+      339.1,
+      308.0,
+      352.1
+     ]
+    }
+   ]
+  },
+  "conservator_name_condition": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      376.0,
+      380.0,
+      543.0,
+      393.0
+     ]
+    }
+   ]
+  },
+  "individual_name_condition": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      201.0,
+      395.0,
+      346.0,
+      408.0
+     ]
+    }
+   ]
+  },
+  "dated": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      521.0,
+      308.0,
+      534.0
+     ]
+    }
+   ]
+  },
+  "witness_conservator": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      556.0,
+      308.0,
+      569.0
+     ]
+    }
+   ]
+  },
+  "witness_co_conservator": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      556.0,
+      543.0,
+      569.0
+     ]
+    }
+   ]
+  },
+  "witness_surety_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      590.0,
+      308.0,
+      603.0
+     ]
+    }
+   ]
+  },
+  "witness_surety_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      590.0,
+      543.0,
+      603.0
+     ]
+    }
+   ]
+  },
+  "witness_surety_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      625.0,
+      308.0,
+      638.0
+     ]
+    }
+   ]
+  },
+  "witness_surety_4": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      625.0,
+      543.0,
+      638.0
+     ]
+    }
+   ]
+  },
+  "witness_surety_5": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      72.0,
+      659.0,
+      308.0,
+      672.0
+     ]
+    }
+   ]
+  },
+  "witness_surety_6": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      324.0,
+      659.0,
+      543.0,
+      672.0
+     ]
+    }
+   ]
+  },
+  "gross_value_personal_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      267.0,
+      115.6,
+      448.0,
+      128.6
+     ]
+    }
+   ]
+  },
+  "personal_property_value_detail": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      329.0,
+      134.0,
+      565.9,
+      147.0
+     ]
+    }
+   ]
+  },
+  "name_surety_1_personal": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      97.0,
+      134.0,
+      313.0,
+      147.0
+     ]
+    }
+   ]
+  },
+  "name_surety_2_personal": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      97.0,
+      168.4,
+      263.0,
+      181.4
+     ]
+    }
+   ]
+  },
+  "desc_personal_property_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      355.6,
+      168.4,
+      521.5,
+      181.4
+     ]
+    }
+   ]
+  },
+  "desc_personal_property_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      186.0,
+      521.5,
+      365.0
+     ]
+    }
+   ]
+  },
+  "gross_value_real_property": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      266.0,
+      387.0,
+      448.0,
+      400.0
+     ]
+    }
+   ]
+  },
+  "real_property_value_detail": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      329.0,
+      405.0,
+      565.9,
+      418.0
+     ]
+    }
+   ]
+  },
+  "name_surety_1_real": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      404.0,
+      288.0,
+      417.0
+     ]
+    }
+   ]
+  },
+  "name_surety_2_real": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      324.0,
+      404.0,
+      540.0,
+      417.0
+     ]
+    }
+   ]
+  },
+  "desc_real_property_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      104.0,
+      433.0,
+      253.0,
+      446.0
+     ]
+    }
+   ]
+  },
+  "desc_real_property_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      356.0,
+      433.0,
+      505.0,
+      446.0
+     ]
+    }
+   ]
+  },
+  "county_registry_deeds_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      97.0,
+      457.0,
+      176.0,
+      470.0
+     ]
+    }
+   ]
+  },
+  "county_registry_deeds_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      350.0,
+      457.0,
+      429.0,
+      470.0
+     ]
+    }
+   ]
+  },
+  "book_page_1_book": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      110.0,
+      478.0,
+      180.0,
+      491.0
+     ]
+    }
+   ]
+  },
+  "book_page_1_page": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      205.0,
+      478.0,
+      300.0,
+      491.0
+     ]
+    }
+   ]
+  },
+  "book_page_2_book": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      360.0,
+      478.0,
+      432.0,
+      491.0
+     ]
+    }
+   ]
+  },
+  "book_page_2_page": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      457.0,
+      478.0,
+      538.0,
+      491.0
+     ]
+    }
+   ]
+  },
+  "physical_address_real_1": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      97.0,
+      516.0,
+      300.0,
+      529.0
+     ]
+    }
+   ]
+  },
+  "physical_address_real_2": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      330.0,
+      516.0,
+      565.0,
+      529.0
+     ]
+    }
+   ]
+  },
+  "desc_real_property_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      104.0,
+      557.0,
+      253.0,
+      570.0
+     ]
+    }
+   ]
+  },
+  "desc_real_property_4": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      356.0,
+      557.0,
+      505.0,
+      570.0
+     ]
+    }
+   ]
+  },
+  "county_registry_deeds_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      97.0,
+      580.0,
+      176.0,
+      593.0
+     ]
+    }
+   ]
+  },
+  "county_registry_deeds_4": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      350.0,
+      580.0,
+      429.0,
+      593.0
+     ]
+    }
+   ]
+  },
+  "book_page_3_book": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      103.0,
+      602.0,
+      175.0,
+      615.0
+     ]
+    }
+   ]
+  },
+  "book_page_3_page": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      198.0,
+      602.0,
+      293.0,
+      615.0
+     ]
+    }
+   ]
+  },
+  "book_page_4_book": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      353.0,
+      602.0,
+      425.0,
+      615.0
+     ]
+    }
+   ]
+  },
+  "book_page_4_page": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      450.0,
+      602.0,
+      531.0,
+      615.0
+     ]
+    }
+   ]
+  },
+  "physical_address_real_3": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      97.0,
+      640.0,
+      300.0,
+      653.0
+     ]
+    }
+   ]
+  },
+  "surety_1_affidavit_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      116.0,
+      98.0,
+      287.0,
+      111.0
+     ]
+    }
+   ]
+  },
+  "surety_1_affidavit_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      155.0,
+      504.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "surety_1_affidavit_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      217.0,
+      193.0,
+      230.0
+     ]
+    }
+   ]
+  },
+  "surety_1_affidavit_dated": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      399.0,
+      217.0,
+      543.0,
+      230.0
+     ]
+    }
+   ]
+  },
+  "surety_1_affidavit_appearance_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      263.0,
+      240.0,
+      408.0,
+      253.0
+     ]
+    }
+   ]
+  },
+  "surety_1_notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      286.0,
+      543.0,
+      299.0
+     ]
+    }
+   ]
+  },
+  "surety_1_notary_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      321.0,
+      543.0,
+      334.0
+     ]
+    }
+   ]
+  },
+  "surety_2_affidavit_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      352.3,
+      572.0,
+      365.3
+     ]
+    }
+   ]
+  },
+  "surety_2_affidavit_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      116.0,
+      394.0,
+      287.0,
+      407.0
+     ]
+    }
+   ]
+  },
+  "surety_2_affidavit_county": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      452.0,
+      504.0,
+      465.0
+     ]
+    }
+   ]
+  },
+  "surety_2_affidavit_dated": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      72.0,
+      514.0,
+      193.0,
+      527.0
+     ]
+    }
+   ]
+  },
+  "surety_2_affidavit_appearance_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      399.0,
+      514.0,
+      543.0,
+      527.0
+     ]
+    }
+   ]
+  },
+  "surety_2_notary_signature": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      263.0,
+      537.0,
+      408.0,
+      550.0
+     ]
+    }
+   ]
+  },
+  "surety_2_notary_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      583.0,
+      543.0,
+      596.0
+     ]
+    }
+   ]
+  },
+  "corporate_surety_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 2,
+     "rect": [
+      324.0,
+      617.0,
+      543.0,
+      630.0
+     ]
+    }
+   ]
+  },
+  "corporate_surety_address": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      119.9,
+      542.0,
+      132.9
+     ]
+    }
+   ]
+  },
+  "corporate_surety_officer": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      151.0,
+      542.0,
+      164.0
+     ]
+    }
+   ]
+  },
+  "bond_approval_dated": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      182.9,
+      542.0,
+      195.9
+     ]
+    }
+   ]
+  },
+  "register_of_probate": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 3,
+     "rect": [
+      72.0,
+      213.1,
+      542.0,
+      241.1
+     ]
+    }
+   ]
   }
+ }
 }
