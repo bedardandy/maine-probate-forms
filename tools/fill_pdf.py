@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import re
 import sys
 
 import fitz
@@ -36,18 +37,74 @@ def _strip_widgets(doc: fitz.Document) -> None:
             page.delete_widget(w)
 
 
+# --- Consistent text rendering (A: font size, B: justification) ---------------
+# A target size used for ALL text fields, decoupled from rect height so filled
+# text is visually uniform across a form. We only shrink to fit (never grow),
+# and only cap for unusually short boxes.
+TARGET_FONTSIZE = 10.0
+MIN_FONTSIZE = 6.0
+_PAD = 2.0                 # horizontal padding assumed inside the widget, per side
+_MULTILINE_MIN_H = 24.0    # a box taller than this is treated as a paragraph area
+
+# Field-name tokens that denote money -> right-justify (digits read better flush
+# right and line up in value columns). Word-boundary anchored to avoid matching
+# substrings like "valid" or "evaluate".
+_CURRENCY_RE = re.compile(
+    r"(?:^|_)(?:value|val|amount|amt|fee|fees|penal_sum|penal|balance|income|"
+    r"expense|expenses|salary|wage|wages|disbursement|disbursements|sum_numeric|"
+    r"gross_value|net_value|estimated_maine_estate_tax)(?:$|_)", re.I)
+
+
+def _text_align(name: str) -> int:
+    n = name.lower()
+    if "caption" in n:
+        return fitz.TEXT_ALIGN_CENTER
+    if _CURRENCY_RE.search(n):
+        return fitz.TEXT_ALIGN_RIGHT
+    return fitz.TEXT_ALIGN_LEFT
+
+
+def _fontsize_for(value: str, r: fitz.Rect, multiline: bool) -> float:
+    # Start at the target, capped only so a very short box can't clip vertically.
+    fs = min(TARGET_FONTSIZE, max(MIN_FONTSIZE, r.height - 2))
+    if multiline:
+        return round(fs, 1)                      # let long text wrap; keep size
+    avail = max(1.0, r.width - 2 * _PAD)
+    try:
+        text_w = fitz.get_text_length(value, fontname="helv", fontsize=fs)
+    except Exception:
+        text_w = len(value) * fs * 0.5
+    if text_w > avail:                           # single line overflow -> shrink to fit
+        fs = max(MIN_FONTSIZE, fs * avail / text_w)
+    return round(fs, 1)
+
+
 def _add_text(page: fitz.Page, rect, name: str, value: str) -> None:
     w = fitz.Widget()
     w.field_name = name
     w.field_type = fitz.PDF_WIDGET_TYPE_TEXT
     r = fitz.Rect(rect)
     w.rect = r
-    w.field_value = str(value)
-    # Cap at 11pt: fontsize 0 ("auto") fills the rect height, so a short value in
-    # a tall blank renders absurdly large. Shrink for short rects, never grow past
-    # ordinary form text.
-    w.text_fontsize = max(6.0, min(11.0, r.height - 3))
-    page.add_widget(w)
+    sval = str(value)
+    w.field_value = sval
+    multiline = r.height > _MULTILINE_MIN_H
+    if multiline:
+        try:
+            w.field_flags = fitz.PDF_TX_FIELD_IS_MULTILINE
+        except Exception:
+            w.field_flags = 1 << 12              # multiline flag bit
+    # A: uniform target size, decoupled from box height; shrink only to fit width.
+    w.text_fontsize = _fontsize_for(sval, r, multiline)
+    annot = page.add_widget(w)
+    # B: type-aware justification via /Q (1=center, 2=right). PyMuPDF bakes a
+    # left-aligned appearance and omits /Q, so set it low-level; fill_pdf() flags
+    # NeedAppearances so conforming viewers (Acrobat/print) re-render aligned.
+    align = _text_align(name)
+    if align != fitz.TEXT_ALIGN_LEFT and annot is not None:
+        try:
+            page.parent.xref_set_key(annot.xref, "Q", str(int(align)))
+        except Exception:
+            pass
 
 
 def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
@@ -120,6 +177,16 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
                     _add_checkbox(doc[o["page"]], o["rect"],
                                   f"{fid}__{o.get('value') or j}")
                     checked += 1
+
+    # B: flag NeedAppearances so viewers regenerate field appearances honoring
+    # the /Q justification set per-field above (PyMuPDF's baked appearance is
+    # left-aligned). Viewers that don't regenerate fall back to left — same as
+    # before, so this is safe.
+    if written_text:
+        try:
+            doc.need_appearances(True)
+        except Exception:
+            pass
 
     out_path = pathlib.Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
