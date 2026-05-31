@@ -113,7 +113,11 @@ def to_case_object(canonical: dict) -> dict:
         "filing_date": fdate, "probate_date": fdate,
         "decedent_name_caption": dec_name or None,
         "caption": (f"Estate of {dec_name}" if dec_name else None),
-        "estate_of_decedent": (f"Estate of {dec_name}" if dec_name else None),
+        # `estate_of_decedent` schema fields are typed person_name and sit on a
+        # blank line the form pre-prints "Estate of ___" beside; the value is the
+        # decedent name only (an "Estate of" prefix here double-prints over the
+        # form's printed label). Use `caption` above for a full "Estate of X" string.
+        "estate_of_decedent": dec_name or None,
     }.items() if v}
 
     out: dict = {"case_dict": case_dict}
