@@ -116,6 +116,6 @@
       "holding_source": "primary"
     }
   ],
-  "disclaimer": "Statutes for consideration only — NOT legal advice and not a substitute for a Maine attorney. Citations point to issues a filler should weigh, not to a conclusion. Verify against current law; which code applies can turn on the date of death (see transition_18a).",
+  "disclaimer": "EXPERIMENTAL — AI/LLM-GENERATED, NOT ATTORNEY-REVIEWED. This statute and case-law layer is generated and annotated by an AI model; it is for consideration only — NOT legal advice and not a substitute for a licensed Maine attorney. Statute section titles/text are quoted from legislature.maine.gov, but the SELECTION of which statutes/cases bear on a field, the relevance notes, and any case-law holdings are the model's experimental annotations — they point to issues to weigh, not conclusions, and may be wrong. Verify everything against the current statute and the actual opinions; which code applies can turn on the date of death (see transition_18a).",
   "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
 }

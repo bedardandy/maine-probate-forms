@@ -33,10 +33,16 @@ FORMS_DIR = REPO / "repo" / "forms"
 IDX = REPO / "docs" / "statute-reference" / "_index"
 
 DISCLAIMER = (
-    "Statutes for consideration only — NOT legal advice and not a substitute for "
-    "a Maine attorney. Citations point to issues a filler should weigh, not to a "
-    "conclusion. Verify against current law; which code applies can turn on the "
-    "date of death (see transition_18a)."
+    "EXPERIMENTAL — AI/LLM-GENERATED, NOT ATTORNEY-REVIEWED. This statute and "
+    "case-law layer is generated and annotated by an AI model; it is for "
+    "consideration only — NOT legal advice and not a substitute for a licensed "
+    "Maine attorney. Statute section titles/text are quoted from "
+    "legislature.maine.gov, but the SELECTION of which statutes/cases bear on a "
+    "field, the relevance notes, and any case-law holdings are the model's "
+    "experimental annotations — they point to issues to weigh, not conclusions, "
+    "and may be wrong. Verify everything against the current statute and the "
+    "actual opinions; which code applies can turn on the date of death (see "
+    "transition_18a)."
 )
 
 T_ESTATE = (

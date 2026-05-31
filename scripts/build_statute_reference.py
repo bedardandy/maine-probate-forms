@@ -43,11 +43,15 @@ PREFIX_CATEGORY = {
 }
 
 DISCLAIMER_BANNER = (
-    "> **Statutes for consideration — not legal advice.** This page lists statutes an "
-    "LLM or person filling the form may want to *consider*; it does not tell you what to "
-    "do or conclude. It is not a substitute for a licensed Maine attorney. Which code "
-    "applies can turn on the date of death — see the transition note. Verify everything "
-    "against the current statute."
+    "> ⚠️ **Experimental — AI/LLM-generated, not legal advice.** The statute and "
+    "case-law references on this page are generated and annotated by an AI model and "
+    "have **not** been reviewed by an attorney. They list issues an LLM or person "
+    "filling the form may want to *consider* — not what to do or conclude — and are no "
+    "substitute for a licensed Maine attorney. Statute section text is quoted from "
+    "legislature.maine.gov; the *selection of statutes/cases, the relevance notes, and "
+    "any case-law holdings are the model's experimental annotations and may be wrong*. "
+    "Which code applies can turn on the date of death — see the transition note. "
+    "**Verify everything against the current statute and the actual opinions.**"
 )
 
 
@@ -127,8 +131,11 @@ def render_form(form_id: str, sidecar: dict, meta: dict, labels: dict[str, str])
 
     if sidecar.get("caselaw"):
         lines += ["## Maine Law Court cases to consider", "",
-                  "Decisions tied to this form through the statute(s) they bear on. "
-                  "Summaries — read the opinion and confirm it is still good law.", ""]
+                  "⚠️ **AI/LLM-generated, experimental — not attorney-reviewed.** "
+                  "Decisions an AI model tied to this form through the statute(s) they "
+                  "bear on; the selection and the holding summaries are the model's "
+                  "annotations and may be wrong. Read the opinion and confirm it is "
+                  "still good law before relying on it.", ""]
         for c in sidecar["caselaw"]:
             era = f" · decided under {c['decided_under']}" if c.get("decided_under") else ""
             src = " · *holding not independently verified from the opinion*" if c.get("holding_source") == "secondary" else ""
@@ -162,9 +169,11 @@ def render_readme(forms: list[tuple[str, dict, dict]]) -> str:
         "(verbatim from legislature.maine.gov). Every citation below resolves to it.",
         "- **`_index/18a-key-diffs.json`** — the 18-A transition rule + material differences.",
         "- **`_index/cross-refs.json`** — non-Title-18-C citations the forms touch (estate tax, etc.).",
-        "- **`_index/caselaw.json`** + **[`caselaw.md`](caselaw.md)** — verified Maine "
+        "- **`_index/caselaw.json`** + **[`caselaw.md`](caselaw.md)** — Maine "
         "Law Court (Supreme Judicial Court) estate/probate decisions, tied to forms "
-        "through the statutes they construe.",
+        "through the statutes they construe. ⚠️ The case selection and holding "
+        "summaries are AI/LLM-generated, experimental, and not attorney-reviewed — "
+        "read the opinion and confirm it is still good law.",
         "- **`../digital-assets-access.md`** — accessing a deceased person's online accounts "
         "(grounded in 18-C Article 10, the Maine RUFADAA).",
         "- Per-form pages are generated from `repo/forms/<FORM>/statutes.json`.",
