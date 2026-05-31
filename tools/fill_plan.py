@@ -48,6 +48,10 @@ _NON_NAME_SUFFIXES = (
     "_bar_number", "_bar_no", "_city", "_state", "_zip", "_county",
     "_residence", "_domicile", "_day", "_month", "_year", "_title",
     "_other", "_other_text",
+    # Date fields share a record's bare name source (e.g. DE-101
+    # `decedent_date_of_birth` <- `decedent_record.decedent`); without these a
+    # missing date would fall back to the entity name landing in a date blank.
+    "_date_of_birth", "_date_of_death", "_dob", "_date",
 )
 
 
@@ -108,6 +112,26 @@ def _render_value(val):
                 parts.append(rendered)
         return "; ".join(parts)
     return str(val)
+
+
+def _rescue_from_records(case: dict, field_id: str):
+    """A `llm_over_narrative` field whose value is a hard fact the case already
+    supplies in a `*_record` should resolve deterministically, not be deferred to
+    the LLM (e.g. DE-101 `decedent_date_of_death` lives in `decedent_record`).
+
+    Conservative by construction: matches the EXACT field_id as a key in some
+    `*_record` only. No bare-key / name fallback (so an attribute field never
+    inherits an entity name) and no role-prefix guessing — repeating-group fields
+    (`heir_3_address`, no `heir_3_record`) and composite phrase fields
+    (`residence_and_date_of_death`) have no matching key and stay narrative.
+    Returns the value, or None when no record carries it.
+    """
+    for key, rec in case.items():
+        if key.endswith("_record") and isinstance(rec, dict):
+            v = rec.get(field_id)
+            if v not in (None, ""):
+                return v
+    return None
 
 
 def _truthy(v) -> bool:
@@ -226,8 +250,11 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
                 unresolved.append({"field_id": fid, "label": label,
                                    "source": src})
         elif src == "llm_over_narrative" or fs.get("llm_eligible"):
+            rescued = _rescue_from_records(case, fid)
             if fid in narrative_facts and narrative_facts[fid] not in (None, ""):
                 resolved[fid] = _render_value(narrative_facts[fid])
+            elif rescued is not None:                 # hard fact already in a record
+                resolved[fid] = _render_value(rescued)
             else:
                 narrative.append({"field_id": fid, "label": label,
                                   "data_type": f.get("data_type"),
