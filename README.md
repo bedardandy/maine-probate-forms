@@ -9,7 +9,8 @@ The goal is to close that gap for both people filling forms by hand and automate
 This is part of a broader "Law Firm in a Box" effort. The output is meant for reuse beyond one private workflow: permissively licensed tooling and fillable forms for other people, clinics, firms, courts, and legal tech projects.
 
 > **Companion project:** Maine Judicial Branch *court* forms (the unified-court
-> portal) live in **`maine-court-forms-oss`**. Those PDFs already have AcroForm
+> portal) live in [**`maine-court-forms`**](https://github.com/bedardandy/maine-court-forms).
+> Those PDFs already have AcroForm
 > fields, so that project *maps* them to a canonical fact object. The probate
 > PDFs here are flat, so this project *creates* the fields first. Court forms
 > need field mapping; probate forms need field creation.

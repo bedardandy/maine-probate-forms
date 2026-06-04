@@ -123,5 +123,5 @@ plain-language situation. See **`docs/agent-workflow.md`**:
 probate's case object; `tools/fill_plan.py` resolves it. Or run the **MCP
 server**: `claude mcp add maine-probate-forms -- python3 tools/agent_server.py`
 (`find_forms` / `get_form` / `fill_form`). This mirrors the companion
-`maine-court-forms-oss` layer. Not legal advice; surface narrative/unresolved
+`maine-court-forms` layer. Not legal advice; surface narrative/unresolved
 fields and missing facts.

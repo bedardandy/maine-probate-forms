@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bridge a canonical fact object to probate's structured case object.
 
-The companion `maine-court-forms-oss` project drives forms from a *canonical
+The companion `maine-court-forms` project drives forms from a *canonical
 fact object*:
 
     { "matter":  {docket_number, court_county, court_location, filing_date, ...},
