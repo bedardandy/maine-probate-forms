@@ -82,4 +82,4 @@ claude mcp add maine-probate-forms -- python3 tools/agent_server.py
 Tools: `find_forms(query)`, `get_form(form_id)`,
 `fill_form(form_id, facts, source_pdf="")`. `fill_form` returns the plan; pass
 the fetched flat `source_pdf` and it also writes the filled PDF (path under
-`pdf`). This mirrors the companion `maine-court-forms-oss` MCP layer.
+`pdf`). This mirrors the companion `maine-court-forms` MCP layer.
