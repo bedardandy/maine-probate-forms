@@ -1,5 +1,13 @@
 # Maine Probate Forms AcroForm Pipeline
 
+> ⚠️ **Not legal advice — for professional use only.** This is software that
+> produces *draft* forms. It is meant to be used solely as one component of a
+> broader workflow that is implemented, supervised, and reviewed by a licensed
+> attorney — not as a do-it-yourself substitute for legal representation. Field
+> detection and mappings are AI-generated and unverified; output is a draft that
+> may be wrong. Verify every form against the current official source and
+> applicable law before filing. See [**DISCLAIMER**](DISCLAIMER.md).
+
 This project turns Maine Probate Court PDF forms into structured, fillable AcroForm PDFs.
 
 Most Maine probate forms published at `maineprobate.net` date from the 2019-2020 overhaul of the Maine probate code. Many are well-structured visually, but the PDF files are flat. A person can print and handwrite them, or type into a viewer's annotation layer, but software cannot discover, name, validate, or fill the intended fields.
