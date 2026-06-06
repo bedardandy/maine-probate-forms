@@ -177,6 +177,27 @@ A generated PDF is only one artifact. Each form ships as a package under
 
 Low-risk values fill deterministically, ambiguous values route to a model-assisted or human workflow, and high-risk legal decisions stay reviewable.
 
+### Staying current — detecting a re-issued form
+
+Because fills draw text at the coordinates in `fill_geometry.json`, a form's
+layout shifting upstream is the worst-case failure: the source still downloads,
+but the text lands in the wrong place. `catalog/pdf_manifest.json` pins the
+SHA-256 of the exact revision each form's geometry was measured against (build it
+with `make manifest`; the bootstrap cross-checks every PDF's page count and size
+against its geometry, so a mismatch is reported rather than silently pinned).
+
+```bash
+python3 tools/check_upstream.py            # re-probe source URLs; flag CHANGED / GONE
+```
+
+maineprobate.net filenames are revision-stamped, so a re-issued form usually
+turns up as `GONE` (the pinned URL stops resolving) rather than `CHANGED`. The
+probe is read-only and exits non-zero on any change, so it runs as a weekly
+early-warning (`.github/workflows/drift.yml`). When a form is flagged, re-derive
+its geometry, then rebuild the manifest. At **fill time**, `tools/fill_pdf.py`
+verifies the source PDF against the manifest first — `MCF_VERIFY_BLANK=warn`
+(default), `strict`, or `off` — so a re-issued source can't be filled unnoticed.
+
 ## License
 
 Apache-2.0. See `LICENSE`.

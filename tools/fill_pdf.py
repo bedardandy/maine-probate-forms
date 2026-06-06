@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import pathlib
 import re
 import sys
@@ -27,6 +28,7 @@ import fitz
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from canonical_adapter import to_case_object       # noqa: E402
 from fill_plan import build_plan                     # noqa: E402
+import verify                                         # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -155,6 +157,13 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     if not plan.get("ok"):
         return plan
     resolved = plan["resolved"]
+
+    # Guard: the source PDF must be the revision this form's geometry was
+    # measured against (catalog/pdf_manifest.json). Otherwise the coordinates
+    # can land text in the wrong place. Mismatch warns by default; set
+    # MCF_VERIFY_BLANK=strict to refuse, =off to skip.
+    verify.guard_pdf(form_id, source_pdf,
+                     mode=os.environ.get("MCF_VERIFY_BLANK", "warn"))
 
     doc = fitz.open(str(source_pdf))
     # The source PDF must have every page the geometry references. If it doesn't,
