@@ -80,6 +80,7 @@ def route(fact: str, catalog: dict | None = None, *, model: str | None = None,
 
     prompt = f"CATALOG:\n{cat['cat_surgical']}\n\nSITUATION: {fact}{suffix}\n\nJSON:"
     last_pick = None
+    last_exc = None
     for attempt in range(retries):
         try:
             r = client.chat.completions.create(
@@ -97,10 +98,13 @@ def route(fact: str, catalog: dict | None = None, *, model: str | None = None,
                 return {"form_id": pick, "alternates": alts,
                         "confidence": js.get("confidence"), "valid": True}
             # empty or out-of-vocabulary -> retry
-        except Exception:
-            pass
+        except Exception as e:                  # keep retrying, but keep the why
+            last_exc = f"{type(e).__name__}: {e}"
+    err = "no valid form_id after retries"
+    if last_exc:
+        err += f" (last error: {last_exc})"
     return {"form_id": last_pick, "alternates": [], "confidence": None,
-            "valid": False, "error": "no valid form_id after retries"}
+            "valid": False, "error": err}
 
 
 def main() -> int:

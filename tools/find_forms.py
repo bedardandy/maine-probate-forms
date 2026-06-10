@@ -31,21 +31,48 @@ def _tok(t: str) -> set[str]:
             if w not in _STOP and len(w) > 2}
 
 
+# A form id mentioned verbatim ("DE-101", "de 101", "pp108") must win outright:
+# the keyword scorer drops short prefix tokens like "de" (len>2 filter), so
+# without this short-circuit an exact id routes on "101" alone — poorly.
+_ID_RE = re.compile(r"\b([A-Za-z]{2,4})[-_ ]?(\d{1,3}[A-Za-z]?)\b")
+
+
+def _exact_id_hits(query: str) -> list[str]:
+    forms = {p.name.upper(): p.name
+             for p in (ROOT / "repo" / "forms").iterdir()
+             if (p / "metadata.json").exists()}
+    out = []
+    for m in _ID_RE.finditer(query or ""):
+        fid = forms.get(f"{m.group(1)}-{m.group(2)}".upper())
+        if fid and fid not in out:
+            out.append(fid)
+    return out
+
+
+def _meta(form_id: str) -> dict:
+    return json.loads(
+        (ROOT / "repo" / "forms" / form_id / "metadata.json").read_text())
+
+
 def find_forms(query: str, k: int = 8) -> dict:
+    exact = _exact_id_hits(query)
     q = _tok(query)
     hits = []
     for mp in glob.glob(str(ROOT / "repo" / "forms" / "*" / "metadata.json")):
         m = json.loads(open(mp).read())
+        if m.get("form_id") in exact:
+            continue                          # already pinned to the top
         hay_t = _tok(m.get("title", "")); hay_c = _tok(m.get("category", ""))
         score = 2 * len(q & hay_t) + len(q & hay_c)
         if score:
             hits.append((score, m))
     hits.sort(key=lambda x: (-x[0], x[1]["form_id"]))
+    ranked = [_meta(fid) for fid in exact] + [m for _, m in hits]
     return {"query": query, "forms": [
         {"form_id": m["form_id"], "title": m.get("title"),
          "category": m.get("category"), "source_url": m.get("source_url"),
          "n_fields": m.get("n_fields")}
-        for _, m in hits[:k]]}
+        for m in ranked[:k]]}
 
 
 def main() -> int:
