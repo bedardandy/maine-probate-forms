@@ -135,6 +135,49 @@ def _add_text(page: fitz.Page, rect, name: str, value: str,
             pass
 
 
+def _text_width(text: str, fontsize: float) -> float:
+    try:
+        return fitz.get_text_length(text, fontname="helv", fontsize=fontsize)
+    except Exception:
+        return len(text) * fontsize * 0.5
+
+
+def _split_for_widgets(value: str, widgets: list[dict],
+                       fontsize: float = TARGET_FONTSIZE) -> list[str]:
+    """Greedy word-split of `value` across a continuation-widget chain.
+
+    A field with several single-line widgets (a sentence continuing across
+    printed lines) used to get the whole value in widget 0 — shrink-to-fit then
+    crushed long values to 6pt while the continuation lines stayed empty. Fill
+    each widget to its usable width at the target size instead; the last widget
+    takes the remainder (its shrink-to-fit absorbs any overflow). A first
+    widget tall enough to be a paragraph area keeps the whole value (it wraps).
+    """
+    if len(widgets) <= 1 or fitz.Rect(widgets[0]["rect"]).height > _MULTILINE_MIN_H:
+        return [value]
+    words = str(value).split()
+    parts: list[str] = []
+    idx = 0
+    for i, w in enumerate(widgets):
+        if i == len(widgets) - 1:
+            parts.append(" ".join(words[idx:]))
+            return parts
+        avail = max(1.0, fitz.Rect(w["rect"]).width - 2 * _PAD)
+        cur: list[str] = []
+        while idx < len(words):
+            cand = " ".join(cur + [words[idx]])
+            if _text_width(cand, fontsize) > avail and cur:
+                break
+            cur.append(words[idx]); idx += 1
+            if _text_width(" ".join(cur), fontsize) > avail:
+                break        # single overlong word — let shrink-to-fit handle it
+        parts.append(" ".join(cur))
+        if idx >= len(words):
+            parts.extend([""] * (len(widgets) - i - 1))
+            return parts
+    return parts
+
+
 def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
     w = fitz.Widget()
     w.field_name = name
@@ -200,11 +243,12 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
             skipped_no_geom.append(fid); continue
         if spec.get("widgets"):                       # text field(s)
             align = _ALIGN_CONST.get(align_map.get(fid))   # None -> name heuristic
+            parts = _split_for_widgets(str(val), spec["widgets"])
             for i, wdg in enumerate(spec["widgets"]):
-                # full value in the first widget; extra widgets are continuation
+                # value flows across the continuation chain width-by-width
                 _add_text(doc[wdg["page"]], wdg["rect"],
                           fid if i == 0 else f"{fid}__{i}",
-                          val if i == 0 else "", align=align)
+                          parts[i] if i < len(parts) else "", align=align)
                 written_text += 1
         elif spec.get("options"):                     # choice field
             wants = {str(v).lower() for v in (

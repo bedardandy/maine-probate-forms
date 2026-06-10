@@ -86,7 +86,10 @@ def update_field_rects(
 
     doc.save(output_path)
     doc.close()
-    return {"output_path": output_path, "updated": changed}
+    matched = {c["field_name"] for c in changed}
+    unmatched = sorted(n for n in update_map if n not in matched)
+    return {"output_path": output_path, "updated": changed,
+            "unmatched": unmatched}
 
 
 @mcp.tool()
