@@ -1,0 +1,55 @@
+{
+  "_comment": "Synthetic case used to demonstrate the DE-201 (informal probate of will / appointment of PR) fill pipeline. No real people; any resemblance is coincidental. Heir/devisee rows and fee lines left in `narrative` simply don't apply to this two-heir testate estate.",
+  "case_dict": {
+    "county": "Kennebec",
+    "docket_no": "2026-AUG-2026-00217",
+    "decedent_name": "Harold T. Pelletier",
+    "caption": "Estate of Harold T. Pelletier"
+  },
+  "applicant_record": {
+    "applicant": "Diane M. Pelletier",
+    "applicant_contact": "311 Winthrop Street, Augusta, ME 04330 — (207) 555-0186 — dmp@example.com",
+    "applicant_interest": [
+      "surviving_spouse",
+      "devisee"
+    ]
+  },
+  "personal_representative_record": {
+    "pr": "Diane M. Pelletier",
+    "pr_name_address": "Diane M. Pelletier, 311 Winthrop Street, Augusta, ME 04330"
+  },
+  "decedent_record": {
+    "decedent": "Harold T. Pelletier",
+    "decedent_birth_date": "1951-02-09",
+    "decedent_death_date": "2026-05-01",
+    "decedent_domicile": "311 Winthrop Street, Augusta, ME 04330"
+  },
+  "attorney_record": {
+    "attorney_name": "Marcus L. Theriault",
+    "attorney_address": "9 Water Street, Hallowell, ME 04347",
+    "attorney_phone": "(207) 555-0233",
+    "attorney_bar_number": "5108",
+    "attorney_email": "mtheriault@example.com"
+  },
+  "narrative_facts": {
+    "will_date": "2019-08-14",
+    "codicils_date": "None",
+    "pr_priority_details": "Applicant is the person nominated as personal representative in the decedent's will and the surviving spouse.",
+    "heirs_page1_name_1": "Diane M. Pelletier",
+    "heirs_page1_addr_1": "311 Winthrop Street, Augusta, ME 04330",
+    "heirs_page1_dob_1": "1954-06-30",
+    "heirs_page1_rel_1": "Surviving spouse",
+    "heirs_page1_name_2": "Luc H. Pelletier",
+    "heirs_page1_addr_2": "18 Sewall Street, Apt 2, Augusta, ME 04330",
+    "heirs_page1_dob_2": "1980-01-22",
+    "heirs_page1_rel_2": "Son",
+    "devisees_name_1": "Diane M. Pelletier",
+    "devisees_addr_1": "311 Winthrop Street, Augusta, ME 04330",
+    "devisees_name_2": "Luc H. Pelletier",
+    "devisees_addr_2": "18 Sewall Street, Apt 2, Augusta, ME 04330",
+    "died_more_than_3_years": false,
+    "filing_fee": 175.0,
+    "mailing_notices_fee": 14.0,
+    "publication_fee": 0.0
+  }
+}

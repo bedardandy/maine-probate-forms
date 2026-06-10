@@ -251,8 +251,11 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
                           parts[i] if i < len(parts) else "", align=align)
                 written_text += 1
         elif spec.get("options"):                     # choice field
-            wants = {str(v).lower() for v in (
-                val if isinstance(val, list) else [val])}
+            # A select_many list reaches here rendered as "a; b" (the plan's
+            # _render_value coerces lists to display text) — split it back so
+            # every selected option matches, not none of them.
+            vals = val if isinstance(val, list) else re.split(r";\s*", str(val))
+            wants = {str(v).strip().lower() for v in vals}
             single = len(spec["options"]) == 1
             for j, o in enumerate(spec["options"]):
                 ov = str(o.get("value") or "").lower()

@@ -1,0 +1,54 @@
+{
+  "_comment": "Synthetic case used to demonstrate the AD-026 (petition for adult adoption) fill pipeline. No real people; any resemblance is coincidental. Notary lines are completed at signing and stay unresolved here on purpose.",
+  "case_dict": {
+    "county": "Androscoggin",
+    "docket_no": "2026-LEW-2026-00065",
+    "caption": "Adoption of Riley J. Morin"
+  },
+  "adoptee_record": {
+    "adoptee": "Riley J. Morin",
+    "adoptee_dob": "2003-04-11",
+    "adoptee_place_of_birth": "Lewiston, Maine",
+    "adoptee_birth_name": "Riley James Morin",
+    "adoptee_other_names": "None",
+    "adoptee_legal_residence": "26 Pleasant Street, Lewiston, ME 04240",
+    "adoptee_mailing_address": "26 Pleasant Street, Lewiston, ME 04240",
+    "adoptee_telephone": "(207) 555-0658"
+  },
+  "attorney_record": {
+    "attorney_name": "Claude R. Fortin",
+    "attorney_address": "215 Lisbon Street, Lewiston, ME 04240",
+    "attorney_phone": "(207) 555-0644",
+    "attorney_bar_number": "4933",
+    "attorney_email": "cfortin@example.com"
+  },
+  "narrative_facts": {
+    "petitioner_1_name": "Daniel A. Roy",
+    "petitioner_1_dob": "1972-12-02",
+    "petitioner_1_legal_residence": "26 Pleasant Street, Lewiston, ME 04240",
+    "petitioner_1_mailing_address": "26 Pleasant Street, Lewiston, ME 04240",
+    "petitioner_1_telephone": "(207) 555-0612",
+    "petitioner_1_marriage_info": "Married to co-petitioner Monique B. Roy since 2001",
+    "petitioner_2_name": "Monique B. Roy",
+    "petitioner_2_dob": "1974-03-27",
+    "petitioner_2_legal_residence": "26 Pleasant Street, Lewiston, ME 04240",
+    "petitioner_2_mailing_address": "26 Pleasant Street, Lewiston, ME 04240",
+    "petitioner_2_telephone": "(207) 555-0612",
+    "petitioner_2_marriage_info": "Married to co-petitioner Daniel A. Roy since 2001",
+    "relationship_to_adoptee": "Stepfather and mother; the adoptee has lived in the petitioners' household since age 5.",
+    "venue_reason": [
+      "adoptee_resides",
+      "petitioner_resides"
+    ],
+    "guardian_or_conservator": "no",
+    "proposed_new_birth_name": "Riley James Roy",
+    "proposed_current_new_name": "Riley James Roy",
+    "information_sharing_intent": "intend_to_share",
+    "information_sharing_details": "The adoptee and his birth mother intend to continue contact and consent to sharing identifying information.",
+    "inheritance_acknowledgment": "yes",
+    "parent_child_relationship_acknowledgment": "yes"
+  },
+  "notary_record": {
+    "notary_county": "Androscoggin"
+  }
+}

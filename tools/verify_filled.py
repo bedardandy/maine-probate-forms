@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import re
 import sys
 
 import fitz
@@ -61,21 +62,27 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
     for fid, expected in plan["resolved"].items():
         spec = geom.get(fid) or {}
         if spec.get("options"):                      # choice field
-            wants = {str(v).lower() for v in (
-                expected if isinstance(expected, list) else [expected])}
+            # mirror fill_pdf: a select_many list arrives rendered as "a; b"
+            vals = (expected if isinstance(expected, list)
+                    else re.split(r";\s*", str(expected)))
+            wants = {str(v).strip().lower() for v in vals}
             single = len(spec["options"]) == 1
-            hit = None
+            checked_opts, pages = [], []
             for j, o in enumerate(spec["options"]):
                 ov = str(o.get("value") or "").lower()
                 name = f"{fid}__{o.get('value') or j}"
                 w = widgets.get(name)
                 if w and str(w["value"]).strip().lower() in _CHECKED and (
                         ov in wants or single):
-                    hit = {"value": o.get("value"), "page": w["page"]}
-                    break
-            entry = {"placed": hit is not None, "expected": expected,
-                     "actual": hit["value"] if hit else None,
-                     "page": hit["page"] if hit else None, "kind": "choice"}
+                    checked_opts.append(o.get("value"))
+                    pages.append(w["page"])
+            want_n = 1 if single else len(wants & {
+                str(o.get("value") or "").lower() for o in spec["options"]})
+            choice_ok = len(checked_opts) >= max(want_n, 1)
+            entry = {"placed": choice_ok, "expected": expected,
+                     "actual": ("; ".join(str(c) for c in checked_opts)
+                                or None),
+                     "page": pages[0] if pages else None, "kind": "choice"}
         else:                                        # text field
             w = widgets.get(fid)
             actual = (w or {}).get("value")

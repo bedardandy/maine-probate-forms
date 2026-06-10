@@ -1,0 +1,38 @@
+{
+  "_comment": "Synthetic case used to demonstrate the CN-1 (name change petition — adult) fill pipeline. No real people; any resemblance is coincidental. The notary's own title/printed-name lines are completed at signing and stay unresolved here on purpose.",
+  "case_dict": {
+    "county": "York",
+    "docket_number": "2026-ALF-2026-00134"
+  },
+  "petitioner_record": {
+    "petitioner": "Jordan Avery Smith",
+    "petitioner_first_name": "Jordan",
+    "petitioner_middle_name": "Avery",
+    "petitioner_last_name": "Smith",
+    "petitioner_address": "73 School Street, Saco, ME 04072",
+    "petitioner_email_address": "jasmith@example.com",
+    "petitioner_date_of_birth": "1992-09-17"
+  },
+  "attorney_record": {
+    "attorney_name": "Elena V. Castonguay",
+    "attorney_address": "41 Main Street, Suite 2, Biddeford, ME 04005",
+    "attorney_bar_number": "5876",
+    "attorney_phone_number": "(207) 555-0521",
+    "attorney_email_address": "ecastonguay@example.com"
+  },
+  "notary_record": {
+    "notary_county": "York",
+    "notary_petitioner_name": "Jordan Avery Smith"
+  },
+  "narrative_facts": {
+    "current_legal_name": "Jordan Avery Smith",
+    "petitioner_prior_names": "None",
+    "desired_first_name": "Jordan",
+    "desired_middle_name": "Avery",
+    "desired_last_name": "Smith-Beaulieu",
+    "reasons_for_change": "Petitioner married Casey Beaulieu in 2025 and wishes to adopt the hyphenated family surname.",
+    "confidentiality_reasons": "",
+    "no_notification_reasons": "",
+    "filing_date": "2026-06-03"
+  }
+}

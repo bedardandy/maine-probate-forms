@@ -1,0 +1,33 @@
+{
+  "_comment": "Synthetic case used to demonstrate the PP-201 (petition for appointment of guardian — adult) fill pipeline. No real people; any resemblance is coincidental.",
+  "case_dict": {
+    "county": "Penobscot",
+    "docket_no": "2026-BAN-2026-00088"
+  },
+  "respondent_record": {
+    "respondent": "Walter F. Cyr",
+    "respondent_age": "78",
+    "respondent_location": "Resides at 52 Essex Street, Bangor, ME 04401; currently an inpatient at a Bangor rehabilitation facility."
+  },
+  "attorney_record": {
+    "attorney_name": "Renee A. Ouellette",
+    "attorney_address": "144 Harlow Street, Bangor, ME 04401",
+    "attorney_phone": "(207) 555-0412",
+    "attorney_bar_number": "6290",
+    "attorney_email": "rouellette@example.com"
+  },
+  "narrative_facts": {
+    "petitioner_info": "Susan C. Levesque, 12 Birch Lane, Hampden, ME 04444, (207) 555-0467",
+    "petitioner_relationship": "Daughter",
+    "nominee_info": "Susan C. Levesque, 12 Birch Lane, Hampden, ME 04444",
+    "nominee_relationship": "Daughter",
+    "nominee_justification": "The nominee is the respondent's daughter, has managed his household and medical appointments for the past two years, and is willing and able to serve.",
+    "respondent_need_description": "Respondent has advanced vascular dementia, documented by his treating physician, and can no longer make or communicate informed decisions about his residence, medical care, or daily needs.",
+    "guardianship_scope_details": "Full guardianship; no limitation is workable because the respondent requires assistance in all areas of daily living.",
+    "persons_to_notify": "Susan C. Levesque (daughter, petitioner); Paul R. Cyr (son), 9 Court Street, Brewer, ME 04412; Eastern Maine Adult Protective Services caseworker of record.",
+    "respondent_property": "Single-family home at 52 Essex Street, Bangor (approx. $180,000); checking and savings approx. $22,000; monthly Social Security income.",
+    "respondent_attorney": "no",
+    "petition_date": "2026-06-01",
+    "respondent_attorney_details": "Not currently represented; petitioner requests the court appoint counsel for the respondent."
+  }
+}

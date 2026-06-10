@@ -1,6 +1,5 @@
 {
   "_comment": "Synthetic case used to demonstrate the DE-101 fill pipeline. No real people; any resemblance is coincidental.",
-
   "case_dict": {
     "county_probate_court": "Cumberland",
     "docket_number": "2026-MERR-2024-00451",
@@ -8,7 +7,6 @@
     "decedent_name_caption": "Margaret L. Walsh",
     "probate_date": "2026-04-02"
   },
-
   "applicant_record": {
     "applicant": "Sarah J. Walsh-Bennett",
     "applicant_address": "47 Pine Hill Road",
@@ -19,18 +17,15 @@
     "applicant_email": "sjwb@example.com",
     "applicant_legal_interest": "heir"
   },
-
   "decedent_record": {
     "decedent": "Margaret L. Walsh",
     "decedent_date_of_birth": "1948-11-04",
     "decedent_date_of_death": "2026-03-18",
     "decedent_domicile": "82 Falmouth Foreside Way, Falmouth, ME 04105"
   },
-
   "form_subject_record": {
     "form_subject": "Sarah J. Walsh-Bennett of 47 Pine Hill Road, Falmouth, ME 04105"
   },
-
   "attorney_record": {
     "attorney_name": "Patricia M. Goff",
     "attorney_address": "200 Commercial Street, Suite 4, Portland, ME 04101",
@@ -38,7 +33,6 @@
     "attorney_bar_number": "4271",
     "attorney_email": "pgoff@example.com"
   },
-
   "narrative_facts": {
     "relationship_to_decedent": "Daughter and sole surviving child.",
     "other_heirs": "None — decedent was widowed in 2019 (husband Robert J. Walsh, predeceased). Decedent's only sibling, John Walsh, also predeceased her in 2014 leaving no issue.",
@@ -47,12 +41,12 @@
     "domiciled_outside_maine": false,
     "prior_personal_representative": false,
     "died_more_than_3_years": false,
-    "bond_requirement": "Bond requested in the amount of personal property only ($45,000); will and codicils n/a (intestate).",
+    "bond_requirement": "personal_rep_bond",
     "testamentary_instrument": null,
     "filing_fees": {
-      "filing_fee": 175.00,
-      "mailing_notices_fee": 21.00,
-      "publication_fee": 0.00
+      "filing_fee": 175.0,
+      "mailing_notices_fee": 21.0,
+      "publication_fee": 0.0
     }
   }
 }

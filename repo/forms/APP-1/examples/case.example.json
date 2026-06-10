@@ -1,0 +1,23 @@
+{
+  "_comment": "Synthetic case used to demonstrate the APP-1 (notice of appeal to the Law Court) fill pipeline. No real people; any resemblance is coincidental.",
+  "case_dict": {
+    "county": "Cumberland",
+    "docket_number": "2026-POR-2025-00592",
+    "case_name": "In re Estate of Margaret L. Walsh"
+  },
+  "attorney_record": {
+    "attorney_name": "Patricia M. Goff",
+    "attorney_address": "200 Commercial Street, Suite 4, Portland, ME 04101",
+    "attorney_phone": "(207) 555-0309",
+    "attorney_bar_number": "4271",
+    "attorney_email": "pgoff@example.com"
+  },
+  "narrative_facts": {
+    "appellant_name": "Thomas R. Walsh",
+    "appellant_address": "5 Ledgewood Drive, Scarborough, ME 04074",
+    "judgment_date": "2026-05-12",
+    "statement_of_issues": "Whether the Probate Court erred in admitting the 2019 will to formal probate over the appellant's objection that the decedent lacked testamentary capacity.",
+    "transcript_status": "no_transcript",
+    "filing_date": "2026-06-02"
+  }
+}
