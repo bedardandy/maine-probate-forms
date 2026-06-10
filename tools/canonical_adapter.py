@@ -42,6 +42,16 @@ _ATTR_SUFFIX = {
     "domicile": "domicile",
 }
 
+# Schemas drift on attribute spellings: PP-406/MISC-101 use `attorney_bar_no`,
+# CN-1/DE-509 use `attorney_phone_number` / `attorney_email_address`, DE-509
+# uses `attorney_maine_bar_number`. Emit every alias alongside the canonical
+# suffix so whichever key a schema's field_id uses resolves.
+_ATTR_ALIASES = {
+    "bar_number": ("bar_no", "maine_bar_number"),
+    "phone": ("phone_number", "telephone"),
+    "email": ("email_address",),
+}
+
 
 def _full_name(party: dict) -> str:
     if party.get("full_name"):
@@ -63,13 +73,12 @@ def _role_record(role: str, party: dict) -> dict:
             continue
         suffix = _ATTR_SUFFIX.get(k, k)          # passthrough unknown keys
         rec[f"{role}_{suffix}"] = v
+        for alias in _ATTR_ALIASES.get(suffix, ()):
+            rec.setdefault(f"{role}_{alias}", v)
     return rec
 
 
 def _address_line(party: dict) -> str:
-    bits = [party.get("address")]
-    tail = " ".join(str(party[k]) for k in ("city", "state", "zip")
-                    if party.get(k))
     loc = ", ".join(b for b in (party.get("address"),
                                 ", ".join(str(party[k]) for k in ("city", "state")
                                           if party.get(k))) if b)

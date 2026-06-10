@@ -75,6 +75,28 @@ def _lookup(case: dict, source: str, field_id: str):
     val = rec.get(field_id)
     if val not in (None, ""):
         return val
+    if "." in key:
+        # Two-dot source (`<record>.<role>.<attr>`, e.g.
+        # `case_dict.conservator.phone`, `petitioner_record.petitioner.address`):
+        # no record carries a literal "role.attr" key, so rewrite to the flat
+        # `<role>_<attr>` convention and try the named record first, then the
+        # role's own `<role>_record` (where canonical_adapter puts attributes).
+        role, attr = key.split(".", 1)
+        flat = f"{role}_{attr.replace('.', '_')}"
+        role_rec = case.get(f"{role}_record")
+        for r2 in (rec, role_rec):
+            if isinstance(r2, dict):
+                v = r2.get(flat)
+                if v not in (None, ""):
+                    return v
+        if attr == "name_and_address":      # composite: build from the parts
+            r2 = role_rec if isinstance(role_rec, dict) else rec
+            nm = r2.get(f"{role}_name") or r2.get(role)
+            ad = r2.get(f"{role}_address")
+            if nm and ad:
+                return f"{nm}, {ad}"
+            return nm or ad or None
+        return None
     name_bearing = "name" in field_id or "caption" in field_id
     if field_id.endswith(_NON_NAME_SUFFIXES) and not name_bearing:
         return None
