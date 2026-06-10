@@ -79,8 +79,8 @@ def _metrics(ttf_path):
     return width_for, desc, f
 
 
-def build_font(pdf, ttf_path):
-    """Build an embedded WinAnsi TrueType (Liberation Sans) for the widget text."""
+def build_font(pdf, ttf_path, base_name="LiberationSans"):
+    """Build an embedded WinAnsi TrueType (a Liberation substitute) for text."""
     width_for, d, _ = _metrics(ttf_path)
     raw = open(ttf_path, "rb").read()
     first, last = 32, 255
@@ -98,15 +98,107 @@ def build_font(pdf, ttf_path):
     tou = pdf.make_stream(_tounicode_stream(uni_map).encode())
     ff = pdf.make_stream(raw); ff["/Length1"] = len(raw)
     fd = pdf.make_indirect(pikepdf.Dictionary({
-        "/Type": pikepdf.Name("/FontDescriptor"), "/FontName": pikepdf.Name("/LiberationSans"),
+        "/Type": pikepdf.Name("/FontDescriptor"), "/FontName": pikepdf.Name("/" + base_name),
         "/Flags": 32, "/FontBBox": d["bbox"], "/ItalicAngle": d["italic"],
         "/Ascent": d["ascent"], "/Descent": d["descent"], "/CapHeight": d["capheight"],
         "/StemV": 80, "/FontFile2": ff}))
     return pikepdf.Dictionary({
         "/Type": pikepdf.Name("/Font"), "/Subtype": pikepdf.Name("/TrueType"),
-        "/BaseFont": pikepdf.Name("/LiberationSans"), "/FirstChar": first, "/LastChar": last,
+        "/BaseFont": pikepdf.Name("/" + base_name), "/FirstChar": first, "/LastChar": last,
         "/Widths": widths, "/FontDescriptor": fd,
         "/Encoding": pikepdf.Name("/WinAnsiEncoding"), "/ToUnicode": tou})
+
+
+# Base-14 family -> Liberation substitute (metric-compatible). Source PDFs can
+# leave not just Helvetica but Times-Roman / Courier unembedded (7.21.4.1), and
+# a fill that injects widgets does not re-distill the document, so each base-14
+# text family is embedded IN PLACE here. Style (Bold/Italic) is read off
+# the BaseFont name so "Times-Bold" maps to LiberationSerif-Bold.
+_LIB_DIR_CANDIDATES = [
+    os.environ.get("LIBERATION_DIR"),
+    "/usr/share/fonts/truetype/liberation",
+    "/usr/share/fonts/liberation",
+]
+_LIB_DIR = next((d for d in _LIB_DIR_CANDIDATES if d and pathlib.Path(d).is_dir()), None)
+_FAMILY = [("Helvetica", "Sans"), ("Arial", "Sans"), ("Times", "Serif"),
+           ("Courier", "Mono"),
+           # common MS office families the source PDFs name but don't embed;
+           # no Carlito/Caladea here, so map to the closest Liberation (metric-
+           # approximate, but embeds + satisfies 7.21.4.1 and renders legibly).
+           ("Calibri", "Sans"), ("Segoe", "Sans"), ("Verdana", "Sans"),
+           ("Tahoma", "Sans"), ("Cambria", "Serif"), ("Georgia", "Serif"),
+           ("Consolas", "Mono")]
+
+
+def _liberation_for(basefont: str):
+    """(ttf_path, pdf_base_name) for an unembedded base-14 text font, or None."""
+    if not _LIB_DIR:
+        return None
+    bf = basefont.split("+")[-1]  # strip subset tag
+    fam = next((lib for key, lib in _FAMILY if key.lower() in bf.lower()), None)
+    if not fam:
+        return None
+    low = bf.lower()
+    bold = "bold" in low
+    ital = "italic" in low or "oblique" in low
+    style = ("BoldItalic" if bold and ital else "Bold" if bold
+             else "Italic" if ital else "Regular")
+    ttf = pathlib.Path(_LIB_DIR) / f"Liberation{fam}-{style}.ttf"
+    if not ttf.exists():
+        ttf = pathlib.Path(_LIB_DIR) / f"Liberation{fam}-Regular.ttf"
+    return (str(ttf), f"Liberation{fam}") if ttf.exists() else None
+
+
+def _is_unembedded_base14(obj):
+    try:
+        if str(obj.get("/Type", "")) != "/Font":
+            return False
+        if str(obj.get("/Subtype", "")) not in ("/Type1", "/TrueType"):
+            return False
+        fdd = obj.get("/FontDescriptor")
+        if fdd and any(k in fdd for k in ("/FontFile", "/FontFile2", "/FontFile3")):
+            return False
+        return _liberation_for(str(obj.get("/BaseFont", ""))) is not None
+    except Exception:
+        return False
+
+
+def repair_fonts(pdf, zapf=None):
+    """Embed Liberation substitutes for every unembedded base-14 text font (in
+    place — no flatten), embed the ZapfDingbats symbol font if a TTF is given, and
+    attach ToUnicode where missing. Returns (n_text, n_symbol, n_tounicode).
+    Reused by this script's main() and by make_accessible.py."""
+    cache = {}
+    n_text = n_sym = 0
+    # No ZapfDingbats TTF on the box? synthesize one from DejaVu (check/cross
+    # glyphs + a (1,0) byte cmap) so the checkbox check embeds instead of being
+    # the lone 7.21.4.1 residual.
+    if not (zapf and pathlib.Path(zapf).exists()):
+        try:
+            import make_zapf_ttf
+            zapf = make_zapf_ttf.ensure()
+        except Exception:  # noqa: BLE001
+            zapf = None
+    symfont = (build_symbol_font(pdf, zapf)
+               if zapf and pathlib.Path(zapf).exists() else None)
+    for obj in pdf.objects:
+        if not isinstance(obj, pikepdf.Dictionary):
+            continue
+        if symfont is not None and is_unembedded_symbol(obj):
+            repl = symfont; n_sym += 1
+        elif _is_unembedded_base14(obj):
+            sub = _liberation_for(str(obj.get("/BaseFont", "")))
+            if sub[0] not in cache:
+                cache[sub[0]] = build_font(pdf, sub[0], sub[1])
+            repl = cache[sub[0]]; n_text += 1
+        else:
+            continue
+        for k in list(obj.keys()):
+            del obj[k]
+        for k, v in repl.items():
+            obj[k] = v
+    n_tou = add_tounicode(pdf)
+    return n_text, n_sym, n_tou
 
 
 def _tounicode_stream(uni_map):
@@ -230,24 +322,11 @@ def main():
         print(f"widget font not found: {a.ttf} (set WIDGET_TTF or --ttf)", file=sys.stderr)
         return 2
     pdf = pikepdf.open(a.pdf)
-    newfont = build_font(pdf, a.ttf)
-    symfont = build_symbol_font(pdf, a.zapf) if (a.zapf and pathlib.Path(a.zapf).exists()) else None
-    n = 0
-    for obj in pdf.objects:
-        if not isinstance(obj, pikepdf.Dictionary):
-            continue
-        repl = newfont if is_unembedded_helvetica(obj) else (
-            symfont if (symfont and is_unembedded_symbol(obj)) else None)
-        if repl is not None:
-            for k in list(obj.keys()):
-                del obj[k]
-            for k, v in repl.items():
-                obj[k] = v
-            n += 1
-    nt = add_tounicode(pdf)
+    n_text, n_sym, nt = repair_fonts(pdf, zapf=a.zapf)
     pdf.save(a.out)
-    sym = " (incl. ZapfDingbats)" if symfont else " (ZapfDingbats TTF not found — skipped)"
-    print(f"embedded {n} unembedded font obj(s){sym}; added ToUnicode to {nt} font(s) -> {a.out}")
+    sym = f" (+{n_sym} ZapfDingbats)" if n_sym else " (ZapfDingbats not embedded)"
+    print(f"embedded {n_text} base-14 text font obj(s){sym}; "
+          f"added ToUnicode to {nt} font(s) -> {a.out}")
 
 
 if __name__ == "__main__":
