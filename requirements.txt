@@ -1,5 +1,5 @@
 # Core: routing, schema work, the fill plan/PDF path, and the MCP servers.
-maine-forms-engine @ git+https://github.com/bedardandy/maine-forms-engine@v0.1.0
+maine-forms-engine @ git+https://github.com/bedardandy/maine-forms-engine@v0.3.0
                    # shared drift guard (tools/check_upstream.py), PDF/UA
                    # accessibility remediation (tools/accessibility/ are shims
                    # over it), and the MCP scaffold tools/agent_server.py
