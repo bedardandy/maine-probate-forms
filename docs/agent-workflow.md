@@ -97,8 +97,10 @@ reviewed before filing.
 claude mcp add maine-probate-forms -- python3 tools/agent_server.py
 ```
 Tools: `find_forms(query)`, `get_form(form_id)`,
-`fill_form(form_id, facts, source_pdf="")`. `fill_form` returns the plan and
-writes the filled PDF (path under `pdf`), auto-fetching the flat source when
-`source_pdf` is omitted; the result carries `source_verified` and a
-`verified_fill` read-back summary. This mirrors the companion
+`fill_form(form_id, case, out_dir)` (+ `fill_form_from_source(form_id, case,
+source_pdf, out_dir)` to fill a flat copy you already have). `fill_form`
+returns the plan and writes the filled PDF (path under `pdf`), auto-fetching
+the flat source; the result carries `source_verified` and a `verified_fill`
+read-back summary. The server is built on the shared `maine-forms-engine`
+MCP scaffold, so the parameter names and error shape match the companion
 `maine-court-forms` MCP layer.

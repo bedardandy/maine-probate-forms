@@ -84,6 +84,6 @@ is a pipeline task, not a manual schema edit.
 claude mcp add maine-probate-forms -- python3 tools/agent_server.py
 ```
 
-`find_forms(query)`, `get_form(form_id)`, `fill_form(form_id, facts, source_pdf)`.
+`find_forms(query)`, `get_form(form_id)`, `fill_form(form_id, case, out_dir)` (+ `fill_form_from_source` for a flat copy you already have).
 
 > **Not legal advice.** Output is a draft to verify against the official form.

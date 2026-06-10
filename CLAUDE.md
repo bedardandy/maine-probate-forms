@@ -61,10 +61,16 @@ Worked example: `docs/agent-workflow.md` and
 claude mcp add maine-probate-forms -- python3 tools/agent_server.py
 ```
 
-`fill_form(form_id, facts)` returns the plan, auto-fetches the flat source,
-writes the PDF, and reports `source_verified` plus a `verified_fill` read-back
-summary. (`.mcp.json` registers the same server automatically for projects
-that load it.)
+`fill_form(form_id, case, out_dir)` returns the plan, auto-fetches the flat
+source, writes the PDF, and reports `source_verified` plus a `verified_fill`
+read-back summary; `fill_form_from_source` fills a flat copy you already
+have. The server is built on the shared
+[`maine-forms-engine`](https://github.com/bedardandy/maine-forms-engine) MCP
+scaffold (standard `query`/`case`/`out_dir` parameters, one error shape), as
+are the drift check (`tools/check_upstream.py` — now with
+`--update-manifest`) and `tools/accessibility/` (schema-label /TU naming);
+the geometry fill path stays this repo's own. (`.mcp.json` registers the
+same server automatically for projects that load it.)
 
 ## Repository layout
 

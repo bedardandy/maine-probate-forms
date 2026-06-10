@@ -17,8 +17,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install PyMuPDF (downloader shares build_pdf_manifest)
-        run: python -m pip install --upgrade pip pymupdf
+      - name: Install deps
+        # tools/check_upstream.py is a shim over the shared maine-forms-engine;
+        # the downloader shares build_pdf_manifest (PyMuPDF)
+        run: python -m pip install --upgrade pip -r requirements.txt
       - name: Probe source URLs against the manifest
         # Non-zero exit means a form CHANGED or its URL is GONE. The JSON report
         # names every affected form; re-derive their geometry, then rebuild the

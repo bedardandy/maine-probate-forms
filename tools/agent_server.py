@@ -1,30 +1,46 @@
 #!/usr/bin/env python3
 """MCP server for agent-driving the Maine probate forms library.
 
-Exposes three tools so a Claude Code / codex agent can go from a plain-language
-fact pattern to a structured fill plan:
+Built on the shared ``maine-forms-engine`` MCP scaffold
+(``maine_forms_engine.mcp``): this module supplies the repo backend (keyword
+routing, field-bucket payloads, the geometry fill-plan path); the scaffold
+supplies the standardized tool surface (``query`` / ``case`` / ``out_dir``)
+and the one error shape (failures are always ``{"ok": False, "error": ...,
+"error_type": ...}``).
 
-  * find_forms(query)        -> candidate forms (keyword routing over metadata)
-  * get_form(form_id)        -> title, source_url, parties, field buckets, skill
-  * fill_form(form_id, facts)-> a fill plan: deterministically resolved fields,
-                                the narrative worklist the agent composes from
-                                the fact pattern, recompute + blank-by-design.
+Tools (stdio, FastMCP):
+  find_forms(query)               -> candidate forms (keyword routing over
+                                     metadata; this repo's bucket shape)
+  get_form(form_id)               -> title, source_url, parties, field
+                                     buckets, skill
+  fill_form(form_id, case, out_dir) -> a fill plan: deterministically resolved
+                                     fields, the narrative worklist the agent
+                                     composes, recompute + blank-by-design —
+                                     and a written PDF when the form has
+                                     fill_geometry.json (official flat source
+                                     fetched + manifest-verified automatically)
+  fill_form_from_source(form_id, case, source_pdf, out_dir)
+                                  -> same, filling a flat source copy you
+                                     already have                [extra tool]
 
-`facts` may be a court-style canonical fact object ({matter, parties, party,
+``case`` may be a court-style canonical fact object ({matter, parties, party,
 facts}) — it's adapted to probate's case object automatically — or an already
 native case object ({case_dict, <role>_record, narrative_facts}).
 
 Register:  claude mcp add maine-probate-forms -- python3 tools/agent_server.py
 
-This is the routing + planning layer. Probate PDFs are flat and not shipped;
-applying a plan to a document requires generating the fillable form (see
-docs/agent-workflow.md). Not legal advice.
+This is the routing + planning layer; the root mcp_server.py is a different
+(enrichment-pipeline) server. Probate PDFs are flat and not shipped. Not
+legal advice.
 """
 from __future__ import annotations
 
 import json
 import pathlib
 import sys
+
+from maine_forms_engine.mcp import UnknownFormError
+from maine_forms_engine.mcp.server import main as _scaffold_main
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
@@ -35,10 +51,6 @@ from fill_plan import build_plan                     # noqa: E402
 from fill_pdf import fill_pdf as _fill_pdf           # noqa: E402
 from verify_filled import verify_filled as _verify_filled   # noqa: E402
 import find_forms as _find                           # noqa: E402
-
-from mcp.server.fastmcp import FastMCP               # noqa: E402
-
-mcp = FastMCP("maine-probate-forms")
 
 _SOURCE_BUCKET = {
     "llm_over_narrative": "narrative", "recompute_from_dependencies": "recompute",
@@ -51,18 +63,11 @@ def _form_dir(form_id: str) -> pathlib.Path:
     return ROOT / "repo" / "forms" / form_id
 
 
-@mcp.tool()
-def find_forms(query: str) -> dict:
-    """Route a fact pattern to candidate probate forms (keyword over metadata)."""
-    return _find.find_forms(query)
-
-
-@mcp.tool()
-def get_form(form_id: str) -> dict:
-    """Metadata, parties, source link, field buckets, and skill guide for a form."""
+def get_form_payload(form_id: str) -> dict:
+    """Metadata, parties, source link, field buckets, and skill guide."""
     fd = _form_dir(form_id)
     if not (fd / "schema.json").exists():
-        return {"ok": False, "error": f"unknown form {form_id!r}"}
+        raise UnknownFormError(form_id)
     schema = json.loads((fd / "schema.json").read_text())
     meta = json.loads((fd / "metadata.json").read_text()) if (
         fd / "metadata.json").exists() else {}
@@ -83,19 +88,18 @@ def get_form(form_id: str) -> dict:
     if (fd / "skill.md").exists():
         skill = (fd / "skill.md").read_text()
     return {
-        "ok": True, "form_id": form_id,
+        "form_id": form_id,
         "title": meta.get("title"), "category": meta.get("category"),
         "source_url": meta.get("source_url"), "n_fields": meta.get("n_fields"),
         "field_buckets": buckets,
         "skill": skill,
-        "fill_with": "fill_form(form_id, facts) — facts as a canonical fact "
-                     "object {matter, parties, party, facts}.",
+        "fill_with": "fill_form(form_id, case, out_dir) — case as a canonical "
+                     "fact object {matter, parties, party, facts}.",
     }
 
 
-@mcp.tool()
-def fill_form(form_id: str, facts: dict, source_pdf: str = "",
-              out_dir: str = "/tmp") -> dict:
+def fill_form_payload(form_id: str, facts: dict, source_pdf: str = "",
+                      out_dir: str = "/tmp") -> dict:
     """Resolve a fact pattern into a fill plan, and write a filled PDF if able.
 
     Returns the plan: resolved {field_id: value}, the `narrative` worklist for
@@ -106,12 +110,11 @@ def fill_form(form_id: str, facts: dict, source_pdf: str = "",
     options are written onto the flat source and the output PDF path is
     returned under `pdf`. When `source_pdf` is omitted the official flat PDF is
     fetched from `metadata.json.source_url` automatically (cached and verified
-    against catalog/pdf_manifest.json); pass `source_pdf` only to fill a copy
-    you already have. `pdf.source_verified` reports whether the source matched
-    the manifest revision the geometry was measured against, and
-    `pdf.verified_fill` summarizes a read-back of the written widget values.
-    Compose `narrative` fields and pass them back in `facts.facts[field_id]`
-    to fold them into the written text.
+    against catalog/pdf_manifest.json). `pdf.source_verified` reports whether
+    the source matched the manifest revision the geometry was measured
+    against, and `pdf.verified_fill` summarizes a read-back of the written
+    widget values. Compose `narrative` fields and pass them back in
+    `facts.facts[field_id]` to fold them into the written text.
     """
     case = to_case_object(facts)
     plan = build_plan(form_id, case)
@@ -149,5 +152,40 @@ def fill_form(form_id: str, facts: dict, source_pdf: str = "",
     return plan
 
 
+class Backend:
+    """maine_forms_engine.mcp.FormsBackend for this repo."""
+
+    name = "maine-probate-forms"
+
+    def find_forms(self, query: str, top_k: int = 5) -> dict:
+        """Route a fact pattern to candidate probate forms (keyword over
+        metadata); returns this repo's bucket shape."""
+        return _find.find_forms(query)
+
+    def get_form(self, form_id: str) -> dict:
+        """Metadata, parties, source link, field buckets, and skill guide."""
+        return get_form_payload(form_id)
+
+    def fill_form(self, form_id: str, case: dict, out_dir: str) -> dict:
+        """Resolve a fact pattern into a fill plan (and a written PDF when the
+        form has fill_geometry.json); see fill_form_payload."""
+        return fill_form_payload(form_id, case, out_dir=out_dir)
+
+
+def fill_form_from_source(form_id: str, case: dict, source_pdf: str,
+                          out_dir: str = "/tmp") -> dict:
+    """fill_form against a flat source PDF you already have on disk (skips the
+    official fetch; the copy is still verified against the manifest)."""
+    return fill_form_payload(form_id, case, source_pdf=source_pdf,
+                             out_dir=out_dir)
+
+
+EXTRA_TOOLS = (fill_form_from_source,)
+
+
+def main():
+    return _scaffold_main(Backend(), extra_tools=EXTRA_TOOLS)
+
+
 if __name__ == "__main__":
-    mcp.run()
+    raise SystemExit(main())

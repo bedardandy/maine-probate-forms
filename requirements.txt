@@ -1,4 +1,9 @@
 # Core: routing, schema work, the fill plan/PDF path, and the MCP servers.
+maine-forms-engine @ git+https://github.com/bedardandy/maine-forms-engine@v0.1.0
+                   # shared drift guard (tools/check_upstream.py), PDF/UA
+                   # accessibility remediation (tools/accessibility/ are shims
+                   # over it), and the MCP scaffold tools/agent_server.py
+                   # builds on; the geometry fill path stays local
 PyMuPDF>=1.24.0
 pdfplumber>=0.11.0
 Pillow>=10.2.0
@@ -11,9 +16,8 @@ numpy>=1.26.0
 PyYAML>=6.0
 mcp[cli]>=1.0.0
 
-# Optional: PDF/UA accessibility remediation (tools/accessibility/).
-# Needed only for make_accessible.py / remediate_form.py; the fill path runs
-# without these.
+# PDF/UA accessibility remediation deps (pulled in by maine-forms-engine;
+# kept pinned here for clarity).
 pikepdf>=8.0
 fonttools>=4.40
 
