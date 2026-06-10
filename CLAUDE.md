@@ -1,127 +1,136 @@
-# Maine Probate Forms — AcroForm Pipeline
+# Maine Probate Forms — Claude Code guide
 
-## What This Project Does
+Route a plain-language probate situation to the right Maine probate form and
+write a filled PDF. The runtime path is **deterministic and VLM-free**. The
+detection pipeline that originally built the form packages is maintainer
+tooling — it is not needed to fill forms, and its inputs/outputs are not in
+this repo (see "Maintainer / build-time" at the bottom).
 
-Downloads Maine Probate Court PDF forms, detects fillable field regions using heuristics + VLM validation, and writes AcroForm widgets so the PDFs become truly fillable. Includes an MCP server for interactive field alignment via Claude Code.
+Not legal advice; output is a draft to verify against the official form.
 
-## Project Structure
+## Runtime path: route → plan → fill → verify
 
-```
-config.py              — All paths, thresholds, VLM settings
-download.py            — Stage 1: scrape PDF forms from maineprobate.net
-modules/
-  pdf_analyzer.py      — Render pages, extract lines/text/rects
-  field_detector.py    — Heuristic field detection (text inputs, checkboxes, signatures, etc.)
-  vlm_validator.py     — VLM-based validation of detected fields
-  schema.py            — Pydantic models for field definitions
-  catalog.py           — Form catalog/inventory management
-  taxonomy.py          — Field type taxonomy
-  acroform_writer.py   — Write AcroForm widgets into PDFs
-  form_filler.py       — Fill existing AcroForm PDFs with data
-  preview.py           — Visual preview of detected fields
-mcp_server.py          — MCP server for PDF field inspection/alignment (FastMCP, stdio)
-forms/                 — Downloaded source PDFs (organized by category)
-intermediate/          — Analysis JSON, detection results, validation output
-output/                — Final fillable PDFs
-```
+1. **Route** the situation to a form id. You are the router:
+   - Primary: read `cat_surgical` from `catalog/router_catalog.json`
+     (~1.5k tokens — id | category | title + disambiguation notes) and pick
+     directly.
+   - Shortcut: `python3 tools/find_forms.py "<situation>"` for a keyword
+     shortlist (an exact id in the query, e.g. "DE-101", wins outright).
+   - `python3 tools/route_form.py` only when an OpenAI-compatible router
+     endpoint is configured (`ROUTER_BASE_URL`/`ROUTER_MODEL`).
+2. **Understand the form:** read `repo/forms/<ID>/skill.md` (filer role,
+   statutes, parties, slot groups) and `metadata.json` (title, `source_url`).
+   `skill.md` is the **only per-form file you need to read** — for per-field
+   detail run `python3 tools/fill_plan.py --form <ID> --case case.json --full`
+   instead of reading `schema.json`.
+3. **Plan the fill:** build a canonical fact object `{matter, parties, party,
+   facts}` (probate-native roles: `applicant`, `petitioner`, `decedent`,
+   `adoptee`, `guardian`, `minor`, `conservator`, `attorney`, …) and run
+   `python3 tools/fill_plan.py --form <ID> --case case.json`. Buckets:
+   **resolved** `{field_id: value}`, **narrative** (the `llm_over_narrative`
+   fields *you* compose), **recompute** (derived), **blank** (signatures /
+   human decisions), **unresolved** (missing facts), **skipped** (`when`-gated
+   off).
+4. **Compose narrative fields** from the fact pattern; put them back under
+   `narrative_facts[field_id]` (or canonical `facts`) and re-run — they fold
+   into `resolved`.
+5. **Write the filled PDF:**
+   `python3 tools/fill_pdf.py --form <ID> --case case.json --out filled.pdf`.
+   The flat source is auto-fetched from `source_url` (cached, SHA-256-verified
+   against `catalog/pdf_manifest.json`); pass `--source <pdf>` to fill a copy
+   you already have. Check `source_verified` in the result — `false` means the
+   court re-issued the form since the geometry was measured.
+6. **Verify:** `python3 tools/verify_filled.py --form <ID> --case case.json
+   --filled filled.pdf` re-opens the output and diffs widget values against
+   the plan. Report failures, the narrative fields you composed, and any
+   unresolved facts.
 
-## Key Commands
+Worked example: `docs/agent-workflow.md` and
+`repo/forms/DE-101/examples/case.example.json`. The packaged skill lives at
+`skills/probate-route-and-fill/SKILL.md`.
+
+### MCP (recommended for agents)
+
+> Two MCP servers ship in this repo — don't confuse them:
+> **`tools/agent_server.py`** is the forms-library server
+> (`find_forms` / `get_form` / `fill_form`) — use that to route and fill forms.
+> **`mcp_server.py`** (repo root) is a *separate maintainer tool* for
+> interactive PDF field-rect alignment.
 
 ```bash
-# Activate venv
-source .venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
+claude mcp add maine-probate-forms -- python3 tools/agent_server.py
 ```
 
-## MCP Server (`mcp_server.py`)
+`fill_form(form_id, facts)` returns the plan, auto-fetches the flat source,
+writes the PDF, and reports `source_verified` plus a `verified_fill` read-back
+summary. (`.mcp.json` registers the same server automatically for projects
+that load it.)
 
-A FastMCP server registered with Claude Code for interactive PDF field operations. Runs over stdio.
+## Repository layout
 
-### Tools
+```text
+tools/                 Runtime: find_forms, fill_plan, fill_pdf, verify_filled,
+                       fetch, canonical_adapter, route_form, agent_server (MCP),
+                       api_server (HTTP), enhance, accessibility/, export/, curate/
+repo/forms/<ID>/       Per-form package: skill.md, metadata.json, schema.json,
+                       fill_geometry.json, fields.csv, statutes.json (+ examples/)
+catalog/               router_catalog.json, pdf_manifest.json, source_urls.json,
+                       field_alignment.json, coverage reports
+skills/                probate-route-and-fill (the agent skill)
+docs/                  agent-workflow, automation-quickstart, integrating, …
+router/                routing *evaluation harness* (runtime routing is tools/)
+scripts/               maintenance + research scripts — see scripts/README.md
+modules/, pipeline.py, download.py, config.py, loop.py, normalize_fields.py,
+realign_fields.py, underline_heuristic.py, field_catalog.csv, mcp_server.py
+                       Maintainer / build-time detection pipeline (below)
+```
+
+---
+
+## Maintainer / build-time (not needed to fill forms)
+
+Everything below documents the pipeline that *built* the form packages:
+download Maine Probate Court PDFs, detect fillable regions with heuristics +
+VLM validation, write AcroForm widgets, and derive the shipped geometry. It
+operates on working directories that are **not in this repo** (`forms/`,
+`originals_clean/`, `intermediate/`, `output_*/`, `reports/`, `trees/` — the
+maintainer's private pipeline checkout; see `Makefile` `PIPELINE=`).
+
+- `config.py` — paths, thresholds, VLM settings
+- `download.py` — stage 1: scrape PDF forms from maineprobate.net
+- `pipeline.py` / `loop.py` — orchestration and audit/fix loops
+- `modules/` — pdf_analyzer, field_detector, vlm_validator, schema, catalog,
+  taxonomy, acroform_writer, form_filler, preview
+- `normalize_fields.py`, `realign_fields.py`, `underline_heuristic.py` —
+  naming/geometry repair passes
+
+**VLM:** the validator targets a local, OpenAI-compatible VLM endpoint
+(`config.py`); any server works if responses match
+`modules/vlm_validator.py:FieldDecision`. It runs in gating mode: each
+heuristic candidate gets keep/reject + a snake_case semantic name + field type
++ confidence.
+
+### Alignment MCP server (`mcp_server.py`)
+
+A FastMCP server for interactive PDF field-rect work during geometry repair.
+Runs over stdio; register it only if you maintain geometry:
+
+```bash
+claude mcp add --transport stdio pdf-forms -- python3 mcp_server.py
+```
 
 | Tool | Purpose |
 |---|---|
-| `list_fields(pdf_path)` | List all form fields with name, type, page, rect `[x0, y0, x1, y1]`, value |
-| `get_page_dimensions(pdf_path)` | Get width/height of each page |
-| `update_field_rects(pdf_path, updates, output_path?)` | Batch-update field rectangles. `updates`: `[{field_name, rect}]` |
-| `align_fields(pdf_path, reference_field, target_fields, axis, output_path?)` | Align target fields to reference field's position. `axis`: `"x"`, `"y"`, or `"both"` |
+| `list_fields(pdf_path)` | List form fields with name, type, page, rect, value |
+| `get_page_dimensions(pdf_path)` | Width/height of each page |
+| `update_field_rects(pdf_path, updates, output_path?)` | Batch-update field rectangles |
+| `align_fields(pdf_path, reference_field, target_fields, axis, output_path?)` | Align fields to a reference on x, y, or both |
 
-### Registration
+Coordinates: top-left origin, PDF points (72/inch), letter page 612×792,
+rect `[x0, y0, x1, y1]`, y increases downward.
 
-Already registered. Verify with:
-```bash
-claude mcp list   # should show pdf-forms ✓ Connected
-```
+### Dependencies
 
-To re-register if needed:
-```bash
-claude mcp add --transport stdio pdf-forms -- \
-  /path/to/projects/probate-forms/.venv/bin/python3 \
-  /path/to/projects/probate-forms/mcp_server.py
-```
-
-### Usage Examples
-
-In Claude Code conversation:
-- "List the fields in forms/estates/DE-104 PR Acceptance (Rev. 07-01-19).pdf"
-- "Align all text fields on page 0 to the same Y as the COUNTY field"
-- "Move field X to rect [54, 700, 200, 715]"
-
-### Coordinate System
-
-- Origin is top-left of the page (PDF user space, measured in points: 72pt = 1 inch)
-- Standard letter page: 612 x 792 points
-- Rect format: `[x0, y0, x1, y1]` where `(x0, y0)` is top-left, `(x1, y1)` is bottom-right
-- Y increases downward
-- `align_fields` with `axis="y"` copies the reference field's y0 and preserves each target's height
-
-## Dependencies
-
-- **PyMuPDF** (`fitz`) — PDF reading, widget manipulation, rendering
-- **pdfplumber** — Supplementary PDF text/line extraction
-- **Pillow** — Image handling for VLM page renders
-- **openai** — VLM API client (OpenRouter)
-- **pydantic** — Field schemas
-- **mcp[cli]** — FastMCP server framework
-
-## Notes
-
-- Most source PDFs in `forms/` are flat (no AcroForm fields). The pipeline adds fields.
-- Some forms already have fields (adoption, guardian_minor, name_change, affidavits, notices categories have fillable PDFs).
-- `form_filler.py:list_form_fields()` and `mcp_server.py:list_fields()` do the same thing; the MCP version uses `name`/`value` keys while form_filler uses `field_name`/`current_value`.
-- **VLM:** the validator targets a local, OpenAI-compatible VLM endpoint (default `http://localhost:8083/v1`); no API key is required. The default is a local vision-language model served behind a router that loads on demand and sleeps when idle. Any OpenAI-compatible server works as long as responses match the `FieldDecision` schema.
-- **Validator semantics:** gating mode. Each heuristic candidate gets keep/reject + snake_case semantic name (e.g. `pr_full_legal_name`, `q3_decedent_dob`, `heir_address_row1`) + field type + confidence. Output schema: `modules/vlm_validator.py:FieldDecision`.
-
-## For agents: fill a form from a fact pattern
-
-Beyond building fillable PDFs (above), this repo can be driven from a
-plain-language situation. See **`docs/agent-workflow.md`**:
-
-1. **Route:** `python3 tools/find_forms.py "<situation>"` (keyword over metadata).
-2. **Understand:** read `repo/forms/<ID>/skill.md` + `metadata.json` (source_url).
-3. **Plan the fill:** build a canonical fact object `{matter, parties, party,
-   facts}` (probate-native roles: `applicant`, `petitioner`, `decedent`,
-   `adoptee`, `guardian`, `minor`, `attorney`, …) and run
-   `python3 tools/fill_plan.py --form <ID> --case case.json`. This resolves every
-   field's `fill_strategy.source` into: **resolved** `{field_id: value}` (from
-   `case_dict.*` / `*_record.*`), a **narrative** worklist (the
-   `llm_over_narrative` fields *you* compose from the fact pattern),
-   **recompute** (derived), **blank** (signatures / human decisions), and
-   **unresolved** (missing facts to collect).
-4. **Compose narrative fields** from the fact pattern; put them back under
-   `narrative_facts[field_id]` and re-run to fold them into `resolved`.
-5. **Write the filled PDF:** fetch `metadata.json.source_url` (flat form), then
-   `python3 tools/fill_pdf.py --form <ID> --case case.json --source <flat>.pdf
-   --out filled.pdf`. Each form ships `fill_geometry.json` (`field_id → widget
-   rects` from its aligned layout), so resolved text + checked options inject
-   directly onto the flat source, with no pipeline at fill time (all 79
-   forms).
-
-`tools/canonical_adapter.py` bridges the court-style canonical object to
-probate's case object; `tools/fill_plan.py` resolves it. Or run the **MCP
-server**: `claude mcp add maine-probate-forms -- python3 tools/agent_server.py`
-(`find_forms` / `get_form` / `fill_form`). This mirrors the companion
-`maine-court-forms` layer. Not legal advice; surface narrative/unresolved
-fields and missing facts.
+`pip install -r requirements.txt` — PyMuPDF (fitz), pdfplumber, Pillow,
+openai (VLM client), pydantic, mcp[cli]. FastAPI/uvicorn are optional (HTTP
+surface only; see the commented block in requirements.txt).

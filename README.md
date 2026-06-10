@@ -67,47 +67,42 @@ The repository also includes an MCP server for interactive inspection and alignm
 
 ## Repository Layout
 
+What is actually in this repo:
+
 ```text
-config.py              Configuration, thresholds, paths, VLM settings
+repo/forms/<ID>/       Per-form package: schema.json, fields.csv, metadata.json,
+                       fill_geometry.json, skill.md, statutes.json (+ examples/)
+tools/                 Runtime: find_forms, fill_plan, fill_pdf, verify_filled,
+                       fetch, canonical_adapter, route_form, agent_server (MCP),
+                       api_server (HTTP), enhance, accessibility/, export/, curate/
+catalog/               router_catalog.json, pdf_manifest.json, source_urls.json,
+                       field_alignment.json, coverage reports
+skills/                probate-route-and-fill agent skill
+docs/                  Agent workflow, quickstart, integration, maintenance docs
+router/                Routing evaluation harness (runtime routing is tools/)
+scripts/               Maintenance + research scripts (see scripts/README.md)
+
+config.py              Pipeline configuration, thresholds, paths, VLM settings
 download.py            Scrape and catalog Maine probate PDFs
-pipeline.py            Main pipeline orchestration
+pipeline.py            Main detection-pipeline orchestration
+loop.py                Pipeline audit/fix loop
 normalize_fields.py    Field naming normalization
 realign_fields.py      Field rectangle adjustment helpers
+underline_heuristic.py Underline-based field detection heuristic
 mcp_server.py          FastMCP server for interactive field inspection/alignment
-
-modules/
-  pdf_analyzer.py      Page rendering, text, line, and rectangle extraction
-  field_detector.py    Heuristic text, checkbox, signature, and table detection
-  vlm_validator.py     VLM gating and semantic field decisions
-  schema.py            Pydantic models for detection output
-  taxonomy.py          Field type taxonomy
-  acroform_writer.py   AcroForm widget writing
-  form_filler.py       Fill existing AcroForm PDFs with data
-  preview.py           Visual field previews
-
-scripts/
-  build_form_digest.py       Convert a PDF into a VLM-readable digest
-  build_form_tree.py         Extract logical form trees from digests
-  apply_tree.py              Apply tree logic back to PDF widgets
-  build_form_schema.py       Build schema.json and fields.csv from tree output
-  recursive_improvement.py   Audit/fix loop for generated PDFs
-  simulate_fills.py          Exercise generated form logic
-  validate_existing_widgets.py
-  promote_to_radio_group.py
-  geometric_snap.py
-  local_alignment_review.py
-  opus_alignment_review.py
-
-forms/                 Downloaded source PDFs
-originals_clean/       Clean source copies
-intermediate/          Analysis and validation artifacts
-output_fused/          Fused generated AcroForms
-output_recursive/      Iterative audit/fix outputs
-output_tree/           Tree-applied outputs
-repo/forms/<ID>/       Per-form package: schema.json, fields.csv, metadata.json
-reports/               Audit and recursive improvement reports
-trees/                 Logical form tree YAML
+modules/               pdf_analyzer, field_detector, vlm_validator, schema,
+                       taxonomy, acroform_writer, form_filler, preview
 ```
+
+> **Maintainer build-time tools:** `download.py`, `pipeline.py`, `loop.py`,
+> `normalize_fields.py`, `realign_fields.py`, `underline_heuristic.py`,
+> `config.py`, and `modules/` are the detection pipeline that *built* the
+> shipped form packages. They read and write working directories that are
+> **not in this repo** (`forms/`, `originals_clean/`, `intermediate/`,
+> `output_fused/`, `output_recursive/`, `output_tree/`, `reports/`, `trees/`
+> — the maintainer pipeline checkout; see `Makefile` `PIPELINE=`). You do not
+> need any of them to route, plan, or fill forms — that path is `tools/` plus
+> the shipped packages.
 
 ## What Worked
 

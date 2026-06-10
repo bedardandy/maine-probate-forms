@@ -37,9 +37,13 @@ PY
 python3 - <<'PY'
 import json, urllib.request
 m = json.load(open("repo/forms/DE-101/metadata.json"))
-urllib.request.urlretrieve(m["source_url"], "DE-101.source.pdf")  # flat — no form fields
+rq = urllib.request.Request(m["source_url"], headers={"User-Agent": "Mozilla/5.0"})
+open("DE-101.source.pdf", "wb").write(urllib.request.urlopen(rq, timeout=60).read())
 PY
 ```
+
+(Or skip this step entirely: `tools/fill_pdf.py` auto-fetches — cached and
+verified against `catalog/pdf_manifest.json` — when `--source` is omitted.)
 
 ## 4. Plan the fill
 
@@ -49,7 +53,7 @@ it against the schema:
 
 ```bash
 python3 tools/fill_plan.py --form DE-101 --case repo/forms/DE-101/examples/case.example.json
-# DE-101: 83 fields — resolved 18, narrative 45 (agent fills), recompute 0, blank 16, unresolved 0, skipped 4
+# DE-101: 83 fields — resolved 19, narrative 44 (agent fills), recompute 0, blank 16, unresolved 0, skipped 4
 ```
 
 The plan buckets every field: `resolved` (filled from the case), `narrative`
