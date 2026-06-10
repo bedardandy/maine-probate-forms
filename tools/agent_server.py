@@ -30,8 +30,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from canonical_adapter import to_case_object        # noqa: E402
+from fetch import fetch_source                       # noqa: E402
 from fill_plan import build_plan                     # noqa: E402
 from fill_pdf import fill_pdf as _fill_pdf           # noqa: E402
+from verify_filled import verify_filled as _verify_filled   # noqa: E402
 import find_forms as _find                           # noqa: E402
 
 from mcp.server.fastmcp import FastMCP               # noqa: E402
@@ -75,15 +77,17 @@ def get_form(form_id: str) -> dict:
             b = _SOURCE_BUCKET.get(src, "other")
         buckets[b] = buckets.get(b, 0) + 1
 
+    # The full per-form guide (max ~8.4KB across all 79 forms) — truncating it
+    # mid-field costs more agent turns than the tokens it saves.
     skill = ""
     if (fd / "skill.md").exists():
-        skill = (fd / "skill.md").read_text()[:1500]
+        skill = (fd / "skill.md").read_text()
     return {
         "ok": True, "form_id": form_id,
         "title": meta.get("title"), "category": meta.get("category"),
         "source_url": meta.get("source_url"), "n_fields": meta.get("n_fields"),
         "field_buckets": buckets,
-        "skill_excerpt": skill,
+        "skill": skill,
         "fill_with": "fill_form(form_id, facts) — facts as a canonical fact "
                      "object {matter, parties, party, facts}.",
     }
@@ -98,25 +102,50 @@ def fill_form(form_id: str, facts: dict, source_pdf: str = "",
     the agent to compose from the fact pattern, `recompute` (derived), `blank`
     (signatures / human decisions), and `unresolved` (missing facts).
 
-    If `source_pdf` is given (the flat form fetched from
-    `get_form(...).source_url`) and the form has `fill_geometry.json`, the
-    resolved values and checked options are written onto it and the output PDF
-    path is returned under `pdf`. Compose `narrative` fields and pass them back
-    in `facts.facts[field_id]` to fold them into the written text.
+    If the form has `fill_geometry.json`, the resolved values and checked
+    options are written onto the flat source and the output PDF path is
+    returned under `pdf`. When `source_pdf` is omitted the official flat PDF is
+    fetched from `metadata.json.source_url` automatically (cached and verified
+    against catalog/pdf_manifest.json); pass `source_pdf` only to fill a copy
+    you already have. `pdf.source_verified` reports whether the source matched
+    the manifest revision the geometry was measured against, and
+    `pdf.verified_fill` summarizes a read-back of the written widget values.
+    Compose `narrative` fields and pass them back in `facts.facts[field_id]`
+    to fold them into the written text.
     """
     case = to_case_object(facts)
     plan = build_plan(form_id, case)
-    if source_pdf and (_form_dir(form_id) / "fill_geometry.json").exists():
-        out = str(pathlib.Path(out_dir) / f"{form_id}.filled.pdf")
-        res = _fill_pdf(form_id, case, source_pdf, out)
-        if res.get("ok"):
-            plan["pdf"] = {"out": res["out"], "text_written": res["text_written"],
-                           "options_checked": res["options_checked"]}
-        else:
-            plan["pdf_error"] = res.get("error")
-    elif source_pdf:
-        plan["pdf_error"] = (f"{form_id} has no fill_geometry.json "
-                             "(plan-only form)")
+    if not plan.get("ok"):
+        return plan
+    if not (_form_dir(form_id) / "fill_geometry.json").exists():
+        if source_pdf:
+            plan["pdf_error"] = (f"{form_id} has no fill_geometry.json "
+                                 "(plan-only form)")
+        return plan
+    if not source_pdf:
+        try:
+            source_pdf = str(fetch_source(form_id))
+        except Exception as e:
+            plan["pdf_error"] = f"could not fetch the flat source PDF: {e}"
+            return plan
+    out = str(pathlib.Path(out_dir) / f"{form_id}.filled.pdf")
+    res = _fill_pdf(form_id, case, source_pdf, out)
+    if res.get("ok"):
+        plan["pdf"] = {"out": res["out"], "text_written": res["text_written"],
+                       "options_checked": res["options_checked"],
+                       "source_verified": res.get("source_verified"),
+                       "source_verify_detail": res.get("source_verify_detail")}
+        try:                       # cheap read-back of what actually landed
+            chk = _verify_filled(form_id, case, res["out"])
+            plan["pdf"]["verified_fill"] = chk.get("summary")
+            if not chk.get("all_placed"):
+                plan["pdf"]["verify_failures"] = {
+                    fid: e for fid, e in chk.get("fields", {}).items()
+                    if not e.get("placed")}
+        except Exception as e:
+            plan["pdf"]["verified_fill"] = f"verify_filled failed: {e}"
+    else:
+        plan["pdf_error"] = res.get("error")
     return plan
 
 

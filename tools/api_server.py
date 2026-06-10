@@ -19,8 +19,13 @@ case object (no LLM, no network) — POST the same case repeatedly and the
 mapped to PandaDoc tokens. `/route` is the only LLM-backed endpoint (configure it
 with the ROUTER_* env vars from tools/route_form.py). Not legal advice.
 
+`/fill` responds with the PDF body; the source-verification result (was the
+fetched blank the same revision the fill geometry was measured against?) rides
+in the `X-Source-Verified` / `X-Source-Verify-Detail` headers.
+
 Run:  pip install fastapi uvicorn   # not in requirements.txt by default
-      python3 tools/api_server.py            # serves on 0.0.0.0:8077
+      python3 tools/api_server.py                    # serves on 127.0.0.1:8077
+      python3 tools/api_server.py --host 0.0.0.0     # expose beyond localhost
       uvicorn tools.api_server:app --port 8077
 """
 from __future__ import annotations
@@ -29,7 +34,6 @@ import glob
 import json
 import pathlib
 import tempfile
-import urllib.request
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse, HTMLResponse
@@ -39,6 +43,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 from canonical_adapter import to_case_object       # noqa: E402
+from fetch import fetch_source                      # noqa: E402
 from fill_plan import build_plan                    # noqa: E402
 from fill_pdf import fill_pdf as _fill_pdf          # noqa: E402
 import route_form                                   # noqa: E402
@@ -116,24 +121,27 @@ def plan(req: PlanReq):
 
 @app.post("/fill")
 def fill(req: FillReq):
-    """Deterministic PDF fill. Fetches the flat source (source_url) and injects values."""
-    m = _meta(req.form_id)
-    src_url = req.source_url or m.get("source_url")
-    if not src_url:
-        raise HTTPException(400, f"no source_url for {req.form_id}")
+    """Deterministic PDF fill. Fetches the flat source (source_url) and injects values.
+
+    The manifest verification result is surfaced in the X-Source-Verified /
+    X-Source-Verify-Detail response headers (the body is the PDF itself).
+    """
+    _meta(req.form_id)                       # 404 early on unknown forms
     tmp = pathlib.Path(tempfile.mkdtemp())
-    src = tmp / "source.pdf"
     try:
-        rq = urllib.request.Request(src_url, headers={"User-Agent": "Mozilla/5.0"})
-        src.write_bytes(urllib.request.urlopen(rq, timeout=30).read())
+        src = fetch_source(req.form_id, url=req.source_url, cache_dir=tmp)
     except Exception as e:
-        raise HTTPException(502, f"could not fetch source_url: {e}")
+        raise HTTPException(502, f"could not fetch the source PDF: {e}")
     out = tmp / f"{req.form_id}.filled.pdf"
     res = _fill_pdf(req.form_id, to_case_object(req.case), src, out, root=ROOT)
     if not res.get("ok"):
         raise HTTPException(400, res.get("error"))
     return FileResponse(str(out), media_type="application/pdf",
-                        filename=f"{req.form_id}.filled.pdf")
+                        filename=f"{req.form_id}.filled.pdf",
+                        headers={
+                            "X-Source-Verified": str(res.get("source_verified")),
+                            "X-Source-Verify-Detail":
+                                str(res.get("source_verify_detail", ""))})
 
 
 class EnhanceReq(BaseModel):
@@ -180,5 +188,13 @@ def enhance_run(req: EnhanceReq):
 
 
 if __name__ == "__main__":
+    import argparse
+
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8077)
+    ap = argparse.ArgumentParser(description="Maine Probate Forms HTTP API")
+    ap.add_argument("--host", default="127.0.0.1",
+                    help="bind address (default localhost-only; use 0.0.0.0 "
+                    "to expose on the network)")
+    ap.add_argument("--port", type=int, default=8077)
+    a = ap.parse_args()
+    uvicorn.run(app, host=a.host, port=a.port)

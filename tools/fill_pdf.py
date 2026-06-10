@@ -6,10 +6,12 @@ Combines `tools/fill_plan.py` (field_id -> value) with the per-form
 by field_id onto the fetched flat source and write the resolved values. This is
 the probate analog of the court repo's `fill_form` PDF output.
 
+    python3 tools/fill_pdf.py --form DE-101 --case case.json --out /tmp/DE-101.filled.pdf
     python3 tools/fill_pdf.py --form DE-101 --case case.json \
         --source "DE-101 (flat from source_url).pdf" --out /tmp/DE-101.filled.pdf
 
-Flat PDFs are not shipped; fetch each form's metadata.json.source_url. Text
+Flat PDFs are not shipped; with no --source the official PDF is fetched from
+metadata.json.source_url (cached, manifest-verified — see tools/fetch.py). Text
 fields and checkbox/radio options the plan resolved are written; narrative
 fields the agent composed (placed under narrative_facts[field_id]) fold into the
 resolved text. Not legal advice — verify against the official form.
@@ -145,7 +147,8 @@ def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
 def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
              out_path: str | pathlib.Path,
              geometry_path: str | pathlib.Path | None = None,
-             root: str | pathlib.Path = ROOT) -> dict:
+             root: str | pathlib.Path = ROOT,
+             verify_mode: str | None = None) -> dict:
     root = pathlib.Path(root)
     geometry_path = pathlib.Path(geometry_path) if geometry_path else (
         root / "repo" / "forms" / form_id / "fill_geometry.json")
@@ -161,9 +164,12 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     # Guard: the source PDF must be the revision this form's geometry was
     # measured against (catalog/pdf_manifest.json). Otherwise the coordinates
     # can land text in the wrong place. Mismatch warns by default; set
-    # MCF_VERIFY_BLANK=strict to refuse, =off to skip.
-    verify.guard_pdf(form_id, source_pdf,
-                     mode=os.environ.get("MCF_VERIFY_BLANK", "warn"))
+    # MCF_VERIFY_BLANK=strict to refuse, =off to skip. `verify_mode` overrides
+    # the env (e.g. the enhance pipeline verifies once at fetch time and fills
+    # step-rewritten intermediates that can never match the manifest).
+    mode = verify_mode or os.environ.get("MCF_VERIFY_BLANK", "warn")
+    source_verified, verify_detail = verify.guard_pdf_detail(
+        form_id, source_pdf, mode=mode)
 
     doc = fitz.open(str(source_pdf))
     # The source PDF must have every page the geometry references. If it doesn't,
@@ -229,6 +235,8 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     return {
         "ok": True, "form_id": form_id, "out": str(out_path),
         "text_written": written_text, "options_checked": checked,
+        "source_verified": source_verified,
+        "source_verify_detail": verify_detail,
         "resolved_without_geometry": skipped_no_geom,
         "coverage": plan["coverage"],
         "narrative": [n["field_id"] for n in plan["narrative"]],
@@ -242,12 +250,26 @@ def main() -> int:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--form", required=True)
     ap.add_argument("--case", required=True)
-    ap.add_argument("--source", required=True, help="flat source PDF (from source_url)")
+    ap.add_argument("--source", help="flat source PDF (from source_url); omit to "
+                    "auto-fetch from metadata.json.source_url")
+    ap.add_argument("--fetch", action="store_true",
+                    help="re-download the flat source from source_url (bypass "
+                    "the cache); implied when --source is omitted")
     ap.add_argument("--out", required=True)
     ap.add_argument("--geometry", help="override fill_geometry.json path")
     a = ap.parse_args()
     case = to_case_object(json.loads(pathlib.Path(a.case).read_text()))
-    res = fill_pdf(a.form, case, a.source, a.out, a.geometry)
+    source = a.source
+    if not source:
+        from fetch import fetch_source            # manifest-verified fetch+cache
+        try:
+            source = str(fetch_source(a.form, fresh=a.fetch))
+        except Exception as e:
+            print(json.dumps({"ok": False,
+                              "error": f"could not fetch source PDF: {e}"},
+                             indent=2))
+            return 1
+    res = fill_pdf(a.form, case, source, a.out, a.geometry)
     print(json.dumps(res, indent=2))
     return 0 if res.get("ok") else 1
 

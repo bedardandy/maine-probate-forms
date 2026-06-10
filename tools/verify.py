@@ -82,15 +82,22 @@ def guard_pdf(form_id, pdf_path, mode="warn", manifest=None) -> bool:
     check. A clean verify always returns ``True``. If no manifest exists yet, the
     guard is a no-op (returns ``True``) so it never blocks a repo without one.
     """
+    ok, _ = guard_pdf_detail(form_id, pdf_path, mode, manifest)
+    return ok
+
+
+def guard_pdf_detail(form_id, pdf_path, mode="warn", manifest=None):
+    """Like :func:`guard_pdf` but returns ``(ok, detail)`` so callers can surface
+    the verification result instead of losing it to a stderr warning."""
     if mode == "off":
-        return True
+        return True, "source verification skipped (MCF_VERIFY_BLANK=off)"
     if not _MANIFEST.exists() and manifest is None:
-        return True
+        return True, "no pdf_manifest.json — source verification skipped"
     ok, detail = verify_pdf(form_id, pdf_path, manifest)
     if ok:
-        return True
+        return True, detail
     if mode == "strict":
         raise BlankRevisionError(detail)
     import warnings
     warnings.warn(detail, BlankRevisionWarning, stacklevel=3)
-    return False
+    return False, detail

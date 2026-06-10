@@ -24,11 +24,12 @@ from __future__ import annotations
 import argparse
 import dataclasses
 import json
+import os
 import pathlib
 import shutil
 import subprocess
 import sys
-import urllib.request
+import tempfile
 
 import fitz
 
@@ -86,24 +87,16 @@ def tool_available(tool: str | None) -> bool:
 # --------------------------------------------------------------------------- #
 # Step implementations (thin wrappers over existing code)
 # --------------------------------------------------------------------------- #
-def _source_url(form_id: str) -> str:
-    m = json.loads((ROOT / "repo" / "forms" / form_id / "metadata.json").read_text())
-    url = m.get("source_url") or m.get("source_pdf")
-    if not url:
-        raise RuntimeError(f"no source_url for {form_id}")
-    return url
-
-
 def fetch_source(form_id: str, fresh: bool) -> pathlib.Path:
-    CACHE.mkdir(parents=True, exist_ok=True)
-    dst = CACHE / f"{form_id}.pdf"
-    if dst.exists() and dst.stat().st_size > 800 and not fresh:
-        return dst
-    url = _source_url(form_id)
-    rq = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    dst.write_bytes(urllib.request.urlopen(rq, timeout=60).read())
-    if dst.read_bytes()[:5] != b"%PDF-":
-        raise RuntimeError(f"fetched source for {form_id} is not a PDF")
+    """Fetch the blank source (shared helper) and verify it against the manifest
+    ONCE, here. Later steps rewrite the PDF (fonts embedded, widgets injected),
+    so an intermediate can never match the manifest hash — the per-step fill
+    therefore runs with the guard off (see step_fill)."""
+    import fetch
+    import verify
+    dst = fetch.fetch_source(form_id, fresh=fresh, cache_dir=CACHE)
+    verify.guard_pdf(form_id, dst,
+                     mode=os.environ.get("MCF_VERIFY_BLANK", "warn"))
     return dst
 
 
@@ -147,7 +140,11 @@ def step_fill(ctx: Ctx) -> None:
     if not ctx.case:
         raise RuntimeError("fill requires case data (upload a case JSON)")
     out = ctx.out("fill")
-    res = fill_pdf.fill_pdf(ctx.form_id, to_case_object(ctx.case), ctx.pdf, out, root=ROOT)
+    # verify_mode="off": the working PDF is a step-rewritten intermediate that by
+    # construction can't match the manifest hash; the pristine source was already
+    # verified once in fetch_source().
+    res = fill_pdf.fill_pdf(ctx.form_id, to_case_object(ctx.case), ctx.pdf, out,
+                            root=ROOT, verify_mode="off")
     if not res.get("ok"):
         raise RuntimeError(res.get("error", "fill failed"))
     ctx.pdf = out
@@ -316,10 +313,14 @@ def run(form_id: str, step_ids: list[str], case: dict | None = None,
     if bad:
         return {"ok": False, "error": f"unknown step(s): {', '.join(bad)}"}
 
-    work = work or pathlib.Path("/tmp/enhance_runs") / f"{form_id}"
-    if work.exists():
-        shutil.rmtree(work)
-    work.mkdir(parents=True)
+    if work is None:
+        # A fresh per-run directory: concurrent requests for the same form must
+        # not clobber each other's intermediates.
+        base = pathlib.Path("/tmp/enhance_runs")
+        base.mkdir(parents=True, exist_ok=True)
+        work = pathlib.Path(tempfile.mkdtemp(prefix=f"{form_id}_", dir=base))
+    else:
+        work.mkdir(parents=True, exist_ok=True)
 
     try:
         src = fetch_source(form_id, fresh)
