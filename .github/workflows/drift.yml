@@ -9,6 +9,10 @@ on:
     - cron: "29 7 * * 1" # Mondays 07:29 UTC
   workflow_dispatch: {}
 
+permissions:
+  contents: read
+  issues: write # drift files/updates a tracking issue instead of failing silently
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -25,6 +29,8 @@ jobs:
         # Non-zero exit means a form CHANGED or its URL is GONE. The JSON report
         # names every affected form; re-derive their geometry, then rebuild the
         # manifest with tools/build_pdf_manifest.py.
+        id: probe
+        continue-on-error: true
         run: python3 tools/check_upstream.py --json | tee drift-report.json
       - name: Upload drift report
         if: always()
@@ -32,3 +38,24 @@ jobs:
         with:
           name: drift-report
           path: drift-report.json
+      - name: File or update the drift tracking issue
+        # One open issue carries all drift reports (comment per run) so a
+        # weekly cron can never flood the tracker.
+        if: steps.probe.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create upstream-drift --repo "$GITHUB_REPOSITORY" \
+            --color D93F0B --description "An official source PDF changed or its URL vanished" --force
+          body="Scheduled drift probe failed on $(date -u +%Y-%m-%d): an official source PDF changed or its URL is gone. The drift-report artifact on this run names every affected form: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          num=$(gh issue list --repo "$GITHUB_REPOSITORY" --label upstream-drift --state open \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Upstream drift detected" \
+              --label upstream-drift --body "$body"
+          fi
+      - name: Propagate probe failure
+        if: steps.probe.outcome == 'failure'
+        run: exit 1
