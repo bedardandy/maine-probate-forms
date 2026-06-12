@@ -1,0 +1,70 @@
+form	field	widget_idx	class	detail
+AD-026	oath_petitioner_2_name	0	manual_review	{"analytic": {"print_overlap": [",", "and"]}}
+AD-028	putative_parent_likely_address	1	manual_review	{"analytic": {"print_overlap": ["for", "the", "following", "reasons:"]}, "ocr": {"ocr": "token_missing"}}
+AF-105	party_name	0	manual_review	{"analytic": {"print_overlap": ["Date", "of"]}}
+AF-105	dependents_list	2	manual_review	{"analytic": {"print_overlap": ["CASH", "ASSETS:"], "starts_under_label": ["CASH"]}, "ocr": {"ocr": "token_missing"}}
+AF-105	stocks_bonds_specify	0	manual_review	{"analytic": {"print_overlap": ["$", "e.", "Cash", "posted", "as", "bail"]}}
+AF-105	total_cash_assets	0	manual_review	{"analytic": {"print_overlap": ["CASH", "ASSETS:"]}, "ocr": {"ocr": "token_missing"}}
+AF-105	other_income_specify	0	manual_review	{"analytic": {"print_overlap": ["OF", "SPOUSE", "(Include", "any", "roommate(s)", "with"]}, "ocr": {"ocr": "token_offset", "dx_pt": 425.1, "
+AF-105	expected_payments_explanation	1	manual_review	{"analytic": {"print_overlap": ["OTHER", "ASSETS:"]}, "ocr": {"ocr": "token_missing"}}
+AF-105	insurance_pension_value	1	manual_review	{"analytic": {"print_overlap": ["EXPENSES:"]}, "ocr": {"ocr": "token_missing"}}
+DE-101	county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+DE-201	petitioner_interest_other	0	manual_review	{"analytic": {"print_overlap": ["Other"]}}
+DE-301	county_probate_court	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+DE-301(I)	county_probate_court	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+DE-403	condition_decedent_residence	0	manual_review	{"analytic": {"print_overlap": [",", "to", "this", "Estate", "according"]}, "ocr": {"ocr": "merged_line", "dx_pt": 2.0, "dy_pt": -1.7, "line
+DE-403	real_property_surety_2_registry_county_1	0	manual_review	{"analytic": {"print_overlap": ["County"]}}
+DE-403	real_property_surety_2_registry_county_2	0	manual_review	{"analytic": {"print_overlap": ["County"]}}
+DE-503	county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+DE-506	county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+DE-602	county_name	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+N-115	pr_address	0	manual_review	{"analytic": {"print_overlap": ["other", "persons", "entitled", "to", "notice", "by"], "no_line_support": true}}
+N-118	county_name	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+N-118	appointment_of_guardian_individual_name	0	manual_review	{"analytic": {"print_overlap": ["(Individual", "modification", "of", "this", "Order.1"]}}
+N-118	appointment_of_conservator_individual_name	0	manual_review	{"analytic": {"print_overlap": ["(Individual", "of", "this", "Order.2"]}}
+NC-001	notary_county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+PP-408	county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+PP-412	conservator_printed_name	0	manual_review	{"analytic": {"sits_below_line": -15.0}}
+PP-413	county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+PP-502	county	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+PP-503	county_probate_court	0	manual_review	{"analytic": {"print_overlap": ["COUNTY"]}}
+PP-506	medical_conditions	0	manual_review	{"analytic": {"print_overlap": ["Medical", "Condition:"], "starts_under_label": ["Medical"]}, "ocr": {"ocr": "token_missing"}}
+PP-506	cognition_detail	1	manual_review	{"analytic": {"print_overlap": ["Functional", "Abilities:"], "starts_under_label": ["Functional"]}, "ocr": {"ocr": "token_missing"}}
+PP-506	risk_detail	1	manual_review	{"analytic": {"print_overlap": ["Enhancements:"]}, "ocr": {"ocr": "token_missing"}}
+PP-507	notary_day	0	manual_review	{"analytic": {"print_overlap": ["this"], "starts_under_label": ["this"]}, "ocr": {"ocr": "merged_line", "dx_pt": 2.8, "dy_pt": 0.4, "line_te
+AD-008	medical_expenses_details	0	manual_review	{"ocr": {"ocr": "token_offset", "dx_pt": 442.0, "dy_pt": -0.3}}
+AD-008	foster_care_expenses_details	1	manual_review	{"ocr": {"ocr": "token_offset", "dx_pt": 442.2, "dy_pt": -0.8}}
+AD-008	living_expenses_details	1	manual_review	{"ocr": {"ocr": "token_offset", "dx_pt": 443.7, "dy_pt": 0.0}}
+AF-104	reason_not_contacting	0	manual_review	{"ocr": {"ocr": "merged_line", "dx_pt": -0.3, "dy_pt": -0.1, "line_text": "XQ0e7ZQ028"}}
+NC-001	notary_signature	0	manual_review	{"ocr": {"ocr": "token_missing"}}
+MISC-102	permit_designated_things	1	manual_review	{"ocr": {"ocr": "token_missing"}}
+PP-405	real_property_value_detail	0	manual_review	{"ocr": {"ocr": "token_offset", "dx_pt": 200.4, "dy_pt": 0.1}}
+AF-104	name_not_contacted	0	fix_partial	{"print_overlap": ["Reason", "for", "not", "contacting"], "starts_under_label": ["Reason"]}
+AF-105	employer_name_address	0	fix_partial	{"print_overlap": ["full", "time", "part", "time", "seasonal"]}
+DE-403	personal_property_surety_1_description	0	fix_partial	{"print_overlap": ["Personal", "Property:"]}
+DE-403	personal_property_surety_2_description	0	fix_partial	{"print_overlap": ["Personal", "Property:"]}
+DE-403	real_property_surety_1_description_1	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+DE-403	real_property_surety_2_description_1	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+DE-403	real_property_surety_1_description_2	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+DE-403	real_property_surety_2_description_2	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+GS-014	other_treatment_type	0	fix_partial	{"no_line_support": true}
+GS-014	guardian_statement_name	0	fix_partial	{"print_overlap": [",", "state", "this", "is", "an", "accurate"]}
+MISC-101	service_recipients	0	fix_partial	{"print_overlap": ["zip", "code)"], "starts_under_label": ["zip"]}
+N-108	ward_name	0	fix_partial	{"print_overlap": ["(name", "of", "minor", "or", "individual"]}
+N-115	probate_court_address	0	fix_partial	{"print_overlap": [",", "Maine.", "(street", "or", "mailing", "address)"]}
+N-118	change_in_permanent_dwelling_new_address	0	fix_partial	{"print_overlap": ["(address).", "The", "nature", "of", "this", "dwelling"]}
+N-118	change_in_permanent_dwelling_nature_of_dwelling	0	fix_partial	{"sits_below_line": -15.0}
+N-118	restrictions_on_contact_court_contact_info	0	fix_partial	{"print_overlap": ["6", "(address", "and", "phone", "number)"]}
+N-118	revised_guardianship_plan_filed_court_address	0	fix_partial	{"print_overlap": ["(address).", "the", "Plan", "will", "be", "implemented"]}
+N-118	revised_conservatorship_plan_filed_court_address	0	fix_partial	{"print_overlap": ["(address).", "Plan", "will", "be", "implemented", "unless"]}
+PP-405	penal_sum_word	0	fix_partial	{"print_overlap": ["dollars,", "to", "in", "this", "Estate;", "to"]}
+PP-405	name_surety_2_personal	0	fix_partial	{"print_overlap": ["Personal", "Property:"]}
+PP-405	desc_personal_property_1	0	fix_partial	{"print_overlap": ["Personal", "Property:"]}
+PP-405	desc_real_property_1	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+PP-405	desc_real_property_2	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+PP-405	desc_real_property_3	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+PP-405	desc_real_property_4	0	fix_partial	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
+PP-410	petitioner_name_address_email	1	fix_partial	{"no_line_support": true}
+AF-102	notary_county	0	fix_residual_ocr	token_offset
+N-118	docket_number	0	fix_residual_ocr	token_offset
+NC-001	notary_date	0	fix_residual_ocr	token_missing
