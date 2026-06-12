@@ -1,0 +1,11 @@
+# Formal petition — per-form classification overrides.
+
+overrides:
+  # "<party>_contact" must source the contact record key, not the party's
+  # name (the classifier's party-attr rule reduced the subcategory to the
+  # bare party name).
+  petitioner_contact:
+    category: party_attr
+    party: petitioner
+    subcategory: petitioner_contact
+    data_type: text

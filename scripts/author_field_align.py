@@ -49,7 +49,9 @@ def _data_types(form_dir: pathlib.Path) -> dict[str, str]:
 
 def classify(fid: str, data_type: str) -> str:
     """Return 'center' | 'right' | 'left' for one field."""
-    if "caption" in fid.lower():
+    # `estate_of_decedent` is the "Estate of ____" case-caption line on the
+    # DE-301 family — same layout convention as *_caption fields.
+    if "caption" in fid.lower() or fid == "estate_of_decedent":
         return "center"
     if data_type in RIGHT_TYPES:
         return "right"

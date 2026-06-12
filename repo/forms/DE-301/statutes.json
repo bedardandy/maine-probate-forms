@@ -1,0 +1,109 @@
+{
+  "form_id": "DE-301",
+  "summary": "Petition for formal appointment of a special administrator (judge-ordered, after notice/hearing unless emergency).",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §3-614",
+      "title": "Special administrator; appointment",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-614.html",
+      "why": "When a special administrator may be appointed; formal appointment is by court order."
+    },
+    {
+      "cite": "18-C §3-615",
+      "title": "Special administrator; who may be appointed",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-615.html",
+      "why": "Who may be appointed special administrator."
+    },
+    {
+      "cite": "18-C §3-617",
+      "title": "Special administrator; formal proceedings; power and duties",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-617.html",
+      "why": "Powers and duties of a special administrator appointed by the court — the order may limit them."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "person_whose_appointment_is_sought",
+      "considerations": [
+        {
+          "cite": "18-C §3-615",
+          "title": "Special administrator; who may be appointed",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-615.html",
+          "note": "Eligibility/priority for who serves as special administrator."
+        }
+      ]
+    },
+    {
+      "field_id": "will_presented_for_probate",
+      "considerations": [
+        {
+          "cite": "18-C §3-614",
+          "title": "Special administrator; appointment",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-614.html",
+          "note": "Whether a will is pending bears on the need for and role of the special administrator."
+        }
+      ]
+    },
+    {
+      "field_id": "nominated_as_pr_in_will",
+      "considerations": [
+        {
+          "cite": "18-C §3-203",
+          "title": "Priority among persons seeking appointment as personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-203.html",
+          "note": "A will nominee's priority; if another person is sought, the petition must explain."
+        }
+      ]
+    },
+    {
+      "field_id": "reason_for_special_admin",
+      "considerations": [
+        {
+          "cite": "18-C §3-614",
+          "title": "Special administrator; appointment",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-614.html",
+          "note": "The court must find the appointment necessary to preserve the estate or secure its proper administration."
+        }
+      ]
+    },
+    {
+      "field_id": "appointment_without_notice",
+      "considerations": [
+        {
+          "cite": "18-C §3-614",
+          "title": "Special administrator; appointment",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-614.html",
+          "note": "Appointment without notice requires an emergency; state its nature."
+        }
+      ]
+    },
+    {
+      "field_id": "venue_basis_if_not_domiciled",
+      "considerations": [
+        {
+          "cite": "18-C §3-201",
+          "title": "Venue for first and subsequent estate proceedings; location of property",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-201.html",
+          "note": "Venue for estate proceedings when the decedent was not domiciled in the county."
+        }
+      ]
+    },
+    {
+      "field_id": "order_limitations",
+      "considerations": [
+        {
+          "cite": "18-C §3-617",
+          "title": "Special administrator; formal proceedings; power and duties",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-617.html",
+          "note": "Unless limited by the order, the special administrator has the powers of a general PR (court fills this section)."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "Title 18-C applies to estates of decedents who die on or after 2019-09-01, and to any proceeding pending on or commenced after that date. For a decedent who died before 2019-09-01, former Title 18-A supplies the substantive succession rules even though the proceeding itself runs under 18-C. See _index/18a-key-diffs.json (governing rule: 18-C §8-301).",
+  "cross_refs": [],
+  "caselaw": [],
+  "disclaimer": "EXPERIMENTAL — AI/LLM-GENERATED, NOT ATTORNEY-REVIEWED. This statute and case-law layer is generated and annotated by an AI model; it is for consideration only — NOT legal advice and not a substitute for a licensed Maine attorney. Statute section titles/text are quoted from legislature.maine.gov, but the SELECTION of which statutes/cases bear on a field, the relevance notes, and any case-law holdings are the model's experimental annotations — they point to issues to weigh, not conclusions, and may be wrong. Verify everything against the current statute and the actual opinions; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

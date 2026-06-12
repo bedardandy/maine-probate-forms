@@ -1,0 +1,74 @@
+{
+  "_comment": "Synthetic case used to demonstrate the DE-101 (formal) fill pipeline. No real people; any resemblance is coincidental.",
+  "case_dict": {
+    "county": "Cumberland",
+    "county_probate_court": "Cumberland",
+    "docket_number": "2026-MERR-2024-00451",
+    "estate_of_decedent": "Margaret L. Walsh",
+    "probate_date": "2026-04-02",
+    "decedent_name_caption": "Margaret L. Walsh"
+  },
+  "petitioner_record": {
+    "petitioner": "Sarah J. Walsh-Bennett",
+    "petitioner_name": "Sarah J. Walsh-Bennett",
+    "petitioner_address": "47 Pine Hill Road",
+    "petitioner_city": "Falmouth",
+    "petitioner_state": "ME",
+    "petitioner_zip": "04105",
+    "petitioner_phone": "(207) 555-0142",
+    "petitioner_email": "sjwb@example.com",
+    "petitioner_contact": "47 Pine Hill Road, Falmouth, ME 04105; sjwb@example.com; (207) 555-0142"
+  },
+  "decedent_record": {
+    "decedent": "Margaret L. Walsh",
+    "decedent_date_of_birth": "1948-11-04",
+    "decedent_date_of_death": "2026-03-18",
+    "decedent_domicile": "82 Falmouth Foreside Way, Falmouth, ME 04105"
+  },
+  "attorney_record": {
+    "attorney_name": "Patricia M. Goff",
+    "attorney_address": "200 Commercial Street, Suite 4, Portland, ME 04101",
+    "attorney_phone": "(207) 555-0309",
+    "attorney_bar_number": "4271",
+    "attorney_email": "pgoff@example.com"
+  },
+  "narrative_facts": {
+    "petition_type": [
+      "formal_adjudication",
+      "formal_appointment"
+    ],
+    "petitioner_interest": "heir",
+    "decedent_full_name": "Margaret L. Walsh",
+    "decedent_death_date": "2026-03-18",
+    "decedent_birth_date": "1948-11-04",
+    "heirs_name_1": "Sarah J. Walsh-Bennett",
+    "heirs_addr_1": "47 Pine Hill Road, Falmouth, ME 04105",
+    "heirs_dob_1": "",
+    "heirs_rel_1": "Daughter",
+    "non_registered_partner_status": "no",
+    "real_estate_in_maine": "yes",
+    "real_estate_details": "Falmouth, Cumberland County (single-family residence, Tax Map 12, Lot 4)",
+    "domiciled_outside_maine": "no",
+    "prior_pr_appointed": "no",
+    "died_more_than_3_years": "no",
+    "demand_for_notice": "no",
+    "supervised_administration": "no",
+    "publish_notice_law": "yes",
+    "testamentary_instrument_status": "unaware",
+    "pr_name_address": "Sarah J. Walsh-Bennett, 47 Pine Hill Road, Falmouth, ME 04105",
+    "pr_relationship": "other_heir",
+    "prior_equal_right": "no",
+    "pr_priority_question": "no",
+    "bond_status": "not_required",
+    "requested_orders": [
+      "intestacy_heirs",
+      "appoint_pr"
+    ],
+    "date_signed": "2026-04-02",
+    "filing_fee": 175.0,
+    "mailing_notices_fee": 21.0
+  },
+  "form_subject_record": {
+    "form_subject": "Sarah J. Walsh-Bennett of 47 Pine Hill Road, Falmouth, ME 04105"
+  }
+}

@@ -1,7 +1,7 @@
-# DE-101 Examples
+# DE-101(I) Examples
 
 Worked example showing the inputs and expected outputs for filling
-DE-101 (Application for Informal Probate / Appointment of PR —
+DE-101(I) (Application for Informal Probate / Appointment of PR —
 Intestate).
 
 ## Files

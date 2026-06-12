@@ -1,0 +1,1932 @@
+{
+  "form_id": "DE-101",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 5,
+  "source_fused": "DE-101 Petition for Formal Adjudication or Formal Appointment - Intestate (Rev 07.01.19)_fused.pdf",
+  "fields": {
+    "county": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            121.0,
+            200.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            121.0,
+            540.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "decedent_name_caption": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            156.0,
+            296.0,
+            168.0
+          ]
+        },
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            183.0,
+            335.0,
+            280.0
+          ]
+        }
+      ]
+    },
+    "petition_type": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "formal_adjudication",
+          "label": "FORMAL ADJUDICATION",
+          "page": 0,
+          "rect": [
+            360.7,
+            251.4,
+            367.7,
+            258.4
+          ]
+        },
+        {
+          "value": "formal_appointment",
+          "label": "FORMAL APPOINTMENT",
+          "page": 0,
+          "rect": [
+            360.7,
+            262.8,
+            367.7,
+            269.8
+          ]
+        }
+      ]
+    },
+    "petitioner_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            298.2,
+            540.0,
+            341.0
+          ]
+        }
+      ]
+    },
+    "petitioner_contact": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            355.5,
+            540.0,
+            398.0
+          ]
+        }
+      ]
+    },
+    "petitioner_interest": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "surviving_spouse",
+          "label": "Surviving spouse",
+          "page": 0,
+          "rect": [
+            96.5,
+            418.0,
+            103.5,
+            425.0
+          ]
+        },
+        {
+          "value": "domestic_partner",
+          "label": "Domestic partner",
+          "page": 0,
+          "rect": [
+            96.5,
+            430.0,
+            103.5,
+            437.0
+          ]
+        },
+        {
+          "value": "heir",
+          "label": "Heir",
+          "page": 0,
+          "rect": [
+            96.5,
+            442.1,
+            103.5,
+            449.1
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "Creditor",
+          "page": 0,
+          "rect": [
+            96.5,
+            454.1,
+            103.5,
+            461.1
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            96.5,
+            466.1,
+            103.5,
+            473.1
+          ]
+        }
+      ]
+    },
+    "petitioner_interest_other": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            130.0,
+            465.9,
+            192.0,
+            477.9
+          ]
+        }
+      ]
+    },
+    "decedent_full_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            502.1,
+            540.0,
+            546.0
+          ]
+        }
+      ]
+    },
+    "decedent_death_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            559.6,
+            540.0,
+            603.0
+          ]
+        }
+      ]
+    },
+    "decedent_birth_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            617.1,
+            540.0,
+            660.0
+          ]
+        }
+      ]
+    },
+    "decedent_domicile": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            96.0,
+            674.6,
+            540.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            107.0,
+            183.2,
+            142.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            107.0,
+            302.9,
+            142.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            107.0,
+            428.3,
+            142.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            107.0,
+            547.9,
+            142.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            142.0,
+            183.2,
+            177.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            142.0,
+            302.9,
+            177.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            142.0,
+            428.3,
+            177.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            142.0,
+            547.9,
+            177.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            177.0,
+            183.2,
+            212.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            177.0,
+            302.9,
+            212.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            177.0,
+            428.3,
+            212.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            177.0,
+            547.9,
+            212.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            212.0,
+            183.2,
+            247.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            212.0,
+            302.9,
+            247.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            212.0,
+            428.3,
+            247.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            212.0,
+            547.9,
+            247.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            247.0,
+            183.2,
+            282.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            247.0,
+            302.9,
+            282.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            247.0,
+            428.3,
+            282.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            247.0,
+            547.9,
+            282.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            282.0,
+            183.2,
+            316.9
+          ]
+        }
+      ]
+    },
+    "heirs_addr_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            282.0,
+            302.9,
+            316.9
+          ]
+        }
+      ]
+    },
+    "heirs_dob_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            282.0,
+            428.3,
+            316.9
+          ]
+        }
+      ]
+    },
+    "heirs_rel_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            282.0,
+            547.9,
+            316.9
+          ]
+        }
+      ]
+    },
+    "heirs_name_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            316.9,
+            183.2,
+            352.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            316.9,
+            302.9,
+            352.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            316.9,
+            428.3,
+            352.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            316.9,
+            547.9,
+            352.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            352.0,
+            183.2,
+            387.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            352.0,
+            302.9,
+            387.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            352.0,
+            428.3,
+            387.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            352.0,
+            547.9,
+            387.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            387.0,
+            183.2,
+            421.9
+          ]
+        }
+      ]
+    },
+    "heirs_addr_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            387.0,
+            302.9,
+            421.9
+          ]
+        }
+      ]
+    },
+    "heirs_dob_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            387.0,
+            428.3,
+            421.9
+          ]
+        }
+      ]
+    },
+    "heirs_rel_9": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            387.0,
+            547.9,
+            421.9
+          ]
+        }
+      ]
+    },
+    "heirs_name_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            421.9,
+            183.2,
+            457.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            421.9,
+            302.9,
+            457.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            421.9,
+            428.3,
+            457.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_10": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            421.9,
+            547.9,
+            457.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            457.0,
+            183.2,
+            492.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            457.0,
+            302.9,
+            492.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            457.0,
+            428.3,
+            492.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_11": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            457.0,
+            547.9,
+            492.0
+          ]
+        }
+      ]
+    },
+    "heirs_name_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            63.5,
+            492.0,
+            183.2,
+            527.0
+          ]
+        }
+      ]
+    },
+    "heirs_addr_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            183.2,
+            492.0,
+            302.9,
+            527.0
+          ]
+        }
+      ]
+    },
+    "heirs_dob_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            302.9,
+            492.0,
+            428.3,
+            527.0
+          ]
+        }
+      ]
+    },
+    "heirs_rel_12": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            428.3,
+            492.0,
+            547.9,
+            527.0
+          ]
+        }
+      ]
+    },
+    "non_registered_partner_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "no",
+          "label": "No",
+          "page": 1,
+          "rect": [
+            354.2,
+            541.2,
+            361.2,
+            548.2
+          ]
+        },
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            389.5,
+            541.2,
+            396.5,
+            548.2
+          ]
+        }
+      ]
+    },
+    "non_registered_partner_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            553.3,
+            542.0,
+            585.0
+          ]
+        }
+      ]
+    },
+    "real_estate_in_maine": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            323.8,
+            587.2,
+            330.8,
+            594.2
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 1,
+          "rect": [
+            355.0,
+            587.2,
+            362.0,
+            594.2
+          ]
+        }
+      ]
+    },
+    "real_estate_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            622.4,
+            542.0,
+            665.0
+          ]
+        }
+      ]
+    },
+    "domiciled_outside_maine": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 1,
+          "rect": [
+            365.8,
+            667.6,
+            372.8,
+            674.6
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 1,
+          "rect": [
+            398.8,
+            667.7,
+            405.8,
+            674.7
+          ]
+        }
+      ]
+    },
+    "out_of_state_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            702.9,
+            542.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "prior_pr_appointed": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 2,
+          "rect": [
+            217.0,
+            85.8,
+            224.0,
+            92.8
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 2,
+          "rect": [
+            247.8,
+            85.8,
+            254.8,
+            92.8
+          ]
+        }
+      ]
+    },
+    "prior_pr_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            90.0,
+            97.9,
+            542.0,
+            140.0
+          ]
+        }
+      ]
+    },
+    "died_more_than_3_years": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 2,
+          "rect": [
+            412.1,
+            143.3,
+            419.1,
+            150.3
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 2,
+          "rect": [
+            442.8,
+            143.3,
+            449.8,
+            150.3
+          ]
+        }
+      ]
+    },
+    "late_petition_circumstances": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            90.0,
+            167.0,
+            542.0,
+            210.0
+          ]
+        }
+      ]
+    },
+    "demand_for_notice": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 2,
+          "rect": [
+            163.2,
+            235.2,
+            170.2,
+            242.2
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 2,
+          "rect": [
+            194.1,
+            235.2,
+            201.1,
+            242.2
+          ]
+        }
+      ]
+    },
+    "demand_for_notice_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            90.0,
+            247.4,
+            542.0,
+            289.0
+          ]
+        }
+      ]
+    },
+    "supervised_administration": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 2,
+          "rect": [
+            390.8,
+            292.8,
+            397.8,
+            299.8
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 2,
+          "rect": [
+            430.1,
+            292.8,
+            437.1,
+            299.8
+          ]
+        }
+      ]
+    },
+    "supervised_admin_circumstances": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            90.0,
+            316.4,
+            542.0,
+            359.0
+          ]
+        }
+      ]
+    },
+    "notice_other_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            80.5,
+            417.5,
+            221.0,
+            441.0
+          ]
+        }
+      ]
+    },
+    "notice_other_addr_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.5,
+            417.5,
+            531.5,
+            441.0
+          ]
+        }
+      ]
+    },
+    "notice_other_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            80.5,
+            441.0,
+            221.0,
+            464.5
+          ]
+        }
+      ]
+    },
+    "notice_other_addr_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.5,
+            441.0,
+            531.5,
+            464.5
+          ]
+        }
+      ]
+    },
+    "notice_other_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            80.5,
+            464.5,
+            221.0,
+            487.9
+          ]
+        }
+      ]
+    },
+    "notice_other_addr_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.5,
+            464.5,
+            531.5,
+            487.9
+          ]
+        }
+      ]
+    },
+    "notice_other_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            80.5,
+            487.9,
+            221.0,
+            511.4
+          ]
+        }
+      ]
+    },
+    "notice_other_addr_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            221.5,
+            487.9,
+            531.5,
+            511.4
+          ]
+        }
+      ]
+    },
+    "publish_notice_creditors": {
+      "type": "enabler",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            163.8,
+            543.2,
+            170.8,
+            550.2
+          ]
+        }
+      ]
+    },
+    "publish_notice_law": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 2,
+          "rect": [
+            112.2,
+            577.7,
+            119.2,
+            584.7
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 2,
+          "rect": [
+            143.1,
+            577.7,
+            150.1,
+            584.7
+          ]
+        }
+      ]
+    },
+    "testamentary_instrument_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "known_attached",
+          "label": "Known instrument attached with explanation",
+          "page": 2,
+          "rect": [
+            91.0,
+            623.7,
+            98.0,
+            630.7
+          ]
+        },
+        {
+          "value": "unaware",
+          "label": "Unaware of any unrevoked instrument",
+          "page": 2,
+          "rect": [
+            91.0,
+            652.6,
+            98.0,
+            659.6
+          ]
+        }
+      ]
+    },
+    "pr_name_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            90.0,
+            120.9,
+            540.0,
+            162.0
+          ]
+        }
+      ]
+    },
+    "pr_relationship": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "surviving_spouse",
+          "label": "Surviving spouse",
+          "page": 3,
+          "rect": [
+            91.0,
+            201.2,
+            98.0,
+            208.2
+          ]
+        },
+        {
+          "value": "domestic_partner",
+          "label": "Domestic partner",
+          "page": 3,
+          "rect": [
+            91.0,
+            218.8,
+            98.0,
+            225.8
+          ]
+        },
+        {
+          "value": "other_heir",
+          "label": "Other heir",
+          "page": 3,
+          "rect": [
+            91.0,
+            236.3,
+            98.0,
+            243.3
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "Creditor",
+          "page": 3,
+          "rect": [
+            91.0,
+            253.8,
+            98.0,
+            260.8
+          ]
+        },
+        {
+          "value": "state_tax_assessor",
+          "label": "State tax assessor",
+          "page": 3,
+          "rect": [
+            91.0,
+            271.2,
+            98.0,
+            278.2
+          ]
+        }
+      ]
+    },
+    "prior_equal_right": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 3,
+          "rect": [
+            357.5,
+            294.2,
+            364.5,
+            301.2
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 3,
+          "rect": [
+            385.7,
+            294.2,
+            392.7,
+            301.2
+          ]
+        }
+      ]
+    },
+    "prior_equal_right_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            90.0,
+            306.4,
+            540.0,
+            338.0
+          ]
+        }
+      ]
+    },
+    "pr_priority_question": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "page": 3,
+          "rect": [
+            107.8,
+            351.7,
+            114.8,
+            358.7
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "page": 3,
+          "rect": [
+            136.1,
+            351.7,
+            143.1,
+            358.7
+          ]
+        }
+      ]
+    },
+    "pr_priority_description": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 3,
+          "rect": [
+            90.0,
+            363.9,
+            540.0,
+            403.0
+          ]
+        }
+      ]
+    },
+    "bond_status": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "required_attached",
+          "label": "Required and attached",
+          "page": 3,
+          "rect": [
+            91.0,
+            426.6,
+            98.0,
+            433.6
+          ]
+        },
+        {
+          "value": "court_decide",
+          "label": "Court to decide if necessary",
+          "page": 3,
+          "rect": [
+            91.0,
+            444.2,
+            98.0,
+            451.2
+          ]
+        },
+        {
+          "value": "not_required",
+          "label": "No bond required",
+          "page": 3,
+          "rect": [
+            91.0,
+            461.8,
+            98.0,
+            468.8
+          ]
+        },
+        {
+          "value": "estate_tax_attached",
+          "label": "Estate tax bond required and attached",
+          "page": 3,
+          "rect": [
+            91.0,
+            479.3,
+            98.0,
+            486.3
+          ]
+        }
+      ]
+    },
+    "requested_orders": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "intestacy_heirs",
+          "label": "Adjudication of intestacy and heirs",
+          "page": 3,
+          "rect": [
+            91.0,
+            543.2,
+            98.0,
+            550.2
+          ]
+        },
+        {
+          "value": "appoint_pr",
+          "label": "Appointment of Personal Representative",
+          "page": 3,
+          "rect": [
+            91.0,
+            572.3,
+            98.0,
+            579.3
+          ]
+        },
+        {
+          "value": "supervised_admin",
+          "label": "Establish supervised administration",
+          "page": 3,
+          "rect": [
+            91.0,
+            601.2,
+            98.0,
+            608.2
+          ]
+        }
+      ]
+    },
+    "date_signed": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            101.0,
+            104.0,
+            231.0,
+            117.0
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            320.0,
+            104.0,
+            526.0,
+            117.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            72.0,
+            157.0,
+            231.0,
+            170.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            72.0,
+            186.0,
+            231.0,
+            199.0
+          ]
+        },
+        {
+          "page": 4,
+          "rect": [
+            72.0,
+            215.0,
+            231.0,
+            228.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            72.0,
+            243.0,
+            231.0,
+            256.0
+          ]
+        }
+      ]
+    },
+    "attorney_bar_number": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            72.0,
+            271.0,
+            231.0,
+            284.0
+          ]
+        }
+      ]
+    },
+    "attorney_email": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            72.0,
+            299.0,
+            231.0,
+            312.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            131.0,
+            369.0,
+            291.0,
+            382.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            320.0,
+            369.0,
+            480.0,
+            382.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            131.0,
+            380.9,
+            291.0,
+            394.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            320.0,
+            380.9,
+            480.0,
+            394.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_5": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            131.0,
+            394.0,
+            291.0,
+            407.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_6": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            320.0,
+            394.0,
+            480.0,
+            407.0
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_7": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            131.0,
+            407.0,
+            291.0,
+            420.2
+          ]
+        }
+      ]
+    },
+    "renunciation_signature_8": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            320.0,
+            407.0,
+            480.0,
+            420.2
+          ]
+        }
+      ]
+    },
+    "filing_fee": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            131.0,
+            482.0,
+            191.0,
+            495.0
+          ]
+        }
+      ]
+    },
+    "mailing_notices_fee": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            320.0,
+            482.0,
+            370.0,
+            495.0
+          ]
+        }
+      ]
+    },
+    "publication_fee": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            447.0,
+            482.0,
+            507.0,
+            495.0
+          ]
+        }
+      ]
+    },
+    "surcharge_fee": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            131.0,
+            499.0,
+            191.0,
+            512.0
+          ]
+        }
+      ]
+    },
+    "abstracts_fee": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            279.0,
+            499.0,
+            354.0,
+            512.0
+          ]
+        }
+      ]
+    },
+    "other_fee": {
+      "type": "currency",
+      "widgets": [
+        {
+          "page": 4,
+          "rect": [
+            424.0,
+            499.0,
+            509.0,
+            512.0
+          ]
+        }
+      ]
+    }
+  }
+}

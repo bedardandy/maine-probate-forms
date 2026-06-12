@@ -1,334 +1,373 @@
 {
-  "_note": "Per-field text justification (left is the implicit default and is omitted). Right is derived from the schema data_type (currency/number); center from a 'caption' field name. Authored by scripts/author_field_align.py; verified by scripts/verify_field_align.py; consumed by tools/fill_pdf.py.",
-  "forms": {
-    "AD-026": {
-      "adoptee_name_caption": "center",
-      "co_petitioner_caption": "center",
-      "petitioner_caption": "center"
-    },
-    "AF-105": {
-      "alimony_child_support_amount": "right",
-      "bail_amount": "right",
-      "cash_on_hand": "right",
-      "checking_amount": "right",
-      "food_expenses": "right",
-      "housing_expenses": "right",
-      "insurance_pension_value": "right",
-      "loan_row_1_monthly_payment": "right",
-      "loan_row_1_total_owed": "right",
-      "loan_row_2_monthly_payment": "right",
-      "loan_row_2_total_owed": "right",
-      "loan_row_3_monthly_payment": "right",
-      "loan_row_3_total_owed": "right",
-      "medical_support_payments": "right",
-      "medical_support_total": "right",
-      "money_owed_amount": "right",
-      "money_owed_to_party": "right",
-      "mortgage_amount": "right",
-      "other_assets_amount": "right",
-      "other_income_amount": "right",
-      "other_living_expenses": "right",
-      "real_estate_market_value": "right",
-      "salary_wages_amount": "right",
-      "savings_amount": "right",
-      "social_security_amount": "right",
-      "spouse_dependents_count": "right",
-      "spouse_income_amount": "right",
-      "spouse_income_available_amount": "right",
-      "stocks_bonds_amount": "right",
-      "tanf_amount": "right",
-      "total_cash_assets": "right",
-      "total_living_expenses": "right",
-      "unemployment_amount": "right",
-      "utilities_expenses": "right",
-      "vehicle_value": "right"
-    },
-    "DE-101(I)": {
-      "decedent_name_caption": "center",
-      "filing_fee": "right",
-      "mailing_notices_fee": "right",
-      "publication_fee": "right"
-    },
-    "DE-201(I)": {
-      "filing_fee": "right",
-      "mailing_notices_fee": "right",
-      "publication_fee": "right"
-    },
-    "DE-401": {
-      "decedent_interest_maine_real_estate": "right",
-      "estate_tax_bond_amount": "right",
-      "estimated_maine_estate_tax": "right",
-      "intangible_personal_property": "right",
-      "net_value_probate_estate": "right",
-      "non_mortgage_debts_expenses": "right",
-      "real_estate_maine": "right",
-      "tangible_personal_property_maine": "right",
-      "total_probate_estate_value": "right"
-    },
-    "DE-403": {
-      "penal_sum_numeric": "right",
-      "personal_property_gross_value": "right",
-      "real_property_gross_value": "right"
-    },
-    "DE-405": {
-      "calc_gross_inventory": "right",
-      "calc_gross_personal_encumbrances": "right",
-      "calc_gross_personal_property": "right",
-      "calc_gross_real_encumbrances": "right",
-      "calc_gross_real_property": "right",
-      "calc_net_inventory": "right",
-      "gross_value_personal_encumbrances": "right",
-      "gross_value_personal_property": "right",
-      "gross_value_real_encumbrances": "right",
-      "gross_value_real_property": "right",
-      "intang_18_enc": "right",
-      "intang_18_val": "right",
-      "intang_19_enc": "right",
-      "intang_19_val": "right",
-      "intang_20_enc": "right",
-      "intang_20_val": "right",
-      "intang_21_enc": "right",
-      "intang_21_val": "right",
-      "intang_22_enc": "right",
-      "intang_22_val": "right",
-      "intang_23_enc": "right",
-      "intang_23_val": "right",
-      "intang_24_enc": "right",
-      "intang_24_val": "right",
-      "intang_25_enc": "right",
-      "intang_25_val": "right",
-      "real_prop_1_enc": "right",
-      "real_prop_1_val": "right",
-      "real_prop_2_enc": "right",
-      "real_prop_2_val": "right",
-      "real_prop_3_enc": "right",
-      "real_prop_3_val": "right",
-      "real_prop_4_enc": "right",
-      "real_prop_4_val": "right",
-      "real_prop_5_enc": "right",
-      "real_prop_5_val": "right",
-      "real_prop_6_enc": "right",
-      "real_prop_6_val": "right",
-      "tang_10_enc": "right",
-      "tang_10_val": "right",
-      "tang_11_enc": "right",
-      "tang_11_val": "right",
-      "tang_12_enc": "right",
-      "tang_12_val": "right",
-      "tang_13_enc": "right",
-      "tang_13_val": "right",
-      "tang_14_enc": "right",
-      "tang_14_val": "right",
-      "tang_15_enc": "right",
-      "tang_15_val": "right",
-      "tang_16_enc": "right",
-      "tang_16_val": "right",
-      "tang_7_enc": "right",
-      "tang_7_val": "right",
-      "tang_8_enc": "right",
-      "tang_8_val": "right",
-      "tang_9_enc": "right",
-      "tang_9_val": "right"
-    },
-    "DE-406": {
-      "current_intangible_balance": "right",
-      "current_tangible_balance": "right",
-      "current_total_balance": "right",
-      "distributions_amount": "right",
-      "exemptions_allowances_amount": "right",
-      "expenses_amount": "right",
-      "income_amount": "right",
-      "intangible_personal_property_value": "right",
-      "real_estate_value": "right",
-      "tangible_personal_property_value": "right",
-      "total_inventory_value": "right"
-    },
-    "DE-502": {
-      "bond_amount": "right",
-      "petitioner_interest_value": "right"
-    },
-    "DE-503": {
-      "amount_claimed": "right",
-      "partial_allowance_amount": "right"
-    },
-    "DE-504": {
-      "allowed_part_amount": "right"
-    },
-    "DE-506": {
-      "augmented_estate_value": "right",
-      "augmented_estate_value_finding_amount": "right",
-      "probate_estate_value": "right"
-    },
-    "DE-507": {
-      "abstracts_fee": "right",
-      "filing_fee": "right",
-      "mailing_notices_fee": "right",
-      "other_fees": "right"
-    },
-    "GS-014": {
-      "minor_present_age": "right"
-    },
-    "MISC-102": {
-      "fees_travel": "right"
-    },
-    "N-106": {
-      "fees_received_amount": "right"
-    },
-    "N-115": {
-      "bond_amount": "right"
-    },
-    "PB-007": {
-      "expanded_evaluation_cost": "right",
-      "flat_fee_additional": "right",
-      "flat_fee_amount": "right",
-      "hourly_additional_cap": "right",
-      "hourly_cap_hours": "right",
-      "hourly_cap_total": "right",
-      "hourly_rate": "right",
-      "other_lump_sum_amount": "right",
-      "other_percent_amount": "right",
-      "other_periodic_amount": "right",
-      "payment_days": "right",
-      "petitioner_lump_sum": "right",
-      "petitioner_percent": "right",
-      "petitioner_periodic_amount": "right",
-      "probate_fee_hours": "right",
-      "probate_fee_rate": "right",
-      "respondent_lump_sum": "right",
-      "respondent_percent": "right",
-      "respondent_periodic_amount": "right"
-    },
-    "PB-007.vA": {
-      "expanded_evaluation_cost": "right",
-      "flat_fee_additional": "right",
-      "flat_fee_amount": "right",
-      "hourly_additional_cap": "right",
-      "hourly_cap_hours": "right",
-      "hourly_cap_total": "right",
-      "hourly_rate": "right",
-      "other_lump_sum_amount": "right",
-      "other_percent_amount": "right",
-      "other_periodic_amount": "right",
-      "payment_days": "right",
-      "petitioner_lump_sum": "right",
-      "petitioner_percent": "right",
-      "petitioner_periodic_amount": "right",
-      "probate_fee_hours": "right",
-      "probate_fee_rate": "right",
-      "respondent_lump_sum": "right",
-      "respondent_percent": "right",
-      "respondent_periodic_amount": "right"
-    },
-    "PP-107": {
-      "minor_assets_value": "right"
-    },
-    "PP-205": {
-      "asset_1_value": "right",
-      "asset_2_value": "right",
-      "asset_3_value": "right",
-      "asset_4_value": "right",
-      "asset_5_value": "right",
-      "asset_6_value": "right",
-      "asset_7_value": "right",
-      "asset_8_value": "right"
-    },
-    "PP-209": {
-      "guardian_fees": "right"
-    },
-    "PP-405": {
-      "gross_value_personal_property": "right",
-      "gross_value_real_property": "right",
-      "penal_sum_numeric": "right"
-    },
-    "PP-406": {
-      "calc_gross_inventory": "right",
-      "calc_gross_personal": "right",
-      "calc_gross_personal_enc": "right",
-      "calc_gross_real": "right",
-      "calc_gross_real_enc": "right",
-      "calc_net_inventory": "right",
-      "gross_value_personal_encumbrances": "right",
-      "gross_value_personal_property": "right",
-      "gross_value_real_encumbrances": "right",
-      "gross_value_real_property": "right",
-      "int_prop_18_enc": "right",
-      "int_prop_18_value": "right",
-      "int_prop_19_enc": "right",
-      "int_prop_19_value": "right",
-      "int_prop_20_enc": "right",
-      "int_prop_20_value": "right",
-      "int_prop_21_enc": "right",
-      "int_prop_21_value": "right",
-      "int_prop_22_enc": "right",
-      "int_prop_22_value": "right",
-      "int_prop_23_enc": "right",
-      "int_prop_23_value": "right",
-      "int_prop_24_enc": "right",
-      "int_prop_24_value": "right",
-      "int_prop_25_enc": "right",
-      "int_prop_25_value": "right",
-      "real_prop_1_enc": "right",
-      "real_prop_1_value": "right",
-      "real_prop_2_enc": "right",
-      "real_prop_2_value": "right",
-      "real_prop_3_enc": "right",
-      "real_prop_3_value": "right",
-      "real_prop_4_enc": "right",
-      "real_prop_4_value": "right",
-      "real_prop_5_enc": "right",
-      "real_prop_5_value": "right",
-      "real_prop_6_enc": "right",
-      "real_prop_6_value": "right",
-      "tang_prop_10_enc": "right",
-      "tang_prop_10_value": "right",
-      "tang_prop_11_enc": "right",
-      "tang_prop_11_value": "right",
-      "tang_prop_12_enc": "right",
-      "tang_prop_12_value": "right",
-      "tang_prop_13_enc": "right",
-      "tang_prop_13_value": "right",
-      "tang_prop_14_enc": "right",
-      "tang_prop_14_value": "right",
-      "tang_prop_15_enc": "right",
-      "tang_prop_15_value": "right",
-      "tang_prop_16_enc": "right",
-      "tang_prop_16_value": "right",
-      "tang_prop_17_enc": "right",
-      "tang_prop_17_value": "right",
-      "tang_prop_7_enc": "right",
-      "tang_prop_7_value": "right",
-      "tang_prop_8_enc": "right",
-      "tang_prop_8_value": "right",
-      "tang_prop_9_enc": "right",
-      "tang_prop_9_value": "right"
-    },
-    "PP-407": {
-      "current_intangible_personal_property_balance": "right",
-      "current_real_estate_balance": "right",
-      "current_tangible_personal_property_balance": "right",
-      "current_total_balance": "right",
-      "distributions_amount": "right",
-      "expenses_amount": "right",
-      "income_amount": "right",
-      "net_change_value": "right",
-      "prior_intangible_personal_property_value": "right",
-      "prior_real_estate_value": "right",
-      "prior_tangible_personal_property_value": "right",
-      "prior_total_value": "right"
-    },
-    "PP-408": {
-      "partial_amount": "right"
-    },
-    "PP-409": {
-      "allowed_in_part_amount": "right"
-    },
-    "PP-412": {
-      "business_relation_paid": "right",
-      "de_minimis_value_received": "right"
-    },
-    "PP-504": {
-      "conservator_budget_charges": "right",
-      "guardian_proposed_charges": "right"
-    }
+ "_note": "Per-field text justification (left is the implicit default and is omitted). Right is derived from the schema data_type (currency/number); center from a 'caption' field name. Authored by scripts/author_field_align.py; verified by scripts/verify_field_align.py; consumed by tools/fill_pdf.py.",
+ "forms": {
+  "AD-026": {
+   "adoptee_name_caption": "center",
+   "co_petitioner_caption": "center",
+   "petitioner_caption": "center"
+  },
+  "AF-105": {
+   "alimony_child_support_amount": "right",
+   "bail_amount": "right",
+   "cash_on_hand": "right",
+   "checking_amount": "right",
+   "food_expenses": "right",
+   "housing_expenses": "right",
+   "insurance_pension_value": "right",
+   "loan_row_1_monthly_payment": "right",
+   "loan_row_1_total_owed": "right",
+   "loan_row_2_monthly_payment": "right",
+   "loan_row_2_total_owed": "right",
+   "loan_row_3_monthly_payment": "right",
+   "loan_row_3_total_owed": "right",
+   "medical_support_payments": "right",
+   "medical_support_total": "right",
+   "money_owed_amount": "right",
+   "money_owed_to_party": "right",
+   "mortgage_amount": "right",
+   "other_assets_amount": "right",
+   "other_income_amount": "right",
+   "other_living_expenses": "right",
+   "real_estate_market_value": "right",
+   "salary_wages_amount": "right",
+   "savings_amount": "right",
+   "social_security_amount": "right",
+   "spouse_dependents_count": "right",
+   "spouse_income_amount": "right",
+   "spouse_income_available_amount": "right",
+   "stocks_bonds_amount": "right",
+   "tanf_amount": "right",
+   "total_cash_assets": "right",
+   "total_living_expenses": "right",
+   "unemployment_amount": "right",
+   "utilities_expenses": "right",
+   "vehicle_value": "right"
+  },
+  "DE-101": {
+   "abstracts_fee": "right",
+   "decedent_name_caption": "center",
+   "filing_fee": "right",
+   "mailing_notices_fee": "right",
+   "other_fee": "right",
+   "publication_fee": "right",
+   "surcharge_fee": "right"
+  },
+  "DE-101(I)": {
+   "decedent_name_caption": "center",
+   "filing_fee": "right",
+   "mailing_notices_fee": "right",
+   "publication_fee": "right"
+  },
+  "DE-104": {
+   "estate_of_decedent": "center"
+  },
+  "DE-201": {
+   "decedent_name_caption": "center",
+   "filing_fee": "right",
+   "mailing_notices_fee": "right",
+   "publication_fee": "right"
+  },
+  "DE-201(I)": {
+   "filing_fee": "right",
+   "mailing_notices_fee": "right",
+   "publication_fee": "right"
+  },
+  "DE-301": {
+   "estate_of_decedent": "center"
+  },
+  "DE-301(I)": {
+   "estate_of_decedent": "center"
+  },
+  "DE-401": {
+   "decedent_interest_maine_real_estate": "right",
+   "estate_tax_bond_amount": "right",
+   "estimated_maine_estate_tax": "right",
+   "intangible_personal_property": "right",
+   "net_value_probate_estate": "right",
+   "non_mortgage_debts_expenses": "right",
+   "real_estate_maine": "right",
+   "tangible_personal_property_maine": "right",
+   "total_probate_estate_value": "right"
+  },
+  "DE-403": {
+   "penal_sum_numeric": "right",
+   "personal_property_gross_value": "right",
+   "real_property_gross_value": "right"
+  },
+  "DE-405": {
+   "calc_gross_inventory": "right",
+   "calc_gross_personal_encumbrances": "right",
+   "calc_gross_personal_property": "right",
+   "calc_gross_real_encumbrances": "right",
+   "calc_gross_real_property": "right",
+   "calc_net_inventory": "right",
+   "estate_of_decedent": "center",
+   "gross_value_personal_encumbrances": "right",
+   "gross_value_personal_property": "right",
+   "gross_value_real_encumbrances": "right",
+   "gross_value_real_property": "right",
+   "intang_18_enc": "right",
+   "intang_18_val": "right",
+   "intang_19_enc": "right",
+   "intang_19_val": "right",
+   "intang_20_enc": "right",
+   "intang_20_val": "right",
+   "intang_21_enc": "right",
+   "intang_21_val": "right",
+   "intang_22_enc": "right",
+   "intang_22_val": "right",
+   "intang_23_enc": "right",
+   "intang_23_val": "right",
+   "intang_24_enc": "right",
+   "intang_24_val": "right",
+   "intang_25_enc": "right",
+   "intang_25_val": "right",
+   "real_prop_1_enc": "right",
+   "real_prop_1_val": "right",
+   "real_prop_2_enc": "right",
+   "real_prop_2_val": "right",
+   "real_prop_3_enc": "right",
+   "real_prop_3_val": "right",
+   "real_prop_4_enc": "right",
+   "real_prop_4_val": "right",
+   "real_prop_5_enc": "right",
+   "real_prop_5_val": "right",
+   "real_prop_6_enc": "right",
+   "real_prop_6_val": "right",
+   "tang_10_enc": "right",
+   "tang_10_val": "right",
+   "tang_11_enc": "right",
+   "tang_11_val": "right",
+   "tang_12_enc": "right",
+   "tang_12_val": "right",
+   "tang_13_enc": "right",
+   "tang_13_val": "right",
+   "tang_14_enc": "right",
+   "tang_14_val": "right",
+   "tang_15_enc": "right",
+   "tang_15_val": "right",
+   "tang_16_enc": "right",
+   "tang_16_val": "right",
+   "tang_7_enc": "right",
+   "tang_7_val": "right",
+   "tang_8_enc": "right",
+   "tang_8_val": "right",
+   "tang_9_enc": "right",
+   "tang_9_val": "right"
+  },
+  "DE-406": {
+   "current_intangible_balance": "right",
+   "current_tangible_balance": "right",
+   "current_total_balance": "right",
+   "distributions_amount": "right",
+   "exemptions_allowances_amount": "right",
+   "expenses_amount": "right",
+   "income_amount": "right",
+   "intangible_personal_property_value": "right",
+   "real_estate_value": "right",
+   "tangible_personal_property_value": "right",
+   "total_inventory_value": "right"
+  },
+  "DE-407": {
+   "estate_of_decedent": "center"
+  },
+  "DE-502": {
+   "bond_amount": "right",
+   "petitioner_interest_value": "right"
+  },
+  "DE-503": {
+   "amount_claimed": "right",
+   "estate_of_decedent": "center",
+   "partial_allowance_amount": "right"
+  },
+  "DE-504": {
+   "allowed_part_amount": "right"
+  },
+  "DE-506": {
+   "augmented_estate_value": "right",
+   "augmented_estate_value_finding_amount": "right",
+   "estate_of_decedent": "center",
+   "probate_estate_value": "right"
+  },
+  "DE-507": {
+   "abstracts_fee": "right",
+   "filing_fee": "right",
+   "mailing_notices_fee": "right",
+   "other_fees": "right"
+  },
+  "DE-509": {
+   "estate_of_decedent": "center"
+  },
+  "DE-602": {
+   "estate_of_decedent": "center"
+  },
+  "GS-014": {
+   "minor_present_age": "right"
+  },
+  "MISC-102": {
+   "fees_travel": "right"
+  },
+  "N-105": {
+   "estate_of_decedent": "center"
+  },
+  "N-106": {
+   "fees_received_amount": "right"
+  },
+  "N-115": {
+   "bond_amount": "right"
+  },
+  "PB-007": {
+   "expanded_evaluation_cost": "right",
+   "flat_fee_additional": "right",
+   "flat_fee_amount": "right",
+   "hourly_additional_cap": "right",
+   "hourly_cap_hours": "right",
+   "hourly_cap_total": "right",
+   "hourly_rate": "right",
+   "other_lump_sum_amount": "right",
+   "other_percent_amount": "right",
+   "other_periodic_amount": "right",
+   "payment_days": "right",
+   "petitioner_lump_sum": "right",
+   "petitioner_percent": "right",
+   "petitioner_periodic_amount": "right",
+   "probate_fee_hours": "right",
+   "probate_fee_rate": "right",
+   "respondent_lump_sum": "right",
+   "respondent_percent": "right",
+   "respondent_periodic_amount": "right"
+  },
+  "PB-007.vA": {
+   "expanded_evaluation_cost": "right",
+   "flat_fee_additional": "right",
+   "flat_fee_amount": "right",
+   "hourly_additional_cap": "right",
+   "hourly_cap_hours": "right",
+   "hourly_cap_total": "right",
+   "hourly_rate": "right",
+   "other_lump_sum_amount": "right",
+   "other_percent_amount": "right",
+   "other_periodic_amount": "right",
+   "payment_days": "right",
+   "petitioner_lump_sum": "right",
+   "petitioner_percent": "right",
+   "petitioner_periodic_amount": "right",
+   "probate_fee_hours": "right",
+   "probate_fee_rate": "right",
+   "respondent_lump_sum": "right",
+   "respondent_percent": "right",
+   "respondent_periodic_amount": "right"
+  },
+  "PP-107": {
+   "minor_assets_value": "right"
+  },
+  "PP-205": {
+   "asset_1_value": "right",
+   "asset_2_value": "right",
+   "asset_3_value": "right",
+   "asset_4_value": "right",
+   "asset_5_value": "right",
+   "asset_6_value": "right",
+   "asset_7_value": "right",
+   "asset_8_value": "right"
+  },
+  "PP-209": {
+   "guardian_fees": "right"
+  },
+  "PP-405": {
+   "gross_value_personal_property": "right",
+   "gross_value_real_property": "right",
+   "penal_sum_numeric": "right"
+  },
+  "PP-406": {
+   "calc_gross_inventory": "right",
+   "calc_gross_personal": "right",
+   "calc_gross_personal_enc": "right",
+   "calc_gross_real": "right",
+   "calc_gross_real_enc": "right",
+   "calc_net_inventory": "right",
+   "gross_value_personal_encumbrances": "right",
+   "gross_value_personal_property": "right",
+   "gross_value_real_encumbrances": "right",
+   "gross_value_real_property": "right",
+   "int_prop_18_enc": "right",
+   "int_prop_18_value": "right",
+   "int_prop_19_enc": "right",
+   "int_prop_19_value": "right",
+   "int_prop_20_enc": "right",
+   "int_prop_20_value": "right",
+   "int_prop_21_enc": "right",
+   "int_prop_21_value": "right",
+   "int_prop_22_enc": "right",
+   "int_prop_22_value": "right",
+   "int_prop_23_enc": "right",
+   "int_prop_23_value": "right",
+   "int_prop_24_enc": "right",
+   "int_prop_24_value": "right",
+   "int_prop_25_enc": "right",
+   "int_prop_25_value": "right",
+   "real_prop_1_enc": "right",
+   "real_prop_1_value": "right",
+   "real_prop_2_enc": "right",
+   "real_prop_2_value": "right",
+   "real_prop_3_enc": "right",
+   "real_prop_3_value": "right",
+   "real_prop_4_enc": "right",
+   "real_prop_4_value": "right",
+   "real_prop_5_enc": "right",
+   "real_prop_5_value": "right",
+   "real_prop_6_enc": "right",
+   "real_prop_6_value": "right",
+   "tang_prop_10_enc": "right",
+   "tang_prop_10_value": "right",
+   "tang_prop_11_enc": "right",
+   "tang_prop_11_value": "right",
+   "tang_prop_12_enc": "right",
+   "tang_prop_12_value": "right",
+   "tang_prop_13_enc": "right",
+   "tang_prop_13_value": "right",
+   "tang_prop_14_enc": "right",
+   "tang_prop_14_value": "right",
+   "tang_prop_15_enc": "right",
+   "tang_prop_15_value": "right",
+   "tang_prop_16_enc": "right",
+   "tang_prop_16_value": "right",
+   "tang_prop_17_enc": "right",
+   "tang_prop_17_value": "right",
+   "tang_prop_7_enc": "right",
+   "tang_prop_7_value": "right",
+   "tang_prop_8_enc": "right",
+   "tang_prop_8_value": "right",
+   "tang_prop_9_enc": "right",
+   "tang_prop_9_value": "right"
+  },
+  "PP-407": {
+   "current_intangible_personal_property_balance": "right",
+   "current_real_estate_balance": "right",
+   "current_tangible_personal_property_balance": "right",
+   "current_total_balance": "right",
+   "distributions_amount": "right",
+   "expenses_amount": "right",
+   "income_amount": "right",
+   "net_change_value": "right",
+   "prior_intangible_personal_property_value": "right",
+   "prior_real_estate_value": "right",
+   "prior_tangible_personal_property_value": "right",
+   "prior_total_value": "right"
+  },
+  "PP-408": {
+   "partial_amount": "right"
+  },
+  "PP-409": {
+   "allowed_in_part_amount": "right"
+  },
+  "PP-412": {
+   "business_relation_paid": "right",
+   "de_minimis_value_received": "right"
+  },
+  "PP-504": {
+   "conservator_budget_charges": "right",
+   "guardian_proposed_charges": "right"
   }
+ }
 }

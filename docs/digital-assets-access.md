@@ -83,9 +83,9 @@ Custodians under §10-106 typically want a **certified copy of letters** plus a
 
 | You need | Form(s) | What it produces |
 |---|---|---|
-| Appointment as personal representative (intestate) | **DE-101** → letters | Authority to act for the estate |
-| Appointment as PR (testate / with a will) | **DE-201** → letters | Authority + will-based directions |
-| Urgent interim authority | **DE-301** (special administrator) | Limited, immediate authority |
+| Appointment as personal representative (intestate) | **DE-101** (formal) or **DE-101(I)** (informal) → letters | Authority to act for the estate |
+| Appointment as PR (testate / with a will) | **DE-201** (formal) or **DE-201(I)** (informal) → letters | Authority + will-based directions |
+| Urgent interim authority | **DE-301** or **DE-301(I)** (special administrator) | Limited, immediate authority |
 | Small estate, no full administration | **AF-102** (small-estate affidavit, [§3-1201](https://legislature.maine.gov/statutes/18-C/title18-Csec3-1201.html)) | Successor's authority to collect personal property ≤ $40,000 |
 | Conservatorship over a living person's assets | **PP-107 / PP-401** (+ letters) | Conservator authority ([§10-114](https://legislature.maine.gov/statutes/18-C/title18-Csec10-114.html)) |
 | Proof the estate is closed / discharge | **DE-603 / DE-605** | Wind-down documentation |
@@ -208,7 +208,7 @@ is frequently rejected.
    Legacy Contact, Facebook Legacy Contact. If one exists, use it; it overrides
    other directions (§10-104) and avoids a court order.
 2. **Order several certified death certificates** (Maine vital records, Title 22).
-3. **Get your proof of authority** — letters from DE-101/DE-201/DE-301, or the
+3. **Get your proof of authority** — letters from DE-101/DE-201/DE-301 (formal) or their (I) informal counterparts, or the
    AF-102 small-estate affidavit for a small estate.
 4. **Decide what you actually need:** closure/billing-stop and non-content assets
    (catalogue, files, money) are easy; **message/email content** likely needs a

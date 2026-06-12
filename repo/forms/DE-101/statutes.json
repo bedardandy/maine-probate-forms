@@ -1,0 +1,271 @@
+{
+  "form_id": "DE-101",
+  "summary": "Petition for formal adjudication of intestacy and appointment of a personal representative (or adjudication only).",
+  "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
+  "governing": [
+    {
+      "cite": "18-C §3-401",
+      "title": "Formal testacy proceedings; nature; when commenced",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-401.html",
+      "why": "Formal testacy proceeding — this petition asks the JUDGE (not the register) to adjudicate intestacy, after notice and hearing."
+    },
+    {
+      "cite": "18-C §3-402",
+      "title": "Formal testacy or appointment proceedings; petition; contents",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-402.html",
+      "why": "Required contents of a formal testacy/appointment petition."
+    },
+    {
+      "cite": "18-C §3-403",
+      "title": "Formal testacy proceeding; notice of hearing on petition",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-403.html",
+      "why": "Notice of hearing to interested persons; the formal proceeding is litigated on notice."
+    },
+    {
+      "cite": "18-C §3-409",
+      "title": "Formal testacy proceedings; order; foreign will",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-409.html",
+      "why": "After hearing, the court enters an order determining heirs and intestacy."
+    },
+    {
+      "cite": "18-C §3-414",
+      "title": "Formal proceedings concerning appointment of personal representative",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-414.html",
+      "why": "Formal proceedings concerning appointment of a PR."
+    },
+    {
+      "cite": "18-C §3-203",
+      "title": "Priority among persons seeking appointment as personal representative",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-203.html",
+      "why": "Priority among persons seeking appointment as PR."
+    },
+    {
+      "cite": "18-C §3-108",
+      "title": "Probate, testacy and appointment proceedings; ultimate time limit",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-108.html",
+      "why": "Three-year ultimate time limit, subject to its exceptions."
+    }
+  ],
+  "per_question": [
+    {
+      "field_id": "petition_type",
+      "considerations": [
+        {
+          "cite": "18-C §3-401",
+          "title": "Formal testacy proceedings; nature; when commenced",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-401.html",
+          "note": "Formal adjudication and formal appointment may be sought together or adjudication alone (AND/OR checkboxes)."
+        }
+      ]
+    },
+    {
+      "field_id": "petitioner_interest",
+      "considerations": [
+        {
+          "cite": "18-C §3-402",
+          "title": "Formal testacy or appointment proceedings; petition; contents",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-402.html",
+          "note": "Petitioner must state an interest giving standing to petition."
+        }
+      ]
+    },
+    {
+      "field_id": "decedent_death_date",
+      "considerations": [
+        {
+          "cite": "18-C §3-108",
+          "title": "Probate, testacy and appointment proceedings; ultimate time limit",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-108.html",
+          "note": "Death date starts the 3-year clock."
+        },
+        {
+          "cite": "18-C §8-301",
+          "title": "Time of taking effect; provisions for transition",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec8-301.html",
+          "note": "Death date selects 18-C vs former 18-A substantive law."
+        }
+      ]
+    },
+    {
+      "field_id": "died_more_than_3_years",
+      "considerations": [
+        {
+          "cite": "18-C §3-108",
+          "title": "Probate, testacy and appointment proceedings; ultimate time limit",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-108.html",
+          "note": "After 3 years a formal testacy proceeding is limited to the §3-108 exceptions (e.g. determination of heirs)."
+        }
+      ]
+    },
+    {
+      "field_id": "heirs_name_1",
+      "considerations": [
+        {
+          "cite": "18-C §2-103",
+          "title": "Share of heirs other than surviving spouse",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-103.html",
+          "note": "Heirs are determined by the intestacy statute."
+        },
+        {
+          "cite": "18-C §3-402",
+          "title": "Formal testacy or appointment proceedings; petition; contents",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-402.html",
+          "note": "The petition must list heirs so the §3-409 order can adjudicate them."
+        }
+      ]
+    },
+    {
+      "field_id": "non_registered_partner_status",
+      "considerations": [
+        {
+          "cite": "18-C §2-102",
+          "title": "Share of spouse",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-102.html",
+          "note": "Only a registered domestic partner takes a spouse-equivalent intestate share."
+        },
+        {
+          "cite": "18-C §1-201",
+          "title": "Definitions",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec1-201.html",
+          "note": "Statutory definition of 'domestic partner'."
+        }
+      ]
+    },
+    {
+      "field_id": "real_estate_in_maine",
+      "considerations": [
+        {
+          "cite": "18-C §3-201",
+          "title": "Venue for first and subsequent estate proceedings; location of property",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-201.html",
+          "note": "Maine-situs real property supports venue."
+        }
+      ]
+    },
+    {
+      "field_id": "testamentary_instrument_status",
+      "considerations": [
+        {
+          "cite": "18-C §3-402",
+          "title": "Formal testacy or appointment proceedings; petition; contents",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-402.html",
+          "note": "Petitioner must either identify an unrevoked testamentary instrument (and explain why it is not being probated) or state that diligent search found none."
+        }
+      ]
+    },
+    {
+      "field_id": "pr_relationship",
+      "considerations": [
+        {
+          "cite": "18-C §3-203",
+          "title": "Priority among persons seeking appointment as personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-203.html",
+          "note": "Relationship drives statutory priority to serve as PR."
+        }
+      ]
+    },
+    {
+      "field_id": "prior_equal_right",
+      "considerations": [
+        {
+          "cite": "18-C §3-203",
+          "title": "Priority among persons seeking appointment as personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-203.html",
+          "note": "Persons of prior or equal right must be addressed (renunciation, nomination, or notice)."
+        },
+        {
+          "cite": "18-C §3-414",
+          "title": "Formal proceedings concerning appointment of personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-414.html",
+          "note": "Formal appointment resolves competing claims of priority."
+        }
+      ]
+    },
+    {
+      "field_id": "pr_priority_question",
+      "considerations": [
+        {
+          "cite": "18-C §3-414",
+          "title": "Formal proceedings concerning appointment of personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-414.html",
+          "note": "Questions of priority or qualification are resolved by the court in the formal proceeding; if none, state 'None.'"
+        }
+      ]
+    },
+    {
+      "field_id": "bond_status",
+      "considerations": [
+        {
+          "cite": "18-C §3-603",
+          "title": "Bond not required without court order; exceptions",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-603.html",
+          "note": "Bond requirements for a PR; the court may be asked to decide."
+        },
+        {
+          "cite": "18-C §3-605",
+          "title": "Demand for bond by interested person",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-605.html",
+          "note": "An interested person may demand bond."
+        }
+      ]
+    },
+    {
+      "field_id": "publish_notice_creditors",
+      "considerations": [
+        {
+          "cite": "18-C §3-801",
+          "title": "Notice to creditors",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-801.html",
+          "note": "Optional published notice to creditors shortens the claims period."
+        }
+      ]
+    },
+    {
+      "field_id": "supervised_administration",
+      "considerations": [
+        {
+          "cite": "18-C §3-501",
+          "title": "Supervised administration; nature of proceeding",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-501.html",
+          "note": "Supervised administration is a single in rem proceeding under continuing court authority."
+        }
+      ]
+    },
+    {
+      "field_id": "renunciation_signature_1",
+      "considerations": [
+        {
+          "cite": "18-C §3-203",
+          "title": "Priority among persons seeking appointment as personal representative",
+          "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-203.html",
+          "note": "A person with priority may renounce the right to appointment or concur in the appointment sought."
+        }
+      ]
+    }
+  ],
+  "transition_18a": "Title 18-C applies to estates of decedents who die on or after 2019-09-01, and to any proceeding pending on or commenced after that date. For a decedent who died before 2019-09-01, former Title 18-A supplies the substantive succession rules even though the proceeding itself runs under 18-C. See _index/18a-key-diffs.json (governing rule: 18-C §8-301).",
+  "cross_refs": [
+    {
+      "cite": "36 M.R.S. §4107",
+      "title": "Maine estate tax: tax due date; filing of return and payment",
+      "url": "https://legislature.maine.gov/statutes/36/title36sec4107.html"
+    }
+  ],
+  "caselaw": [
+    {
+      "name": "In re Estate of Kruzynski",
+      "cite": "2000 ME 17",
+      "year": 2000,
+      "url": "https://law.justia.com/cases/maine/supreme-court/2000/2000-me-17-0.html",
+      "topic": "Three-year ultimate time limit to commence probate/appointment",
+      "holding": "No informal or formal probate or appointment proceeding may be commenced more than three years after the decedent's death (the ultimate time limit). (Former 18-A §3-108; carried forward verbatim in substance to 18-C §3-108.)",
+      "via": [
+        "18-C §3-108"
+      ],
+      "decided_under": "18-A",
+      "holding_source": "secondary"
+    }
+  ],
+  "disclaimer": "EXPERIMENTAL — AI/LLM-GENERATED, NOT ATTORNEY-REVIEWED. This statute and case-law layer is generated and annotated by an AI model; it is for consideration only — NOT legal advice and not a substitute for a licensed Maine attorney. Statute section titles/text are quoted from legislature.maine.gov, but the SELECTION of which statutes/cases bear on a field, the relevance notes, and any case-law holdings are the model's experimental annotations — they point to issues to weigh, not conclusions, and may be wrong. Verify everything against the current statute and the actual opinions; which code applies can turn on the date of death (see transition_18a).",
+  "source": "Authored from docs/statute-reference/_index/18c-sections.json (verbatim from legislature.maine.gov)."
+}

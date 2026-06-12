@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-28",
-  "n_generated": 79,
+  "generated_at": "2026-06-12",
+  "n_generated": 82,
   "n_plan_only": 0,
   "generated": [
     "AD-007",
@@ -18,9 +18,12 @@
     "APP-1",
     "APP-2",
     "CN-1",
+    "DE-101",
     "DE-101(I)",
     "DE-104",
+    "DE-201",
     "DE-201(I)",
+    "DE-301",
     "DE-301(I)",
     "DE-401",
     "DE-403",

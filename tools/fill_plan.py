@@ -286,7 +286,15 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
             recompute.append({"field_id": fid, "label": label,
                               "formula": f.get("formula")})
         elif src in _BLANK_SOURCES or fs.get("human_required"):
-            blank.append({"field_id": fid, "label": label, "reason": src})
+            # A human decision explicitly recorded in the case wins (engine
+            # doctrine: supplied values always win). Signatures stay wet-ink
+            # regardless — never written from narrative facts.
+            if (src != "wet_ink"
+                    and fid in narrative_facts
+                    and narrative_facts[fid] not in (None, "")):
+                resolved[fid] = _render_value(narrative_facts[fid])
+            else:
+                blank.append({"field_id": fid, "label": label, "reason": src})
         else:
             unresolved.append({"field_id": fid, "label": label, "source": src})
 

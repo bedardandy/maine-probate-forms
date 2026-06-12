@@ -1,0 +1,759 @@
+{
+  "form_id": "DE-301",
+  "page_size": [
+    612,
+    792
+  ],
+  "n_pages": 3,
+  "source_fused": "DE-301 Petition for Appointment of Special Administrator (Rev. 07-01-19)_fused.pdf",
+  "fields": {
+    "county_probate_court": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            122.0,
+            201.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "docket_no": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            422.0,
+            122.0,
+            552.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "estate_of_decedent": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            157.0,
+            297.0,
+            168.0
+          ]
+        }
+      ]
+    },
+    "petitioner_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            229.2,
+            552.0,
+            250.0
+          ]
+        }
+      ]
+    },
+    "petitioner_contact": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            263.6,
+            552.0,
+            284.0
+          ]
+        }
+      ]
+    },
+    "petitioner_interest": {
+      "type": "select_many",
+      "options": [
+        {
+          "value": "personal_representative",
+          "label": "Personal Representative named in the Will",
+          "page": 0,
+          "rect": [
+            90.5,
+            296.9,
+            98.5,
+            304.9
+          ]
+        },
+        {
+          "value": "surviving_spouse",
+          "label": "Surviving spouse",
+          "page": 0,
+          "rect": [
+            90.5,
+            308.4,
+            98.5,
+            316.4
+          ]
+        },
+        {
+          "value": "domestic_partner",
+          "label": "Domestic partner",
+          "page": 0,
+          "rect": [
+            90.5,
+            319.8,
+            98.5,
+            327.8
+          ]
+        },
+        {
+          "value": "devisee",
+          "label": "Devisee",
+          "page": 0,
+          "rect": [
+            90.5,
+            331.2,
+            98.5,
+            339.2
+          ]
+        },
+        {
+          "value": "heir",
+          "label": "Heir",
+          "page": 0,
+          "rect": [
+            90.5,
+            342.8,
+            98.5,
+            350.8
+          ]
+        },
+        {
+          "value": "creditor",
+          "label": "Creditor",
+          "page": 0,
+          "rect": [
+            90.5,
+            354.3,
+            98.5,
+            362.3
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "page": 0,
+          "rect": [
+            90.5,
+            365.9,
+            98.5,
+            373.9
+          ]
+        }
+      ]
+    },
+    "petitioner_interest_other": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            97.0,
+            367.0,
+            162.0,
+            379.0
+          ]
+        }
+      ]
+    },
+    "petitioner_interest_other_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            378.5,
+            552.0,
+            450.0
+          ]
+        }
+      ]
+    },
+    "decedent_full_legal_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            401.5,
+            552.0,
+            423.0
+          ]
+        }
+      ]
+    },
+    "date_of_death": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            436.0,
+            552.0,
+            456.0
+          ]
+        }
+      ]
+    },
+    "decedent_domicile": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            470.5,
+            552.0,
+            491.0
+          ]
+        }
+      ]
+    },
+    "domiciled_in_county": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 0,
+          "rect": [
+            315.8,
+            492.4,
+            323.8,
+            500.4
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 0,
+          "rect": [
+            348.6,
+            492.5,
+            356.6,
+            500.5
+          ]
+        }
+      ]
+    },
+    "venue_basis_if_not_domiciled": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            505.0,
+            552.0,
+            547.0
+          ]
+        }
+      ]
+    },
+    "person_whose_appointment_is_sought": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            574.0,
+            552.0,
+            616.0
+          ]
+        }
+      ]
+    },
+    "will_presented_for_probate": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 0,
+          "rect": [
+            384.5,
+            618.8,
+            392.5,
+            626.8
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 0,
+          "rect": [
+            417.2,
+            618.8,
+            425.2,
+            626.8
+          ]
+        }
+      ]
+    },
+    "will_details": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            631.5,
+            552.0,
+            675.0
+          ]
+        }
+      ]
+    },
+    "nominated_as_pr_in_will": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 0,
+          "rect": [
+            193.2,
+            687.9,
+            201.2,
+            695.9
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 0,
+          "rect": [
+            226.0,
+            687.9,
+            234.0,
+            695.9
+          ]
+        }
+      ]
+    },
+    "nomination_explanation": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 0,
+          "rect": [
+            72.0,
+            701.0,
+            552.0,
+            774.0
+          ]
+        }
+      ]
+    },
+    "reason_for_special_admin": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            86.4,
+            542.0,
+            134.0
+          ]
+        }
+      ]
+    },
+    "appointment_without_notice": {
+      "type": "select_one",
+      "options": [
+        {
+          "value": "yes",
+          "label": "YES",
+          "page": 1,
+          "rect": [
+            245.5,
+            135.8,
+            253.5,
+            143.8
+          ]
+        },
+        {
+          "value": "no",
+          "label": "NO",
+          "page": 1,
+          "rect": [
+            278.2,
+            135.8,
+            286.2,
+            143.8
+          ]
+        }
+      ]
+    },
+    "emergency_nature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            148.5,
+            542.0,
+            191.0
+          ]
+        }
+      ]
+    },
+    "interested_party_name_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.8,
+            239.6,
+            305.9,
+            263.2
+          ]
+        }
+      ]
+    },
+    "interested_party_addr_1": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            306.4,
+            239.6,
+            545.2,
+            263.2
+          ]
+        }
+      ]
+    },
+    "interested_party_name_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.8,
+            263.2,
+            305.9,
+            286.7
+          ]
+        }
+      ]
+    },
+    "interested_party_addr_2": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            306.4,
+            263.2,
+            545.2,
+            286.7
+          ]
+        }
+      ]
+    },
+    "interested_party_name_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.8,
+            286.7,
+            305.9,
+            310.1
+          ]
+        }
+      ]
+    },
+    "interested_party_addr_3": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            306.4,
+            286.7,
+            545.2,
+            310.1
+          ]
+        }
+      ]
+    },
+    "interested_party_name_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            66.8,
+            310.1,
+            305.9,
+            333.6
+          ]
+        }
+      ]
+    },
+    "interested_party_addr_4": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            306.4,
+            310.1,
+            545.2,
+            333.6
+          ]
+        }
+      ]
+    },
+    "petitioner_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            305.9,
+            372.0,
+            513.0,
+            391.0
+          ]
+        }
+      ]
+    },
+    "date_signed": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            373.0,
+            212.6,
+            391.0
+          ]
+        }
+      ]
+    },
+    "attorney_name": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            434.5,
+            234.6,
+            451.0
+          ]
+        }
+      ]
+    },
+    "attorney_address": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            462.4,
+            234.6,
+            480.0
+          ]
+        },
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            491.4,
+            234.6,
+            509.0
+          ]
+        }
+      ]
+    },
+    "attorney_phone": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 1,
+          "rect": [
+            72.0,
+            520.3,
+            234.6,
+            537.0
+          ]
+        }
+      ]
+    },
+    "special_admin_acceptance_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            101.0,
+            147.0,
+            288.0,
+            161.0
+          ]
+        }
+      ]
+    },
+    "special_admin_acceptance_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            360.0,
+            148.0,
+            543.0,
+            161.0
+          ]
+        }
+      ]
+    },
+    "order_limitations": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            326.0,
+            543.0,
+            339.0
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            338.6,
+            543.0,
+            352.1
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            352.1,
+            543.0,
+            365.6
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            365.6,
+            543.0,
+            379.1
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            379.1,
+            543.0,
+            392.6
+          ]
+        },
+        {
+          "page": 2,
+          "rect": [
+            72.0,
+            392.6,
+            543.0,
+            406.2
+          ]
+        }
+      ]
+    },
+    "judge_date": {
+      "type": "date",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            101.0,
+            462.0,
+            288.0,
+            476.0
+          ]
+        }
+      ]
+    },
+    "judge_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            360.0,
+            463.0,
+            543.0,
+            476.0
+          ]
+        }
+      ]
+    },
+    "certified_copy_date": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            156.0,
+            519.0,
+            288.0,
+            533.0
+          ]
+        }
+      ]
+    },
+    "register_signature": {
+      "type": "text",
+      "widgets": [
+        {
+          "page": 2,
+          "rect": [
+            360.0,
+            520.0,
+            543.0,
+            533.0
+          ]
+        }
+      ]
+    }
+  }
+}

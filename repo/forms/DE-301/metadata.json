@@ -1,0 +1,9 @@
+{
+  "form_id": "DE-301",
+  "title": "Petition for Formal Appointment of Special Administrator",
+  "category": "estates",
+  "source_url": "http://www.maineprobate.net/Forms2019/Estates/DE-301%20Petition%20for%20Appointment%20of%20Special%20Administrator%20(Rev.%2007-01-19).pdf",
+  "source": "maineprobate.net (2019 forms)",
+  "n_fields": 41,
+  "artifact": "Fillable PDF is not shipped. Fetch the flat source from source_url, then fill it with tools/fill_pdf.py using this form's fill_geometry.json (no detection pipeline needed at fill time; see docs/automation-quickstart.md)."
+}
