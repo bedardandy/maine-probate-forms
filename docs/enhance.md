@@ -26,8 +26,8 @@ Steps whose external tool is missing **skip with a warning**.
 ## CLI
 ```bash
 python3 tools/enhance.py --catalog                       # steps + presets + tool availability
-python3 tools/enhance.py --form DE-101 --preset fillable --out out.pdf
-python3 tools/enhance.py --form DE-101 --preset filled --case case.json --out out.pdf
+python3 tools/enhance.py --form "DE-101(I)" --preset fillable --out out.pdf
+python3 tools/enhance.py --form "DE-101(I)" --preset filled --case case.json --out out.pdf
 python3 tools/enhance.py --form DE-104 --steps embed_fonts,formfields,tag --out out.pdf --fresh
 ```
 

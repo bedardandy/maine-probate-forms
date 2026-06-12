@@ -34,18 +34,35 @@ def _tok(t: str) -> set[str]:
 # A form id mentioned verbatim ("DE-101", "de 101", "pp108") must win outright:
 # the keyword scorer drops short prefix tokens like "de" (len>2 filter), so
 # without this short-circuit an exact id routes on "101" alone — poorly.
-_ID_RE = re.compile(r"\b([A-Za-z]{2,4})[-_ ]?(\d{1,3}[A-Za-z]?)\b")
+#
+# Estate forms come in formal/informal pairs sharing a number: the bare id
+# (DE-101) is the FORMAL petition; the "(I)" id (DE-101(I)) is the informal
+# application — that suffix is printed on the form itself. A bare-id query
+# pins the formal first but surfaces both; "(i)" or the word "informal"
+# pins the informal variant.
+_ID_RE = re.compile(
+    r"\b([A-Za-z]{2,4})[-_ ]?(\d{1,3}[A-Za-z]?)(\s*\(\s*i\s*\))?", re.I)
 
 
 def _exact_id_hits(query: str) -> list[str]:
     forms = {p.name.upper(): p.name
              for p in (ROOT / "repo" / "forms").iterdir()
              if (p / "metadata.json").exists()}
+    q = query or ""
+    # \b keeps "informal" from matching "formal" (n→f is not a boundary).
+    informal_q = bool(re.search(r"\binformal(ly)?\b", q, re.I))
+    formal_q = bool(re.search(r"\bformal(ly)?\b", q, re.I))
     out = []
-    for m in _ID_RE.finditer(query or ""):
-        fid = forms.get(f"{m.group(1)}-{m.group(2)}".upper())
-        if fid and fid not in out:
-            out.append(fid)
+    for m in _ID_RE.finditer(q):
+        base = f"{m.group(1)}-{m.group(2)}".upper()
+        if m.group(3) or (informal_q and not formal_q):
+            variants = [f"{base}(I)", base]
+        else:
+            variants = [base, f"{base}(I)"]
+        for v in variants:
+            fid = forms.get(v)
+            if fid and fid not in out:
+                out.append(fid)
     return out
 
 

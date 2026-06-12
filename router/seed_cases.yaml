@@ -55,7 +55,7 @@ cases:
       payload:
         deceased_party_role: decedent
     expected_forms:
-      - DE-101            # intestate informal probate application
+      - DE-101(I)         # intestate informal probate application
     negative_forms:
       - PP-507            # emergency guardianship — wrong case type
 
@@ -94,7 +94,7 @@ cases:
     expected_forms:
       - PP-507            # affidavit for emergency G/C
     negative_forms:
-      - DE-101            # intestate probate — wrong case type
+      - DE-101(I)         # intestate probate — wrong case type
 
   - id: case_conservator_anniversary_account
     description: >
@@ -126,4 +126,4 @@ cases:
     expected_forms:
       - PP-407            # conservator account
     negative_forms:
-      - DE-101
+      - DE-101(I)

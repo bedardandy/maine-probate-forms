@@ -18,7 +18,7 @@ disambiguation notes) and pick directly. Or shortlist by keyword:
 ```bash
 python3 tools/find_forms.py "informal probate of a will"
 ```
-(an exact form id in the query, e.g. "DE-101", wins outright). Use
+(an exact form id in the query, e.g. "DE-101", wins outright; bare estate ids are the FORMAL petitions, informal applications carry an "(I)" suffix, e.g. "DE-101(I)"). Use
 `tools/route_form.py` only when an OpenAI-compatible router endpoint is
 configured (`ROUTER_BASE_URL`/`ROUTER_MODEL`).
 

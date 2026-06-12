@@ -90,7 +90,7 @@
       "num_pages": 3,
       "url": "http://www.maineprobate.net/forms2019/Name%20Change%20Adult/CN-1%20Name%20Change%20Petition%20(Rev.%2011-03-24).pdf"
     },
-    "DE-101": {
+    "DE-101(I)": {
       "sha256": "55c2a334e28198016dab5deb2a3c1ffcfaaee25bf1b58d1e7ffa12a228b6e69e",
       "bytes": 62130,
       "num_pages": 4,
@@ -102,13 +102,13 @@
       "num_pages": 1,
       "url": "http://www.maineprobate.net/Forms2019/Estates/DE-104%20PR%20Acceptance%20(Rev.%2007-01-19).pdf"
     },
-    "DE-201": {
+    "DE-201(I)": {
       "sha256": "8a491ed6d3d279694d198249f11cf864ecfd05c04d4fb575cef419948170f6e8",
       "bytes": 85007,
       "num_pages": 5,
       "url": "http://www.maineprobate.net/Forms2019/Estates/DE-201(I)%20Application%20for%20Informal%20Probate%20of%20Will%20or%20Appointment%20(Rev.%2009-12-19).pdf"
     },
-    "DE-301": {
+    "DE-301(I)": {
       "sha256": "07d9eb2b19cff5bbf49baf43a4de037fef9dae544d0827c18fcc1b18540edff4",
       "bytes": 25571,
       "num_pages": 3,

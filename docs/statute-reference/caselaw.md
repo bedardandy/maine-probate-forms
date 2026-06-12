@@ -43,7 +43,7 @@ Each case is tied to forms through the statute(s) it bears on (see the per-form 
 - **Topic:** Three-year ultimate time limit to commence probate/appointment
 - **Decided under:** 18-A
 - **Bears on:** 18-C §3-108
-- **Tied to forms:** [DE-101](DE-101.md), [DE-201](DE-201.md), [DE-507](DE-507.md)
+- **Tied to forms:** [DE-101(I)](DE-101(I).md), [DE-201(I)](DE-201(I).md), [DE-507](DE-507.md)
 - **Holding (from published summaries — verify against the opinion):** No informal or formal probate or appointment proceeding may be commenced more than three years after the decedent's death (the ultimate time limit). (Former 18-A §3-108; carried forward verbatim in substance to 18-C §3-108.)
 
 ## [Estate of Staples, 672 A.2d 99](https://law.justia.com/cases/maine/supreme-court/1996/672-a-2d-99-0.html) (1996)
@@ -51,7 +51,7 @@ Each case is tied to forms through the statute(s) it bears on (see the per-form 
 - **Topic:** Creditors' claims — nonclaim bar
 - **Decided under:** 18-A
 - **Bears on:** 18-C §3-803
-- **Tied to forms:** [DE-101](DE-101.md), [DE-201](DE-201.md), [DE-503](DE-503.md)
+- **Tied to forms:** [DE-101(I)](DE-101(I).md), [DE-201(I)](DE-201(I).md), [DE-503](DE-503.md)
 - **Holding (from published summaries — verify against the opinion):** The nonclaim statute bars payment of a creditor claim that was not presented and pursued within the statutory period; a court cannot authorize payment of a claim already barred. (Former 18-A; the nonclaim limitations continue in 18-C §3-803.)
 
 ## [In re Estate of Lewis, 2001 ME 74](https://law.justia.com/cases/maine/supreme-court/2001/2001-me-74-0.html) (2001)
@@ -59,7 +59,7 @@ Each case is tied to forms through the statute(s) it bears on (see the per-form 
 - **Topic:** Will contest — undue influence; clear and convincing evidence
 - **Decided under:** 18-A
 - **Bears on:** 18-C §2-501, 18-C §3-407
-- **Tied to forms:** [DE-201](DE-201.md)
+- **Tied to forms:** [DE-201(I)](DE-201(I).md)
 - **Holding (from published summaries — verify against the opinion):** Undue influence sufficient to invalidate a will must be established by clear and convincing evidence; a confidential relationship between the testator and a beneficiary can affect the analysis. (Will-validity and contested-testacy principles; in 18-C, contested testacy and burdens are addressed in §§3-401 to 3-407.)
 
 ## [Estate of Record, 534 A.2d 1319](https://law.justia.com/cases/maine/supreme-court/1987/534-a-2d-1319-0.html) (1987)
@@ -67,7 +67,7 @@ Each case is tied to forms through the statute(s) it bears on (see the per-form 
 - **Topic:** Will contest — burden of proof on capacity and undue influence
 - **Decided under:** 18-A
 - **Bears on:** 18-C §2-501, 18-C §3-407
-- **Tied to forms:** [DE-201](DE-201.md)
+- **Tied to forms:** [DE-201(I)](DE-201(I).md)
 - **Holding (from published summaries — verify against the opinion):** The party contesting a will offered for probate bears the burden of proving either the decedent's lack of testamentary capacity or the exertion of undue influence. (Burden allocation reflected in 18-C §3-407.)
 
 ## [Estate of Dodge, 576 A.2d 755](https://law.justia.com/cases/maine/supreme-court/1990/576-a-2d-755-0.html) (1990)
@@ -75,7 +75,7 @@ Each case is tied to forms through the statute(s) it bears on (see the per-form 
 - **Topic:** Will contest — undue influence; clear and convincing evidence
 - **Decided under:** 18-A
 - **Bears on:** 18-C §2-501, 18-C §3-407
-- **Tied to forms:** [DE-201](DE-201.md)
+- **Tied to forms:** [DE-201(I)](DE-201(I).md)
 - **Holding (from published summaries — verify against the opinion):** Undue influence must be proven by clear and convincing evidence. (Will-validity principle; contested-testacy procedure now in 18-C §§3-401 to 3-407.)
 
 ## [Estate of Fisher, 545 A.2d 1266](https://law.justia.com/cases/maine/supreme-court/1988/545-a-2d-1266-0.html) (1988)

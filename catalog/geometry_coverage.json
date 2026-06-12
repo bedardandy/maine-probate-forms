@@ -209,8 +209,8 @@
         }
       ]
     },
-    "DE-101": {
-      "form_id": "DE-101",
+    "DE-101(I)": {
+      "form_id": "DE-101(I)",
       "n_mapped": 102,
       "n_unmapped": 0,
       "unmapped": []
@@ -221,14 +221,14 @@
       "n_unmapped": 0,
       "unmapped": []
     },
-    "DE-201": {
-      "form_id": "DE-201",
+    "DE-201(I)": {
+      "form_id": "DE-201(I)",
       "n_mapped": 116,
       "n_unmapped": 0,
       "unmapped": []
     },
-    "DE-301": {
-      "form_id": "DE-301",
+    "DE-301(I)": {
+      "form_id": "DE-301(I)",
       "n_mapped": 40,
       "n_unmapped": 1,
       "unmapped": [

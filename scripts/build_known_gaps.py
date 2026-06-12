@@ -43,7 +43,7 @@ HAND_CURATED_SKILL_MD = {
     # Orange-tier batch 3:
     "DE-403", "GS-008", "GS-008.vA", "MISC-101", "PP-201",
     # Yellow-tier high-volume batch:
-    "DE-201", "AD-026", "DE-603", "DE-101", "PP-107", "N-112",
+    "DE-201(I)", "AD-026", "DE-603", "DE-101(I)", "PP-107", "N-112",
     # Order/decree forms batch:
     "DE-501", "DE-504",
     # Adoption batch:

@@ -42,7 +42,7 @@ written into this repo (`--repo .`, the default).
 python3 scripts/regen_fill_geometry.py \
     --pipeline-root /path/to/detection-pipeline \
     --repo .
-# subset:  --forms DE-101,PP-203
+# subset:  --forms "DE-101(I)",PP-203
 
 # validate, review, commit
 python3 scripts/verify_fill_geometry.py --repo .

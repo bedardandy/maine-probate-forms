@@ -97,7 +97,7 @@ branching in the doc-assembly tool, then fill the Maine PDF via the
 
 ```bash
 # everything for one form, one folder per paradigm
-python3 tools/export/export_form.py --form DE-101 --target all --out out/DE-101
+python3 tools/export/export_form.py --form "DE-101(I)" --target all --out "out/DE-101(I)"
 
 # just the e-sign payloads
 python3 tools/export/export_form.py --form N-118 --target esign --out out/N-118

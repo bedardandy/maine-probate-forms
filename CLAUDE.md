@@ -15,7 +15,7 @@ Not legal advice; output is a draft to verify against the official form.
      (~1.5k tokens — id | category | title + disambiguation notes) and pick
      directly.
    - Shortcut: `python3 tools/find_forms.py "<situation>"` for a keyword
-     shortlist (an exact id in the query, e.g. "DE-101", wins outright).
+     shortlist (an exact id in the query, e.g. "DE-101", wins outright; bare estate ids are the FORMAL petitions, informal applications carry an "(I)" suffix, e.g. "DE-101(I)").
    - `python3 tools/route_form.py` only when an OpenAI-compatible router
      endpoint is configured (`ROUTER_BASE_URL`/`ROUTER_MODEL`).
 2. **Understand the form:** read `repo/forms/<ID>/skill.md` (filer role,
@@ -46,7 +46,7 @@ Not legal advice; output is a draft to verify against the official form.
    unresolved facts.
 
 Worked example: `docs/agent-workflow.md` and
-`repo/forms/DE-101/examples/case.example.json`. The packaged skill lives at
+`repo/forms/DE-101(I)/examples/case.example.json`. The packaged skill lives at
 `skills/probate-route-and-fill/SKILL.md`.
 
 ### MCP (recommended for agents)

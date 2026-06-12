@@ -27,7 +27,7 @@ and VLM-free** — follow it directly; do not explore the heavy detection pipeli
      (~1.5k tokens — every form id | category | title + disambiguation notes)
      and pick the best id directly.
    - **Shortcut:** `python3 tools/find_forms.py "<situation>"` for a keyword
-     shortlist (an exact form id in the query, e.g. "DE-101", wins outright).
+     shortlist (an exact form id in the query, e.g. "DE-101", wins outright; bare estate ids are the FORMAL petitions, informal applications carry an "(I)" suffix, e.g. "DE-101(I)").
    - **Only if** an OpenAI-compatible router endpoint is configured
      (`ROUTER_BASE_URL`/`ROUTER_MODEL`):
      `python3 tools/route_form.py --json "<situation>"`.

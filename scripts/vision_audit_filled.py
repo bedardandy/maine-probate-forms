@@ -40,7 +40,7 @@ from modules.form_filler import fill_form  # noqa: E402
 PILOT: list[tuple[str, str, str]] = [
     # (case_id, event_tag, form_id) — covers currency-fix, vanilla, and
     # all newly-routed claim/disallowance forms.
-    ("2024-CP-011493", "e1_decedent_death_date",            "DE-101"),
+    ("2024-CP-011493", "e1_decedent_death_date",            "DE-101(I)"),
     ("2024-CP-011493", "e2_pr_appointment_date",            "DE-405"),
     ("2024-CP-011493", "e3_claim_filing_date",              "DE-503"),
     ("2024-CP-011493", "e4_claim_disallowance_notice_date", "DE-504"),

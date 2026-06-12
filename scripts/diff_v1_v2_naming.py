@@ -16,7 +16,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PANEL = ["GS-001", "AD-001", "DE-201", "PP-205", "N-115"]
+PANEL = ["GS-001", "AD-001", "DE-201(I)", "PP-205", "N-115"]
 OUT = ROOT / "reports" / "v1_vs_v2_naming.md"
 
 

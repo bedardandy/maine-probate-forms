@@ -78,7 +78,7 @@ T_PROC = (
 # ---------------------------------------------------------------------------
 FORMS: dict[str, dict] = {
     # ===================== DECEDENT ESTATES (DE-*, AF-102) =================
-    "DE-101": {
+    "DE-101(I)": {
         "summary": "Application for informal probate / appointment — intestate.",
         "transition": T_ESTATE,
         "governing": [
@@ -101,11 +101,11 @@ FORMS: dict[str, dict] = {
             ("bond_requirement", [("18-C §3-603", "Bond is not required for an informal PR unless ordered or demanded."), ("18-C §3-605", "An interested person may demand bond.")]),
             ("demand_for_notice", [("18-C §3-204", "Anyone with an interest may file a demand for notice of orders/filings.")]),
             ("request_publish_notice_creditors", [("18-C §3-801", "Optional published notice to creditors shortens the claims period."), ("18-C §3-803", "Non-claim limitations on presentation of creditor claims.")]),
-            ("testamentary_instrument", [(None, "Intestate form: the applicant is representing there is no will to be probated; if a will exists, use DE-201 instead.")]),
+            ("testamentary_instrument", [(None, "Intestate form: the applicant is representing there is no will to be probated; if a will exists, use DE-201(I) instead.")]),
         ],
         "cross_refs": ["36 M.R.S. §4107"],
     },
-    "DE-201": {
+    "DE-201(I)": {
         "summary": "Application for informal probate of will and/or appointment — testate.",
         "transition": T_ESTATE,
         "governing": [
@@ -128,7 +128,7 @@ FORMS: dict[str, dict] = {
         ],
         "cross_refs": ["36 M.R.S. §4107"],
     },
-    "DE-301": {
+    "DE-301(I)": {
         "summary": "Application for informal appointment of a special administrator.",
         "transition": T_ESTATE,
         "governing": [

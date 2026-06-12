@@ -19,11 +19,11 @@ pip install -r requirements.txt
 ## 2. Inspect a package
 
 ```bash
-ls repo/forms/DE-101/          # schema.json  fields.csv  fill_geometry.json  metadata.json
+ls "repo/forms/DE-101(I)"/          # schema.json  fields.csv  fill_geometry.json  metadata.json
 python3 - <<'PY'
 import json
-m = json.load(open("repo/forms/DE-101/metadata.json"))
-s = json.load(open("repo/forms/DE-101/schema.json"))
+m = json.load(open("repo/forms/DE-101(I)/metadata.json"))
+s = json.load(open("repo/forms/DE-101(I)/schema.json"))
 print(m["title"], "—", m["category"], "—", s["n_fields"], "fields")
 print("source PDF:", m["source_url"])
 PY
@@ -36,9 +36,9 @@ PY
 ```bash
 python3 - <<'PY'
 import json, urllib.request
-m = json.load(open("repo/forms/DE-101/metadata.json"))
+m = json.load(open("repo/forms/DE-101(I)/metadata.json"))
 rq = urllib.request.Request(m["source_url"], headers={"User-Agent": "Mozilla/5.0"})
-open("DE-101.source.pdf", "wb").write(urllib.request.urlopen(rq, timeout=60).read())
+open("DE-101I.source.pdf", "wb").write(urllib.request.urlopen(rq, timeout=60).read())
 PY
 ```
 
@@ -48,12 +48,12 @@ verified against `catalog/pdf_manifest.json` — when `--source` is omitted.)
 ## 4. Plan the fill
 
 Build a canonical case object (see `docs/agent-workflow.md` for the shape; a
-worked one ships at `repo/forms/DE-101/examples/case.example.json`) and resolve
+worked one ships at `repo/forms/DE-101(I)/examples/case.example.json`) and resolve
 it against the schema:
 
 ```bash
-python3 tools/fill_plan.py --form DE-101 --case repo/forms/DE-101/examples/case.example.json
-# DE-101: 83 fields — resolved 19, narrative 44 (agent fills), recompute 0, blank 16, unresolved 0, skipped 4
+python3 tools/fill_plan.py --form "DE-101(I)" --case "repo/forms/DE-101(I)/examples/case.example.json"
+# DE-101(I): 83 fields — resolved 19, narrative 44 (agent fills), recompute 0, blank 16, unresolved 0, skipped 4
 ```
 
 The plan buckets every field: `resolved` (filled from the case), `narrative`
@@ -65,9 +65,9 @@ because the controlling choice isn't set to it).
 ## 5. Write the filled PDF
 
 ```bash
-python3 tools/fill_pdf.py --form DE-101 \
-    --case repo/forms/DE-101/examples/case.example.json \
-    --source DE-101.source.pdf --out DE-101.filled.pdf
+python3 tools/fill_pdf.py --form "DE-101(I)" \
+    --case "repo/forms/DE-101(I)/examples/case.example.json" \
+    --source DE-101I.source.pdf --out DE-101I.filled.pdf
 ```
 
 `fill_pdf.py` reads `fill_geometry.json` (`field_id → widget rects`) and writes

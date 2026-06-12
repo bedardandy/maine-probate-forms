@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 # Scraped from https://www.maineprobate.net/welcome/probateforms-2019/
 FORM_URLS: dict[str, list[str]] = {
     "estates": [
-        "http://www.maineprobate.net/Forms2019/Estates/DE-101%20Petition%20for%20Formal%20Adjudication%20or%20Formal%20Appointment%20-%20Intestate%20(Rev%2007.01.19).pdf",
+        "http://www.maineprobate.net/Forms2019/Estates/DE-101%20Petition%20for%20Formal%20Adjudication%20or%20Formal%20Appointment%20-%20Intestate%20(Rev%20%2007.01.19).pdf",
         "http://www.maineprobate.net/Forms2019/Estates/DE-101(I)%20Application%20for%20Informal%20-%20Intestate%20(Rev.%2009-12-19).pdf",
         "http://www.maineprobate.net/Forms2019/Estates/DE-104%20PR%20Acceptance%20(Rev.%2007-01-19).pdf",
         "http://www.maineprobate.net/Forms2019/Estates/DE-201%20Petition%20for%20Formal%20Probate%20of%20Will%20or%20Appointmet%20of%20PR%20(Rev.%208-6-21).pdf",

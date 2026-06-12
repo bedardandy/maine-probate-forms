@@ -4,7 +4,7 @@ A real probate case doesn't fire one form at one event — it produces a
 **stream** of filings across months or years:
 
   estate_intestate:
-    [death] → DE-101 application
+    [death] → DE-101(I) application
     [appointment_order_date, +30 days] → DE-104 PR acceptance
     [pr_appointment_date, +90 days] → DE-405 inventory
     [appointment_anniversary, +365 days] → annual account

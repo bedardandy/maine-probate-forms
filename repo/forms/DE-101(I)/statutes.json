@@ -1,5 +1,5 @@
 {
-  "form_id": "DE-101",
+  "form_id": "DE-101(I)",
   "summary": "Application for informal probate / appointment — intestate.",
   "applies": "Title 18-C (Maine Uniform Probate Code), effective 2019-09-01 — see transition_18a.",
   "governing": [
@@ -196,7 +196,7 @@
       "field_id": "testamentary_instrument",
       "considerations": [
         {
-          "note": "Intestate form: the applicant is representing there is no will to be probated; if a will exists, use DE-201 instead."
+          "note": "Intestate form: the applicant is representing there is no will to be probated; if a will exists, use DE-201(I) instead."
         }
       ]
     }

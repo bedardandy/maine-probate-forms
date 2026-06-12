@@ -25,10 +25,10 @@ See [`_index/18a-key-diffs.json`](_index/18a-key-diffs.json) for the material 18
 
 ### Decedent's Estates — Probate & Administration
 
-- [DE-101](DE-101.md) — Application for Informal Probate / Appointment - Intestate (6 governing, 12 per-question)
+- [DE-101(I)](DE-101(I).md) — Application for Informal Probate / Appointment - Intestate (6 governing, 12 per-question)
 - [DE-104](DE-104.md) — PR Acceptance (2 governing, 1 per-question)
-- [DE-201](DE-201.md) — Application for Informal Probate of Will or Appointment (6 governing, 8 per-question)
-- [DE-301](DE-301.md) — Application for Informal Appointment of Special Administrator (3 governing, 3 per-question)
+- [DE-201(I)](DE-201(I).md) — Application for Informal Probate of Will or Appointment (6 governing, 8 per-question)
+- [DE-301(I)](DE-301(I).md) — Application for Informal Appointment of Special Administrator (3 governing, 3 per-question)
 - [DE-401](DE-401.md) — Certificate of Value Resident and Non Resident (1 governing, 5 per-question)
 - [DE-403](DE-403.md) — Bond For Personal Representative (4 governing, 3 per-question)
 - [DE-405](DE-405.md) — Inventory (3 governing, 3 per-question)
