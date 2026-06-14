@@ -21,10 +21,41 @@ tier 1    vl_vote.py          N local vision LLMs vote a flat micro-schema
                               per flagged unit (+ clean controls to measure
                               voter false-positive rate); majority consensus
 tier 2    adjudicate_codex.py Codex CLI (image attached) settles disputes
-tier 3    (apply fixes)       confirmed findings become rect nudges in
-                              fill_geometry.json, gated by
-                              scripts/verify_fill_geometry.py + re-render
+tier 3    apply_fixes.py      confirmed findings + codex-major disputes become
+          fix_worklist.py     deterministic rect nudges in fill_geometry.json
+                              (label x0-shift, county x1-trim, embedded trim),
+                              gated by verify_fill_geometry.py + re-render
+tier 4    build_poll.py       what stays ambiguous after the automated fixes
+          serve_poll.py       (widget-on-heading, full-width detail fields)
+          apply_decisions.py  goes to a browser poll: each unit's problem area
+                              rendered current-vs-candidate, the reviewer picks
+                              A/B/C/Other, picks apply back to fill_geometry
+          rebuild_worklist.py honestly re-derives the open list from the
+                              post-fix re-sweep (filters benign residuals)
 ```
+
+## Human-review poll (tier 4)
+
+When the automated fixes leave genuine widget-placement judgment calls,
+render them as a poll and let a reviewer decide in a browser:
+
+```bash
+OUT=~/geom-review-out
+python3 scripts/geometry_review/rebuild_worklist.py --out $OUT \
+    --verify-dir <post-fix re-sweep dir> --write catalog/geometry_review_worklist.tsv
+python3 scripts/geometry_review/build_poll.py  --out $OUT     # candidates + crops
+python3 scripts/geometry_review/serve_poll.py  --out $OUT --port 8770
+#   browse http://<host>:8770/  (Tailscale/LAN), or from a laptop:
+#   ssh -L 8770:localhost:8770 <host>  then http://localhost:8770/
+python3 scripts/geometry_review/apply_decisions.py --out $OUT --apply
+```
+
+Each unit shows the current placement (red box) beside candidate fixes
+(blue box) — shift past the label, trim before printed text, drop to the
+next line — each rendered with a realistic sample value through the real
+fill pipeline. Picks (and free-text "Other" notes) are recorded to
+`human_decisions.jsonl`; the poll is resumable. `apply_decisions.py` writes
+the chosen rects back; "leave as-is"/"skip"/"other" make no geometry change.
 
 Run (endpoints stay in the environment — never commit them):
 
