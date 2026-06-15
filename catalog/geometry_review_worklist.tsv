@@ -47,7 +47,7 @@ PP-405	desc_real_property_2	0	needs_review	vision_confirmed	analytic	{"print_ove
 PP-405	desc_real_property_3	0	needs_review	vision_confirmed	analytic	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
 PP-405	desc_real_property_4	0	needs_review	vision_confirmed	analytic	{"print_overlap": ["Real", "Property:"], "starts_under_label": ["Real"]}
 PP-405	name_surety_2_personal	0	needs_review	vision_confirmed	analytic	{"print_overlap": ["Personal", "Property:"]}
-PP-405	penal_sum_word	0	needs_review	vision_confirmed	analytic	{"print_overlap": ["dollars,", "to", "in", "this", "Estate;", "to"], "sits_below_line": -3.5}
+PP-405	penal_sum_word	0	needs_review	vision_confirmed	analytic	{"print_overlap": ["in", "this", "Estate;", "to", "the"], "sits_below_line": -3.5}
 PP-405	real_property_value_detail	0	needs_review	vision_confirmed	ocr	token_offset
 PP-412	conservator_printed_name	0	needs_review	vision_confirmed	analytic	{"sits_below_line": -9.0}
 PP-506	cognition_detail	1	needs_review	vision_confirmed	analytic	{"print_overlap": ["Functional", "Abilities:"], "starts_under_label": ["Functional"]}
