@@ -142,8 +142,13 @@ def analytics_text(rect: fitz.Rect, feats: dict, align: str = "left") -> dict:
         if not cands:
             flags["no_line_support"] = True
         else:
+            # delta = line_y - rect.y1. Negative => rect bottom is BELOW the
+            # line, so centered text drops onto it and descenders merge. The
+            # human poll showed this starts being visible around -2.5pt
+            # (clean fields sit at -1..+1); the old -0.6*height (~-8pt) gate
+            # missed the whole population. snap_underline.py lifts these.
             delta = round(min(cands, key=lambda y: abs(y - rect.y1)) - rect.y1, 1)
-            if delta < -0.6 * rect.height:          # rect hangs below its line
+            if delta < -2.5:                         # rect hangs below its line
                 flags["sits_below_line"] = delta
             elif delta > 6:                          # rect floats above the line
                 flags["floats_above_line"] = delta
