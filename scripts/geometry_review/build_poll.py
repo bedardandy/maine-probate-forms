@@ -105,6 +105,19 @@ def candidates(rect: fitz.Rect, feats: dict) -> list[tuple[str, list]]:
         out.append(("move down onto the next line",
                     [round(R.x0, 1), round(R.y0 + shift, 1),
                      round(R.x1, 1), round(R.y1 + shift, 1)]))
+    # lift onto the line: rect bottom sits below its supporting underline
+    # (the dominant trend the reviewer surfaced — text drops onto the line)
+    onln = [y for x0, x1, y in feats["hlines"]
+            if R.y0 - 4 <= y <= R.y1 + 8
+            and min(R.x1, x1) - max(R.x0, x0) > 0.3 * R.width]
+    if onln:
+        uy = min(onln, key=lambda y: abs(y - R.y1))
+        lift = (R.y1 - uy) - 0.5
+        if lift > 1.5:
+            lift = min(lift, 6.0)
+            out.append(("lift up onto the line",
+                        [round(R.x0, 1), round(R.y0 - lift, 1),
+                         round(R.x1, 1), round(R.y1 - lift, 1)]))
     seen, ded = set(), []
     for label, rc in out:
         if tuple(rc) in seen:
