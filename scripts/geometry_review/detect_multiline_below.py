@@ -21,9 +21,18 @@ dropped by the closed-fact regex here, and the remainder is semantically
 classified (paragraph vs short value) by classify_multiline.py before the poll.
 
 Geometry per candidate: prompt (printed ':' line on/above the rect), room_below
-(whitespace to the next printed line across the body margins), and -- when a box
-fits (room_below >= MIN_BOX_H) -- a proposed margin-wide paragraph rect seated
-below the prompt. fill_pdf wraps any rect taller than 24pt, so the box is real.
+(whitespace to the next obstacle across the body margins -- a printed line OR a
+neighboring form widget), and -- when a box fits (room_below >= MIN_BOX_H) -- a
+proposed margin-wide paragraph rect seated below the prompt. fill_pdf wraps any
+rect taller than 24pt, so the box is real.
+
+A QA pass (collision of the proposed box against neighboring widgets) showed the
+first cut over-fired: 17/22 boxes ran through another field. Most open-answer
+fields already have a sibling box (a line+box pair, e.g. PP-405 desc_1 + the big
+desc_2 box) or are table cells (GS-014 funds_received grid) or have a signature
+block right below. So room_below counts other-field widgets as obstacles, and a
+final overlap test drops any candidate whose box still touches a widget
+(drop_reason=widget_collision) -- those are STRUCTURAL, not clean box-below.
 
     python3 scripts/geometry_review/detect_multiline_below.py            # triage
     python3 scripts/geometry_review/detect_multiline_below.py --emit     # + jsonl
@@ -50,10 +59,14 @@ DESIRED_H = 48.0       # ~4 lines at 10pt; clamped to the room actually availabl
 PROMPT_DROP = 3.0
 EDGE_PAD = 2.0
 H_SINGLE = 16.0
+ROOM_PAD = 6.0         # keep the box this far clear of the next obstacle below
+COL_GUTTER = 6.0       # half-gap between side-by-side columns
+TABLE_REPEAT = 2       # >= this many widgets stacked in the column == a table
 
 CLOSED = re.compile(
     r"(^|_)(date|age|dob|birth|death|name|number|no|county|docket|year|zip|"
-    r"amount|phone|email|fax|bar|ssn|signature|sign|initials|day|month)(_|$)",
+    r"amount|phone|email|fax|bar|ssn|signature|sign|initials|day|month|"
+    r"fee|fees|rate|hourly|cost|rent|salary|wage)(_|$)",
     re.I)
 
 
@@ -104,21 +117,84 @@ def find_prompt(rect, words):
     return None
 
 
-def room_below(rect, words, left, right, page_h):
+def room_below(rect, words, left, right, page_h, obstacles=()):
+    """Distance from rect bottom to the nearest obstacle below within [left,right].
+
+    Obstacles are printed words AND neighboring form widgets -- a margin-wide box
+    must clear both. (Same-level widgets that start at/above rect.y1 are handled
+    by the final overlap test, not here.)
+    """
     nxt = page_h - 36.0
     for wr, t in words:
         if wr.y0 <= rect.y1 + 1:
             continue
         if min(right, wr.x1) - max(left, wr.x0) > 4:
             nxt = min(nxt, wr.y0)
+    for o in obstacles:
+        if o.y0 <= rect.y1 + 1:
+            continue
+        if min(right, o.x1) - max(left, o.x0) > 4:
+            nxt = min(nxt, o.y0)
     return round(nxt - rect.y1, 1)
 
 
 def proposed_box(rect, prompt, left, right, room):
     top = max((prompt[1] if prompt else rect.y1) + PROMPT_DROP, rect.y0)
-    bottom = top + max(MIN_BOX_H, min(DESIRED_H, room - 4))
+    bottom = top + max(MIN_BOX_H, min(DESIRED_H, room - ROOM_PAD))
     return [round(left + EDGE_PAD, 1), round(top, 1),
             round(right - EDGE_PAD, 1), round(bottom, 1)]
+
+
+def all_field_widgets(form):
+    """page -> [(field_id, Rect)] for every widget on the form."""
+    g = json.loads((ROOT / "repo" / "forms" / form / "fill_geometry.json")
+                   .read_text())["fields"]
+    out = collections.defaultdict(list)
+    for fid, spec in g.items():
+        for wd in (spec.get("widgets") or []):
+            out[wd["page"]].append((fid, fitz.Rect(wd["rect"])))
+    return out
+
+
+def overlaps(a, b):
+    """True if rects share more than 2pt in both axes (a real collision)."""
+    return (min(a.x1, b.x1) - max(a.x0, b.x0) > 2
+            and min(a.y1, b.y1) - max(a.y0, b.y0) > 2)
+
+
+def column_bounds(rect, others, body_left, body_right):
+    """[col_left, col_right] for the candidate's column on a multi-column row.
+
+    A box-below must respect side-by-side columns (DE-403's two sureties, a
+    name|reason pair): bound it at the midpoint to the nearest same-row widget on
+    each side, else the page body margin. Returns (left, right, multi_col)."""
+    cx = (rect.x0 + rect.x1) / 2
+    left, right = body_left, body_right
+    multi = False
+    for o in others:
+        if min(rect.y1, o.y1) - max(rect.y0, o.y0) <= 0.5 * min(rect.height,
+                                                                o.height):
+            continue                                   # not on this row
+        ocx = (o.x0 + o.x1) / 2
+        if ocx < cx:
+            left = max(left, (ocx + cx) / 2 + COL_GUTTER); multi = True
+        elif ocx > cx:
+            right = min(right, (ocx + cx) / 2 - COL_GUTTER); multi = True
+    return left, right, multi
+
+
+def is_table_column(rect, others):
+    """True if >= TABLE_REPEAT other widgets share this rect's x-span on other
+    rows -- an aligned grid column (GS-014 funds_received_*_N), where a margin-
+    wide box-below makes no sense. Alignment (not mere x-overlap) is the signal,
+    so a single-column field whose column spans the page isn't misread."""
+    n = 0
+    for o in others:
+        if (abs(o.x0 - rect.x0) < 8 and abs(o.x1 - rect.x1) < 8
+                and abs((o.y0 + o.y1) / 2 - (rect.y0 + rect.y1) / 2)
+                > rect.height):
+            n += 1
+    return n >= TABLE_REPEAT
 
 
 def narrative_singleline_fields(form):
@@ -164,27 +240,47 @@ def main() -> int:
         dims = {p: (doc[p].rect.width, doc[p].rect.height)
                 for p in range(doc.page_count)}
         doc.close()
+        allw = all_field_widgets(form)
         for fid, (label, widgets) in fields.items():
             w = widgets[0]
             r = fitz.Rect(w["rect"]); pg = w["page"]
             words = feats[pg]["words"]; pw, ph = dims[pg]
-            left, right = body_margins(words, pw)
+            others = [wr for ofid, wr in allw.get(pg, []) if ofid != fid]
+            bl, br = body_margins(words, pw)
+            left, right, multi = column_bounds(r, others, bl, br)
             prompt = find_prompt(r, words)
-            rb = room_below(r, words, left, right, ph)
+            rb = room_below(r, words, left, right, ph, others)
             rec = {"form": form, "field": fid, "label": label,
                    "widget_idx": 0, "page": pg, "n_widgets": len(widgets),
                    "current_rect": [round(v, 1) for v in r],
                    "prompt": prompt[0] if prompt else None,
                    "room_below": rb, "word_cover": word_cover(r, words),
-                   "fits_box": rb >= MIN_BOX_H}
-            if rec["fits_box"]:
-                rec["proposed_rect"] = proposed_box(r, prompt, left, right, rb)
+                   "multi_col": multi, "fits_box": rb >= MIN_BOX_H}
+            if rec["fits_box"] and is_table_column(r, others):
+                rec["fits_box"] = False
+                rec["drop_reason"] = "table_cell"
+            elif rec["fits_box"]:
+                box = proposed_box(r, prompt, left, right, rb)
+                # final guard: a clean box-below touches no other widget. Same-
+                # level overlaps (sibling box) land here -> structural.
+                if any(overlaps(fitz.Rect(box), wr) for wr in others):
+                    rec["fits_box"] = False
+                    rec["drop_reason"] = "widget_collision"
+                else:
+                    rec["proposed_rect"] = box
             rows.append(rec)
 
     fits = [r for r in rows if r["fits_box"]]
+    collide = [r for r in rows if r.get("drop_reason") == "widget_collision"]
+    table = [r for r in rows if r.get("drop_reason") == "table_cell"]
+    mc = sum(1 for r in fits if r.get("multi_col"))
     print(f"narrative single-line non-shortfact fields: {len(rows)}")
-    print(f"  with room for a box below (>= {MIN_BOX_H:.0f}pt): {len(fits)}")
-    print(f"  no room below (overflow / 'see Exhibit A' class): {len(rows)-len(fits)}")
+    print(f"  clean box below (>= {MIN_BOX_H:.0f}pt, no collision): {len(fits)} "
+          f"({mc} column-width on multi-col rows, {len(fits)-mc} margin-wide)")
+    print(f"  dropped -- table/grid cell: {len(table)}")
+    print(f"  dropped -- box would hit a sibling widget (STRUCTURAL): {len(collide)}")
+    print(f"  no room below (overflow / 'see Exhibit A' class): "
+          f"{len(rows)-len(fits)-len(collide)-len(table)}")
     byform = collections.Counter(r["form"] for r in fits)
     print("  top forms (fits_box):", dict(byform.most_common(8)))
     if args.emit:

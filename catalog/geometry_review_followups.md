@@ -30,16 +30,43 @@ seed is **semantic, not geometric**. Calibration showed the reviewer's canonical
 cases are NOT `no_line_support` — they are single-line widgets on a short
 underline whose `fill_strategy.source == "llm_over_narrative"` (composed free
 text). So the seed = narrative + every widget single-line (<=16pt) + field_id is
-not an obvious short fact (date/age/name/number/...). 548 such fields; 104 have
-room for a box below (>= 26pt, clearing fill_pdf's 24pt multiline gate). A local
-fleet pass (`classify_multiline.py`, Qwen + gemma) labels each paragraph vs
-short-value; agreement filters the noise. Restricting to **single-widget** (a
-multi-widget field already has a continuation chain that wraps) leaves 22
-candidates → human poll (`build_multiline_poll.py`, A=current vs B=margin-wide
-box below, both rendered through the real fill pipeline). The reviewer's
-canonical DE-403/PP-405/MISC-101 land in the both-models-agree set. Box geometry
-+ schema multiline flag (rect.height>24) is fillable today; converting the
-schema field to a declared paragraph type stays a pipeline follow-up.
+not an obvious short fact (date/age/name/number/fee/rate/...).
+
+**Geometry QA was the real filter.** The first cut proposed *margin-wide* boxes
+and 17 of 22 poll units collided with a neighboring widget — `room_below` only
+looked at printed text. Three corrections, all in the detector now:
+
+1. **Widget-aware room** — other-field widgets are obstacles too, so a box stops
+   before the next field, not just the next printed line.
+2. **Column-aware width** — a box on a multi-column row is sized to *its* column
+   (midpoint to the nearest same-row widget on each side), not the full margins.
+   This is what makes DE-403's two side-by-side surety descriptions get two
+   non-overlapping half-width boxes (left `[92,361]`, right `[377,517]`, 16pt
+   gutter) instead of one box stomping the other.
+3. **Table-cell drop** — if ≥2 other widgets share the candidate's exact x-span
+   on other rows, it's an aligned grid column (GS-014 `funds_received_*_N`) where
+   box-below makes no sense; dropped as `table_cell`.
+   A final proposed-rect-vs-all-widgets overlap test drops any residual as
+   `widget_collision` (sibling box already there → structural).
+
+Corpus result (511 narrative single-line non-shortfact fields): **42 clean box
+below** (29 margin-wide, 13 column-width) · 26 table/grid cells · 13 structural
+sibling-collisions · 430 no room below (overflow / "see Exhibit A" class).
+
+Of the 42, only single-widget fields go to the poll (a multi-widget field already
+has a continuation chain that wraps). A local fleet pass
+(`classify_multiline.py`, Qwen + gemma) labels each paragraph vs short-value, and
+**only both-models-agree** units are polled — a fleet split means the field is
+ambiguous (almost always a mismapped table cell, e.g. AF-104
+`reason_not_contacting`, whose widget sits under the *Name* column header while
+`name_not_contacted` sits under *Reason*). Splits go to
+`multiline_review_needed.jsonl`, not the poll. That leaves **3** render-validated,
+collision-free units (`build_multiline_poll.py`, A=current vs B=box below): the
+reviewer's canonical DE-403 ×2 (column-width) and MISC-101 (margin-wide). The
+poll exists to confirm the *geometry* (column-width vs margin-wide) the reviewer
+hadn't seen rendered; box + schema multiline flag (rect.height>24) is fillable
+today, converting the schema field to a declared paragraph type stays a pipeline
+follow-up.
 
 ## Continuation — "part 1 of 2" line-split answers
 
@@ -63,6 +90,7 @@ multi-widget continuation chain, not a single rect:
 | AF-105 | `insurance_pension_value` | answer blank isn't where the widget is ("doesn't show where the spot is") | re-locate the widget from the source layout |
 | AD-008 | `medical_/foster_care_/living_expenses_details` | 2-line continuation: line 1 should start at the underline after "child." / "birth mother." and overflow to line 2; long values reach the blank's right end | model as a multi-widget continuation chain (line1 + line2) |
 | PP-405 | `corporate_surety_address` | belongs under "1. Name of corporate surety:"; if a field already exists there, this is a meta-question -> delete | re-point or remove from schema |
+| AF-104 | `reason_not_contacting` / `name_not_contacted` | the bottom is a "Name \| Date \| Reason for not contacting" table, but `reason_not_contacting` is mapped under the *Name* column and `name_not_contacted` under the *Reason* column — columns are swapped, there is no Date widget, and no data rows | re-map widgets to the correct columns and add a multi-row continuation chain (found by the multiline-below fleet split) |
 
 ## Semantic — fill logic, not geometry
 

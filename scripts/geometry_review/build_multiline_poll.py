@@ -67,17 +67,30 @@ def main() -> int:
     g = {(o["form"], o["field"]): o["shape"] for o in
          (json.loads(l) for l in (out / "multiline_gemma.jsonl").open())}
 
-    picks = []
+    picks, split = [], []
     for k, o in cand.items():
         if o.get("n_widgets") != 1 or not o.get("fits_box"):
             continue
         qp = bool(q.get(k, {}).get("expects_paragraph"))
         gp = bool(g.get(k, {}).get("expects_paragraph"))
-        if not (qp or gp):
-            continue
-        picks.append((k, o, qp, gp))
-    # both-agree first, then by form
-    picks.sort(key=lambda t: (not (t[2] and t[3]), t[0]))
+        if qp and gp:
+            picks.append((k, o, qp, gp))           # both models -> poll
+        elif qp or gp:
+            split.append((k, o, qp, gp))           # fleet split -> human review, not a vote
+    picks.sort(key=lambda t: t[0])
+
+    # a fleet split means the field is ambiguous (often a mismapped table cell,
+    # e.g. AF-104 reason_not_contacting). Record for the followups doc; don't poll.
+    rev = out / "multiline_review_needed.jsonl"
+    rev.write_text("".join(json.dumps(
+        {"form": k[0], "field": k[1], "qwen_paragraph": qp, "gemma_paragraph": gp,
+         "multi_col": o.get("multi_col"), "prompt": o.get("prompt"),
+         "kind": (q.get(k, {}).get("kind"), g.get(k, {}).get("kind"))}) + "\n"
+        for k, o, qp, gp in sorted(split, key=lambda t: t[0])))
+    if split:
+        print(f"fleet-split (review, not polled): {len(split)} -> {rev.name}")
+        for k, o, qp, gp in split:
+            print(f"  {k[0]:10} {k[1]:34} qwen={qp} gemma={gp}")
 
     crops = out / "poll_crops"
     crops.mkdir(parents=True, exist_ok=True)
