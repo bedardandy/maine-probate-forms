@@ -25,12 +25,21 @@ Fields the reviewer assigned to this class:
 | PP-405 | `desc_personal_property_1` | under the prompt text, multi-line, span the width |
 | AD-008 | `*_expenses_details` (w0/w1) | 2-line continuation: line 1 at the prompt's trailing underline, run over to line 2 |
 
-Candidate detector: a text widget that (a) follows a colon/question prompt with
-**no underline segment** under or beside it (the sweep's `no_line_support`
-flag, 125 corpus-wide) and (b) is single-line height, is a strong candidate to
-become a multi-line box seated below the prompt. This is a tree/schema change,
-not a rect nudge -- prototype against the `no_line_support` population before
-trusting it.
+Detector (built — `scripts/geometry_review/detect_multiline_below.py`): the
+seed is **semantic, not geometric**. Calibration showed the reviewer's canonical
+cases are NOT `no_line_support` — they are single-line widgets on a short
+underline whose `fill_strategy.source == "llm_over_narrative"` (composed free
+text). So the seed = narrative + every widget single-line (<=16pt) + field_id is
+not an obvious short fact (date/age/name/number/...). 548 such fields; 104 have
+room for a box below (>= 26pt, clearing fill_pdf's 24pt multiline gate). A local
+fleet pass (`classify_multiline.py`, Qwen + gemma) labels each paragraph vs
+short-value; agreement filters the noise. Restricting to **single-widget** (a
+multi-widget field already has a continuation chain that wraps) leaves 22
+candidates → human poll (`build_multiline_poll.py`, A=current vs B=margin-wide
+box below, both rendered through the real fill pipeline). The reviewer's
+canonical DE-403/PP-405/MISC-101 land in the both-models-agree set. Box geometry
++ schema multiline flag (rect.height>24) is fillable today; converting the
+schema field to a declared paragraph type stays a pipeline follow-up.
 
 ## Continuation — "part 1 of 2" line-split answers
 
