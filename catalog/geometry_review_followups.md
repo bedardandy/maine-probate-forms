@@ -149,13 +149,29 @@ now either applied (box-below) or routed (list/table). Of 13 single-widget fits
 left, 9 are short-values (no box) and 1 is AF-104 `reason_not_contacting` (the
 swapped-table structural case). Nothing remains to poll for box geometry.
 
-**Repeating-group overflow is the next feature.** 44 entities are modelled as
-fixed-capacity numbered records (`heir_1..12`, `interested_party_1..11`,
-`distributee_1..12`, `notify_person_1..15`). When the actual count exceeds the
-form's printed rows, the rows should fill 1..N and the rest go to an addendum
-(behind a "see Addendum N" note in the last row). This needs a repeating-group
-abstraction (group by entity, count vs capacity); inventory + capacities are in
-`catalog/overflow_coverage.md`.
+**Repeating-group overflow — built.** Entities modelled as fixed-capacity
+numbered records (`heir_1..12`, `interested_party_1..11`, `distributee_1..12`,
+`notify_person_1..15`) now overflow: `fill_pdf._distribute_groups` distributes a
+structured records list (`narrative_facts[source]`) across rows 1..capacity and
+spills the rest to an addendum. `audit_overflow_fields.py --apply-groups` detects
+them corpus-wide (both naming conventions; every attribute template verified to
+resolve to a real field for i in 1..cap) and writes `_groups` to the catalog —
+**24 groups wired** (capacity ≥3; the capacity-2 two-up surety layouts on
+DE-403/PP-405 are parallel columns, not lists, and are excluded). Source-key +
+attribute contract per group is in `catalog/overflow_coverage.md` §1b. Open
+nicety: an in-form "see Addendum N" note at the bottom of the grid (currently the
+overflow is signalled only by the addendum's "(continued)" title).
+
+**List-field review (the 9 effective `mode:list` fields).** Each was rendered
+with a multi-item sample; all produce a clean numbered addendum titled with the
+form's question. Three originally-flagged fields had **no widget** (AD-008
+`disbursements`, PB-007/.vA `objecting_parties_appointment`) so list-mode was
+inert — removed, and the audit now requires `nwid == 1`. **No further
+single-widget *tables* are warranted:** unlike MISC-101 (which has printed
+`Name | Mailing Address` column headers), the remaining list fields are single
+blanks or "attach additional sheet" prose — a table would invent column
+structure the form doesn't have, so the list addendum is the honest
+representation. The genuine tabular data lives in the repeating groups above.
 
 ## Continuation — "part 1 of 2" line-split answers
 

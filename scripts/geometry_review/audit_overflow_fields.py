@@ -90,8 +90,10 @@ def audit():
                 grp["widgets"] += nwid
             elif EXCL.search(fid) or dt in ("currency", "number", "date"):
                 continue                             # single value, never a list
-            elif nwid <= 1:                          # single widget -> list mode
+            elif nwid == 1:                          # exactly one widget -> list mode
                 singles.append((form, fid, dt, label, nwid))
+            # nwid == 0 (no widget) can't be filled -> not list-eligible; nwid > 1
+            # is a continuation area (below).
             else:                                    # multi-widget continuation
                 continuations.append((form, fid, dt, label, nwid))
     repeating = [{"form": f, "entity": p, "capacity": max(g["idx"]),

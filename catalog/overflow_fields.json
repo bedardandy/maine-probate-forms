@@ -1,11 +1,6 @@
 {
  "_doc": "Per-field overflow behaviour for the fill pipeline (tools/fill_pdf.py + tools/addendum.py). A field listed here can outgrow its printed space; instead of clipping, its content moves to an appended 'Addendum N' continuation page and the field/box gets a 'See attached Addendum N for <subject>.' reference. Modes: 'list' = an inherently-multiple field (heirs, creditors, devisees) that routes to an addendum once it has 2+ items even if one would fit a line; 'paragraph' = a box-below paragraph that overflows only when it does not fit; 'table' = a row table (columns + row geometry) whose extra rows spill to an addendum behind a full-width centred overflow row. Optional 'subject' overrides the label-derived noun phrase. Authored by hand + scripts/geometry_review/audit_overflow_fields.py; never auto-applied without review.",
  "forms": {
-  "AD-008": {
-   "disbursements": {
-    "mode": "list"
-   }
-  },
   "AF-104": {
    "family_friends_contacted": {
     "mode": "list"
@@ -289,9 +284,6 @@
    }
   },
   "PB-007": {
-   "objecting_parties_appointment": {
-    "mode": "list"
-   },
    "_groups": {
     "expanded_person": {
      "source": "expanded_person",
@@ -308,9 +300,6 @@
    }
   },
   "PB-007.vA": {
-   "objecting_parties_appointment": {
-    "mode": "list"
-   },
    "_groups": {
     "expanded_person": {
      "source": "expanded_person",
