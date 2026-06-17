@@ -88,6 +88,37 @@ def table_overflow_row(subject: str, no: int) -> str:
     return f"See attached Addendum {no} for remaining {subject}."
 
 
+def render_table(page: fitz.Page, spec: dict, rows: list,
+                 overflow_no: int | None = None) -> list:
+    """Draw a list of `rows` into a column table on `page` per `spec`.
+
+    `spec` = {columns:[{label,x:[x0,x1]}], row_top, row_h, rows, subject}. Rows
+    are dicts keyed by column label. When there are more rows than fit and
+    `overflow_no` is given, the last visible row is replaced by a full-width
+    centred "See attached Addendum N for remaining <subject>." and the unshown
+    rows are returned for the caller to place on that addendum. Returns the
+    remainder list (empty if everything fit)."""
+    cols, rt, rh, nr = spec["columns"], spec["row_top"], spec["row_h"], spec["rows"]
+    fs = spec.get("font_size", 9.0)
+    spill = overflow_no is not None and len(rows) > nr
+    cap = nr - 1 if spill else min(nr, len(rows))
+    for i in range(cap):
+        y = rt + i * rh
+        for c in cols:
+            val = rows[i].get(c["label"], "") if isinstance(rows[i], dict) else ""
+            if val:
+                page.insert_text((c["x"][0] + 3, y + rh - 5), str(val),
+                                 fontsize=fs, fontname="helv")
+    if spill:
+        y = rt + cap * rh
+        x0, x1 = cols[0]["x"][0], cols[-1]["x"][1]
+        txt = table_overflow_row(spec.get("subject", "items"), overflow_no)
+        page.insert_text(((x0 + x1 - _w(txt, fs + 0.5)) / 2, y + rh - 5), txt,
+                         fontsize=fs + 0.5, fontname="helv", color=(0, 0, 0))
+        return rows[cap:]
+    return []
+
+
 def make_entry(field_id: str, question: str, subject: str,
                content) -> dict:
     """Build an addendum entry. `content` is a list (-> numbered items) or a

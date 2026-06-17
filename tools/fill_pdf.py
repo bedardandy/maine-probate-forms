@@ -217,6 +217,51 @@ def _overflow_content(val: str):
     return parts if len(parts) >= 2 else v
 
 
+def _load_overflow_catalog(root: pathlib.Path) -> dict:
+    """{field_id: spec} per form from catalog/overflow_fields.json (declares
+    which fields route long/list/table content to an addendum)."""
+    p = root / "catalog" / "overflow_fields.json"
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text()).get("forms", {})
+    except Exception:
+        return {}
+
+
+def _as_list(raw) -> list:
+    """Coerce a raw field value into a list of items (for list/table modes).
+
+    Accepts a Python list (kept), or a string delimited by newlines / ';' (each
+    piece an item). A single piece -> a one-item list."""
+    if isinstance(raw, (list, tuple)):
+        return list(raw)
+    s = str(raw or "")
+    if "\n" in s:
+        return [x.strip() for x in s.splitlines() if x.strip()]
+    return [x.strip() for x in s.split(";") if x.strip()]
+
+
+def _table_rows(raw, columns: list) -> list:
+    """Normalise raw recipients into [{col_label: value}] for render_table.
+
+    Each item may be a dict (keyed by column label), a [a, b] pair, or a string
+    'name, address' (split on the first comma into the first two columns)."""
+    rows = []
+    labels = [c["label"] for c in columns]
+    for item in _as_list(raw):
+        if isinstance(item, dict):
+            rows.append({k: item.get(k, "") for k in labels})
+        elif isinstance(item, (list, tuple)):
+            rows.append({labels[i]: (item[i] if i < len(item) else "")
+                         for i in range(len(labels))})
+        else:
+            head, _, tail = str(item).partition(",")
+            rows.append({labels[0]: head.strip(),
+                         **({labels[1]: tail.strip()} if len(labels) > 1 else {})})
+    return rows
+
+
 def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
     w = fitz.Widget()
     w.field_name = name
@@ -277,10 +322,40 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     base_pages = doc.page_count          # the form's own pages, before any addenda
     align_map = _load_alignment(form_id, root)
     labels = _field_labels(form_id, root)
+    ov_cat = _load_overflow_catalog(root).get(form_id, {}) if overflow else {}
+    raw_facts = case.get("narrative_facts") if isinstance(
+        case.get("narrative_facts"), dict) else {}
     overflows: list[dict] = []
     written_text = checked = 0
     skipped_no_geom = []
+    # Table-mode fields (catalog) are drawn from their raw structured value, not
+    # from a single geometry widget -- handle them up front so the stray widget
+    # is not also written.
+    for fid, tspec in ov_cat.items():
+        if tspec.get("mode") != "table":
+            continue
+        rows = _table_rows(raw_facts.get(fid, resolved.get(fid, "")),
+                           tspec["columns"])
+        if not rows:
+            continue
+        pg = doc[tspec["page"]]
+        if len(rows) > tspec["rows"]:
+            no = len(overflows) + 1
+            remainder = addendum.render_table(pg, tspec, rows, overflow_no=no)
+            items = [" — ".join(str(r.get(c["label"], "")).strip()
+                                for c in tspec["columns"]
+                                if str(r.get(c["label"], "")).strip())
+                     for r in remainder]
+            overflows.append(addendum.make_entry(
+                fid, labels.get(fid, "") or fid.replace("_", " "),
+                tspec.get("subject") or _subject_from_label(labels.get(fid, ""), fid),
+                items))
+        else:
+            addendum.render_table(pg, tspec, rows)
+        written_text += min(len(rows), tspec["rows"])
     for fid, val in resolved.items():
+        if ov_cat.get(fid, {}).get("mode") == "table":
+            continue                                  # drawn above
         spec = geom.get(fid)
         if not spec:
             skipped_no_geom.append(fid); continue
@@ -289,22 +364,29 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
             # Overflow -> addendum: a single paragraph box (the box-below class)
             # whose value will not fit gets a "See attached Addendum N for ..."
             # reference; the full value moves to an appended continuation page.
-            # Single-line / continuation-chain fields keep shrink-to-fit + split.
+            # A field marked mode:list routes to an addendum once it has 2+ items
+            # even if one line would fit. Single-line / chain fields keep
+            # shrink-to-fit + split.
+            mode = ov_cat.get(fid, {}).get("mode")
             w0 = spec["widgets"][0]
             r0 = fitz.Rect(w0["rect"])
-            if (overflow and len(spec["widgets"]) == 1
-                    and r0.height > _MULTILINE_MIN_H
-                    and not addendum.fits(str(val), list(r0),
-                                          _fontsize_for(str(val), r0, True),
-                                          _PAD)):
+            is_list = mode == "list" and len(_as_list(raw_facts.get(fid, val))) >= 2
+            doesnt_fit = (len(spec["widgets"]) == 1 and r0.height > _MULTILINE_MIN_H
+                          and not addendum.fits(str(val), list(r0),
+                                                _fontsize_for(str(val), r0, True),
+                                                _PAD))
+            if overflow and (is_list or doesnt_fit):
                 no = len(overflows) + 1
-                subject = _subject_from_label(labels.get(fid, ""), fid)
+                subject = (ov_cat.get(fid, {}).get("subject")
+                           or _subject_from_label(labels.get(fid, ""), fid))
                 _add_text(doc[w0["page"]], w0["rect"], fid,
                           addendum.field_reference(subject, no), align=align)
                 written_text += 1
+                content = (_as_list(raw_facts.get(fid, val)) if is_list
+                           else _overflow_content(val))
                 overflows.append(addendum.make_entry(
                     fid, labels.get(fid, "") or fid.replace("_", " "),
-                    subject, _overflow_content(val)))
+                    subject, content))
                 continue
             parts = _split_for_widgets(str(val), spec["widgets"])
             for i, wdg in enumerate(spec["widgets"]):
