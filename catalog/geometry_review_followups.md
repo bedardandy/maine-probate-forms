@@ -128,11 +128,34 @@ default; `--no-addendum` / `overflow=False` to disable):
 This is the deterministic home for the **431 "no room below"** fields (the
 "see Exhibit A" class) and for any box-below value that outgrows its box.
 Demonstrated end-to-end on DE-403 (long pledged-property list → Addendum 1,
-packet renumbered 1..5 of 5). Not yet auto-enrolled per form beyond the box-below
-class — eligibility is currently "multiline box that overflows"; a per-field
-`overflow: list` flag in the schema (heirs, creditors, devisees) is the next
-step so list fields route to an addendum even when a short box would technically
-fit one line.
+packet renumbered 1..5 of 5).
+
+### Modes and corpus enrolment
+
+The per-field flag now exists: `catalog/overflow_fields.json` declares
+`mode: list | paragraph | table`. `list` routes to an addendum once a field has
+2+ items even if one line would fit (the "route lists to See attached" rule);
+`table` draws a column table with a full-width centred overflow row (MISC-101);
+`paragraph` is the box-below auto-trigger. `scripts/geometry_review/audit_overflow_fields.py`
+inventories the corpus into `catalog/overflow_coverage.md` (3 classes) and
+enables the safe slice. As of the 2026-06-17 rollout: **12 list-mode fields**
+(local-fleet both-agree-confirmed; currency/number/date guarded out — the fleet
+mislabelled DE-401's $ totals from their names) + the **MISC-101 table**.
+
+**Box-below poll converged.** With DE-403 applied and list-mode enabled, the
+both-agree box-below class is empty: the "open-ended paragraph" and "list" sets
+overlapped almost entirely, so every high-confidence single-widget candidate is
+now either applied (box-below) or routed (list/table). Of 13 single-widget fits
+left, 9 are short-values (no box) and 1 is AF-104 `reason_not_contacting` (the
+swapped-table structural case). Nothing remains to poll for box geometry.
+
+**Repeating-group overflow is the next feature.** 44 entities are modelled as
+fixed-capacity numbered records (`heir_1..12`, `interested_party_1..11`,
+`distributee_1..12`, `notify_person_1..15`). When the actual count exceeds the
+form's printed rows, the rows should fill 1..N and the rest go to an addendum
+(behind a "see Addendum N" note in the last row). This needs a repeating-group
+abstraction (group by entity, count vs capacity); inventory + capacities are in
+`catalog/overflow_coverage.md`.
 
 ## Continuation — "part 1 of 2" line-split answers
 
