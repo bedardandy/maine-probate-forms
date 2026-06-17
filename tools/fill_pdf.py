@@ -255,15 +255,38 @@ def _as_records(raw) -> list:
     return out
 
 
+def _group_note(doc, geom, g, attrs, cap, subject, no) -> None:
+    """Draw a "See Addendum N for <subject>." note just below an overflowed grid.
+
+    Locates the last grid row via the primary column's widget at i=capacity so the
+    overflow is visible on the form page, not only on the addendum."""
+    cols = g.get("columns") or list(attrs)
+    prim = next((c for c in cols if c in attrs), None)
+    tmpl = attrs.get(prim) if prim else None
+    spec = geom.get(tmpl.format(i=cap)) if tmpl else None
+    wdg = (spec or {}).get("widgets") or []
+    if not wdg:
+        return
+    r = fitz.Rect(wdg[0]["rect"])
+    try:
+        page = doc[wdg[0]["page"]]
+        page.insert_text((r.x0, r.y1 + 11),
+                         f"See Addendum {no} for {subject}.",
+                         fontsize=8.5, fontname="helv", color=(0, 0, 0))
+    except Exception:
+        pass
+
+
 def _distribute_groups(groups: dict, raw_facts: dict, resolved: dict,
-                       overflows: list) -> None:
+                       overflows: list, doc=None, geom=None) -> None:
     """Fill numbered repeating-group records (heir_1_name, distributee_3_addr…)
     from a structured list, spilling rows past the form's capacity to an addendum.
 
     Each group spec: {source, capacity, attrs:{attr: 'fid_{i}_template'},
     columns?, subject?, title?}. Records come from raw_facts[source] as a list of
     dicts; records 1..capacity are injected into `resolved` so the normal widget
-    pass writes them, and records beyond capacity become an addendum entry."""
+    pass writes them, and records beyond capacity become an addendum entry plus an
+    in-form "See Addendum N" note below the grid."""
     for entity, g in (groups or {}).items():
         records = _as_records(raw_facts.get(g.get("source", entity)))
         if not records:
@@ -280,10 +303,13 @@ def _distribute_groups(groups: dict, raw_facts: dict, resolved: dict,
             items = [" — ".join(str(rec.get(c, "")).strip() for c in cols
                                 if str(rec.get(c, "")).strip())
                      for rec in records[cap:]]
+            subject = g.get("subject") or f"additional {entity.replace('_', ' ')}"
+            no = len(overflows) + 1
             overflows.append(addendum.make_entry(
                 entity, g.get("title") or entity.replace("_", " ").title(),
-                g.get("subject") or f"additional {entity.replace('_', ' ')}",
-                items))
+                subject, items))
+            if doc is not None and geom is not None:
+                _group_note(doc, geom, g, attrs, cap, subject, no)
 
 
 def _table_rows(raw, columns: list) -> list:
@@ -376,7 +402,8 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     # record fields (heir_1_name…), spilling past capacity to an addendum. Runs
     # first so injected record values are written by the normal field pass below.
     if overflow:
-        _distribute_groups(ov_cat.get("_groups"), raw_facts, resolved, overflows)
+        _distribute_groups(ov_cat.get("_groups"), raw_facts, resolved, overflows,
+                           doc=doc, geom=geom)
     # Table-mode fields (catalog) are drawn from their raw structured value, not
     # from a single geometry widget -- handle them up front so the stray widget
     # is not also written.
