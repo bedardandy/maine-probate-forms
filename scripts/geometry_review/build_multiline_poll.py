@@ -67,9 +67,22 @@ def main() -> int:
     g = {(o["form"], o["field"]): o["shape"] for o in
          (json.loads(l) for l in (out / "multiline_gemma.jsonl").open())}
 
+    # fields already resolved another way (a table or list-mode addendum in the
+    # overflow catalog, or a box-below already applied to geometry) are not
+    # box-below poll units.
+    ovp = ROOT / "catalog" / "overflow_fields.json"
+    handled = json.loads(ovp.read_text()).get("forms", {}) if ovp.exists() else {}
+    applied = set()
+    ap_log = out / "multiline_applied.jsonl"
+    if ap_log.exists():
+        applied = {(r["form"], r["field"]) for r in
+                   (json.loads(l) for l in ap_log.open())}
+
     picks, split = [], []
     for k, o in cand.items():
         if o.get("n_widgets") != 1 or not o.get("fits_box"):
+            continue
+        if k[1] in handled.get(k[0], {}) or k in applied:
             continue
         qp = bool(q.get(k, {}).get("expects_paragraph"))
         gp = bool(g.get(k, {}).get("expects_paragraph"))

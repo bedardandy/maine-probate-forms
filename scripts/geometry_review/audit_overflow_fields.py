@@ -88,8 +88,8 @@ def audit():
                 if attr:
                     grp["attrs"].add(attr)
                 grp["widgets"] += nwid
-            elif EXCL.search(fid):
-                continue
+            elif EXCL.search(fid) or dt in ("currency", "number", "date"):
+                continue                             # single value, never a list
             elif nwid <= 1:                          # single widget -> list mode
                 singles.append((form, fid, dt, label, nwid))
             else:                                    # multi-widget continuation
@@ -145,7 +145,8 @@ def write_report(forms, repeating, singles, continuations):
               "| form | field | qwen | gemma | enabled |", "|---|---|---|---|---|"]
     for form, fid, dt, label, _ in singles:
         v = votes.get((form, fid), {})
-        en = "✅ list" if fid in cat.get(form, {}) else "—"
+        mode = cat.get(form, {}).get(fid, {}).get("mode")
+        en = f"✅ {mode}" if mode else "—"
         lines.append(f"| {form} | `{fid}` | {v.get('qwen')} | {v.get('gemma')} "
                      f"| {en} |")
     lines += ["", "## 3. Multi-widget continuation areas (reported)",

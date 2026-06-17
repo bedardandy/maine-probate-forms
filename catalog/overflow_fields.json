@@ -22,17 +22,6 @@
     "mode": "list"
    }
   },
-  "DE-401": {
-   "intangible_personal_property": {
-    "mode": "list"
-   },
-   "non_mortgage_debts_expenses": {
-    "mode": "list"
-   },
-   "tangible_personal_property_maine": {
-    "mode": "list"
-   }
-  },
   "DE-507": {
    "other_notice_persons": {
     "mode": "list"
