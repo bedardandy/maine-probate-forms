@@ -55,6 +55,37 @@ Modelled as numbered records (`heir_1_name`, `distributee_3_address`). They have
 | PP-509 | `notify_person` | 6 |  |
 | PP-510 | `notified_person` | 5 | address, name, relationship, waivers |
 
+## 1b. Repeating groups WIRED (catalog `_groups`)
+
+24 entities have overflow wired: the fill pipeline distributes a structured records list into the numbered fields (rows 1..capacity) and spills the rest to an addendum. The case supplies records under `narrative_facts[source]` as a list of dicts keyed by the listed attributes.
+
+| form | source key | capacity | record attributes |
+|---|---|---|---|
+| DE-101 | `heirs` | 12 | name, addr, dob, rel |
+| DE-101 | `notice_other` | 4 | name, addr |
+| DE-101(I) | `demand_for_notice` | 4 | name, address |
+| DE-101(I) | `heir` | 9 | name, address, dob, relationship |
+| DE-201 | `devisees` | 7 | name, addr |
+| DE-201 | `notice_other` | 4 | name, addr |
+| DE-201(I) | `demand_notice` | 4 | name, addr |
+| DE-201(I) | `devisees` | 6 | name, addr |
+| DE-301 | `interested_party` | 4 | name, addr |
+| DE-507 | `demand_notice_person` | 3 | name, address |
+| DE-507 | `interested_party` | 11 | name, address, relationship |
+| DE-509 | `interested_parties` | 7 | name, address |
+| DE-603 | `distributee` | 12 | name, address, interest |
+| PB-007 | `expanded_person` | 3 | name |
+| PB-007.vA | `expanded_person` | 3 | name |
+| PP-205 | `asset` | 8 | name, value |
+| PP-205 | `limit_contact_person` | 4 | name, address |
+| PP-205 | `notify_person` | 15 | name, address, relationship |
+| PP-410 | `notified_person` | 11 | name, address, relationship |
+| PP-413 | `notify` | 11 | person |
+| PP-507 | `no_notice` | 4 | name, relationship, reason |
+| PP-507 | `notice` | 14 | name, address, relationship, datetime, location |
+| PP-509 | `notify` | 6 | person |
+| PP-510 | `notified_person` | 5 | name, address, relationship, waivers |
+
 ## 2. Single-widget list fields (`mode:list`)
 
 ONE widget expected to hold a whole list. `mode:list` diverts to an addendum once the value carries 2+ items (otherwise fills inline). Each candidate was confirmed by the local fleet (Qwen + gemma); **only both-agree-list fields were enabled** — the rest are non-lists (a value, a caption, a swapped table cell) and stay off.

@@ -22,9 +22,233 @@
     "mode": "list"
    }
   },
+  "DE-101": {
+   "_groups": {
+    "heirs": {
+     "source": "heirs",
+     "capacity": 12,
+     "attrs": {
+      "name": "heirs_name_{i}",
+      "addr": "heirs_addr_{i}",
+      "dob": "heirs_dob_{i}",
+      "rel": "heirs_rel_{i}"
+     },
+     "columns": [
+      "name",
+      "rel",
+      "dob",
+      "addr"
+     ],
+     "subject": "the additional heirs at law",
+     "title": "Heirs at Law"
+    },
+    "notice_other": {
+     "source": "notice_other",
+     "capacity": 4,
+     "attrs": {
+      "name": "notice_other_name_{i}",
+      "addr": "notice_other_addr_{i}"
+     },
+     "columns": [
+      "name",
+      "addr"
+     ],
+     "title": "Notice Other",
+     "subject": "the additional notice other"
+    }
+   }
+  },
+  "DE-101(I)": {
+   "_groups": {
+    "heir": {
+     "source": "heir",
+     "capacity": 9,
+     "attrs": {
+      "name": "heir_{i}_name",
+      "address": "heir_{i}_address",
+      "dob": "heir_{i}_dob",
+      "relationship": "heir_{i}_relationship"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "dob",
+      "address"
+     ],
+     "title": "Heir",
+     "subject": "the additional heir"
+    },
+    "demand_for_notice": {
+     "source": "demand_for_notice",
+     "capacity": 4,
+     "attrs": {
+      "name": "demand_for_notice_{i}_name",
+      "address": "demand_for_notice_{i}_address"
+     },
+     "columns": [
+      "name",
+      "address"
+     ],
+     "title": "Demand For Notice",
+     "subject": "the additional demand for notice"
+    }
+   }
+  },
+  "DE-201": {
+   "_groups": {
+    "devisees": {
+     "source": "devisees",
+     "capacity": 7,
+     "attrs": {
+      "name": "devisees_name_{i}",
+      "addr": "devisees_addr_{i}"
+     },
+     "columns": [
+      "name",
+      "addr"
+     ],
+     "title": "Devisees",
+     "subject": "the additional devisees"
+    },
+    "notice_other": {
+     "source": "notice_other",
+     "capacity": 4,
+     "attrs": {
+      "name": "notice_other_name_{i}",
+      "addr": "notice_other_addr_{i}"
+     },
+     "columns": [
+      "name",
+      "addr"
+     ],
+     "title": "Notice Other",
+     "subject": "the additional notice other"
+    }
+   }
+  },
+  "DE-201(I)": {
+   "_groups": {
+    "demand_notice": {
+     "source": "demand_notice",
+     "capacity": 4,
+     "attrs": {
+      "name": "demand_notice_name_{i}",
+      "addr": "demand_notice_addr_{i}"
+     },
+     "columns": [
+      "name",
+      "addr"
+     ],
+     "title": "Demand Notice",
+     "subject": "the additional demand notice"
+    },
+    "devisees": {
+     "source": "devisees",
+     "capacity": 6,
+     "attrs": {
+      "name": "devisees_name_{i}",
+      "addr": "devisees_addr_{i}"
+     },
+     "columns": [
+      "name",
+      "addr"
+     ],
+     "title": "Devisees",
+     "subject": "the additional devisees"
+    }
+   }
+  },
+  "DE-301": {
+   "_groups": {
+    "interested_party": {
+     "source": "interested_party",
+     "capacity": 4,
+     "attrs": {
+      "name": "interested_party_name_{i}",
+      "addr": "interested_party_addr_{i}"
+     },
+     "columns": [
+      "name",
+      "addr"
+     ],
+     "title": "Interested Party",
+     "subject": "the additional interested party"
+    }
+   }
+  },
   "DE-507": {
    "other_notice_persons": {
     "mode": "list"
+   },
+   "_groups": {
+    "interested_party": {
+     "source": "interested_party",
+     "capacity": 11,
+     "attrs": {
+      "name": "interested_party_{i}_name",
+      "address": "interested_party_{i}_address",
+      "relationship": "interested_party_{i}_relationship"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "address"
+     ],
+     "title": "Interested Party",
+     "subject": "the additional interested party"
+    },
+    "demand_notice_person": {
+     "source": "demand_notice_person",
+     "capacity": 3,
+     "attrs": {
+      "name": "demand_notice_person_{i}_name",
+      "address": "demand_notice_person_{i}_address"
+     },
+     "columns": [
+      "name",
+      "address"
+     ],
+     "title": "Demand Notice Person",
+     "subject": "the additional demand notice person"
+    }
+   }
+  },
+  "DE-509": {
+   "_groups": {
+    "interested_parties": {
+     "source": "interested_parties",
+     "capacity": 7,
+     "attrs": {
+      "name": "interested_parties_name_{i}",
+      "address": "interested_parties_address_{i}"
+     },
+     "columns": [
+      "name",
+      "address"
+     ],
+     "title": "Interested Parties",
+     "subject": "the additional interested parties"
+    }
+   }
+  },
+  "DE-603": {
+   "_groups": {
+    "distributee": {
+     "source": "distributee",
+     "capacity": 12,
+     "attrs": {
+      "name": "distributee_{i}_name",
+      "address": "distributee_{i}_address",
+      "interest": "distributee_{i}_interest"
+     },
+     "columns": [
+      "name",
+      "interest",
+      "address"
+     ],
+     "title": "Distributee",
+     "subject": "the additional distributee"
+    }
    }
   },
   "MISC-101": {
@@ -67,11 +291,123 @@
   "PB-007": {
    "objecting_parties_appointment": {
     "mode": "list"
+   },
+   "_groups": {
+    "expanded_person": {
+     "source": "expanded_person",
+     "capacity": 3,
+     "attrs": {
+      "name": "expanded_person_{i}_name"
+     },
+     "columns": [
+      "name"
+     ],
+     "title": "Expanded Person",
+     "subject": "the additional expanded person"
+    }
    }
   },
   "PB-007.vA": {
    "objecting_parties_appointment": {
     "mode": "list"
+   },
+   "_groups": {
+    "expanded_person": {
+     "source": "expanded_person",
+     "capacity": 3,
+     "attrs": {
+      "name": "expanded_person_{i}_name"
+     },
+     "columns": [
+      "name"
+     ],
+     "title": "Expanded Person",
+     "subject": "the additional expanded person"
+    }
+   }
+  },
+  "PP-205": {
+   "_groups": {
+    "notify_person": {
+     "source": "notify_person",
+     "capacity": 15,
+     "attrs": {
+      "name": "notify_person_{i}_name",
+      "address": "notify_person_{i}_address",
+      "relationship": "notify_person_{i}_relationship"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "address"
+     ],
+     "title": "Notify Person",
+     "subject": "the additional notify person"
+    },
+    "limit_contact_person": {
+     "source": "limit_contact_person",
+     "capacity": 4,
+     "attrs": {
+      "name": "limit_contact_person_{i}_name",
+      "address": "limit_contact_person_{i}_address"
+     },
+     "columns": [
+      "name",
+      "address"
+     ],
+     "title": "Limit Contact Person",
+     "subject": "the additional limit contact person"
+    },
+    "asset": {
+     "source": "asset",
+     "capacity": 8,
+     "attrs": {
+      "name": "asset_{i}_name",
+      "value": "asset_{i}_value"
+     },
+     "columns": [
+      "name",
+      "value"
+     ],
+     "title": "Asset",
+     "subject": "the additional asset"
+    }
+   }
+  },
+  "PP-410": {
+   "_groups": {
+    "notified_person": {
+     "source": "notified_person",
+     "capacity": 11,
+     "attrs": {
+      "name": "notified_person_{i}_name",
+      "address": "notified_person_{i}_address",
+      "relationship": "notified_person_{i}_relationship"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "address"
+     ],
+     "title": "Notified Person",
+     "subject": "the additional notified person"
+    }
+   }
+  },
+  "PP-413": {
+   "_groups": {
+    "notify": {
+     "source": "notify",
+     "capacity": 11,
+     "attrs": {
+      "person": "notify_person_{i}"
+     },
+     "columns": [
+      "person"
+     ],
+     "title": "Notify",
+     "subject": "the additional notify"
+    }
    }
   },
   "PP-506": {
@@ -80,6 +416,84 @@
    },
    "respondent_children_relatives": {
     "mode": "list"
+   }
+  },
+  "PP-507": {
+   "_groups": {
+    "no_notice": {
+     "source": "no_notice",
+     "capacity": 4,
+     "attrs": {
+      "name": "no_notice_name_{i}",
+      "relationship": "no_notice_relationship_{i}",
+      "reason": "no_notice_reason_{i}"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "reason"
+     ],
+     "title": "No Notice",
+     "subject": "the additional no notice"
+    },
+    "notice": {
+     "source": "notice",
+     "capacity": 14,
+     "attrs": {
+      "name": "notice_name_{i}",
+      "address": "notice_address_{i}",
+      "relationship": "notice_relationship_{i}",
+      "datetime": "notice_datetime_{i}",
+      "location": "notice_location_{i}"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "address",
+      "datetime",
+      "location"
+     ],
+     "title": "Notice",
+     "subject": "the additional notice"
+    }
+   }
+  },
+  "PP-509": {
+   "_groups": {
+    "notify": {
+     "source": "notify",
+     "capacity": 6,
+     "attrs": {
+      "person": "notify_person_{i}"
+     },
+     "columns": [
+      "person"
+     ],
+     "title": "Notify",
+     "subject": "the additional notify"
+    }
+   }
+  },
+  "PP-510": {
+   "_groups": {
+    "notified_person": {
+     "source": "notified_person",
+     "capacity": 5,
+     "attrs": {
+      "name": "notified_person_{i}_name",
+      "address": "notified_person_{i}_address",
+      "relationship": "notified_person_{i}_relationship",
+      "waivers": "notified_person_{i}_waivers"
+     },
+     "columns": [
+      "name",
+      "relationship",
+      "address",
+      "waivers"
+     ],
+     "title": "Notified Person",
+     "subject": "the additional notified person"
+    }
    }
   }
  }

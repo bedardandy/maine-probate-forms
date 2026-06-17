@@ -29,7 +29,7 @@ import fitz
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from canonical_adapter import to_case_object       # noqa: E402
-from fill_plan import build_plan                     # noqa: E402
+from fill_plan import build_plan, _render_value      # noqa: E402
 import verify                                         # noqa: E402
 import addendum                                       # noqa: E402
 
@@ -242,6 +242,50 @@ def _as_list(raw) -> list:
     return [x.strip() for x in s.split(";") if x.strip()]
 
 
+def _as_records(raw) -> list:
+    """Coerce a raw group value into a list of attribute dicts.
+
+    Accepts a list of dicts (kept), or a list of strings (each becomes
+    {value: str} for a single-attribute group)."""
+    if not isinstance(raw, (list, tuple)):
+        return []
+    out = []
+    for item in raw:
+        out.append(item if isinstance(item, dict) else {"value": str(item)})
+    return out
+
+
+def _distribute_groups(groups: dict, raw_facts: dict, resolved: dict,
+                       overflows: list) -> None:
+    """Fill numbered repeating-group records (heir_1_name, distributee_3_addr…)
+    from a structured list, spilling rows past the form's capacity to an addendum.
+
+    Each group spec: {source, capacity, attrs:{attr: 'fid_{i}_template'},
+    columns?, subject?, title?}. Records come from raw_facts[source] as a list of
+    dicts; records 1..capacity are injected into `resolved` so the normal widget
+    pass writes them, and records beyond capacity become an addendum entry."""
+    for entity, g in (groups or {}).items():
+        records = _as_records(raw_facts.get(g.get("source", entity)))
+        if not records:
+            continue
+        cap = int(g.get("capacity", len(records)))
+        attrs = g.get("attrs", {})
+        for i, rec in enumerate(records[:cap], 1):
+            for attr, tmpl in attrs.items():
+                v = rec.get(attr)
+                if v not in (None, ""):
+                    resolved[tmpl.format(i=i)] = _render_value(v)
+        if len(records) > cap:
+            cols = g.get("columns") or list(attrs.keys())
+            items = [" — ".join(str(rec.get(c, "")).strip() for c in cols
+                                if str(rec.get(c, "")).strip())
+                     for rec in records[cap:]]
+            overflows.append(addendum.make_entry(
+                entity, g.get("title") or entity.replace("_", " ").title(),
+                g.get("subject") or f"additional {entity.replace('_', ' ')}",
+                items))
+
+
 def _table_rows(raw, columns: list) -> list:
     """Normalise raw recipients into [{col_label: value}] for render_table.
 
@@ -328,6 +372,11 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     overflows: list[dict] = []
     written_text = checked = 0
     skipped_no_geom = []
+    # Repeating groups: distribute a structured records list across the numbered
+    # record fields (heir_1_name…), spilling past capacity to an addendum. Runs
+    # first so injected record values are written by the normal field pass below.
+    if overflow:
+        _distribute_groups(ov_cat.get("_groups"), raw_facts, resolved, overflows)
     # Table-mode fields (catalog) are drawn from their raw structured value, not
     # from a single geometry widget -- handle them up front so the stray widget
     # is not also written.
