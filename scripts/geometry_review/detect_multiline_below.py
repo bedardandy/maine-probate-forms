@@ -55,12 +55,12 @@ from tools.fetch import fetch_source                       # noqa: E402
 from scripts.geometry_review.sweep import page_features     # noqa: E402
 
 MIN_BOX_H = 26.0       # a paragraph box must clear fill_pdf's 24pt multiline gate
-DESIRED_H = 48.0       # ~4 lines at 10pt; clamped to the room actually available
 PROMPT_DROP = 3.0
 EDGE_PAD = 2.0
 H_SINGLE = 16.0
-ROOM_PAD = 6.0         # keep the box this far clear of the next obstacle below
-COL_GUTTER = 6.0       # half-gap between side-by-side columns
+COMFORT_PAD = 12.0     # keep the box this comfortably above the next question
+BOTTOM_MARGIN = 72.0   # never run a box past the 1" page bottom margin
+COL_GAP = 14.0         # gap between symmetric side-by-side columns
 TABLE_REPEAT = 2       # >= this many widgets stacked in the column == a table
 
 CLOSED = re.compile(
@@ -138,9 +138,17 @@ def room_below(rect, words, left, right, page_h, obstacles=()):
     return round(nxt - rect.y1, 1)
 
 
-def proposed_box(rect, prompt, left, right, room):
+def proposed_box(rect, prompt, left, right, room, page_h):
+    """Seat the box below the prompt and run it DOWN to the room available.
+
+    Per the DE-403 vote, an open-ended answer box should extend vertically to
+    just-comfortably-above the next question, or to the 1" bottom margin --
+    whichever comes first -- not clamp to a fixed ~4-line height. `room` is the
+    gap from rect.y1 to the next obstacle, so the next obstacle sits at
+    rect.y1 + room; stop COMFORT_PAD short of it."""
     top = max((prompt[1] if prompt else rect.y1) + PROMPT_DROP, rect.y0)
-    bottom = top + max(MIN_BOX_H, min(DESIRED_H, room - ROOM_PAD))
+    bottom = min((rect.y1 + room) - COMFORT_PAD, page_h - BOTTOM_MARGIN)
+    bottom = max(bottom, top + MIN_BOX_H)
     return [round(left + EDGE_PAD, 1), round(top, 1),
             round(right - EDGE_PAD, 1), round(bottom, 1)]
 
@@ -165,22 +173,26 @@ def overlaps(a, b):
 def column_bounds(rect, others, body_left, body_right):
     """[col_left, col_right] for the candidate's column on a multi-column row.
 
-    A box-below must respect side-by-side columns (DE-403's two sureties, a
-    name|reason pair): bound it at the midpoint to the nearest same-row widget on
-    each side, else the page body margin. Returns (left, right, multi_col)."""
-    cx = (rect.x0 + rect.x1) / 2
-    left, right = body_left, body_right
-    multi = False
+    Per the DE-403 vote, side-by-side answer boxes (the two surety descriptions)
+    should be *symmetric* -- each flush to its page margin with a small gap
+    between, not sized to the (off-centre) underlying widget. So when N widgets
+    share the candidate's row, divide the body width into N equal columns with a
+    COL_GAP gutter and give the candidate its slot (by left-to-right rank).
+    Single-column fields keep the full body margins. Returns
+    (left, right, multi_col)."""
+    row = [rect]
     for o in others:
-        if min(rect.y1, o.y1) - max(rect.y0, o.y0) <= 0.5 * min(rect.height,
-                                                                o.height):
-            continue                                   # not on this row
-        ocx = (o.x0 + o.x1) / 2
-        if ocx < cx:
-            left = max(left, (ocx + cx) / 2 + COL_GUTTER); multi = True
-        elif ocx > cx:
-            right = min(right, (ocx + cx) / 2 - COL_GUTTER); multi = True
-    return left, right, multi
+        if min(rect.y1, o.y1) - max(rect.y0, o.y0) > 0.5 * min(rect.height,
+                                                               o.height):
+            row.append(o)
+    if len(row) <= 1:
+        return body_left, body_right, False
+    row.sort(key=lambda r: r.x0)
+    k = min(range(len(row)), key=lambda i: abs(row[i].x0 - rect.x0))
+    n = len(row)
+    colw = (body_right - body_left - (n - 1) * COL_GAP) / n
+    left = body_left + k * (colw + COL_GAP)
+    return left, left + colw, True
 
 
 def is_table_column(rect, others):
@@ -260,7 +272,7 @@ def main() -> int:
                 rec["fits_box"] = False
                 rec["drop_reason"] = "table_cell"
             elif rec["fits_box"]:
-                box = proposed_box(r, prompt, left, right, rb)
+                box = proposed_box(r, prompt, left, right, rb, ph)
                 # final guard: a clean box-below touches no other widget. Same-
                 # level overlaps (sibling box) land here -> structural.
                 if any(overlaps(fitz.Rect(box), wr) for wr in others):
@@ -269,6 +281,21 @@ def main() -> int:
                 else:
                     rec["proposed_rect"] = box
             rows.append(rec)
+
+    # Symmetry (DE-403 vote): side-by-side answer boxes sharing a row should be
+    # the same shape, so snap each multi-col group to a common top and bottom
+    # (the shallowest, so neither box runs into anything below it).
+    groups = collections.defaultdict(list)
+    for r in rows:
+        if r.get("proposed_rect") and r.get("multi_col"):
+            groups[(r["form"], r["page"], round(r["current_rect"][1]))].append(r)
+    for g in groups.values():
+        if len(g) > 1:
+            top = max(x["proposed_rect"][1] for x in g)
+            bot = min(x["proposed_rect"][3] for x in g)
+            for x in g:
+                x["proposed_rect"][1] = top
+                x["proposed_rect"][3] = bot
 
     fits = [r for r in rows if r["fits_box"]]
     collide = [r for r in rows if r.get("drop_reason") == "widget_collision"]

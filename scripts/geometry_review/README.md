@@ -57,6 +57,33 @@ fill pipeline. Picks (and free-text "Other" notes) are recorded to
 `human_decisions.jsonl`; the poll is resumable. `apply_decisions.py` writes
 the chosen rects back; "leave as-is"/"skip"/"other" make no geometry change.
 
+## Follow-up decision poll (tier 4.5 — schema / fill-logic, not rects)
+
+Most tier-4 picks came back as free-text "Other": the call wasn't a rect nudge
+but a **schema or fill-logic change** (split a field into text + currency,
+delete a meta-question widget, upper-case a value on fill, town-only an address,
+model a 2-line continuation chain, leave a notary date for the notary). Those
+are catalogued in `catalog/geometry_review_followups.md` and surfaced as a
+separate, **text-first** poll so they can be resolved itemized instead of as
+crop picks.
+
+```bash
+OUT=~/geom-review-out
+python3 scripts/geometry_review/build_followup_poll.py --out $OUT   # units + context crops
+python3 scripts/geometry_review/serve_followups.py     --out $OUT --port 8771
+#   browse http://<host>:8771/  (or ssh -L 8771:localhost:8771 <host>)
+```
+
+Each unit states the problem (+ the raw flag signal), shows the field outlined
+in red on the real form (reusing the `<FORM>/page-N.png` renders — no PDF
+fetch), and offers options where **every option says what changes in the filled
+PDF** if you pick it. The reviewer can choose an option, add a note, or both.
+Decisions write to `followup_decisions.jsonl` (separate from the geometry
+poll's `human_decisions.jsonl`; last write per unit wins, "skip" clears). These
+are *not* auto-applied — they drive schema/fill-logic edits per category
+(Structural / Semantic / Continuation), so the maintainer implements them by
+hand from the recorded choices.
+
 Run (endpoints stay in the environment — never commit them):
 
 ```bash

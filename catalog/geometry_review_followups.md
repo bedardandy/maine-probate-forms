@@ -49,24 +49,90 @@ looked at printed text. Three corrections, all in the detector now:
    A final proposed-rect-vs-all-widgets overlap test drops any residual as
    `widget_collision` (sibling box already there → structural).
 
-Corpus result (511 narrative single-line non-shortfact fields): **42 clean box
-below** (29 margin-wide, 13 column-width) · 26 table/grid cells · 13 structural
-sibling-collisions · 430 no room below (overflow / "see Exhibit A" class).
+Corpus result (511 narrative single-line non-shortfact fields, after the
+2026-06-17 geometry corrections below): **44 clean box below** (15 column-width,
+29 margin-wide) · 23 table/grid cells · 13 structural sibling-collisions · 431 no
+room below (overflow / "see Exhibit A" class — now served by the addendum engine,
+below).
 
-Of the 42, only single-widget fields go to the poll (a multi-widget field already
+Of the 44, only single-widget fields go to the poll (a multi-widget field already
 has a continuation chain that wraps). A local fleet pass
 (`classify_multiline.py`, Qwen + gemma) labels each paragraph vs short-value, and
 **only both-models-agree** units are polled — a fleet split means the field is
 ambiguous (almost always a mismapped table cell, e.g. AF-104
 `reason_not_contacting`, whose widget sits under the *Name* column header while
 `name_not_contacted` sits under *Reason*). Splits go to
-`multiline_review_needed.jsonl`, not the poll. That leaves **3** render-validated,
+`multiline_review_needed.jsonl`, not the poll. That left **3** render-validated,
 collision-free units (`build_multiline_poll.py`, A=current vs B=box below): the
-reviewer's canonical DE-403 ×2 (column-width) and MISC-101 (margin-wide). The
-poll exists to confirm the *geometry* (column-width vs margin-wide) the reviewer
-hadn't seen rendered; box + schema multiline flag (rect.height>24) is fillable
-today, converting the schema field to a declared paragraph type stays a pipeline
-follow-up.
+reviewer's canonical DE-403 ×2 (column-width) and MISC-101 (margin-wide).
+
+### Votes (2026-06-17) and what they corrected
+
+All three came back "other" with rich notes — the box-below *idea* confirmed,
+the *geometry* corrected:
+
+- **DE-403 `personal_property_surety_1/2_description`** — box-below ✅, two
+  columns ✅, but: (a) the two columns must be **symmetric** (each flush to its
+  page margin with a small gap), not sized to the off-centre underlying widget;
+  (b) the box should run **down to the next question (comfortably) or the 1"
+  bottom margin**, not clamp to ~4 lines. Both extrapolated into the detector:
+  `column_bounds` now divides the body into N **equal** columns with a `COL_GAP`
+  gutter; `proposed_box` runs to `min(next_obstacle - COMFORT_PAD, page_h -
+  BOTTOM_MARGIN)`; and a post-pass snaps multi-col siblings to a **common top
+  and bottom** so the pair is identical. Result: two 204×167 boxes, 18pt gap,
+  both to y353. **APPLIED to `repo/forms/DE-403/fill_geometry.json`** (log:
+  `multiline_applied.jsonl`); the rule is now validated for the column-width
+  class.
+- **MISC-101 `service_recipients`** — *reclassified*: not a box-below but a
+  **table** (`service_recipient_name_1..N` narrow + `service_recipient_address_
+  1..N` wide), and when the rows run out the **last row spans full width with a
+  centred "See attached Addendum N for remaining service contacts."** This is a
+  structural per-form re-map (see "Structural — service-recipient table" below)
+  and the first table consumer of the overflow→addendum engine; a layout mockup
+  was rendered for approval before authoring the widgets.
+
+The box + schema multiline flag (rect.height>24) is fillable today; converting
+the schema field to a declared paragraph type stays a pipeline follow-up.
+
+## Overflow → addendum continuation pages (`tools/addendum.py`)
+
+The reviewer's general rule for any field that can hold *multiple things* the
+form has no room for: **say "See attached Addendum N for <subject>." and put the
+full content on an appended continuation page** — one answer to a page (or more
+for clarity), each page titled with the original question + " (continued)", and
+the pages **continuing the form's own page numbering** "for clarity's sake".
+
+`tools/addendum.py` implements this; `tools/fill_pdf.py` calls it (on by
+default; `--no-addendum` / `overflow=False` to disable):
+
+1. **Trigger** — a single paragraph box (the box-below class, rect.height>24)
+   whose value will not wrap inside it (`addendum.fits`). Single-line and
+   continuation-chain fields keep shrink-to-fit/split; they never spill.
+2. **In-field reference** — the widget gets `field_reference(subject, n)` =
+   *"See attached Addendum N for <subject>."*; `subject` is the (lower-cased)
+   field label.
+3. **Continuation pages** — one addendum per overflowed field, spilling onto as
+   many sheets as needed (each still titled "(continued) [sheet k of m]"). Lists
+   ('; '- or newline-delimited values) render as a numbered list; prose wraps.
+4. **Page numbering** — `detect_page_scheme` finds the form's printed "Page N of
+   M" token (top-right at 8pt for most forms; bottom-centre for a few). Addendum
+   pages match that exact spot/size and read "Page N of TOTAL", and the base
+   pages are rewritten from "of M" to "of TOTAL" (an opaque white overlay on the
+   token bbox, *not* `apply_redactions`, which would erase the tightly-stacked
+   line above — the id/rev/page header lines overlap vertically by ~1pt). Forms
+   with no token fall back to a centred footer.
+5. **Verify** — `tools/verify_filled.py` is overflow-aware: a widget holding a
+   "See attached Addendum N for …" reference is a PASS when the expected value
+   is found on a continuation page (`summary.overflowed_to_addendum`).
+
+This is the deterministic home for the **431 "no room below"** fields (the
+"see Exhibit A" class) and for any box-below value that outgrows its box.
+Demonstrated end-to-end on DE-403 (long pledged-property list → Addendum 1,
+packet renumbered 1..5 of 5). Not yet auto-enrolled per form beyond the box-below
+class — eligibility is currently "multiline box that overflows"; a per-field
+`overflow: list` flag in the schema (heirs, creditors, devisees) is the next
+step so list fields route to an addendum even when a short box would technically
+fit one line.
 
 ## Continuation — "part 1 of 2" line-split answers
 
@@ -91,6 +157,7 @@ multi-widget continuation chain, not a single rect:
 | AD-008 | `medical_/foster_care_/living_expenses_details` | 2-line continuation: line 1 should start at the underline after "child." / "birth mother." and overflow to line 2; long values reach the blank's right end | model as a multi-widget continuation chain (line1 + line2) |
 | PP-405 | `corporate_surety_address` | belongs under "1. Name of corporate surety:"; if a field already exists there, this is a meta-question -> delete | re-point or remove from schema |
 | AF-104 | `reason_not_contacting` / `name_not_contacted` | the bottom is a "Name \| Date \| Reason for not contacting" table, but `reason_not_contacting` is mapped under the *Name* column and `name_not_contacted` under the *Reason* column — columns are swapped, there is no Date widget, and no data rows | re-map widgets to the correct columns and add a multi-row continuation chain (found by the multiline-below fleet split) |
+| MISC-101 | `service_recipients` | the Certificate-of-Service block is a "Name \| Mailing Address" table, but only ONE stray single-line widget is mapped (mis-placed at the header row). Vote: make it a real table, name column narrower than address | re-map to `service_recipient_name_1..3` (x≈72–224) + `service_recipient_address_1..3` (x≈232–540) data rows under the printed headers; fill distributes a recipients list across rows; when rows overflow, the **last row spans full width, centred** `table_overflow_row("service contacts", n)` and the remainder goes to an addendum (engine ready; widgets + fill-distribution pending). Mockup approved-pending. |
 
 ## Semantic — fill logic, not geometry
 

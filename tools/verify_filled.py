@@ -34,17 +34,24 @@ from fill_plan import build_plan                     # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 _CHECKED = {"yes", "on", "true", "1"}
+_OVERFLOW_RE = re.compile(r"^See attached Addendum \d+ for ", re.I)
 
 
-def _widget_map(filled_pdf) -> dict:
-    """{widget_name: {"value": str, "page": int, "type": int}} for every widget."""
+def _widget_map(filled_pdf) -> tuple[dict, str]:
+    """({widget_name: {value, page, type}}, full_document_text) from the output."""
     out: dict[str, dict] = {}
+    text_parts = []
     with fitz.open(str(filled_pdf)) as doc:
         for pno, page in enumerate(doc):
             for w in page.widgets() or []:
                 out[w.field_name] = {"value": w.field_value, "page": pno,
                                      "type": w.field_type}
-    return out
+            text_parts.append(page.get_text())
+    return out, "\n".join(text_parts)
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", " ", str(s or "")).strip().lower()
 
 
 def verify_filled(form_id: str, case: dict, filled_pdf,
@@ -55,10 +62,11 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
     geom_path = root / "repo" / "forms" / form_id / "fill_geometry.json"
     geom = (json.loads(geom_path.read_text())["fields"]
             if geom_path.exists() else {})
-    widgets = _widget_map(filled_pdf)
+    widgets, doc_text = _widget_map(filled_pdf)
+    doc_text_n = _norm(doc_text)
 
     fields: dict[str, dict] = {}
-    placed = mismatched = missing = 0
+    placed = mismatched = missing = overflowed = 0
     for fid, expected in plan["resolved"].items():
         spec = geom.get(fid) or {}
         if spec.get("options"):                      # choice field
@@ -95,13 +103,28 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
                 i += 1
             ok = (w is not None and
                   str(actual or "").strip() == str(expected or "").strip())
+            kind = "text"
+            # Overflow: the box-below value did not fit, so fill_pdf wrote a
+            # "See attached Addendum N for ..." reference and moved the full
+            # value to a continuation page. That is a PASS, provided the value
+            # really landed on the addendum -- probe a representative chunk.
+            if (not ok and w is not None
+                    and _OVERFLOW_RE.match(str(actual or "").strip())):
+                exp = str(expected or "")
+                probe = (exp.split(";")[0] if ";" in exp else exp[:60]).strip()
+                if probe and _norm(probe) in doc_text_n:
+                    ok, kind = True, "text-overflow"
             entry = {"placed": ok, "expected": expected, "actual": actual,
-                     "page": (w or {}).get("page"), "kind": "text"}
+                     "page": (w or {}).get("page"), "kind": kind}
+            if kind == "text-overflow":
+                entry["note"] = "value moved to an addendum continuation page"
             if w is None:
                 entry["note"] = "no widget with this field_id in the output"
         fields[fid] = entry
         if entry["placed"]:
             placed += 1
+            if entry.get("kind") == "text-overflow":
+                overflowed += 1
         elif (entry["kind"] == "text" and entry["page"] is None) or (
                 entry["kind"] == "choice" and not spec):
             missing += 1
@@ -112,7 +135,8 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
         "ok": True, "form_id": form_id, "filled": str(filled_pdf),
         "fields": fields,
         "summary": {"expected": len(plan["resolved"]), "placed": placed,
-                    "mismatched": mismatched, "missing_widget": missing},
+                    "mismatched": mismatched, "missing_widget": missing,
+                    "overflowed_to_addendum": overflowed},
         "all_placed": placed == len(plan["resolved"]),
         "note": "Verifies plan.resolved against the output's widget values. "
                 "Narrative/blank/unresolved buckets are out of scope; visual "

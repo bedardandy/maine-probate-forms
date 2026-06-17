@@ -31,6 +31,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from canonical_adapter import to_case_object       # noqa: E402
 from fill_plan import build_plan                     # noqa: E402
 import verify                                         # noqa: E402
+import addendum                                       # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -178,6 +179,44 @@ def _split_for_widgets(value: str, widgets: list[dict],
     return parts
 
 
+def _field_labels(form_id: str, root: pathlib.Path) -> dict[str, str]:
+    """field_id -> printed label, for addendum page titles / subjects."""
+    try:
+        s = json.loads((root / "repo" / "forms" / form_id / "schema.json")
+                       .read_text())
+        return {f["field_id"]: f.get("label", "") for f in s.get("fields", [])}
+    except Exception:
+        return {}
+
+
+_ARTICLE_RE = re.compile(r"^(the|a|an|all|any|each|its|his|her|their)\b", re.I)
+
+
+def _subject_from_label(label: str, fid: str) -> str:
+    """A noun phrase for 'See attached Addendum N for <subject>.'
+
+    Field labels are descriptors ('Personal Property Surety 1 Description'), so
+    lower-case the whole phrase for a natural reference ('the personal property
+    surety 1 description'); leave already-lowercase / article-led labels alone."""
+    s = (label or fid.replace("_", " ")).strip().rstrip(" :.")
+    if s and not _ARTICLE_RE.match(s):
+        s = "the " + s.lower()
+    return s
+
+
+def _overflow_content(val: str):
+    """Split an overflowed value into addendum items, or keep it as prose.
+
+    Newline- or '; '-delimited values are lists (heirs, recipients, property);
+    a single block is prose. Lists become numbered items on the addendum."""
+    v = str(val)
+    if "\n" in v:
+        items = [x.strip() for x in v.splitlines() if x.strip()]
+        return items if len(items) >= 2 else v
+    parts = [x.strip() for x in v.split(";") if x.strip()]
+    return parts if len(parts) >= 2 else v
+
+
 def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
     w = fitz.Widget()
     w.field_name = name
@@ -191,7 +230,8 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
              out_path: str | pathlib.Path,
              geometry_path: str | pathlib.Path | None = None,
              root: str | pathlib.Path = ROOT,
-             verify_mode: str | None = None) -> dict:
+             verify_mode: str | None = None,
+             overflow: bool = True) -> dict:
     root = pathlib.Path(root)
     geometry_path = pathlib.Path(geometry_path) if geometry_path else (
         root / "repo" / "forms" / form_id / "fill_geometry.json")
@@ -234,7 +274,10 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
                 "likely outdated or the wrong document; re-fetch from "
                 "metadata.json.source_url"}
     _strip_widgets(doc)
+    base_pages = doc.page_count          # the form's own pages, before any addenda
     align_map = _load_alignment(form_id, root)
+    labels = _field_labels(form_id, root)
+    overflows: list[dict] = []
     written_text = checked = 0
     skipped_no_geom = []
     for fid, val in resolved.items():
@@ -243,6 +286,26 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
             skipped_no_geom.append(fid); continue
         if spec.get("widgets"):                       # text field(s)
             align = _ALIGN_CONST.get(align_map.get(fid))   # None -> name heuristic
+            # Overflow -> addendum: a single paragraph box (the box-below class)
+            # whose value will not fit gets a "See attached Addendum N for ..."
+            # reference; the full value moves to an appended continuation page.
+            # Single-line / continuation-chain fields keep shrink-to-fit + split.
+            w0 = spec["widgets"][0]
+            r0 = fitz.Rect(w0["rect"])
+            if (overflow and len(spec["widgets"]) == 1
+                    and r0.height > _MULTILINE_MIN_H
+                    and not addendum.fits(str(val), list(r0),
+                                          _fontsize_for(str(val), r0, True),
+                                          _PAD)):
+                no = len(overflows) + 1
+                subject = _subject_from_label(labels.get(fid, ""), fid)
+                _add_text(doc[w0["page"]], w0["rect"], fid,
+                          addendum.field_reference(subject, no), align=align)
+                written_text += 1
+                overflows.append(addendum.make_entry(
+                    fid, labels.get(fid, "") or fid.replace("_", " "),
+                    subject, _overflow_content(val)))
+                continue
             parts = _split_for_widgets(str(val), spec["widgets"])
             for i, wdg in enumerate(spec["widgets"]):
                 # value flows across the continuation chain width-by-width
@@ -276,12 +339,18 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
         except Exception:
             pass
 
+    # Append one addendum (1+ continuation sheets) per overflowed field, with a
+    # "(continued)" heading and a footer page number continuing the form's pages.
+    addenda = addendum.append_pages(doc, overflows, form_id,
+                                    base_pages=base_pages) if overflows else {}
+
     out_path = pathlib.Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     doc.save(str(out_path))
     return {
         "ok": True, "form_id": form_id, "out": str(out_path),
         "text_written": written_text, "options_checked": checked,
+        "addenda": addenda,
         "source_verified": source_verified,
         "source_verify_detail": verify_detail,
         "resolved_without_geometry": skipped_no_geom,
@@ -304,6 +373,8 @@ def main() -> int:
                     "the cache); implied when --source is omitted")
     ap.add_argument("--out", required=True)
     ap.add_argument("--geometry", help="override fill_geometry.json path")
+    ap.add_argument("--no-addendum", action="store_true",
+                    help="disable overflow -> addendum continuation pages")
     a = ap.parse_args()
     case = to_case_object(json.loads(pathlib.Path(a.case).read_text()))
     source = a.source
@@ -316,7 +387,8 @@ def main() -> int:
                               "error": f"could not fetch source PDF: {e}"},
                              indent=2))
             return 1
-    res = fill_pdf(a.form, case, source, a.out, a.geometry)
+    res = fill_pdf(a.form, case, source, a.out, a.geometry,
+                   overflow=not a.no_addendum)
     print(json.dumps(res, indent=2))
     return 0 if res.get("ok") else 1
 
