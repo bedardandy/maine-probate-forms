@@ -12,7 +12,7 @@ Fields filled:
   notary_county        ← county_probate_court (court-of-record county
                           is also the notarization county for any
                           probate-related notarization)
-  notarization_date    ← event_date
+  notarization_date is intentionally left blank unless explicitly known.
 
 Place in the fix chain: AFTER infer_notary_fields (which handles
 DE-603's separate notary_county/notary_date) and BEFORE
@@ -121,10 +121,6 @@ def process(filled: dict, event_date: str | None = None,
     if court_county and _set(answers, "notary_county", court_county,
                               "county-from-court"):
         changes.append(("notary_county", court_county, "county-from-court"))
-
-    if event_date and _set(answers, "notarization_date", event_date,
-                            "date-from-event"):
-        changes.append(("notarization_date", event_date, "date-from-event"))
 
     return new_filled, changes
 

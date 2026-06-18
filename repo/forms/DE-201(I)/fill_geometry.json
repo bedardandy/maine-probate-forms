@@ -1549,45 +1549,15 @@
   },
   "filing_fee": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      121.3,
-      91.1,
-      188.0,
-      104.1
-     ]
-    }
-   ]
+   "widgets": []
   },
   "mailing_notices_fee": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      289.2,
-      91.1,
-      363.0,
-      104.1
-     ]
-    }
-   ]
+   "widgets": []
   },
   "publication_fee": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      450.1,
-      91.1,
-      516.0,
-      104.1
-     ]
-    }
-   ]
+   "widgets": []
   }
  }
 }

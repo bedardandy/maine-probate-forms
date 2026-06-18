@@ -3,19 +3,19 @@
   "schema_version": "0.2",
   "source_pdf": "http://www.maineprobate.net/forms2019/Adoption/AD-007%20Confidential%20Statement.pdf",
   "artifact_pdf": null,
-  "n_fields": 58,
+  "n_fields": 60,
   "by_category": {
     "case_constant": 4,
     "party_attr": 1,
-    "narrative_derived": 49,
+    "narrative_derived": 51,
     "signature": 4
   },
   "by_risk_tier": {
-    "green": 57,
+    "green": 59,
     "orange": 1
   },
   "by_data_type": {
-    "text": 51,
+    "text": 53,
     "docket_number": 2,
     "person_name": 1,
     "date": 2,
@@ -1087,6 +1087,42 @@
       }
     },
     {
+      "field_id": "parent1_q11",
+      "widget_id": null,
+      "label": "Parent1 Q11",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_1",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": null
+    },
+    {
       "field_id": "parent2_q10",
       "widget_id": null,
       "label": "Parent2 Q10",
@@ -1129,6 +1165,42 @@
         "not_applicable": 3,
         "patterns_scored": 5
       }
+    },
+    {
+      "field_id": "parent2_q11",
+      "widget_id": null,
+      "label": "Parent2 Q11",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "parent_questionnaire_answer",
+      "party": "parent_2",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": false,
+        "llm_eligible": true,
+        "human_required": false,
+        "source": "llm_over_narrative"
+      },
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 5,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": null
     },
     {
       "field_id": "parent1_q12",

@@ -1314,11 +1314,10 @@
       "widget_id": null,
       "label": "Notary Title",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "party_attr",
-      "subcategory": "notary",
-      "party": "notary",
+      "category": "signature",
+      "subcategory": "notary_title",
       "writable_when": null,
       "required_when": null,
       "choice_group": null,
@@ -1327,10 +1326,10 @@
       "depends_on": [],
       "validators": [],
       "fill_strategy": {
-        "deterministic": true,
+        "deterministic": false,
         "llm_eligible": false,
-        "human_required": false,
-        "source": "notary_record.notary"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 0,
       "risk_tier": "green",

@@ -4,8 +4,6 @@ district_court_location,District Court Location,,text,text,narrative_derived,fre
 probate_docket_number,Probate Docket Number,,text,text,case_constant,probate_docket_number,,,0,green,Y,,,case_dict.probate_docket_number,populate_from_case_dict
 district_docket_number,District Docket Number,,text,text,case_constant,district_docket_number,,,0,green,Y,,,case_dict.district_docket_number,populate_from_case_dict
 adoptee_name,Adoptee Name,,text,text,party_attr,adoptee,,,0,green,Y,,,adoptee_record.adoptee,
-petitioner_name,Petitioner Name,,text,person_name,party_attr,petitioner,,,8,green,Y,,,petitioner_record.petitioner,
-certification_text,Certification Text,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 disbursements,Disbursements,,select_many,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
 legal_parent_1_details,Legal Parent 1 Details,W009,text,text,narrative_derived,repeating_slot,legal_parent,1,40,orange,,Y,,llm_over_narrative,
 legal_parent_2_details,Legal Parent 2 Details,W012,text,text,narrative_derived,repeating_slot,legal_parent,2,40,orange,,Y,,llm_over_narrative,

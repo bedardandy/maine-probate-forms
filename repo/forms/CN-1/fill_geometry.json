@@ -541,17 +541,7 @@
   },
   "notary_title": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      309.7,
-      175.5,
-      525.7,
-      188.5
-     ]
-    }
-   ]
+   "widgets": []
   },
   "notary_printed_name": {
    "type": "text",

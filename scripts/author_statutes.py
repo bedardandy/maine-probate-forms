@@ -1183,13 +1183,13 @@ FORMS: dict[str, dict] = {
 
 
 def load_index() -> tuple[dict, dict]:
-    sec = json.loads((IDX / "18c-sections.json").read_text())["sections"]
-    xref = json.loads((IDX / "cross-refs.json").read_text())["cross_refs"]
+    sec = json.loads((IDX / "18c-sections.json").read_text(encoding="utf-8"))["sections"]
+    xref = json.loads((IDX / "cross-refs.json").read_text(encoding="utf-8"))["cross_refs"]
     return sec, xref
 
 
 def load_caselaw() -> dict:
-    return json.loads((IDX / "caselaw.json").read_text())["cases"]
+    return json.loads((IDX / "caselaw.json").read_text(encoding="utf-8"))["cases"]
 
 
 def cases_for_form(sidecar: dict, caselaw: dict) -> list[dict]:
@@ -1246,7 +1246,7 @@ def resolve_url(cite: str, sec: dict, xref: dict) -> str | None:
 
 def schema_field_ids(form_id: str) -> set[str]:
     sp = FORMS_DIR / form_id / "schema.json"
-    data = json.loads(sp.read_text())
+    data = json.loads(sp.read_text(encoding="utf-8"))
     return {f.get("field_id") or f.get("id") for f in (data.get("fields") or [])}
 
 

@@ -105,7 +105,8 @@ def _fontsize_for(value: str, r: fitz.Rect, multiline: bool) -> float:
 
 
 def _add_text(page: fitz.Page, rect, name: str, value: str,
-              align: int | None = None) -> None:
+              align: int | None = None, border: bool = False,
+              force_multiline: bool = False) -> None:
     w = fitz.Widget()
     w.field_name = name
     w.field_type = fitz.PDF_WIDGET_TYPE_TEXT
@@ -113,7 +114,10 @@ def _add_text(page: fitz.Page, rect, name: str, value: str,
     w.rect = r
     sval = str(value)
     w.field_value = sval
-    multiline = r.height > _MULTILINE_MIN_H
+    if border:
+        w.border_color = (0, 0, 0)
+        w.border_width = 0.5
+    multiline = force_multiline or r.height > _MULTILINE_MIN_H
     if multiline:
         try:
             w.field_flags = fitz.PDF_TX_FIELD_IS_MULTILINE
@@ -156,6 +160,14 @@ def _split_for_widgets(value: str, widgets: list[dict],
     """
     if len(widgets) <= 1 or fitz.Rect(widgets[0]["rect"]).height > _MULTILINE_MIN_H:
         return [value]
+    # The same fact is sometimes printed repeatedly in separate oath clauses
+    # (for example AF-101's "I, ____" statements). Widely separated widgets are
+    # repetitions, not continuation lines, so each receives the full value.
+    for previous, current in zip(widgets, widgets[1:]):
+        if previous["page"] == current["page"]:
+            gap = current["rect"][1] - previous["rect"][3]
+            if gap > 22:
+                return [value] * len(widgets)
     words = str(value).split()
     parts: list[str] = []
     idx = 0
@@ -341,6 +353,25 @@ def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
     page.add_widget(w)
 
 
+def _value_for_printed_context(page: fitz.Page, rect, field_id: str,
+                               value: str) -> str:
+    """Apply formatting implied by adjacent immutable form text.
+
+    A blank immediately before an all-caps ``COUNTY`` label is conventionally
+    completed in capitals. It also makes clipping at the word COUNTY easier to
+    spot and keeps these captions visually consistent across the corpus.
+    """
+    if "county" not in field_id.lower():
+        return value
+    r = fitz.Rect(rect)
+    for word in page.get_text("words"):
+        wr = fitz.Rect(word[:4])
+        same_line = min(r.y1, wr.y1) - max(r.y0, wr.y0) > 2
+        if word[4] == "COUNTY" and same_line and 0 <= wr.x0 - r.x1 < 12:
+            return str(value).upper()
+    return value
+
+
 def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
              out_path: str | pathlib.Path,
              geometry_path: str | pathlib.Path | None = None,
@@ -435,7 +466,14 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
         spec = geom.get(fid)
         if not spec:
             skipped_no_geom.append(fid); continue
-        if spec.get("widgets"):                       # text field(s)
+        if spec.get("type") == "enabler" and spec.get("widgets"):
+            wants_checked = str(val).strip().lower() in ("true", "yes", "1", "on")
+            if wants_checked:
+                for i, wdg in enumerate(spec["widgets"]):
+                    _add_checkbox(doc[wdg["page"]], wdg["rect"],
+                                  fid if i == 0 else f"{fid}__{i}")
+                    checked += 1
+        elif spec.get("widgets"):                     # text field(s)
             align = _ALIGN_CONST.get(align_map.get(fid))   # None -> name heuristic
             # Overflow -> addendum: a single paragraph box (the box-below class)
             # whose value will not fit gets a "See attached Addendum N for ..."
@@ -465,11 +503,25 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
                     subject, content))
                 continue
             parts = _split_for_widgets(str(val), spec["widgets"])
+            first_page = spec["widgets"][0]["page"]
             for i, wdg in enumerate(spec["widgets"]):
                 # value flows across the continuation chain width-by-width
+                # A continuation on a later PDF page is explicitly named as an
+                # overflow widget. This makes cross-page table continuations
+                # distinguishable in Acrobat and alignment review tools.
+                continuation_name = (
+                    f"{fid}__overflow"
+                    if i and wdg["page"] != first_page
+                    else f"{fid}__{i}"
+                )
+                printed_value = _value_for_printed_context(
+                    doc[wdg["page"]], wdg["rect"], fid,
+                    parts[i] if i < len(parts) else "")
                 _add_text(doc[wdg["page"]], wdg["rect"],
-                          fid if i == 0 else f"{fid}__{i}",
-                          parts[i] if i < len(parts) else "", align=align)
+                          fid if i == 0 else continuation_name,
+                          printed_value, align=align,
+                          border=bool(wdg.get("border")),
+                          force_multiline=bool(wdg.get("multiline")))
                 written_text += 1
         elif spec.get("options"):                     # choice field
             # A select_many list reaches here rendered as "a; b" (the plan's

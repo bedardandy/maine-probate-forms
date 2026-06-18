@@ -5,7 +5,7 @@ jurisdiction: Maine
 court: Probate
 filer_role: petitioner
 statutes:
-  - "18-A M.R.S.A. §§ 9-301 to 9-315 (Adoption — Maine pre-2019)"
+  - "18-C M.R.S. §§ 9-301 to 9-315 (Adoption)"
   - "22 M.R.S.A. § 4137 (Information sharing)"
 filing_deadline_days: null
 filing_deadline_anchor: "petition_filing_date"

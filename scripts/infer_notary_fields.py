@@ -1,4 +1,4 @@
-"""Fill empty *notary block* and *PR signature* fields.
+"""Fill non-signature identity/venue facts in notary blocks.
 
 Why this exists:
   DE-603 (Statement of Distribution) and similar forms have a notary
@@ -18,20 +18,13 @@ Why this exists:
   These are procedural facts derivable from values already in the
   filled JSON or from sensible defaults:
 
-    notary_date          ← pr_date_signed (PR signs in front of the
-                           notary, so same day) → fallback event_date
     notary_county        ← county_probate_court (probate court county
                            is also the notarization county for any
                            probate notary)
-    pr_signature         ← pr_name_in_notarization, else first segment
-                           of personal_representative_name_address
-    notary_signature     ← generic "Register of Probate" — Maine
-                           probate forms explicitly allow the Register
-                           of Probate to administer the oath
     notary_printed_name  ← same as notary_signature
 
-Place in the fix chain: AFTER infer_signature_dates (so notary_date's
-fallback can still see event_date) and BEFORE recompute_overwrite.
+Signature lines and notarization dates remain blank unless an explicit value is
+already present. Event dates are not treated as signing dates.
 """
 from __future__ import annotations
 
@@ -94,7 +87,6 @@ def process(filled: dict, event_date: str | None = None) -> tuple[dict, list]:
     answers = new_filled.get("answers") or {}
     changes: list[tuple[str, str, str]] = []
 
-    pr_date_signed = _get(answers, "pr_date_signed") or (event_date or "")
     county_court = _get(answers, "county_probate_court")
     pr_in_notar = _get(answers, "pr_name_in_notarization")
     pr_addr = _get(answers, "personal_representative_name_address")
@@ -105,32 +97,18 @@ def process(filled: dict, event_date: str | None = None) -> tuple[dict, list]:
     attorney_name = _get(answers, "attorney_name")
     officer_name = attorney_name or GENERIC_NOTARY_NAME
 
-    # notary_date ← pr_date_signed (fallback event_date)
-    if pr_date_signed and _set(answers, "notary_date", pr_date_signed,
-                                "date-from-pr-signed"):
-        changes.append(("notary_date", pr_date_signed, "date-from-pr-signed"))
-
     # notary_county ← county_probate_court
     if county_court and _set(answers, "notary_county", county_court,
                               "county-from-court"):
         changes.append(("notary_county", county_court, "county-from-court"))
 
-    # pr_signature ← PR name in notarization, else first segment of
-    # personal_representative_name_address
-    if pr_name and _set(answers, "pr_signature", pr_name, "pr-sig-from-name"):
-        changes.append(("pr_signature", pr_name, "pr-sig-from-name"))
-
-    # notary_signature + notary_printed_name ← attorney_name (officer-
-    # of-the-oath) or generic mock. The form's label "Notary Public/
-    # Register of Probate/Attorney at Law" lists the three permissible
-    # roles; the underline expects the officer's *name*, not the role.
+    # Printed officer-name fields may be prefilled when the officer is known.
+    # Signature fields themselves are deliberately excluded.
     src_label = "attorney-as-officer" if attorney_name else "generic-name"
     # Officer-name aliases: DE-603 uses notary_signature/notary_printed_name;
     # DE-602 uses notary_officer_name; DE-605 uses
     # notary_officer_signature/notary_officer_printed_name.
-    for fid in ("notary_signature", "notary_printed_name",
-                "notary_officer_name",
-                "notary_officer_signature",
+    for fid in ("notary_printed_name", "notary_officer_name",
                 "notary_officer_printed_name"):
         if _set(answers, fid, officer_name, f"officer-{src_label}"):
             changes.append((fid, officer_name, f"officer-{src_label}"))
@@ -159,7 +137,8 @@ def main() -> int:
                     help="Input sigdate.json (post-infer_signature_dates).")
     ap.add_argument("--out", type=pathlib.Path, required=True)
     ap.add_argument("--event-date", type=str, default=None,
-                    help="ISO event date (fallback for notary_date).")
+                    help="Retained for pipeline compatibility; not used as a "
+                         "notarization date.")
     # --schema kept for chain-compat (other fix scripts accept it)
     ap.add_argument("--schema", type=pathlib.Path, default=None)
     args = ap.parse_args()

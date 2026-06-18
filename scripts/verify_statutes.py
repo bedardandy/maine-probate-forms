@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import subprocess
 import sys
 
@@ -23,9 +24,9 @@ IDX = REPO / "docs" / "statute-reference" / "_index"
 
 
 def main() -> int:
-    sec = json.loads((IDX / "18c-sections.json").read_text())["sections"]
-    xref = json.loads((IDX / "cross-refs.json").read_text())["cross_refs"]
-    caselaw = json.loads((IDX / "caselaw.json").read_text())["cases"]
+    sec = json.loads((IDX / "18c-sections.json").read_text(encoding="utf-8"))["sections"]
+    xref = json.loads((IDX / "cross-refs.json").read_text(encoding="utf-8"))["cross_refs"]
+    caselaw = json.loads((IDX / "caselaw.json").read_text(encoding="utf-8"))["cases"]
     case_cites = {c["cite"] for c in caselaw.values()}
 
     def resolves(cite: str) -> bool:
@@ -45,10 +46,12 @@ def main() -> int:
             errors.append(f"{form_id}: missing statutes.json sidecar")
             continue
         n_sidecars += 1
-        sidecar = json.loads(sc.read_text())
+        sidecar = json.loads(sc.read_text(encoding="utf-8"))
         field_ids = {
             f.get("field_id") or f.get("id")
-            for f in json.loads((FORMS_DIR / form_id / "schema.json").read_text()).get("fields", [])
+            for f in json.loads(
+                (FORMS_DIR / form_id / "schema.json").read_text(encoding="utf-8")
+            ).get("fields", [])
         }
         for g in sidecar.get("governing", []):
             if not resolves(g["cite"]):
@@ -68,6 +71,29 @@ def main() -> int:
             for v in c.get("via", []):
                 if not resolves(v):
                     errors.append(f"{form_id}: caselaw 'via' statute does not resolve: {v} ({c['cite']})")
+
+        # Operational form metadata must cite current law. Former Title 18-A is
+        # retained only in explicit transition analysis and historical case-law,
+        # never as the statute a current skill tells a filler to apply.
+        operational_files = [
+            FORMS_DIR / form_id / "skill.md",
+            FORMS_DIR / form_id / "classifications.yaml",
+            FORMS_DIR / form_id / "schema.json",
+        ]
+        former_code = re.compile(r"\b(?:Title\s+)?18-A\b|18-A\s+M\.R\.S", re.I)
+        for operational in operational_files:
+            if not operational.exists():
+                continue
+            for lineno, line in enumerate(
+                operational.read_text(encoding="utf-8").splitlines(), 1
+            ):
+                if former_code.search(line):
+                    errors.append(
+                        f"{form_id}: former Title 18-A citation in operational "
+                        f"metadata {operational.name}:{lineno}; use current "
+                        "Title 18-C and keep former law only in an explicit "
+                        "pre-2019 transition note"
+                    )
 
     # Every statute a case is tied to must resolve to the index.
     for case_id, case in caselaw.items():

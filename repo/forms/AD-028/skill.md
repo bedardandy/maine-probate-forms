@@ -6,7 +6,7 @@ jurisdiction: Maine
 court: Probate
 filer_role: petitioner
 statutes:
-  - "18-A M.R.S.A. §§ 9-301 to 9-315 (Adoption)"
+  - "18-C M.R.S. §§ 9-201 and 9-302 (Putative-parent notice and consent)"
 filing_deadline_days: null
 service_required: true
 n_fields: 24

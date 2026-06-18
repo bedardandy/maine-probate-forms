@@ -24,4 +24,4 @@ hearing_4_date,Hearing 4 Date,W040,text,date,narrative_derived,repeating_slot,he
 hearing_4_proceeding,Hearing 4 Proceeding,W041,text,text,narrative_derived,repeating_slot,hearing,4,76,red,,Y,,llm_over_narrative,
 hearing_4_reporter,Hearing 4 Reporter,W042,text,text,narrative_derived,repeating_slot,hearing,4,48,orange,,Y,,llm_over_narrative,
 dated,Dated,W043,text,signature,signature,dated,,,5,green,,,Y,wet_ink,
-individual_requesting,Individual Requesting,W044,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+individual_requesting,Individual Requesting,W044,text,signature,signature,individual_requesting,,,5,green,,,Y,wet_ink,

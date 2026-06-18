@@ -44,7 +44,6 @@ attorney_address,Attorney Address,W053,text,address,party_attr,attorney,,,0,gree
 attorney_phone,Attorney Phone,,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
 attorney_bar_number,Attorney Bar Number,,text,bar_number,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
 attorney_email,Attorney Email,,text,email,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
-unlabeled_widget_after_email,Unlabeled Widget After Email,,text,email,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 notary_county,Notary County,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
 oath_petitioner_1_name,Oath Petitioner 1 Name,,text,checkbox,legal_choice,oath_petitioner_1_name,,,20,yellow,,,Y,human_decision,
 oath_petitioner_2_name,Oath Petitioner 2 Name,,text,checkbox,legal_choice,oath_petitioner_2_name,,,32,yellow,,,Y,human_decision,

@@ -1,4 +1,4 @@
-"""Fill empty *signature-date* fields with the event date.
+"""Preserve signature-date fields unless the signing date is known.
 
 Why this exists:
   Qwen (and most well-aligned LLMs) refuse to fabricate dates the
@@ -8,13 +8,9 @@ Why this exists:
   triggering event date. The narrative doesn't say "signature date:
   X" because that's a procedural fact about the act of signing, not
   a fact-pattern fact about the case. So the model leaves these
-  fields blank and the rendered form has empty signature-date lines.
-
-  Vision audit caught this on DE-503 page 1 (#284). Rather than try
-  to coax the model into filling these (brittle), we do it
-  deterministically here: any field whose ID matches a known
-  signature-date pattern and whose current value is empty gets the
-  event date stamped in.
+  fields blank. That is correct unless the case data specifically
+  records when the signer actually signed. A filing/event date is not
+  evidence of the signing or notarization date.
 
 Place in the fix chain: AFTER canonicalize_enums (so $-prefix is
 already stripped) and AFTER infer_gates (so we don't write to fields
@@ -80,29 +76,13 @@ def _is_signature_date_field(fid: str, schema_entry: dict | None) -> bool:
 
 
 def process(schema: dict, filled: dict, event_date: str) -> tuple[dict, list]:
+    """Compatibility no-op.
+
+    Do not synthesize signature dates from event_date. Existing explicit values
+    are preserved; blank signing dates remain blank for the signer or notary.
+    """
     new_filled = json.loads(json.dumps(filled))
-    answers = new_filled.get("answers") or {}
     changes: list[tuple[str, str]] = []
-
-    schema_by_id: dict[str, dict] = {}
-    for f in schema.get("fields", []):
-        schema_by_id[f["field_id"]] = f
-
-    for fid, a in list(answers.items()):
-        if not _is_signature_date_field(fid, schema_by_id.get(fid)):
-            continue
-        current = a.get("value") if isinstance(a, dict) else a
-        if current not in (None, "", " "):
-            continue
-        if isinstance(a, dict):
-            a["value"] = event_date
-            a["confidence"] = max(float(a.get("confidence") or 0), 0.85)
-            a.setdefault("infer_provenance", []).append(
-                {"to": event_date, "method": "signature-date-from-event"})
-        else:
-            answers[fid] = event_date
-        changes.append((fid, event_date))
-
     return new_filled, changes
 
 
@@ -113,15 +93,16 @@ def main() -> int:
                     help="Input gated.json (post-infer_gates).")
     ap.add_argument("--out", type=pathlib.Path, required=True)
     ap.add_argument("--event-date", type=str, required=True,
-                    help="ISO date (YYYY-MM-DD) — the event/filing date.")
+                    help="Retained for pipeline compatibility; never used as a "
+                         "substitute for an unknown signing date.")
     args = ap.parse_args()
 
     schema = json.loads(args.schema.read_text())
     filled = json.loads(args.filled.read_text())
     new_filled, changes = process(schema, filled, args.event_date)
     args.out.write_text(json.dumps(new_filled, indent=2))
-    print(f"infer_signature_dates: {len(changes)} field(s) populated "
-          f"with {args.event_date}")
+    print("infer_signature_dates: 0 fields populated; signing dates require "
+          "an explicit known date")
     for fid, val in changes:
         print(f"  {fid} -> {val}")
     return 0

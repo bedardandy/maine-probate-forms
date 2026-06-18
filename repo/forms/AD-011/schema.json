@@ -3,23 +3,24 @@
   "schema_version": "0.2",
   "source_pdf": "http://www.maineprobate.net/forms2019/Adoption/AD-011%20Pet%20to%20Recognize%20Foreign%20Adoption.pdf",
   "artifact_pdf": null,
-  "n_fields": 28,
+  "n_fields": 31,
   "by_category": {
     "case_constant": 2,
-    "party_attr": 14,
-    "narrative_derived": 10,
+    "party_attr": 17,
+    "narrative_derived": 6,
     "legal_choice": 1,
-    "signature": 1
+    "signature": 5
   },
   "by_risk_tier": {
-    "green": 23,
+    "green": 26,
     "yellow": 5
   },
   "by_data_type": {
-    "text": 21,
+    "text": 19,
     "docket_number": 1,
+    "date": 3,
     "checkbox": 1,
-    "signature": 1,
+    "signature": 3,
     "person_name": 1,
     "address": 1,
     "phone": 1,
@@ -298,6 +299,42 @@
       }
     },
     {
+      "field_id": "adoptee_date_of_birth",
+      "widget_id": "W007",
+      "label": "Adoptee Date Of Birth",
+      "type": "text",
+      "data_type": "date",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "date_of_birth",
+      "party": "petitioner",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "adoptee_record.date_of_birth"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": null
+    },
+    {
       "field_id": "adoptee_other_names",
       "widget_id": "W008",
       "label": "Adoptee Other Names",
@@ -340,6 +377,78 @@
         "not_applicable": 2,
         "patterns_scored": 5
       }
+    },
+    {
+      "field_id": "adoptee_birth_name",
+      "widget_id": "W008",
+      "label": "Adoptee Birth Name",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "birth_name",
+      "party": "adoptee",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "adoptee_record.birth_name"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": null
+    },
+    {
+      "field_id": "adoptee_place_of_birth",
+      "widget_id": "W008",
+      "label": "Adoptee Place Of Birth",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "party_attr",
+      "subcategory": "place_of_birth",
+      "party": "adoptee",
+      "writable_when": null,
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {
+        "deterministic": true,
+        "llm_eligible": false,
+        "human_required": false,
+        "source": "adoptee_record.place_of_birth"
+      },
+      "risk_score": 0,
+      "risk_tier": "green",
+      "risk_breakdown": {
+        "category_base": 0,
+        "eval_wrong": 0,
+        "eval_oc": 0,
+        "eval_miscompr": 0
+      },
+      "hand_review": {
+        "reasons": []
+      },
+      "eval_evidence": null
     },
     {
       "field_id": "adoptee_residence",
@@ -696,10 +805,10 @@
       "widget_id": "W019",
       "label": "Petitioner Signature Date 1",
       "type": "date",
-      "data_type": "text",
+      "data_type": "date",
       "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "repeating_slot",
+      "category": "signature",
+      "subcategory": "petitioner_signature_date_1",
       "slot_group": "petitioner_signature",
       "slot_index": 1,
       "slot_field": "date",
@@ -712,9 +821,9 @@
       "validators": [],
       "fill_strategy": {
         "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -726,7 +835,7 @@
       },
       "hand_review": {
         "reasons": [
-          "repeating_slot \u2014 high duplication risk"
+          "wet-ink signing fact"
         ]
       },
       "eval_evidence": {
@@ -744,10 +853,10 @@
       "widget_id": "W020",
       "label": "Petitioner Signature 1",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "repeating_slot",
+      "category": "signature",
+      "subcategory": "petitioner_signature_1",
       "slot_group": "petitioner",
       "slot_index": 1,
       "slot_field": "signature",
@@ -760,9 +869,9 @@
       "validators": [],
       "fill_strategy": {
         "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 28,
       "risk_tier": "yellow",
@@ -774,7 +883,7 @@
       },
       "hand_review": {
         "reasons": [
-          "repeating_slot \u2014 high duplication risk"
+          "wet-ink signing fact"
         ]
       },
       "eval_evidence": {
@@ -792,10 +901,10 @@
       "widget_id": "W021",
       "label": "Petitioner Signature Date 2",
       "type": "date",
-      "data_type": "text",
+      "data_type": "date",
       "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "repeating_slot",
+      "category": "signature",
+      "subcategory": "petitioner_signature_date_2",
       "slot_group": "petitioner_signature",
       "slot_index": 2,
       "slot_field": "date",
@@ -808,9 +917,9 @@
       "validators": [],
       "fill_strategy": {
         "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -822,7 +931,7 @@
       },
       "hand_review": {
         "reasons": [
-          "repeating_slot \u2014 high duplication risk"
+          "wet-ink signing fact"
         ]
       },
       "eval_evidence": {
@@ -840,10 +949,10 @@
       "widget_id": "W022",
       "label": "Petitioner Signature 2",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "repeating_slot",
+      "category": "signature",
+      "subcategory": "petitioner_signature_2",
       "slot_group": "petitioner",
       "slot_index": 2,
       "slot_field": "signature",
@@ -856,9 +965,9 @@
       "validators": [],
       "fill_strategy": {
         "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -870,7 +979,7 @@
       },
       "hand_review": {
         "reasons": [
-          "repeating_slot \u2014 high duplication risk"
+          "wet-ink signing fact"
         ]
       },
       "eval_evidence": {

@@ -7,6 +7,20 @@
  "n_pages": 2,
  "source_fused": "AF-101 Jurisdictional Affidavit (Rev. 03-01-2025)_fused.pdf",
  "fields": {
+  "minor_child_name_caption": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      80.0,
+      143.0,
+      306.0,
+      154.0
+     ]
+    }
+   ]
+  },
   "county_probate_court": {
    "type": "text",
    "widgets": [
@@ -15,7 +29,7 @@
      "rect": [
       54.0,
       112.0,
-      159.1,
+      156.0,
       125.0
      ]
     }
@@ -285,29 +299,6 @@
     }
    ]
   },
-  "probate_register_name": {
-   "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      279.0,
-      227.2,
-      363.0,
-      240.2
-     ]
-    },
-    {
-     "page": 1,
-     "rect": [
-      264.7,
-      254.8,
-      369.0,
-      267.8
-     ]
-    }
-   ]
-  },
   "district_clerk_name": {
    "type": "text",
    "widgets": [
@@ -360,20 +351,6 @@
       361.0,
       222.0,
       374.0
-     ]
-    }
-   ]
-  },
-  "petitioner_signature": {
-   "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      54.0,
-      527.4,
-      276.0,
-      540.4
      ]
     }
    ]
@@ -434,16 +411,30 @@
     }
    ]
   },
-  "notary_public_name": {
+  "probate_court_name": {
    "type": "text",
    "widgets": [
     {
      "page": 1,
      "rect": [
-      348.0,
-      663.0,
-      504.0,
-      676.0
+      279.0,
+      229.2,
+      363.0,
+      242.2
+     ]
+    }
+   ]
+  },
+  "district_court_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      264.7,
+      256.8,
+      369.0,
+      269.8
      ]
     }
    ]

@@ -5,14 +5,13 @@ jurisdiction: Maine
 court: Probate
 filer_role: petitioner
 statutes:
-  - "18-A M.R.S.A. § 9-303 (Adoption — disclosure of expenses)"
+  - "18-C M.R.S. § 9-306 (Allowable payments; full accounting of adoption disbursements)"
 filing_deadline_days: null
 filing_deadline_anchor: "adoption_finalization_date"
 service_required: false
 n_fields: 26
 addendum_supported: true
 addendum_target_fields:
-  - "certification_text"
   - "disbursements"
   - "other_disbursements"
 parties:
@@ -46,7 +45,6 @@ adoption finalization).
 |---|---|---|
 | `disbursements` summary instead of itemization | LLM writes "agency and legal fees" instead of itemized amounts | hand review (semantic) |
 | `other_disbursements` over-disclosure | LLM includes routine expenses (food, lodging) that aren't reportable | hand review |
-| `certification_text` boilerplate substitution | LLM substitutes its own jurat language | hand review; this is a court-published form text |
 | notary block confusion | `notary_county` filled with petitioner's county instead of jurat county | category=party_attr with notary party label |
 
 ## High-risk fields (orange tier)
@@ -55,7 +53,6 @@ adoption finalization).
 |---|---|---|
 | `disbursements` | 35 | free-form narrative; itemization quality varies |
 | `other_disbursements` | 35 | over-disclosure risk |
-| `certification_text` | 35 | boilerplate-substitution risk |
 
 ## Validators
 

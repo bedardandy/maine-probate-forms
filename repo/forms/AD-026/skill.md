@@ -6,8 +6,8 @@ jurisdiction: Maine
 court: Probate
 filer_role: petitioner
 statutes:
-  - "18-A M.R.S.A. § 9-301 (Adult adoption procedure)"
-  - "18-A M.R.S.A. § 9-315 (Consent to adoption)"
+  - "18-C M.R.S. § 9-301 (Petition for adoption; applies regardless of adoptee age)"
+  - "18-C M.R.S. § 9-302 (Consent for adoption; adult-adoptee provisions)"
 filing_deadline_days: null
 service_required: true
 service_recipients: "adoptee_birth_parents_if_known"
@@ -58,7 +58,6 @@ adopter's family). The adoptee must consent. The form captures:
 | `dhhs_certificate_attached` over-claim | LLM checks the box when narrative doesn't confirm | category=legal_choice |
 | `birth_parents_inheritance_request` over-confidence | LLM picks "yes" because the adoptee is mentioned by birth parents in narrative | category=legal_choice; default is "no" |
 | `relationship_to_adoptee` paraphrase | "stepfather" vs "step-parent of 18 years" | hand review |
-| `unlabeled_widget_after_email` | a glitch field on the PDF; should always be blank | flag as external/court-fill |
 
 ## High-risk fields (yellow tier: 16 fields)
 

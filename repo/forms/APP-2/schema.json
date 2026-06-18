@@ -1202,10 +1202,10 @@
       "widget_id": "W044",
       "label": "Individual Requesting",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
-      "subcategory": "free_text",
+      "category": "signature",
+      "subcategory": "individual_requesting",
       "writable_when": null,
       "required_when": null,
       "choice_group": null,
@@ -1215,9 +1215,9 @@
       "validators": [],
       "fill_strategy": {
         "deterministic": false,
-        "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "llm_eligible": false,
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 5,
       "risk_tier": "green",

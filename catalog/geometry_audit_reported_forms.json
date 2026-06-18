@@ -1,0 +1,166 @@
+{
+  "forms_audited": 5,
+  "finding_count": 16,
+  "by_code": {
+    "county_value_should_be_uppercase": 4,
+    "uncovered_printed_rule": 8,
+    "widget_overruns_rule": 1,
+    "suspicious_widget_chain_gap": 3
+  },
+  "findings": [
+    {
+      "form_id": "AD-011",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_name",
+      "page": 1
+    },
+    {
+      "form_id": "AD-011",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        634.2,
+        216.0,
+        647.2
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "AD-028",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "putative_parent_likely_address",
+      "page": 1,
+      "left_overrun": 1.2,
+      "right_overrun": 7.8
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        345.6,
+        203.6,
+        548.2,
+        216.6
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        354.6,
+        353.1,
+        548.2,
+        366.1
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        57.6,
+        473.1,
+        201.6,
+        486.1
+      ]
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 42.0
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 42.2
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 270.9
+    },
+    {
+      "form_id": "AF-101",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "AF-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        348.0,
+        664.2,
+        504.4,
+        677.2
+      ]
+    },
+    {
+      "form_id": "AF-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        528.9,
+        276.0,
+        541.9
+      ]
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        348.0,
+        664.2,
+        504.4,
+        677.2
+      ]
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        528.9,
+        276.0,
+        541.9
+      ]
+    }
+  ]
+}

@@ -7,29 +7,44 @@
  "n_pages": 2,
  "source_fused": "AF-101 Jurisdictional Affidavit (Rev. 03-01-2025)_fused.pdf",
  "fields": {
-  "court_type": {
-   "type": "select_one",
-   "options": [
+  "minor_child_name_caption": {
+   "type": "text",
+   "widgets": [
     {
-     "value": "county_probate",
-     "label": "County Probate Court",
+     "page": 0,
+     "rect": [
+      80.0,
+      155.0,
+      306.0,
+      168.0
+     ]
+    }
+   ]
+  },
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
      "page": 0,
      "rect": [
       54.0,
-      108.2,
-      159.1,
-      126.7
+      112.0,
+      156.0,
+      125.0
      ]
-    },
+    }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
     {
-     "value": "docket_no",
-     "label": "Docket No.",
      "page": 0,
      "rect": [
       404.0,
-      111.0,
+      112.0,
       521.0,
-      127.0
+      125.0
      ]
     }
    ]
@@ -283,29 +298,6 @@
     }
    ]
   },
-  "probate_register_name": {
-   "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      279.0,
-      227.2,
-      363.0,
-      240.2
-     ]
-    },
-    {
-     "page": 1,
-     "rect": [
-      264.7,
-      254.8,
-      369.0,
-      267.8
-     ]
-    }
-   ]
-  },
   "checked_district_clerk": {
    "type": "select_one",
    "options": [
@@ -403,20 +395,6 @@
     }
    ]
   },
-  "petitioner_signature": {
-   "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      54.0,
-      527.4,
-      276.0,
-      540.4
-     ]
-    }
-   ]
-  },
   "signature_date": {
    "type": "text",
    "widgets": [
@@ -473,16 +451,30 @@
     }
    ]
   },
-  "notary_public_name": {
+  "probate_court_name": {
    "type": "text",
    "widgets": [
     {
      "page": 1,
      "rect": [
-      348.0,
-      663.0,
-      504.0,
-      676.0
+      279.0,
+      229.2,
+      363.0,
+      242.2
+     ]
+    }
+   ]
+  },
+  "district_court_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      264.7,
+      256.8,
+      369.0,
+      269.8
      ]
     }
    ]

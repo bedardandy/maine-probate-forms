@@ -1111,7 +1111,7 @@ def _count_by(fields: list[dict], key: str) -> dict[str, int]:
 FORM_PREFIX_DEFAULTS = {
     "AD": {
         "filer_role": "petitioner",
-        "statutes": ["18-A M.R.S.A. §§ 9-301 to 9-315 (Adoption)"],
+        "statutes": ["18-C M.R.S. §§ 9-101 to 9-315 (Adoption)"],
         "service_required": True,
     },
     "AF": {
