@@ -9,6 +9,9 @@ help:
 	@echo "make test                              run the unit + smoke + adversarial suite (CI gate)"
 	@echo "make smoke                             fill+verify every shipped example case (network)"
 	@echo "make audit                             systematic geometry audit -> catalog/geometry_audit.json"
+	@echo "make questions                         question/field-quality audit -> catalog/question_audit.json"
+	@echo "make value-guides                      (re)generate per-form value_guide.json sidecars"
+	@echo "make value-guides-check                validate value guides + flag under-typed fields (CI gate)"
 	@echo "make probe-all [OUT=dir]               render overlay PNGs for every page of every form (review)"
 	@echo "make saturate [OUT=pdf]                fill every box to capacity + render, for alignment review"
 	@echo "make verify                            validate shipped fill_geometry.json (CI gate)"
@@ -32,6 +35,15 @@ smoke:
 
 audit:
 	python3 scripts/audit_form_geometry.py --out catalog/geometry_audit.json
+
+questions:
+	python3 scripts/audit_form_questions.py --out catalog/question_audit.json
+
+value-guides:
+	python3 scripts/build_value_guide.py
+
+value-guides-check:
+	python3 scripts/verify_value_guide.py
 
 probe-all:
 	python3 tools/render_corpus.py --out-dir $(or $(OUT),/tmp/corpus_probe)
