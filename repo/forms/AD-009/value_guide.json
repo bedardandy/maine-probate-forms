@@ -7,12 +7,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },
@@ -159,12 +160,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },

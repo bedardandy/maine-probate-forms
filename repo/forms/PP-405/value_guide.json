@@ -7,14 +7,14 @@
       "data_type": "entity_name",
       "alignment": "left",
       "required": "optional",
-      "expects": "full legal name as it should appear on the order",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
-        "Margaret L. Walsh"
+        "CUMBERLAND",
+        "YORK"
       ],
       "avoid": [
-        "initials or nicknames",
-        "a title with no name",
-        "'Last, First' order unless the line calls for it"
+        "a person or court name",
+        "the trailing word 'County'"
       ]
     },
     "docket_no": {
@@ -327,12 +327,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },
@@ -341,12 +342,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },
@@ -411,12 +413,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },
@@ -425,12 +428,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },
@@ -489,12 +493,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },
@@ -557,12 +562,13 @@
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "expects": "a Maine county name WITHOUT the word 'County' (the form prints 'COUNTY'); rendered upper-case",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
       "examples": [
         "CUMBERLAND",
         "YORK"
       ],
       "avoid": [
+        "a person or court name",
         "the trailing word 'County'"
       ]
     },

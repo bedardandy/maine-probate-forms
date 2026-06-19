@@ -12,6 +12,7 @@ help:
 	@echo "make questions                         question/field-quality audit -> catalog/question_audit.json"
 	@echo "make value-guides                      (re)generate per-form value_guide.json sidecars"
 	@echo "make value-guides-check                validate value guides + flag under-typed fields (CI gate)"
+	@echo "make qa FORM=<id>                      per-form QA: prompts->fields->placeholder fill->read-back PNGs"
 	@echo "make probe-all [OUT=dir]               render overlay PNGs for every page of every form (review)"
 	@echo "make saturate [OUT=pdf]                fill every box to capacity + render, for alignment review"
 	@echo "make verify                            validate shipped fill_geometry.json (CI gate)"
@@ -44,6 +45,9 @@ value-guides:
 
 value-guides-check:
 	python3 scripts/verify_value_guide.py
+
+qa:
+	python3 scripts/form_qa.py --form "$(FORM)" --out-dir $(or $(OUT),/tmp/qa)
 
 probe-all:
 	python3 tools/render_corpus.py --out-dir $(or $(OUT),/tmp/corpus_probe)

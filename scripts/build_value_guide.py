@@ -57,6 +57,16 @@ def _guide_for(field: dict, declared_align: dict) -> dict:
     g: dict = {"label": label, "data_type": dt, "alignment": align,
                "required": _required(field)}
 
+    # A county blank (often typed entity_name on "<county> Probate Court") takes a
+    # county name, not a person/entity name -- example it as such so QA fills and
+    # downstream consumers don't put a person where a county belongs.
+    if COUNTY_RE.search(label) or COUNTY_RE.search(fid):
+        g["expects"] = ("a Maine county name (the form prints 'COUNTY'/'Probate "
+                        "Court'); rendered upper-case, without the word 'County'")
+        g["examples"] = ["CUMBERLAND", "YORK"]
+        g["avoid"] = ["a person or court name", "the trailing word 'County'"]
+        return g
+
     if field.get("formula"):
         g["calculated"] = {"formula": field["formula"],
                            "mode": field.get("formula_mode"),
