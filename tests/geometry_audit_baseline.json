@@ -1,0 +1,155 @@
+{
+  "_comment": "Per-form high-value geometry-audit finding counts (self widget/widget collisions excluded). test_geometry_audit_baseline.py requires current counts <= these, so a new collision/overrun/orphan introduced by a geometry edit fails the gate while fixes are free. Lower the numbers as forms are cleaned.",
+  "counts": {
+    "AD-008": {
+      "generic_or_orphan_name": 1,
+      "widget_widget_collision": 1
+    },
+    "AD-026": {
+      "generic_or_orphan_name": 1,
+      "widget_native_text_collision": 2,
+      "widget_widget_collision": 1
+    },
+    "AD-028": {
+      "widget_overruns_rule": 6,
+      "widget_widget_collision": 1
+    },
+    "AF-101.vA": {
+      "choice_not_checkbox_sized": 2
+    },
+    "AF-102": {
+      "widget_overruns_rule": 2,
+      "widget_widget_collision": 1
+    },
+    "AF-103": {
+      "widget_overruns_rule": 1
+    },
+    "AF-104": {
+      "generic_or_orphan_name": 1,
+      "widget_native_text_collision": 1,
+      "widget_overruns_rule": 3
+    },
+    "AF-105": {
+      "text_is_checkbox_sized": 1,
+      "widget_native_text_collision": 7,
+      "widget_widget_collision": 9
+    },
+    "APP-1": {
+      "widget_widget_collision": 1
+    },
+    "DE-101(I)": {
+      "widget_native_text_collision": 1
+    },
+    "DE-201(I)": {
+      "widget_native_text_collision": 1
+    },
+    "DE-301": {
+      "widget_overruns_rule": 4
+    },
+    "DE-403": {
+      "widget_native_text_collision": 4,
+      "widget_widget_collision": 1
+    },
+    "DE-406": {
+      "widget_native_text_collision": 1
+    },
+    "DE-407": {
+      "widget_native_text_collision": 1
+    },
+    "DE-503": {
+      "widget_native_text_collision": 1
+    },
+    "DE-505": {
+      "widget_overruns_rule": 2
+    },
+    "DE-506": {
+      "widget_native_text_collision": 1,
+      "widget_overruns_rule": 1
+    },
+    "DE-601": {
+      "widget_overruns_rule": 1
+    },
+    "DE-602": {
+      "widget_native_text_collision": 1
+    },
+    "GS-014": {
+      "widget_native_text_collision": 6,
+      "widget_widget_collision": 9
+    },
+    "MISC-101": {
+      "widget_native_text_collision": 2,
+      "widget_overruns_rule": 2,
+      "widget_widget_collision": 2
+    },
+    "MISC-102": {
+      "text_is_checkbox_sized": 2,
+      "widget_native_text_collision": 1,
+      "widget_overruns_rule": 11,
+      "widget_widget_collision": 2
+    },
+    "N-105": {
+      "widget_native_text_collision": 1,
+      "widget_overruns_rule": 3
+    },
+    "N-108": {
+      "widget_native_text_collision": 4
+    },
+    "N-115": {
+      "widget_native_text_collision": 5,
+      "widget_widget_collision": 2
+    },
+    "N-117": {
+      "widget_native_text_collision": 2
+    },
+    "N-118": {
+      "widget_native_text_collision": 10,
+      "widget_widget_collision": 3
+    },
+    "NC-001": {
+      "widget_widget_collision": 1
+    },
+    "PB-007.vA": {
+      "text_is_checkbox_sized": 1
+    },
+    "PP-108": {
+      "widget_overruns_rule": 1
+    },
+    "PP-203": {
+      "widget_overruns_rule": 1
+    },
+    "PP-207": {
+      "widget_overruns_rule": 1
+    },
+    "PP-209": {
+      "widget_widget_collision": 1
+    },
+    "PP-401": {
+      "text_is_checkbox_sized": 1
+    },
+    "PP-402": {
+      "widget_overruns_rule": 1
+    },
+    "PP-405": {
+      "widget_native_text_collision": 6,
+      "widget_widget_collision": 1
+    },
+    "PP-406": {
+      "widget_overruns_rule": 4
+    },
+    "PP-407": {
+      "widget_widget_collision": 1
+    },
+    "PP-412": {
+      "widget_widget_collision": 1
+    },
+    "PP-502": {
+      "widget_native_text_collision": 1
+    },
+    "PP-506": {
+      "widget_native_text_collision": 3
+    },
+    "PP-507": {
+      "widget_native_text_collision": 2
+    }
+  }
+}

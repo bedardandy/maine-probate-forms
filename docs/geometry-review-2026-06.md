@@ -34,8 +34,24 @@ overwritten here; disagreements are flagged for a second review instead.
   DE-201(I) examples to match the (correct) court-use fee suppression.
 
 Gates after the change: `make verify` OK (2 known PB-007 shared-widget warnings),
-`make test` = 30 passed, audit total 821 → high-value codes net better
+`make test` = 195 passed, audit total 821 → high-value codes net better
 (widget/widget 52→48, overruns 54→44, native-text 67→64) with **no** regression.
+
+### Full-corpus "visual" coverage (all pages, all forms)
+
+A pytest can't literally look at a page, so the corpus is covered two ways:
+
+- **Automated gate** over every page of all 82 forms (201 pages):
+  `tests/test_render_all_forms.py` rasterises each page (catches geometry that
+  breaks the renderer) and asserts every widget rect is on-page and
+  non-degenerate — currently clean (0 off-page, 0 degenerate).
+  `tests/test_geometry_audit_baseline.py` runs the mapper-failure auditor across
+  the whole corpus and locks each form's high-value finding counts to
+  `tests/geometry_audit_baseline.json`, so a new collision/overrun/orphan on any
+  page fails CI while cleanups pass.
+- **Human/agent review packet:** `make probe-all` (`tools/render_corpus.py`)
+  writes overlay PNGs for every page of every form to a directory for actual
+  eyeballing — the same overlays the automated gate validates.
 
 ## Codex branch verdict (vetted, not wholesale)
 

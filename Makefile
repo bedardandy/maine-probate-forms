@@ -3,12 +3,13 @@
 PIPELINE ?= ../detection-pipeline
 REPO     ?= .
 
-.PHONY: help verify check geometry geometry-commit statutes statutes-check align align-check manifest manifest-check check-upstream test smoke audit
+.PHONY: help verify check geometry geometry-commit statutes statutes-check align align-check manifest manifest-check check-upstream test smoke audit probe-all
 
 help:
 	@echo "make test                              run the unit + smoke + adversarial suite (CI gate)"
 	@echo "make smoke                             fill+verify every shipped example case (network)"
 	@echo "make audit                             systematic geometry audit -> catalog/geometry_audit.json"
+	@echo "make probe-all [OUT=dir]               render overlay PNGs for every page of every form (review)"
 	@echo "make verify                            validate shipped fill_geometry.json (CI gate)"
 	@echo "make manifest                          (re)build catalog/pdf_manifest.json from source_urls"
 	@echo "make manifest-check                    validate pdf_manifest.json structure + guard (CI gate)"
@@ -30,6 +31,9 @@ smoke:
 
 audit:
 	python3 scripts/audit_form_geometry.py --out catalog/geometry_audit.json
+
+probe-all:
+	python3 tools/render_corpus.py --out-dir $(or $(OUT),/tmp/corpus_probe)
 
 verify:
 	python3 scripts/verify_fill_geometry.py --repo $(REPO)
