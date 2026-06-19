@@ -284,10 +284,15 @@
     },
     "attorney_phone_number": {
       "label": "Attorney Phone Number",
-      "data_type": "text",
+      "data_type": "phone",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "NNN-NNN-NNNN",
+      "expects": "a 10-digit US phone number",
+      "avoid": [
+        "letters",
+        "a missing area code"
+      ]
     },
     "attorney_maine_bar_number": {
       "label": "Attorney Maine Bar Number",

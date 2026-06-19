@@ -19,10 +19,13 @@
     },
     "docket_no_probate": {
       "label": "Docket No Probate",
-      "data_type": "text",
+      "data_type": "docket_number",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
     },
     "district_court_location": {
       "label": "District Court Location",
@@ -33,10 +36,13 @@
     },
     "docket_no_district": {
       "label": "Docket No District",
-      "data_type": "text",
+      "data_type": "docket_number",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
     },
     "case_title": {
       "label": "Case Title",

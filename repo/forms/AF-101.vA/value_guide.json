@@ -137,10 +137,13 @@
     },
     "district_case_docket": {
       "label": "District Case Docket",
-      "data_type": "text",
+      "data_type": "docket_number",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
     },
     "district_case_name": {
       "label": "District Case Name",

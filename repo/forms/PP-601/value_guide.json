@@ -273,10 +273,14 @@
     },
     "attorney_email": {
       "label": "Email Address",
-      "data_type": "text",
+      "data_type": "email",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "local@domain",
+      "avoid": [
+        "spaces",
+        "a missing @"
+      ]
     }
   }
 }

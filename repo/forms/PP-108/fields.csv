@@ -7,4 +7,4 @@ conservator_signature,Conservator,W005,text,signature,signature,conservator_sign
 by_signer_name,By (signer for institution),W006,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 by_signer_title,Its (title of signer),W007,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 conservator_address,Address of Conservator for Court records,,text,text,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.address,
-conservator_phone,Telephone Number,,text,text,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.phone,
+conservator_phone,Telephone Number,,text,phone,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.phone,

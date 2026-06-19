@@ -4,7 +4,7 @@ affiant_name,Affiant Name,W002,text,text,party_attr,affiant,,,0,green,Y,,,affian
 affiant_address,Affiant Address,,text,address,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
 decedent_town,Decedent Town,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 decedent_county,Decedent County,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
-date_of_death,Date Of Death,W007,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_death,Date Of Death,W007,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 affidavit_date,Affidavit Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 affiant_signature,Affiant Signature,,text,signature,signature,affiant_signature,,,5,green,,,Y,wet_ink,
 notary_state,Notary State,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,

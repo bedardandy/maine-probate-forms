@@ -207,10 +207,13 @@
     },
     "cert_docket_no": {
       "label": "Cert Docket No",
-      "data_type": "text",
+      "data_type": "docket_number",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
     },
     "cert_date": {
       "label": "Cert Date",

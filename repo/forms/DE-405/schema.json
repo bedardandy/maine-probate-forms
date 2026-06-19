@@ -5084,7 +5084,7 @@
       "widget_id": null,
       "label": "Email Address",
       "type": "text",
-      "data_type": "text",
+      "data_type": "email",
       "data_constraints": {},
       "category": "party_attr",
       "subcategory": "attorney",

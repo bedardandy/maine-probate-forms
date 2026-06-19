@@ -1,8 +1,8 @@
 field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
 probate_county,Probate County,,text,text,case_constant,probate_county,,,0,green,Y,,,case_dict.probate_county,populate_from_case_dict
 district_court_location,District Court Location,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
-probate_docket_number,Probate Docket Number,,text,text,case_constant,probate_docket_number,,,0,green,Y,,,case_dict.probate_docket_number,populate_from_case_dict
-district_docket_number,District Docket Number,,text,text,case_constant,district_docket_number,,,0,green,Y,,,case_dict.district_docket_number,populate_from_case_dict
+probate_docket_number,Probate Docket Number,,text,docket_number,case_constant,probate_docket_number,,,0,green,Y,,,case_dict.probate_docket_number,populate_from_case_dict
+district_docket_number,District Docket Number,,text,docket_number,case_constant,district_docket_number,,,0,green,Y,,,case_dict.district_docket_number,populate_from_case_dict
 minor_name,Minor Name,,text,text,party_attr,minor,,,0,green,Y,,,minor_record.minor,
 petitioner_name,Petitioner Name,,text,person_name,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,
 petitioner_address,Petitioner Address,W007,text,address,party_attr,petitioner,,,0,green,Y,,,petitioner_record.petitioner,

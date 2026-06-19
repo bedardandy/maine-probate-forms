@@ -12,7 +12,7 @@ i_we_name,I We Name,W011,text,person_name,party_attr,filer,,,8,green,Y,,,filer_r
 appointed_as_guardian,Appointed As Guardian,W013,enabler,checkbox,legal_choice,yes_no,,,28,yellow,,,Y,human_decision,"value_in(yes, no)"
 appointed_as_conservator,Appointed As Conservator,W014,enabler,checkbox,legal_choice,yes_no,,,20,yellow,,,Y,human_decision,"value_in(yes, no)"
 subject_name,Subject Name,W012,text,person_name,party_attr,subject_of_appointment,,,0,green,Y,,,subject_record.subject_of_appointment,
-date_of_appointment,Date Of Appointment,W015,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_appointment,Date Of Appointment,W015,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 filing_county,Filing County,W016,text,entity_name,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
 dated,Dated,W017,date,signature,signature,dated,,,33,yellow,,,Y,wet_ink,
 guardian_conservator_signature,Guardian Conservator Signature,W018,text,signature,signature,guardian_conservator_signature,,,5,green,,,Y,wet_ink,

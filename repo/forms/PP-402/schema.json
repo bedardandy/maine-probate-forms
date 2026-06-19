@@ -389,7 +389,7 @@
       "widget_id": null,
       "label": "Telephone Number",
       "type": "text",
-      "data_type": "text",
+      "data_type": "phone",
       "data_constraints": {},
       "category": "party_attr",
       "subcategory": "conservator",

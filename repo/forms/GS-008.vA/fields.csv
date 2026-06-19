@@ -2,8 +2,8 @@ field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_ind
 court_type,Court Type,,select_one,checkbox,legal_choice,court_type,,,20,yellow,,,Y,human_decision,
 county_probate,County Probate,W001,text,entity_name,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
 district_court_location,District Court Location,W002,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
-docket_no_probate,Docket No Probate,W003,text,text,case_constant,docket_no_probate,,,8,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
-docket_no_district,Docket No District,W004,text,text,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
+docket_no_probate,Docket No Probate,W003,text,docket_number,case_constant,docket_no_probate,,,8,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
+docket_no_district,Docket No District,W004,text,docket_number,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
 minor_name,Minor Name,W005,text,text,party_attr,minor,,,0,green,Y,,,minor_record.minor,
 guardian_name,Guardian Name,W006,text,person_name,party_attr,guardian,,,0,green,Y,,,guardian_record.guardian,
 appointment_type,Appointment Type,,select_one,checkbox,legal_choice,appointment_type,,,20,yellow,,,Y,human_decision,

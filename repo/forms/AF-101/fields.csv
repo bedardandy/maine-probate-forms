@@ -11,7 +11,7 @@ affiant_name,Affiant Name,W014,text,text,party_attr,affiant,,,0,green,Y,,,affian
 jurisdictional_inquiries,Jurisdictional Inquiries,,select_many,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
 probate_register_name,Probate Register Name,W022,text,text,case_constant,probate_register_name,,,0,green,Y,,,case_dict.probate_register_name,populate_from_case_dict
 district_clerk_name,District Clerk Name,W026,text,text,case_constant,district_clerk_name,,,0,green,Y,,,case_dict.district_clerk_name,populate_from_case_dict
-district_case_docket,District Case Docket,W027,text,text,case_constant,district_case_docket,,,0,green,Y,,,case_dict.district_case_docket,populate_from_case_dict
+district_case_docket,District Case Docket,W027,text,docket_number,case_constant,district_case_docket,,,0,green,Y,,,case_dict.district_case_docket,populate_from_case_dict
 district_case_name,District Case Name,W028,text,text,case_constant,district_case_name,,,0,green,Y,,,case_dict.district_case_name,populate_from_case_dict
 item_11_district_court_name,Item 11 District Court Name,W030,text,text,narrative_derived,repeating_slot,item,11,20,yellow,,Y,,llm_over_narrative,
 petitioner_signature,Petitioner Signature,W031,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,

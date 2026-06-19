@@ -1,8 +1,8 @@
 field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
 county_probate,County Probate,W001,text,entity_name,case_constant,county,,,0,green,Y,,,case_dict.county,populate_from_case_dict
-docket_no_probate,Docket No Probate,W003,text,text,case_constant,docket_no_probate,,,0,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
+docket_no_probate,Docket No Probate,W003,text,docket_number,case_constant,docket_no_probate,,,0,green,Y,,,case_dict.docket_no_probate,populate_from_case_dict
 district_court_location,District Court Location,W002,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
-docket_no_district,Docket No District,W004,text,text,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
+docket_no_district,Docket No District,W004,text,docket_number,case_constant,docket_no_district,,,0,green,Y,,,case_dict.docket_no_district,populate_from_case_dict
 case_title,Case Title,W005,text,text,case_constant,case_caption,,,0,green,Y,,,case_dict.case_caption,populate_from_case_dict
 appointment_level,Appointment Level,,select_one,text,legal_choice,appointment_scope,,,20,yellow,,,Y,human_decision,"value_in(limited, standard, expanded)"
 minor_children_names,Minor Children Names,W012,text,text,party_attr,minor_children,,,0,green,Y,,,minor_record.minor_children,

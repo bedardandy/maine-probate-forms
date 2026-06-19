@@ -25,17 +25,23 @@
     },
     "docket_no_probate": {
       "label": "Docket No Probate",
-      "data_type": "text",
+      "data_type": "docket_number",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
     },
     "docket_no_district": {
       "label": "Docket No District",
-      "data_type": "text",
+      "data_type": "docket_number",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
     },
     "minor_name": {
       "label": "Minor Name",
@@ -475,10 +481,25 @@
     },
     "funds_received_amount_1": {
       "label": "Funds Received Amount 1",
-      "data_type": "text",
-      "alignment": "left",
+      "data_type": "currency",
+      "alignment": "right",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "decimal",
+      "currency": {
+        "min": 0,
+        "decimals": 2
+      },
+      "expects": "a dollar amount, digits and decimal point only",
+      "examples": [
+        "1500.00",
+        "0.00",
+        "27834.50"
+      ],
+      "avoid": [
+        "a '$' character inside the value (the form prints it)",
+        "thousands separators or words",
+        "a negative amount unless this line is explicitly a credit"
+      ]
     },
     "funds_received_source_1": {
       "label": "Funds Received Source 1",
@@ -496,10 +517,25 @@
     },
     "funds_received_amount_2": {
       "label": "Funds Received Amount 2",
-      "data_type": "text",
-      "alignment": "left",
+      "data_type": "currency",
+      "alignment": "right",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "decimal",
+      "currency": {
+        "min": 0,
+        "decimals": 2
+      },
+      "expects": "a dollar amount, digits and decimal point only",
+      "examples": [
+        "1500.00",
+        "0.00",
+        "27834.50"
+      ],
+      "avoid": [
+        "a '$' character inside the value (the form prints it)",
+        "thousands separators or words",
+        "a negative amount unless this line is explicitly a credit"
+      ]
     },
     "funds_received_source_2": {
       "label": "Funds Received Source 2",
@@ -517,10 +553,25 @@
     },
     "funds_received_amount_3": {
       "label": "Funds Received Amount 3",
-      "data_type": "text",
-      "alignment": "left",
+      "data_type": "currency",
+      "alignment": "right",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "decimal",
+      "currency": {
+        "min": 0,
+        "decimals": 2
+      },
+      "expects": "a dollar amount, digits and decimal point only",
+      "examples": [
+        "1500.00",
+        "0.00",
+        "27834.50"
+      ],
+      "avoid": [
+        "a '$' character inside the value (the form prints it)",
+        "thousands separators or words",
+        "a negative amount unless this line is explicitly a credit"
+      ]
     },
     "funds_received_source_3": {
       "label": "Funds Received Source 3",
@@ -538,10 +589,25 @@
     },
     "funds_received_amount_4": {
       "label": "Funds Received Amount 4",
-      "data_type": "text",
-      "alignment": "left",
+      "data_type": "currency",
+      "alignment": "right",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "decimal",
+      "currency": {
+        "min": 0,
+        "decimals": 2
+      },
+      "expects": "a dollar amount, digits and decimal point only",
+      "examples": [
+        "1500.00",
+        "0.00",
+        "27834.50"
+      ],
+      "avoid": [
+        "a '$' character inside the value (the form prints it)",
+        "thousands separators or words",
+        "a negative amount unless this line is explicitly a credit"
+      ]
     },
     "funds_received_source_4": {
       "label": "Funds Received Source 4",
@@ -559,10 +625,25 @@
     },
     "funds_received_amount_5": {
       "label": "Funds Received Amount 5",
-      "data_type": "text",
-      "alignment": "left",
+      "data_type": "currency",
+      "alignment": "right",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "decimal",
+      "currency": {
+        "min": 0,
+        "decimals": 2
+      },
+      "expects": "a dollar amount, digits and decimal point only",
+      "examples": [
+        "1500.00",
+        "0.00",
+        "27834.50"
+      ],
+      "avoid": [
+        "a '$' character inside the value (the form prints it)",
+        "thousands separators or words",
+        "a negative amount unless this line is explicitly a credit"
+      ]
     },
     "funds_received_source_5": {
       "label": "Funds Received Source 5",

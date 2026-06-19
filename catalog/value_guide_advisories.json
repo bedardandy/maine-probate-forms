@@ -1,59 +1,11 @@
 {
-  "count": 62,
+  "count": 22,
   "advisories": [
-    {
-      "form_id": "AD-008",
-      "field_id": "probate_docket_number",
-      "label": "Probate Docket Number",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "AD-008",
-      "field_id": "district_docket_number",
-      "label": "District Docket Number",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "AD-011",
-      "field_id": "petitioner_date_of_birth",
-      "label": "Petitioner Date Of Birth",
-      "implies": "date"
-    },
-    {
-      "form_id": "AD-011",
-      "field_id": "date_of_decree",
-      "label": "Date Of Decree",
-      "implies": "date"
-    },
-    {
-      "form_id": "AD-011",
-      "field_id": "date_of_affidavit",
-      "label": "Date Of Affidavit",
-      "implies": "date"
-    },
     {
       "form_id": "AD-028",
       "field_id": "notary_acknowledgment_year",
       "label": "Acknowledgment Year",
       "implies": "year"
-    },
-    {
-      "form_id": "AF-101",
-      "field_id": "district_case_docket",
-      "label": "District Case Docket",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "AF-101.vA",
-      "field_id": "district_case_docket",
-      "label": "District Case Docket",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "AF-102",
-      "field_id": "date_of_death",
-      "label": "Date Of Death",
-      "implies": "date"
     },
     {
       "form_id": "AF-102",
@@ -69,45 +21,9 @@
     },
     {
       "form_id": "AF-105",
-      "field_id": "date_of_birth",
-      "label": "Date Of Birth",
-      "implies": "date"
-    },
-    {
-      "form_id": "AF-105",
       "field_id": "salary_wages_period",
       "label": "Salary Wages Period",
       "implies": "currency"
-    },
-    {
-      "form_id": "CN-1",
-      "field_id": "petitioner_date_of_birth",
-      "label": "Petitioner Date Of Birth",
-      "implies": "date"
-    },
-    {
-      "form_id": "CN-1",
-      "field_id": "attorney_phone_number",
-      "label": "Attorney Phone Number",
-      "implies": "phone"
-    },
-    {
-      "form_id": "DE-201",
-      "field_id": "date_of_death",
-      "label": "Date Of Death",
-      "implies": "date"
-    },
-    {
-      "form_id": "DE-201",
-      "field_id": "date_of_birth",
-      "label": "Date Of Birth",
-      "implies": "date"
-    },
-    {
-      "form_id": "DE-301",
-      "field_id": "date_of_death",
-      "label": "Date Of Death",
-      "implies": "date"
     },
     {
       "form_id": "DE-301(I)",
@@ -122,100 +38,16 @@
       "implies": "currency"
     },
     {
-      "form_id": "DE-405",
-      "field_id": "attorney_email",
-      "label": "Email Address",
-      "implies": "email"
-    },
-    {
       "form_id": "DE-503",
       "field_id": "residence_and_date_of_death",
       "label": "Residence And Date Of Death",
       "implies": "date"
     },
     {
-      "form_id": "DE-505",
-      "field_id": "attorney_email",
-      "label": "Email Address",
-      "implies": "email"
-    },
-    {
       "form_id": "DE-509",
       "field_id": "petitioner_address_email_phone",
       "label": "Petitioner Address Email Phone",
       "implies": "email"
-    },
-    {
-      "form_id": "DE-509",
-      "field_id": "attorney_phone_number",
-      "label": "Attorney Phone Number",
-      "implies": "phone"
-    },
-    {
-      "form_id": "DE-601",
-      "field_id": "attorney_email",
-      "label": "Email Address",
-      "implies": "email"
-    },
-    {
-      "form_id": "DE-605",
-      "field_id": "cert_docket_no",
-      "label": "Cert Docket No",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "GS-008.vA",
-      "field_id": "docket_no_probate",
-      "label": "Docket No Probate",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "GS-008.vA",
-      "field_id": "docket_no_district",
-      "label": "Docket No District",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "docket_no_probate",
-      "label": "Docket No Probate",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "docket_no_district",
-      "label": "Docket No District",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "funds_received_amount_1",
-      "label": "Funds Received Amount 1",
-      "implies": "currency"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "funds_received_amount_2",
-      "label": "Funds Received Amount 2",
-      "implies": "currency"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "funds_received_amount_3",
-      "label": "Funds Received Amount 3",
-      "implies": "currency"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "funds_received_amount_4",
-      "label": "Funds Received Amount 4",
-      "implies": "currency"
-    },
-    {
-      "form_id": "GS-014",
-      "field_id": "funds_received_amount_5",
-      "label": "Funds Received Amount 5",
-      "implies": "currency"
     },
     {
       "form_id": "MISC-102",
@@ -225,47 +57,11 @@
     },
     {
       "form_id": "N-105",
-      "field_id": "date_of_death_or_appointment",
-      "label": "Date Of Death Or Appointment",
-      "implies": "date"
-    },
-    {
-      "form_id": "N-105",
       "field_id": "copy_of_docket_sheet",
       "label": "Copy Of Docket Sheet",
       "implies": "docket_number"
     },
     {
-      "form_id": "N-112",
-      "field_id": "date_of_appointment",
-      "label": "Date Of Appointment",
-      "implies": "date"
-    },
-    {
-      "form_id": "NC-001",
-      "field_id": "probate_docket_number",
-      "label": "Probate Docket Number",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "NC-001",
-      "field_id": "district_docket_number",
-      "label": "District Docket Number",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "PB-007",
-      "field_id": "docket_no_probate",
-      "label": "Docket No Probate",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "PB-007",
-      "field_id": "docket_no_district",
-      "label": "Docket No District",
-      "implies": "docket_number"
-    },
-    {
       "form_id": "PB-007",
       "field_id": "objecting_parties_fee",
       "label": "Objecting Parties Fee",
@@ -285,18 +81,6 @@
     },
     {
       "form_id": "PB-007.vA",
-      "field_id": "docket_no_probate",
-      "label": "Docket No Probate",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "PB-007.vA",
-      "field_id": "docket_no_district",
-      "label": "Docket No District",
-      "implies": "docket_number"
-    },
-    {
-      "form_id": "PB-007.vA",
       "field_id": "objecting_parties_fee",
       "label": "Objecting Parties Fee",
       "implies": "currency"
@@ -312,30 +96,12 @@
       "field_id": "fee_structure",
       "label": "Fee Structure",
       "implies": "currency"
-    },
-    {
-      "form_id": "PP-108",
-      "field_id": "conservator_phone",
-      "label": "Telephone Number",
-      "implies": "phone"
     },
     {
       "form_id": "PP-201",
       "field_id": "petitioner_info",
       "label": "Full legal name, address and email address of Petitioner",
       "implies": "email"
-    },
-    {
-      "form_id": "PP-210",
-      "field_id": "date_of_appointment",
-      "label": "Date Of Appointment",
-      "implies": "date"
-    },
-    {
-      "form_id": "PP-402",
-      "field_id": "conservator_phone",
-      "label": "Telephone Number",
-      "implies": "phone"
     },
     {
       "form_id": "PP-405",
@@ -366,12 +132,6 @@
       "field_id": "affidavit_year",
       "label": "Year",
       "implies": "year"
-    },
-    {
-      "form_id": "PP-601",
-      "field_id": "attorney_email",
-      "label": "Email Address",
-      "implies": "email"
     }
   ]
 }

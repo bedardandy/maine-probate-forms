@@ -100,10 +100,21 @@
     },
     "petitioner_date_of_birth": {
       "label": "Petitioner Date Of Birth",
-      "data_type": "text",
+      "data_type": "date",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
+      "avoid": [
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields",
+        "a date in the future"
+      ]
     },
     "petitioner_prior_names": {
       "label": "Petitioner Prior Names",
@@ -240,10 +251,15 @@
     },
     "attorney_phone_number": {
       "label": "Attorney Phone Number",
-      "data_type": "text",
+      "data_type": "phone",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "NNN-NNN-NNNN",
+      "expects": "a 10-digit US phone number",
+      "avoid": [
+        "letters",
+        "a missing area code"
+      ]
     },
     "attorney_bar_number": {
       "label": "Attorney Bar Number",

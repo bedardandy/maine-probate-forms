@@ -7,4 +7,4 @@ date_signed,Dated,W005,date,signature,signature,date_signed,,,25,yellow,,,Y,wet_
 conservator_name,Conservator (signature/institution name),W006,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
 by_signature,By (representative signing on behalf of institution),W007,text,signature,signature,by_signature,,,45,orange,,,Y,wet_ink,
 its_title,Its (title of representative),W008,text,text,narrative_derived,free_text,,,45,orange,,Y,,llm_over_narrative,
-conservator_phone,Telephone Number,,text,text,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.phone,
+conservator_phone,Telephone Number,,text,phone,party_attr,conservator,,,5,green,Y,,,case_dict.conservator.phone,
