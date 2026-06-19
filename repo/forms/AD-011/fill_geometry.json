@@ -15,7 +15,7 @@
      "rect": [
       72.0,
       101.1,
-      179.0,
+      177.0,
       114.1
      ]
     }
@@ -27,7 +27,7 @@
     {
      "page": 0,
      "rect": [
-      432.0,
+      434.9,
       101.1,
       517.0,
       114.1
@@ -110,6 +110,62 @@
       496.2,
       544.0,
       509.2
+     ]
+    }
+   ]
+  },
+  "adoptee_date_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      320.0,
+      386.0,
+      544.0,
+      399.0
+     ]
+    }
+   ]
+  },
+  "adoptee_place_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      323.0,
+      413.6,
+      544.0,
+      426.6
+     ]
+    }
+   ]
+  },
+  "adoptee_birth_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      312.0,
+      441.2,
+      544.0,
+      454.2
+     ]
+    }
+   ]
+  },
+  "adoptee_proposed_new_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      335.0,
+      510.2,
+      544.0,
+      523.2
      ]
     }
    ]
@@ -264,17 +320,8 @@
   },
   "petitioner_signature_1": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      325.5,
-      200.9,
-      502.5,
-      213.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "petitioner_signature_date_2": {
    "type": "date",
@@ -292,17 +339,8 @@
   },
   "petitioner_signature_2": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      325.5,
-      243.0,
-      508.5,
-      256.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "date_of_affidavit": {
    "type": "date",
@@ -348,17 +386,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      325.5,
-      394.1,
-      508.5,
-      407.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_print_name": {
    "type": "text",

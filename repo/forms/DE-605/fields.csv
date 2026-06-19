@@ -16,6 +16,6 @@ notary_appearer_role,Notary Appearer Role,,text,text,party_attr,notary,,,0,green
 notary_officer_signature,Notary Officer Signature,,text,signature,signature,notary_officer_signature,,,5,green,,,Y,wet_ink,
 notary_officer_printed_name,Notary Officer Printed Name,,text,text,party_attr,notary,,,0,green,Y,,,notary_record.notary,
 cert_county_probate_court,Cert County Probate Court,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
-cert_docket_no,Cert Docket No,,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+cert_docket_no,Cert Docket No,,text,docket_number,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 cert_date,Cert Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 register_signature,Register Signature,,text,signature,signature,register_signature,,,5,green,,,Y,wet_ink,

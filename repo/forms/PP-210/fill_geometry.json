@@ -115,17 +115,8 @@
   },
   "appointee_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      81.0,
-      303.0,
-      105.0,
-      316.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "appointment_role": {
    "type": "select_many",
@@ -198,17 +189,8 @@
   },
   "order_attached_marker": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      81.0,
-      416.0,
-      105.0,
-      429.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "notice_of_intent_date_filed": {
    "type": "date",
@@ -226,17 +208,8 @@
   },
   "petition_not_pending_marker": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      81.0,
-      512.0,
-      106.0,
-      525.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "subject_of_registration_name": {
    "type": "text",

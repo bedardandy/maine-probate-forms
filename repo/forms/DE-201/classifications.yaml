@@ -9,3 +9,28 @@ overrides:
     party: petitioner
     subcategory: petitioner_contact
     data_type: text
+
+  decedent_name_caption:
+    category: case_constant
+    subcategory: caption
+
+  domestic_partner_details:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    data_type: text
+
+  filing_fee:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank
+  mailing_notices_fee:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank
+  publication_fee:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank

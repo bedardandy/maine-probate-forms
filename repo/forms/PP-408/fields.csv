@@ -5,6 +5,7 @@ individual_name,Individual Name,W003,text,person_name,party_attr,individual_unde
 claimant_name,Claimant Name,W004,text,person_name,party_attr,claimant,,,0,green,Y,,,claimant_record.claimant,
 claimant_address,Claimant Address,W005,text,address,party_attr,claimant,,,8,green,Y,,,claimant_record.claimant,
 basis_for_claim,Basis For Claim,W007,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+amount_claimed,Amount Claimed,,text,currency,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 nature_of_uncertainty,Nature Of Uncertainty,W008,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 security_for_claim,Security For Claim,W009,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 claimant_date,Claimant Date,W010,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

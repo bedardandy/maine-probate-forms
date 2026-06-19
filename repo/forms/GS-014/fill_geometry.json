@@ -85,7 +85,7 @@
      "rect": [
       309.0,
       176.0,
-      441.0,
+      439.5,
       189.0
      ]
     }
@@ -448,9 +448,9 @@
      "page": 0,
      "rect": [
       132.4,
-      640.2,
+      648.5,
       247.6,
-      653.0
+      661.0
      ]
     }
    ]
@@ -530,7 +530,7 @@
     {
      "page": 1,
      "rect": [
-      180.0,
+      182.3,
       106.9,
       246.0,
       119.9
@@ -1350,7 +1350,7 @@
      "rect": [
       117.7,
       533.0,
-      559.0,
+      405.0,
       546.0
      ]
     }
@@ -1372,31 +1372,13 @@
   },
   "guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      342.0,
-      575.8,
-      559.0,
-      588.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "co_guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      342.0,
-      605.0,
-      559.0,
-      618.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "guardian_address": {
    "type": "text",

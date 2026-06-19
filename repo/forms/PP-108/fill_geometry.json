@@ -65,17 +65,8 @@
   },
   "conservator_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      516.9,
-      538.5,
-      529.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "by_signer_name": {
    "type": "text",

@@ -279,31 +279,13 @@
   },
   "conservator_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      670.1,
-      510.0,
-      683.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "conservator_printed_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      105.1,
-      674.6,
-      258.2,
-      687.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "attorney_name": {
    "type": "text",

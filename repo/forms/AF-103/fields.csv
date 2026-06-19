@@ -3,6 +3,7 @@ docket_number,Docket Number,W001,text,docket_number,case_constant,docket_number,
 in_re_name,In Re Name,W003,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 affiant_name,Affiant Name,W004,text,text,party_attr,affiant,,,0,green,Y,,,affiant_record.affiant,
 county_of_residence,County Of Residence,W005,text,text,case_constant,county_of_residence,,,0,green,Y,,,case_dict.county_of_residence,populate_from_case_dict
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
 new_name,New Name,W007,text,text,narrative_derived,free_text,,,25,yellow,,Y,,llm_over_narrative,
 children_status,Children Status,,select_one,text,narrative_derived,children_status,,,5,green,,Y,,llm_over_narrative,"value_in(none, minor_only, adult_only, both)"
 minor_children_details,Minor Children Details,W010,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

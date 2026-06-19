@@ -41,7 +41,7 @@
     {
      "page": 0,
      "rect": [
-      97.0,
+      98.8,
       154.0,
       277.0,
       167.0
@@ -79,7 +79,7 @@
     },
     {
      "value": "made_provisions",
-     "label": "(b) Made the following provisions as permitted by 18-C M.R.S. \u00a73-1003(1)(B)",
+     "label": "(b) Made the following provisions as permitted by 18-C M.R.S. §3-1003(1)(B)",
      "page": 0,
      "rect": [
       90.8,
@@ -120,17 +120,8 @@
   },
   "pr_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      324.0,
-      114.9,
-      519.0,
-      127.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_county": {
    "type": "text",

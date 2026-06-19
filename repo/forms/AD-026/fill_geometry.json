@@ -55,7 +55,7 @@
     {
      "page": 0,
      "rect": [
-      72.0,
+      90.0,
       221.6,
       242.0,
       234.6
@@ -69,7 +69,7 @@
     {
      "page": 0,
      "rect": [
-      333.0,
+      343.0,
       221.6,
       509.0,
       234.6
@@ -646,17 +646,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      360.0,
-      191.4,
-      530.0,
-      204.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "co_petitioner_date": {
    "type": "date",
@@ -674,17 +665,8 @@
   },
   "co_petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      360.0,
-      217.2,
-      530.0,
-      230.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",
@@ -767,17 +749,8 @@
   },
   "unlabeled_widget_after_email": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      108.0,
-      461.8,
-      530.0,
-      489.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "notary_county": {
    "type": "text",
@@ -837,17 +810,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      288.0,
-      606.8,
-      530.0,
-      619.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

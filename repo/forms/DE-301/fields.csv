@@ -8,7 +8,7 @@ petitioner_interest,Petitioner Interest,,select_many,text,narrative_derived,free
 petitioner_interest_other,Petitioner Interest Other,W013,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 petitioner_interest_other_details,Petitioner Interest Other Details,W014,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 decedent_full_legal_name,Decedent Full Legal Name,W015,text,text,party_attr,decedent,,,0,green,Y,,,decedent_record.decedent,
-date_of_death,Date Of Death,W016,date,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_death,Date Of Death,W016,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 decedent_domicile,Decedent Domicile,W017,text,text,party_attr,decedent,,,0,green,Y,,,decedent_record.decedent,
 domiciled_in_county,Domiciled In County,,select_one,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
 venue_basis_if_not_domiciled,Venue Basis If Not Domiciled,W020,text,text,other,unclassified,,,30,yellow,,Y,Y,triage,

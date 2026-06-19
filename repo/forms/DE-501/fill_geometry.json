@@ -15,7 +15,7 @@
      "rect": [
       69.0,
       99.9,
-      199.0,
+      196.4,
       112.9
      ]
     }
@@ -27,7 +27,7 @@
     {
      "page": 0,
      "rect": [
-      403.0,
+      405.8,
       99.9,
       468.0,
       112.9
@@ -213,17 +213,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      293.0,
-      351.4,
-      505.0,
-      364.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",

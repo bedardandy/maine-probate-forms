@@ -3,7 +3,7 @@ county,County,W001,text,text,case_constant,county,,,0,green,Y,,,case_dict.county
 docket_no,Docket No,W002,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
 case_name,Case Name,W003,text,text,case_constant,case_name,,,0,green,Y,,,case_dict.case_name,populate_from_case_dict
 party_name,Party Name,W004,text,person_name,party_attr,form_subject,,,0,green,Y,,,form_subject_record.form_subject,
-date_of_birth,Date Of Birth,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+date_of_birth,Date Of Birth,W005,text,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 age,Age,W006,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
 phone,Phone,W007,text,phone,party_attr,form_subject_phone,,,0,green,Y,,,form_subject_record.form_subject_phone,
 address,Address,W008,text,address,party_attr,form_subject_address,,,0,green,Y,,,form_subject_record.form_subject_address,

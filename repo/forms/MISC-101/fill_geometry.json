@@ -78,7 +78,7 @@
     {
      "page": 0,
      "rect": [
-      80.0,
+      82.0,
       201.0,
       103.0,
       214.0
@@ -204,7 +204,7 @@
       96.6,
       553.1,
       543.0,
-      593.1
+      578.0
      ]
     }
    ]
@@ -253,17 +253,8 @@
   },
   "service_recipients": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      401.6,
-      170.2,
-      438.0,
-      183.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "service_date": {
    "type": "date",
@@ -281,17 +272,8 @@
   },
   "movant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      360.0,
-      262.1,
-      542.0,
-      275.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_bar_no": {
    "type": "text",
@@ -364,17 +346,8 @@
   },
   "judge_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      360.0,
-      471.2,
-      507.4,
-      484.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

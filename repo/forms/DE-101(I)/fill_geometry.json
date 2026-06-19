@@ -27,7 +27,7 @@
     {
      "page": 0,
      "rect": [
-      419.0,
+      422.4,
       118.7,
       542.0,
       131.7
@@ -41,7 +41,7 @@
     {
      "page": 0,
      "rect": [
-      96.0,
+      110.0,
       154.0,
       286.0,
       167.0
@@ -130,9 +130,9 @@
      "page": 0,
      "rect": [
       97.1,
-      353.2,
+      367.7,
       105.1,
-      361.2
+      375.7
      ]
     }
    ]
@@ -143,9 +143,9 @@
     {
      "page": 0,
      "rect": [
-      96.0,
+      133.0,
       363.4,
-      158.0,
+      193.0,
       376.4
      ]
     }
@@ -290,16 +290,7 @@
       72.0,
       714.5,
       542.0,
-      774.0
-     ]
-    },
-    {
-     "page": 0,
-     "rect": [
-      72.0,
-      725.0,
-      542.0,
-      738.0
+      727.5
      ]
     }
    ]
@@ -967,8 +958,9 @@
       72.0,
       668.1,
       542.0,
-      774.0
-     ]
+      695.1
+     ],
+     "multiline": true
     }
    ]
   },
@@ -1196,7 +1188,7 @@
     },
     {
      "value": "personal_rep_bond",
-     "label": "A personal representative\u2019s bond is required and is attached",
+     "label": "A personal representative’s bond is required and is attached",
      "page": 2,
      "rect": [
       91.3,
@@ -1261,17 +1253,8 @@
   },
   "applicant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      309.0,
-      685.0,
-      509.0,
-      698.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",
@@ -1354,45 +1337,18 @@
   },
   "filing_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      123.0,
-      304.6,
-      183.0,
-      318.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "mailing_notices_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      306.0,
-      305.0,
-      356.0,
-      318.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "publication_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      447.0,
-      305.0,
-      507.0,
-      318.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "court_completed"
   }
  }
 }

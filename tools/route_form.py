@@ -2,7 +2,8 @@
 """Route a plain-language fact pattern to the best Maine probate form.
 
 A single LLM call over a compact, cacheable catalog (catalog/router_catalog.json)
-replaces multi-turn repo exploration. At 79 forms the whole menu fits in ~1.5k
+replaces multi-turn repo exploration. The 82 catalog entries (79 base forms plus
+3 versioned variants) fit in ~1.5k
 tokens, so no embeddings / vector DB are needed. The pick is enum-validated
 against the catalog and the call is retried on an empty/invalid response, so any
 OpenAI-compatible model can be used safely.
@@ -47,11 +48,23 @@ def _load_catalog() -> dict:
 
 
 def _extract_json(text: str) -> dict:
-    for c in reversed(re.findall(r"\{[^{}]*\}", (text or "").replace("\n", " "))):
+    """Return the last valid JSON object, including objects with nesting."""
+    text = text or ""
+    decoder = json.JSONDecoder()
+    candidates = []
+    for index, char in enumerate(text):
+        if char != "{":
+            continue
         try:
-            return json.loads(c)
-        except Exception:
-            pass
+            value, length = decoder.raw_decode(text[index:])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            candidates.append((index + length, -index, value))
+    if candidates:
+        # Prefer the object ending latest in the response. If an outer object
+        # and one of its nested objects share an end position, prefer the outer.
+        return max(candidates, key=lambda item: (item[0], item[1]))[2]
     return {}
 
 

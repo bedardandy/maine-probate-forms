@@ -1,0 +1,13 @@
+{
+  "_comment": "Reviewed baseline of KNOWN fill gaps per example case. The smoke gate (test_smoke_examples.py) requires each case's actual gaps to be a SUBSET of its list here: a NEW missing/mismatched field fails the gate (regression), while fixing a listed one keeps it green. Every entry is a tracked issue with an assessment in docs/geometry-review-2026-06.md. Trim this file as gaps are closed.",
+  "gaps": {
+    "AD-026:case.example": ["inheritance_acknowledgment", "parent_child_relationship_acknowledgment"],
+    "APP-1:case.example": ["county"],
+    "CN-1:case.example": ["notary_county"],
+    "DE-101:case.example": ["decedent_name_caption"],
+    "DE-301(I):case.example": ["notary_name"],
+    "DE-301(I):case.split": ["notary_name"],
+    "PB-007:case.example": ["appointment_level", "gal_roster_status", "objection_status"],
+    "PB-007:case.expanded": ["appointment_end_event", "appointment_level", "gal_roster_status", "objection_status"]
+  }
+}

@@ -1,0 +1,8025 @@
+{
+  "forms_audited": 82,
+  "finding_count": 684,
+  "by_code": {
+    "uncovered_printed_rule": 559,
+    "generic_or_orphan_name": 3,
+    "county_value_should_be_uppercase": 34,
+    "suspicious_widget_chain_gap": 10,
+    "widget_widget_collision": 26,
+    "widget_native_text_collision": 23,
+    "widget_overruns_rule": 23,
+    "county_label_collision": 3,
+    "text_is_checkbox_sized": 3
+  },
+  "findings": [
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        216.2,
+        221.8,
+        229.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        222.2,
+        216.2,
+        389.6,
+        229.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        390.1,
+        216.2,
+        557.5,
+        229.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        230.5,
+        221.8,
+        243.5
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        222.2,
+        230.5,
+        389.6,
+        243.5
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        390.1,
+        230.5,
+        557.5,
+        243.5
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        272.4,
+        221.8,
+        285.4
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        314.2,
+        221.8,
+        327.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        356.1,
+        221.8,
+        369.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        398.1,
+        221.8,
+        411.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        467.6,
+        221.8,
+        480.6
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        509.5,
+        221.8,
+        522.5
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        537.6,
+        221.8,
+        550.6
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        579.4,
+        221.8,
+        592.4
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        607.5,
+        221.8,
+        620.5
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        635.6,
+        221.8,
+        648.6
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.5,
+        705.2,
+        221.8,
+        718.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        222.2,
+        705.2,
+        389.6,
+        718.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        390.1,
+        705.2,
+        557.5,
+        718.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        23.0,
+        221.8,
+        36.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        222.2,
+        23.0,
+        389.6,
+        36.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        390.1,
+        23.0,
+        557.5,
+        36.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        78.7,
+        221.8,
+        91.7
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        120.6,
+        221.8,
+        133.6
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        176.2,
+        221.8,
+        189.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        218.2,
+        221.8,
+        231.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        260.1,
+        221.8,
+        273.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        315.8,
+        221.8,
+        328.8
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        564.7,
+        221.8,
+        577.7
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        606.6,
+        221.8,
+        619.6
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        717.4,
+        221.8,
+        730.4
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        23.0,
+        221.8,
+        36.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        222.2,
+        23.0,
+        389.6,
+        36.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        390.1,
+        23.0,
+        557.5,
+        36.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        120.1,
+        221.8,
+        133.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        222.2,
+        120.1,
+        389.6,
+        133.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        390.1,
+        120.1,
+        557.5,
+        133.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        148.2,
+        221.8,
+        161.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        190.0,
+        221.8,
+        203.0
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        218.2,
+        221.8,
+        231.2
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        260.1,
+        221.8,
+        273.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        54.5,
+        315.8,
+        221.8,
+        328.8
+      ]
+    },
+    {
+      "form_id": "AD-008",
+      "code": "generic_or_orphan_name",
+      "severity": "high",
+      "field_id": "certification_text"
+    },
+    {
+      "form_id": "AD-009",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 1
+    },
+    {
+      "form_id": "AD-011",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "name_of_adoptee",
+      "gap": 23.3
+    },
+    {
+      "form_id": "AD-011",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_name",
+      "page": 1
+    },
+    {
+      "form_id": "AD-011",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        634.2,
+        216.0,
+        647.2
+      ]
+    },
+    {
+      "form_id": "AD-026",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 2,
+      "field_id": "relationship_to_adoptee",
+      "other_field_id": "dhhs_certificate_attached",
+      "overlap": [
+        109.4,
+        340.7,
+        118.4,
+        343.0
+      ]
+    },
+    {
+      "form_id": "AD-026",
+      "code": "generic_or_orphan_name",
+      "severity": "high",
+      "field_id": "unlabeled_widget_after_email"
+    },
+    {
+      "form_id": "AD-026",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "oath_petitioner_1_name",
+      "page": 3,
+      "native_text": "and",
+      "overlap": [
+        492.5,
+        529.3,
+        506.8,
+        537.8
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "AD-028",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "putative_parent_likely_address",
+      "page": 1,
+      "left_overrun": 1.2,
+      "right_overrun": 7.8
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        345.6,
+        203.6,
+        548.2,
+        216.6
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        354.6,
+        353.1,
+        548.2,
+        366.1
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        57.6,
+        473.1,
+        201.6,
+        486.1
+      ]
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 42.0
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 42.2
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 270.9
+    },
+    {
+      "form_id": "AF-101",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "AF-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        81.1,
+        147.6,
+        306.4,
+        160.6
+      ]
+    },
+    {
+      "form_id": "AF-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        528.9,
+        276.0,
+        541.9
+      ]
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "county_label_collision",
+      "severity": "high",
+      "field_id": "county_probate_court",
+      "page": 1,
+      "rect": [
+        54.0,
+        108.2,
+        159.1,
+        126.7
+      ],
+      "county_x": 159.1
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        81.1,
+        147.6,
+        306.4,
+        160.6
+      ]
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        528.9,
+        276.0,
+        541.9
+      ]
+    },
+    {
+      "form_id": "AF-102",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "decedent_name",
+      "gap": 66.6
+    },
+    {
+      "form_id": "AF-102",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "affiant_name",
+      "gap": 290.9
+    },
+    {
+      "form_id": "AF-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        456.0,
+        555.8,
+        522.0,
+        568.8
+      ]
+    },
+    {
+      "form_id": "AF-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.0,
+        706.5,
+        198.0,
+        719.5
+      ]
+    },
+    {
+      "form_id": "AF-103",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "county_of_residence",
+      "page": 1,
+      "left_overrun": -2.6,
+      "right_overrun": 5.0
+    },
+    {
+      "form_id": "AF-104",
+      "code": "generic_or_orphan_name",
+      "severity": "high",
+      "field_id": "person_unknown_name"
+    },
+    {
+      "form_id": "AF-104",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "AF-104",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "county_notary",
+      "page": 1,
+      "native_text": "OF",
+      "overlap": [
+        98.0,
+        483.5,
+        110.9,
+        494.4
+      ]
+    },
+    {
+      "form_id": "AF-104",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        54.0,
+        706.5,
+        198.0,
+        719.5
+      ]
+    },
+    {
+      "form_id": "AF-104",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        141.3,
+        553.1,
+        154.3
+      ]
+    },
+    {
+      "form_id": "AF-104",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        293.1,
+        558.0,
+        306.1
+      ]
+    },
+    {
+      "form_id": "AF-104",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        444.9,
+        558.0,
+        457.9
+      ]
+    },
+    {
+      "form_id": "AF-104",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        648.4,
+        558.0,
+        661.4
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "living_arrangement",
+      "other_field_id": "living_arrangement_other",
+      "overlap": [
+        342.2,
+        203.1,
+        350.2,
+        205.2
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "anticipate_other_employment",
+      "other_field_id": "other_employment_explanation",
+      "overlap": [
+        462.9,
+        467.1,
+        470.9,
+        469.2
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "spouse_income_amount",
+      "other_field_id": "spouse_income_available_amount",
+      "overlap": [
+        393.0,
+        709.8,
+        448.0,
+        712.0
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 2,
+      "field_id": "own_real_estate",
+      "other_field_id": "mortgage_holder",
+      "overlap": [
+        512.5,
+        128.3,
+        520.5,
+        130.4
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "AF-105",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "medical_support_total",
+      "page": 2,
+      "native_text": "is",
+      "overlap": [
+        420.0,
+        404.7,
+        424.8,
+        414.5
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        63.4,
+        249.6,
+        134.2,
+        262.6
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        99.4,
+        364.6,
+        207.6,
+        377.6
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        63.4,
+        105.9,
+        141.8,
+        118.9
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        351.4,
+        668.6,
+        531.4,
+        681.6
+      ]
+    },
+    {
+      "form_id": "APP-1",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "APP-2",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "APP-2",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        93.6,
+        577.2,
+        167.8,
+        590.2
+      ]
+    },
+    {
+      "form_id": "APP-2",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        201.6,
+        577.2,
+        347.2,
+        590.2
+      ]
+    },
+    {
+      "form_id": "APP-2",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        374.4,
+        577.2,
+        553.1,
+        590.2
+      ]
+    },
+    {
+      "form_id": "CN-1",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "CN-1",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 3
+    },
+    {
+      "form_id": "CN-1",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        57.6,
+        673.4,
+        201.6,
+        686.4
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "decedent_name_caption",
+      "page": 1,
+      "native_text": "PETITION",
+      "overlap": [
+        360.0,
+        156.1,
+        405.0,
+        168.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "decedent_name_caption",
+      "page": 1,
+      "native_text": "FOR",
+      "overlap": [
+        407.5,
+        156.1,
+        426.9,
+        168.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "decedent_name_caption",
+      "page": 1,
+      "native_text": "FORMAL",
+      "overlap": [
+        429.3,
+        156.1,
+        471.0,
+        168.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        64.0,
+        82.0,
+        183.2,
+        95.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        183.7,
+        82.0,
+        302.9,
+        95.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        303.4,
+        82.0,
+        428.3,
+        95.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        428.8,
+        82.0,
+        547.9,
+        95.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        64.0,
+        94.0,
+        183.2,
+        107.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        183.7,
+        94.0,
+        302.9,
+        107.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        303.4,
+        94.0,
+        428.3,
+        107.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        428.8,
+        94.0,
+        547.9,
+        107.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        80.5,
+        392.5,
+        221.0,
+        405.5
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        221.5,
+        392.5,
+        531.5,
+        405.5
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        80.5,
+        404.5,
+        221.0,
+        417.5
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        221.5,
+        404.5,
+        531.5,
+        417.5
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        132.0,
+        367.9,
+        290.8,
+        380.9
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.9,
+        367.9,
+        480.0,
+        380.9
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        132.0,
+        381.0,
+        290.8,
+        394.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.9,
+        381.0,
+        480.0,
+        394.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        132.0,
+        394.0,
+        290.8,
+        407.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.9,
+        394.0,
+        480.0,
+        407.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        131.3,
+        407.2,
+        290.8,
+        420.2
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.2,
+        407.2,
+        480.0,
+        420.2
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        72.0,
+        464.1,
+        154.1,
+        477.1
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        64.0,
+        87.8,
+        183.1,
+        100.8
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        183.6,
+        87.8,
+        332.8,
+        100.8
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        333.2,
+        87.8,
+        454.3,
+        100.8
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        454.8,
+        87.8,
+        547.9,
+        100.8
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        64.0,
+        111.2,
+        183.1,
+        124.2
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        183.6,
+        111.2,
+        332.8,
+        124.2
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        333.2,
+        111.2,
+        454.3,
+        124.2
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        454.8,
+        111.2,
+        547.9,
+        124.2
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        73.6,
+        177.7,
+        282.8,
+        190.7
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        283.3,
+        177.7,
+        538.4,
+        190.7
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        73.6,
+        189.7,
+        282.8,
+        202.7
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        283.3,
+        189.7,
+        538.4,
+        202.7
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.0,
+        287.6,
+        154.0,
+        300.6
+      ]
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.0,
+        343.3,
+        216.0,
+        356.3
+      ]
+    },
+    {
+      "form_id": "DE-104",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "personal_representative_address",
+      "gap": 23.0
+    },
+    {
+      "form_id": "DE-201",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        73.1,
+        586.9,
+        183.7,
+        599.9
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        184.2,
+        586.9,
+        294.7,
+        599.9
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        295.2,
+        586.9,
+        411.0,
+        599.9
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        411.5,
+        586.9,
+        522.0,
+        599.9
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        73.1,
+        610.4,
+        183.7,
+        623.4
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        184.2,
+        610.4,
+        294.7,
+        623.4
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        295.2,
+        610.4,
+        411.0,
+        623.4
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        411.5,
+        610.4,
+        522.0,
+        623.4
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        73.1,
+        85.0,
+        183.7,
+        98.0
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        184.2,
+        85.0,
+        294.7,
+        98.0
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        295.2,
+        85.0,
+        411.0,
+        98.0
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        411.5,
+        85.0,
+        522.0,
+        98.0
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        73.1,
+        108.6,
+        183.7,
+        121.6
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        184.2,
+        108.6,
+        294.7,
+        121.6
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        295.2,
+        108.6,
+        411.0,
+        121.6
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        411.5,
+        108.6,
+        522.0,
+        121.6
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.5,
+        336.3,
+        297.4,
+        349.3
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        297.8,
+        336.3,
+        522.5,
+        349.3
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.5,
+        349.8,
+        297.4,
+        362.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        297.8,
+        349.8,
+        522.5,
+        362.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        85.3,
+        488.7,
+        287.2,
+        501.7
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.6,
+        488.7,
+        509.6,
+        501.7
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        85.3,
+        500.7,
+        287.2,
+        513.7
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.6,
+        500.7,
+        509.6,
+        513.7
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        100.3,
+        492.8,
+        231.0,
+        505.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        288.0,
+        492.8,
+        513.0,
+        505.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        273.7,
+        96.8,
+        350.4,
+        109.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        444.4,
+        96.8,
+        521.2,
+        109.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        287.5,
+        130.8,
+        354.0,
+        143.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        421.0,
+        130.8,
+        522.0,
+        143.8
+      ]
+    },
+    {
+      "form_id": "DE-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        63.1,
+        151.1,
+        203.3,
+        164.1
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "real_estate_locations",
+      "page": 2,
+      "native_text": "survivorship).",
+      "overlap": [
+        99.0,
+        680.0,
+        154.9,
+        689.7
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        69.7,
+        544.0,
+        186.1,
+        557.0
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        186.6,
+        544.0,
+        338.2,
+        557.0
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        338.6,
+        544.0,
+        445.0,
+        557.0
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        445.4,
+        544.0,
+        542.3,
+        557.0
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        69.7,
+        572.5,
+        186.1,
+        585.5
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        186.6,
+        572.5,
+        338.2,
+        585.5
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        338.6,
+        572.5,
+        445.0,
+        585.5
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        445.4,
+        572.5,
+        542.3,
+        585.5
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        69.7,
+        82.3,
+        186.1,
+        95.3
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        186.6,
+        82.3,
+        338.2,
+        95.3
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        338.6,
+        82.3,
+        445.0,
+        95.3
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        445.4,
+        82.3,
+        542.3,
+        95.3
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        69.7,
+        110.6,
+        186.1,
+        123.6
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        186.6,
+        110.6,
+        338.2,
+        123.6
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        338.6,
+        110.6,
+        445.0,
+        123.6
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        445.4,
+        110.6,
+        542.3,
+        123.6
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        69.7,
+        407.4,
+        305.8,
+        420.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        306.2,
+        407.4,
+        542.3,
+        420.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        69.7,
+        419.4,
+        305.8,
+        432.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        306.2,
+        419.4,
+        542.3,
+        432.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        79.1,
+        328.4,
+        283.4,
+        341.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        283.9,
+        328.4,
+        532.9,
+        341.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        79.1,
+        340.4,
+        283.4,
+        353.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        283.9,
+        340.4,
+        532.9,
+        353.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        101.2,
+        443.5,
+        288.0,
+        456.5
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        443.5,
+        540.0,
+        456.5
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        120.4,
+        92.4,
+        187.8,
+        105.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        288.2,
+        92.4,
+        363.2,
+        105.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        449.2,
+        92.4,
+        516.6,
+        105.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        120.1,
+        115.4,
+        187.6,
+        128.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        261.2,
+        115.4,
+        338.8,
+        128.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        426.2,
+        115.4,
+        493.0,
+        128.4
+      ]
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        78.2,
+        136.9,
+        222.2,
+        149.9
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_name",
+      "page": 2,
+      "left_overrun": 0.0,
+      "right_overrun": 5.4
+    },
+    {
+      "form_id": "DE-301",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_address",
+      "page": 2,
+      "left_overrun": 0.0,
+      "right_overrun": 5.4
+    },
+    {
+      "form_id": "DE-301",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_address",
+      "page": 2,
+      "left_overrun": 0.0,
+      "right_overrun": 5.4
+    },
+    {
+      "form_id": "DE-301",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_phone",
+      "page": 2,
+      "left_overrun": 0.0,
+      "right_overrun": 5.4
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        213.1,
+        305.9,
+        226.1
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        306.4,
+        213.1,
+        545.2,
+        226.1
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        226.6,
+        305.9,
+        239.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        306.4,
+        226.6,
+        545.2,
+        239.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        101.8,
+        377.6,
+        231.0,
+        390.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        302.3,
+        377.6,
+        513.0,
+        390.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        101.2,
+        146.8,
+        288.0,
+        159.8
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        146.8,
+        535.6,
+        159.8
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        173.9,
+        248.2,
+        438.1,
+        261.2
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        75.7,
+        325.6,
+        536.3,
+        338.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        75.7,
+        339.1,
+        536.3,
+        352.1
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        75.7,
+        352.6,
+        536.3,
+        365.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        75.7,
+        366.1,
+        536.3,
+        379.1
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        75.7,
+        379.6,
+        536.3,
+        392.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        75.7,
+        393.2,
+        536.3,
+        406.2
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        101.2,
+        462.1,
+        288.0,
+        475.1
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        462.1,
+        535.6,
+        475.1
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        169.6,
+        519.6,
+        288.0,
+        532.6
+      ]
+    },
+    {
+      "form_id": "DE-301",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        519.6,
+        540.0,
+        532.6
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        302.3,
+        258.0,
+        513.0,
+        271.0
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        583.6,
+        540.0,
+        596.6
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        98.4,
+        149.1,
+        288.0,
+        162.1
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        149.1,
+        540.0,
+        162.1
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        174.7,
+        225.2,
+        401.6,
+        238.2
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        107.3,
+        236.6,
+        404.2,
+        249.6
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        101.2,
+        294.4,
+        288.0,
+        307.4
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        294.4,
+        540.0,
+        307.4
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        327.4,
+        216.0,
+        340.4
+      ]
+    },
+    {
+      "form_id": "DE-401",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_name",
+      "page": 1
+    },
+    {
+      "form_id": "DE-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        281.0,
+        707.7,
+        506.0,
+        720.7
+      ]
+    },
+    {
+      "form_id": "DE-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        70.1,
+        124.9,
+        325.3,
+        137.9
+      ]
+    },
+    {
+      "form_id": "DE-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        315.0,
+        262.9,
+        508.2,
+        275.9
+      ]
+    },
+    {
+      "form_id": "DE-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        70.1,
+        331.1,
+        210.3,
+        344.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 2,
+      "field_id": "real_property_surety_1_physical_address_1",
+      "other_field_id": "real_property_surety_2_physical_address_1",
+      "overlap": [
+        355.6,
+        516.4,
+        521.5,
+        556.8
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "real_property_surety_1_description_1",
+      "page": 2,
+      "native_text": "Property:",
+      "overlap": [
+        219.0,
+        435.3,
+        251.9,
+        445.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "real_property_surety_2_description_1",
+      "page": 2,
+      "native_text": "Property:",
+      "overlap": [
+        471.0,
+        435.3,
+        503.9,
+        445.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "real_property_surety_1_description_2",
+      "page": 2,
+      "native_text": "Property:",
+      "overlap": [
+        219.0,
+        558.8,
+        251.9,
+        568.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "real_property_surety_2_description_2",
+      "page": 2,
+      "native_text": "Property:",
+      "overlap": [
+        471.0,
+        558.8,
+        503.9,
+        568.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "county_label_collision",
+      "severity": "high",
+      "field_id": "affidavit_surety_1_county",
+      "page": 3,
+      "rect": [
+        72.0,
+        216.0,
+        193.0,
+        229.0
+      ],
+      "county_x": 194.5
+    },
+    {
+      "form_id": "DE-403",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "affidavit_surety_1_county",
+      "page": 3
+    },
+    {
+      "form_id": "DE-403",
+      "code": "county_label_collision",
+      "severity": "high",
+      "field_id": "affidavit_surety_2_county",
+      "page": 3,
+      "rect": [
+        72.0,
+        512.8,
+        193.0,
+        525.8
+      ],
+      "county_x": 194.5
+    },
+    {
+      "form_id": "DE-403",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "affidavit_surety_2_county",
+      "page": 3
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        555.1,
+        540.0,
+        568.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        589.6,
+        540.0,
+        602.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        624.1,
+        540.0,
+        637.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        658.6,
+        540.0,
+        671.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        95.5,
+        168.0,
+        261.5,
+        181.0
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        347.5,
+        168.0,
+        513.5,
+        181.0
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        103.6,
+        433.4,
+        253.4,
+        446.4
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        355.6,
+        433.4,
+        505.4,
+        446.4
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        103.6,
+        556.9,
+        253.4,
+        569.9
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        355.6,
+        556.9,
+        505.4,
+        569.9
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        154.5,
+        504.0,
+        167.5
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        285.6,
+        540.0,
+        298.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        451.2,
+        504.0,
+        464.2
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        582.3,
+        540.0,
+        595.3
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        360.3,
+        540.0,
+        373.3
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        127.8,
+        223.5,
+        288.5,
+        236.5
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        289.0,
+        223.5,
+        400.0,
+        236.5
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        400.4,
+        223.5,
+        539.5,
+        236.5
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        127.8,
+        258.6,
+        288.5,
+        271.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        289.0,
+        258.6,
+        400.0,
+        271.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        400.4,
+        258.6,
+        539.5,
+        271.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        127.8,
+        272.8,
+        288.5,
+        285.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        289.0,
+        272.8,
+        400.0,
+        285.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        400.4,
+        272.8,
+        539.5,
+        285.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        59.0,
+        318.0,
+        72.0
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        59.0,
+        438.4,
+        72.0
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        59.0,
+        554.3,
+        72.0
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        82.5,
+        318.0,
+        95.5
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        82.5,
+        438.4,
+        95.5
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        82.5,
+        554.3,
+        95.5
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        96.8,
+        318.0,
+        109.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        96.8,
+        438.4,
+        109.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        96.8,
+        554.3,
+        109.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        120.3,
+        318.0,
+        133.3
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        120.3,
+        438.4,
+        133.3
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        120.3,
+        554.3,
+        133.3
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        369.6,
+        318.0,
+        382.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        369.6,
+        438.4,
+        382.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        369.6,
+        554.3,
+        382.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        416.1,
+        318.0,
+        429.1
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        416.1,
+        438.4,
+        429.1
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        416.1,
+        554.3,
+        429.1
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        134.8,
+        286.4,
+        147.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        135.8,
+        286.4,
+        148.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        134.8,
+        442.2,
+        147.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        135.8,
+        442.2,
+        148.8
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        136.3,
+        442.2,
+        149.3
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        219.2,
+        286.4,
+        232.2
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        220.2,
+        286.4,
+        233.2
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        219.2,
+        442.2,
+        232.2
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        220.2,
+        442.2,
+        233.2
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        220.6,
+        442.2,
+        233.6
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        416.2,
+        540.0,
+        429.2
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        640.5,
+        216.0,
+        653.5
+      ]
+    },
+    {
+      "form_id": "DE-406",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "inventory_filed_date",
+      "page": 1,
+      "native_text": "on",
+      "overlap": [
+        360.0,
+        216.2,
+        366.3,
+        226.8
+      ]
+    },
+    {
+      "form_id": "DE-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.2,
+        161.4,
+        528.4,
+        174.4
+      ]
+    },
+    {
+      "form_id": "DE-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.2,
+        216.0,
+        528.4,
+        229.0
+      ]
+    },
+    {
+      "form_id": "DE-407",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        237.3,
+        152.4,
+        250.3
+      ]
+    },
+    {
+      "form_id": "DE-407",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        361.6,
+        422.5,
+        540.1,
+        435.5
+      ]
+    },
+    {
+      "form_id": "DE-501",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "DE-501",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        294.2,
+        352.6,
+        505.0,
+        365.6
+      ]
+    },
+    {
+      "form_id": "DE-501",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        208.3,
+        67.4,
+        403.6,
+        80.4
+      ]
+    },
+    {
+      "form_id": "DE-501",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        79.2,
+        607.9,
+        223.2,
+        620.9
+      ]
+    },
+    {
+      "form_id": "DE-502",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "DE-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        294.2,
+        408.2,
+        505.0,
+        421.2
+      ]
+    },
+    {
+      "form_id": "DE-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        294.2,
+        442.6,
+        505.0,
+        455.6
+      ]
+    },
+    {
+      "form_id": "DE-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        208.2,
+        662.0,
+        393.7,
+        675.0
+      ]
+    },
+    {
+      "form_id": "DE-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        79.2,
+        717.3,
+        223.2,
+        730.3
+      ]
+    },
+    {
+      "form_id": "DE-503",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        262.5,
+        216.0,
+        275.5
+      ]
+    },
+    {
+      "form_id": "DE-504",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        313.2,
+        216.0,
+        326.2
+      ]
+    },
+    {
+      "form_id": "DE-505",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_bar_number",
+      "page": 1,
+      "left_overrun": 0.0,
+      "right_overrun": 42.8
+    },
+    {
+      "form_id": "DE-505",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_email",
+      "page": 1,
+      "left_overrun": 0.0,
+      "right_overrun": 42.8
+    },
+    {
+      "form_id": "DE-505",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        641.8,
+        252.0,
+        654.8
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        330.6,
+        350.0,
+        418.6,
+        363.0
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        47.6,
+        443.1,
+        195.5,
+        456.1
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        196.0,
+        443.1,
+        348.5,
+        456.1
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        349.0,
+        443.1,
+        564.5,
+        456.1
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        47.6,
+        466.5,
+        195.5,
+        479.5
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        196.0,
+        466.5,
+        348.5,
+        479.5
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        349.0,
+        466.5,
+        564.5,
+        479.5
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        47.6,
+        59.0,
+        195.5,
+        72.0
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        196.0,
+        59.0,
+        348.5,
+        72.0
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        349.0,
+        59.0,
+        564.5,
+        72.0
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        47.6,
+        82.5,
+        195.5,
+        95.5
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        196.0,
+        82.5,
+        348.5,
+        95.5
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        349.0,
+        82.5,
+        564.5,
+        95.5
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        47.6,
+        117.4,
+        195.5,
+        130.4
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        196.0,
+        117.4,
+        348.5,
+        130.4
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        349.0,
+        117.4,
+        564.5,
+        130.4
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        101.2,
+        574.0,
+        216.0,
+        587.0
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        574.0,
+        540.0,
+        587.0
+      ]
+    },
+    {
+      "form_id": "DE-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        608.6,
+        216.0,
+        621.6
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "decedent_name",
+      "gap": 147.9
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        67.8,
+        93.4,
+        202.3,
+        106.4
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        202.8,
+        93.4,
+        462.6,
+        106.4
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        463.1,
+        93.4,
+        544.2,
+        106.4
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        67.8,
+        117.0,
+        202.3,
+        130.0
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        202.8,
+        117.0,
+        462.6,
+        130.0
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        463.1,
+        117.0,
+        544.2,
+        130.0
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        67.8,
+        551.2,
+        230.2,
+        564.2
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        230.6,
+        551.2,
+        544.2,
+        564.2
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        67.8,
+        574.5,
+        230.2,
+        587.5
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        230.6,
+        574.5,
+        544.2,
+        587.5
+      ]
+    },
+    {
+      "form_id": "DE-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        546.3,
+        154.1,
+        559.3
+      ]
+    },
+    {
+      "form_id": "DE-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        78.8,
+        477.6,
+        220.3,
+        490.6
+      ]
+    },
+    {
+      "form_id": "DE-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        220.8,
+        477.6,
+        533.2,
+        490.6
+      ]
+    },
+    {
+      "form_id": "DE-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        78.8,
+        490.2,
+        220.3,
+        503.2
+      ]
+    },
+    {
+      "form_id": "DE-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        220.8,
+        490.2,
+        533.2,
+        503.2
+      ]
+    },
+    {
+      "form_id": "DE-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        569.2,
+        216.0,
+        582.2
+      ]
+    },
+    {
+      "form_id": "DE-601",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "attorney_bar_number",
+      "page": 2,
+      "left_overrun": 0.0,
+      "right_overrun": 42.8
+    },
+    {
+      "form_id": "DE-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        274.2,
+        288.0,
+        287.2
+      ]
+    },
+    {
+      "form_id": "DE-602",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "estate_of_decedent",
+      "page": 1,
+      "native_text": "of",
+      "overlap": [
+        98.9,
+        156.4,
+        107.2,
+        167.0
+      ]
+    },
+    {
+      "form_id": "DE-602",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 2
+    },
+    {
+      "form_id": "DE-602",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        258.0,
+        540.0,
+        271.0
+      ]
+    },
+    {
+      "form_id": "DE-603",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 2
+    },
+    {
+      "form_id": "DE-603",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        64.0,
+        270.6,
+        222.5,
+        283.6
+      ]
+    },
+    {
+      "form_id": "DE-603",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        223.0,
+        270.6,
+        381.4,
+        283.6
+      ]
+    },
+    {
+      "form_id": "DE-603",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        381.8,
+        270.6,
+        547.9,
+        283.6
+      ]
+    },
+    {
+      "form_id": "DE-603",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        64.0,
+        282.6,
+        222.5,
+        295.6
+      ]
+    },
+    {
+      "form_id": "DE-603",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        223.0,
+        282.6,
+        381.4,
+        295.6
+      ]
+    },
+    {
+      "form_id": "DE-603",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        381.8,
+        282.6,
+        547.9,
+        295.6
+      ]
+    },
+    {
+      "form_id": "DE-605",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 1
+    },
+    {
+      "form_id": "GS-008",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 1
+    },
+    {
+      "form_id": "GS-008.vA",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 1
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "physician_details",
+      "other_field_id": "treated_by_counselor",
+      "overlap": [
+        91.5,
+        550.6,
+        550.5,
+        553.5
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "treated_by_counselor",
+      "other_field_id": "counselor_details",
+      "overlap": [
+        310.1,
+        557.0,
+        549.2,
+        563.6
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "counselor_details",
+      "other_field_id": "treated_by_case_worker",
+      "overlap": [
+        91.5,
+        582.0,
+        550.5,
+        584.8
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "treated_by_case_worker",
+      "other_field_id": "case_worker_details",
+      "overlap": [
+        324.2,
+        589.3,
+        550.5,
+        595.0
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "case_worker_details",
+      "other_field_id": "treated_by_dentist",
+      "overlap": [
+        91.5,
+        613.4,
+        550.5,
+        616.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "treated_by_dentist",
+      "other_field_id": "dentist_details",
+      "overlap": [
+        299.6,
+        619.8,
+        549.6,
+        626.4
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "dentist_details",
+      "other_field_id": "treated_by_other",
+      "overlap": [
+        91.5,
+        638.7,
+        550.5,
+        647.7
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "treated_by_other",
+      "other_field_id": "other_treatment_type",
+      "overlap": [
+        132.4,
+        648.5,
+        247.6,
+        651.7
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        258.1,
+        134.8,
+        271.1
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        135.2,
+        258.1,
+        283.3,
+        271.1
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        283.8,
+        258.1,
+        431.6,
+        271.1
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        432.1,
+        258.1,
+        562.3,
+        271.1
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        287.6,
+        134.8,
+        300.6
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        135.2,
+        287.6,
+        283.3,
+        300.6
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        283.8,
+        287.6,
+        431.6,
+        300.6
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        432.1,
+        287.6,
+        562.3,
+        300.6
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        302.7,
+        134.8,
+        315.7
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        332.2,
+        134.8,
+        345.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.5,
+        347.4,
+        134.8,
+        360.4
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        90.5,
+        81.2,
+        246.0,
+        94.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        246.5,
+        81.2,
+        401.5,
+        94.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        402.0,
+        81.2,
+        557.5,
+        94.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        90.5,
+        96.2,
+        246.0,
+        109.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        246.5,
+        96.2,
+        401.5,
+        109.2
+      ]
+    },
+    {
+      "form_id": "GS-014",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        402.0,
+        96.2,
+        557.5,
+        109.2
+      ]
+    },
+    {
+      "form_id": "MISC-101",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "motion_date",
+      "page": 1,
+      "left_overrun": -12.0,
+      "right_overrun": 32.0
+    },
+    {
+      "form_id": "MISC-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        288.0,
+        171.4,
+        438.0,
+        184.4
+      ]
+    },
+    {
+      "form_id": "MISC-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        360.0,
+        263.4,
+        540.0,
+        276.4
+      ]
+    },
+    {
+      "form_id": "MISC-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        683.7,
+        216.0,
+        696.7
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "appear_before_additional",
+      "other_field_id": "appear_before_final",
+      "overlap": [
+        85.0,
+        329.2,
+        150.0,
+        332.7
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "text_is_checkbox_sized",
+      "severity": "high",
+      "field_id": "appear_probate_court_time",
+      "page": 1,
+      "rect": [
+        85.0,
+        260.4,
+        97.0,
+        273.4
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "appear_before_offices",
+      "page": 1,
+      "left_overrun": -7.0,
+      "right_overrun": 10.0
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "appear_before_time_detail",
+      "page": 1,
+      "left_overrun": 5.0,
+      "right_overrun": 0.4
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "produce_time",
+      "page": 1,
+      "left_overrun": 19.0,
+      "right_overrun": -19.0
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "produce_additional",
+      "page": 1,
+      "left_overrun": 0.0,
+      "right_overrun": 162.4
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "Time",
+      "overlap": [
+        72.0,
+        485.1,
+        93.1,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "and",
+      "overlap": [
+        95.6,
+        485.1,
+        110.1,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "place",
+      "overlap": [
+        112.7,
+        485.1,
+        133.8,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "of",
+      "overlap": [
+        136.2,
+        485.1,
+        144.6,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "inspection:",
+      "overlap": [
+        147.1,
+        485.1,
+        190.9,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "left_overrun": 118.8,
+      "right_overrun": 10.0
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "issued_on_behalf_of",
+      "page": 1,
+      "left_overrun": -3.9,
+      "right_overrun": 25.8
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "issue_date",
+      "page": 1,
+      "left_overrun": -1.0,
+      "right_overrun": 33.0
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_page2",
+      "page": 2
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        449.1,
+        540.0,
+        462.1
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        460.6,
+        540.0,
+        473.6
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        472.0,
+        432.0,
+        485.0
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        383.5,
+        102.4,
+        504.0,
+        115.4
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        380.5,
+        114.0,
+        504.0,
+        127.0
+      ]
+    },
+    {
+      "form_id": "N-105",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "date_of_death_or_appointment",
+      "gap": 25.8
+    },
+    {
+      "form_id": "N-105",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "N-105",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "residence_of_decedent",
+      "page": 1,
+      "left_overrun": -5.9,
+      "right_overrun": 23.7
+    },
+    {
+      "form_id": "N-105",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "date_of_death_or_appointment",
+      "page": 1,
+      "left_overrun": 0.2,
+      "right_overrun": 23.7
+    },
+    {
+      "form_id": "N-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        322.3,
+        586.5,
+        547.3,
+        599.5
+      ]
+    },
+    {
+      "form_id": "N-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        43.2,
+        657.8,
+        187.2,
+        670.8
+      ]
+    },
+    {
+      "form_id": "N-106",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        73.9,
+        626.6,
+        230.4,
+        639.6
+      ]
+    },
+    {
+      "form_id": "N-106",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        338.4,
+        626.6,
+        554.4,
+        639.6
+      ]
+    },
+    {
+      "form_id": "N-106",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        50.4,
+        661.2,
+        194.4,
+        674.2
+      ]
+    },
+    {
+      "form_id": "N-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        636.8,
+        216.0,
+        649.8
+      ]
+    },
+    {
+      "form_id": "N-108",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "N-108",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        57.6,
+        670.5,
+        201.6,
+        683.5
+      ]
+    },
+    {
+      "form_id": "N-112",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        568.4,
+        540.0,
+        581.4
+      ]
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        596.0,
+        540.0,
+        609.0
+      ]
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        637.4,
+        180.0,
+        650.4
+      ]
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        665.0,
+        252.0,
+        678.0
+      ]
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        688.2,
+        216.0,
+        701.2
+      ]
+    },
+    {
+      "form_id": "N-115",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "N-115",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "probate_court_address",
+      "page": 1,
+      "native_text": "Maine.",
+      "overlap": [
+        368.8,
+        410.3,
+        396.7,
+        420.9
+      ]
+    },
+    {
+      "form_id": "N-115",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        658.9,
+        216.0,
+        671.9
+      ]
+    },
+    {
+      "form_id": "N-117",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "N-117",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        496.9,
+        540.0,
+        509.9
+      ]
+    },
+    {
+      "form_id": "N-117",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        362.0,
+        519.8,
+        540.0,
+        532.8
+      ]
+    },
+    {
+      "form_id": "N-117",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        531.3,
+        540.0,
+        544.3
+      ]
+    },
+    {
+      "form_id": "N-117",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        552.0,
+        216.0,
+        565.0
+      ]
+    },
+    {
+      "form_id": "N-118",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "change_in_dwelling_new_address",
+      "other_field_id": "change_in_dwelling_nature_of_dwelling",
+      "overlap": [
+        73.5,
+        414.9,
+        286.0,
+        417.4
+      ]
+    },
+    {
+      "form_id": "N-118",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "change_in_dwelling_nature_of_dwelling",
+      "other_field_id": "change_in_dwelling_notified_person",
+      "overlap": [
+        215.0,
+        416.7,
+        299.7,
+        427.9
+      ]
+    },
+    {
+      "form_id": "N-118",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "change_in_dwelling_notified_person",
+      "other_field_id": "change_in_dwelling_advance_notice",
+      "overlap": [
+        350.1,
+        420.9,
+        359.1,
+        429.7
+      ]
+    },
+    {
+      "form_id": "N-118",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_name",
+      "page": 1
+    },
+    {
+      "form_id": "N-118",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "inventory_filed_court_address",
+      "page": 2,
+      "native_text": "Court,",
+      "overlap": [
+        72.0,
+        218.0,
+        97.3,
+        228.9
+      ]
+    },
+    {
+      "form_id": "N-118",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        550.6,
+        216.0,
+        563.6
+      ]
+    },
+    {
+      "form_id": "NC-001",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "notary_county",
+      "page": 2
+    },
+    {
+      "form_id": "PB-007",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 2,
+      "field_id": "expanded_contact_details",
+      "other_field_id": "expanded_contact_details",
+      "overlap": [
+        85.6,
+        661.4,
+        555.5,
+        665.4
+      ]
+    },
+    {
+      "form_id": "PB-007",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 3,
+      "field_id": "report_requirement",
+      "other_field_id": "report_requirement",
+      "overlap": [
+        63.6,
+        245.2,
+        73.6,
+        255.2
+      ]
+    },
+    {
+      "form_id": "PB-007",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 3,
+      "field_id": "report_issues",
+      "other_field_id": "report_issues",
+      "overlap": [
+        49.4,
+        319.6,
+        554.4,
+        323.6
+      ]
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 2,
+      "field_id": "expanded_contact_details",
+      "other_field_id": "expanded_contact_details",
+      "overlap": [
+        85.6,
+        661.4,
+        555.5,
+        665.4
+      ]
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 3,
+      "field_id": "report_issues",
+      "other_field_id": "report_issues",
+      "overlap": [
+        49.4,
+        319.6,
+        554.4,
+        323.6
+      ]
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "text_is_checkbox_sized",
+      "severity": "high",
+      "field_id": "full_report_deadline_date",
+      "page": 3,
+      "rect": [
+        63.6,
+        255.4,
+        73.6,
+        268.4
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        105.0,
+        203.8,
+        118.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        105.0,
+        385.7,
+        118.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        105.0,
+        545.2,
+        118.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        117.0,
+        203.8,
+        130.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        117.0,
+        385.7,
+        130.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        117.0,
+        545.2,
+        130.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        276.4,
+        453.0,
+        289.4
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        66.8,
+        289.0,
+        305.4,
+        302.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        305.9,
+        289.0,
+        544.3,
+        302.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        150.0,
+        540.0,
+        163.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        184.4,
+        540.0,
+        197.4
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        219.0,
+        540.0,
+        232.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        72.0,
+        619.8,
+        216.0,
+        632.8
+      ]
+    },
+    {
+      "form_id": "PP-108",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "by_signer_title",
+      "page": 1,
+      "left_overrun": 0.2,
+      "right_overrun": 15.0
+    },
+    {
+      "form_id": "PP-108",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        518.1,
+        540.0,
+        531.1
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        63.5,
+        151.0,
+        202.3,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        202.8,
+        151.0,
+        386.8,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        387.2,
+        151.0,
+        548.5,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        63.5,
+        163.2,
+        202.3,
+        176.2
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        202.8,
+        163.2,
+        386.8,
+        176.2
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        387.2,
+        163.2,
+        548.5,
+        176.2
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        80.5,
+        93.4,
+        221.0,
+        106.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        221.5,
+        93.4,
+        531.5,
+        106.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        80.5,
+        105.4,
+        221.0,
+        118.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        221.5,
+        105.4,
+        531.5,
+        118.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        279.4,
+        453.0,
+        292.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        66.8,
+        292.0,
+        305.4,
+        305.0
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        305.9,
+        292.0,
+        544.3,
+        305.0
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        172.9,
+        540.0,
+        185.9
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        207.4,
+        540.0,
+        220.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        241.9,
+        540.0,
+        254.9
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        72.0,
+        583.0,
+        216.0,
+        596.0
+      ]
+    },
+    {
+      "form_id": "PP-203",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "guardian_its",
+      "page": 1,
+      "left_overrun": 0.2,
+      "right_overrun": 17.0
+    },
+    {
+      "form_id": "PP-203",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        495.1,
+        540.0,
+        508.1
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        139.5,
+        203.8,
+        152.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        139.5,
+        385.7,
+        152.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        139.5,
+        545.2,
+        152.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        151.5,
+        203.8,
+        164.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        151.5,
+        385.7,
+        164.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        151.5,
+        545.2,
+        164.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        80.5,
+        599.5,
+        221.0,
+        612.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        221.5,
+        599.5,
+        531.5,
+        612.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        80.5,
+        611.5,
+        221.0,
+        624.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        221.5,
+        611.5,
+        531.5,
+        624.5
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        360.0,
+        115.4,
+        453.0,
+        128.4
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        66.8,
+        128.0,
+        305.4,
+        141.0
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        305.9,
+        128.0,
+        544.3,
+        141.0
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        115.4,
+        540.0,
+        128.4
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        150.0,
+        540.0,
+        163.0
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        184.4,
+        540.0,
+        197.4
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        72.0,
+        415.2,
+        216.0,
+        428.2
+      ]
+    },
+    {
+      "form_id": "PP-207",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "guardian_its",
+      "page": 1,
+      "left_overrun": 0.2,
+      "right_overrun": 7.0
+    },
+    {
+      "form_id": "PP-207",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "court_record_phone",
+      "page": 1,
+      "native_text": "Number:",
+      "overlap": [
+        195.0,
+        401.6,
+        224.1,
+        413.6
+      ]
+    },
+    {
+      "form_id": "PP-207",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        541.2,
+        540.0,
+        554.2
+      ]
+    },
+    {
+      "form_id": "PP-209",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 3,
+      "field_id": "guardian_date",
+      "other_field_id": "co_guardian_date",
+      "overlap": [
+        97.0,
+        636.8,
+        228.0,
+        646.0
+      ]
+    },
+    {
+      "form_id": "PP-209",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        632.8,
+        540.0,
+        645.8
+      ]
+    },
+    {
+      "form_id": "PP-209",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        667.4,
+        540.0,
+        680.4
+      ]
+    },
+    {
+      "form_id": "PP-210",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
+    },
+    {
+      "form_id": "PP-210",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        104.0,
+        594.3,
+        216.0,
+        607.3
+      ]
+    },
+    {
+      "form_id": "PP-210",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        594.3,
+        540.0,
+        607.3
+      ]
+    },
+    {
+      "form_id": "PP-210",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        621.9,
+        540.0,
+        634.9
+      ]
+    },
+    {
+      "form_id": "PP-210",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        643.9,
+        216.0,
+        656.9
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "text_is_checkbox_sized",
+      "severity": "high",
+      "field_id": "respondent_attorney_info",
+      "page": 4,
+      "rect": [
+        268.5,
+        183.4,
+        275.5,
+        190.4
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        116.5,
+        203.8,
+        129.5
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        116.5,
+        385.7,
+        129.5
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        116.5,
+        545.2,
+        129.5
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        128.5,
+        203.8,
+        141.5
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        128.5,
+        385.7,
+        141.5
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        128.5,
+        545.2,
+        141.5
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        230.4,
+        453.0,
+        243.4
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        66.8,
+        243.0,
+        305.4,
+        256.0
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        305.9,
+        243.0,
+        544.3,
+        256.0
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        150.0,
+        540.0,
+        163.0
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        184.4,
+        540.0,
+        197.4
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        219.0,
+        540.0,
+        232.0
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        72.0,
+        541.6,
+        216.0,
+        554.6
+      ]
+    },
+    {
+      "form_id": "PP-402",
+      "code": "widget_overruns_rule",
+      "severity": "medium",
+      "field_id": "its_title",
+      "page": 1,
+      "left_overrun": 0.2,
+      "right_overrun": 15.0
+    },
+    {
+      "form_id": "PP-402",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        340.9,
+        544.5,
+        540.0,
+        557.5
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 2,
+      "field_id": "gross_value_real_property",
+      "other_field_id": "real_property_value_detail",
+      "overlap": [
+        251.5,
+        385.3,
+        430.0,
+        398.1
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "surety_1_affidavit_county",
+      "page": 3
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        95.5,
+        168.0,
+        261.5,
+        181.0
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        347.5,
+        168.0,
+        513.5,
+        181.0
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        103.6,
+        433.4,
+        253.4,
+        446.4
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        355.6,
+        433.4,
+        505.4,
+        446.4
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        103.6,
+        556.9,
+        253.4,
+        569.9
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        355.6,
+        556.9,
+        505.4,
+        569.9
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        154.5,
+        504.0,
+        167.5
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        285.6,
+        540.0,
+        298.6
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        103.3,
+        360.3,
+        259.0,
+        373.3
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        360.3,
+        540.0,
+        373.3
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        127.8,
+        235.0,
+        288.5,
+        248.0
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        289.0,
+        235.0,
+        400.0,
+        248.0
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        400.4,
+        235.0,
+        539.5,
+        248.0
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        127.8,
+        270.1,
+        288.5,
+        283.1
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        289.0,
+        270.1,
+        400.0,
+        283.1
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        400.4,
+        270.1,
+        539.5,
+        283.1
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        127.8,
+        284.4,
+        288.5,
+        297.4
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        289.0,
+        284.4,
+        400.0,
+        297.4
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        400.4,
+        284.4,
+        539.5,
+        297.4
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        70.5,
+        318.0,
+        83.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        70.5,
+        438.4,
+        83.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        70.5,
+        554.3,
+        83.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        94.0,
+        318.0,
+        107.0
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        94.0,
+        438.4,
+        107.0
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        94.0,
+        554.3,
+        107.0
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        108.3,
+        318.0,
+        121.3
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        108.3,
+        438.4,
+        121.3
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        108.3,
+        554.3,
+        121.3
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        381.1,
+        318.0,
+        394.1
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        381.1,
+        438.4,
+        394.1
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        381.1,
+        554.3,
+        394.1
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        107.9,
+        427.5,
+        318.0,
+        440.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        318.5,
+        427.5,
+        438.4,
+        440.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        438.8,
+        427.5,
+        554.3,
+        440.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        134.8,
+        286.4,
+        147.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        135.8,
+        286.4,
+        148.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        134.8,
+        442.2,
+        147.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        135.8,
+        442.2,
+        148.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        136.3,
+        442.2,
+        149.3
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        219.2,
+        286.4,
+        232.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        220.2,
+        286.4,
+        233.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        219.2,
+        442.2,
+        232.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        220.2,
+        442.2,
+        233.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        220.6,
+        442.2,
+        233.6
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        416.2,
+        540.0,
+        429.2
+      ]
+    },
+    {
+      "form_id": "PP-407",
+      "code": "widget_widget_collision",
+      "severity": "high",
+      "page": 1,
+      "field_id": "period_ending",
+      "other_field_id": "inventory_filed_date",
+      "overlap": [
+        121.0,
+        213.8,
+        178.0,
+        220.3
+      ]
+    },
+    {
+      "form_id": "PP-407",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.2,
+        135.0,
+        528.4,
+        148.0
+      ]
+    },
+    {
+      "form_id": "PP-409",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        57.6,
+        540.9,
+        237.6,
+        553.9
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        174.0,
+        203.8,
+        187.0
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        174.0,
+        385.7,
+        187.0
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        174.0,
+        545.2,
+        187.0
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        186.0,
+        203.8,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        186.0,
+        385.7,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        186.0,
+        545.2,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        351.6,
+        599.1,
+        504.7,
+        612.1
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        645.2,
+        540.0,
+        658.2
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        679.6,
+        540.0,
+        692.6
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        714.2,
+        540.0,
+        727.2
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        357.7,
+        216.0,
+        370.7
+      ]
+    },
+    {
+      "form_id": "PP-412",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.0,
+        301.2,
+        216.0,
+        314.2
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        208.5,
+        203.8,
+        221.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        208.5,
+        385.7,
+        221.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        208.5,
+        545.2,
+        221.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        66.8,
+        220.5,
+        203.8,
+        233.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        204.2,
+        220.5,
+        385.7,
+        233.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        386.2,
+        220.5,
+        545.2,
+        233.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        207.4,
+        540.0,
+        220.4
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        241.9,
+        540.0,
+        254.9
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        276.4,
+        540.0,
+        289.4
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        587.6,
+        216.0,
+        600.6
+      ]
+    },
+    {
+      "form_id": "PP-502",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "PP-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        242.5,
+        540.0,
+        255.5
+      ]
+    },
+    {
+      "form_id": "PP-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        504.7,
+        540.0,
+        517.7
+      ]
+    },
+    {
+      "form_id": "PP-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        578.4,
+        216.0,
+        591.4
+      ]
+    },
+    {
+      "form_id": "PP-503",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        447.2,
+        504.0,
+        460.2
+      ]
+    },
+    {
+      "form_id": "PP-503",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        497.8,
+        216.0,
+        510.8
+      ]
+    },
+    {
+      "form_id": "PP-504",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
+    },
+    {
+      "form_id": "PP-504",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.0,
+        226.4,
+        144.0,
+        239.4
+      ]
+    },
+    {
+      "form_id": "PP-504",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        364.4,
+        540.0,
+        377.4
+      ]
+    },
+    {
+      "form_id": "PP-504",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.0,
+        442.8,
+        216.0,
+        455.8
+      ]
+    },
+    {
+      "form_id": "PP-505",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "respondent_name",
+      "gap": 114.9
+    },
+    {
+      "form_id": "PP-505",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        288.0,
+        677.6,
+        504.0,
+        690.6
+      ]
+    },
+    {
+      "form_id": "PP-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        108.0,
+        253.4,
+        183.1,
+        266.4
+      ]
+    },
+    {
+      "form_id": "PP-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        108.0,
+        402.9,
+        187.6,
+        415.9
+      ]
+    },
+    {
+      "form_id": "PP-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        310.9,
+        504.0,
+        323.9
+      ]
+    },
+    {
+      "form_id": "PP-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        318.0,
+        563.8,
+        540.0,
+        576.8
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "affiant_name",
+      "page": 3,
+      "native_text": "have",
+      "overlap": [
+        231.3,
+        283.0,
+        250.1,
+        293.6
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "notary_appearer_name",
+      "page": 3,
+      "native_text": "and",
+      "overlap": [
+        238.8,
+        398.0,
+        253.1,
+        408.6
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        44.8,
+        151.0,
+        171.0,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        171.5,
+        151.0,
+        305.3,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        305.8,
+        151.0,
+        376.0,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        376.4,
+        151.0,
+        454.3,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        454.8,
+        151.0,
+        567.2,
+        164.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        44.8,
+        186.0,
+        171.0,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        171.5,
+        186.0,
+        305.3,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        305.8,
+        186.0,
+        376.0,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        376.4,
+        186.0,
+        454.3,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        454.8,
+        186.0,
+        567.2,
+        199.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        66.8,
+        82.0,
+        203.8,
+        95.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        204.2,
+        82.0,
+        385.7,
+        95.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        386.2,
+        82.0,
+        545.2,
+        95.0
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        66.8,
+        105.4,
+        203.8,
+        118.4
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        204.2,
+        105.4,
+        385.7,
+        118.4
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        386.2,
+        105.4,
+        545.2,
+        118.4
+      ]
+    },
+    {
+      "form_id": "PP-507",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        573.1,
+        216.0,
+        586.1
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        74.6,
+        467.8,
+        177.6,
+        480.8
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        178.1,
+        467.8,
+        348.5,
+        480.8
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        349.0,
+        467.8,
+        442.9,
+        480.8
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        443.4,
+        467.8,
+        537.4,
+        480.8
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        74.6,
+        491.4,
+        177.6,
+        504.4
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        178.1,
+        491.4,
+        348.5,
+        504.4
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        349.0,
+        491.4,
+        442.9,
+        504.4
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        443.4,
+        491.4,
+        537.4,
+        504.4
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        174.7,
+        540.0,
+        187.7
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        209.2,
+        540.0,
+        222.2
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        243.7,
+        540.0,
+        256.7
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        98.6,
+        582.6,
+        252.0,
+        595.6
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        614.7,
+        216.0,
+        627.7
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        74.6,
+        558.7,
+        177.6,
+        571.7
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        178.1,
+        558.7,
+        348.5,
+        571.7
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        349.0,
+        558.7,
+        442.9,
+        571.7
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        443.4,
+        558.7,
+        537.4,
+        571.7
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        74.6,
+        582.2,
+        177.6,
+        595.2
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        178.1,
+        582.2,
+        348.5,
+        595.2
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        349.0,
+        582.2,
+        442.9,
+        595.2
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        443.4,
+        582.2,
+        537.4,
+        595.2
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        219.0,
+        540.0,
+        232.0
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        253.4,
+        540.0,
+        266.4
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        288.0,
+        540.0,
+        301.0
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        98.6,
+        626.8,
+        252.0,
+        639.8
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.0,
+        658.9,
+        216.0,
+        671.9
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.5,
+        236.1,
+        206.2,
+        249.1
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        206.6,
+        236.1,
+        383.8,
+        249.1
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        384.2,
+        236.1,
+        539.5,
+        249.1
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        72.5,
+        248.1,
+        206.2,
+        261.1
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        206.6,
+        248.1,
+        383.8,
+        261.1
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        384.2,
+        248.1,
+        539.5,
+        261.1
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        85.8,
+        477.7,
+        223.0,
+        490.7
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        223.4,
+        477.7,
+        526.1,
+        490.7
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        85.8,
+        489.7,
+        223.0,
+        502.7
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        223.4,
+        489.7,
+        526.1,
+        502.7
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        131.6,
+        453.0,
+        144.6
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.5,
+        143.6,
+        305.8,
+        156.6
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        306.2,
+        143.6,
+        539.5,
+        156.6
+      ]
+    },
+    {
+      "form_id": "PP-601",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        72.0,
+        656.8,
+        216.0,
+        669.8
+      ]
+    }
+  ]
+}

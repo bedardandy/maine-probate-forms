@@ -30,6 +30,6 @@ date_signed,Date Signed,W035,date,date,signature,petitioner_signature_date,,,5,g
 petitioner_or_attorney_signature,Petitioner Or Attorney Signature,W036,text,signature,signature,petitioner_or_attorney_signature,,,5,green,,,Y,wet_ink,
 attorney_name,Attorney Name,W037,text,person_name,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
 attorney_address,Attorney Address,W038,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
-attorney_phone_number,Attorney Phone Number,W040,text,text,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
+attorney_phone_number,Attorney Phone Number,W040,text,phone,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,
 attorney_maine_bar_number,Attorney Maine Bar Number,W041,text,bar_number,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 attorney_email_address,Attorney Email Address,W042,text,address,party_attr,attorney,,,0,green,Y,,,attorney_record.attorney,

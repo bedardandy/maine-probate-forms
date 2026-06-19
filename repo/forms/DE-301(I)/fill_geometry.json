@@ -15,9 +15,11 @@
      "rect": [
       73.5,
       119.4,
-      184.5,
+      173.0,
       132.4
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -299,17 +301,8 @@
   },
   "will_details": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      72.0,
-      683.0,
-      552.0,
-      774.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "nominated_as_pr_in_will": {
    "type": "select_one",
@@ -338,6 +331,23 @@
     }
    ]
   },
+  "nomination_explanation": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.0,
+      101.0,
+      542.0,
+      127.0
+     ],
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
+    }
+   ]
+  },
   "applicant_signature_date": {
    "type": "date",
    "widgets": [
@@ -354,17 +364,8 @@
   },
   "applicant_signature_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      301.0,
-      256.7,
-      513.0,
-      269.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",
@@ -475,17 +476,8 @@
   },
   "notary_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      325.5,
-      582.4,
-      538.5,
-      595.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "notary_title": {
    "type": "text",
@@ -503,31 +495,13 @@
   },
   "special_admin_acceptance_date": {
    "type": "date",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      99.9,
-      147.9,
-      286.5,
-      160.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "special_admin_acceptance_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      360.0,
-      147.9,
-      542.0,
-      160.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

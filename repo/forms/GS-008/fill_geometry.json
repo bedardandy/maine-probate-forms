@@ -178,17 +178,8 @@
   },
   "signature_line": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      307.5,
-      484.1,
-      530.1,
-      497.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "guardian_full_name": {
    "type": "text",
@@ -299,17 +290,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      269.0,
-      685.0,
-      546.0,
-      698.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

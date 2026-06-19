@@ -140,7 +140,7 @@
      "rect": [
       92.0,
       333.2,
-      329.0,
+      326.6,
       346.2
      ]
     }
@@ -228,17 +228,8 @@
   },
   "signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      343.5,
-      482.0,
-      538.6,
-      495.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "counselor_name_title": {
    "type": "text",
@@ -307,17 +298,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      235.5,
-      690.8,
-      462.6,
-      703.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

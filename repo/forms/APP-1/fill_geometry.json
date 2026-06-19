@@ -15,7 +15,7 @@
      "rect": [
       72.0,
       121.5,
-      153.0,
+      151.7,
       134.5
      ]
     }
@@ -71,7 +71,7 @@
      "rect": [
       253.0,
       179.0,
-      467.0,
+      373.0,
       192.0
      ]
     }
@@ -159,17 +159,8 @@
   },
   "appellant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      304.0,
-      439.7,
-      519.0,
-      452.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",

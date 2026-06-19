@@ -52,10 +52,23 @@ overrides:
     subcategory: yes_no
     data_type: checkbox
 
+  non_registered_partner_details:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    data_type: text
+
   real_estate_maine:
     category: legal_choice
     subcategory: yes_no
     data_type: checkbox
+
+  real_estate_locations:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    data_type: text
+
+  register_serve_notices_details:
+    suppress_geometry: true
 
   residuary_real_estate:
     category: legal_choice
@@ -119,19 +132,25 @@ overrides:
     data_type: text
 
   filing_fee:
-    category: narrative_derived
-    subcategory: fee
+    category: external
+    subcategory: court_only
     data_type: currency
+    court_only: true
+    fill_strategy_source: left_blank
 
   mailing_notices_fee:
-    category: narrative_derived
-    subcategory: fee
+    category: external
+    subcategory: court_only
     data_type: currency
+    court_only: true
+    fill_strategy_source: left_blank
 
   publication_fee:
-    category: narrative_derived
-    subcategory: fee
+    category: external
+    subcategory: court_only
     data_type: currency
+    court_only: true
+    fill_strategy_source: left_blank
 
   # § 3-108 three-year statute of repose triggers a yes/no narrative
   # — yes opens the _description follow-up field.

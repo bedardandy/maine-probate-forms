@@ -1,0 +1,1051 @@
+{
+  "forms_audited": 82,
+  "finding_count": 114,
+  "by_code": {
+    "alignment_suggestion": 96,
+    "symbol_splits_underline": 2,
+    "text_on_signature_line": 1,
+    "uncovered_question": 2,
+    "underline_buffer": 13
+  },
+  "findings": [
+    {
+      "form_id": "AD-026",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "adoptee_dob",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AD-028",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "birth_mother_name",
+      "page": 0,
+      "side": "right",
+      "gap": -0.0,
+      "neighbor": "(birth"
+    },
+    {
+      "form_id": "AF-101",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "affiant_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "probate_register_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "probate_register_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "district_clerk_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "district_case_docket",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "probate_register_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "probate_register_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "district_clerk_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-101.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "district_case_docket",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "decedent_county",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "notarization_day",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "notarization_year_suffix",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-103",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "notary_county",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-103",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "notary_county",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-104",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "affiant_name",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-104",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "day_notary",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "date_of_birth",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "age",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "other_assets_specify",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "length_employed",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "unemployment_amount",
+      "page": 0,
+      "side": "right",
+      "gap": 1.0,
+      "neighbor": "(per"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "tanf_amount",
+      "page": 0,
+      "side": "right",
+      "gap": 1.0,
+      "neighbor": "(per"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "spouse_income_amount",
+      "page": 0,
+      "side": "left",
+      "gap": 0.2,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "loan_row_1_purpose",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "loan_row_2_purpose",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "loan_row_3_purpose",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "symbol_splits_underline",
+      "severity": "medium",
+      "field_id": "medical_support_total",
+      "page": 1,
+      "symbol": "$",
+      "note": "widget spans an interior printed symbol; consider separate fields"
+    },
+    {
+      "form_id": "APP-1",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appellant_name",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "CN-1",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "petitioner_middle_name",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "CN-1",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "desired_middle_name",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-201(I)",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "will_date",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-401",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "net_value_probate_estate",
+      "page": 0,
+      "side": "left",
+      "gap": 0.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-401",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "estate_tax_bond_amount",
+      "page": 1,
+      "side": "left",
+      "gap": 1.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-403",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "penal_sum_words",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-403",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "real_property_surety_1_book_1",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-403",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "real_property_surety_2_book_1",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-403",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "real_property_surety_1_book_2",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-403",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "real_property_surety_2_book_2",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-405",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "calc_gross_inventory",
+      "page": 2,
+      "side": "left",
+      "gap": 1.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-405",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "calc_net_inventory",
+      "page": 2,
+      "side": "left",
+      "gap": 1.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_question",
+      "severity": "medium",
+      "page": 2,
+      "number": "1.",
+      "y": 653.5,
+      "note": "numbered prompt with a blank rule but no fill widget"
+    },
+    {
+      "form_id": "DE-406",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "accounting_number",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-406",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "period_end",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-406",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "inventory_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-406",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "inventory_filed_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-502",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "bond_amount",
+      "page": 0,
+      "side": "left",
+      "gap": 1.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-504",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "allowed_part_amount",
+      "page": 1,
+      "side": "left",
+      "gap": 1.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-506",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "augmented_estate_value_finding_amount",
+      "page": 2,
+      "side": "left",
+      "gap": -0.0,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "DE-507",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appointment_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "DE-605",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appointment_termination_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-101",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "movant_name_address",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "commanded_to_address",
+      "page": 0,
+      "side": "right",
+      "gap": 0.9,
+      "neighbor": ":"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appear_probate_court_location",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appear_probate_court_time",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appear_before_location_detail",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appear_before_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appear_before_final",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "produce_designated_things",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "produce_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "symbol_splits_underline",
+      "severity": "medium",
+      "field_id": "produce_time",
+      "page": 0,
+      "symbol": ",",
+      "note": "widget spans an interior printed symbol; consider separate fields"
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "text_on_signature_line",
+      "severity": "high",
+      "field_id": "fees_travel",
+      "page": 1,
+      "note": "text widget above printed 'Signature'"
+    },
+    {
+      "form_id": "N-105",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "date_signed",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-112",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "filing_county",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appointment_of_guardian_order_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appointment_of_conservator_order_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "change_in_dwelling_individual_name",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "sale_or_surrender_of_dwelling_sale_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "restrictions_on_contact_restricted_person",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "revised_guardianship_plan_filed_filing_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "revised_conservatorship_plan_filed_filing_date",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "inventory_filed_court_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "N-118",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "conservators_report_and_accounting_court_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_person_1_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_person_2_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_evaluation_deadline",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_counseling_deadline",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appointment_end_date",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "probate_fee_hours",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "hourly_cap_hours",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "lump_sum_deadline",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "other_lump_sum_name",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "petitioner_percent",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "respondent_percent",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "other_periodic_name",
+      "page": 3,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_person_1_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_person_2_name",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "expanded_counseling_deadline",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "appointment_end_date",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "probate_fee_hours",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "hourly_cap_hours",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "lump_sum_deadline",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "other_lump_sum_name",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "petitioner_percent",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "respondent_percent",
+      "page": 2,
+      "have": "right",
+      "want": "center"
+    },
+    {
+      "form_id": "PB-007.vA",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "other_periodic_name",
+      "page": 3,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-209",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "guardianship_grant_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-210",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "notice_of_intent_date_filed",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "penal_sum_word",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "real_property_value_detail",
+      "page": 1,
+      "side": "left",
+      "gap": 0.1,
+      "neighbor": "$"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "book_page_1_book",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "book_page_2_book",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "book_page_3_book",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "book_page_4_book",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-407",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "period_ending",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-407",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "last_approved_account_date",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_question",
+      "severity": "medium",
+      "page": 1,
+      "number": "11)",
+      "y": 727.2,
+      "note": "numbered prompt with a blank rule but no fill widget"
+    },
+    {
+      "form_id": "PP-412",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "report_period_start",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-502",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "order_filing_date",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-503",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "order_filing_date",
+      "page": 1,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-507",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "petitioner_city",
+      "page": 0,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-507",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "affidavit_day",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    },
+    {
+      "form_id": "PP-507",
+      "code": "alignment_suggestion",
+      "severity": "low",
+      "field_id": "notary_day",
+      "page": 2,
+      "have": "left",
+      "want": "center"
+    }
+  ]
+}

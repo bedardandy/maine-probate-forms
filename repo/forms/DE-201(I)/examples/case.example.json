@@ -47,9 +47,6 @@
     "devisees_addr_1": "311 Winthrop Street, Augusta, ME 04330",
     "devisees_name_2": "Luc H. Pelletier",
     "devisees_addr_2": "18 Sewall Street, Apt 2, Augusta, ME 04330",
-    "died_more_than_3_years": false,
-    "filing_fee": 175.0,
-    "mailing_notices_fee": 14.0,
-    "publication_fee": 0.0
+    "died_more_than_3_years": false
   }
 }

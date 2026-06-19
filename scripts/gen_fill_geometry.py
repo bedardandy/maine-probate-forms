@@ -42,8 +42,10 @@ import yaml
 SCRIPTS = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
 import build_form_digest as dig  # noqa: E402
+from geometry_optimizer import optimize_geometry  # noqa: E402
 
 DEFAULT_PIPELINE = SCRIPTS.parent  # build outputs alongside, if present
+PUBLISHED_ROOT = SCRIPTS.parent
 
 
 def _fused_list(pipeline_root: pathlib.Path) -> list[str]:
@@ -129,6 +131,7 @@ def build_geometry(form_id: str,
     _, fused, wid2geom, page_size, n_pages = best
 
     fields: dict[str, dict] = {}
+    rect_overrides = tree.get("rect_overrides") or {}
     for node in tree.get("nodes", []):
         nid = node.get("id")
         ntype = node.get("type", "text")
@@ -139,12 +142,17 @@ def build_geometry(form_id: str,
             pg = int(node.get("page", 0))
             if pg < n_pages and r[2] > r[0] and r[3] > r[1]:
                 fields[nid] = {"type": ntype, "injected": True,
+                               "geometry_source": "manual",
+                               "locked": True,
                                "widgets": [{"page": pg, "rect": r}]}
             continue
         node_wids = node.get("widgets") or (
             [node["widget"]] if node.get("widget") else [])
         if node_wids:                                 # text / date / currency
-            rects = [{"page": wid2geom[w][0], "rect": wid2geom[w][1]}
+            rects = [{"page": wid2geom[w][0], "rect": wid2geom[w][1],
+                      **({"geometry_source": "rect_override", "locked": True}
+                         if w in rect_overrides else
+                         {"geometry_source": "detected"})}
                      for w in node_wids if w in wid2geom]
             if rects:
                 fields[nid] = {"type": ntype, "widgets": rects}
@@ -158,12 +166,26 @@ def build_geometry(form_id: str,
                         opts.append({"value": o.get("value"),
                                      "label": o.get("label"),
                                      "page": wid2geom[w][0],
-                                     "rect": wid2geom[w][1]})
+                                     "rect": wid2geom[w][1],
+                                     **({"geometry_source": "rect_override",
+                                         "locked": True}
+                                        if w in rect_overrides else
+                                        {"geometry_source": "detected"})})
             if opts:
                 fields[nid] = {"type": ntype, "options": opts}
-    return {"form_id": form_id, "page_size": list(page_size),
+    geometry = {"form_id": form_id,
+            "coordinate_system": "pymupdf_top_left_points",
+            "page_size": list(page_size),
             "n_pages": n_pages, "source_fused": os.path.basename(fused),
             "fields": fields}
+    schema_path = PUBLISHED_ROOT / "repo" / "forms" / form_id / "schema.json"
+    if schema_path.exists():
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        with fitz.open(fused) as source_doc:
+            geometry, changes = optimize_geometry(geometry, schema, source_doc)
+        if changes:
+            geometry["optimizer_changes"] = changes
+    return geometry
 
 
 def main() -> int:

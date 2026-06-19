@@ -1,5 +1,6 @@
 field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
-court_type,Court Type,,select_one,checkbox,legal_choice,court_type,,,60,orange,,,Y,human_decision,
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No.,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
 minor_child_name,Minor Child Name,W003,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 first_legal_parent_info,First Legal Parent Info,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 second_legal_parent_info,Second Legal Parent Info,W007,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
@@ -18,7 +19,7 @@ probate_register_name,Probate Register Name,W022,text,text,case_constant,probate
 checked_district_clerk,Checked District Clerk,,select_one,checkbox,legal_choice,checked_district_clerk,,,40,orange,,,Y,human_decision,
 checked_district_clerk_cases,Checked District Clerk Cases,,select_one,checkbox,legal_choice,checked_district_clerk_cases,,,40,orange,,,Y,human_decision,
 district_clerk_name,District Clerk Name,W026,text,text,case_constant,district_clerk_name,,,0,green,Y,,,case_dict.district_clerk_name,populate_from_case_dict
-district_case_docket,District Case Docket,W027,text,text,case_constant,district_case_docket,,,0,green,Y,,,case_dict.district_case_docket,populate_from_case_dict
+district_case_docket,District Case Docket,W027,text,docket_number,case_constant,district_case_docket,,,0,green,Y,,,case_dict.district_case_docket,populate_from_case_dict
 district_case_name,District Case Name,W028,text,text,case_constant,district_case_name,,,0,green,Y,,,case_dict.district_case_name,populate_from_case_dict
 oath_district_order_affects,Oath District Order Affects,W029,text,checkbox,legal_choice,oath_district_order_affects,,,20,yellow,,,Y,human_decision,
 petitioner_signature,Petitioner Signature,W031,text,signature,signature,petitioner_signature,,,5,green,,,Y,wet_ink,

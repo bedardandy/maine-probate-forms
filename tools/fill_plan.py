@@ -257,7 +257,8 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
         case.get("narrative_facts"), dict) else {}
 
     fields = schema.get("fields", [])
-    resolved, narrative, recompute, blank, unresolved = {}, [], [], [], []
+    resolved, provenance = {}, {}
+    narrative, recompute, blank, unresolved = [], [], [], []
     for f in fields:
         fid = f["field_id"]
         fs = f.get("fill_strategy") or {}
@@ -268,6 +269,10 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
             val = _lookup(case, src, fid)
             if val is not None:
                 resolved[fid] = _render_value(val)
+                provenance[fid] = {
+                    "origin": "case_record",
+                    "source": src,
+                }
             else:
                 unresolved.append({"field_id": fid, "label": label,
                                    "source": src})
@@ -275,8 +280,16 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
             rescued = _rescue_from_records(case, fid)
             if fid in narrative_facts and narrative_facts[fid] not in (None, ""):
                 resolved[fid] = _render_value(narrative_facts[fid])
+                provenance[fid] = {
+                    "origin": "narrative_composed",
+                    "source": f"narrative_facts.{fid}",
+                }
             elif rescued is not None:                 # hard fact already in a record
                 resolved[fid] = _render_value(rescued)
+                provenance[fid] = {
+                    "origin": "rescued_record_fact",
+                    "source": fid,
+                }
             else:
                 narrative.append({"field_id": fid, "label": label,
                                   "data_type": f.get("data_type"),
@@ -293,6 +306,10 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
                     and fid in narrative_facts
                     and narrative_facts[fid] not in (None, "")):
                 resolved[fid] = _render_value(narrative_facts[fid])
+                provenance[fid] = {
+                    "origin": "human_decision",
+                    "source": f"narrative_facts.{fid}",
+                }
             else:
                 blank.append({"field_id": fid, "label": label, "reason": src})
         else:
@@ -309,6 +326,7 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
         if gated_off:
             for fid in [k for k in resolved if k in gated_off]:
                 resolved.pop(fid)
+                provenance.pop(fid, None)
 
             def _keep(lst):
                 return [x for x in lst if x["field_id"] not in gated_off]
@@ -328,6 +346,7 @@ def build_plan(form_id: str, case: dict, root: pathlib.Path = ROOT) -> dict:
         or form_id,
         "n_fields": n,
         "resolved": resolved,
+        "provenance": provenance,
         "narrative": narrative,
         "recompute": recompute,
         "blank": blank,

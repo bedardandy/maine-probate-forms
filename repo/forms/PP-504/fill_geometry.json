@@ -278,17 +278,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      325.5,
-      129.7,
-      496.5,
-      142.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "order_plan_filed_date": {
    "type": "date",
@@ -320,17 +311,8 @@
   },
   "judge_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      360.0,
-      363.2,
-      540.0,
-      376.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

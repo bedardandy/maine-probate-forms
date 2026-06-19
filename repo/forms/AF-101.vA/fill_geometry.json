@@ -7,33 +7,6 @@
  "n_pages": 2,
  "source_fused": "AF-101 Jurisdictional Affidavit (Rev. 03-01-2025)_fused.pdf",
  "fields": {
-  "court_type": {
-   "type": "select_one",
-   "options": [
-    {
-     "value": "county_probate",
-     "label": "County Probate Court",
-     "page": 0,
-     "rect": [
-      54.0,
-      108.2,
-      159.1,
-      126.7
-     ]
-    },
-    {
-     "value": "docket_no",
-     "label": "Docket No.",
-     "page": 0,
-     "rect": [
-      404.0,
-      111.0,
-      521.0,
-      127.0
-     ]
-    }
-   ]
-  },
   "minor_child_name": {
    "type": "text",
    "widgets": [
@@ -169,7 +142,7 @@
     {
      "page": 0,
      "rect": [
-      72.0,
+      74.9,
       610.8,
       250.0,
       623.8
@@ -197,7 +170,7 @@
     {
      "page": 0,
      "rect": [
-      72.0,
+      74.9,
       721.0,
       250.0,
       734.0
@@ -211,7 +184,7 @@
     {
      "page": 1,
      "rect": [
-      79.3,
+      81.7,
       63.3,
       256.3,
       76.3
@@ -289,9 +262,9 @@
     {
      "page": 1,
      "rect": [
-      279.0,
+      282.0,
       227.2,
-      363.0,
+      361.1,
       240.2
      ]
     },
@@ -300,7 +273,7 @@
      "rect": [
       264.7,
       254.8,
-      369.0,
+      366.5,
       267.8
      ]
     }
@@ -360,7 +333,7 @@
      "rect": [
       381.0,
       307.9,
-      480.0,
+      478.1,
       320.9
      ]
     }
@@ -405,17 +378,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      54.0,
-      527.4,
-      276.0,
-      540.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "signature_date": {
    "type": "text",
@@ -465,9 +429,9 @@
     {
      "page": 1,
      "rect": [
-      86.0,
+      88.4,
       663.0,
-      275.0,
+      272.5,
       676.0
      ]
     }
@@ -483,6 +447,34 @@
       663.0,
       504.0,
       676.0
+     ]
+    }
+   ]
+  },
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      54.0,
+      108.2,
+      159.1,
+      126.7
+     ]
+    }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      404.0,
+      111.0,
+      521.0,
+      127.0
      ]
     }
    ]

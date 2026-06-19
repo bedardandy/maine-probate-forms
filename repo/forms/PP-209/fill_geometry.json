@@ -330,17 +330,8 @@
   },
   "guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      631.6,
-      540.0,
-      644.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "co_guardian_date": {
    "type": "date",
@@ -358,17 +349,8 @@
   },
   "co_guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      666.1,
-      540.0,
-      679.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

@@ -93,17 +93,8 @@
   },
   "by_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      342.4,
-      543.3,
-      538.5,
-      556.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "its_title": {
    "type": "text",

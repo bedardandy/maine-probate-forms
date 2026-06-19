@@ -82,15 +82,6 @@
     {
      "page": 0,
      "rect": [
-      97.0,
-      256.0,
-      122.0,
-      269.0
-     ]
-    },
-    {
-     "page": 0,
-     "rect": [
       72.0,
       286.0,
       543.0,
@@ -199,17 +190,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      325.5,
-      241.3,
-      538.5,
-      254.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "order_filing_date": {
    "type": "date",
@@ -227,17 +209,8 @@
   },
   "judge_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      325.5,
-      503.5,
-      538.5,
-      516.5
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "judge_date": {
    "type": "date",

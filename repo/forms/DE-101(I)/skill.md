@@ -1,5 +1,8 @@
 # Form DE-101(I)
 
+Supply every known repeating-group entry. If heirs or demands for notice exceed
+the printed rows, `fill_pdf.py` continues them on an addendum page automatically.
+
 ## county_probate_court
 - type: `text`
 
@@ -53,7 +56,7 @@
 - type: `date`
 
 ## decedent_date_of_birth
-- type: `text`
+- type: `date`
 
 ## decedent_domicile
 - type: `text`
@@ -332,7 +335,8 @@
 - type: `date`
 
 ## applicant_signature
-- type: `text`
+- type: `signature`
+- wet ink: never programmatically fill
 
 ## attorney_name
 - type: `text`

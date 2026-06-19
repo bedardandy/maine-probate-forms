@@ -15,7 +15,7 @@
      "rect": [
       73.5,
       118.6,
-      184.4,
+      178.0,
       131.6
      ]
     }
@@ -41,7 +41,7 @@
     {
      "page": 0,
      "rect": [
-      102.0,
+      112.0,
       153.1,
       316.0,
       166.1
@@ -167,17 +167,8 @@
   },
   "signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      361.0,
-      421.3,
-      542.0,
-      434.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "printed_or_typed_name": {
    "type": "text",
