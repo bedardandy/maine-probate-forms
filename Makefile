@@ -10,6 +10,7 @@ help:
 	@echo "make smoke                             fill+verify every shipped example case (network)"
 	@echo "make audit                             systematic geometry audit -> catalog/geometry_audit.json"
 	@echo "make probe-all [OUT=dir]               render overlay PNGs for every page of every form (review)"
+	@echo "make saturate [OUT=pdf]                fill every box to capacity + render, for alignment review"
 	@echo "make verify                            validate shipped fill_geometry.json (CI gate)"
 	@echo "make manifest                          (re)build catalog/pdf_manifest.json from source_urls"
 	@echo "make manifest-check                    validate pdf_manifest.json structure + guard (CI gate)"
