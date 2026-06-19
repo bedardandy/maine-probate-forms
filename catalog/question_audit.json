@@ -1,12 +1,12 @@
 {
   "forms_audited": 82,
-  "finding_count": 118,
+  "finding_count": 114,
   "by_code": {
-    "alignment_suggestion": 99,
+    "alignment_suggestion": 97,
     "symbol_splits_underline": 2,
-    "text_on_signature_line": 2,
+    "text_on_signature_line": 1,
     "uncovered_question": 2,
-    "underline_buffer": 13
+    "underline_buffer": 12
   },
   "findings": [
     {
@@ -120,24 +120,6 @@
     },
     {
       "form_id": "AF-102",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "date_of_death",
-      "page": 0,
-      "side": "right",
-      "gap": 0.0,
-      "neighbor": "_______."
-    },
-    {
-      "form_id": "AF-102",
-      "code": "text_on_signature_line",
-      "severity": "high",
-      "field_id": "affidavit_date",
-      "page": 0,
-      "note": "text widget above printed 'Signature'"
-    },
-    {
-      "form_id": "AF-102",
       "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "notarization_day",
@@ -187,24 +169,6 @@
       "severity": "low",
       "field_id": "day_notary",
       "page": 0,
-      "have": "left",
-      "want": "center"
-    },
-    {
-      "form_id": "AF-104",
-      "code": "alignment_suggestion",
-      "severity": "low",
-      "field_id": "family_friends_date",
-      "page": 1,
-      "have": "left",
-      "want": "center"
-    },
-    {
-      "form_id": "AF-104",
-      "code": "alignment_suggestion",
-      "severity": "low",
-      "field_id": "internet_date",
-      "page": 1,
       "have": "left",
       "want": "center"
     },

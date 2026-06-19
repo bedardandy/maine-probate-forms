@@ -373,31 +373,13 @@
   },
   "name_surety_2_personal": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      226.2,
-      166.7,
-      260.0,
-      179.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_on_header"
   },
   "desc_personal_property_1": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      478.2,
-      166.7,
-      512.0,
-      179.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_on_header"
   },
   "desc_personal_property_2": {
    "type": "text",
@@ -471,31 +453,13 @@
   },
   "desc_real_property_1": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      218.0,
-      432.1,
-      251.9,
-      445.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_on_header"
   },
   "desc_real_property_2": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      470.0,
-      432.1,
-      503.9,
-      445.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_on_header"
   },
   "county_registry_deeds_1": {
    "type": "text",
@@ -611,31 +575,13 @@
   },
   "desc_real_property_3": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      218.0,
-      555.6,
-      251.9,
-      568.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_on_header"
   },
   "desc_real_property_4": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      470.0,
-      555.6,
-      503.9,
-      568.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_on_header"
   },
   "county_registry_deeds_3": {
    "type": "text",

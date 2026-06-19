@@ -253,17 +253,8 @@
   },
   "service_recipients": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      401.6,
-      170.2,
-      438.0,
-      183.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "service_date": {
    "type": "date",

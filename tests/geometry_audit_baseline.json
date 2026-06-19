@@ -10,26 +10,24 @@
       "widget_widget_collision": 1
     },
     "AD-028": {
-      "widget_overruns_rule": 6,
-      "widget_widget_collision": 1
+      "widget_overruns_rule": 1
     },
     "AF-101.vA": {
       "choice_not_checkbox_sized": 2
-    },
-    "AF-102": {
-      "widget_overruns_rule": 1
     },
     "AF-103": {
       "widget_overruns_rule": 1
     },
     "AF-104": {
       "generic_or_orphan_name": 1,
-      "widget_native_text_collision": 1,
-      "widget_overruns_rule": 3
+      "widget_native_text_collision": 1
     },
     "AF-105": {
       "widget_native_text_collision": 1,
       "widget_widget_collision": 4
+    },
+    "DE-101": {
+      "widget_native_text_collision": 3
     },
     "DE-201(I)": {
       "widget_native_text_collision": 1
@@ -64,12 +62,12 @@
       "widget_widget_collision": 8
     },
     "MISC-101": {
-      "widget_native_text_collision": 2,
       "widget_overruns_rule": 1
     },
     "MISC-102": {
-      "text_is_checkbox_sized": 2,
-      "widget_overruns_rule": 10,
+      "text_is_checkbox_sized": 1,
+      "widget_native_text_collision": 5,
+      "widget_overruns_rule": 7,
       "widget_widget_collision": 1
     },
     "N-105": {
@@ -105,7 +103,6 @@
       "widget_overruns_rule": 1
     },
     "PP-405": {
-      "widget_native_text_collision": 6,
       "widget_widget_collision": 1
     },
     "PP-407": {

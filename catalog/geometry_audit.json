@@ -1,17 +1,17 @@
 {
   "forms_audited": 82,
-  "finding_count": 698,
+  "finding_count": 688,
   "by_code": {
-    "uncovered_printed_rule": 556,
+    "uncovered_printed_rule": 560,
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 33,
     "suspicious_widget_chain_gap": 10,
-    "widget_widget_collision": 28,
+    "widget_widget_collision": 27,
     "widget_native_text_collision": 24,
-    "widget_overruns_rule": 36,
+    "widget_overruns_rule": 24,
     "choice_not_checkbox_sized": 2,
     "county_label_collision": 2,
-    "text_is_checkbox_sized": 4
+    "text_is_checkbox_sized": 3
   },
   "findings": [
     {
@@ -593,20 +593,6 @@
     },
     {
       "form_id": "AD-028",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "putative_parent_likely_address",
-      "other_field_id": "location_reasons",
-      "overlap": [
-        199.7,
-        683.3,
-        556.0,
-        686.8
-      ]
-    },
-    {
-      "form_id": "AD-028",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
@@ -620,51 +606,6 @@
       "page": 1,
       "left_overrun": 1.2,
       "right_overrun": 7.8
-    },
-    {
-      "form_id": "AD-028",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "location_reasons",
-      "page": 1,
-      "left_overrun": -0.5,
-      "right_overrun": 7.8
-    },
-    {
-      "form_id": "AD-028",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "newspaper_name_address",
-      "page": 2,
-      "left_overrun": 34.6,
-      "right_overrun": 17.4
-    },
-    {
-      "form_id": "AD-028",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "newspaper_name_address",
-      "page": 2,
-      "left_overrun": 34.6,
-      "right_overrun": 17.4
-    },
-    {
-      "form_id": "AD-028",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "newspaper_reasons",
-      "page": 2,
-      "left_overrun": 34.6,
-      "right_overrun": 17.4
-    },
-    {
-      "form_id": "AD-028",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "newspaper_reasons",
-      "page": 2,
-      "left_overrun": 34.6,
-      "right_overrun": 17.4
     },
     {
       "form_id": "AD-028",
@@ -820,15 +761,6 @@
     },
     {
       "form_id": "AF-102",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "affidavit_date",
-      "page": 1,
-      "left_overrun": -13.0,
-      "right_overrun": 43.0
-    },
-    {
-      "form_id": "AF-102",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -886,33 +818,6 @@
         110.9,
         494.4
       ]
-    },
-    {
-      "form_id": "AF-104",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "family_friends_results",
-      "page": 2,
-      "left_overrun": -323.0,
-      "right_overrun": 12.9
-    },
-    {
-      "form_id": "AF-104",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "internet_results",
-      "page": 2,
-      "left_overrun": -323.0,
-      "right_overrun": 8.0
-    },
-    {
-      "form_id": "AF-104",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "government_results",
-      "page": 2,
-      "left_overrun": -323.0,
-      "right_overrun": 8.0
     },
     {
       "form_id": "AF-104",
@@ -1173,6 +1078,48 @@
         673.4,
         201.6,
         686.4
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "decedent_name_caption",
+      "page": 1,
+      "native_text": "PETITION",
+      "overlap": [
+        360.0,
+        156.1,
+        405.0,
+        168.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "decedent_name_caption",
+      "page": 1,
+      "native_text": "FOR",
+      "overlap": [
+        407.5,
+        156.1,
+        426.9,
+        168.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "decedent_name_caption",
+      "page": 1,
+      "native_text": "FORMAL",
+      "overlap": [
+        429.3,
+        156.1,
+        471.0,
+        168.0
       ]
     },
     {
@@ -4737,34 +4684,6 @@
     },
     {
       "form_id": "MISC-101",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "service_recipients",
-      "page": 2,
-      "native_text": "zip",
-      "overlap": [
-        401.6,
-        173.0,
-        413.2,
-        183.2
-      ]
-    },
-    {
-      "form_id": "MISC-101",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "service_recipients",
-      "page": 2,
-      "native_text": "code)",
-      "overlap": [
-        415.8,
-        173.0,
-        438.0,
-        183.2
-      ]
-    },
-    {
-      "form_id": "MISC-101",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 2,
@@ -4864,15 +4783,72 @@
     },
     {
       "form_id": "MISC-102",
-      "code": "text_is_checkbox_sized",
+      "code": "widget_native_text_collision",
       "severity": "high",
       "field_id": "permit_designated_things",
       "page": 1,
-      "rect": [
-        526.0,
-        436.0,
-        542.0,
-        449.0
+      "native_text": "Time",
+      "overlap": [
+        72.0,
+        485.1,
+        93.1,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "and",
+      "overlap": [
+        95.6,
+        485.1,
+        110.1,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "place",
+      "overlap": [
+        112.7,
+        485.1,
+        133.8,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "of",
+      "overlap": [
+        136.2,
+        485.1,
+        144.6,
+        495.3
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "permit_designated_things",
+      "page": 1,
+      "native_text": "inspection:",
+      "overlap": [
+        147.1,
+        485.1,
+        190.9,
+        495.3
       ]
     },
     {
@@ -4881,34 +4857,7 @@
       "severity": "medium",
       "field_id": "permit_designated_things",
       "page": 1,
-      "left_overrun": 0.0,
-      "right_overrun": 10.0
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "permit_designated_things",
-      "page": 1,
-      "left_overrun": 0.0,
-      "right_overrun": 10.0
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "permit_designated_things",
-      "page": 1,
-      "left_overrun": 0.0,
-      "right_overrun": 118.0
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "permit_designated_things",
-      "page": 1,
-      "left_overrun": -3.1,
+      "left_overrun": 118.8,
       "right_overrun": 10.0
     },
     {
@@ -4935,6 +4884,42 @@
       "severity": "medium",
       "field_id": "county_page2",
       "page": 2
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        449.1,
+        540.0,
+        462.1
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        460.6,
+        540.0,
+        473.6
+      ]
+    },
+    {
+      "form_id": "MISC-102",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        72.0,
+        472.0,
+        432.0,
+        485.0
+      ]
     },
     {
       "form_id": "MISC-102",
@@ -5112,6 +5097,18 @@
         568.4,
         540.0,
         581.4
+      ]
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        596.0,
+        540.0,
+        609.0
       ]
     },
     {
@@ -6339,90 +6336,6 @@
         404.0,
         538.5,
         416.7
-      ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "name_surety_2_personal",
-      "page": 2,
-      "native_text": "Property:",
-      "overlap": [
-        227.2,
-        169.9,
-        260.0,
-        179.7
-      ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "desc_personal_property_1",
-      "page": 2,
-      "native_text": "Property:",
-      "overlap": [
-        479.2,
-        169.9,
-        512.0,
-        179.7
-      ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "desc_real_property_1",
-      "page": 2,
-      "native_text": "Property:",
-      "overlap": [
-        219.0,
-        435.3,
-        251.9,
-        445.1
-      ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "desc_real_property_2",
-      "page": 2,
-      "native_text": "Property:",
-      "overlap": [
-        471.0,
-        435.3,
-        503.9,
-        445.1
-      ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "desc_real_property_3",
-      "page": 2,
-      "native_text": "Property:",
-      "overlap": [
-        219.0,
-        558.8,
-        251.9,
-        568.6
-      ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "desc_real_property_4",
-      "page": 2,
-      "native_text": "Property:",
-      "overlap": [
-        471.0,
-        558.8,
-        503.9,
-        568.6
       ]
     },
     {

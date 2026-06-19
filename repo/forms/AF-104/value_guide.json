@@ -232,12 +232,46 @@
       "required": "optional",
       "expects": "free text answering the printed prompt"
     },
+    "government_date": {
+      "label": "Government Date",
+      "data_type": "date",
+      "alignment": "left",
+      "required": "optional",
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
+      "avoid": [
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields"
+      ]
+    },
     "name_not_contacted": {
       "label": "Name Not Contacted",
       "data_type": "text",
       "alignment": "left",
       "required": "optional",
       "expects": "free text answering the printed prompt"
+    },
+    "not_contacted_date": {
+      "label": "Not Contacted Date",
+      "data_type": "date",
+      "alignment": "left",
+      "required": "optional",
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
+      "avoid": [
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields"
+      ]
     },
     "reason_not_contacting": {
       "label": "Reason Not Contacting",

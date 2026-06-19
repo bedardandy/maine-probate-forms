@@ -61,20 +61,22 @@
     },
     "date_of_death": {
       "label": "Date Of Death",
-      "data_type": "date",
+      "data_type": "text",
       "alignment": "left",
       "required": "optional",
-      "format": "YYYY-MM-DD or MM/DD/YYYY",
-      "expects": "a real calendar date",
-      "examples": [
-        "2026-03-18",
-        "03/18/2026"
-      ],
+      "expects": "free text answering the printed prompt"
+    },
+    "year_of_death": {
+      "label": "Year Of Death",
+      "data_type": "text",
+      "alignment": "left",
+      "required": "optional",
+      "format": "YYYY",
+      "calendar_year": true,
+      "expects": "a 4-digit calendar year",
       "avoid": [
-        "vague text like 'last spring' or 'unknown'",
-        "an impossible/!calendar date",
-        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields",
-        "a date in the future"
+        "a 2-digit year",
+        "text spanning the printed '20' stub — fill only the remaining digits if the form prints '20__'"
       ]
     },
     "affidavit_date": {
@@ -126,29 +128,53 @@
     },
     "notarization_day": {
       "label": "Notarization Day",
-      "data_type": "text",
+      "data_type": "date",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
+      "avoid": [
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields"
+      ]
     },
     "notarization_month": {
       "label": "Notarization Month",
-      "data_type": "text",
+      "data_type": "date",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
+      "avoid": [
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields"
+      ]
     },
     "notarization_year_suffix": {
       "label": "Notarization Year Suffix",
-      "data_type": "text",
+      "data_type": "date",
       "alignment": "left",
       "required": "optional",
-      "format": "YYYY",
-      "calendar_year": true,
-      "expects": "a 4-digit calendar year",
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
       "avoid": [
-        "a 2-digit year",
-        "text spanning the printed '20' stub — fill only the remaining digits if the form prints '20__'"
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields"
       ]
     },
     "notary_signature": {

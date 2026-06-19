@@ -37,7 +37,18 @@
   },
   "decedent_name_caption": {
    "type": "text",
-   "widgets": []
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      112.0,
+      155.0,
+      500.0,
+      168.0
+     ]
+    }
+   ],
+   "geometry_source": "inferred_review"
   },
   "petition_type": {
    "type": "select_many",
@@ -1746,27 +1757,33 @@
   },
   "filing_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "mailing_notices_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "publication_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "surcharge_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "abstracts_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "other_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   }
  }
 }

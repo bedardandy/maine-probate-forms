@@ -753,7 +753,12 @@
    "widgets": [
     {
      "page": 1,
-     "rect": [72.0, 363.0, 542.0, 376.0],
+     "rect": [
+      72.0,
+      363.0,
+      542.0,
+      376.0
+     ],
      "geometry_source": "manual",
      "locked": true
     }
@@ -959,7 +964,12 @@
    "widgets": [
     {
      "page": 1,
-     "rect": [72.0, 680.0, 542.0, 720.0],
+     "rect": [
+      72.0,
+      680.0,
+      542.0,
+      720.0
+     ],
      "multiline": true,
      "geometry_source": "manual",
      "locked": true
@@ -1547,15 +1557,18 @@
   },
   "filing_fee": {
    "type": "text",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "mailing_notices_fee": {
    "type": "text",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "publication_fee": {
    "type": "text",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   }
  },
  "optimizer_changes": [

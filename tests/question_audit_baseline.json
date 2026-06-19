@@ -1,9 +1,6 @@
 {
   "_comment": "Per-form actionable question-audit counts.",
   "counts": {
-    "AF-102": {
-      "text_on_signature_line": 1
-    },
     "AF-105": {
       "symbol_splits_underline": 1
     },

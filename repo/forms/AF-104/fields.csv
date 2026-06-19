@@ -24,5 +24,7 @@ internet_date,Internet Date,W024,text,date,narrative_derived,free_text,,,5,green
 internet_inquiries,Internet Inquiries,W025,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 government_results,Government Results,W026,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 government_agencies,Government Agencies,W027,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
+government_date,Government Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 name_not_contacted,Name Not Contacted,W028,text,text,narrative_derived,free_text,,,13,green,,Y,,llm_over_narrative,
+not_contacted_date,Not Contacted Date,,date,date,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 reason_not_contacting,Reason Not Contacting,W029,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

@@ -247,17 +247,8 @@
   },
   "certified_true_copy_date": {
    "type": "date",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      324.0,
-      594.8,
-      542.0,
-      607.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "court_completed"
   }
  }
 }
