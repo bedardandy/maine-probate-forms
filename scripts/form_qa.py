@@ -74,8 +74,18 @@ def prompts(doc: fitz.Document):
                 if not text:
                     continue
                 x0, y0, x1, y1 = line["bbox"]
+                # "asks" = a prompt that should have a fillable field: ends with
+                # ':'/'?', OR a short numbered/lettered label. A numbered/lettered
+                # line that is a long sentence is a narrative clause (e.g. a
+                # 'under penalty of perjury (a) ...' verification statement), not a
+                # blank, so it does not need a field.
+                marker = re.match(r"^\(?[0-9]{1,2}[.)]|^\(?[a-z][.)]", text, re.I)
+                ends = text.rstrip().endswith((":", "?"))
+                short = len(text.split()) <= 8
+                asks = bool(ends or re.search(r"check (all|one)", text, re.I)
+                            or (marker and short))
                 out.append({"page": pno, "text": text, "bbox": [x0, y0, x1, y1],
-                            "asks": bool(ASKS_RE.search(text))})
+                            "asks": asks})
     return out
 
 
