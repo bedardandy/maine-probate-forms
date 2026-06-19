@@ -1044,45 +1044,18 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      324.0,
-      171.6,
-      540.0,
-      184.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "copetitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      324.0,
-      206.2,
-      540.0,
-      219.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      324.0,
-      240.6,
-      540.0,
-      253.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",

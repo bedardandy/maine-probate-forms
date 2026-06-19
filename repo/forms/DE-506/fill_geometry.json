@@ -507,17 +507,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      323.0,
-      289.8,
-      529.0,
-      302.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",

@@ -523,17 +523,8 @@
   },
   "signature_of_medical_professional": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      288.0,
-      676.3,
-      504.0,
-      689.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

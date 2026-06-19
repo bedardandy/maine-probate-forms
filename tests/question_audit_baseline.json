@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-form actionable question-audit counts (symbol-split, text-on-signature, uncovered-question, duplicate-name). test_question_audit_baseline requires current<=baseline. Alignment/buffer advisories are excluded.",
+  "_comment": "Per-form actionable question-audit counts. test requires current<=baseline.",
   "counts": {
     "AF-102": {
       "text_on_signature_line": 1
@@ -13,6 +13,9 @@
     "MISC-102": {
       "symbol_splits_underline": 1,
       "text_on_signature_line": 1
+    },
+    "PP-410": {
+      "uncovered_question": 1
     }
   }
 }

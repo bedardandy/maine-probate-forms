@@ -583,17 +583,8 @@
   },
   "pr_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      361.5,
-      229.9,
-      538.6,
-      242.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_county": {
    "type": "text",
@@ -639,17 +630,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      72.0,
-      416.1,
-      550.1,
-      429.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_printed_name": {
    "type": "text",

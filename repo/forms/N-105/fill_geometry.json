@@ -262,17 +262,8 @@
   },
   "signature_of_demand_or_attorney": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      322.0,
-      585.2,
-      548.0,
-      598.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "date_signed": {
    "type": "date",

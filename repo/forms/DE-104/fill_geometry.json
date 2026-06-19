@@ -110,17 +110,8 @@
   },
   "signature_personal_representative": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      288.3,
-      466.8,
-      486.6,
-      498.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

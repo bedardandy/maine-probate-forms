@@ -1622,17 +1622,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      325.5,
-      104.0,
-      527.5,
-      117.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",
@@ -1715,115 +1706,43 @@
   },
   "renunciation_signature_1": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      131.0,
-      366.6,
-      291.0,
-      379.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_2": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      320.0,
-      366.6,
-      480.0,
-      379.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_3": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      131.0,
-      379.6,
-      291.0,
-      392.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_4": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      320.0,
-      379.6,
-      480.0,
-      392.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_5": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      131.0,
-      392.8,
-      291.0,
-      405.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_6": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      320.0,
-      392.8,
-      480.0,
-      405.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_7": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      131.0,
-      405.8,
-      291.0,
-      419.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "renunciation_signature_8": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      320.0,
-      405.8,
-      480.0,
-      419.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "filing_fee": {
    "type": "currency",

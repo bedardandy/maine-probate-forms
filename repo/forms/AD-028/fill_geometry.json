@@ -373,17 +373,8 @@
   },
   "mother_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      347.1,
-      202.3,
-      546.7,
-      215.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_county": {
    "type": "text",
@@ -443,17 +434,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      356.1,
-      351.9,
-      546.7,
-      364.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_print_name": {
    "type": "text",

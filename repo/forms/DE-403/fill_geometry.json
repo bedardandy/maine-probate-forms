@@ -242,17 +242,8 @@
   },
   "personal_rep_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      553.8,
-      538.5,
-      566.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "witness_for_co_personal_rep": {
    "type": "text",
@@ -270,31 +261,13 @@
   },
   "co_personal_rep_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      588.4,
-      538.5,
-      601.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "surety_1_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      622.8,
-      538.5,
-      635.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "witness_for_surety_1": {
    "type": "text",
@@ -326,17 +299,8 @@
   },
   "surety_2_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      657.4,
-      538.5,
-      670.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "personal_property_gross_value": {
    "type": "currency",
@@ -732,17 +696,8 @@
   },
   "affidavit_surety_1_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      153.3,
-      504.0,
-      166.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "affidavit_surety_1_county": {
    "type": "text",
@@ -788,17 +743,8 @@
   },
   "affidavit_surety_1_notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      284.3,
-      542.0,
-      297.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "affidavit_surety_1_notary_name": {
    "type": "text",
@@ -830,17 +776,8 @@
   },
   "affidavit_surety_2_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      449.9,
-      504.0,
-      462.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "affidavit_surety_2_county": {
    "type": "text",
@@ -886,17 +823,8 @@
   },
   "affidavit_surety_2_notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      324.0,
-      581.1,
-      542.0,
-      594.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "affidavit_surety_2_notary_name": {
    "type": "text",
@@ -970,17 +898,8 @@
   },
   "bond_approval_register_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      360.0,
-      359.1,
-      542.0,
-      372.1
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

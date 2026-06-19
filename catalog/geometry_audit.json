@@ -1,32 +1,19 @@
 {
   "forms_audited": 82,
-  "finding_count": 759,
+  "finding_count": 701,
   "by_code": {
-    "wet_ink_widget_present": 129,
-    "uncovered_printed_rule": 481,
-    "widget_widget_collision": 34,
+    "uncovered_printed_rule": 556,
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 33,
     "suspicious_widget_chain_gap": 10,
+    "widget_widget_collision": 31,
     "widget_native_text_collision": 24,
-    "widget_overruns_rule": 37,
+    "widget_overruns_rule": 36,
     "choice_not_checkbox_sized": 2,
     "county_label_collision": 2,
     "text_is_checkbox_sized": 4
   },
   "findings": [
-    {
-      "form_id": "AD-007",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "parent1_signature"
-    },
-    {
-      "form_id": "AD-007",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "parent2_signature"
-    },
     {
       "form_id": "AD-007",
       "code": "uncovered_printed_rule",
@@ -533,53 +520,9 @@
     },
     {
       "form_id": "AD-008",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
-      "field_id": "notary_date",
-      "other_field_id": "notary_signature",
-      "overlap": [
-        84.4,
-        464.0,
-        213.5,
-        477.0
-      ]
-    },
-    {
-      "form_id": "AD-008",
       "code": "generic_or_orphan_name",
       "severity": "high",
       "field_id": "certification_text"
-    },
-    {
-      "form_id": "AD-008",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_1_signature"
-    },
-    {
-      "form_id": "AD-008",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_2_signature"
-    },
-    {
-      "form_id": "AD-008",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
-    },
-    {
-      "form_id": "AD-009",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature"
-    },
-    {
-      "form_id": "AD-009",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "AD-009",
@@ -594,12 +537,6 @@
       "severity": "medium",
       "field_id": "name_of_adoptee",
       "gap": 23.3
-    },
-    {
-      "form_id": "AD-011",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "AD-011",
@@ -636,27 +573,9 @@
     },
     {
       "form_id": "AD-026",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "AD-026",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "AD-026",
       "code": "generic_or_orphan_name",
       "severity": "high",
       "field_id": "unlabeled_widget_after_email"
-    },
-    {
-      "form_id": "AD-026",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "AD-026",
@@ -685,18 +604,6 @@
         556.0,
         686.8
       ]
-    },
-    {
-      "form_id": "AD-028",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "mother_signature"
-    },
-    {
-      "form_id": "AD-028",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "AD-028",
@@ -765,6 +672,30 @@
       "severity": "low",
       "page": 2,
       "rect": [
+        345.6,
+        203.6,
+        548.2,
+        216.6
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        354.6,
+        353.1,
+        548.2,
+        366.1
+      ]
+    },
+    {
+      "form_id": "AD-028",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
         57.6,
         473.1,
         201.6,
@@ -794,12 +725,6 @@
     },
     {
       "form_id": "AF-101",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "AF-101",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
@@ -818,10 +743,16 @@
       ]
     },
     {
-      "form_id": "AF-101.vA",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
+      "form_id": "AF-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        528.9,
+        276.0,
+        541.9
+      ]
     },
     {
       "form_id": "AF-101.vA",
@@ -862,17 +793,15 @@
       ]
     },
     {
-      "form_id": "AF-102",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "notary_signature",
-      "other_field_id": "notary_signature",
-      "overlap": [
-        456.0,
-        556.0,
-        522.0,
-        567.6
+      "form_id": "AF-101.vA",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        54.0,
+        528.9,
+        276.0,
+        541.9
       ]
     },
     {
@@ -891,18 +820,6 @@
     },
     {
       "form_id": "AF-102",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "affiant_signature"
-    },
-    {
-      "form_id": "AF-102",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
-    },
-    {
-      "form_id": "AF-102",
       "code": "widget_overruns_rule",
       "severity": "medium",
       "field_id": "affidavit_date",
@@ -912,12 +829,15 @@
     },
     {
       "form_id": "AF-102",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "notary_signature",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
       "page": 1,
-      "left_overrun": 150.0,
-      "right_overrun": 6.0
+      "rect": [
+        456.0,
+        555.8,
+        522.0,
+        568.8
+      ]
     },
     {
       "form_id": "AF-102",
@@ -939,18 +859,6 @@
       "page": 1,
       "left_overrun": -0.5,
       "right_overrun": 5.0
-    },
-    {
-      "form_id": "AF-104",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_affiant"
-    },
-    {
-      "form_id": "AF-104",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "AF-104",
@@ -1124,18 +1032,6 @@
     },
     {
       "form_id": "AF-105",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "party_signature"
-    },
-    {
-      "form_id": "AF-105",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
-    },
-    {
-      "form_id": "AF-105",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
@@ -1192,10 +1088,16 @@
       ]
     },
     {
-      "form_id": "APP-1",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "appellant_signature"
+      "form_id": "AF-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        351.4,
+        668.6,
+        531.4,
+        681.6
+      ]
     },
     {
       "form_id": "APP-1",
@@ -1249,18 +1151,6 @@
     },
     {
       "form_id": "CN-1",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "CN-1",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "CN-1",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
@@ -1284,12 +1174,6 @@
         201.6,
         686.4
       ]
-    },
-    {
-      "form_id": "DE-101",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
     },
     {
       "form_id": "DE-101",
@@ -1441,17 +1325,107 @@
       "severity": "low",
       "page": 5,
       "rect": [
+        132.0,
+        367.9,
+        290.8,
+        380.9
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.9,
+        367.9,
+        480.0,
+        380.9
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        132.0,
+        381.0,
+        290.8,
+        394.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.9,
+        381.0,
+        480.0,
+        394.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        132.0,
+        394.0,
+        290.8,
+        407.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.9,
+        394.0,
+        480.0,
+        407.0
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        131.3,
+        407.2,
+        290.8,
+        420.2
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        320.2,
+        407.2,
+        480.0,
+        420.2
+      ]
+    },
+    {
+      "form_id": "DE-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
         72.0,
         464.1,
         154.1,
         477.1
       ]
-    },
-    {
-      "form_id": "DE-101(I)",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "applicant_signature"
     },
     {
       "form_id": "DE-101(I)",
@@ -1627,12 +1601,6 @@
       "severity": "medium",
       "field_id": "personal_representative_address",
       "gap": 23.0
-    },
-    {
-      "form_id": "DE-104",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_personal_representative"
     },
     {
       "form_id": "DE-201",
@@ -2689,15 +2657,15 @@
     },
     {
       "form_id": "DE-301(I)",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "applicant_signature_name"
-    },
-    {
-      "form_id": "DE-301(I)",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "special_admin_acceptance_signature"
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        302.3,
+        258.0,
+        513.0,
+        271.0
+      ]
     },
     {
       "form_id": "DE-301(I)",
@@ -2720,6 +2688,18 @@
         98.4,
         149.1,
         288.0,
+        162.1
+      ]
+    },
+    {
+      "form_id": "DE-301(I)",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        149.1,
+        540.0,
         162.1
       ]
     },
@@ -2785,16 +2765,22 @@
     },
     {
       "form_id": "DE-401",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "applicant_signature"
-    },
-    {
-      "form_id": "DE-401",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_name",
       "page": 1
+    },
+    {
+      "form_id": "DE-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        281.0,
+        707.7,
+        506.0,
+        720.7
+      ]
     },
     {
       "form_id": "DE-401",
@@ -2845,60 +2831,6 @@
         521.5,
         556.8
       ]
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "personal_rep_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_personal_rep_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "surety_1_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "surety_2_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "affidavit_surety_1_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "affidavit_surety_1_notary_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "affidavit_surety_2_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "affidavit_surety_2_notary_signature"
-    },
-    {
-      "form_id": "DE-403",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "bond_approval_register_signature"
     },
     {
       "form_id": "DE-403",
@@ -3002,6 +2934,54 @@
       "form_id": "DE-403",
       "code": "uncovered_printed_rule",
       "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        555.1,
+        540.0,
+        568.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        589.6,
+        540.0,
+        602.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        624.1,
+        540.0,
+        637.1
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        658.6,
+        540.0,
+        671.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
       "page": 2,
       "rect": [
         95.5,
@@ -3071,10 +3051,64 @@
       ]
     },
     {
-      "form_id": "DE-405",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "pr_signature"
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        154.5,
+        504.0,
+        167.5
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        285.6,
+        540.0,
+        298.6
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        451.2,
+        504.0,
+        464.2
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        582.3,
+        540.0,
+        595.3
+      ]
+    },
+    {
+      "form_id": "DE-403",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
+        360.0,
+        360.3,
+        540.0,
+        373.3
+      ]
     },
     {
       "form_id": "DE-405",
@@ -3526,6 +3560,18 @@
       "severity": "low",
       "page": 3,
       "rect": [
+        360.0,
+        416.2,
+        540.0,
+        429.2
+      ]
+    },
+    {
+      "form_id": "DE-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
         72.0,
         640.5,
         216.0,
@@ -3572,12 +3618,6 @@
     },
     {
       "form_id": "DE-407",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature"
-    },
-    {
-      "form_id": "DE-407",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -3589,10 +3629,16 @@
       ]
     },
     {
-      "form_id": "DE-501",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
+      "form_id": "DE-407",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        361.6,
+        422.5,
+        540.1,
+        435.5
+      ]
     },
     {
       "form_id": "DE-501",
@@ -3600,6 +3646,18 @@
       "severity": "medium",
       "field_id": "county",
       "page": 1
+    },
+    {
+      "form_id": "DE-501",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        294.2,
+        352.6,
+        505.0,
+        365.6
+      ]
     },
     {
       "form_id": "DE-501",
@@ -3627,22 +3685,34 @@
     },
     {
       "form_id": "DE-502",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_or_attorney_signature"
-    },
-    {
-      "form_id": "DE-502",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "DE-502",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
       "page": 1
+    },
+    {
+      "form_id": "DE-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        294.2,
+        408.2,
+        505.0,
+        421.2
+      ]
+    },
+    {
+      "form_id": "DE-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        294.2,
+        442.6,
+        505.0,
+        455.6
+      ]
     },
     {
       "form_id": "DE-502",
@@ -3667,18 +3737,6 @@
         223.2,
         730.3
       ]
-    },
-    {
-      "form_id": "DE-503",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "claimant_signature"
-    },
-    {
-      "form_id": "DE-503",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "personal_representative_signature"
     },
     {
       "form_id": "DE-503",
@@ -3708,18 +3766,6 @@
     },
     {
       "form_id": "DE-504",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "DE-504",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "judge_signature"
-    },
-    {
-      "form_id": "DE-504",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 2,
@@ -3729,12 +3775,6 @@
         216.0,
         326.2
       ]
-    },
-    {
-      "form_id": "DE-505",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
     },
     {
       "form_id": "DE-505",
@@ -3779,12 +3819,6 @@
         530.1,
         389.0
       ]
-    },
-    {
-      "form_id": "DE-506",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
     },
     {
       "form_id": "DE-506",
@@ -4046,12 +4080,6 @@
     },
     {
       "form_id": "DE-507",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "DE-507",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 2,
@@ -4184,12 +4212,6 @@
     },
     {
       "form_id": "DE-509",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_or_attorney_signature"
-    },
-    {
-      "form_id": "DE-509",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -4250,12 +4272,6 @@
     },
     {
       "form_id": "DE-601",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_name"
-    },
-    {
-      "form_id": "DE-601",
       "code": "widget_overruns_rule",
       "severity": "medium",
       "field_id": "attorney_bar_number",
@@ -4274,12 +4290,6 @@
         288.0,
         287.2
       ]
-    },
-    {
-      "form_id": "DE-602",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "pr_signature"
     },
     {
       "form_id": "DE-602",
@@ -4316,18 +4326,6 @@
     },
     {
       "form_id": "DE-603",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "pr_signature"
-    },
-    {
-      "form_id": "DE-603",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
-    },
-    {
-      "form_id": "DE-603",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "notary_county",
@@ -4407,24 +4405,6 @@
     },
     {
       "form_id": "DE-605",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "applicant_signature"
-    },
-    {
-      "form_id": "DE-605",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_officer_signature"
-    },
-    {
-      "form_id": "DE-605",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "register_signature"
-    },
-    {
-      "form_id": "DE-605",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "notary_county",
@@ -4432,34 +4412,10 @@
     },
     {
       "form_id": "GS-008",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_line"
-    },
-    {
-      "form_id": "GS-008",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
-    },
-    {
-      "form_id": "GS-008",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "notary_county",
       "page": 1
-    },
-    {
-      "form_id": "GS-008.vA",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_line"
-    },
-    {
-      "form_id": "GS-008.vA",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "GS-008.vA",
@@ -4579,18 +4535,6 @@
         247.6,
         651.7
       ]
-    },
-    {
-      "form_id": "GS-014",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "guardian_signature"
-    },
-    {
-      "form_id": "GS-014",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_guardian_signature"
     },
     {
       "form_id": "GS-014",
@@ -4798,18 +4742,6 @@
     },
     {
       "form_id": "MISC-101",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "movant_signature"
-    },
-    {
-      "form_id": "MISC-101",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "judge_signature"
-    },
-    {
-      "form_id": "MISC-101",
       "code": "widget_overruns_rule",
       "severity": "medium",
       "field_id": "motion_date",
@@ -4855,6 +4787,18 @@
         171.4,
         438.0,
         184.4
+      ]
+    },
+    {
+      "form_id": "MISC-101",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        360.0,
+        263.4,
+        540.0,
+        276.4
       ]
     },
     {
@@ -5051,12 +4995,6 @@
     },
     {
       "form_id": "N-105",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_of_demand_or_attorney"
-    },
-    {
-      "form_id": "N-105",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
@@ -5079,6 +5017,18 @@
       "page": 1,
       "left_overrun": 0.2,
       "right_overrun": 23.7
+    },
+    {
+      "form_id": "N-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        322.3,
+        586.5,
+        547.3,
+        599.5
+      ]
     },
     {
       "form_id": "N-105",
@@ -5142,12 +5092,6 @@
     },
     {
       "form_id": "N-108",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature"
-    },
-    {
-      "form_id": "N-108",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
@@ -5167,16 +5111,22 @@
     },
     {
       "form_id": "N-112",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "guardian_conservator_signature"
-    },
-    {
-      "form_id": "N-112",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
       "page": 1
+    },
+    {
+      "form_id": "N-112",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        568.4,
+        540.0,
+        581.4
+      ]
     },
     {
       "form_id": "N-112",
@@ -5227,12 +5177,6 @@
         341.9,
         236.9
       ]
-    },
-    {
-      "form_id": "N-115",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signatory_signature"
     },
     {
       "form_id": "N-115",
@@ -5366,12 +5310,6 @@
     },
     {
       "form_id": "N-118",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature"
-    },
-    {
-      "form_id": "N-118",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_name",
@@ -5402,44 +5340,6 @@
         216.0,
         563.6
       ]
-    },
-    {
-      "form_id": "NC-001",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
-      "field_id": "notary_date",
-      "other_field_id": "notary_signature",
-      "overlap": [
-        73.0,
-        700.4,
-        207.8,
-        713.4
-      ]
-    },
-    {
-      "form_id": "NC-001",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "NC-001",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "copetitioner_signature"
-    },
-    {
-      "form_id": "NC-001",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "NC-001",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "notary_signature"
     },
     {
       "form_id": "NC-001",
@@ -5530,24 +5430,6 @@
         73.6,
         268.4
       ]
-    },
-    {
-      "form_id": "PP-107",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-107",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "copetitioner_signature"
-    },
-    {
-      "form_id": "PP-107",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
     },
     {
       "form_id": "PP-107",
@@ -5663,17 +5545,47 @@
       "severity": "low",
       "page": 5,
       "rect": [
+        324.0,
+        150.0,
+        540.0,
+        163.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        184.4,
+        540.0,
+        197.4
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        219.0,
+        540.0,
+        232.0
+      ]
+    },
+    {
+      "form_id": "PP-107",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
         72.0,
         619.8,
         216.0,
         632.8
       ]
-    },
-    {
-      "form_id": "PP-108",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "conservator_signature"
     },
     {
       "form_id": "PP-108",
@@ -5685,22 +5597,16 @@
       "right_overrun": 15.0
     },
     {
-      "form_id": "PP-201",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-201",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "copetitioner_signature"
-    },
-    {
-      "form_id": "PP-201",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
+      "form_id": "PP-108",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        518.1,
+        540.0,
+        531.1
+      ]
     },
     {
       "form_id": "PP-201",
@@ -5864,17 +5770,47 @@
       "severity": "low",
       "page": 5,
       "rect": [
+        324.0,
+        172.9,
+        540.0,
+        185.9
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        207.4,
+        540.0,
+        220.4
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        241.9,
+        540.0,
+        254.9
+      ]
+    },
+    {
+      "form_id": "PP-201",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
         72.0,
         583.0,
         216.0,
         596.0
       ]
-    },
-    {
-      "form_id": "PP-203",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "guardian_signature"
     },
     {
       "form_id": "PP-203",
@@ -5886,22 +5822,16 @@
       "right_overrun": 17.0
     },
     {
-      "form_id": "PP-205",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-205",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "PP-205",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
+      "form_id": "PP-203",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        495.1,
+        540.0,
+        508.1
+      ]
     },
     {
       "form_id": "PP-205",
@@ -6065,17 +5995,47 @@
       "severity": "low",
       "page": 6,
       "rect": [
+        324.0,
+        115.4,
+        540.0,
+        128.4
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        150.0,
+        540.0,
+        163.0
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        184.4,
+        540.0,
+        197.4
+      ]
+    },
+    {
+      "form_id": "PP-205",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
         72.0,
         415.2,
         216.0,
         428.2
       ]
-    },
-    {
-      "form_id": "PP-207",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "guardian_signature"
     },
     {
       "form_id": "PP-207",
@@ -6085,6 +6045,18 @@
       "page": 1,
       "left_overrun": 0.2,
       "right_overrun": 7.0
+    },
+    {
+      "form_id": "PP-207",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        324.0,
+        541.2,
+        540.0,
+        554.2
+      ]
     },
     {
       "form_id": "PP-209",
@@ -6102,15 +6074,27 @@
     },
     {
       "form_id": "PP-209",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "guardian_signature"
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        632.8,
+        540.0,
+        645.8
+      ]
     },
     {
       "form_id": "PP-209",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_guardian_signature"
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        667.4,
+        540.0,
+        680.4
+      ]
     },
     {
       "form_id": "PP-210",
@@ -6166,24 +6150,6 @@
         216.0,
         656.9
       ]
-    },
-    {
-      "form_id": "PP-401",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-401",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "PP-401",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
     },
     {
       "form_id": "PP-401",
@@ -6312,17 +6278,47 @@
       "severity": "low",
       "page": 5,
       "rect": [
+        324.0,
+        150.0,
+        540.0,
+        163.0
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        184.4,
+        540.0,
+        197.4
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
+        324.0,
+        219.0,
+        540.0,
+        232.0
+      ]
+    },
+    {
+      "form_id": "PP-401",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 5,
+      "rect": [
         72.0,
         541.6,
         216.0,
         554.6
       ]
-    },
-    {
-      "form_id": "PP-402",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "by_signature"
     },
     {
       "form_id": "PP-402",
@@ -6332,6 +6328,18 @@
       "page": 1,
       "left_overrun": 0.2,
       "right_overrun": 15.0
+    },
+    {
+      "form_id": "PP-402",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        340.9,
+        544.5,
+        540.0,
+        557.5
+      ]
     },
     {
       "form_id": "PP-405",
@@ -6346,30 +6354,6 @@
         538.5,
         416.7
       ]
-    },
-    {
-      "form_id": "PP-405",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "surety_1_affidavit_signature"
-    },
-    {
-      "form_id": "PP-405",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "surety_1_notary_signature"
-    },
-    {
-      "form_id": "PP-405",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "surety_2_affidavit_signature"
-    },
-    {
-      "form_id": "PP-405",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "surety_2_notary_signature"
     },
     {
       "form_id": "PP-405",
@@ -6538,6 +6522,30 @@
       "form_id": "PP-405",
       "code": "uncovered_printed_rule",
       "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        154.5,
+        504.0,
+        167.5
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        285.6,
+        540.0,
+        298.6
+      ]
+    },
+    {
+      "form_id": "PP-405",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
       "page": 4,
       "rect": [
         103.3,
@@ -6557,12 +6565,6 @@
         540.0,
         373.3
       ]
-    },
-    {
-      "form_id": "PP-406",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "conservator_signature"
     },
     {
       "form_id": "PP-406",
@@ -6973,6 +6975,18 @@
       ]
     },
     {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        360.0,
+        416.2,
+        540.0,
+        429.2
+      ]
+    },
+    {
       "form_id": "PP-407",
       "code": "widget_widget_collision",
       "severity": "high",
@@ -7002,33 +7016,15 @@
     },
     {
       "form_id": "PP-407",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "conservator_signature"
-    },
-    {
-      "form_id": "PP-408",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "claimant_signature"
-    },
-    {
-      "form_id": "PP-408",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "conservator_signature"
-    },
-    {
-      "form_id": "PP-409",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_or_attorney_signature"
-    },
-    {
-      "form_id": "PP-409",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "judge_signature"
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.2,
+        135.0,
+        528.4,
+        148.0
+      ]
     },
     {
       "form_id": "PP-409",
@@ -7041,24 +7037,6 @@
         237.6,
         553.9
       ]
-    },
-    {
-      "form_id": "PP-410",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-410",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "PP-410",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
     },
     {
       "form_id": "PP-410",
@@ -7148,6 +7126,42 @@
       "form_id": "PP-410",
       "code": "uncovered_printed_rule",
       "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        645.2,
+        540.0,
+        658.2
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        679.6,
+        540.0,
+        692.6
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        714.2,
+        540.0,
+        727.2
+      ]
+    },
+    {
+      "form_id": "PP-410",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
       "page": 3,
       "rect": [
         72.0,
@@ -7172,12 +7186,6 @@
     },
     {
       "form_id": "PP-412",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "conservator_signature"
-    },
-    {
-      "form_id": "PP-412",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 4,
@@ -7190,24 +7198,6 @@
     },
     {
       "form_id": "PP-413",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-413",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "PP-413",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "PP-413",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 2,
@@ -7276,6 +7266,42 @@
         220.5,
         545.2,
         233.5
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        207.4,
+        540.0,
+        220.4
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        241.9,
+        540.0,
+        254.9
+      ]
+    },
+    {
+      "form_id": "PP-413",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        276.4,
+        540.0,
+        289.4
       ]
     },
     {
@@ -7292,22 +7318,34 @@
     },
     {
       "form_id": "PP-502",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-502",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "judge_signature"
-    },
-    {
-      "form_id": "PP-502",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
       "page": 1
+    },
+    {
+      "form_id": "PP-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        242.5,
+        540.0,
+        255.5
+      ]
+    },
+    {
+      "form_id": "PP-502",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        324.0,
+        504.7,
+        540.0,
+        517.7
+      ]
     },
     {
       "form_id": "PP-502",
@@ -7323,15 +7361,15 @@
     },
     {
       "form_id": "PP-503",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-503",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "judge_signature"
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        447.2,
+        504.0,
+        460.2
+      ]
     },
     {
       "form_id": "PP-503",
@@ -7344,18 +7382,6 @@
         216.0,
         510.8
       ]
-    },
-    {
-      "form_id": "PP-504",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-504",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "judge_signature"
     },
     {
       "form_id": "PP-504",
@@ -7382,6 +7408,18 @@
       "severity": "low",
       "page": 4,
       "rect": [
+        360.0,
+        364.4,
+        540.0,
+        377.4
+      ]
+    },
+    {
+      "form_id": "PP-504",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 4,
+      "rect": [
         72.0,
         442.8,
         216.0,
@@ -7397,21 +7435,15 @@
     },
     {
       "form_id": "PP-505",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "signature_of_medical_professional"
-    },
-    {
-      "form_id": "PP-506",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "visitor_signature"
-    },
-    {
-      "form_id": "PP-506",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "register_of_probate_signature"
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        288.0,
+        677.6,
+        504.0,
+        690.6
+      ]
     },
     {
       "form_id": "PP-506",
@@ -7435,6 +7467,30 @@
         402.9,
         187.6,
         415.9
+      ]
+    },
+    {
+      "form_id": "PP-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        324.0,
+        310.9,
+        504.0,
+        323.9
+      ]
+    },
+    {
+      "form_id": "PP-506",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 6,
+      "rect": [
+        318.0,
+        563.8,
+        540.0,
+        576.8
       ]
     },
     {
@@ -7671,24 +7727,6 @@
     },
     {
       "form_id": "PP-509",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-509",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "PP-509",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "PP-509",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -7781,6 +7819,42 @@
         491.4,
         537.4,
         504.4
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        174.7,
+        540.0,
+        187.7
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        209.2,
+        540.0,
+        222.2
+      ]
+    },
+    {
+      "form_id": "PP-509",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        243.7,
+        540.0,
+        256.7
       ]
     },
     {
@@ -7809,24 +7883,6 @@
     },
     {
       "form_id": "PP-510",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-510",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "co_petitioner_signature"
-    },
-    {
-      "form_id": "PP-510",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "PP-510",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -7919,6 +7975,42 @@
         582.2,
         537.4,
         595.2
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        219.0,
+        540.0,
+        232.0
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        253.4,
+        540.0,
+        266.4
+      ]
+    },
+    {
+      "form_id": "PP-510",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.0,
+        288.0,
+        540.0,
+        301.0
       ]
     },
     {
@@ -7944,24 +8036,6 @@
         216.0,
         671.9
       ]
-    },
-    {
-      "form_id": "PP-601",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "PP-601",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "copetitioner_signature"
-    },
-    {
-      "form_id": "PP-601",
-      "code": "wet_ink_widget_present",
-      "severity": "high",
-      "field_id": "attorney_signature"
     },
     {
       "form_id": "PP-601",

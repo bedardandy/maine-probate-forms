@@ -242,17 +242,8 @@
   },
   "guardian_conservator_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      324.0,
-      567.2,
-      542.0,
-      580.2
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "certified_true_copy_date": {
    "type": "date",

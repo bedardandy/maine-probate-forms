@@ -65,17 +65,8 @@
   },
   "guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      539.9,
-      538.5,
-      552.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "date_signed": {
    "type": "date",

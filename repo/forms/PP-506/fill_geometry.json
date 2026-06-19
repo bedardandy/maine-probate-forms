@@ -900,17 +900,8 @@
   },
   "visitor_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 5,
-     "rect": [
-      324.0,
-      309.6,
-      504.0,
-      322.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "date_filed": {
    "type": "date",
@@ -928,17 +919,8 @@
   },
   "register_of_probate_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 5,
-     "rect": [
-      319.5,
-      562.6,
-      538.5,
-      575.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

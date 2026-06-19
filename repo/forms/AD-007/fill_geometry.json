@@ -843,17 +843,8 @@
   },
   "parent1_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      342.0,
-      476.9,
-      558.0,
-      489.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "parent2_date": {
    "type": "date",
@@ -871,17 +862,8 @@
   },
   "parent2_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      342.0,
-      519.0,
-      558.0,
-      532.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

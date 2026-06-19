@@ -317,17 +317,8 @@
   },
   "conservator_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      326.0,
-      133.7,
-      528.0,
-      146.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "conservator_print_info": {
    "type": "text",

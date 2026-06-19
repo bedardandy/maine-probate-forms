@@ -336,7 +336,12 @@
    "widgets": [
     {
      "page": 1,
-     "rect": [72.0, 101.0, 542.0, 127.0],
+     "rect": [
+      72.0,
+      101.0,
+      542.0,
+      127.0
+     ],
      "multiline": true,
      "geometry_source": "manual",
      "locked": true
@@ -359,17 +364,8 @@
   },
   "applicant_signature_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      301.0,
-      256.7,
-      513.0,
-      269.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",
@@ -504,17 +500,8 @@
   },
   "special_admin_acceptance_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      360.0,
-      147.9,
-      542.0,
-      160.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

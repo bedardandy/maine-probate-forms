@@ -366,17 +366,8 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      54.0,
-      527.4,
-      276.0,
-      540.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "signature_date": {
    "type": "text",

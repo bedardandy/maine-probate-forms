@@ -286,17 +286,8 @@
   },
   "applicant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      282.5,
-      706.5,
-      504.5,
-      719.5
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "estate_tax_action": {
    "type": "select_one",

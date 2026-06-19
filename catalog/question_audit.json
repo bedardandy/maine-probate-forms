@@ -1,12 +1,12 @@
 {
   "forms_audited": 82,
-  "finding_count": 151,
+  "finding_count": 149,
   "by_code": {
     "alignment_suggestion": 96,
     "symbol_splits_underline": 2,
     "text_on_signature_line": 2,
-    "uncovered_question": 1,
-    "underline_buffer": 50
+    "uncovered_question": 2,
+    "underline_buffer": 47
   },
   "findings": [
     {
@@ -245,16 +245,6 @@
       "want": "center"
     },
     {
-      "form_id": "AF-102",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "notary_signature",
-      "page": 0,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "_________________________"
-    },
-    {
       "form_id": "AF-103",
       "code": "underline_buffer",
       "severity": "low",
@@ -320,16 +310,6 @@
       "page": 0,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "AF-104",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "notary_signature",
-      "page": 0,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "_________________________"
     },
     {
       "form_id": "AF-104",
@@ -1333,6 +1313,15 @@
       "want": "center"
     },
     {
+      "form_id": "PP-410",
+      "code": "uncovered_question",
+      "severity": "medium",
+      "page": 1,
+      "number": "11)",
+      "y": 727.2,
+      "note": "numbered prompt with a blank rule but no fill widget"
+    },
+    {
       "form_id": "PP-412",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -1368,16 +1357,6 @@
       "page": 1,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "PP-504",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "judge_signature",
-      "page": 3,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "______"
     },
     {
       "form_id": "PP-505",

@@ -430,17 +430,8 @@
   },
   "petitioner_1_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      343.5,
-      209.9,
-      556.5,
-      222.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "petitioner_2_date": {
    "type": "date",
@@ -458,17 +449,8 @@
   },
   "petitioner_2_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      343.5,
-      258.0,
-      556.5,
-      271.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_county": {
    "type": "text",
@@ -528,17 +510,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      84.4,
-      464.0,
-      213.5,
-      477.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

@@ -1,13 +1,12 @@
 {
-  "_comment": "Per-form high-value geometry-audit finding counts (self widget/widget collisions excluded). test_geometry_audit_baseline.py requires current counts <= these, so a new collision/overrun/orphan introduced by a geometry edit fails the gate while fixes are free. Lower the numbers as forms are cleaned.",
+  "_comment": "Per-form high-value geometry-audit finding counts (self widget/widget collisions excluded). test_geometry_audit_baseline.py requires current counts <= these.",
   "counts": {
     "AD-008": {
-      "generic_or_orphan_name": 1,
-      "widget_widget_collision": 1
+      "generic_or_orphan_name": 1
     },
     "AD-026": {
       "generic_or_orphan_name": 1,
-      "widget_native_text_collision": 2,
+      "widget_native_text_collision": 1,
       "widget_widget_collision": 1
     },
     "AD-028": {
@@ -18,7 +17,7 @@
       "choice_not_checkbox_sized": 2
     },
     "AF-102": {
-      "widget_overruns_rule": 2
+      "widget_overruns_rule": 1
     },
     "AF-103": {
       "widget_overruns_rule": 1
@@ -83,9 +82,6 @@
     "N-118": {
       "widget_native_text_collision": 1,
       "widget_widget_collision": 3
-    },
-    "NC-001": {
-      "widget_widget_collision": 1
     },
     "PB-007.vA": {
       "text_is_checkbox_sized": 1

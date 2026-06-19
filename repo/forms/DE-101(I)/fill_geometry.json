@@ -1253,17 +1253,8 @@
   },
   "applicant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      309.0,
-      685.0,
-      509.0,
-      698.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "attorney_name": {
    "type": "text",

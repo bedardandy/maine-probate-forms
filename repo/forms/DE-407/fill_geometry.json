@@ -167,17 +167,8 @@
   },
   "signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      361.0,
-      421.3,
-      542.0,
-      434.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "printed_or_typed_name": {
    "type": "text",

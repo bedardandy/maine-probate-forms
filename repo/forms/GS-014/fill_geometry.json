@@ -1372,31 +1372,13 @@
   },
   "guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      342.0,
-      575.8,
-      559.0,
-      588.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "co_guardian_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      342.0,
-      605.0,
-      559.0,
-      618.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "guardian_address": {
    "type": "text",

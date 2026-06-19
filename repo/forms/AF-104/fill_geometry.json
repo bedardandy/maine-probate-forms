@@ -130,17 +130,8 @@
   },
   "signature_affiant": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      317.0,
-      435.0,
-      522.0,
-      448.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "state_notary": {
    "type": "text",
@@ -228,17 +219,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      431.0,
-      549.6,
-      486.0,
-      562.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "person_unknown_name": {
    "type": "text",

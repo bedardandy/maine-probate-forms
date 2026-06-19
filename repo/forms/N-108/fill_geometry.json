@@ -219,17 +219,8 @@
   },
   "signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      311.2,
-      606.6,
-      548.2,
-      619.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "date": {
    "type": "date",

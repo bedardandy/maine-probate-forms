@@ -144,17 +144,8 @@
   },
   "claimant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      311.0,
-      635.9,
-      513.0,
-      648.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "claimant_attorney_name": {
    "type": "text",
@@ -317,17 +308,8 @@
   },
   "conservator_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      311.1,
-      375.0,
-      548.1,
-      388.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "conservator_attorney_name": {
    "type": "text",

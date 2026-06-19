@@ -135,17 +135,8 @@
   },
   "applicant_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      360.0,
-      372.5,
-      542.1,
-      385.5
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_county": {
    "type": "text",
@@ -205,17 +196,8 @@
   },
   "notary_officer_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      325.5,
-      535.7,
-      537.6,
-      548.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_officer_printed_name": {
    "type": "text",
@@ -275,17 +257,8 @@
   },
   "register_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      360.0,
-      223.0,
-      542.0,
-      236.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

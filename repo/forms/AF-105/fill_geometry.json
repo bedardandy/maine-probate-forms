@@ -1572,17 +1572,8 @@
   },
   "party_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      351.0,
-      578.4,
-      554.0,
-      591.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "notary_appeared_name": {
    "type": "text",
@@ -1614,17 +1605,8 @@
   },
   "notary_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      352.9,
-      667.3,
-      529.9,
-      680.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }
