@@ -86,6 +86,28 @@
       "required": "optional",
       "expects": "free text answering the printed prompt"
     },
+    "amount_claimed": {
+      "label": "Amount Claimed",
+      "data_type": "currency",
+      "alignment": "left",
+      "required": "optional",
+      "format": "decimal",
+      "currency": {
+        "min": 0,
+        "decimals": 2
+      },
+      "expects": "a dollar amount, digits and decimal point only",
+      "examples": [
+        "1500.00",
+        "0.00",
+        "27834.50"
+      ],
+      "avoid": [
+        "a '$' character inside the value (the form prints it)",
+        "thousands separators or words",
+        "a negative amount unless this line is explicitly a credit"
+      ]
+    },
     "nature_of_uncertainty": {
       "label": "Nature Of Uncertainty",
       "data_type": "text",

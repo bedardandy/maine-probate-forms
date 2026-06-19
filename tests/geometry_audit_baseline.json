@@ -64,8 +64,7 @@
       "widget_overruns_rule": 2
     },
     "N-115": {
-      "widget_native_text_collision": 1,
-      "widget_widget_collision": 1
+      "widget_native_text_collision": 1
     },
     "N-118": {
       "widget_native_text_collision": 1,
@@ -81,6 +80,7 @@
       "widget_overruns_rule": 1
     },
     "PP-207": {
+      "widget_native_text_collision": 1,
       "widget_overruns_rule": 1
     },
     "PP-209": {

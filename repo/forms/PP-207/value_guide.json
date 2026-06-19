@@ -34,6 +34,13 @@
       "required": "optional",
       "expects": "free text answering the printed prompt"
     },
+    "court_record_phone": {
+      "label": "Telephone Number",
+      "data_type": "text",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "free text answering the printed prompt"
+    },
     "guardian_address": {
       "label": "Address of Guardian and Conservator for Court records",
       "data_type": "address",

@@ -2,11 +2,11 @@
   "forms_audited": 82,
   "finding_count": 114,
   "by_code": {
-    "alignment_suggestion": 97,
+    "alignment_suggestion": 96,
     "symbol_splits_underline": 2,
     "text_on_signature_line": 1,
     "uncovered_question": 2,
-    "underline_buffer": 12
+    "underline_buffer": 13
   },
   "findings": [
     {
@@ -581,15 +581,6 @@
     },
     {
       "form_id": "MISC-102",
-      "code": "alignment_suggestion",
-      "severity": "low",
-      "field_id": "subpoena_date",
-      "page": 1,
-      "have": "left",
-      "want": "center"
-    },
-    {
-      "form_id": "MISC-102",
       "code": "text_on_signature_line",
       "severity": "high",
       "field_id": "fees_travel",
@@ -928,6 +919,16 @@
       "page": 0,
       "have": "left",
       "want": "center"
+    },
+    {
+      "form_id": "PP-405",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "real_property_value_detail",
+      "page": 1,
+      "side": "left",
+      "gap": 0.1,
+      "neighbor": "$"
     },
     {
       "form_id": "PP-405",

@@ -1,13 +1,13 @@
 {
   "forms_audited": 82,
-  "finding_count": 685,
+  "finding_count": 684,
   "by_code": {
-    "uncovered_printed_rule": 560,
+    "uncovered_printed_rule": 559,
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 34,
     "suspicious_widget_chain_gap": 10,
-    "widget_widget_collision": 27,
-    "widget_native_text_collision": 22,
+    "widget_widget_collision": 26,
+    "widget_native_text_collision": 23,
     "widget_overruns_rule": 23,
     "county_label_collision": 3,
     "text_is_checkbox_sized": 3
@@ -4884,18 +4884,6 @@
       "severity": "low",
       "page": 2,
       "rect": [
-        122.8,
-        102.4,
-        252.0,
-        115.4
-      ]
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "uncovered_printed_rule",
-      "severity": "low",
-      "page": 2,
-      "rect": [
         383.5,
         102.4,
         504.0,
@@ -5102,20 +5090,6 @@
         688.2,
         216.0,
         701.2
-      ]
-    },
-    {
-      "form_id": "N-115",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "pr_name",
-      "other_field_id": "appointment_date",
-      "overlap": [
-        114.8,
-        228.4,
-        341.9,
-        236.9
       ]
     },
     {
@@ -5988,6 +5962,20 @@
     },
     {
       "form_id": "PP-207",
+      "code": "widget_native_text_collision",
+      "severity": "high",
+      "field_id": "court_record_phone",
+      "page": 1,
+      "native_text": "Number:",
+      "overlap": [
+        195.0,
+        401.6,
+        224.1,
+        413.6
+      ]
+    },
+    {
+      "form_id": "PP-207",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -6286,13 +6274,13 @@
       "code": "widget_widget_collision",
       "severity": "high",
       "page": 2,
-      "field_id": "real_property_value_detail",
-      "other_field_id": "name_surety_2_real",
+      "field_id": "gross_value_real_property",
+      "other_field_id": "real_property_value_detail",
       "overlap": [
-        325.5,
-        404.0,
-        538.5,
-        416.7
+        251.5,
+        385.3,
+        430.0,
+        398.1
       ]
     },
     {
