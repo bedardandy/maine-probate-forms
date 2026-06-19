@@ -15,9 +15,11 @@
      "rect": [
       73.5,
       119.4,
-      184.6,
+      173.0,
       132.4
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -55,11 +57,13 @@
     {
      "page": 0,
      "rect": [
-      72.0,
+      136.0,
       342.7,
-      542.0,
+      475.0,
       355.7
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -69,20 +73,24 @@
     {
      "page": 0,
      "rect": [
-      72.0,
+      136.0,
       378.6,
-      542.0,
+      475.0,
       391.6
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     },
     {
      "page": 0,
      "rect": [
-      72.0,
+      136.0,
       414.6,
-      542.0,
+      475.0,
       427.6
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },

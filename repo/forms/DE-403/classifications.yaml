@@ -50,16 +50,32 @@ overrides:
     data_type: date
 
   witness_for_personal_rep:
-    category: party_attr
-    subcategory: witness
-    party: witness
-    data_type: person_name
+    category: signature
+    subcategory: witness_signature
+    data_type: signature
+    suppress_geometry: true
+    fill_strategy_source: wet_ink
 
   witness_for_co_personal_rep:
-    category: party_attr
-    subcategory: witness
-    party: witness
-    data_type: person_name
+    category: signature
+    subcategory: witness_signature
+    data_type: signature
+    suppress_geometry: true
+    fill_strategy_source: wet_ink
+
+  witness_for_surety_1:
+    category: signature
+    subcategory: witness_signature
+    data_type: signature
+    suppress_geometry: true
+    fill_strategy_source: wet_ink
+
+  witness_for_surety_2:
+    category: signature
+    subcategory: witness_signature
+    data_type: signature
+    suppress_geometry: true
+    fill_strategy_source: wet_ink
 
   personal_property_gross_value:
     category: narrative_derived

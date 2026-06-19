@@ -27,3 +27,5 @@ overrides:
     subcategory: court_only
     court_only: true
     fill_strategy_source: left_blank
+  special_admin_acceptance_date:
+    suppress_geometry: true

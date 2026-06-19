@@ -47,15 +47,6 @@
       305.5,
       156.7
      ]
-    },
-    {
-     "page": 0,
-     "rect": [
-      72.0,
-      406.0,
-      542.0,
-      419.0
-     ]
     }
    ]
   },
@@ -757,6 +748,17 @@
     }
    ]
   },
+  "non_registered_partner_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [72.0, 363.0, 542.0, 376.0],
+     "geometry_source": "manual",
+     "locked": true
+    }
+   ]
+  },
   "devisees_name_1": {
    "type": "text",
    "widgets": [
@@ -949,6 +951,18 @@
       404.6,
       664.0
      ]
+    }
+   ]
+  },
+  "real_estate_locations": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [72.0, 680.0, 542.0, 720.0],
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -1260,17 +1274,8 @@
   },
   "register_serve_notices_details": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      90.0,
-      576.0,
-      542.0,
-      589.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "publish_notice_creditors": {
    "type": "enabler",
@@ -1322,9 +1327,12 @@
      "rect": [
       90.0,
       708.0,
-      542.0,
-      774.0
-     ]
+      525.0,
+      736.0
+     ],
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },

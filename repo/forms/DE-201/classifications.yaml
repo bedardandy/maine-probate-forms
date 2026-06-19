@@ -11,7 +11,13 @@ overrides:
     data_type: text
 
   decedent_name_caption:
-    suppress_geometry: true
+    category: case_constant
+    subcategory: caption
+
+  domestic_partner_details:
+    category: narrative_derived
+    subcategory: conditional_section_child
+    data_type: text
 
   filing_fee:
     category: external

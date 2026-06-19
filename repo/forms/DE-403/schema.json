@@ -711,6 +711,7 @@
     },
     {
       "field_id": "witness_for_personal_rep",
+      "suppress_geometry": true,
       "widget_id": null,
       "label": "Witness For Personal Rep",
       "type": "text",
@@ -800,6 +801,7 @@
     },
     {
       "field_id": "witness_for_co_personal_rep",
+      "suppress_geometry": true,
       "widget_id": null,
       "label": "Witness For Co Personal Rep",
       "type": "text",
@@ -934,6 +936,7 @@
     },
     {
       "field_id": "witness_for_surety_1",
+      "suppress_geometry": true,
       "widget_id": null,
       "label": "Witness For Surety 1",
       "type": "text",
@@ -983,6 +986,7 @@
     },
     {
       "field_id": "witness_for_surety_2",
+      "suppress_geometry": true,
       "widget_id": null,
       "label": "Witness For Surety 2",
       "type": "text",
@@ -3050,6 +3054,7 @@
     },
     {
       "field_id": "corporate_surety_name",
+      "suppress_geometry": false,
       "widget_id": null,
       "label": "Corporate Surety Name",
       "type": "text",

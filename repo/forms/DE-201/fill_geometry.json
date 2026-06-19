@@ -38,9 +38,19 @@
   },
   "decedent_name_caption": {
    "type": "text",
-   "widgets": [],
-   "options": [],
-   "geometry_source": "suppressed"
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      108.5,
+      146.7,
+      297.0,
+      159.7
+     ],
+     "geometry_source": "manual",
+     "locked": true
+    }
+   ]
   },
   "petition_type": {
    "type": "select_many",
@@ -666,6 +676,22 @@
       330.8,
       301.5
      ]
+    }
+   ]
+  },
+  "domestic_partner_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      309.0,
+      522.5,
+      322.0
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -1370,10 +1396,12 @@
      "page": 2,
      "rect": [
       283.9,
-      700.1,
+      705.6,
       426.7,
       718.6
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },

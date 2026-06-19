@@ -119,7 +119,7 @@
     },
     {
       "field_id": "decedent_name_caption",
-      "suppress_geometry": true,
+      "suppress_geometry": false,
       "widget_id": "W003",
       "label": "Decedent Name Caption",
       "type": "text",
@@ -4461,6 +4461,30 @@
         "not_applicable": 2,
         "patterns_scored": 5
       }
+    },
+    {
+      "field_id": "domestic_partner_details",
+      "widget_id": null,
+      "label": "Domestic Partner Name and Address",
+      "type": "text",
+      "data_type": "text",
+      "data_constraints": {},
+      "category": "narrative_derived",
+      "subcategory": "conditional_section_child",
+      "writable_when": {"all_of": [{"field": "domestic_partner_status", "equals": "yes"}]},
+      "required_when": null,
+      "choice_group": null,
+      "choice_value": null,
+      "formula": null,
+      "formula_mode": null,
+      "depends_on": [],
+      "validators": [],
+      "fill_strategy": {"deterministic": false, "llm_eligible": true, "human_required": false, "source": "llm_over_narrative"},
+      "risk_score": 5,
+      "risk_tier": "green",
+      "risk_breakdown": {"category_base": 5, "eval_wrong": 0, "eval_oc": 0, "eval_miscompr": 0},
+      "hand_review": {"reasons": []},
+      "eval_evidence": null
     }
   ]
 }

@@ -593,6 +593,28 @@
     }
    ]
   },
+  "attorney_bar_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [72.0, 550.9, 229.2, 563.9],
+     "geometry_source": "manual",
+     "locked": true
+    }
+   ]
+  },
+  "attorney_email": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [72.0, 579.3, 229.2, 592.3],
+     "geometry_source": "manual",
+     "locked": true
+    }
+   ]
+  },
   "special_admin_acceptance_signature": {
    "type": "text",
    "widgets": [],
@@ -601,17 +623,8 @@
   },
   "special_admin_acceptance_date": {
    "type": "date",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      361.5,
-      145.6,
-      534.1,
-      158.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "order_limitations": {
    "type": "text",

@@ -228,17 +228,8 @@
   },
   "witness_for_personal_rep": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      73.5,
-      553.8,
-      286.5,
-      566.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "personal_rep_signature": {
    "type": "text",
@@ -256,17 +247,8 @@
   },
   "witness_for_co_personal_rep": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      73.5,
-      588.4,
-      286.5,
-      601.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "co_personal_rep_signature": {
    "type": "text",
@@ -298,31 +280,13 @@
   },
   "witness_for_surety_1": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      73.5,
-      622.8,
-      286.5,
-      635.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "witness_for_surety_2": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      73.5,
-      657.4,
-      286.5,
-      670.4
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "surety_2_signature": {
    "type": "text",
@@ -385,12 +349,15 @@
    "widgets": [
     {
      "rect": [
-      92.0,
+      72.0,
       185.9,
-      295.7,
+      286.5,
       353.3
      ],
-     "page": 1
+     "page": 1,
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -399,12 +366,15 @@
    "widgets": [
     {
      "rect": [
-      313.7,
+      325.5,
       185.9,
-      517.3,
+      538.5,
       353.3
      ],
-     "page": 1
+     "page": 1,
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -570,9 +540,12 @@
      "rect": [
       72.0,
       516.4,
-      521.5,
-      556.8
-     ]
+      286.5,
+      544.0
+     ],
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -582,11 +555,14 @@
     {
      "page": 1,
      "rect": [
-      355.6,
+      325.5,
       516.4,
-      565.9,
-      556.8
-     ]
+      538.5,
+      544.0
+     ],
+     "multiline": true,
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -917,12 +893,9 @@
    "widgets": [
     {
      "page": 3,
-     "rect": [
-      72.0,
-      119.9,
-      542.0,
-      132.9
-     ]
+     "rect": [72.0, 151.0, 542.0, 164.0],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -931,12 +904,9 @@
    "widgets": [
     {
      "page": 3,
-     "rect": [
-      72.0,
-      151.0,
-      542.0,
-      164.0
-     ]
+     "rect": [72.0, 182.9, 542.0, 195.9],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -945,12 +915,9 @@
    "widgets": [
     {
      "page": 3,
-     "rect": [
-      72.0,
-      182.9,
-      542.0,
-      195.9
-     ]
+     "rect": [72.0, 214.0, 542.0, 227.0],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },

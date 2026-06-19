@@ -64,3 +64,16 @@ overrides:
     data_type: person_name
     validators:
       - "equals_field(applicant_full_legal_name, relaxed)"
+
+  notary_name:
+    category: signature
+    subcategory: notary_signature
+    data_type: signature
+    suppress_geometry: true
+    fill_strategy_source: wet_ink
+
+  special_admin_acceptance_date:
+    suppress_geometry: true
+
+  will_details:
+    suppress_geometry: true
