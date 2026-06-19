@@ -89,7 +89,7 @@
     "amount_claimed": {
       "label": "Amount Claimed",
       "data_type": "currency",
-      "alignment": "left",
+      "alignment": "right",
       "required": "optional",
       "format": "decimal",
       "currency": {
