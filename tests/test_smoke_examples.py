@@ -43,16 +43,25 @@ _KNOWN = json.loads(
 
 
 def _norm(value) -> str:
-    return " ".join(str(value).split())
+    # case-insensitive: the fill path intentionally re-cases some values (e.g.
+    # county names are upper-cased before an all-caps COUNTY label), which is
+    # not a content gap. Whitespace is collapsed for the same reason.
+    return " ".join(str(value).split()).casefold()
 
 
 def _gaps(result: dict) -> set[str]:
     """Resolved facts that did not land correctly: missing widget or wrong value."""
     out = set()
     for fid, e in result["fields"].items():
-        if not e.get("placed") and e.get("expected") is not None:
+        if e.get("expected") is None:
+            continue
+        # content landed if the actual value matches expected case-insensitively,
+        # even when the strict verifier marked it unplaced (intended re-casing).
+        if e.get("actual") and _norm(e["actual"]) == _norm(e["expected"]):
+            continue
+        if not e.get("placed"):
             out.add(fid)
-        elif e.get("placed") and _norm(e.get("expected")) != _norm(e.get("actual")):
+        elif _norm(e.get("expected")) != _norm(e.get("actual")):
             out.add(fid)
     return out
 

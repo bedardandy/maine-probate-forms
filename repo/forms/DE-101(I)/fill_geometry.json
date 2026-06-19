@@ -41,7 +41,7 @@
     {
      "page": 0,
      "rect": [
-      96.0,
+      110.0,
       154.0,
       286.0,
       167.0
@@ -959,8 +959,8 @@
       668.1,
       542.0,
       695.1
-     ]
-     ,"multiline": true
+     ],
+     "multiline": true
     }
    ]
   },
@@ -1188,7 +1188,7 @@
     },
     {
      "value": "personal_rep_bond",
-     "label": "A personal representative\u2019s bond is required and is attached",
+     "label": "A personal representative’s bond is required and is attached",
      "page": 2,
      "rect": [
       91.3,

@@ -15,7 +15,7 @@
      "rect": [
       54.0,
       112.0,
-      159.1,
+      156.1,
       125.0
      ]
     }
@@ -219,7 +219,7 @@
    "options": [
     {
      "value": "asked_first_parent",
-     "label": "Asked the child(ren)\u2019s first legal parent",
+     "label": "Asked the child(ren)’s first legal parent",
      "page": 1,
      "rect": [
       107.3,
@@ -230,7 +230,7 @@
     },
     {
      "value": "asked_guardian",
-     "label": "Asked the child(ren)\u2019s guardian or caregiver",
+     "label": "Asked the child(ren)’s guardian or caregiver",
      "page": 1,
      "rect": [
       107.3,
@@ -241,7 +241,7 @@
     },
     {
      "value": "asked_second_parent",
-     "label": "Asked the child(ren)\u2019s second legal parent",
+     "label": "Asked the child(ren)’s second legal parent",
      "page": 1,
      "rect": [
       107.3,

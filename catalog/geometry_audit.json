@@ -1,17 +1,17 @@
 {
   "forms_audited": 82,
-  "finding_count": 781,
+  "finding_count": 760,
   "by_code": {
     "wet_ink_widget_present": 129,
-    "uncovered_printed_rule": 469,
-    "widget_widget_collision": 40,
+    "uncovered_printed_rule": 481,
+    "widget_widget_collision": 34,
     "generic_or_orphan_name": 3,
-    "county_value_should_be_uppercase": 31,
+    "county_value_should_be_uppercase": 33,
     "suspicious_widget_chain_gap": 10,
-    "county_label_collision": 16,
-    "widget_native_text_collision": 35,
-    "widget_overruns_rule": 42,
+    "widget_native_text_collision": 25,
+    "widget_overruns_rule": 37,
     "choice_not_checkbox_sized": 2,
+    "county_label_collision": 2,
     "text_is_checkbox_sized": 4
   },
   "findings": [
@@ -603,20 +603,6 @@
     },
     {
       "form_id": "AD-011",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_name",
-      "page": 1,
-      "rect": [
-        72.0,
-        101.1,
-        179.0,
-        114.1
-      ],
-      "county_x": 180.0
-    },
-    {
-      "form_id": "AD-011",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_name",
@@ -728,20 +714,6 @@
     },
     {
       "form_id": "AD-028",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_probate_court",
-      "page": 1,
-      "rect": [
-        58.0,
-        123.0,
-        165.0,
-        136.0
-      ],
-      "county_x": 165.6
-    },
-    {
-      "form_id": "AD-028",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
@@ -842,20 +814,6 @@
     },
     {
       "form_id": "AF-101",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_probate_court",
-      "page": 1,
-      "rect": [
-        54.0,
-        112.0,
-        159.1,
-        125.0
-      ],
-      "county_x": 159.1
-    },
-    {
-      "form_id": "AF-101",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
@@ -915,20 +873,6 @@
         147.6,
         306.4,
         160.6
-      ]
-    },
-    {
-      "form_id": "AF-102",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "notarization_month",
-      "other_field_id": "notarization_year_suffix",
-      "overlap": [
-        187.0,
-        503.2,
-        210.0,
-        513.5
       ]
     },
     {
@@ -1027,20 +971,6 @@
       "code": "generic_or_orphan_name",
       "severity": "high",
       "field_id": "person_unknown_name"
-    },
-    {
-      "form_id": "AF-104",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county",
-      "page": 1,
-      "rect": [
-        54.0,
-        101.2,
-        161.0,
-        114.2
-      ],
-      "county_x": 162.0
     },
     {
       "form_id": "AF-104",
@@ -1208,20 +1138,6 @@
     },
     {
       "form_id": "AF-105",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
-      "field_id": "vehicle_value",
-      "other_field_id": "vehicle_registration",
-      "overlap": [
-        443.5,
-        169.7,
-        552.0,
-        172.0
-      ]
-    },
-    {
-      "form_id": "AF-105",
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "party_signature"
@@ -1231,6 +1147,13 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "notary_signature"
+    },
+    {
+      "form_id": "AF-105",
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
     },
     {
       "form_id": "AF-105",
@@ -1284,37 +1207,9 @@
     },
     {
       "form_id": "APP-1",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "appellant_address",
-      "other_field_id": "judgment_date",
-      "overlap": [
-        375.5,
-        189.5,
-        467.0,
-        192.0
-      ]
-    },
-    {
-      "form_id": "APP-1",
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "appellant_signature"
-    },
-    {
-      "form_id": "APP-1",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county",
-      "page": 1,
-      "rect": [
-        72.0,
-        121.5,
-        153.0,
-        134.5
-      ],
-      "county_x": 154.7
     },
     {
       "form_id": "APP-1",
@@ -1380,17 +1275,10 @@
     },
     {
       "form_id": "CN-1",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "notary_county",
-      "page": 3,
-      "rect": [
-        58.0,
-        100.8,
-        178.0,
-        113.8
-      ],
-      "county_x": 180.0
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county",
+      "page": 1
     },
     {
       "form_id": "CN-1",
@@ -1578,20 +1466,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "applicant_signature"
-    },
-    {
-      "form_id": "DE-101(I)",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "decedent_name_caption",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        98.9,
-        156.1,
-        107.2,
-        167.0
-      ]
     },
     {
       "form_id": "DE-101(I)",
@@ -2931,20 +2805,6 @@
     },
     {
       "form_id": "DE-401",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_name",
-      "page": 1,
-      "rect": [
-        64.0,
-        114.7,
-        173.0,
-        127.7
-      ],
-      "county_x": 173.0
-    },
-    {
-      "form_id": "DE-401",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_name",
@@ -3701,24 +3561,34 @@
       ]
     },
     {
+      "form_id": "DE-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.2,
+        161.4,
+        528.4,
+        174.4
+      ]
+    },
+    {
+      "form_id": "DE-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 2,
+      "rect": [
+        324.2,
+        216.0,
+        528.4,
+        229.0
+      ]
+    },
+    {
       "form_id": "DE-407",
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "signature"
-    },
-    {
-      "form_id": "DE-407",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "estate_of_decedent",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        102.0,
-        157.6,
-        107.2,
-        166.1
-      ]
     },
     {
       "form_id": "DE-407",
@@ -3737,20 +3607,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "petitioner_signature"
-    },
-    {
-      "form_id": "DE-501",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county",
-      "page": 1,
-      "rect": [
-        69.0,
-        99.9,
-        199.0,
-        112.9
-      ],
-      "county_x": 199.4
     },
     {
       "form_id": "DE-501",
@@ -3794,20 +3650,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "attorney_signature"
-    },
-    {
-      "form_id": "DE-502",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county",
-      "page": 1,
-      "rect": [
-        82.0,
-        90.6,
-        199.4,
-        103.6
-      ],
-      "county_x": 199.4
     },
     {
       "form_id": "DE-502",
@@ -4500,20 +4342,6 @@
     },
     {
       "form_id": "DE-603",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "notary_county",
-      "page": 2,
-      "rect": [
-        72.0,
-        301.1,
-        193.0,
-        314.1
-      ],
-      "county_x": 194.5
-    },
-    {
-      "form_id": "DE-603",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "notary_county",
@@ -4757,25 +4585,11 @@
       "code": "widget_widget_collision",
       "severity": "high",
       "page": 1,
-      "field_id": "dentist_details",
-      "other_field_id": "other_treatment_type",
-      "overlap": [
-        132.4,
-        640.2,
-        247.6,
-        647.7
-      ]
-    },
-    {
-      "form_id": "GS-014",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
       "field_id": "treated_by_other",
       "other_field_id": "other_treatment_type",
       "overlap": [
         132.4,
-        640.2,
+        648.5,
         247.6,
         651.7
       ]
@@ -4791,20 +4605,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "co_guardian_signature"
-    },
-    {
-      "form_id": "GS-014",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "guardian_statement_name",
-      "page": 3,
-      "native_text": "state",
-      "overlap": [
-        409.0,
-        533.3,
-        429.2,
-        546.0
-      ]
     },
     {
       "form_id": "GS-014",
@@ -5271,47 +5071,10 @@
     },
     {
       "form_id": "N-105",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_probate_court",
-      "page": 1,
-      "rect": [
-        43.2,
-        111.4,
-        115.2,
-        124.4
-      ],
-      "county_x": 115.2
-    },
-    {
-      "form_id": "N-105",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
       "page": 1
-    },
-    {
-      "form_id": "N-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "estate_of_decedent",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        72.9,
-        139.8,
-        82.0,
-        149.6
-      ]
-    },
-    {
-      "form_id": "N-105",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "estate_of_decedent",
-      "page": 1,
-      "left_overrun": 23.7,
-      "right_overrun": -24.3
     },
     {
       "form_id": "N-105",
@@ -5487,20 +5250,6 @@
     },
     {
       "form_id": "N-115",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county",
-      "page": 1,
-      "rect": [
-        71.2,
-        98.4,
-        178.2,
-        111.4
-      ],
-      "county_x": 180.0
-    },
-    {
-      "form_id": "N-115",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
@@ -5534,52 +5283,10 @@
     },
     {
       "form_id": "N-117",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county",
-      "page": 1,
-      "rect": [
-        72.0,
-        98.4,
-        179.0,
-        111.4
-      ],
-      "county_x": 180.0
-    },
-    {
-      "form_id": "N-117",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county",
       "page": 1
-    },
-    {
-      "form_id": "N-117",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "appointee_name",
-      "page": 1,
-      "native_text": "appointed",
-      "overlap": [
-        433.4,
-        225.0,
-        488.6,
-        238.0
-      ]
-    },
-    {
-      "form_id": "N-117",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "appointee_name",
-      "page": 1,
-      "native_text": "(check",
-      "overlap": [
-        492.1,
-        225.0,
-        529.4,
-        238.0
-      ]
     },
     {
       "form_id": "N-117",
@@ -6764,20 +6471,6 @@
     },
     {
       "form_id": "PP-405",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "surety_1_affidavit_county",
-      "page": 3,
-      "rect": [
-        72.0,
-        216.0,
-        193.0,
-        229.0
-      ],
-      "county_x": 194.5
-    },
-    {
-      "form_id": "PP-405",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "surety_1_affidavit_county",
@@ -6881,76 +6574,12 @@
     },
     {
       "form_id": "PP-406",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 3,
-      "field_id": "calc_gross_inventory",
-      "other_field_id": "calc_gross_inventory",
-      "overlap": [
-        300.4,
-        134.8,
-        305.0,
-        147.5
-      ]
-    },
-    {
-      "form_id": "PP-406",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 3,
-      "field_id": "calc_net_inventory",
-      "other_field_id": "calc_net_inventory",
-      "overlap": [
-        300.4,
-        219.2,
-        450.0,
-        232.2
-      ]
-    },
-    {
-      "form_id": "PP-406",
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "conservator_signature"
     },
     {
       "form_id": "PP-406",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "calc_gross_inventory",
-      "page": 3,
-      "left_overrun": 0.0,
-      "right_overrun": 18.6
-    },
-    {
-      "form_id": "PP-406",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "calc_gross_inventory",
-      "page": 3,
-      "left_overrun": -12.5,
-      "right_overrun": 7.8
-    },
-    {
-      "form_id": "PP-406",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "calc_net_inventory",
-      "page": 3,
-      "left_overrun": 0.0,
-      "right_overrun": 163.6
-    },
-    {
-      "form_id": "PP-406",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "calc_net_inventory",
-      "page": 3,
-      "left_overrun": -12.5,
-      "right_overrun": 7.8
-    },
-    {
-      "form_id": "PP-406",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -7235,6 +6864,126 @@
         427.5,
         554.3,
         440.5
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        134.8,
+        286.4,
+        147.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        135.8,
+        286.4,
+        148.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        134.8,
+        442.2,
+        147.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        135.8,
+        442.2,
+        148.8
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        136.3,
+        442.2,
+        149.3
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        219.2,
+        286.4,
+        232.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        72.0,
+        220.2,
+        286.4,
+        233.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        219.2,
+        442.2,
+        232.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        220.2,
+        442.2,
+        233.2
+      ]
+    },
+    {
+      "form_id": "PP-406",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        287.9,
+        220.6,
+        442.2,
+        233.6
       ]
     },
     {
@@ -7576,20 +7325,6 @@
     },
     {
       "form_id": "PP-502",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "medical_conditions",
-      "page": 1,
-      "native_text": "1.",
-      "overlap": [
-        108.0,
-        256.0,
-        117.0,
-        269.0
-      ]
-    },
-    {
-      "form_id": "PP-502",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 3,
@@ -7691,48 +7426,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "register_of_probate_signature"
-    },
-    {
-      "form_id": "PP-506",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "medical_conditions",
-      "page": 3,
-      "native_text": "Condition:",
-      "overlap": [
-        143.3,
-        255.3,
-        181.6,
-        265.1
-      ]
-    },
-    {
-      "form_id": "PP-506",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "cognition_detail",
-      "page": 3,
-      "native_text": "Abilities:",
-      "overlap": [
-        153.2,
-        404.8,
-        186.1,
-        414.7
-      ]
-    },
-    {
-      "form_id": "PP-506",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "risk_detail",
-      "page": 3,
-      "native_text": "Enhancements:",
-      "overlap": [
-        109.5,
-        646.3,
-        164.7,
-        656.1
-      ]
     },
     {
       "form_id": "PP-506",

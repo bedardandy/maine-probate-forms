@@ -18,8 +18,7 @@
       "choice_not_checkbox_sized": 2
     },
     "AF-102": {
-      "widget_overruns_rule": 2,
-      "widget_widget_collision": 1
+      "widget_overruns_rule": 2
     },
     "AF-103": {
       "widget_overruns_rule": 1
@@ -31,13 +30,7 @@
     },
     "AF-105": {
       "widget_native_text_collision": 1,
-      "widget_widget_collision": 5
-    },
-    "APP-1": {
-      "widget_widget_collision": 1
-    },
-    "DE-101(I)": {
-      "widget_native_text_collision": 1
+      "widget_widget_collision": 4
     },
     "DE-201(I)": {
       "widget_native_text_collision": 1
@@ -50,9 +43,6 @@
       "widget_widget_collision": 1
     },
     "DE-406": {
-      "widget_native_text_collision": 1
-    },
-    "DE-407": {
       "widget_native_text_collision": 1
     },
     "DE-503": {
@@ -72,8 +62,7 @@
       "widget_native_text_collision": 1
     },
     "GS-014": {
-      "widget_native_text_collision": 1,
-      "widget_widget_collision": 9
+      "widget_widget_collision": 8
     },
     "MISC-101": {
       "widget_native_text_collision": 2,
@@ -85,15 +74,11 @@
       "widget_widget_collision": 1
     },
     "N-105": {
-      "widget_native_text_collision": 1,
-      "widget_overruns_rule": 3
+      "widget_overruns_rule": 2
     },
     "N-115": {
       "widget_native_text_collision": 1,
       "widget_widget_collision": 1
-    },
-    "N-117": {
-      "widget_native_text_collision": 2
     },
     "N-118": {
       "widget_native_text_collision": 1,
@@ -127,20 +112,11 @@
       "widget_native_text_collision": 6,
       "widget_widget_collision": 1
     },
-    "PP-406": {
-      "widget_overruns_rule": 4
-    },
     "PP-407": {
       "widget_widget_collision": 1
     },
     "PP-412": {
       "widget_widget_collision": 1
-    },
-    "PP-502": {
-      "widget_native_text_collision": 1
-    },
-    "PP-506": {
-      "widget_native_text_collision": 3
     },
     "PP-507": {
       "widget_native_text_collision": 2
