@@ -55,7 +55,7 @@
     {
      "page": 0,
      "rect": [
-      72.0,
+      90.0,
       221.6,
       242.0,
       234.6
@@ -69,7 +69,7 @@
     {
      "page": 0,
      "rect": [
-      333.0,
+      343.0,
       221.6,
       509.0,
       234.6
@@ -767,17 +767,8 @@
   },
   "unlabeled_widget_after_email": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      108.0,
-      461.8,
-      530.0,
-      489.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "notary_county": {
    "type": "text",

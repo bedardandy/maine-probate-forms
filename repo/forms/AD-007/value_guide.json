@@ -198,6 +198,20 @@
       "required": "optional",
       "expects": "free text answering the printed prompt"
     },
+    "parent1_q11": {
+      "label": "Parent1 Q11",
+      "data_type": "text",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "free text answering the printed prompt"
+    },
+    "parent2_q11": {
+      "label": "Parent2 Q11",
+      "data_type": "text",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "free text answering the printed prompt"
+    },
     "parent1_q12": {
       "label": "Parent1 Q12",
       "data_type": "text",

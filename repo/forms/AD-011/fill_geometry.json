@@ -114,6 +114,62 @@
     }
    ]
   },
+  "adoptee_date_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      320.0,
+      386.0,
+      544.0,
+      399.0
+     ]
+    }
+   ]
+  },
+  "adoptee_place_of_birth": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      323.0,
+      413.6,
+      544.0,
+      426.6
+     ]
+    }
+   ]
+  },
+  "adoptee_birth_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      312.0,
+      441.2,
+      544.0,
+      454.2
+     ]
+    }
+   ]
+  },
+  "adoptee_proposed_new_name": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      335.0,
+      510.2,
+      544.0,
+      523.2
+     ]
+    }
+   ]
+  },
   "adoptee_residence": {
    "type": "text",
    "widgets": [

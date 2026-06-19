@@ -72,6 +72,61 @@
       "required": "optional",
       "expects": "free text answering the printed prompt"
     },
+    "adoptee_date_of_birth": {
+      "label": "Adoptee Date Of Birth",
+      "data_type": "date",
+      "alignment": "left",
+      "required": "optional",
+      "format": "YYYY-MM-DD or MM/DD/YYYY",
+      "expects": "a real calendar date",
+      "examples": [
+        "2026-03-18",
+        "03/18/2026"
+      ],
+      "avoid": [
+        "vague text like 'last spring' or 'unknown'",
+        "an impossible/!calendar date",
+        "a value that runs across a printed comma or '20__' stub — those are separate day/month/year fields",
+        "a date in the future"
+      ]
+    },
+    "adoptee_place_of_birth": {
+      "label": "Adoptee Place Of Birth",
+      "data_type": "text",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "free text answering the printed prompt"
+    },
+    "adoptee_birth_name": {
+      "label": "Adoptee Birth Name",
+      "data_type": "person_name",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "full legal name as it should appear on the order",
+      "examples": [
+        "Margaret L. Walsh"
+      ],
+      "avoid": [
+        "initials or nicknames",
+        "a title with no name",
+        "'Last, First' order unless the line calls for it"
+      ]
+    },
+    "adoptee_proposed_new_name": {
+      "label": "Adoptee Proposed New Name",
+      "data_type": "person_name",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "full legal name as it should appear on the order",
+      "examples": [
+        "Margaret L. Walsh"
+      ],
+      "avoid": [
+        "initials or nicknames",
+        "a title with no name",
+        "'Last, First' order unless the line calls for it"
+      ]
+    },
     "adoptee_residence": {
       "label": "Adoptee Residence",
       "data_type": "text",

@@ -1,6 +1,6 @@
 {
   "forms_audited": 82,
-  "finding_count": 760,
+  "finding_count": 759,
   "by_code": {
     "wet_ink_widget_present": 129,
     "uncovered_printed_rule": 481,
@@ -8,7 +8,7 @@
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 33,
     "suspicious_widget_chain_gap": 10,
-    "widget_native_text_collision": 25,
+    "widget_native_text_collision": 24,
     "widget_overruns_rule": 37,
     "choice_not_checkbox_sized": 2,
     "county_label_collision": 2,
@@ -403,30 +403,6 @@
       "form_id": "AD-007",
       "code": "uncovered_printed_rule",
       "severity": "low",
-      "page": 2,
-      "rect": [
-        222.2,
-        717.4,
-        389.6,
-        730.4
-      ]
-    },
-    {
-      "form_id": "AD-007",
-      "code": "uncovered_printed_rule",
-      "severity": "low",
-      "page": 2,
-      "rect": [
-        390.1,
-        717.4,
-        557.5,
-        730.4
-      ]
-    },
-    {
-      "form_id": "AD-007",
-      "code": "uncovered_printed_rule",
-      "severity": "low",
       "page": 3,
       "rect": [
         54.5,
@@ -468,6 +444,30 @@
         54.5,
         120.1,
         221.8,
+        133.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        222.2,
+        120.1,
+        389.6,
+        133.1
+      ]
+    },
+    {
+      "form_id": "AD-007",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        390.1,
+        120.1,
+        557.5,
         133.1
       ]
     },
@@ -657,20 +657,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "notary_signature"
-    },
-    {
-      "form_id": "AD-026",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "petitioner_caption",
-      "page": 1,
-      "native_text": "By:",
-      "overlap": [
-        72.0,
-        226.1,
-        85.9,
-        234.6
-      ]
     },
     {
       "form_id": "AD-026",

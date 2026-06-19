@@ -71,3 +71,10 @@ interpreted by `scripts/validate_filled.py`.
 green    23
 yellow    5
 ```
+
+## Filing note (warning, not a hard requirement)
+
+This form's text states the Petitioner has attached **a certified copy of the
+Adoptee's birth record** and **a certified copy of the foreign decree of
+adoption**. Treat both as expected attachments for a complete filing and warn
+if they are not provided — do not block (not a lock).

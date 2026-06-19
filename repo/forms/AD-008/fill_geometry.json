@@ -79,31 +79,13 @@
   },
   "petitioner_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      45.0,
-      189.8,
-      570.0,
-      202.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "certification_text": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      45.0,
-      313.6,
-      570.0,
-      326.5
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "disbursements": {
    "type": "select_many",
