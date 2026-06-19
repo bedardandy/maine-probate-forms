@@ -1,5 +1,6 @@
 field_id,label,widget_id,type,data_type,category,subcategory,slot_group,slot_index,risk_score,risk_tier,fill_deterministic,fill_llm_eligible,fill_human_required,fill_source,validators
-court_type,Court Type,,select_one,checkbox,legal_choice,court_type,,,60,orange,,,Y,human_decision,
+county_probate_court,County Probate Court,,text,entity_name,case_constant,county_probate_court,,,0,green,Y,,,case_dict.county_probate_court,populate_from_case_dict
+docket_no,Docket No.,,text,docket_number,case_constant,docket_no,,,0,green,Y,,,case_dict.docket_no,populate_from_case_dict
 minor_child_name,Minor Child Name,W003,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 first_legal_parent_info,First Legal Parent Info,W005,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,
 second_legal_parent_info,Second Legal Parent Info,W007,text,text,narrative_derived,free_text,,,5,green,,Y,,llm_over_narrative,

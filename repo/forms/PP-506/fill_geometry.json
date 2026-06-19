@@ -18,15 +18,6 @@
       177.0,
       132.4
      ]
-    },
-    {
-     "page": 0,
-     "rect": [
-      422.0,
-      118.7,
-      543.4,
-      131.7
-     ]
     }
    ]
   },
@@ -921,6 +912,20 @@
    "type": "text",
    "widgets": [],
    "geometry_source": "suppressed_wet_ink"
+  },
+  "docket_number": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      422.0,
+      118.7,
+      543.4,
+      131.7
+     ]
+    }
+   ]
   }
  }
 }

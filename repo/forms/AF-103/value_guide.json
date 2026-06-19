@@ -41,6 +41,21 @@
         "the trailing word 'County'"
       ]
     },
+    "county_probate_court": {
+      "label": "County Probate Court",
+      "data_type": "text",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "a Maine county name (the form prints 'COUNTY'/'Probate Court'); rendered upper-case, without the word 'County'",
+      "examples": [
+        "CUMBERLAND",
+        "YORK"
+      ],
+      "avoid": [
+        "a person or court name",
+        "the trailing word 'County'"
+      ]
+    },
     "new_name": {
       "label": "New Name",
       "data_type": "text",

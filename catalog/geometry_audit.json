@@ -1,16 +1,15 @@
 {
   "forms_audited": 82,
-  "finding_count": 688,
+  "finding_count": 685,
   "by_code": {
     "uncovered_printed_rule": 560,
     "generic_or_orphan_name": 3,
-    "county_value_should_be_uppercase": 33,
+    "county_value_should_be_uppercase": 34,
     "suspicious_widget_chain_gap": 10,
     "widget_widget_collision": 27,
-    "widget_native_text_collision": 24,
-    "widget_overruns_rule": 24,
-    "choice_not_checkbox_sized": 2,
-    "county_label_collision": 2,
+    "widget_native_text_collision": 22,
+    "widget_overruns_rule": 23,
+    "county_label_collision": 3,
     "text_is_checkbox_sized": 3
   },
   "findings": [
@@ -697,29 +696,24 @@
     },
     {
       "form_id": "AF-101.vA",
-      "code": "choice_not_checkbox_sized",
+      "code": "county_label_collision",
       "severity": "high",
-      "field_id": "court_type",
+      "field_id": "county_probate_court",
       "page": 1,
       "rect": [
         54.0,
         108.2,
         159.1,
         126.7
-      ]
+      ],
+      "county_x": 159.1
     },
     {
       "form_id": "AF-101.vA",
-      "code": "choice_not_checkbox_sized",
-      "severity": "high",
-      "field_id": "court_type",
-      "page": 1,
-      "rect": [
-        404.0,
-        111.0,
-        521.0,
-        127.0
-      ]
+      "code": "county_value_should_be_uppercase",
+      "severity": "medium",
+      "field_id": "county_probate_court",
+      "page": 1
     },
     {
       "form_id": "AF-101.vA",
@@ -3687,20 +3681,6 @@
     },
     {
       "form_id": "DE-503",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "estate_of_decedent",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        98.9,
-        156.4,
-        107.2,
-        167.0
-      ]
-    },
-    {
-      "form_id": "DE-503",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 3,
@@ -3752,29 +3732,6 @@
         252.0,
         654.8
       ]
-    },
-    {
-      "form_id": "DE-506",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "estate_of_decedent",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        98.9,
-        144.6,
-        107.2,
-        154.7
-      ]
-    },
-    {
-      "form_id": "DE-506",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "estate_of_decedent",
-      "page": 1,
-      "left_overrun": 14.8,
-      "right_overrun": -14.0
     },
     {
       "form_id": "DE-506",

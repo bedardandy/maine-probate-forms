@@ -7,33 +7,6 @@
  "n_pages": 2,
  "source_fused": "AF-101 Jurisdictional Affidavit (Rev. 03-01-2025)_fused.pdf",
  "fields": {
-  "court_type": {
-   "type": "select_one",
-   "options": [
-    {
-     "value": "county_probate",
-     "label": "County Probate Court",
-     "page": 0,
-     "rect": [
-      54.0,
-      108.2,
-      159.1,
-      126.7
-     ]
-    },
-    {
-     "value": "docket_no",
-     "label": "Docket No.",
-     "page": 0,
-     "rect": [
-      404.0,
-      111.0,
-      521.0,
-      127.0
-     ]
-    }
-   ]
-  },
   "minor_child_name": {
    "type": "text",
    "widgets": [
@@ -474,6 +447,34 @@
       663.0,
       504.0,
       676.0
+     ]
+    }
+   ]
+  },
+  "county_probate_court": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      54.0,
+      108.2,
+      159.1,
+      126.7
+     ]
+    }
+   ]
+  },
+  "docket_no": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 0,
+     "rect": [
+      404.0,
+      111.0,
+      521.0,
+      127.0
      ]
     }
    ]

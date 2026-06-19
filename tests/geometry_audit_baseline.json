@@ -12,9 +12,6 @@
     "AD-028": {
       "widget_overruns_rule": 1
     },
-    "AF-101.vA": {
-      "choice_not_checkbox_sized": 2
-    },
     "AF-103": {
       "widget_overruns_rule": 1
     },
@@ -42,15 +39,8 @@
     "DE-406": {
       "widget_native_text_collision": 1
     },
-    "DE-503": {
-      "widget_native_text_collision": 1
-    },
     "DE-505": {
       "widget_overruns_rule": 2
-    },
-    "DE-506": {
-      "widget_native_text_collision": 1,
-      "widget_overruns_rule": 1
     },
     "DE-601": {
       "widget_overruns_rule": 1

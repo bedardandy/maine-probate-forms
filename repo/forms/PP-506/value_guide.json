@@ -17,6 +17,16 @@
         "the trailing word 'County'"
       ]
     },
+    "docket_number": {
+      "label": "Docket Number",
+      "data_type": "docket_number",
+      "alignment": "left",
+      "required": "optional",
+      "expects": "a Maine probate/district docket number",
+      "avoid": [
+        "a docket from another jurisdiction's format"
+      ]
+    },
     "respondent_name": {
       "label": "In re: Respondent",
       "data_type": "text",
