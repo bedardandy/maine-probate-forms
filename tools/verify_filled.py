@@ -54,6 +54,22 @@ def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", str(s or "")).strip().lower()
 
 
+def _text_match(expected, actual, field_id: str) -> bool:
+    """Exact match, tolerating the fill path's county upper-casing transform.
+
+    fill_pdf._value_for_printed_context upper-cases a county value sitting before
+    a printed COUNTY label, so an exact string compare would flag a normal value
+    like 'Cumberland' (written 'CUMBERLAND') as a mismatch. County names are
+    case-insensitive, so accept a case-insensitive match for county fields.
+    """
+    e, a = str(expected or "").strip(), str(actual or "").strip()
+    if e == a:
+        return True
+    if "county" in field_id.lower() and e.upper() == a.upper():
+        return True
+    return False
+
+
 def verify_filled(form_id: str, case: dict, filled_pdf,
                   root: pathlib.Path = ROOT) -> dict:
     plan = build_plan(form_id, case, root=root)
@@ -69,6 +85,25 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
     placed = mismatched = missing = overflowed = 0
     for fid, expected in plan["resolved"].items():
         spec = geom.get(fid) or {}
+        if spec.get("type") == "enabler" and spec.get("widgets"):
+            # fill_pdf writes a checkbox (not text) for a truthy enabler; mirror
+            # that here so a checked enabler isn't read as a text mismatch.
+            wants_checked = str(expected).strip().lower() in _CHECKED
+            w = widgets.get(fid)
+            is_checked = bool(w and str(w["value"]).strip().lower() in _CHECKED)
+            entry = {"placed": is_checked == wants_checked,
+                     "expected": expected,
+                     "actual": "checked" if is_checked else "unchecked",
+                     "page": (w or {}).get("page"), "kind": "enabler"}
+            fields[fid] = entry
+            entry["provenance"] = plan.get("provenance", {}).get(fid)
+            if entry["placed"]:
+                placed += 1
+            elif w is None:
+                missing += 1
+            else:
+                mismatched += 1
+            continue
         if spec.get("options"):                      # choice field
             # mirror fill_pdf: a select_many list arrives rendered as "a; b"
             vals = (expected if isinstance(expected, list)
@@ -101,8 +136,7 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
                 if nxt:
                     actual = f"{actual or ''} {nxt}".strip()
                 i += 1
-            ok = (w is not None and
-                  str(actual or "").strip() == str(expected or "").strip())
+            ok = w is not None and _text_match(expected, actual, fid)
             kind = "text"
             # Overflow: the box-below value did not fit, so fill_pdf wrote a
             # "See attached Addendum N for ..." reference and moved the full

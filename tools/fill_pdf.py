@@ -503,22 +503,17 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
                     subject, content))
                 continue
             parts = _split_for_widgets(str(val), spec["widgets"])
-            first_page = spec["widgets"][0]["page"]
             for i, wdg in enumerate(spec["widgets"]):
-                # value flows across the continuation chain width-by-width
-                # A continuation on a later PDF page is explicitly named as an
-                # overflow widget. This makes cross-page table continuations
-                # distinguishable in Acrobat and alignment review tools.
-                continuation_name = (
-                    f"{fid}__overflow"
-                    if i and wdg["page"] != first_page
-                    else f"{fid}__{i}"
-                )
+                # value flows across the continuation chain width-by-width. Every
+                # later widget keeps its index (`<field_id>__<i>`) so cross-page
+                # continuation segments stay uniquely named and individually
+                # verifiable -- a constant name would collapse them into one.
+                name = fid if i == 0 else f"{fid}__{i}"
                 printed_value = _value_for_printed_context(
                     doc[wdg["page"]], wdg["rect"], fid,
                     parts[i] if i < len(parts) else "")
                 _add_text(doc[wdg["page"]], wdg["rect"],
-                          fid if i == 0 else continuation_name,
+                          name,
                           printed_value, align=align,
                           border=bool(wdg.get("border")),
                           force_multiline=bool(wdg.get("multiline")))
