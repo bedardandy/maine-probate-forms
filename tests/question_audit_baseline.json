@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-form actionable question-audit counts. test requires current<=baseline.",
+  "_comment": "Per-form actionable question-audit counts.",
   "counts": {
     "AF-102": {
       "text_on_signature_line": 1

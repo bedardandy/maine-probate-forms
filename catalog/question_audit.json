@@ -1,24 +1,14 @@
 {
   "forms_audited": 82,
-  "finding_count": 149,
+  "finding_count": 118,
   "by_code": {
-    "alignment_suggestion": 96,
+    "alignment_suggestion": 99,
     "symbol_splits_underline": 2,
     "text_on_signature_line": 2,
     "uncovered_question": 2,
-    "underline_buffer": 47
+    "underline_buffer": 13
   },
   "findings": [
-    {
-      "form_id": "AD-011",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_no",
-      "page": 0,
-      "side": "left",
-      "gap": -0.4,
-      "neighbor": "NO."
-    },
     {
       "form_id": "AD-026",
       "code": "alignment_suggestion",
@@ -39,46 +29,6 @@
       "neighbor": "(birth"
     },
     {
-      "form_id": "AD-028",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "date_signed",
-      "page": 1,
-      "side": "left",
-      "gap": -0.2,
-      "neighbor": "Date:"
-    },
-    {
-      "form_id": "AF-101",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "affiant_name",
-      "page": 0,
-      "side": "left",
-      "gap": -0.4,
-      "neighbor": "I,"
-    },
-    {
-      "form_id": "AF-101",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "affiant_name",
-      "page": 0,
-      "side": "left",
-      "gap": -0.4,
-      "neighbor": "I,"
-    },
-    {
-      "form_id": "AF-101",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "affiant_name",
-      "page": 1,
-      "side": "left",
-      "gap": 0.1,
-      "neighbor": "I,"
-    },
-    {
       "form_id": "AF-101",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -86,16 +36,6 @@
       "page": 1,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "AF-101",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "probate_register_name",
-      "page": 1,
-      "side": "left",
-      "gap": -0.5,
-      "neighbor": "the"
     },
     {
       "form_id": "AF-101",
@@ -134,26 +74,6 @@
       "want": "center"
     },
     {
-      "form_id": "AF-101",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "notary_date",
-      "page": 1,
-      "side": "left",
-      "gap": 0.1,
-      "neighbor": "Dated:"
-    },
-    {
-      "form_id": "AF-101.vA",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "probate_register_name",
-      "page": 1,
-      "side": "left",
-      "gap": -0.5,
-      "neighbor": "the"
-    },
-    {
       "form_id": "AF-101.vA",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -188,16 +108,6 @@
       "page": 1,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "AF-101.vA",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "notary_date",
-      "page": 1,
-      "side": "left",
-      "gap": 0.1,
-      "neighbor": "Dated:"
     },
     {
       "form_id": "AF-102",
@@ -246,36 +156,6 @@
     },
     {
       "form_id": "AF-103",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_number",
-      "page": 0,
-      "side": "left",
-      "gap": -0.3,
-      "neighbor": "NO."
-    },
-    {
-      "form_id": "AF-103",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "county_of_residence",
-      "page": 0,
-      "side": "left",
-      "gap": 0.4,
-      "neighbor": "of"
-    },
-    {
-      "form_id": "AF-103",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "new_name",
-      "page": 0,
-      "side": "left",
-      "gap": -0.8,
-      "neighbor": "to"
-    },
-    {
-      "form_id": "AF-103",
       "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "notary_county",
@@ -285,13 +165,12 @@
     },
     {
       "form_id": "AF-103",
-      "code": "underline_buffer",
+      "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "notary_county",
       "page": 0,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "above-named"
+      "have": "left",
+      "want": "center"
     },
     {
       "form_id": "AF-104",
@@ -313,13 +192,12 @@
     },
     {
       "form_id": "AF-104",
-      "code": "underline_buffer",
+      "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "family_friends_date",
       "page": 1,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "Date:"
+      "have": "left",
+      "want": "center"
     },
     {
       "form_id": "AF-104",
@@ -460,26 +338,6 @@
       "want": "center"
     },
     {
-      "form_id": "DE-101(I)",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_number",
-      "page": 0,
-      "side": "left",
-      "gap": -0.9,
-      "neighbor": "NO."
-    },
-    {
-      "form_id": "DE-201",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "will_date",
-      "page": 2,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "dated"
-    },
-    {
       "form_id": "DE-201(I)",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -487,16 +345,6 @@
       "page": 2,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "DE-401",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_number",
-      "page": 0,
-      "side": "left",
-      "gap": -0.5,
-      "neighbor": "NO."
     },
     {
       "form_id": "DE-401",
@@ -629,26 +477,6 @@
       "want": "center"
     },
     {
-      "form_id": "DE-501",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_no",
-      "page": 0,
-      "side": "left",
-      "gap": -0.3,
-      "neighbor": "NO."
-    },
-    {
-      "form_id": "DE-502",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_no",
-      "page": 0,
-      "side": "left",
-      "gap": -0.5,
-      "neighbor": "NO."
-    },
-    {
       "form_id": "DE-502",
       "code": "underline_buffer",
       "severity": "low",
@@ -657,16 +485,6 @@
       "side": "left",
       "gap": 1.0,
       "neighbor": "$"
-    },
-    {
-      "form_id": "DE-503",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "estate_of_decedent",
-      "page": 0,
-      "side": "left",
-      "gap": 0.7,
-      "neighbor": "Estate"
     },
     {
       "form_id": "DE-504",
@@ -698,16 +516,6 @@
       "want": "center"
     },
     {
-      "form_id": "DE-602",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "estate_of_decedent",
-      "page": 0,
-      "side": "left",
-      "gap": 0.7,
-      "neighbor": "Estate"
-    },
-    {
       "form_id": "DE-605",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -717,24 +525,13 @@
       "want": "center"
     },
     {
-      "form_id": "GS-014",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "minor_grade_level",
-      "page": 1,
-      "side": "left",
-      "gap": 0.2,
-      "neighbor": "level:"
-    },
-    {
       "form_id": "MISC-101",
-      "code": "underline_buffer",
+      "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "movant_name_address",
       "page": 0,
-      "side": "left",
-      "gap": 0.5,
-      "neighbor": "1."
+      "have": "left",
+      "want": "center"
     },
     {
       "form_id": "MISC-102",
@@ -772,16 +569,6 @@
       "page": 0,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "appear_before_date",
-      "page": 0,
-      "side": "left",
-      "gap": -0.6,
-      "neighbor": "on"
     },
     {
       "form_id": "MISC-102",
@@ -855,16 +642,6 @@
       "want": "center"
     },
     {
-      "form_id": "N-107",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "date",
-      "page": 0,
-      "side": "left",
-      "gap": -0.8,
-      "neighbor": "Date"
-    },
-    {
       "form_id": "N-112",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -872,26 +649,6 @@
       "page": 0,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "N-115",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_number",
-      "page": 0,
-      "side": "left",
-      "gap": -0.6,
-      "neighbor": "DOCKET"
-    },
-    {
-      "form_id": "N-117",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_number",
-      "page": 0,
-      "side": "left",
-      "gap": 0.4,
-      "neighbor": "DOCKET"
     },
     {
       "form_id": "N-118",
@@ -973,26 +730,6 @@
       "page": 1,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "PB-007",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "county_probate",
-      "page": 0,
-      "side": "left",
-      "gap": -0.1,
-      "neighbor": "County:"
-    },
-    {
-      "form_id": "PB-007",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_no_probate",
-      "page": 0,
-      "side": "left",
-      "gap": -0.1,
-      "neighbor": "No."
     },
     {
       "form_id": "PB-007",
@@ -1104,26 +841,6 @@
     },
     {
       "form_id": "PB-007.vA",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "county_probate",
-      "page": 0,
-      "side": "left",
-      "gap": -0.1,
-      "neighbor": "County:"
-    },
-    {
-      "form_id": "PB-007.vA",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "docket_no_probate",
-      "page": 0,
-      "side": "left",
-      "gap": -0.1,
-      "neighbor": "No."
-    },
-    {
-      "form_id": "PB-007.vA",
       "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "expanded_person_1_name",
@@ -1232,16 +949,6 @@
     },
     {
       "form_id": "PP-210",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "appointee_name",
-      "page": 0,
-      "side": "left",
-      "gap": 0.0,
-      "neighbor": "3."
-    },
-    {
-      "form_id": "PP-210",
       "code": "alignment_suggestion",
       "severity": "low",
       "field_id": "notice_of_intent_date_filed",
@@ -1331,16 +1038,6 @@
       "want": "center"
     },
     {
-      "form_id": "PP-413",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "respondent_name",
-      "page": 0,
-      "side": "left",
-      "gap": 0.3,
-      "neighbor": "Re:"
-    },
-    {
       "form_id": "PP-502",
       "code": "alignment_suggestion",
       "severity": "low",
@@ -1357,16 +1054,6 @@
       "page": 1,
       "have": "left",
       "want": "center"
-    },
-    {
-      "form_id": "PP-505",
-      "code": "underline_buffer",
-      "severity": "low",
-      "field_id": "dated",
-      "page": 1,
-      "side": "left",
-      "gap": -0.3,
-      "neighbor": "Dated:"
     },
     {
       "form_id": "PP-507",

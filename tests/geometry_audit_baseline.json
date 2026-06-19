@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-form high-value geometry-audit finding counts (self widget/widget collisions excluded). test_geometry_audit_baseline.py requires current counts <= these.",
+  "_comment": "Per-form high-value geometry-audit finding counts (self widget/widget collisions excluded).",
   "counts": {
     "AD-008": {
       "generic_or_orphan_name": 1
@@ -109,9 +109,6 @@
       "widget_widget_collision": 1
     },
     "PP-407": {
-      "widget_widget_collision": 1
-    },
-    "PP-412": {
       "widget_widget_collision": 1
     },
     "PP-507": {

@@ -1,12 +1,12 @@
 {
   "forms_audited": 82,
-  "finding_count": 701,
+  "finding_count": 698,
   "by_code": {
     "uncovered_printed_rule": 556,
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 33,
     "suspicious_widget_chain_gap": 10,
-    "widget_widget_collision": 31,
+    "widget_widget_collision": 28,
     "widget_native_text_collision": 24,
     "widget_overruns_rule": 36,
     "choice_not_checkbox_sized": 2,
@@ -857,7 +857,7 @@
       "severity": "medium",
       "field_id": "county_of_residence",
       "page": 1,
-      "left_overrun": -0.5,
+      "left_overrun": -2.6,
       "right_overrun": 5.0
     },
     {
@@ -3804,20 +3804,6 @@
         641.8,
         252.0,
         654.8
-      ]
-    },
-    {
-      "form_id": "DE-506",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "probate_estate_value",
-      "other_field_id": "probate_estate_value",
-      "overlap": [
-        419.6,
-        383.2,
-        530.1,
-        389.0
       ]
     },
     {
@@ -7002,20 +6988,6 @@
     },
     {
       "form_id": "PP-407",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
-      "field_id": "conservator_print_info",
-      "other_field_id": "conservator_print_info",
-      "overlap": [
-        326.0,
-        222.6,
-        528.0,
-        231.1
-      ]
-    },
-    {
-      "form_id": "PP-407",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 2,
@@ -7168,20 +7140,6 @@
         357.7,
         216.0,
         370.7
-      ]
-    },
-    {
-      "form_id": "PP-412",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 3,
-      "field_id": "report_date",
-      "other_field_id": "conservator_printed_name",
-      "overlap": [
-        105.1,
-        674.6,
-        258.2,
-        683.1
       ]
     },
     {
