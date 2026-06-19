@@ -30,9 +30,8 @@
       "widget_overruns_rule": 3
     },
     "AF-105": {
-      "text_is_checkbox_sized": 1,
-      "widget_native_text_collision": 7,
-      "widget_widget_collision": 9
+      "widget_native_text_collision": 1,
+      "widget_widget_collision": 5
     },
     "APP-1": {
       "widget_widget_collision": 1
@@ -73,36 +72,31 @@
       "widget_native_text_collision": 1
     },
     "GS-014": {
-      "widget_native_text_collision": 6,
+      "widget_native_text_collision": 1,
       "widget_widget_collision": 9
     },
     "MISC-101": {
       "widget_native_text_collision": 2,
-      "widget_overruns_rule": 2,
-      "widget_widget_collision": 2
+      "widget_overruns_rule": 1
     },
     "MISC-102": {
       "text_is_checkbox_sized": 2,
-      "widget_native_text_collision": 1,
-      "widget_overruns_rule": 11,
-      "widget_widget_collision": 2
+      "widget_overruns_rule": 10,
+      "widget_widget_collision": 1
     },
     "N-105": {
       "widget_native_text_collision": 1,
       "widget_overruns_rule": 3
     },
-    "N-108": {
-      "widget_native_text_collision": 4
-    },
     "N-115": {
-      "widget_native_text_collision": 5,
-      "widget_widget_collision": 2
+      "widget_native_text_collision": 1,
+      "widget_widget_collision": 1
     },
     "N-117": {
       "widget_native_text_collision": 2
     },
     "N-118": {
-      "widget_native_text_collision": 10,
+      "widget_native_text_collision": 1,
       "widget_widget_collision": 3
     },
     "NC-001": {

@@ -1,18 +1,18 @@
 {
   "forms_audited": 82,
-  "finding_count": 821,
+  "finding_count": 781,
   "by_code": {
     "wet_ink_widget_present": 129,
-    "uncovered_printed_rule": 468,
-    "widget_widget_collision": 48,
+    "uncovered_printed_rule": 469,
+    "widget_widget_collision": 40,
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 31,
     "suspicious_widget_chain_gap": 10,
-    "county_label_collision": 17,
-    "widget_native_text_collision": 64,
-    "widget_overruns_rule": 44,
+    "county_label_collision": 16,
+    "widget_native_text_collision": 35,
+    "widget_overruns_rule": 42,
     "choice_not_checkbox_sized": 2,
-    "text_is_checkbox_sized": 5
+    "text_is_checkbox_sized": 4
   },
   "findings": [
     {
@@ -1169,20 +1169,6 @@
       "code": "widget_widget_collision",
       "severity": "high",
       "page": 1,
-      "field_id": "stocks_bonds_specify",
-      "other_field_id": "stocks_bonds_amount",
-      "overlap": [
-        429.8,
-        329.6,
-        551.8,
-        342.6
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
       "field_id": "anticipate_other_employment",
       "other_field_id": "other_employment_explanation",
       "overlap": [
@@ -1225,20 +1211,6 @@
       "code": "widget_widget_collision",
       "severity": "high",
       "page": 2,
-      "field_id": "vehicle_details",
-      "other_field_id": "vehicle_value",
-      "overlap": [
-        432.0,
-        159.0,
-        502.6,
-        168.7
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
       "field_id": "vehicle_value",
       "other_field_id": "vehicle_registration",
       "overlap": [
@@ -1246,34 +1218,6 @@
         169.7,
         552.0,
         172.0
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
-      "field_id": "other_personal_property",
-      "other_field_id": "insurance_pension_value",
-      "overlap": [
-        420.0,
-        199.3,
-        541.3,
-        203.2
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 2,
-      "field_id": "medical_support_payments",
-      "other_field_id": "medical_support_total",
-      "overlap": [
-        420.0,
-        404.7,
-        501.0,
-        412.0
       ]
     },
     {
@@ -1292,103 +1236,6 @@
       "form_id": "AF-105",
       "code": "widget_native_text_collision",
       "severity": "high",
-      "field_id": "dependents_list",
-      "page": 1,
-      "native_text": "ASSETS:",
-      "overlap": [
-        93.6,
-        251.0,
-        132.7,
-        261.5
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "text_is_checkbox_sized",
-      "severity": "high",
-      "field_id": "total_cash_assets",
-      "page": 1,
-      "rect": [
-        210.5,
-        369.1,
-        227.2,
-        382.1
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "expected_payments_explanation",
-      "page": 2,
-      "native_text": "ASSETS:",
-      "overlap": [
-        101.9,
-        107.3,
-        140.3,
-        117.9
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "insurance_pension_value",
-      "page": 2,
-      "native_text": "EXPENSES:",
-      "overlap": [
-        63.4,
-        221.8,
-        114.6,
-        232.4
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "medical_support_payments",
-      "page": 2,
-      "native_text": "and",
-      "overlap": [
-        381.0,
-        401.1,
-        395.3,
-        412.0
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "medical_support_payments",
-      "page": 2,
-      "native_text": "total",
-      "overlap": [
-        397.9,
-        401.1,
-        415.7,
-        412.0
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "medical_support_payments",
-      "page": 2,
-      "native_text": "is",
-      "overlap": [
-        418.2,
-        401.1,
-        424.8,
-        412.0
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
       "field_id": "medical_support_total",
       "page": 2,
       "native_text": "is",
@@ -1397,6 +1244,18 @@
         404.7,
         424.8,
         414.5
+      ]
+    },
+    {
+      "form_id": "AF-105",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        63.4,
+        249.6,
+        134.2,
+        262.6
       ]
     },
     {
@@ -4949,76 +4808,6 @@
     },
     {
       "form_id": "GS-014",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "guardian_statement_name",
-      "page": 3,
-      "native_text": "this",
-      "overlap": [
-        431.9,
-        533.3,
-        447.8,
-        546.0
-      ]
-    },
-    {
-      "form_id": "GS-014",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "guardian_statement_name",
-      "page": 3,
-      "native_text": "is",
-      "overlap": [
-        450.5,
-        533.3,
-        457.8,
-        546.0
-      ]
-    },
-    {
-      "form_id": "GS-014",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "guardian_statement_name",
-      "page": 3,
-      "native_text": "an",
-      "overlap": [
-        460.6,
-        533.3,
-        471.0,
-        546.0
-      ]
-    },
-    {
-      "form_id": "GS-014",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "guardian_statement_name",
-      "page": 3,
-      "native_text": "accurate",
-      "overlap": [
-        473.8,
-        533.3,
-        510.3,
-        546.0
-      ]
-    },
-    {
-      "form_id": "GS-014",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "guardian_statement_name",
-      "page": 3,
-      "native_text": "statement",
-      "overlap": [
-        513.1,
-        533.3,
-        555.2,
-        546.0
-      ]
-    },
-    {
-      "form_id": "GS-014",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 2,
@@ -5223,34 +5012,6 @@
     },
     {
       "form_id": "MISC-101",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "motion_to_continue_explanation",
-      "other_field_id": "movant_printed_name",
-      "overlap": [
-        361.5,
-        580.8,
-        538.5,
-        593.1
-      ]
-    },
-    {
-      "form_id": "MISC-101",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "motion_to_continue_explanation",
-      "other_field_id": "motion_date",
-      "overlap": [
-        120.0,
-        580.8,
-        248.0,
-        593.1
-      ]
-    },
-    {
-      "form_id": "MISC-101",
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "movant_signature"
@@ -5260,15 +5021,6 @@
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "judge_signature"
-    },
-    {
-      "form_id": "MISC-101",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "motion_to_continue_explanation",
-      "page": 1,
-      "left_overrun": 263.4,
-      "right_overrun": 3.0
     },
     {
       "form_id": "MISC-101",
@@ -5347,20 +5099,6 @@
     },
     {
       "form_id": "MISC-102",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "produce_date",
-      "other_field_id": "produce_time",
-      "overlap": [
-        222.0,
-        388.6,
-        249.0,
-        401.6
-      ]
-    },
-    {
-      "form_id": "MISC-102",
       "code": "text_is_checkbox_sized",
       "severity": "high",
       "field_id": "appear_probate_court_time",
@@ -5389,29 +5127,6 @@
       "page": 1,
       "left_overrun": 5.0,
       "right_overrun": 0.4
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "produce_date",
-      "page": 1,
-      "native_text": "on",
-      "overlap": [
-        110.0,
-        391.4,
-        120.1,
-        401.6
-      ]
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "produce_date",
-      "page": 1,
-      "left_overrun": 13.5,
-      "right_overrun": 12.8
     },
     {
       "form_id": "MISC-102",
@@ -5497,20 +5212,6 @@
       "page": 1,
       "left_overrun": -1.0,
       "right_overrun": 33.0
-    },
-    {
-      "form_id": "MISC-102",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_page2",
-      "page": 2,
-      "rect": [
-        72.0,
-        78.1,
-        181.0,
-        91.1
-      ],
-      "county_x": 182.5
     },
     {
       "form_id": "MISC-102",
@@ -5705,62 +5406,6 @@
     },
     {
       "form_id": "N-108",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "ward_name",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        442.2,
-        353.9,
-        452.2,
-        364.7
-      ]
-    },
-    {
-      "form_id": "N-108",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "ward_name",
-      "page": 1,
-      "native_text": "minor",
-      "overlap": [
-        457.2,
-        353.9,
-        485.9,
-        364.7
-      ]
-    },
-    {
-      "form_id": "N-108",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "ward_name",
-      "page": 1,
-      "native_text": "or",
-      "overlap": [
-        490.9,
-        353.9,
-        500.9,
-        364.7
-      ]
-    },
-    {
-      "form_id": "N-108",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "ward_name",
-      "page": 1,
-      "native_text": "individual",
-      "overlap": [
-        505.9,
-        353.9,
-        554.5,
-        364.7
-      ]
-    },
-    {
-      "form_id": "N-108",
       "code": "uncovered_printed_rule",
       "severity": "low",
       "page": 1,
@@ -5836,20 +5481,6 @@
     },
     {
       "form_id": "N-115",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
-      "field_id": "signatory_signature",
-      "other_field_id": "attorney_bar_number",
-      "overlap": [
-        374.4,
-        614.1,
-        542.0,
-        627.1
-      ]
-    },
-    {
-      "form_id": "N-115",
       "code": "wet_ink_widget_present",
       "severity": "high",
       "field_id": "signatory_signature"
@@ -5874,62 +5505,6 @@
       "severity": "medium",
       "field_id": "county",
       "page": 1
-    },
-    {
-      "form_id": "N-115",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "pr_name",
-      "page": 1,
-      "native_text": "appointed",
-      "overlap": [
-        375.0,
-        226.3,
-        414.4,
-        236.9
-      ]
-    },
-    {
-      "form_id": "N-115",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "pr_name",
-      "page": 1,
-      "native_text": "Personal",
-      "overlap": [
-        417.0,
-        226.3,
-        451.3,
-        236.9
-      ]
-    },
-    {
-      "form_id": "N-115",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "pr_name",
-      "page": 1,
-      "native_text": "Representative",
-      "overlap": [
-        453.8,
-        226.3,
-        513.2,
-        236.9
-      ]
-    },
-    {
-      "form_id": "N-115",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "pr_name",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        515.8,
-        226.3,
-        524.1,
-        236.9
-      ]
     },
     {
       "form_id": "N-115",
@@ -6108,132 +5683,6 @@
       "severity": "medium",
       "field_id": "county_name",
       "page": 1
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "appointment_of_guardian_guardian_name",
-      "page": 1,
-      "native_text": "as",
-      "overlap": [
-        460.2,
-        218.1,
-        468.5,
-        229.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "appointment_of_conservator_conservator_name",
-      "page": 1,
-      "native_text": "as",
-      "overlap": [
-        522.7,
-        277.0,
-        531.0,
-        288.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "change_in_permanent_dwelling_new_address",
-      "page": 1,
-      "native_text": "(address).",
-      "overlap": [
-        379.6,
-        336.1,
-        418.6,
-        347.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "change_in_permanent_dwelling_new_address",
-      "page": 1,
-      "native_text": "The",
-      "overlap": [
-        423.7,
-        336.1,
-        439.2,
-        347.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "change_in_permanent_dwelling_new_address",
-      "page": 1,
-      "native_text": "nature",
-      "overlap": [
-        441.7,
-        336.1,
-        466.8,
-        347.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "change_in_permanent_dwelling_new_address",
-      "page": 1,
-      "native_text": "of",
-      "overlap": [
-        469.3,
-        336.1,
-        477.6,
-        347.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "change_in_permanent_dwelling_new_address",
-      "page": 1,
-      "native_text": "this",
-      "overlap": [
-        480.1,
-        336.1,
-        494.5,
-        347.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "change_in_permanent_dwelling_new_address",
-      "page": 1,
-      "native_text": "dwelling",
-      "overlap": [
-        497.0,
-        336.1,
-        532.0,
-        347.0
-      ]
-    },
-    {
-      "form_id": "N-118",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "restrictions_on_contact_individual_name",
-      "page": 1,
-      "native_text": "(Adult",
-      "overlap": [
-        297.7,
-        527.4,
-        313.0,
-        538.3
-      ]
     },
     {
       "form_id": "N-118",
