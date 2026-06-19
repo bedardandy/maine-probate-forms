@@ -1698,15 +1698,18 @@
   },
   "filing_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "mailing_notices_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   },
   "publication_fee": {
    "type": "currency",
-   "widgets": []
+   "widgets": [],
+   "geometry_source": "court_completed"
   }
  },
  "optimizer_changes": [
