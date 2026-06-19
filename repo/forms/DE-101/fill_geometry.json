@@ -37,26 +37,7 @@
   },
   "decedent_name_caption": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      96.0,
-      155.0,
-      296.0,
-      167.0
-     ]
-    },
-    {
-     "page": 0,
-     "rect": [
-      96.0,
-      183.0,
-      335.0,
-      280.0
-     ]
-    }
-   ]
+   "widgets": []
   },
   "petition_type": {
    "type": "select_many",
@@ -1846,87 +1827,27 @@
   },
   "filing_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      124.6,
-      481.1,
-      181.7,
-      494.1
-     ]
-    }
-   ]
+   "widgets": []
   },
   "mailing_notices_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      307.9,
-      481.1,
-      354.8,
-      494.1
-     ]
-    }
-   ]
+   "widgets": []
   },
   "publication_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      447.0,
-      481.1,
-      507.0,
-      494.1
-     ]
-    }
-   ]
+   "widgets": []
   },
   "surcharge_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      121.6,
-      499.0,
-      178.6,
-      512.0
-     ]
-    }
-   ]
+   "widgets": []
   },
   "abstracts_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      279.0,
-      499.0,
-      354.0,
-      512.0
-     ]
-    }
-   ]
+   "widgets": []
   },
   "other_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      424.0,
-      499.0,
-      509.0,
-      512.0
-     ]
-    }
-   ]
+   "widgets": []
   }
  }
 }

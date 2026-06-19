@@ -15,9 +15,10 @@
      "rect": [
       72.6,
       107.0,
-      183.7,
+      176.0,
       126.0
-     ]
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -41,11 +42,13 @@
     {
      "page": 0,
      "rect": [
-      90.0,
-      147.5,
-      276.7,
-      158.5
-     ]
+      108.5,
+      146.7,
+      297.0,
+      159.7
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -85,8 +88,9 @@
       90.0,
       261.1,
       525.0,
-      287.0
-     ]
+      283.1
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -675,6 +679,22 @@
     }
    ]
   },
+  "domestic_partner_details": {
+   "type": "text",
+   "widgets": [
+    {
+     "page": 1,
+     "rect": [
+      72.5,
+      309.0,
+      522.5,
+      322.0
+     ],
+     "geometry_source": "manual",
+     "locked": true
+    }
+   ]
+  },
   "devisees_name_1": {
    "type": "text",
    "widgets": [
@@ -907,8 +927,9 @@
       72.0,
       695.3,
       525.0,
-      738.0
-     ]
+      735.4
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1016,8 +1037,9 @@
       90.0,
       171.2,
       525.0,
-      202.0
-     ]
+      199.7
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1125,8 +1147,9 @@
       90.0,
       286.2,
       525.0,
-      318.0
-     ]
+      314.8
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1207,8 +1230,9 @@
       90.0,
       424.1,
       525.0,
-      456.0
-     ]
+      452.7
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1372,10 +1396,12 @@
      "page": 2,
      "rect": [
       283.9,
-      700.1,
+      705.6,
       426.7,
       718.6
-     ]
+     ],
+     "geometry_source": "manual",
+     "locked": true
     }
    ]
   },
@@ -1402,8 +1428,9 @@
       72.0,
       102.1,
       525.0,
-      133.0
-     ]
+      129.6
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1443,8 +1470,9 @@
       72.0,
       158.5,
       525.0,
-      190.0
-     ]
+      187.1
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1484,8 +1512,9 @@
       72.0,
       216.0,
       525.0,
-      251.0
-     ]
+      245.9
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1578,31 +1607,15 @@
   },
   "date_signed": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      100.3,
-      488.0,
-      203.0,
-      506.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      288.0,
-      488.0,
-      525.0,
-      506.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "attorney_name": {
    "type": "text",
@@ -1685,45 +1698,173 @@
   },
   "filing_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      120.6,
-      93.0,
-      178.6,
-      110.0
-     ]
-    }
-   ]
+   "widgets": []
   },
   "mailing_notices_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      287.0,
-      93.0,
-      364.0,
-      110.0
-     ]
-    }
-   ]
+   "widgets": []
   },
   "publication_fee": {
    "type": "currency",
-   "widgets": [
-    {
-     "page": 4,
-     "rect": [
-      445.9,
-      96.5,
-      519.7,
-      108.5
-     ]
-    }
-   ]
+   "widgets": []
   }
- }
+ },
+ "optimizer_changes": [
+  {
+   "field_id": "county",
+   "action": "trim",
+   "before": [
+    72.6,
+    107.0,
+    183.7,
+    126.0
+   ],
+   "after": [
+    72.6,
+    107.0,
+    176.0,
+    126.0
+   ]
+  },
+  {
+   "field_id": "decedent_name_caption",
+   "action": "suppress"
+  },
+  {
+   "field_id": "petitioner_name",
+   "action": "trim",
+   "before": [
+    90.0,
+    261.1,
+    525.0,
+    287.0
+   ],
+   "after": [
+    90.0,
+    261.1,
+    525.0,
+    283.1
+   ]
+  },
+  {
+   "field_id": "real_estate_locations",
+   "action": "trim",
+   "before": [
+    72.0,
+    695.3,
+    525.0,
+    738.0
+   ],
+   "after": [
+    72.0,
+    695.3,
+    525.0,
+    735.4
+   ]
+  },
+  {
+   "field_id": "prior_pr_details",
+   "action": "trim",
+   "before": [
+    90.0,
+    171.2,
+    525.0,
+    202.0
+   ],
+   "after": [
+    90.0,
+    171.2,
+    525.0,
+    199.7
+   ]
+  },
+  {
+   "field_id": "circumstances_authorizing_proceeding",
+   "action": "trim",
+   "before": [
+    90.0,
+    286.2,
+    525.0,
+    318.0
+   ],
+   "after": [
+    90.0,
+    286.2,
+    525.0,
+    314.8
+   ]
+  },
+  {
+   "field_id": "supervised_admin_circumstances",
+   "action": "trim",
+   "before": [
+    90.0,
+    424.1,
+    525.0,
+    456.0
+   ],
+   "after": [
+    90.0,
+    424.1,
+    525.0,
+    452.7
+   ]
+  },
+  {
+   "field_id": "pr_name_address",
+   "action": "trim",
+   "before": [
+    72.0,
+    102.1,
+    525.0,
+    133.0
+   ],
+   "after": [
+    72.0,
+    102.1,
+    525.0,
+    129.6
+   ]
+  },
+  {
+   "field_id": "pr_priority_basis",
+   "action": "trim",
+   "before": [
+    72.0,
+    158.5,
+    525.0,
+    190.0
+   ],
+   "after": [
+    72.0,
+    158.5,
+    525.0,
+    187.1
+   ]
+  },
+  {
+   "field_id": "pr_priority_questions_details",
+   "action": "trim",
+   "before": [
+    72.0,
+    216.0,
+    525.0,
+    251.0
+   ],
+   "after": [
+    72.0,
+    216.0,
+    525.0,
+    245.9
+   ]
+  },
+  {
+   "field_id": "date_signed",
+   "action": "suppress"
+  },
+  {
+   "field_id": "petitioner_signature",
+   "action": "suppress"
+  }
+ ]
 }

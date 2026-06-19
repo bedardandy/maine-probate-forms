@@ -58,5 +58,5 @@ skill_metadata:
     - "18-C M.R.S.A. § 3-308 (Informal appointment of PR)"
     - "18-C M.R.S.A. § 3-108 (Three-year statute of repose)"
   service_required: true
-  filing_deadline_days: 1095
-  filing_deadline_anchor: "decedent_death_date"
+  repose_period_days: 1095
+  repose_anchor: "decedent_death_date"

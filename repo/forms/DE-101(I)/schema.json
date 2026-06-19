@@ -39,8 +39,8 @@
       "18-C M.R.S.A. \u00a7 3-108 (Three-year statute of repose)"
     ],
     "service_required": true,
-    "filing_deadline_days": 1095,
-    "filing_deadline_anchor": "decedent_death_date"
+    "repose_period_days": 1095,
+    "repose_anchor": "decedent_death_date"
   },
   "fields": [
     {
@@ -602,8 +602,8 @@
       "field_id": "decedent_date_of_birth",
       "widget_id": "W021",
       "label": "Decedent Date Of Birth",
-      "type": "text",
-      "data_type": "text",
+      "type": "date",
+      "data_type": "date",
       "data_constraints": {},
       "category": "party_attr",
       "subcategory": "decedent",
@@ -3271,7 +3271,7 @@
       "field_id": "applicant_signature",
       "widget_id": "W093",
       "label": "Applicant Signature",
-      "type": "text",
+      "type": "signature",
       "data_type": "signature",
       "data_constraints": {},
       "category": "signature",
