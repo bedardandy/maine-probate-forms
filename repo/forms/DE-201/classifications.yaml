@@ -9,3 +9,22 @@ overrides:
     party: petitioner
     subcategory: petitioner_contact
     data_type: text
+
+  decedent_name_caption:
+    suppress_geometry: true
+
+  filing_fee:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank
+  mailing_notices_fee:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank
+  publication_fee:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank

@@ -1,6 +1,6 @@
 name: upstream-drift
 
-# Re-probe the maine.gov source URLs and flag any form that has been re-issued
+# Re-probe the maineprobate.net source URLs and flag any form that has been re-issued
 # since its fill_geometry was measured. Scheduled (not a per-PR gate) because it
 # needs network and reflects state on maineprobate.net, not a PR.
 

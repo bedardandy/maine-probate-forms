@@ -119,19 +119,25 @@ overrides:
     data_type: text
 
   filing_fee:
-    category: narrative_derived
-    subcategory: fee
+    category: external
+    subcategory: court_only
     data_type: currency
+    court_only: true
+    fill_strategy_source: left_blank
 
   mailing_notices_fee:
-    category: narrative_derived
-    subcategory: fee
+    category: external
+    subcategory: court_only
     data_type: currency
+    court_only: true
+    fill_strategy_source: left_blank
 
   publication_fee:
-    category: narrative_derived
-    subcategory: fee
+    category: external
+    subcategory: court_only
     data_type: currency
+    court_only: true
+    fill_strategy_source: left_blank
 
   # § 3-108 three-year statute of repose triggers a yes/no narrative
   # — yes opens the _description follow-up field.

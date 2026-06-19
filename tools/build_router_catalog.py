@@ -26,6 +26,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # Curated "vs" hints — only for forms that an LLM router actually confuses.
 # Keep each terse; the discriminating distinction is what matters.
 DISAMBIG = {
+    # .vA entries are alternate source revisions retained for comparison.
+    "AF-101.vA": "alternate source revision retained alongside AF-101",
+    "GS-008.vA": "alternate source revision retained alongside GS-008",
+    "PB-007.vA": "alternate source revision retained alongside PB-007",
     # estate (decedent) vs conservatorship (living protected person) parallels
     "DE-403": "bond for a deceased person's ESTATE (personal representative); not a conservator",
     "PP-405": "bond for a CONSERVATOR of a living protected person; not an estate PR",
@@ -74,9 +78,13 @@ def main() -> int:
     rows.sort(key=lambda r: r["form_id"])
 
     cat_title = "\n".join(f"{r['form_id']} | {r['category']} | {r['title']}" for r in rows)
-    cat_surgical = "\n".join(
+    cat_surgical = (
+        "LEGEND: .vA means an alternate source revision retained alongside "
+        "the base form.\n"
+        + "\n".join(
         f"{r['form_id']} | {r['category']} | {r['title']}"
         + (f" — {r['hint']}" if r["hint"] else "") for r in rows)
+    )
 
     out = {
         "_generated_by": "tools/build_router_catalog.py",

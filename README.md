@@ -233,7 +233,8 @@ The coordinate system is top-left origin, measured in PDF points. A standard let
 What ships and is usable today: the per-form packages (schema, field catalog,
 fill geometry, form-specific guidance), the deterministic fill path
 (`tools/fill_pdf.py`), routing, the export and accessibility layers, and the
-tooling to regenerate geometry. All 79 forms have geometry and fill end to end.
+tooling to regenerate geometry. All 82 catalog entries (79 base forms and 3
+versioned variants) have geometry and fill end to end.
 
 What still needs a human in the loop: the generated forms are not a
 battle-tested form set. Treat the output as a draft mapping — review every filled

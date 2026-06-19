@@ -56,7 +56,12 @@ def build_form(form_id: str, out_dir: pathlib.Path) -> dict:
             contract.get("category") == "signature"
             or contract.get("fill_strategy", {}).get("source") == "wet_ink"
         )
-        if wet_ink:
+        non_user_fillable = (
+            contract.get("court_only") is True
+            or contract.get("suppress_geometry") is True
+            or contract.get("fill_strategy", {}).get("source") == "left_blank"
+        )
+        if wet_ink or non_user_fillable:
             continue
         for index, widget in enumerate(spec.get("widgets") or []):
             if spec.get("type") == "enabler":

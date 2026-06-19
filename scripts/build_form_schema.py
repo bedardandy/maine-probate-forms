@@ -1008,6 +1008,13 @@ def build_schema(form_id: str, out_dir: pathlib.Path) -> dict:
         risk_input = eval_risk.get(fid, {})
         risk = score_risk(classify, risk_input)
         strategy = fill_strategy(classify)
+        if ov and ov.get("fill_strategy_source"):
+            strategy = {
+                "deterministic": False,
+                "llm_eligible": False,
+                "human_required": False,
+                "source": ov["fill_strategy_source"],
+            }
         hand_review_reasons = _hand_review_reasons(classify, risk_input)
         formula = formulas.get(fid)
         depends_on = _depends_on(formula) if formula else []
@@ -1034,6 +1041,8 @@ def build_schema(form_id: str, out_dir: pathlib.Path) -> dict:
             "depends_on": depends_on,
             "validators": field_validators(classify, all_ids) + extra_validators,
             "fill_strategy": strategy,
+            "suppress_geometry": bool(ov.get("suppress_geometry")) if ov else False,
+            "court_only": bool(ov.get("court_only")) if ov else False,
             **risk,
             "hand_review": {
                 "reasons": hand_review_reasons,
@@ -1294,6 +1303,9 @@ def write_skill_md_draft(schema: dict, path: pathlib.Path) -> None:
         if rows:
             slot_section = (
                 "\n## Repeating slot groups\n\n"
+                "Supply every known entry. When a group exceeds the printed "
+                "rows, `fill_pdf.py` continues it on an addendum page "
+                "automatically.\n\n"
                 "| prefix | indices | suffixes |\n|---|---|---|\n"
                 + "\n".join(rows) + "\n"
             )
@@ -1354,6 +1366,8 @@ def write_skill_md_draft(schema: dict, path: pathlib.Path) -> None:
     else:
         filing_deadline_value = str(filing_deadline_days)
     filing_deadline_anchor = overrides_meta.get("filing_deadline_anchor")
+    repose_period_days = overrides_meta.get("repose_period_days")
+    repose_anchor = overrides_meta.get("repose_anchor")
     if statutes_list:
         statutes_yaml = "\n".join(f'  - "{s}"' for s in statutes_list)
         statutes_block = f"statutes:\n{statutes_yaml}"
@@ -1363,6 +1377,11 @@ def write_skill_md_draft(schema: dict, path: pathlib.Path) -> None:
     deadline_anchor_line = (
         f'\nfiling_deadline_anchor: "{filing_deadline_anchor}"'
         if filing_deadline_anchor else "")
+    repose_lines = ""
+    if repose_period_days is not None:
+        repose_lines += f"\nrepose_period_days: {repose_period_days}"
+    if repose_anchor:
+        repose_lines += f'\nrepose_anchor: "{repose_anchor}"'
     content = f"""---
 form_id: {form_id}
 form_title: {title}{revision_line}
@@ -1370,7 +1389,7 @@ jurisdiction: Maine
 court: Probate
 filer_role: {filer_role}
 {statutes_block}
-filing_deadline_days: {filing_deadline_value}{deadline_anchor_line}
+filing_deadline_days: {filing_deadline_value}{deadline_anchor_line}{repose_lines}
 service_required: {service_required}
 n_fields: {schema['n_fields']}
 addendum_supported: true{parties_frontmatter}{sections_frontmatter}{elections_frontmatter}{slot_frontmatter}

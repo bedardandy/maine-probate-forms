@@ -121,6 +121,7 @@ def verify_filled(form_id: str, case: dict, filled_pdf,
             if w is None:
                 entry["note"] = "no widget with this field_id in the output"
         fields[fid] = entry
+        entry["provenance"] = plan.get("provenance", {}).get(fid)
         if entry["placed"]:
             placed += 1
             if entry.get("kind") == "text-overflow":

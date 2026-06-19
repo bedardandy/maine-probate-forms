@@ -119,6 +119,7 @@
     },
     {
       "field_id": "decedent_name_caption",
+      "suppress_geometry": true,
       "widget_id": "W003",
       "label": "Decedent Name Caption",
       "type": "text",
@@ -4319,6 +4320,7 @@
     },
     {
       "field_id": "filing_fee",
+      "court_only": true,
       "widget_id": "W124",
       "label": "Filing Fee",
       "type": "currency",
@@ -4366,6 +4368,7 @@
     },
     {
       "field_id": "mailing_notices_fee",
+      "court_only": true,
       "widget_id": "W125",
       "label": "Mailing Notices Fee",
       "type": "currency",
@@ -4413,6 +4416,7 @@
     },
     {
       "field_id": "publication_fee",
+      "court_only": true,
       "widget_id": "W126",
       "label": "Publication Fee",
       "type": "currency",

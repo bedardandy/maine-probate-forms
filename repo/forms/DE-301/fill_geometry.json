@@ -15,9 +15,10 @@
      "rect": [
       73.5,
       120.4,
-      184.5,
+      173.1,
       132.4
-     ]
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -41,11 +42,12 @@
     {
      "page": 0,
      "rect": [
-      97.0,
+      109.8,
       156.0,
       297.0,
       167.0
-     ]
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -175,17 +177,9 @@
   },
   "petitioner_interest_other_details": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      203.7,
-      378.5,
-      552.0,
-      450.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "decedent_full_legal_name": {
    "type": "text",
@@ -320,8 +314,9 @@
       72.0,
       631.5,
       552.0,
-      675.0
-     ]
+      671.6
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -375,8 +370,9 @@
       72.0,
       86.4,
       542.0,
-      134.0
-     ]
+      131.1
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -416,8 +412,9 @@
       72.0,
       148.5,
       542.0,
-      191.0
-     ]
+      188.6
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -535,31 +532,15 @@
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      305.9,
-      372.0,
-      513.0,
-      391.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "date_signed": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      101.7,
-      373.0,
-      212.6,
-      391.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "attorney_name": {
    "type": "text",
@@ -614,17 +595,9 @@
   },
   "special_admin_acceptance_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      101.0,
-      144.6,
-      288.0,
-      158.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "special_admin_acceptance_date": {
    "type": "date",
@@ -642,118 +615,71 @@
   },
   "order_limitations": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      77.2,
-      324.4,
-      534.8,
-      337.4
-     ]
-    },
-    {
-     "page": 2,
-     "rect": [
-      72.0,
-      337.3,
-      543.0,
-      350.8
-     ]
-    },
-    {
-     "page": 2,
-     "rect": [
-      72.0,
-      350.9,
-      543.0,
-      364.4
-     ]
-    },
-    {
-     "page": 2,
-     "rect": [
-      72.0,
-      364.3,
-      543.0,
-      377.8
-     ]
-    },
-    {
-     "page": 2,
-     "rect": [
-      72.0,
-      377.9,
-      543.0,
-      391.4
-     ]
-    },
-    {
-     "page": 2,
-     "rect": [
-      72.0,
-      391.3,
-      543.0,
-      404.9
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "judge_date": {
    "type": "date",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      101.0,
-      459.8,
-      288.0,
-      473.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "judge_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      361.5,
-      460.8,
-      534.1,
-      473.8
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "certified_copy_date": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      172.7,
-      517.3,
-      288.0,
-      531.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "register_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      361.5,
-      518.3,
-      538.5,
-      531.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   }
- }
+ },
+ "optimizer_changes": [
+  {
+   "field_id": "county_probate_court",
+   "action": "trim",
+   "before": [
+    73.5,
+    120.4,
+    184.5,
+    132.4
+   ],
+   "after": [
+    73.5,
+    120.4,
+    173.1,
+    132.4
+   ]
+  },
+  {
+   "field_id": "estate_of_decedent",
+   "action": "trim",
+   "before": [
+    97.0,
+    156.0,
+    297.0,
+    167.0
+   ],
+   "after": [
+    109.8,
+    156.0,
+    297.0,
+    167.0
+   ]
+  },
+  {
+   "field_id": "petitioner_interest_other_details",
+   "action": "suppress"
+  }
+ ]
 }

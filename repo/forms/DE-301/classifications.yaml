@@ -9,3 +9,21 @@ overrides:
     party: petitioner
     subcategory: petitioner_contact
     data_type: text
+
+  order_limitations:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank
+  petitioner_interest_other_details:
+    suppress_geometry: true
+  judge_date:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank
+  certified_copy_date:
+    category: external
+    subcategory: court_only
+    court_only: true
+    fill_strategy_source: left_blank

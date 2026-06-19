@@ -174,6 +174,7 @@ def audit_form(form_id: str) -> list[dict]:
         for word in words:
             wr = fitz.Rect(word[:4])
             text = word[4]
+            semantic_text = text.strip("_").strip()
             intersection = rect & wr
             word_center = fitz.Point(
                 (wr.x0 + wr.x1) / 2,
@@ -185,6 +186,7 @@ def audit_form(form_id: str) -> list[dict]:
                 item["kind"] in ("text", "date")
                 and len(text.strip()) >= 2
                 and set(text.strip()) != {"_"}
+                and text.count("_") <= len(text) / 2
                 and rect.contains(word_center)
                 and intersection.get_area() >= 8
             ):
@@ -202,7 +204,7 @@ def audit_form(form_id: str) -> list[dict]:
             same_line = min(rect.y1, wr.y1) - max(rect.y0, wr.y0) > 2
             if (
                 "county" in item["field_id"].lower()
-                and text == "COUNTY"
+                and semantic_text == "COUNTY"
                 and same_line
                 and 0 <= wr.x0 - rect.x1 < 10
             ):

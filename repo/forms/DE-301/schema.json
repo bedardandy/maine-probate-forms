@@ -318,6 +318,7 @@
     },
     {
       "field_id": "petitioner_interest_other_details",
+      "suppress_geometry": true,
       "widget_id": "W014",
       "label": "Petitioner Interest Other Details",
       "type": "text",
@@ -1539,6 +1540,7 @@
     },
     {
       "field_id": "order_limitations",
+      "court_only": true,
       "widget_id": "W049",
       "label": "Order Limitations",
       "type": "text",
@@ -1577,6 +1579,7 @@
     },
     {
       "field_id": "judge_date",
+      "court_only": true,
       "widget_id": "W055",
       "label": "Judge Date",
       "type": "date",
@@ -1653,6 +1656,7 @@
     },
     {
       "field_id": "certified_copy_date",
+      "court_only": true,
       "widget_id": "W057",
       "label": "Certified Copy Date",
       "type": "text",

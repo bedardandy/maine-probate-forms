@@ -27,8 +27,16 @@ _STOP = {"the", "a", "an", "of", "for", "to", "and", "or", "with", "in", "on",
 
 
 def _tok(t: str) -> set[str]:
-    return {w for w in re.findall(r"[a-z0-9]+", (t or "").lower())
-            if w not in _STOP and len(w) > 2}
+    words = re.findall(r"[a-z0-9]+", (t or "").lower())
+    known_prefixes = {
+        p.name.split("-", 1)[0].lower()
+        for p in (ROOT / "repo" / "forms").iterdir()
+        if "-" in p.name
+    }
+    return {
+        w for w in words
+        if w not in _STOP and (len(w) > 2 or w in known_prefixes)
+    }
 
 
 # A form id mentioned verbatim ("DE-101", "de 101", "pp108") must win outright:
@@ -76,11 +84,12 @@ def find_forms(query: str, k: int = 8) -> dict:
     q = _tok(query)
     hits = []
     for mp in glob.glob(str(ROOT / "repo" / "forms" / "*" / "metadata.json")):
-        m = json.loads(open(mp).read())
+        m = json.loads(pathlib.Path(mp).read_text())
         if m.get("form_id") in exact:
             continue                          # already pinned to the top
         hay_t = _tok(m.get("title", "")); hay_c = _tok(m.get("category", ""))
-        score = 2 * len(q & hay_t) + len(q & hay_c)
+        prefix = m.get("form_id", "").split("-", 1)[0].lower()
+        score = 2 * len(q & hay_t) + len(q & hay_c) + (3 if prefix in q else 0)
         if score:
             hits.append((score, m))
     hits.sort(key=lambda x: (-x[0], x[1]["form_id"]))

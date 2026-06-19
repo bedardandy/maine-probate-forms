@@ -15,9 +15,10 @@
      "rect": [
       72.6,
       107.0,
-      183.7,
+      176.0,
       126.0
-     ]
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -37,17 +38,9 @@
   },
   "decedent_name_caption": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      90.0,
-      147.5,
-      276.7,
-      158.5
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "petition_type": {
    "type": "select_many",
@@ -85,8 +78,9 @@
       90.0,
       261.1,
       525.0,
-      287.0
-     ]
+      283.1
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -907,8 +901,9 @@
       72.0,
       695.3,
       525.0,
-      738.0
-     ]
+      735.4
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1016,8 +1011,9 @@
       90.0,
       171.2,
       525.0,
-      202.0
-     ]
+      199.7
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1125,8 +1121,9 @@
       90.0,
       286.2,
       525.0,
-      318.0
-     ]
+      314.8
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1207,8 +1204,9 @@
       90.0,
       424.1,
       525.0,
-      456.0
-     ]
+      452.7
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1402,8 +1400,9 @@
       72.0,
       102.1,
       525.0,
-      133.0
-     ]
+      129.6
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1443,8 +1442,9 @@
       72.0,
       158.5,
       525.0,
-      190.0
-     ]
+      187.1
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1484,8 +1484,9 @@
       72.0,
       216.0,
       525.0,
-      251.0
-     ]
+      245.9
+     ],
+     "geometry_source": "optimized_inferred"
     }
    ]
   },
@@ -1578,31 +1579,15 @@
   },
   "date_signed": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      100.3,
-      488.0,
-      203.0,
-      506.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "petitioner_signature": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 3,
-     "rect": [
-      288.0,
-      488.0,
-      525.0,
-      506.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "options": [],
+   "geometry_source": "suppressed"
   },
   "attorney_name": {
    "type": "text",
@@ -1695,5 +1680,163 @@
    "type": "currency",
    "widgets": []
   }
- }
+ },
+ "optimizer_changes": [
+  {
+   "field_id": "county",
+   "action": "trim",
+   "before": [
+    72.6,
+    107.0,
+    183.7,
+    126.0
+   ],
+   "after": [
+    72.6,
+    107.0,
+    176.0,
+    126.0
+   ]
+  },
+  {
+   "field_id": "decedent_name_caption",
+   "action": "suppress"
+  },
+  {
+   "field_id": "petitioner_name",
+   "action": "trim",
+   "before": [
+    90.0,
+    261.1,
+    525.0,
+    287.0
+   ],
+   "after": [
+    90.0,
+    261.1,
+    525.0,
+    283.1
+   ]
+  },
+  {
+   "field_id": "real_estate_locations",
+   "action": "trim",
+   "before": [
+    72.0,
+    695.3,
+    525.0,
+    738.0
+   ],
+   "after": [
+    72.0,
+    695.3,
+    525.0,
+    735.4
+   ]
+  },
+  {
+   "field_id": "prior_pr_details",
+   "action": "trim",
+   "before": [
+    90.0,
+    171.2,
+    525.0,
+    202.0
+   ],
+   "after": [
+    90.0,
+    171.2,
+    525.0,
+    199.7
+   ]
+  },
+  {
+   "field_id": "circumstances_authorizing_proceeding",
+   "action": "trim",
+   "before": [
+    90.0,
+    286.2,
+    525.0,
+    318.0
+   ],
+   "after": [
+    90.0,
+    286.2,
+    525.0,
+    314.8
+   ]
+  },
+  {
+   "field_id": "supervised_admin_circumstances",
+   "action": "trim",
+   "before": [
+    90.0,
+    424.1,
+    525.0,
+    456.0
+   ],
+   "after": [
+    90.0,
+    424.1,
+    525.0,
+    452.7
+   ]
+  },
+  {
+   "field_id": "pr_name_address",
+   "action": "trim",
+   "before": [
+    72.0,
+    102.1,
+    525.0,
+    133.0
+   ],
+   "after": [
+    72.0,
+    102.1,
+    525.0,
+    129.6
+   ]
+  },
+  {
+   "field_id": "pr_priority_basis",
+   "action": "trim",
+   "before": [
+    72.0,
+    158.5,
+    525.0,
+    190.0
+   ],
+   "after": [
+    72.0,
+    158.5,
+    525.0,
+    187.1
+   ]
+  },
+  {
+   "field_id": "pr_priority_questions_details",
+   "action": "trim",
+   "before": [
+    72.0,
+    216.0,
+    525.0,
+    251.0
+   ],
+   "after": [
+    72.0,
+    216.0,
+    525.0,
+    245.9
+   ]
+  },
+  {
+   "field_id": "date_signed",
+   "action": "suppress"
+  },
+  {
+   "field_id": "petitioner_signature",
+   "action": "suppress"
+  }
+ ]
 }

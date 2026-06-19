@@ -52,17 +52,49 @@ def shared_rect_warnings(form_id: str, geom: dict) -> list[str]:
             for (pg, rect), tgts in seen.items() if len(tgts) > 1]
 
 
+def overlapping_option_errors(form_id: str, geom: dict) -> list[str]:
+    """Choice options in one field must not substantially overlap."""
+    errors = []
+    for fid, spec in geom.get("fields", {}).items():
+        options = spec.get("options") or []
+        for index, left in enumerate(options):
+            for right in options[index + 1:]:
+                if left.get("page") != right.get("page"):
+                    continue
+                a, b = left.get("rect"), right.get("rect")
+                if not (isinstance(a, list) and isinstance(b, list)
+                        and len(a) == len(b) == 4):
+                    continue
+                ix = max(0, min(a[2], b[2]) - max(a[0], b[0]))
+                iy = max(0, min(a[3], b[3]) - max(a[1], b[1]))
+                intersection = ix * iy
+                union = ((a[2] - a[0]) * (a[3] - a[1])
+                         + (b[2] - b[0]) * (b[3] - b[1]) - intersection)
+                iou = intersection / union if union > 0 else 0
+                if iou > 0.3:
+                    errors.append(
+                        f"{form_id}:{fid} options {left.get('value')!r} and "
+                        f"{right.get('value')!r} overlap (IoU={iou:.2f})"
+                    )
+    return errors
+
+
 def validate_geometry(form_id: str, schema: dict, geom: dict) -> list[str]:
     """Return a list of error strings (empty == valid)."""
     errs: list[str] = []
     sfids = {f["field_id"] for f in schema.get("fields", [])}
     psize = geom.get("page_size") or [612, 792]
     npages = geom.get("n_pages")
+    coord = geom.get("coordinate_system")
+    if coord not in (None, "pymupdf_top_left_points"):
+        errs.append(f"{form_id}: unsupported coordinate_system {coord!r}")
     for fid, spec in geom.get("fields", {}).items():
         if fid not in sfids:
             errs.append(f"{form_id}:{fid} not in schema")
+        # Empty specs intentionally preserve schema fields that are court-filled
+        # or wet-ink while preventing fill_pdf from creating a widget.
         if not spec.get("widgets") and not spec.get("options"):
-            errs.append(f"{form_id}:{fid} has neither widgets nor options")
+            continue
         for pg, rect in _rects(spec):
             if npages is not None and not (isinstance(pg, int) and 0 <= pg < npages):
                 errs.append(f"{form_id}:{fid} page {pg} out of range (n={npages})")
@@ -99,6 +131,7 @@ def verify_repo(root: pathlib.Path) -> tuple[list[str], list[str], dict]:
             errors += validate_geometry(fid, json.loads(schema_p.read_text()),
                                         geom)
             warnings += shared_rect_warnings(fid, geom)
+            warnings += overlapping_option_errors(fid, geom)
         elif fid in plan_only:
             n_plan += 1
         else:
