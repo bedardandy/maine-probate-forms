@@ -780,59 +780,67 @@
     },
     "renunciation_signature_1": {
       "label": "Renunciation Signature 1",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_2": {
       "label": "Renunciation Signature 2",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_3": {
       "label": "Renunciation Signature 3",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_4": {
       "label": "Renunciation Signature 4",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_5": {
       "label": "Renunciation Signature 5",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_6": {
       "label": "Renunciation Signature 6",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_7": {
       "label": "Renunciation Signature 7",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "renunciation_signature_8": {
       "label": "Renunciation Signature 8",
-      "data_type": "text",
+      "data_type": "signature",
       "alignment": "left",
       "required": "optional",
-      "expects": "free text answering the printed prompt"
+      "expects": "leave blank — wet-ink signature",
+      "fill": false
     },
     "filing_fee": {
       "label": "Filing Fee",

@@ -4110,9 +4110,9 @@
       "widget_id": "W129",
       "label": "Renunciation Signature 1",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 1,
@@ -4128,8 +4128,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4151,9 +4151,9 @@
       "widget_id": "W130",
       "label": "Renunciation Signature 2",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 2,
@@ -4169,8 +4169,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4192,9 +4192,9 @@
       "widget_id": "W131",
       "label": "Renunciation Signature 3",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 3,
@@ -4210,8 +4210,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4233,9 +4233,9 @@
       "widget_id": "W132",
       "label": "Renunciation Signature 4",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 4,
@@ -4251,8 +4251,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4274,9 +4274,9 @@
       "widget_id": "W133",
       "label": "Renunciation Signature 5",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 5,
@@ -4292,8 +4292,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4315,9 +4315,9 @@
       "widget_id": "W134",
       "label": "Renunciation Signature 6",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 6,
@@ -4333,8 +4333,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4356,9 +4356,9 @@
       "widget_id": "W135",
       "label": "Renunciation Signature 7",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 7,
@@ -4374,8 +4374,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
@@ -4397,9 +4397,9 @@
       "widget_id": "W136",
       "label": "Renunciation Signature 8",
       "type": "text",
-      "data_type": "text",
+      "data_type": "signature",
       "data_constraints": {},
-      "category": "narrative_derived",
+      "category": "signature",
       "subcategory": "repeating_slot",
       "slot_group": "renunciation",
       "slot_index": 8,
@@ -4415,8 +4415,8 @@
       "fill_strategy": {
         "deterministic": false,
         "llm_eligible": true,
-        "human_required": false,
-        "source": "llm_over_narrative"
+        "human_required": true,
+        "source": "wet_ink"
       },
       "risk_score": 20,
       "risk_tier": "yellow",
