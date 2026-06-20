@@ -72,6 +72,7 @@ def analyze(form_id, seed, stress=False):
         if i not in printed:        # fill added an addendum/overflow page
             continue
         pkeys, ink = printed[i]
+        filled = []  # (bbox, text) of this page's filled spans, for value-vs-value
         for blk in doc[i].get_text("rawdict")["blocks"]:
             for ln in blk.get("lines", []):
                 for sp in ln.get("spans", []):
@@ -80,6 +81,7 @@ def analyze(form_id, seed, stress=False):
                     key = (txt, tuple(round(c) for c in bb))
                     if not txt or key in pkeys:
                         continue  # printed text, unchanged by fill
+                    filled.append((bb, txt))
                     if bb[2] > pw - MARGIN or bb[0] < MARGIN:
                         findings.append({"code": "offpage", "page": i,
                                          "text": txt[:40], "x1": round(bb[2], 1)})
@@ -91,6 +93,24 @@ def analyze(form_id, seed, stress=False):
                             findings.append({"code": "overprint", "page": i,
                                              "value": txt[:30], "over": word[:30]})
                             break
+        # value-vs-value collision: two filled values on the same row whose ink
+        # runs together with no separating space (e.g. a right-aligned amount
+        # butting the next table column). One span per widget/line, so a tiny
+        # gap between two filled spans means two fields' text touch.
+        filled.sort(key=lambda s: (round(s[0][3]), s[0][0]))
+        for a_bb, a_t in filled:
+            for b_bb, b_t in filled:
+                if b_bb is a_bb or b_bb[0] < a_bb[0]:
+                    continue
+                same_row = abs(((a_bb[1]+a_bb[3])/2) - ((b_bb[1]+b_bb[3])/2)) < 3
+                gap = b_bb[0] - a_bb[2]
+                # gap < ~1pt means the two values touch or overlap (a space is
+                # ~2.5pt, so words within one value won't trip this).
+                if same_row and gap < 1.0:
+                    findings.append({"code": "collision", "page": i,
+                                     "left": a_t[-18:], "right": b_t[:18],
+                                     "gap": round(gap, 1)})
+                    break
     doc.close()
     return {"form": form_id, "seed": seed, "stress": stress,
             "text_written": res.get("text_written"),

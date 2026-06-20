@@ -411,17 +411,8 @@
   },
   "real_property_value_detail": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      253.4,
-      386.3,
-      432.0,
-      399.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "name_surety_1_real": {
    "type": "text",

@@ -335,17 +335,8 @@
   },
   "co_guardian_date": {
    "type": "date",
-   "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      98.4,
-      634.7,
-      228.5,
-      647.7
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed"
   },
   "co_guardian_signature": {
    "type": "text",
