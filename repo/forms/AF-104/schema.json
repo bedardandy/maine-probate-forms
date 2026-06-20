@@ -577,10 +577,10 @@
       "depends_on": [],
       "validators": [],
       "fill_strategy": {
-        "deterministic": true,
+        "deterministic": false,
         "llm_eligible": false,
-        "human_required": false,
-        "source": "notary_record.notary"
+        "human_required": true,
+        "source": "left_blank"
       },
       "risk_score": 0,
       "risk_tier": "green",
@@ -621,10 +621,10 @@
       "depends_on": [],
       "validators": [],
       "fill_strategy": {
-        "deterministic": true,
+        "deterministic": false,
         "llm_eligible": false,
-        "human_required": false,
-        "source": "notary_record.notary"
+        "human_required": true,
+        "source": "left_blank"
       },
       "risk_score": 0,
       "risk_tier": "green",
@@ -665,10 +665,10 @@
       "depends_on": [],
       "validators": [],
       "fill_strategy": {
-        "deterministic": true,
+        "deterministic": false,
         "llm_eligible": false,
-        "human_required": false,
-        "source": "notary_record.notary"
+        "human_required": true,
+        "source": "left_blank"
       },
       "risk_score": 0,
       "risk_tier": "green",

@@ -1,9 +1,6 @@
 {
   "_comment": "Per-form actionable question-audit counts.",
   "counts": {
-    "AF-105": {
-      "symbol_splits_underline": 1
-    },
     "DE-405": {
       "uncovered_question": 1
     },
