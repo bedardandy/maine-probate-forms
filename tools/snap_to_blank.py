@@ -22,10 +22,9 @@ LEAD_GAP = 3.5      # min space between a label word and the value
 BASELINE_DROP = 1.0  # box bottom this far below the printed rule (descenders clear)
 
 # Fields to leave alone: snapping would move them across a numbered prompt onto
-# the wrong blank. DE-506 probate_estate_value (item 5) sits ambiguously between
-# items 5 and 6; the baseline drop tips it onto item 6's line. Items 5/6 there
-# need a dedicated per-form fix (deferred QA), not an automatic snap.
-SKIP_FIELDS = {("DE-506", "probate_estate_value")}
+# the wrong blank. (Currently empty -- DE-506 items 5/6 were given dedicated
+# blanks; see repo/forms/DE-506.)
+SKIP_FIELDS = set()
 
 
 def _underscore_runs(page):
