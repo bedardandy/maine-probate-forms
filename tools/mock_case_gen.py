@@ -87,6 +87,17 @@ _ADDR = {"address": "street", "city": "city", "state": "state", "zip": "zip",
 def _value_for(field_id, data_type, key, bank: Bank):
     """Synthesize a value from the field's data_type and key name."""
     k = (key or field_id).lower()
+    # jurat / signature date components are often mis-typed as generic text and
+    # live in narrow blanks ("this __ day of ____, 20__"); give them fitting
+    # short values instead of a long narrative sentinel.
+    if re.search(r"(^|_)day($|_)", k):
+        return str(bank.r.randint(1, 28))
+    if re.search(r"(^|_)month($|_)", k):
+        return bank.r.choice(["January", "February", "March", "April", "May",
+                              "June", "July", "August", "September", "October",
+                              "November", "December"])
+    if re.search(r"(^|_)year($|_)", k):
+        return str(bank.r.randint(2024, 2026))
     if data_type == "date" or k.endswith("date") or "date_of" in k:
         if "death" in k:
             return bank.date(2024, 2026)
@@ -161,7 +172,12 @@ def generate(form_id, seed=0, stress=False):
                 rec[attr] = _value_for(fid, dt, attr, bank) or r["name"]
         elif src == "llm_over_narrative":
             v = _value_for(fid, dt, fid, bank)
-            if v is None and dt in ("text", "person_name", None):
+            # Only fall back to the narrative sentinel for genuinely free-text
+            # fields. Routing "Not applicable" into a date/currency/numeric blank
+            # (e.g. a jurat "___ day of ___" or a "$___" slot) overflows the
+            # narrow box and is semantically wrong -- leave those for the real
+            # narrative/human step instead.
+            if v is None and dt in ("text", None):
                 v = "Not applicable"
             if v is not None:
                 case["narrative_facts"][fid] = v
