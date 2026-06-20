@@ -38,22 +38,29 @@ LAST = ["Walsh", "Bennett", "Goff", "Pelletier", "Thibodeau", "Hutchins",
 
 class Bank:
     """Deterministic synthetic-data bank with one coherent identity per role."""
-    def __init__(self, seed):
+    def __init__(self, seed, stress=False):
         self.r = random.Random(seed)
+        self.stress = stress
         self.county = self.r.choice(COUNTIES)
         yr = self.r.randint(2024, 2026)
         self.docket = f"{yr}-{self.county[:4].upper()}-{self.r.randint(1, 9999):04d}"
         self._roles = {}
 
     def person(self):
+        if self.stress:  # long hyphenated names to shake out horizontal overflow
+            return (f"{self.r.choice(FIRST)}-{self.r.choice(FIRST)} "
+                    f"{self.r.choice(LAST)}-{self.r.choice(LAST)} {self.r.choice(LAST)}")
         return f"{self.r.choice(FIRST)} {self.r.choice(LAST)[:1]}. {self.r.choice(LAST)}"
 
     def role(self, role):
         if role not in self._roles:
             town, zp = self.r.choice(TOWNS)
+            street = f"{self.r.randint(2, 990)} {self.r.choice(STREETS)}"
+            if self.stress:
+                street = f"{self.r.randint(100,9999)} {self.r.choice(STREETS)}, Apt {self.r.randint(1,40)}B"
             self._roles[role] = {
                 "name": self.person(),
-                "street": f"{self.r.randint(2, 990)} {self.r.choice(STREETS)}",
+                "street": street,
                 "city": town, "state": "ME", "zip": zp,
                 "phone": f"(207) 555-0{self.r.randint(100, 199)}",
                 "email": f"user{self.r.randint(10,99)}@example.com",
@@ -67,6 +74,8 @@ class Bank:
 
     def money(self):
         dollars = self.r.randint(2, 800) * 1000 + self.r.randint(0, 999)
+        if self.stress:
+            dollars = self.r.randint(10, 99) * 1_000_000 + self.r.randint(0, 999_999)
         return f"{dollars:,}.{self.r.randint(0,99):02d}"
 
 
@@ -108,10 +117,10 @@ def _role_of(source):
     return (m.group(1), m.group(2)) if m else (None, None)
 
 
-def generate(form_id, seed=0):
+def generate(form_id, seed=0, stress=False):
     pkg = ROOT / "repo" / "forms" / form_id
     fields = json.loads((pkg / "schema.json").read_text())["fields"]
-    bank = Bank(seed)
+    bank = Bank(seed, stress=stress)
     case = {"case_dict": {}, "narrative_facts": {}}
 
     for f in fields:
