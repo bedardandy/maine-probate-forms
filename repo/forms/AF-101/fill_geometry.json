@@ -41,6 +41,15 @@
     {
      "page": 0,
      "rect": [
+      82.5,
+      145.5,
+      305.2,
+      162.1
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
       323.8,
       384.1,
       516.1,
@@ -427,17 +436,8 @@
   },
   "notary_public_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      348.0,
-      663.0,
-      504.0,
-      676.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   }
  }
 }

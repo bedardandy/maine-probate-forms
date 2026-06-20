@@ -1,15 +1,15 @@
 {
   "forms_audited": 82,
-  "finding_count": 684,
+  "finding_count": 677,
   "by_code": {
     "uncovered_printed_rule": 559,
     "generic_or_orphan_name": 3,
     "county_value_should_be_uppercase": 34,
-    "suspicious_widget_chain_gap": 10,
-    "widget_widget_collision": 26,
-    "widget_native_text_collision": 23,
-    "widget_overruns_rule": 23,
-    "county_label_collision": 3,
+    "widget_widget_collision": 25,
+    "suspicious_widget_chain_gap": 11,
+    "widget_overruns_rule": 22,
+    "widget_native_text_collision": 18,
+    "county_label_collision": 2,
     "text_is_checkbox_sized": 3
   },
   "findings": [
@@ -214,30 +214,6 @@
         54.5,
         705.2,
         221.8,
-        718.2
-      ]
-    },
-    {
-      "form_id": "AD-007",
-      "code": "uncovered_printed_rule",
-      "severity": "low",
-      "page": 1,
-      "rect": [
-        222.2,
-        705.2,
-        389.6,
-        718.2
-      ]
-    },
-    {
-      "form_id": "AD-007",
-      "code": "uncovered_printed_rule",
-      "severity": "low",
-      "page": 1,
-      "rect": [
-        390.1,
-        705.2,
-        557.5,
         718.2
       ]
     },
@@ -532,13 +508,6 @@
     },
     {
       "form_id": "AD-011",
-      "code": "suspicious_widget_chain_gap",
-      "severity": "medium",
-      "field_id": "name_of_adoptee",
-      "gap": 23.3
-    },
-    {
-      "form_id": "AD-011",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_name",
@@ -577,34 +546,11 @@
       "field_id": "unlabeled_widget_after_email"
     },
     {
-      "form_id": "AD-026",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "oath_petitioner_1_name",
-      "page": 3,
-      "native_text": "and",
-      "overlap": [
-        492.5,
-        529.3,
-        506.8,
-        537.8
-      ]
-    },
-    {
       "form_id": "AD-028",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
       "field_id": "county_probate_court",
       "page": 1
-    },
-    {
-      "form_id": "AD-028",
-      "code": "widget_overruns_rule",
-      "severity": "medium",
-      "field_id": "putative_parent_likely_address",
-      "page": 1,
-      "left_overrun": 1.2,
-      "right_overrun": 7.8
     },
     {
       "form_id": "AD-028",
@@ -646,6 +592,13 @@
       "form_id": "AF-101",
       "code": "suspicious_widget_chain_gap",
       "severity": "medium",
+      "field_id": "minor_child_name",
+      "gap": 222.0
+    },
+    {
+      "form_id": "AF-101",
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
       "field_id": "affiant_name",
       "gap": 42.0
     },
@@ -674,12 +627,12 @@
       "form_id": "AF-101",
       "code": "uncovered_printed_rule",
       "severity": "low",
-      "page": 1,
+      "page": 2,
       "rect": [
-        81.1,
-        147.6,
-        306.4,
-        160.6
+        348.0,
+        664.2,
+        504.4,
+        677.2
       ]
     },
     {
@@ -696,17 +649,10 @@
     },
     {
       "form_id": "AF-101.vA",
-      "code": "county_label_collision",
-      "severity": "high",
-      "field_id": "county_probate_court",
-      "page": 1,
-      "rect": [
-        54.0,
-        108.2,
-        159.1,
-        126.7
-      ],
-      "county_x": 159.1
+      "code": "suspicious_widget_chain_gap",
+      "severity": "medium",
+      "field_id": "minor_child_name",
+      "gap": 222.9
     },
     {
       "form_id": "AF-101.vA",
@@ -719,12 +665,12 @@
       "form_id": "AF-101.vA",
       "code": "uncovered_printed_rule",
       "severity": "low",
-      "page": 1,
+      "page": 2,
       "rect": [
-        81.1,
-        147.6,
-        306.4,
-        160.6
+        348.0,
+        664.2,
+        504.4,
+        677.2
       ]
     },
     {
@@ -892,20 +838,6 @@
       "code": "widget_widget_collision",
       "severity": "high",
       "page": 1,
-      "field_id": "anticipate_other_employment",
-      "other_field_id": "other_employment_explanation",
-      "overlap": [
-        462.9,
-        467.1,
-        470.9,
-        469.2
-      ]
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_widget_collision",
-      "severity": "high",
-      "page": 1,
       "field_id": "spouse_income_amount",
       "other_field_id": "spouse_income_available_amount",
       "overlap": [
@@ -935,20 +867,6 @@
       "severity": "medium",
       "field_id": "county",
       "page": 1
-    },
-    {
-      "form_id": "AF-105",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "medical_support_total",
-      "page": 2,
-      "native_text": "is",
-      "overlap": [
-        420.0,
-        404.7,
-        424.8,
-        414.5
-      ]
     },
     {
       "form_id": "AF-105",
@@ -1049,6 +967,18 @@
       ]
     },
     {
+      "form_id": "APP-2",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 1,
+      "rect": [
+        309.6,
+        687.7,
+        504.0,
+        700.7
+      ]
+    },
+    {
       "form_id": "CN-1",
       "code": "county_value_should_be_uppercase",
       "severity": "medium",
@@ -1075,45 +1005,15 @@
       ]
     },
     {
-      "form_id": "DE-101",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "decedent_name_caption",
-      "page": 1,
-      "native_text": "PETITION",
-      "overlap": [
-        360.0,
-        156.1,
-        405.0,
-        168.0
-      ]
-    },
-    {
-      "form_id": "DE-101",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "decedent_name_caption",
-      "page": 1,
-      "native_text": "FOR",
-      "overlap": [
-        407.5,
-        156.1,
-        426.9,
-        168.0
-      ]
-    },
-    {
-      "form_id": "DE-101",
-      "code": "widget_native_text_collision",
-      "severity": "high",
-      "field_id": "decedent_name_caption",
-      "page": 1,
-      "native_text": "FORMAL",
-      "overlap": [
-        429.3,
-        156.1,
-        471.0,
-        168.0
+      "form_id": "CN-1",
+      "code": "uncovered_printed_rule",
+      "severity": "low",
+      "page": 3,
+      "rect": [
+        309.7,
+        176.7,
+        525.7,
+        189.7
       ]
     },
     {

@@ -13,6 +13,15 @@
     {
      "page": 0,
      "rect": [
+      81.0,
+      143.2,
+      305.2,
+      161.2
+     ]
+    },
+    {
+     "page": 0,
+     "rect": [
       323.8,
       384.1,
       516.1,
@@ -439,17 +448,8 @@
   },
   "notary_public_name": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 1,
-     "rect": [
-      348.0,
-      663.0,
-      504.0,
-      676.0
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_wet_ink"
   },
   "county_probate_court": {
    "type": "text",
@@ -459,7 +459,7 @@
      "rect": [
       54.0,
       108.2,
-      159.1,
+      155.2,
       126.7
      ]
     }

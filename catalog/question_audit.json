@@ -1,12 +1,12 @@
 {
   "forms_audited": 82,
-  "finding_count": 114,
+  "finding_count": 115,
   "by_code": {
     "alignment_suggestion": 96,
-    "symbol_splits_underline": 2,
+    "symbol_splits_underline": 1,
     "text_on_signature_line": 1,
     "uncovered_question": 2,
-    "underline_buffer": 13
+    "underline_buffer": 15
   },
   "findings": [
     {
@@ -267,12 +267,13 @@
     },
     {
       "form_id": "AF-105",
-      "code": "symbol_splits_underline",
-      "severity": "medium",
+      "code": "underline_buffer",
+      "severity": "low",
       "field_id": "medical_support_total",
       "page": 1,
-      "symbol": "$",
-      "note": "widget spans an interior printed symbol; consider separate fields"
+      "side": "left",
+      "gap": 0.5,
+      "neighbor": "$"
     },
     {
       "form_id": "APP-1",
@@ -300,6 +301,16 @@
       "page": 0,
       "have": "left",
       "want": "center"
+    },
+    {
+      "form_id": "DE-101(I)",
+      "code": "underline_buffer",
+      "severity": "low",
+      "field_id": "docket_number",
+      "page": 0,
+      "side": "left",
+      "gap": -0.5,
+      "neighbor": "NO."
     },
     {
       "form_id": "DE-201(I)",
