@@ -213,6 +213,27 @@ def _validate_verdicts(raw: list, auth_by_cite: dict) -> list[dict]:
     return out
 
 
+def _add_unreviewed(verdicts: list[dict], resolved: list[dict]) -> None:
+    """Require a verdict for *every* resolved authority. If the inspector omitted
+    one (returned verdicts for a subset of the cited authorities), record it as
+    ``unreviewed``/``unclear`` so a partially-checked draft can't report clean —
+    the missing authority still counts toward ``needs_review``.
+    """
+    seen = {v.get("cite") for v in verdicts}
+    for c in resolved:
+        cite = c.get("cite", c["key"])
+        if cite not in seen and c["key"] not in seen:
+            verdicts.append({
+                "cite": cite,
+                "supports_conclusion": "unclear",
+                "quote": "",
+                "quote_grounded": False,
+                "rationale": "inspector returned no verdict for this citation",
+                "resolved": True,
+                "unreviewed": True,
+            })
+
+
 def _summary(result: dict) -> dict:
     counts = {"pass": 0, "fail": 0, "unclear": 0}
     for v in result.get("verdicts", []):
@@ -286,7 +307,9 @@ def inspect(draft: str, vocabulary, resolver: Callable[[str], Optional[dict]], *
             msg = ch.content or getattr(ch, "reasoning_content", "") or ""
             raw = _extract_json(msg).get("verdicts")
             if isinstance(raw, list) and raw:
-                result["verdicts"] = _validate_verdicts(raw, auth_by_cite)
+                verdicts = _validate_verdicts(raw, auth_by_cite)
+                _add_unreviewed(verdicts, resolved)
+                result["verdicts"] = verdicts
                 result["summary"] = _summary(result)
                 return result
         except Exception as e:                  # keep retrying, keep the why

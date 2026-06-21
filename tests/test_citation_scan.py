@@ -76,6 +76,21 @@ def test_does_not_false_positive_on_plain_numbers():
     assert cs.scan("the deadline is 3-401 days after filing, in 2000 or later") == []
 
 
+def test_plural_chained_sections_all_scanned():
+    # "§§ 5-301 and 9-999" — the bare-§ fallback only catches the first; every
+    # section in the list must be scanned so a fabricated later cite can't dodge
+    # the unresolvable bucket. (PR #5 review P2.)
+    rep = cs.report("The court applies 18-C M.R.S. §§ 5-301 and 9-999.")
+    cites = {h["cite"]: h["resolves"] for h in rep["hits"]}
+    assert "18-C §5-301" in cites and "18-C §9-999" in cites
+    assert "18-C §9-999" in rep["unresolvable"]          # fabricated second cite caught
+
+
+def test_plural_comma_separated_sections():
+    cites = _cites("see §§ 3-401, 3-203, 9-999")
+    assert {"18-C §3-401", "18-C §3-203", "18-C §9-999"} <= cites
+
+
 def test_scan_urls_classifies_known_fabricated_placeholder():
     base = "https://legislature.maine.gov/statutes/18-C/"
     text = (f"real {base}title18-Csec3-401.html "

@@ -54,6 +54,11 @@ _RE_ME = re.compile(r"\b(\d{4})\s+ME\s+(\d+)\b")
 _RE_ATL = re.compile(r"\b(\d+)\s+A\.?\s?([23])d\s+(\d+)\b")
 # Bare section symbol (assumed Title 18-C in this domain): "§3-401"
 _RE_BARE = re.compile(r"§\s*(\d+-\d+)(?:\([0-9A-Za-z]+\))?")
+# Plural/chained sections after §/§§: "§§ 5-301 and 9-999", "§§ 5-301, 5-302".
+# The bare-§ fallback only catches the first; this pass recovers every section in
+# the list so a fabricated later cite can't dodge the unresolvable/out_of_vocab
+# buckets. Same Title 18-C assumption as the bare-§ form.
+_RE_SECLIST = re.compile(r"§§?\s*\d+-\d+(?:\s*(?:,|;|&|and)\s*\d+-\d+)+")
 
 
 def _name_variants(name: str):
@@ -107,6 +112,11 @@ def scan(text: str, *, form_id: str | None = None) -> list[dict]:
             continue                        # handled by _RE_18C
         cite = f"{title} M.R.S. §{m.group(2)}" if m.group(2) else f"{title} M.R.S."
         _add(m.start(), m.end(), m.group(0), cite, "crossref", cite in xref)
+    for m in _RE_SECLIST.finditer(text):    # plural list: "§§ 5-301 and 9-999"
+        for sub in re.finditer(r"\d+-\d+", m.group(0)):
+            cite = f"18-C §{sub.group(0)}"
+            _add(m.start() + sub.start(), m.start() + sub.end(),
+                 sub.group(0), cite, "statute", resolves(cite, sec, xref))
     for m in _RE_BARE.finditer(text):
         cite = f"18-C §{m.group(1)}"        # bare § assumed 18-C in this domain
         _add(m.start(), m.end(), m.group(0), cite, "statute", resolves(cite, sec, xref))

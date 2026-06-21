@@ -234,6 +234,25 @@ def test_fetch_link_status_classification():
     assert fst._link_status(urllib.error.URLError("timed out")) == "inconclusive"
 
 
+def test_inspect_requires_a_verdict_for_every_resolved_authority():
+    # The inspector returns a verdict for A1 only, while the draft also cites A2.
+    # A2 must not pass silently: it is reconciled as unreviewed/unclear so a
+    # partially-checked draft still counts toward needs_review. (PR #5 review P1.)
+    text = {"A1": "On notice the body shall enter an order.",
+            "A2": "The fiduciary may act only after authorization."}
+    payload = json.dumps({"verdicts": [{
+        "cite": "A1", "supports_conclusion": "pass",
+        "quote": "shall enter an order", "rationale": "ok"}]})
+    res = li.inspect("[[REF: A1]] and [[REF: A2]]", {"A1", "A2"},
+                     lambda k: {"cite": k, "title": k, "url": "u", "text": text[k]},
+                     client=make_stub(payload), model="m")
+    by = {v["cite"]: v for v in res["verdicts"]}
+    assert set(by) == {"A1", "A2"}
+    assert by["A2"]["unreviewed"] is True
+    assert by["A2"]["supports_conclusion"] == "unclear"
+    assert res["summary"]["unclear"] == 1 and res["summary"]["pass"] == 1
+
+
 def test_inspect_field_offline_flags_invented(monkeypatch):
     payload = json.dumps({"verdicts": [{
         "cite": "18-C §3-401", "supports_conclusion": "pass",
