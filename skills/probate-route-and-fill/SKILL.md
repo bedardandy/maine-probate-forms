@@ -72,6 +72,23 @@ and VLM-free** — follow it directly; do not explore the heavy detection pipeli
    Report any field that did not place, alongside the narrative fields you
    composed and the unresolved facts.
 
+6. **(Optional) Inspect citations in narrative fields** — `verify_filled.py`
+   checks placement, not the *legal content* of the narrative text you composed.
+   **Only if** an OpenAI-compatible endpoint is configured
+   (`INSPECTOR_BASE_URL`/`INSPECTOR_MODEL`, falling back to `ROUTER_*`), you can
+   cite statutes/cases with closed-vocabulary `[[REF: cite]]` placeholders and
+   have them checked:
+   ```bash
+   python3 tools/inspect_citations.py --emit-prompt --form <FORM_ID>   # allowed cites
+   python3 tools/inspect_citations.py --form <FORM_ID> --draft draft.txt
+   ```
+   Each placeholder is replaced with the cited authority (statutes fetched live +
+   manifest-verified from legislature.maine.gov; cases from `caselaw.json`) and a
+   cold-eyes inspector LLM scores whether each conclusion is supported. Invented
+   or unresolved citations are flagged deterministically (no LLM needed). This is
+   **off the deterministic fill path** — never required to fill a form. See
+   `docs/citation-inspector.md`.
+
 ## Notes
 
 - Probate PDFs are flat and **not shipped** — `fill_pdf.py` fetches them on

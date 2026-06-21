@@ -1,0 +1,107 @@
+# Citation inspector: catching legal hallucinations in narrative fields
+
+The deterministic fill path (`fill_plan` → `fill_pdf` → `verify_filled`) resolves
+hard facts and checks that values *land* on the page. But the `llm_over_narrative`
+fields are composed by an LLM, and `verify_filled` explicitly leaves their *legal
+content* out of scope ("Narrative/blank/unresolved buckets are out of scope").
+The citation inspector fills that gap: it checks whether the statutes and cases a
+narrative field cites actually say what the draft claims they say.
+
+> **Not legal advice. Experimental.** The inspector is an LLM over an AI-annotated
+> statute layer; it points to issues to weigh, not conclusions. Verify everything
+> against the current statute and the actual opinions.
+
+## The idea: force closed-vocabulary placeholders, then substitute and inspect
+
+LLMs are good at *argument* and bad at *verbatim recall of law*. So we never let
+the model write statutory text from memory. Instead:
+
+1. **Draft with placeholders.** The drafting model cites only by emitting
+   `[[REF: cite]]` placeholders, copied from an enumerated **closed vocabulary** —
+   the citations the form's `statutes.json` actually uses.
+2. **Substitute the real authority.** Each placeholder is deterministically
+   replaced with the verbatim authority text: statutes fetched **live** from
+   legislature.maine.gov (cached + SHA-pinned), cases from the summarized holdings
+   in `caselaw.json`.
+3. **Inspect.** A separate, zero-temperature "cold-eyes" inspector LLM compares
+   each conclusion against the literal authority text and returns a structured
+   per-citation verdict (`pass` / `fail` / `unclear`) with the exact `quote` it
+   relied on.
+
+### Two hard-fail gates make invented citations impossible to pass silently
+
+This is the key difference from a naive "ask the model to cite" approach, where a
+model can invent a plausible citation key. Here, two deterministic gates run
+*before and around* the LLM:
+
+- **Gate A — invented.** A `[[REF: KEY]]` whose `KEY` is not in the form's closed
+  vocabulary is recorded as `invented` with no model in the loop. Even if the
+  drafting model ignores the prompt and makes up a key, it cannot resolve to
+  authority text, so it can never be scored `pass`.
+- **Gate B — unresolved.** An in-vocabulary statute whose live text cannot be
+  fetched is `unresolved` — visibly distinct from "resolved but unsupported".
+
+The inspector additionally **grounds every quote**: a verdict whose `quote` is not
+actually present in the authority text is flagged and, if it claimed `pass`, is
+downgraded to `unclear` — a fabricated supporting quote is exactly the failure
+mode we are inspecting for.
+
+## Usage
+
+```bash
+# 1. Get the drafting prompt + the form's allowed citations (deterministic).
+python3 tools/inspect_citations.py --emit-prompt --form DE-101
+
+# 2. Inspect a composed draft containing [[REF: cite]] placeholders.
+python3 tools/inspect_citations.py --form DE-101 --draft draft.txt --json
+echo "...[[REF: 18-C §3-401]]..." | python3 tools/inspect_citations.py --form DE-101
+
+# Offline: skip the live fetch and inspect against section titles + relevance notes.
+python3 tools/inspect_citations.py --form DE-101 --draft draft.txt --no-fetch-text
+```
+
+Exit status is non-zero whenever something needs a human's eyes: a `fail`,
+`invented`, or `unresolved` citation, or an inspector LLM that could not complete.
+
+Over MCP (`tools/agent_server.py`), the opt-in `inspect_citations(form_id,
+field_texts)` tool does the same over a single string or a `{field_id: text}`
+object.
+
+## Configuration
+
+The inspector LLM uses the same pluggable, OpenAI-compatible pattern as
+`tools/route_form.py`:
+
+| env var | default |
+|---|---|
+| `INSPECTOR_BASE_URL` | falls back to `ROUTER_BASE_URL`, then `http://127.0.0.1:8088/v1` |
+| `INSPECTOR_MODEL` | falls back to `ROUTER_MODEL`, then `Qwen3.6-27B-FP8` |
+| `INSPECTOR_API_KEY` | falls back to `ROUTER_API_KEY`, then `x` |
+| `MPF_STATUTE_CACHE` | `/tmp/probate_statute_cache` |
+
+This is **opt-in and non-deterministic** — it is never called from `fill_plan`,
+`fill_pdf`, or `build_plan`, and the fill output is byte-identical whether or not
+an inspector is configured.
+
+## How the pieces fit
+
+| file | role |
+|---|---|
+| `tools/legal_inspector.py` | generic, corpus-agnostic engine: placeholders, the two gates, the inspector LLM call, quote-grounding |
+| `tools/maine_citation_db.py` | Maine adapter: builds the closed vocabulary from `docs/statute-reference/_index/` + a form's `statutes.json`, and resolves each cite to authority text |
+| `tools/fetch_statute_text.py` | live statute-text fetch + cache + SHA manifest (pins the **normalized extracted text**, not raw HTML) |
+| `tools/build_statute_text_manifest.py` | maintainer tool to pin the cites the forms use into `catalog/statute_text_manifest.json` |
+| `tools/inspect_citations.py` | the CLI |
+
+### Notes on the statute-text fetch
+
+- legislature.maine.gov returns **HTTP 403** to non-browser User-Agents; the
+  fetcher sends a browser-like UA.
+- Statute HTML is **not byte-stable** (nav/footer/analytics churn independently of
+  the law), so the manifest pins the SHA-256 of the *normalized extracted text*,
+  not the raw bytes. The fragile extraction lives in one function
+  (`_extract_statute_text`) with a frozen-fixture test
+  (`tests/fixtures/sec3-108.html`). Bump `EXTRACTOR_VERSION` after changing it and
+  re-run the manifest builder.
+- `text_verified` in a fetch result is `True` (matches the pin), `False` (the
+  section was re-issued), or `None` (the cite is not pinned yet).

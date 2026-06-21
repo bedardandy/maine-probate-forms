@@ -92,6 +92,17 @@ any resolved field failed to place. Then flag the form's risk tiers, the
 narrative fields you composed, and any unresolved/missing facts. Must be
 reviewed before filing.
 
+**7. (Optional) Inspect the legal content of narrative fields.** `verify_filled`
+checks *placement*, not whether the statute/case claims you wrote are sound. If
+an OpenAI-compatible endpoint is configured (`INSPECTOR_BASE_URL`/`INSPECTOR_MODEL`,
+falling back to `ROUTER_*`), cite with closed-vocabulary `[[REF: cite]]`
+placeholders and run `python3 tools/inspect_citations.py --form <ID> --draft
+draft.txt`: each placeholder is substituted with the cited authority (statutes
+fetched live + manifest-verified, cases from `caselaw.json`) and a cold-eyes
+inspector LLM scores whether each conclusion is supported; invented/unresolved
+cites are flagged deterministically. Off the deterministic fill path — see
+**`docs/citation-inspector.md`**.
+
 ## MCP (recommended for agents)
 ```bash
 claude mcp add maine-probate-forms -- python3 tools/agent_server.py
@@ -103,4 +114,6 @@ returns the plan and writes the filled PDF (path under `pdf`), auto-fetching
 the flat source; the result carries `source_verified` and a `verified_fill`
 read-back summary. The server is built on the shared `maine-forms-engine`
 MCP scaffold, so the parameter names and error shape match the companion
-`maine-court-forms` MCP layer.
+`maine-court-forms` MCP layer. An opt-in `inspect_citations(form_id, field_texts)`
+extra tool runs the citation inspector over composed narrative text (LLM-backed;
+never on the fill path).
