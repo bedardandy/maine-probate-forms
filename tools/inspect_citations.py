@@ -43,8 +43,10 @@ import maine_citation_db as mdb            # noqa: E402
 
 def _needs_review(res: dict) -> bool:
     s = res.get("summary", {})
+    scan = res.get("scan", {})
     return (not res.get("ok")) or bool(res.get("invented")) or \
-        bool(res.get("unresolved")) or s.get("fail", 0) > 0
+        bool(res.get("unresolved")) or s.get("fail", 0) > 0 or \
+        bool(scan.get("leaked")) or bool(scan.get("unresolvable"))
 
 
 def _print_scorecard(res: dict) -> None:
@@ -58,6 +60,13 @@ def _print_scorecard(res: dict) -> None:
         print(f"  INVENTED (not in this form's vocabulary): {', '.join(res['invented'])}")
     if res.get("unresolved"):
         print(f"  UNRESOLVED (authority text unavailable): {', '.join(res['unresolved'])}")
+    scan = res.get("scan", {})
+    if scan.get("leaked"):
+        print(f"  LEAKED (cited in prose, outside [[REF:]]): {', '.join(scan['leaked'])}")
+    if scan.get("unresolvable"):
+        print(f"  UNRESOLVABLE (bare cite not in index): {', '.join(scan['unresolvable'])}")
+    if scan.get("out_of_vocab"):
+        print(f"  OUT-OF-VOCAB (real cite, not for this form): {', '.join(scan['out_of_vocab'])}")
     for v in res.get("verdicts", []):
         mark = {"pass": "✓", "fail": "✗", "unclear": "?"}.get(v["supports_conclusion"], "?")
         gq = "" if v.get("quote_grounded", True) else "  [quote NOT found in authority]"

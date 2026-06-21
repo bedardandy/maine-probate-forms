@@ -248,7 +248,14 @@ def inspect(draft: str, vocabulary, resolver: Callable[[str], Optional[dict]], *
 
     model = (model or os.environ.get("INSPECTOR_MODEL")
              or os.environ.get("ROUTER_MODEL", "Qwen3.6-27B-FP8"))
-    client = client or _client()
+    if client is None:
+        try:                              # fail soft: keep the deterministic findings
+            client = _client()
+        except Exception as e:
+            result["ok"] = False
+            result["error"] = f"inspector client unavailable: {type(e).__name__}: {e}"
+            result["summary"] = _summary(result)
+            return result
     no_think = os.environ.get("ROUTER_NO_THINK", "1") == "1"
     extra: dict = {}
     if no_think:

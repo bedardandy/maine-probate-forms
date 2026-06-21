@@ -184,6 +184,26 @@ def test_fetch_statute_text_unknown_cite_returns_error(tmp_path, monkeypatch):
 # --------------------------------------------------------------------------- #
 # End-to-end adapter glue with a stub client (no network, no real LLM)        #
 # --------------------------------------------------------------------------- #
+def test_inspect_fails_soft_when_client_unavailable(monkeypatch):
+    # No client passed and _client() raises (e.g. openai missing / endpoint down):
+    # the deterministic buckets survive and ok is False, never an exception.
+    def boom():
+        raise RuntimeError("no endpoint")
+    monkeypatch.setattr(li, "_client", boom)
+    res = li.inspect("under [[REF: 18-C §3-401]]", {"18-C §3-401"}, _resolver)
+    assert res["ok"] is False
+    assert "unavailable" in res["error"]
+    assert res["summary"]["invented"] == 0
+
+
+def test_inspect_field_attaches_scan_safety_net(monkeypatch):
+    monkeypatch.setattr(li, "_client", lambda: make_stub('{"verdicts":[]}'))
+    # bare cite in prose (no placeholder) + an unresolvable one
+    res = mdb.inspect_field("DE-101", "see 18-C §3-203 and 18-C §9-999",
+                            fetch_text=False)
+    assert "18-C §9-999" in res["scan"]["unresolvable"]
+
+
 def test_inspect_field_offline_flags_invented(monkeypatch):
     payload = json.dumps({"verdicts": [{
         "cite": "18-C §3-401", "supports_conclusion": "pass",

@@ -160,10 +160,14 @@ def draft_prompt(form_id: str) -> str:
 def inspect_field(form_id: str, text: str, *, fetch_text: bool = True,
                   model: str | None = None, client=None) -> dict:
     """Inspect one composed narrative field's text for citation hallucinations."""
+    import citation_scan        # local import: citation_scan imports this module
     vocab = build_vocab(form_id)
     resolver = make_resolver(vocab, fetch_text=fetch_text)
     result = legal_inspector.inspect(text, set(vocab), resolver,
                                      model=model, client=client)
     result["form_id"] = form_id
+    # Deterministic safety net: flag citations written outside the [[REF:]]
+    # protocol (leaked) or that don't resolve to the index (unresolvable).
+    result["scan"] = citation_scan.report(text, form_id=form_id)
     result["disclaimer"] = DISCLAIMER
     return result

@@ -46,6 +46,32 @@ actually present in the authority text is flagged and, if it claimed `pass`, is
 downgraded to `unclear` — a fabricated supporting quote is exactly the failure
 mode we are inspecting for.
 
+### A deterministic safety net for citations written outside the protocol
+
+Placeholders only guarantee correctness for cites the model chose to wrap. A model
+can still slip a bare `see 18-C §3-203` or `In re Estate of Kruzynski` into prose.
+So `inspect_field` also runs `tools/citation_scan.py` — a deterministic,
+**offline, no-LLM, no-network** scanner (regex families over the closed Maine
+index; no trained model, because the surface forms are regular and the vocabulary
+is finite). It buckets every citation-shaped span it finds:
+
+- `leaked` — citation-shaped, but **outside** any `[[REF:]]` placeholder (only
+  meaningful when the text uses the protocol);
+- `unresolvable` — does not resolve to the trusted index (a fabricated or
+  mistyped cite);
+- `out_of_vocab` — a real cite, but not one of *this form's* citations.
+
+Because the scanner needs no LLM, these findings are reported even when the
+inspector LLM is unconfigured or down (the inspect call **fails soft** — it keeps
+all deterministic findings and sets `ok=False`).
+
+```bash
+echo "Under [[REF: 18-C §3-401]] the court acts; see also 18-C §3-203 and 18-C §9-999." \
+  | python3 tools/citation_scan.py --form DE-101
+#   [statute] '18-C §3-203' -> 18-C §3-203  <- LEAKED
+#   [statute] '18-C §9-999' -> 18-C §9-999  <- UNRESOLVABLE, LEAKED
+```
+
 ## Usage
 
 ```bash
@@ -89,6 +115,7 @@ an inspector is configured.
 |---|---|
 | `tools/legal_inspector.py` | generic, corpus-agnostic engine: placeholders, the two gates, the inspector LLM call, quote-grounding |
 | `tools/maine_citation_db.py` | Maine adapter: builds the closed vocabulary from `docs/statute-reference/_index/` + a form's `statutes.json`, and resolves each cite to authority text |
+| `tools/citation_scan.py` | deterministic safety-net scanner (no LLM, no network): flags bare cites written outside the `[[REF:]]` protocol, unresolvable cites, and out-of-vocab cites |
 | `tools/fetch_statute_text.py` | live statute-text fetch + cache + SHA manifest (pins the **normalized extracted text**, not raw HTML) |
 | `tools/build_statute_text_manifest.py` | maintainer tool to pin the cites the forms use into `catalog/statute_text_manifest.json` |
 | `tools/inspect_citations.py` | the CLI |
