@@ -92,6 +92,9 @@ def main() -> int:
                     help="print the draft-generator prompt + allowed cites, then exit")
     ap.add_argument("--no-fetch-text", action="store_true",
                     help="use section titles + relevance notes instead of live statute text")
+    ap.add_argument("--attest", action="store_true",
+                    help="emit a signed attestation receipt (proof the inspector ran)")
+    ap.add_argument("--log", help="append the receipt to a hash-chained log (or $ATTEST_LOG)")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
 
@@ -99,11 +102,20 @@ def main() -> int:
         print(mdb.draft_prompt(a.form))
         return 0
 
+    def _attest(text, res):
+        if a.attest or a.log:
+            import attest
+            res["attestation"] = attest.record_inspection(
+                text, res, model=res.get("model"), log_path=a.log)
+
     fetch_text = not a.no_fetch_text
     if a.narrative:
         fields = json.loads(pathlib.Path(a.narrative).read_text(encoding="utf-8"))
-        out = {fid: mdb.inspect_field(a.form, txt, fetch_text=fetch_text)
-               for fid, txt in fields.items()}
+        out = {}
+        for fid, txt in fields.items():
+            r = mdb.inspect_field(a.form, txt, fetch_text=fetch_text)
+            _attest(txt, r)
+            out[fid] = r
         review = any(_needs_review(r) for r in out.values())
         if a.json:
             print(json.dumps({"ok": all(r.get("ok") for r in out.values()),
@@ -124,10 +136,16 @@ def main() -> int:
         ap.error("no draft text (pass --draft, --narrative, or pipe text on stdin)")
 
     res = mdb.inspect_field(a.form, draft, fetch_text=fetch_text)
+    _attest(draft, res)
     if a.json:
         print(json.dumps(res, indent=2, ensure_ascii=False))
     else:
         _print_scorecard(res)
+        if res.get("attestation"):
+            att = res["attestation"]
+            sig = att.get("signature", "")[:16]
+            print(f"\nattestation: signed={att.get('signed')} "
+                  f"sig={sig}… input_sha256={att['receipt']['input_sha256'][:16]}…")
         print(f"\n{mdb.DISCLAIMER}")
     return 1 if _needs_review(res) else 0
 

@@ -148,6 +148,8 @@ an inspector is configured.
 | `tools/maine_citation_db.py` | Maine adapter: builds the closed vocabulary from `docs/statute-reference/_index/` + a form's `statutes.json`, and resolves each cite to authority text |
 | `tools/citation_scan.py` | deterministic safety-net scanner (no LLM, no network): flags bare cites written outside the `[[REF:]]` protocol, unresolvable cites, out-of-vocab cites, and fabricated URLs |
 | `tools/check_links.py` | dead-link checker (stdlib only): classifies URLs live/dead/blocked, audits the citation DB (`make links`), and powers the inspector's `dead_links` and the scanner's fabricated-URL check |
+| `tools/attest.py` | signed, hash-chained attestation receipts — proof the inspector ran on a given output (see `docs/attestation-and-guards.md`) |
+| `tools/guard.py` + `hooks/citation_guard.py` + `tools/inspect_proxy.py` | harness injection: shared guard core, a Claude Code blocking hook, and an OpenAI-compatible guard proxy |
 | `tools/fetch_statute_text.py` | live statute-text fetch + cache + SHA manifest (pins the **normalized extracted text**, not raw HTML) |
 | `tools/build_statute_text_manifest.py` | maintainer tool to pin the cites the forms use into `catalog/statute_text_manifest.json` |
 | `tools/inspect_citations.py` | the CLI |
