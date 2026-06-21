@@ -135,7 +135,11 @@ def make_resolver(vocab: dict, *, fetch_text: bool = True,
                     return {"cite": key, "title": meta.get("title"),
                             "url": meta.get("url"), "text": res["text"],
                             "text_verified": res.get("text_verified")}
-                return None                 # Gate B: fetch failed -> unresolved
+                if res.get("link_status") == "dead":        # 404/410/NXDOMAIN
+                    return {"cite": key, "title": meta.get("title"),
+                            "url": meta.get("url"), "text": None,
+                            "dead_link": True, "link_status": "dead"}
+                return None                 # Gate B: blocked/inconclusive -> unresolved
             parts = [meta.get("title") or key]
             if meta.get("note"):
                 parts.append(meta["note"])

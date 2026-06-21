@@ -33,6 +33,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
+import check_links                         # noqa: E402  (statute_url_in_index)
 import legal_inspector                     # noqa: E402  (PLACEHOLDER)
 from maine_citation_db import _index, resolves, build_vocab   # noqa: E402
 
@@ -121,7 +122,41 @@ def scan(text: str, *, form_id: str | None = None) -> list[dict]:
     return hits
 
 
-def report(text: str, *, form_id: str | None = None) -> dict:
+_RE_URL = re.compile(r"https?://[^\s)>\]\"'}]+")
+_PLACEHOLDER_HOSTS = ("example.com", "example.org", "example.net", "example.edu",
+                      "example", "test.com", "foo.com", "foo.bar", "domain.com",
+                      "yoursite.com", "localhost")
+
+
+def scan_urls(text: str, *, check_live: bool = False) -> list[dict]:
+    """Find URL strings in free text and classify each (deterministic by default):
+    ``placeholder`` (example.com etc.), ``fabricated`` (a legislature.maine.gov
+    statute URL whose section is not in the index), ``known`` (matches an index
+    URL), or ``unknown``. With ``check_live`` the ``unknown`` ones are probed and a
+    ``dead``/``blocked``/… ``link_status`` is attached (network)."""
+    hits = []
+    for m in _RE_URL.finditer(text or ""):
+        url = m.group(0).rstrip(".,);]'\"")
+        host = re.sub(r"^https?://", "", url).split("/")[0].lower()
+        if (host in _PLACEHOLDER_HOSTS or host.endswith(".test")
+                or host.endswith(".example") or host.endswith(".invalid")):
+            klass = "placeholder"
+        else:
+            in_idx = check_links.statute_url_in_index(url)
+            if in_idx is True or url in check_links._all_index_urls():
+                klass = "known"
+            elif in_idx is False:
+                klass = "fabricated"     # statute URL whose section isn't in the index
+            else:
+                klass = "unknown"
+        rec = {"url": url, "span": [m.start(), m.end()], "class": klass}
+        if check_live and klass in ("unknown", "fabricated"):
+            rec["link_status"] = check_links.check_url(url)["status"]
+        hits.append(rec)
+    return hits
+
+
+def report(text: str, *, form_id: str | None = None, check_live: bool = False) -> dict:
     """Scan + bucket: ``leaked`` (citation-shaped, outside any placeholder),
     ``unresolvable`` (does not resolve to the index), ``out_of_vocab`` (resolves
     but not in this form's vocabulary). ``leaked`` is only meaningful when the
@@ -132,8 +167,15 @@ def report(text: str, *, form_id: str | None = None) -> dict:
     leaked = sorted({h["cite"] for h in hits
                      if uses_protocol and not h["in_placeholder"]})
     unresolvable = sorted({h["cite"] for h in hits if not h["resolves"]})
+    url_hits = scan_urls(text, check_live=check_live)
+    fabricated_urls = sorted({h["url"] for h in url_hits
+                              if h["class"] in ("placeholder", "fabricated")})
+    dead_urls = sorted({h["url"] for h in url_hits
+                        if h.get("link_status") == "dead"})
     out = {"hits": hits, "uses_protocol": uses_protocol,
-           "leaked": leaked, "unresolvable": unresolvable}
+           "leaked": leaked, "unresolvable": unresolvable,
+           "urls": url_hits, "fabricated_urls": fabricated_urls,
+           "dead_urls": dead_urls}
     if form_id:
         out["out_of_vocab"] = sorted({h["cite"] for h in hits
                                       if h["resolves"] and not h.get("in_vocab")})
@@ -145,16 +187,19 @@ def main() -> int:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--form", help="scope vocabulary to a form id, e.g. DE-101")
     ap.add_argument("--draft", help="path to text to scan (default: stdin)")
+    ap.add_argument("--check-links", action="store_true",
+                    help="probe unknown/fabricated URLs for liveness (network)")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
 
     text = pathlib.Path(a.draft).read_text(encoding="utf-8") if a.draft else sys.stdin.read()
-    rep = report(text, form_id=a.form)
+    rep = report(text, form_id=a.form, check_live=a.check_links)
     if a.json:
         print(json.dumps(rep, indent=2, ensure_ascii=False))
     else:
-        print(f"scanned {len(rep['hits'])} citation(s); "
-              f"leaked={len(rep['leaked'])} unresolvable={len(rep['unresolvable'])}"
+        print(f"scanned {len(rep['hits'])} citation(s), {len(rep['urls'])} url(s); "
+              f"leaked={len(rep['leaked'])} unresolvable={len(rep['unresolvable'])} "
+              f"fabricated_urls={len(rep['fabricated_urls'])}"
               + (f" out_of_vocab={len(rep.get('out_of_vocab', []))}" if a.form else ""))
         for h in rep["hits"]:
             tags = []
@@ -166,7 +211,12 @@ def main() -> int:
                 tags.append("OUT-OF-VOCAB")
             flag = ("  <- " + ", ".join(tags)) if tags else ""
             print(f"  [{h['kind']}] {h['raw']!r} -> {h['cite']}{flag}")
-    return 1 if (rep["leaked"] or rep["unresolvable"]) else 0
+        for h in rep["urls"]:
+            if h["class"] in ("placeholder", "fabricated") or h.get("link_status") == "dead":
+                ls = f", {h['link_status']}" if h.get("link_status") else ""
+                print(f"  [url] {h['url']}  <- {h['class'].upper()}{ls}")
+    return 1 if (rep["leaked"] or rep["unresolvable"] or rep["fabricated_urls"]
+                 or rep["dead_urls"]) else 0
 
 
 if __name__ == "__main__":

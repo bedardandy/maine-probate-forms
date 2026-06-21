@@ -198,7 +198,9 @@ def inspect_citations(form_id: str, field_texts, fetch_text: bool = True) -> dic
     from caselaw.json) and a cold-eyes inspector LLM scores, per citation, whether
     the draft's conclusion is supported (pass/fail/unclear with a grounded quote).
     A cite not in this form's vocabulary is flagged ``invented``; one whose text
-    can't be fetched is ``unresolved`` — both deterministically, no model needed.
+    can't be fetched is ``unresolved``; one whose authority URL is dead (404/gone)
+    is ``dead_link``; a citation-shaped span written outside the protocol or a
+    fabricated URL is flagged by the deterministic ``scan`` — all without a model.
     Experimental — not legal advice.
     """
     try:

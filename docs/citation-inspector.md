@@ -72,6 +72,37 @@ echo "Under [[REF: 18-C §3-401]] the court acts; see also 18-C §3-203 and 18-C
 #   [statute] '18-C §9-999' -> 18-C §9-999  <- UNRESOLVABLE, LEAKED
 ```
 
+### Dead-link detection
+
+A fabricated or stale citation often points to a URL that 404s, so "is the
+authority link live?" is a verification signal on top of "does the cite resolve?"
+The principle is **DEAD ≠ BLOCKED**: legislature.maine.gov returns **403** to
+non-browser User-Agents and many servers reject `HEAD` with **405** — neither
+means the page is gone. `tools/check_links.py` classifies `404/410/NXDOMAIN` as
+**dead**, and `403/405/429/timeout` as **blocked/inconclusive**; only *dead* fails
+a build. It runs on three surfaces:
+
+1. **Citation-DB audit** — `make links` probes the authority URLs in
+   `docs/statute-reference/_index/` (scope `used` = the cites the forms actually
+   reference; `all` = the full index) and writes `catalog/link_health.json`.
+   `make links-check` exits non-zero only on a *dead* link, so it is CI-safe
+   behind a bot filter.
+2. **Inspection-time signal** — the resolver reuses the live statute fetch it
+   already does; a `404/410/NXDOMAIN` becomes a distinct `dead_links` bucket in
+   the inspector result (a `[[DEAD LINK: cite]]` marker in the substituted text),
+   while a `403`/timeout stays `unresolved` rather than being falsely called dead.
+3. **Fabricated-URL scan** — `citation_scan` finds URL strings in free text and,
+   fully offline, flags `placeholder` hosts (example.com…) and `fabricated`
+   statute URLs (a `legislature.maine.gov` link whose section is not in the
+   index — certain, no network). `--check-links` additionally probes `unknown`
+   URLs for liveness.
+
+```bash
+echo "see https://legislature.maine.gov/statutes/18-C/title18-Csec99-999.html and https://example.com/x" \
+  | python3 tools/citation_scan.py --json   # both -> fabricated_urls (offline)
+python3 tools/check_links.py --scope used --check    # exit nonzero only on a DEAD link
+```
+
 ## Usage
 
 ```bash
@@ -115,7 +146,8 @@ an inspector is configured.
 |---|---|
 | `tools/legal_inspector.py` | generic, corpus-agnostic engine: placeholders, the two gates, the inspector LLM call, quote-grounding |
 | `tools/maine_citation_db.py` | Maine adapter: builds the closed vocabulary from `docs/statute-reference/_index/` + a form's `statutes.json`, and resolves each cite to authority text |
-| `tools/citation_scan.py` | deterministic safety-net scanner (no LLM, no network): flags bare cites written outside the `[[REF:]]` protocol, unresolvable cites, and out-of-vocab cites |
+| `tools/citation_scan.py` | deterministic safety-net scanner (no LLM, no network): flags bare cites written outside the `[[REF:]]` protocol, unresolvable cites, out-of-vocab cites, and fabricated URLs |
+| `tools/check_links.py` | dead-link checker (stdlib only): classifies URLs live/dead/blocked, audits the citation DB (`make links`), and powers the inspector's `dead_links` and the scanner's fabricated-URL check |
 | `tools/fetch_statute_text.py` | live statute-text fetch + cache + SHA manifest (pins the **normalized extracted text**, not raw HTML) |
 | `tools/build_statute_text_manifest.py` | maintainer tool to pin the cites the forms use into `catalog/statute_text_manifest.json` |
 | `tools/inspect_citations.py` | the CLI |

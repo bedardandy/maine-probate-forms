@@ -45,8 +45,9 @@ def _needs_review(res: dict) -> bool:
     s = res.get("summary", {})
     scan = res.get("scan", {})
     return (not res.get("ok")) or bool(res.get("invented")) or \
-        bool(res.get("unresolved")) or s.get("fail", 0) > 0 or \
-        bool(scan.get("leaked")) or bool(scan.get("unresolvable"))
+        bool(res.get("unresolved")) or bool(res.get("dead_links")) or \
+        s.get("fail", 0) > 0 or bool(scan.get("leaked")) or \
+        bool(scan.get("unresolvable")) or bool(scan.get("fabricated_urls"))
 
 
 def _print_scorecard(res: dict) -> None:
@@ -55,11 +56,13 @@ def _print_scorecard(res: dict) -> None:
     print(f"Citation inspection [{head}]  "
           f"pass={s.get('pass', 0)} fail={s.get('fail', 0)} "
           f"unclear={s.get('unclear', 0)} unresolved={s.get('unresolved', 0)} "
-          f"invented={s.get('invented', 0)}")
+          f"dead_links={s.get('dead_links', 0)} invented={s.get('invented', 0)}")
     if res.get("invented"):
         print(f"  INVENTED (not in this form's vocabulary): {', '.join(res['invented'])}")
     if res.get("unresolved"):
         print(f"  UNRESOLVED (authority text unavailable): {', '.join(res['unresolved'])}")
+    if res.get("dead_links"):
+        print(f"  DEAD LINK (authority URL 404/gone): {', '.join(res['dead_links'])}")
     scan = res.get("scan", {})
     if scan.get("leaked"):
         print(f"  LEAKED (cited in prose, outside [[REF:]]): {', '.join(scan['leaked'])}")
@@ -67,6 +70,8 @@ def _print_scorecard(res: dict) -> None:
         print(f"  UNRESOLVABLE (bare cite not in index): {', '.join(scan['unresolvable'])}")
     if scan.get("out_of_vocab"):
         print(f"  OUT-OF-VOCAB (real cite, not for this form): {', '.join(scan['out_of_vocab'])}")
+    if scan.get("fabricated_urls"):
+        print(f"  FABRICATED URL (placeholder/not in index): {', '.join(scan['fabricated_urls'])}")
     for v in res.get("verdicts", []):
         mark = {"pass": "✓", "fail": "✗", "unclear": "?"}.get(v["supports_conclusion"], "?")
         gq = "" if v.get("quote_grounded", True) else "  [quote NOT found in authority]"

@@ -204,6 +204,36 @@ def test_inspect_field_attaches_scan_safety_net(monkeypatch):
     assert "18-C §9-999" in res["scan"]["unresolvable"]
 
 
+def test_resolver_dead_link_is_bucketed(monkeypatch):
+    import urllib.error
+    vocab = mdb.build_vocab("DE-101")
+    dead_fetch = lambda c: {"cite": c, "text": None, "link_status": "dead", "url": "u"}
+    resolve = mdb.make_resolver(vocab, fetch_text=True, fetch=dead_fetch)
+    auth = resolve("18-C §3-401")
+    assert auth and auth.get("dead_link") is True
+    res = li.inspect("under [[REF: 18-C §3-401]]", set(vocab), resolve,
+                     client=make_stub('{"verdicts":[]}'), model="m")
+    assert res["dead_links"] == ["18-C §3-401"]
+    assert res["summary"]["dead_links"] == 1
+    assert "[[DEAD LINK: 18-C §3-401]]" in res["substituted"]
+
+
+def test_resolver_blocked_link_stays_unresolved(monkeypatch):
+    vocab = mdb.build_vocab("DE-101")
+    blocked = lambda c: {"cite": c, "text": None, "link_status": "blocked", "url": "u"}
+    resolve = mdb.make_resolver(vocab, fetch_text=True, fetch=blocked)
+    assert resolve("18-C §3-401") is None      # blocked != dead -> unresolved
+
+
+def test_fetch_link_status_classification():
+    import socket
+    import urllib.error
+    assert fst._link_status(urllib.error.HTTPError("u", 404, "x", {}, None)) == "dead"
+    assert fst._link_status(urllib.error.HTTPError("u", 403, "x", {}, None)) == "blocked"
+    assert fst._link_status(urllib.error.URLError(socket.gaierror("nx"))) == "dead"
+    assert fst._link_status(urllib.error.URLError("timed out")) == "inconclusive"
+
+
 def test_inspect_field_offline_flags_invented(monkeypatch):
     payload = json.dumps({"verdicts": [{
         "cite": "18-C §3-401", "supports_conclusion": "pass",

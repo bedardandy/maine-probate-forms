@@ -120,6 +120,8 @@ def substitute(draft: str, vocabulary, resolver: Callable[[str], Optional[dict]]
             if title:
                 head += f"Title: {title}\n"
             return head + rec["text"].strip() + f"\n=== END [{cite}] ===\n"
+        if rec["status"] == "dead_link":
+            return f"[[DEAD LINK: {rec['key']}]]"
         if rec["status"] == "unresolved":
             return f"[[UNRESOLVED: {rec['key']}]]"
         return f"[[INVENTED: {rec['key']}]]"
@@ -138,7 +140,12 @@ def substitute(draft: str, vocabulary, resolver: Callable[[str], Optional[dict]]
                     rec = {"key": key, "status": "unresolved",
                            "error": f"{type(exc).__name__}: {exc}"}
                 if rec is None:
-                    if not auth or not auth.get("text"):   # Gate B
+                    if auth and not auth.get("text") and auth.get("dead_link"):
+                        rec = {"key": key, "status": "dead_link"}
+                        for k in ("cite", "title", "url"):
+                            if auth.get(k):
+                                rec[k] = auth[k]
+                    elif not auth or not auth.get("text"):   # Gate B
                         rec = {"key": key, "status": "unresolved"}
                         if auth:
                             for k in ("cite", "title", "url"):
@@ -211,6 +218,7 @@ def _summary(result: dict) -> dict:
     for v in result.get("verdicts", []):
         counts[v["supports_conclusion"]] = counts.get(v["supports_conclusion"], 0) + 1
     counts["unresolved"] = len(result.get("unresolved", []))
+    counts["dead_links"] = len(result.get("dead_links", []))
     counts["invented"] = len(result.get("invented", []))
     return counts
 
@@ -220,11 +228,12 @@ def inspect(draft: str, vocabulary, resolver: Callable[[str], Optional[dict]], *
     """Substitute citations, then score each with the inspector LLM.
 
     Returns ``{ok, substituted, citations, verdicts, invented, unresolved,
-    summary}``. ``invented`` / ``unresolved`` are populated deterministically (no
-    LLM); ``verdicts`` carry the per-citation ``supports_conclusion`` plus the
-    grounded ``quote``. ``ok`` is ``False`` only when the LLM call could not be
-    completed — the *content* findings (fail / invented / unresolved) live in the
-    summary, for the caller to gate on.
+    dead_links, summary}``. ``invented`` / ``unresolved`` / ``dead_links`` are
+    populated deterministically (no LLM); ``verdicts`` carry the per-citation
+    ``supports_conclusion`` plus the grounded ``quote``. ``ok`` is ``False`` only
+    when the LLM call could not be completed — the *content* findings (fail /
+    invented / unresolved / dead_link) live in the summary, for the caller to gate
+    on.
     """
     substituted, citations = substitute(draft, vocabulary, resolver)
     resolved = [c for c in citations if c["status"] == "resolved"]
@@ -234,6 +243,7 @@ def inspect(draft: str, vocabulary, resolver: Callable[[str], Optional[dict]], *
         "citations": citations,
         "invented": [c["key"] for c in citations if c["status"] == "invented"],
         "unresolved": [c["key"] for c in citations if c["status"] == "unresolved"],
+        "dead_links": [c["key"] for c in citations if c["status"] == "dead_link"],
         "verdicts": [],
     }
     if not resolved:

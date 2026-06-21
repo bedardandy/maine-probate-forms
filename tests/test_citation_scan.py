@@ -74,3 +74,22 @@ def test_out_of_vocab_is_form_scoped():
 
 def test_does_not_false_positive_on_plain_numbers():
     assert cs.scan("the deadline is 3-401 days after filing, in 2000 or later") == []
+
+
+def test_scan_urls_classifies_known_fabricated_placeholder():
+    base = "https://legislature.maine.gov/statutes/18-C/"
+    text = (f"real {base}title18-Csec3-401.html "
+            f"made-up {base}title18-Csec99-999.html "
+            "fake https://example.com/ruling")
+    rep = cs.report(text)
+    classes = {h["url"].rsplit("/", 1)[-1]: h["class"] for h in rep["urls"]}
+    assert classes["title18-Csec3-401.html"] == "known"
+    assert classes["title18-Csec99-999.html"] == "fabricated"
+    assert "https://example.com/ruling" in rep["fabricated_urls"]
+    assert any(u.endswith("title18-Csec99-999.html") for u in rep["fabricated_urls"])
+
+
+def test_known_cross_reference_url_not_fabricated():
+    url = "https://legislature.maine.gov/statutes/36/title36sec4107.html"
+    rep = cs.report(f"estate tax due under {url}")
+    assert rep["fabricated_urls"] == []

@@ -3,7 +3,7 @@
 PIPELINE ?= ../detection-pipeline
 REPO     ?= .
 
-.PHONY: help verify check geometry geometry-commit statutes statutes-check statute-text-manifest statute-text-manifest-check align align-check manifest manifest-check check-upstream test smoke audit probe-all
+.PHONY: help verify check geometry geometry-commit statutes statutes-check statute-text-manifest statute-text-manifest-check links links-check align align-check manifest manifest-check check-upstream test smoke audit probe-all
 
 help:
 	@echo "make test                              run the unit + smoke + adversarial suite (CI gate)"
@@ -26,6 +26,8 @@ help:
 	@echo "make statutes-check                    validate the statute-consideration layer (CI gate)"
 	@echo "make statute-text-manifest             pin verbatim statute text for the citation inspector (network)"
 	@echo "make statute-text-manifest-check       verify pinned statute text vs live (network)"
+	@echo "make links                             audit citation authority URLs; write catalog/link_health.json (network)"
+	@echo "make links-check                       flag DEAD citation links only (404/410/NXDOMAIN); CI-safe (network)"
 	@echo "make align                             rebuild per-field text-justification map from the schema"
 	@echo "make align-check                       validate field_alignment.json vs schema + review flags (CI gate)"
 	@echo "  (see docs/maintenance.md)"
@@ -85,6 +87,12 @@ statute-text-manifest:
 
 statute-text-manifest-check:
 	python3 tools/build_statute_text_manifest.py --check
+
+links:
+	python3 tools/check_links.py --scope used
+
+links-check:
+	python3 tools/check_links.py --scope used --check
 
 check:
 	python3 scripts/regen_fill_geometry.py --pipeline-root $(PIPELINE) --repo $(REPO) --check

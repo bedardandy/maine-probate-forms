@@ -33,7 +33,9 @@ import json
 import os
 import pathlib
 import re
+import socket
 import sys
+import urllib.error
 import urllib.request
 from html.parser import HTMLParser
 
@@ -164,6 +166,18 @@ def manifest_entry(cite: str, manifest=None) -> dict | None:
 # --------------------------------------------------------------------------- #
 # Fetch + cache                                                               #
 # --------------------------------------------------------------------------- #
+def _link_status(exc: Exception) -> str:
+    """Classify a fetch failure as a link verdict (DEAD ≠ BLOCKED). Reuses
+    check_links.classify_status so the inspector and the link audit agree."""
+    from check_links import classify_status
+    if isinstance(exc, urllib.error.HTTPError):
+        return classify_status(exc.code)
+    if isinstance(exc, urllib.error.URLError) and isinstance(
+            getattr(exc, "reason", None), socket.gaierror):
+        return "dead"                        # NXDOMAIN — the host itself is fake
+    return "inconclusive"
+
+
 def _download(url: str, timeout: int = 60) -> str:
     req = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
@@ -206,7 +220,8 @@ def fetch_statute_text(cite: str, *, url: str | None = None, fresh: bool = False
             html_text = _download(url, timeout=timeout)
         except Exception as e:
             return {"cite": cite, "url": url, "text": None, "text_verified": None,
-                    "sha256": None, "error": f"fetch failed: {type(e).__name__}: {e}"}
+                    "sha256": None, "link_status": _link_status(e),
+                    "error": f"fetch failed: {type(e).__name__}: {e}"}
         text = _extract_statute_text(html_text, cite)
         dst.write_text(text, encoding="utf-8")
 
@@ -215,7 +230,7 @@ def fetch_statute_text(cite: str, *, url: str | None = None, fresh: bool = False
         text_verified = sha == entry["sha256"]
     else:
         text_verified = None                # not pinned yet
-    return {"cite": cite, "url": url, "text": text,
+    return {"cite": cite, "url": url, "text": text, "link_status": "live",
             "text_verified": text_verified, "sha256": sha}
 
 
