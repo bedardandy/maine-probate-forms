@@ -22,6 +22,11 @@ Tools (stdio, FastMCP):
   fill_form_from_source(form_id, case, source_pdf, out_dir)
                                   -> same, filling a flat source copy you
                                      already have                [extra tool]
+  inspect_citations(form_id, field_texts) -> per-citation hallucination check
+                                     over composed narrative text ([[REF: cite]]
+                                     placeholders -> verified authority -> a
+                                     cold-eyes inspector LLM). OPT-IN, LLM-backed,
+                                     never on the fill path           [extra tool]
 
 ``case`` may be a court-style canonical fact object ({matter, parties, party,
 facts}) — it's adapted to probate's case object automatically — or an already
@@ -180,7 +185,43 @@ def fill_form_from_source(form_id: str, case: dict, source_pdf: str,
                              out_dir=out_dir)
 
 
-EXTRA_TOOLS = (fill_form_from_source,)
+def inspect_citations(form_id: str, field_texts, fetch_text: bool = True) -> dict:
+    """Inspect LLM-composed narrative-field text for citation hallucinations.
+
+    OPT-IN and LLM-backed — needs an OpenAI-compatible endpoint configured
+    (INSPECTOR_BASE_URL/_MODEL/_API_KEY, falling back to ROUTER_*); it is NEVER
+    part of the deterministic fill path. ``field_texts`` is the composed text for
+    ``llm_over_narrative`` fields — a single string, or a {field_id: text} object.
+
+    Each ``[[REF: cite]]`` placeholder is substituted with the cited authority
+    (statutes fetched live + manifest-verified from legislature.maine.gov; cases
+    from caselaw.json) and a cold-eyes inspector LLM scores, per citation, whether
+    the draft's conclusion is supported (pass/fail/unclear with a grounded quote).
+    A cite not in this form's vocabulary is flagged ``invented``; one whose text
+    can't be fetched is ``unresolved``; one whose authority URL is dead (404/gone)
+    is ``dead_link``; a citation-shaped span written outside the protocol or a
+    fabricated URL is flagged by the deterministic ``scan`` — all without a model.
+    Experimental — not legal advice.
+    """
+    try:
+        import maine_citation_db as mdb        # lazy: keeps server import cheap
+    except Exception as e:
+        return {"ok": False, "error": f"inspector unavailable: {e}",
+                "error_type": type(e).__name__}
+    try:
+        if isinstance(field_texts, dict):
+            fields = {fid: mdb.inspect_field(form_id, txt, fetch_text=fetch_text)
+                      for fid, txt in field_texts.items()}
+            return {"ok": all(f.get("ok") for f in fields.values()),
+                    "form_id": form_id, "fields": fields,
+                    "disclaimer": mdb.DISCLAIMER}
+        return mdb.inspect_field(form_id, str(field_texts), fetch_text=fetch_text)
+    except Exception as e:
+        return {"ok": False, "error": f"{type(e).__name__}: {e}",
+                "error_type": type(e).__name__}
+
+
+EXTRA_TOOLS = (fill_form_from_source, inspect_citations)
 
 
 def main():

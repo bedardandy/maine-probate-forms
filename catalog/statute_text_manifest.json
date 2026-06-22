@@ -1,0 +1,5 @@
+{
+  "note": "SHA-256 of the normalized statute text fetched from legislature.maine.gov, keyed by citation. Pins the verbatim text the citation inspector substitutes into [[REF: cite]] placeholders so a re-issued section is flagged (text_verified=False). The hash is of the EXTRACTED, NORMALIZED text (not the raw HTML, which is not byte-stable). Build/refresh with tools/build_statute_text_manifest.py; bump extractor_version after changing the extractor in fetch_statute_text.py.",
+  "extractor_version": 1,
+  "statutes": {}
+}
