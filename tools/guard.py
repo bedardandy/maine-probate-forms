@@ -29,6 +29,8 @@ def _reason(scan: dict, result: dict) -> str:
         bits.append(f"citations written outside the [[REF:]] protocol: {', '.join(scan['leaked'])}")
     if scan.get("unresolvable"):
         bits.append(f"citations not in the trusted index: {', '.join(scan['unresolvable'])}")
+    if scan.get("out_of_vocab"):
+        bits.append(f"citations outside the form's allowed scope: {', '.join(scan['out_of_vocab'])}")
     if scan.get("fabricated_urls"):
         bits.append(f"fabricated/placeholder URLs: {', '.join(scan['fabricated_urls'])}")
     if result.get("invented"):
@@ -57,7 +59,7 @@ def evaluate(text: str, *, form_id: str | None = None, llm: bool = False,
         result["scan"] = scan
 
     block = bool(scan.get("leaked") or scan.get("unresolvable")
-                 or scan.get("fabricated_urls"))
+                 or scan.get("out_of_vocab") or scan.get("fabricated_urls"))
     if llm:
         s = result.get("summary") or {}
         block = block or s.get("fail", 0) > 0 or bool(result.get("invented")) \

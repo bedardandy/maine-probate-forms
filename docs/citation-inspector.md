@@ -65,6 +65,14 @@ Because the scanner needs no LLM, these findings are reported even when the
 inspector LLM is unconfigured or down (the inspect call **fails soft** — it keeps
 all deterministic findings and sets `ok=False`).
 
+It is also hardened against the obvious ways a cite could dodge the regexes:
+input is normalized first, so a **homoglyph hyphen** (`18‑C §9‑999`) or a
+**zero-width space** inside a section number can't hide it; the **spelled-out
+reverse** order (`Section 9-999 of Title 18-C`) and **plural `§§` lists**
+(`§§ 5-301 and 9-999` — every section, not just the first) are recognized; and the
+**guard** (`tools/guard.py`) blocks an `out_of_vocab` cite even when it is wrapped
+in a placeholder, matching the inspector's Gate A.
+
 ```bash
 echo "Under [[REF: 18-C §3-401]] the court acts; see also 18-C §3-203 and 18-C §9-999." \
   | python3 tools/citation_scan.py --form DE-101

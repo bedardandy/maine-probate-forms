@@ -117,6 +117,16 @@ def test_guard_attests_when_requested(tmp_path):
     assert (tmp_path / "g.jsonl").exists()
 
 
+def test_guard_blocks_out_of_scope_cite_even_when_wrapped():
+    # 18-C §9-306 is a real section but not in DE-101's vocabulary. Wrapping it in
+    # a placeholder must not launder it past the offline guard (parity with the
+    # inspector's Gate A).
+    res = guard.evaluate("Per [[REF: 18-C §9-306]] the rep may sell.",
+                         form_id="DE-101", attest=False)
+    assert res["block"] is True
+    assert "scope" in res["reason"].lower()
+
+
 # --- OpenAI-compatible proxy core ------------------------------------------- #
 def _resp(text):
     return {"choices": [{"message": {"role": "assistant", "content": text},

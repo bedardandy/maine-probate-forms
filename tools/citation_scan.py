@@ -38,12 +38,35 @@ import legal_inspector                     # noqa: E402  (PLACEHOLDER)
 from maine_citation_db import _index, resolves, build_vocab   # noqa: E402
 
 
+# --- text normalization: fold homoglyphs / strip invisibles ---------------- #
+# An LLM (or a copy-paste) can hide a fabricated cite from the regexes with a
+# non-breaking/en-dash hyphen in "18‑C §9‑999" or a zero-width space inside
+# "§9-9{ZWSP}99". Fold the common hyphen/space lookalikes to ASCII and drop
+# zero-width / bidi controls before scanning. Idempotent; applied once per scan so
+# spans stay mutually consistent.
+_NORM = {cp: None for cp in (0x200B, 0x200C, 0x200D, 0xFEFF, 0x2060, 0x200E,
+                             0x200F, 0x061C, 0x202A, 0x202B, 0x202C, 0x202D,
+                             0x202E, 0x2066, 0x2067, 0x2068, 0x2069, 0x00AD)}
+_NORM.update({0x2010: "-", 0x2011: "-", 0x2012: "-", 0x2013: "-", 0x2212: "-",
+              0x00A0: " ", 0x2007: " ", 0x2008: " ", 0x2009: " ", 0x200A: " ",
+              0x202F: " ", 0x205F: " ", 0x3000: " "})
+
+
+def _clean(text: str) -> str:
+    """Fold hyphen/space homoglyphs to ASCII and strip zero-width/bidi controls."""
+    return (text or "").translate(_NORM)
+
+
 # --- citation surface forms (Maine) ---------------------------------------- #
 # 18-C section cite: "18-C §3-401", "18-C M.R.S.A. § 3-401(2)", "18-C section 3-401"
 _RE_18C = re.compile(
     r"\b18-C\b\s*(?:M\.?\s?R\.?\s?S\.?(?:A\.?)?)?[,\s]*"
     r"(?:§|sec(?:tion|\.)?)\s*(\d+-\d+)(?:\([0-9A-Za-z]+\))?",
     re.IGNORECASE)
+# Spelled-out reverse order: "Section 9-999 of Title 18-C", "§3-401 of 18-C".
+_RE_18C_REV = re.compile(
+    r"(?:§|sec(?:tion|\.)?)\s*(\d+-\d+)(?:\([0-9A-Za-z]+\))?"
+    r"\s+of\s+(?:Title\s+)?18-C\b", re.IGNORECASE)
 # Other Maine titles (cross-refs): "36 M.R.S. §4107", "19-A M.R.S."
 _RE_MRS = re.compile(
     r"\b(\d+(?:-[A-Z])?)\s*M\.?\s?R\.?\s?S\.?(?:A\.?)?\s*"
@@ -75,7 +98,7 @@ def scan(text: str, *, form_id: str | None = None) -> list[dict]:
     Returns hits ``{raw, cite, kind, span, resolves, in_placeholder[, in_vocab]}``
     in document order, with overlapping matches from different patterns deduped.
     """
-    text = text or ""
+    text = _clean(text or "")
     sec, xref, cases = _index()
     case_cites = {c["cite"] for c in cases.values()}
     vocab = set(build_vocab(form_id)) if form_id else None
@@ -98,6 +121,9 @@ def scan(text: str, *, form_id: str | None = None) -> list[dict]:
         hits.append(rec)
 
     for m in _RE_18C.finditer(text):
+        cite = f"18-C §{m.group(1)}"
+        _add(m.start(), m.end(), m.group(0), cite, "statute", resolves(cite, sec, xref))
+    for m in _RE_18C_REV.finditer(text):    # "§9-999 of Title 18-C"
         cite = f"18-C §{m.group(1)}"
         _add(m.start(), m.end(), m.group(0), cite, "statute", resolves(cite, sec, xref))
     for m in _RE_ME.finditer(text):
@@ -145,7 +171,7 @@ def scan_urls(text: str, *, check_live: bool = False) -> list[dict]:
     URL), or ``unknown``. With ``check_live`` the ``unknown`` ones are probed and a
     ``dead``/``blocked``/… ``link_status`` is attached (network)."""
     hits = []
-    for m in _RE_URL.finditer(text or ""):
+    for m in _RE_URL.finditer(_clean(text or "")):
         url = m.group(0).rstrip(".,);]'\"")
         host = re.sub(r"^https?://", "", url).split("/")[0].lower()
         if (host in _PLACEHOLDER_HOSTS or host.endswith(".test")
@@ -171,7 +197,7 @@ def report(text: str, *, form_id: str | None = None, check_live: bool = False) -
     ``unresolvable`` (does not resolve to the index), ``out_of_vocab`` (resolves
     but not in this form's vocabulary). ``leaked`` is only meaningful when the
     text actually uses ``[[REF:]]`` placeholders."""
-    text = text or ""
+    text = _clean(text or "")
     hits = scan(text, form_id=form_id)
     uses_protocol = bool(legal_inspector.PLACEHOLDER.search(text))
     leaked = sorted({h["cite"] for h in hits

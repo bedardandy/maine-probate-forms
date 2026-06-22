@@ -91,6 +91,28 @@ def test_plural_comma_separated_sections():
     assert {"18-C §3-401", "18-C §3-203", "18-C §9-999"} <= cites
 
 
+import pytest
+
+
+@pytest.mark.parametrize("text", [
+    "See 18‑C §9‑999.",                 # non-breaking hyphens
+    "Under 18–C § 9–999 the court acts.",   # en dashes
+    "See §9-9​99 here.",            # zero-width space inside the number
+    "See §9-9﻿99.",                # BOM inside the number
+])
+def test_homoglyph_and_zero_width_dont_hide_a_cite(text):
+    # A fabricated 18-C §9-999 must not slip past the regexes via lookalike
+    # hyphens or invisible characters.
+    assert "18-C §9-999" in cs.report(text)["unresolvable"]
+
+
+def test_spelled_out_reverse_order_section_of_title():
+    rep = cs.report("The nominee prevails under Section 9-999 of Title 18-C.")
+    assert "18-C §9-999" in rep["unresolvable"]
+    # a real section in the same form still resolves
+    assert "18-C §3-401" in _cites("relief under §3-401 of Title 18-C")
+
+
 def test_scan_urls_classifies_known_fabricated_placeholder():
     base = "https://legislature.maine.gov/statutes/18-C/"
     text = (f"real {base}title18-Csec3-401.html "
