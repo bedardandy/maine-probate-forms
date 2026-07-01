@@ -156,17 +156,8 @@
   },
   "appear_probate_court_location": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      110.3,
-      259.6,
-      190.1,
-      272.6
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_duplicate_of_appear_probate_court_name"
   },
   "appear_probate_court_date": {
    "type": "text",
@@ -188,10 +179,10 @@
     {
      "page": 0,
      "rect": [
-      85.0,
-      260.4,
-      97.0,
-      273.4
+      110.3,
+      259.6,
+      190.1,
+      272.6
      ]
     }
    ]
@@ -286,10 +277,10 @@
     {
      "page": 0,
      "rect": [
-      510.0,
-      318.8,
-      536.6,
-      331.8
+      82.7,
+      330.3,
+      146.5,
+      343.3
      ]
     }
    ]
@@ -310,17 +301,8 @@
   },
   "appear_before_final": {
    "type": "text",
-   "widgets": [
-    {
-     "page": 0,
-     "rect": [
-      82.7,
-      330.3,
-      146.5,
-      343.3
-     ]
-    }
-   ]
+   "widgets": [],
+   "geometry_source": "suppressed_year_stub_no_question"
   },
   "produce_inspect_enabler": {
    "type": "enabler",
@@ -400,7 +382,7 @@
      "rect": [
       72.0,
       401.1,
-      550.0,
+      387.6,
       414.1
      ]
     }
@@ -427,9 +409,9 @@
      "page": 0,
      "rect": [
       72.0,
-      447.9,
-      550.0,
-      495.3
+      450.9,
+      540.0,
+      485.4
      ],
      "multiline": true
     }
@@ -442,10 +424,10 @@
     {
      "page": 0,
      "rect": [
-      221.1,
-      518.0,
-      457.1,
-      531.0
+      194.3,
+      483.5,
+      540.0,
+      496.5
      ]
     }
    ]

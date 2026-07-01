@@ -5,93 +5,10 @@
       "generic_or_orphan_name": 1
     },
     "AD-026": {
-      "generic_or_orphan_name": 1,
-      "widget_widget_collision": 1
-    },
-    "AF-103": {
-      "widget_overruns_rule": 1
+      "generic_or_orphan_name": 1
     },
     "AF-104": {
-      "generic_or_orphan_name": 1,
-      "widget_native_text_collision": 1
-    },
-    "AF-105": {
-      "widget_widget_collision": 3
-    },
-    "DE-201(I)": {
-      "widget_native_text_collision": 1
-    },
-    "DE-301": {
-      "widget_overruns_rule": 4
-    },
-    "DE-403": {
-      "widget_native_text_collision": 4,
-      "widget_widget_collision": 1
-    },
-    "DE-406": {
-      "widget_native_text_collision": 1
-    },
-    "DE-505": {
-      "widget_overruns_rule": 2
-    },
-    "DE-601": {
-      "widget_overruns_rule": 1
-    },
-    "DE-602": {
-      "widget_native_text_collision": 1
-    },
-    "GS-014": {
-      "widget_widget_collision": 8
-    },
-    "MISC-101": {
-      "widget_overruns_rule": 1
-    },
-    "MISC-102": {
-      "text_is_checkbox_sized": 1,
-      "widget_native_text_collision": 5,
-      "widget_overruns_rule": 7,
-      "widget_widget_collision": 1
-    },
-    "N-105": {
-      "widget_overruns_rule": 2
-    },
-    "N-115": {
-      "widget_native_text_collision": 1
-    },
-    "N-118": {
-      "widget_native_text_collision": 1,
-      "widget_widget_collision": 3
-    },
-    "PB-007.vA": {
-      "text_is_checkbox_sized": 1
-    },
-    "PP-108": {
-      "widget_overruns_rule": 1
-    },
-    "PP-203": {
-      "widget_overruns_rule": 1
-    },
-    "PP-207": {
-      "widget_native_text_collision": 1,
-      "widget_overruns_rule": 1
-    },
-    "PP-209": {
-      "widget_widget_collision": 1
-    },
-    "PP-401": {
-      "text_is_checkbox_sized": 1
-    },
-    "PP-402": {
-      "widget_overruns_rule": 1
-    },
-    "PP-405": {
-      "widget_widget_collision": 1
-    },
-    "PP-407": {
-      "widget_widget_collision": 1
-    },
-    "PP-507": {
-      "widget_native_text_collision": 2
+      "generic_or_orphan_name": 1
     }
   }
 }

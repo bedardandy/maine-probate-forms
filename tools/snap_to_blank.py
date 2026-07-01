@@ -9,6 +9,16 @@ layer (which most of these forms use). Dry-run by default.
 
     python3 tools/snap_to_blank.py --form AF-103            # dry-run report
     python3 tools/snap_to_blank.py --form AF-103 --apply
+
+`--trim` runs the conservative variant: only pull a widget's x-edges back to
+the printed blank(s) under it (left edge to the leftmost blank's start, right
+edge to the rightmost blank's end). Never grows, never moves y. This catches
+the cases full snap refuses -- widgets much wider than their blank, which
+otherwise overrun into printed text ("..., Maine.", "(date)", a trailing
+period) or start over the printed label.
+
+    python3 tools/snap_to_blank.py --form N-115 --trim            # dry-run
+    python3 tools/snap_to_blank.py --all --trim --apply
 """
 from __future__ import annotations
 import argparse, json, pathlib, re, sys
@@ -193,13 +203,84 @@ def snap(form_id, apply=False):
     return changes
 
 
+MIN_TRIM = 3.0        # ignore sub-3pt discrepancies (measurement noise)
+MIN_WIDTH = 25.0      # never trim a widget below a usable answer width
+
+
+def trim(form_id, apply=False):
+    """Trim-only pass: pull widget x-edges back onto the printed blank(s).
+
+    For every single-line text widget that sits on at least one printed blank
+    (rule or underscore run on its own row), clamp x0 to the leftmost such
+    blank's start (inset past an abutting label word) and x1 to the rightmost
+    blank's end. Widgets legitimately spanning several inline blanks keep the
+    union extent, so multi-slot sentences are safe. y is untouched (the
+    baseline pass owns vertical). Returns [(fid, page, old, new), ...].
+    """
+    pkg = ROOT / "repo" / "forms" / form_id
+    geom = json.loads((pkg / "fill_geometry.json").read_text())
+    schema = {f["field_id"]: f for f in
+              json.loads((pkg / "schema.json").read_text())["fields"]}
+    doc = fitz.open(str(fetch_source(form_id)))
+    bl = {i: blanks(doc[i]) for i in range(doc.page_count)}
+    pw = {i: printed_words(doc[i]) for i in range(doc.page_count)}
+    changes = []
+    for fid, spec in geom["fields"].items():
+        if (spec.get("options") or spec.get("type") == "enabler"
+                or spec.get("geometry_source", "").startswith(("suppressed", "court"))
+                or schema.get(fid, {}).get("data_type") == "signature"
+                or (form_id, fid) in SKIP_FIELDS):
+            continue
+        for w in spec.get("widgets", []) or []:
+            r = w["rect"]
+            if r[3] - r[1] > 20:
+                continue                      # paragraph boxes are not on one blank
+            row = [(x0, x1, y) for x0, x1, y in bl[w["page"]]
+                   if x1 - x0 >= 18 and abs(y - r[3]) < 6
+                   and min(r[2], x1) - max(r[0], x0) > 15]
+            if not row:
+                continue
+            span_x0 = min(x0 for x0, _x1, _y in row)
+            span_x1 = max(x1 for _x0, x1, _y in row)
+            nx0, nx1 = r[0], r[2]
+            if span_x0 - r[0] > MIN_TRIM:     # starts before its blank
+                nx0 = span_x0
+                for _ox0, ox1, oy, _t in pw[w["page"]]:
+                    if abs(oy - row[0][2]) < 6 and ox1 <= nx0 + 2 and nx0 - ox1 < LEAD_GAP:
+                        nx0 = max(nx0, ox1 + LEAD_GAP)
+            if r[2] - span_x1 > MIN_TRIM:     # ends past its blank
+                nx1 = span_x1
+            if nx1 - nx0 < MIN_WIDTH or (nx0 == r[0] and nx1 == r[2]):
+                continue
+            new = [round(nx0, 1), r[1], round(nx1, 1), r[3]]
+            changes.append((fid, w["page"], [round(c, 1) for c in r], new))
+            if apply:
+                w["rect"] = new
+    doc.close()
+    if apply and changes:
+        (pkg / "fill_geometry.json").write_text(
+            json.dumps(geom, indent=1, ensure_ascii=False))
+    return changes
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--form", required=True)
+    ap.add_argument("--form")
+    ap.add_argument("--all", action="store_true")
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--trim", action="store_true",
+                    help="trim-only pass (x-edges onto the blank; y untouched)")
     a = ap.parse_args()
-    for c in snap(a.form, a.apply):
-        print(f"  {c[0]} p{c[1]} {c[2]} -> {c[3]}")
+    if not a.form and not a.all:
+        ap.error("--form or --all required")
+    forms = (sorted(p.parent.name for p in
+                    (ROOT / "repo" / "forms").glob("*/fill_geometry.json"))
+             if a.all else [a.form])
+    fn = trim if a.trim else snap
+    for f in forms:
+        cs = fn(f, a.apply)
+        for c in cs:
+            print(f"  {f:12s} {c[0]} p{c[1]} {c[2]} -> {c[3]}")
     return 0
 
 

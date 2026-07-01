@@ -1283,14 +1283,36 @@
      ]
     },
     {
-     "value": "full_report_date",
-     "label": "Full report by specific date",
+     "value": "full_report_14_days",
+     "label": "Full report 14 days before hearing",
      "page": 2,
      "rect": [
       351.6,
       245.3,
       361.6,
       255.3
+     ]
+    },
+    {
+     "value": "full_report_date",
+     "label": "Full report by specific date",
+     "page": 2,
+     "rect": [
+      63.6,
+      245.2,
+      73.6,
+      255.2
+     ]
+    },
+    {
+     "value": "full_report_date",
+     "label": "Full report by specific date",
+     "page": 2,
+     "rect": [
+      63.6,
+      259.9,
+      73.6,
+      269.9
      ]
     }
    ]
@@ -1312,15 +1334,6 @@
   "full_report_deadline_date": {
    "type": "date",
    "widgets": [
-    {
-     "page": 2,
-     "rect": [
-      63.6,
-      255.4,
-      73.6,
-      268.4
-     ]
-    },
     {
      "page": 2,
      "rect": [
