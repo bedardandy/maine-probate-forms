@@ -67,6 +67,20 @@ anchoring.
   N-117) — right edge inset 3pt from the printed COUNTY label.
 - **AF-104** — notary day widget re-seated on its rule.
 
+## Split-date rendering (MISC-102 "on ___, 20__")
+
+The subpoena appearance clause prints its date across two slots — a blank for
+the month and day and a separate printed "20__" stub for the two-digit year.
+The date field wrote the whole ISO value on the first blank, leaving
+"2025-04-02, 20__" with an orphaned, redundant year stub. Added an opt-in
+`date_splits` map in `fill_geometry.json` plus `fill_pdf._split_date`: a
+declared date field with a parseable value renders "April 2" on the main blank
+and "25" on the paired stub, so the clause reads "on April 2, 2025" the way the
+form is designed to read. Unparseable values (e.g. an unset narrative field)
+fall through untouched — the stub stays blank, exactly as before. Wired for
+MISC-102 paragraph 1 only (the unambiguous split); the deposition paragraph's
+multi-slot date is left as-is. Locked by `tests/test_split_date.py`.
+
 Not defects (adjudicated false positives, recorded so they are not
 "re-fixed"): GS-008/AD-008/GS-014 checkbox anchoring (boxes render fine —
 the parser could not see some printed boxes); AD-011

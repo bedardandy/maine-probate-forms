@@ -353,6 +353,43 @@ def _add_checkbox(page: fitz.Page, rect, name: str) -> None:
     page.add_widget(w)
 
 
+_MONTHS = ("", "January", "February", "March", "April", "May", "June", "July",
+           "August", "September", "October", "November", "December")
+# Accepts the ISO and US date shapes the plan/agent produce; anything else is
+# left whole (the split is a best-effort convenience, never a data risk).
+_DATE_RES = (
+    re.compile(r"^\s*(\d{4})-(\d{1,2})-(\d{1,2})\s*$"),          # 2025-04-02
+    re.compile(r"^\s*(\d{1,2})/(\d{1,2})/(\d{4})\s*$"),          # 04/02/2025
+    re.compile(r"^\s*(\d{1,2})/(\d{1,2})/(\d{2})\s*$"),          # 4/2/25
+)
+
+
+def _split_date(value: str):
+    """Split a date value into ("Month D", "YY") for a printed "on ___, 20__"
+    slot pair, or None if it does not parse as a date.
+
+    The Maine subpoena/jurat forms print the date across two slots — a blank for
+    the month and day and a separate "20__" stub for the two-digit year. Writing
+    the whole ISO date on the first blank leaves "2025-04-02, 20__" with an
+    orphaned, redundant year stub; splitting it renders "April 2, 2025" the way
+    the form is designed to read."""
+    s = str(value).strip()
+    for i, rx in enumerate(_DATE_RES):
+        m = rx.match(s)
+        if not m:
+            continue
+        if i == 0:
+            year, month, day = int(m[1]), int(m[2]), int(m[3])
+        elif i == 1:
+            month, day, year = int(m[1]), int(m[2]), int(m[3])
+        else:
+            month, day, year = int(m[1]), int(m[2]), 2000 + int(m[3])
+        if not (1 <= month <= 12 and 1 <= day <= 31):
+            return None
+        return f"{_MONTHS[month]} {day}", f"{year % 100:02d}"
+    return None
+
+
 def _value_for_printed_context(page: fitz.Page, rect, field_id: str,
                                value: str) -> str:
     """Apply formatting implied by adjacent immutable form text.
@@ -384,7 +421,9 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
     if not geometry_path.exists():
         return {"ok": False, "error": f"no fill_geometry.json for {form_id} "
                 "(plan-only form — cannot write a PDF)"}
-    geom = json.loads(geometry_path.read_text())["fields"]
+    geometry = json.loads(geometry_path.read_text())
+    geom = geometry["fields"]
+    date_splits = geometry.get("date_splits", {})
     plan = build_plan(form_id, case, root=root)
     if not plan.get("ok"):
         return plan
@@ -482,6 +521,19 @@ def fill_pdf(form_id: str, case: dict, source_pdf: str | pathlib.Path,
             # even if one line would fit. Single-line / chain fields keep
             # shrink-to-fit + split.
             mode = ov_cat.get(fid, {}).get("mode")
+            # Split-date slot: a date field printed as "on ___, 20__" writes its
+            # month/day on the main blank and the two-digit year on the paired
+            # stub. Only declared fields with a parseable date value are split;
+            # everything else falls through to the normal write unchanged.
+            split_spec = date_splits.get(fid)
+            if split_spec and (split := _split_date(val)):
+                val = split[0]
+                ys = split_spec.get("year_suffix")
+                if ys:
+                    _add_text(doc[ys["page"]], ys["rect"], f"{fid}__year",
+                              split[1],
+                              align=_ALIGN_CONST.get(split_spec.get("align")))
+                    written_text += 1
             w0 = spec["widgets"][0]
             r0 = fitz.Rect(w0["rect"])
             is_list = mode == "list" and len(_as_list(raw_facts.get(fid, val))) >= 2

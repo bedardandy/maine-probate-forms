@@ -558,5 +558,19 @@
     }
    ]
   }
+ },
+ "date_splits": {
+  "appear_probate_court_date": {
+   "align": "center",
+   "year_suffix": {
+    "page": 0,
+    "rect": [
+     83.0,
+     259.6,
+     95.0,
+     272.6
+    ]
+   }
+  }
  }
 }
