@@ -8,6 +8,9 @@ Flags high-value mapper failure modes:
   * text widgets that are checkbox-sized;
   * county fields colliding with a printed COUNTY label;
   * text rectangles extending materially beyond nearby printed rules;
+  * text rectangles extending past their printed blank (rules AND underscore
+    runs), escalated when the overrun crosses printed words;
+  * choice widgets sitting off a nearby printed checkbox (misanchored);
   * long printed rules with no overlapping field (missing-field candidates);
   * suspicious multi-widget chains with large unexplained gaps.
 """
@@ -44,6 +47,29 @@ def horizontal_rules(page: fitz.Page) -> list[tuple[float, float, float]]:
                 if rect.width >= 25 and rect.height <= 1.5:
                     rules.append((rect.x0, rect.x1, rect.y0))
     return rules
+
+
+# Box-outline glyphs some forms print for checkboxes (Wingdings/Dingbats
+# private-use squares plus the Unicode ballot boxes).
+_BOX_GLYPHS = {"\uf0a8", "\uf06f", "\uf071", "\u25a1", "\u25a2", "\u2610"}
+
+
+def printed_checkboxes(page: fitz.Page) -> list[fitz.Rect]:
+    """Printed checkbox outlines: small drawn rects, small closed paths
+    (some forms stroke the four sides as line segments), and box glyphs."""
+    boxes: list[fitz.Rect] = []
+    for drawing in page.get_drawings():
+        rect = drawing["rect"]
+        if 4 <= rect.width <= 18 and 4 <= rect.height <= 18:
+            boxes.append(fitz.Rect(rect))
+    raw = page.get_text("rawdict")
+    for block in raw.get("blocks", []):
+        for line in block.get("lines", []):
+            for span in line.get("spans", []):
+                for char in span.get("chars", []):
+                    if char["c"] in _BOX_GLYPHS:
+                        boxes.append(fitz.Rect(char["bbox"]))
+    return boxes
 
 
 def widgets(geometry: dict) -> list[dict]:
@@ -91,6 +117,15 @@ def audit_form(form_id: str) -> list[dict]:
     for index, left in enumerate(all_widgets):
         for right in all_widgets[index + 1:]:
             if left["page"] != right["page"]:
+                continue
+            # Two options of the same choice field may intentionally share a
+            # printed box (a value that requires ticking a shared lead-in box
+            # plus its own -- e.g. PB-007's written-report variants).
+            if (
+                left["field_id"] == right["field_id"]
+                and left["kind"] == "choice"
+                and right["kind"] == "choice"
+            ):
                 continue
             intersection = left["rect"] & right["rect"]
             if (
@@ -230,7 +265,9 @@ def audit_form(form_id: str) -> list[dict]:
                     )
                 )
 
-        if item["kind"] in ("text", "date"):
+        # Paragraph boxes legitimately span several ragged answer rules, so
+        # only single-line widgets are judged against a rule's x-extent.
+        if item["kind"] in ("text", "date") and rect.height <= 20:
             nearby = [
                 rule
                 for rule in horizontal_rules(page)
@@ -256,6 +293,103 @@ def audit_form(form_id: str) -> list[dict]:
                             right_overrun=round(right, 1),
                         )
                     )
+
+    # Blank-anchored horizontal fit, over rules AND underscore-run blanks
+    # (most of these forms print underscores; the rule check above misses
+    # them). A single-line widget should start at its blank and stop at its
+    # blank -- the union of same-row blanks tolerates multi-slot sentences.
+    # Escalated to high when the overrun crosses printed words, because the
+    # filled value will render on top of them.
+    from snap_to_blank import blanks as page_blanks  # noqa: E402  (late: circular)
+
+    blanks_cache = {i: page_blanks(doc[i]) for i in range(doc.page_count)}
+    words_cache = {i: doc[i].get_text("words") for i in range(doc.page_count)}
+    for item in all_widgets:
+        if item["kind"] not in ("text", "date"):
+            continue
+        rect = item["rect"]
+        if rect.height > 20:
+            continue
+        row = [
+            (x0, x1, y)
+            for x0, x1, y in blanks_cache[item["page"]]
+            if x1 - x0 >= 18
+            and abs(y - rect.y1) < 6
+            and min(rect.x1, x1) - max(rect.x0, x0) > 15
+        ]
+        if not row:
+            continue
+        span_x0 = min(x0 for x0, _x1, _y in row)
+        span_x1 = max(x1 for _x0, x1, _y in row)
+        row_y = row[0][2]
+        for edge, over in (("right", rect.x1 - span_x1), ("left", span_x0 - rect.x0)):
+            if over <= 6:
+                continue
+            lo, hi = (span_x1, rect.x1) if edge == "right" else (rect.x0, span_x0)
+            crossed = [
+                w[4]
+                for w in words_cache[item["page"]]
+                if abs((w[1] + w[3]) / 2 - (row_y - 5)) < 7
+                and w[0] < hi - 2
+                and w[2] > lo + 2
+                and set(w[4].strip()) != {"_"}
+            ]
+            findings.append(
+                finding(
+                    form_id,
+                    "widget_overruns_blank",
+                    "high" if crossed else "medium",
+                    field_id=item["field_id"],
+                    page=item["page"] + 1,
+                    edge=edge,
+                    overrun=round(over, 1),
+                    into=" ".join(crossed[:4]),
+                )
+            )
+
+    # A choice/enabler box should sit on the printed checkbox it answers.
+    # Only flagged when a printed box is found nearby but offset -- if no box
+    # is detectable at all (some forms draw them in ways the parser cannot
+    # see), stay silent rather than guess. Likewise, if the nearest detected
+    # box is already claimed by a different widget, this widget's own box was
+    # probably just undetectable -- skip instead of blaming the neighbour's.
+    boxes_cache = {i: printed_checkboxes(doc[i]) for i in range(doc.page_count)}
+    check_items = [w for w in all_widgets if w["kind"] in ("choice", "enabler")]
+
+    def _center(r):
+        return ((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2)
+
+    claimed = set()
+    for item in check_items:
+        c = _center(item["rect"])
+        for bi, box in enumerate(boxes_cache[item["page"]]):
+            bc = _center(box)
+            if max(abs(bc[0] - c[0]), abs(bc[1] - c[1])) <= 4.5:
+                claimed.add((item["page"], bi))
+    for item in check_items:
+        c = _center(item["rect"])
+        best = None
+        for bi, box in enumerate(boxes_cache[item["page"]]):
+            bc = _center(box)
+            d = max(abs(bc[0] - c[0]), abs(bc[1] - c[1]))
+            if best is None or d < best[0]:
+                best = (d, bi)
+        if (
+            best is not None
+            and 4.5 < best[0] <= 40
+            and (item["page"], best[1]) not in claimed
+        ):
+            findings.append(
+                finding(
+                    form_id,
+                    "checkbox_off_printed_box",
+                    "medium",
+                    field_id=item["field_id"],
+                    page=item["page"] + 1,
+                    rect=[round(x, 1) for x in item["rect"]],
+                    offset=round(best[0], 1),
+                )
+            )
 
     # Long uncovered rules are useful missing-field candidates. Suppress footer
     # rules and lines already substantially covered by any widget.
