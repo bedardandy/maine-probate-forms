@@ -1,0 +1,62 @@
+[
+  {
+    "page": 0,
+    "name": "county_probate",
+    "value": "York",
+    "rect": [
+      93.0,
+      90.4,
+      198.0,
+      103.4
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "docket_no_probate",
+    "value": "2026-YORK-GS-00214",
+    "rect": [
+      108.4,
+      104.9,
+      198.0,
+      117.9
+    ],
+    "size": 8.3
+  },
+  {
+    "page": 0,
+    "name": "case_title",
+    "value": "In re Guardianship of A.M.R. (a Minor)",
+    "rect": [
+      54.0,
+      149.8,
+      241.0,
+      162.8
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "minor_children_names",
+    "value": "Aiden M. Reyes, 2014-09-12",
+    "rect": [
+      72.0,
+      264.6,
+      556.4,
+      277.6
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "gal_name",
+    "value": "Ellen R. Macdonald, Esq.",
+    "rect": [
+      156.4,
+      317.6,
+      556.5,
+      330.6
+    ],
+    "size": 10.0
+  }
+]

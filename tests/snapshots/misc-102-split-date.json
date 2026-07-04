@@ -1,0 +1,50 @@
+[
+  {
+    "page": 0,
+    "name": "appear_probate_court_enabler",
+    "value": "Yes",
+    "rect": [
+      73.3,
+      239.9,
+      81.3,
+      247.9
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 0,
+    "name": "appear_probate_court_date",
+    "value": "April 2",
+    "rect": [
+      448.0,
+      248.0,
+      536.5,
+      261.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "appear_probate_court_date__year",
+    "value": "25",
+    "rect": [
+      83.0,
+      259.6,
+      95.0,
+      272.6
+    ],
+    "size": 7.2
+  },
+  {
+    "page": 0,
+    "name": "appear_probate_court_time",
+    "value": "10:00 AM",
+    "rect": [
+      110.3,
+      259.6,
+      190.1,
+      272.6
+    ],
+    "size": 10.0
+  }
+]

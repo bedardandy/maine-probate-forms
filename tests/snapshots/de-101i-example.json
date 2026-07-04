@@ -1,0 +1,266 @@
+[
+  {
+    "page": 0,
+    "name": "docket_number",
+    "value": "2026-MERR-2024-00451",
+    "rect": [
+      419.4,
+      119.9,
+      539.0,
+      132.9
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "county_probate_court",
+    "value": "Cumberland",
+    "rect": [
+      73.5,
+      121.9,
+      174.0,
+      134.8
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "decedent_name_caption",
+    "value": "Margaret L. Walsh",
+    "rect": [
+      110.0,
+      156.4,
+      298.5,
+      169.4
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "applicant_full_name",
+    "value": "Sarah J. Walsh-Bennett",
+    "rect": [
+      72.0,
+      225.0,
+      542.0,
+      238.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "applicant_legal_interest__heir",
+    "value": "Yes",
+    "rect": [
+      97.1,
+      338.4,
+      105.1,
+      346.4
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 0,
+    "name": "personal_representative_name_address",
+    "value": "Sarah J. Walsh-Bennett of 47 Pine Hill Road, Falmouth, ME 04105",
+    "rect": [
+      72.0,
+      417.3,
+      542.0,
+      454.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "decedent_full_name",
+    "value": "Margaret L. Walsh",
+    "rect": [
+      72.0,
+      619.5,
+      542.0,
+      642.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "decedent_date_of_death",
+    "value": "2026-03-18",
+    "rect": [
+      72.0,
+      654.0,
+      542.0,
+      678.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "decedent_date_of_birth",
+    "value": "1948-11-04",
+    "rect": [
+      71.2,
+      688.3,
+      541.2,
+      701.3
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "decedent_domicile",
+    "value": "82 Falmouth Foreside Way, Falmouth, ME 04105",
+    "rect": [
+      72.0,
+      712.2,
+      542.0,
+      725.2
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "real_estate_in_maine__yes",
+    "value": "Yes",
+    "rect": [
+      328.8,
+      501.5,
+      336.8,
+      509.5
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 1,
+    "name": "real_estate_details",
+    "value": "Single-family residence at 82 Falmouth Foreside Way, Falmouth, ME 04105 (Tax Map 12, Lot 4). Decedent's sole interest.",
+    "rect": [
+      72.0,
+      538.2,
+      542.0,
+      571.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "domiciled_outside_maine__no",
+    "value": "Yes",
+    "rect": [
+      397.8,
+      572.4,
+      405.8,
+      580.4
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 1,
+    "name": "prior_personal_representative__no",
+    "value": "Yes",
+    "rect": [
+      227.0,
+      654.6,
+      235.0,
+      662.6
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 2,
+    "name": "died_more_than_3_years__no",
+    "value": "Yes",
+    "rect": [
+      462.0,
+      74.5,
+      470.0,
+      82.5
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 2,
+    "name": "bond_requirement__personal_rep_bond",
+    "value": "Yes",
+    "rect": [
+      91.3,
+      446.1,
+      99.3,
+      454.1
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 3,
+    "name": "attorney_name",
+    "value": "Patricia M. Goff",
+    "rect": [
+      72.0,
+      104.0,
+      266.0,
+      117.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 3,
+    "name": "attorney_address",
+    "value": "200 Commercial Street, Suite 4, Portland,",
+    "rect": [
+      72.0,
+      133.1,
+      266.0,
+      146.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 3,
+    "name": "attorney_address__1",
+    "value": "ME 04101",
+    "rect": [
+      72.0,
+      162.1,
+      266.0,
+      175.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 3,
+    "name": "attorney_phone",
+    "value": "(207) 555-0309",
+    "rect": [
+      72.0,
+      190.1,
+      266.0,
+      203.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 3,
+    "name": "attorney_bar_number",
+    "value": "4271",
+    "rect": [
+      72.0,
+      218.0,
+      266.0,
+      231.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 3,
+    "name": "attorney_email",
+    "value": "pgoff@example.com",
+    "rect": [
+      72.0,
+      246.5,
+      266.0,
+      259.5
+    ],
+    "size": 10.0
+  }
+]

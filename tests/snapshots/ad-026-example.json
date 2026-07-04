@@ -1,0 +1,518 @@
+[
+  {
+    "page": 0,
+    "name": "docket_no",
+    "value": "2026-LEW-2026-00065",
+    "rect": [
+      480.0,
+      135.1,
+      540.0,
+      148.1
+    ],
+    "size": 6.0
+  },
+  {
+    "page": 0,
+    "name": "county",
+    "value": "Androscoggin",
+    "rect": [
+      73.5,
+      136.5,
+      176.2,
+      149.5
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "adoptee_name_caption",
+    "value": "Adoption of Riley J. Morin",
+    "rect": [
+      71.2,
+      176.2,
+      241.2,
+      189.2
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_caption",
+    "value": "Adoption of Riley J. Morin",
+    "rect": [
+      90.8,
+      224.0,
+      237.8,
+      237.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "co_petitioner_caption",
+    "value": "Adoption of Riley J. Morin",
+    "rect": [
+      340.0,
+      224.0,
+      490.5,
+      237.0
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_1_name",
+    "value": "Daniel A. Roy",
+    "rect": [
+      137.4,
+      278.1,
+      330.6,
+      291.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_1_dob",
+    "value": "1972-12-02",
+    "rect": [
+      394.2,
+      278.1,
+      496.1,
+      291.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_1_legal_residence",
+    "value": "26 Pleasant Street, Lewiston, ME 04240",
+    "rect": [
+      180.4,
+      301.7,
+      497.0,
+      314.7
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_1_mailing_address",
+    "value": "26 Pleasant Street, Lewiston, ME 04240",
+    "rect": [
+      180.9,
+      325.2,
+      497.6,
+      338.2
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_1_telephone",
+    "value": "(207) 555-0612",
+    "rect": [
+      156.3,
+      348.8,
+      248.2,
+      361.8
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_1_marriage_info",
+    "value": "Married to co-petitioner Monique B. Roy since 2001",
+    "rect": [
+      328.5,
+      371.7,
+      479.2,
+      384.7
+    ],
+    "size": 6.4
+  },
+  {
+    "page": 0,
+    "name": "petitioner_2_name",
+    "value": "Monique B. Roy",
+    "rect": [
+      137.9,
+      411.8,
+      330.1,
+      424.8
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_2_dob",
+    "value": "1974-03-27",
+    "rect": [
+      393.5,
+      411.8,
+      495.4,
+      424.8
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_2_legal_residence",
+    "value": "26 Pleasant Street, Lewiston, ME 04240",
+    "rect": [
+      180.4,
+      435.4,
+      497.0,
+      448.4
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_2_mailing_address",
+    "value": "26 Pleasant Street, Lewiston, ME 04240",
+    "rect": [
+      180.9,
+      458.8,
+      497.6,
+      471.8
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_2_telephone",
+    "value": "(207) 555-0612",
+    "rect": [
+      156.3,
+      482.3,
+      248.2,
+      495.3
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "petitioner_2_marriage_info",
+    "value": "Married to co-petitioner Daniel A. Roy since 2001",
+    "rect": [
+      332.8,
+      505.2,
+      479.5,
+      518.2
+    ],
+    "size": 6.6
+  },
+  {
+    "page": 0,
+    "name": "adoptee_dob",
+    "value": "2003-04-11",
+    "rect": [
+      165.0,
+      551.1,
+      270.0,
+      564.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "adoptee_place_of_birth",
+    "value": "Lewiston, Maine",
+    "rect": [
+      335.2,
+      551.1,
+      497.1,
+      564.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "adoptee_birth_name",
+    "value": "Riley James Morin",
+    "rect": [
+      161.0,
+      568.2,
+      297.9,
+      581.2
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "adoptee_other_names",
+    "value": "None",
+    "rect": [
+      307.2,
+      585.3,
+      444.1,
+      598.3
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "proposed_new_birth_name",
+    "value": "Riley James Roy",
+    "rect": [
+      222.1,
+      619.5,
+      443.7,
+      632.5
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "proposed_current_new_name",
+    "value": "Riley James Roy",
+    "rect": [
+      232.2,
+      656.5,
+      448.9,
+      669.5
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 0,
+    "name": "adoptee_legal_residence",
+    "value": "26 Pleasant Street, Lewiston, ME 04240",
+    "rect": [
+      223.0,
+      684.3,
+      509.0,
+      697.3
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "adoptee_mailing_address",
+    "value": "26 Pleasant Street,",
+    "rect": [
+      223.0,
+      63.5,
+      356.0,
+      76.5
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "adoptee_mailing_address__1",
+    "value": "Lewiston, ME 04240",
+    "rect": [
+      360.0,
+      63.5,
+      464.0,
+      76.5
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "adoptee_telephone",
+    "value": "(207) 555-0658",
+    "rect": [
+      198.0,
+      87.2,
+      293.0,
+      100.2
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "venue_reason__adoptee_resides",
+    "value": "Yes",
+    "rect": [
+      109.4,
+      134.8,
+      118.4,
+      143.8
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 1,
+    "name": "venue_reason__petitioner_resides",
+    "value": "Yes",
+    "rect": [
+      109.6,
+      158.1,
+      118.6,
+      167.1
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 1,
+    "name": "guardian_or_conservator__no",
+    "value": "Yes",
+    "rect": [
+      144.8,
+      210.9,
+      153.8,
+      219.9
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 1,
+    "name": "relationship_to_adoptee",
+    "value": "Stepfather and mother; the adoptee has lived in the petitioners' household since age 5.",
+    "rect": [
+      108.0,
+      308.2,
+      505.0,
+      338.5
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "information_sharing_intent__intend_to_share",
+    "value": "Yes",
+    "rect": [
+      145.4,
+      487.9,
+      154.4,
+      496.9
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 1,
+    "name": "information_sharing_details",
+    "value": "The adoptee and his birth mother intend to continue contact and consent to",
+    "rect": [
+      135.1,
+      536.7,
+      491.7,
+      549.7
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "information_sharing_details__1",
+    "value": "sharing identifying information.",
+    "rect": [
+      133.5,
+      548.6,
+      492.0,
+      561.6
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 1,
+    "name": "inheritance_acknowledgment",
+    "value": "Yes",
+    "rect": [
+      109.4,
+      611.4,
+      118.4,
+      624.4
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 2,
+    "name": "parent_child_relationship_acknowledgment",
+    "value": "Yes",
+    "rect": [
+      109.4,
+      117.6,
+      118.4,
+      130.6
+    ],
+    "size": 0.0
+  },
+  {
+    "page": 2,
+    "name": "attorney_name",
+    "value": "Claude R. Fortin",
+    "rect": [
+      117.8,
+      302.6,
+      270.0,
+      315.6
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 2,
+    "name": "attorney_address",
+    "value": "215 Lisbon Street, Lewiston, ME",
+    "rect": [
+      94.5,
+      324.9,
+      251.6,
+      337.9
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 2,
+    "name": "attorney_address__1",
+    "value": "04240",
+    "rect": [
+      94.5,
+      352.9,
+      251.6,
+      365.9
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 2,
+    "name": "attorney_phone",
+    "value": "(207) 555-0644",
+    "rect": [
+      94.5,
+      381.1,
+      251.6,
+      394.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 2,
+    "name": "attorney_bar_number",
+    "value": "4933",
+    "rect": [
+      94.5,
+      409.1,
+      251.6,
+      422.1
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 2,
+    "name": "attorney_email",
+    "value": "cfortin@example.com",
+    "rect": [
+      94.5,
+      437.3,
+      251.6,
+      450.3
+    ],
+    "size": 10.0
+  },
+  {
+    "page": 2,
+    "name": "notary_county",
+    "value": "Androscoggin",
+    "rect": [
+      133.9,
+      501.4,
+      254.6,
+      514.4
+    ],
+    "size": 10.0
+  }
+]
