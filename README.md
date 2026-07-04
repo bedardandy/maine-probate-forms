@@ -61,6 +61,7 @@ The repository also includes an MCP server for interactive inspection and alignm
 - `docs/automation-quickstart.md` — end-to-end walkthrough of one form.
 - `docs/agent-workflow.md` / `docs/fact-pattern-example.md` — driving a fill from a plain-language situation.
 - `docs/maintenance.md` — regenerating derived geometry and coverage.
+- `docs/cross-repo-portability.md` — which fill/geometry audit improvements transfer to the sibling Maine forms libraries (and which are geometry-specific to this repo).
 - `docs/statute-reference/` — per-form **statutes for consideration**: each form mapped to the Title 18-C sections worth weighing when answering its questions, with a former-Title-18-A transition note and **Maine Law Court cases** (`caselaw.md`) tied to forms through the statutes they construe. Generated from per-form `repo/forms/<ID>/statutes.json` sidecars; start at `docs/statute-reference/README.md`. ⚠️ **Experimental — AI/LLM-generated and not attorney-reviewed. Considerations, not legal advice.**
 - `docs/digital-assets-access.md` — accessing a deceased person's online accounts (Google, Apple, Meta, Microsoft, Yahoo/AOL, X, Amazon), grounded in 18-C Article 10 (Maine RUFADAA) and tied to the forms that produce a fiduciary's authority.
 - `catalog/geometry_coverage.json` — every fillable widget per form, mapped to a field or recorded as a known gap.
