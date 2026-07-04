@@ -1,0 +1,56 @@
+name: tests
+
+# Runs the pytest suite on every PR that touches runtime code, form packages,
+# catalog data, or the tests themselves. The suite includes the regression
+# gates the audit work relies on -- geometry-audit baseline, split-date
+# rendering, and the fill-render snapshots -- none of which ran in CI before
+# this workflow (the other workflows are offline, stdlib-only, path-scoped
+# checks). Network-dependent tests fetch each form's SHA-verified source PDF
+# and skip cleanly if a source is briefly unreachable; the cache below keeps
+# reruns fast and reduces flakiness.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/**'
+      - 'scripts/**'
+      - 'repo/forms/**'
+      - 'catalog/**'
+      - 'tests/**'
+      - 'requirements.txt'
+      - '.github/workflows/tests.yml'
+  pull_request:
+    paths:
+      - 'tools/**'
+      - 'scripts/**'
+      - 'repo/forms/**'
+      - 'catalog/**'
+      - 'tests/**'
+      - 'requirements.txt'
+      - '.github/workflows/tests.yml'
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    env:
+      # Repo-local cache dir so actions/cache can persist the fetched sources
+      # (fetch defaults to /tmp/probate_source_cache; overridable via this var).
+      MPF_SOURCE_CACHE: ${{ github.workspace }}/.pdf-cache
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Cache SHA-verified source PDFs
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.pdf-cache
+          key: pdf-sources-${{ hashFiles('catalog/pdf_manifest.json') }}
+          restore-keys: pdf-sources-
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+      - name: Run pytest
+        run: python -m pytest -q
