@@ -11,6 +11,8 @@ Flags high-value mapper failure modes:
   * text rectangles extending past their printed blank (rules AND underscore
     runs), escalated when the overrun crosses printed words;
   * choice widgets sitting off a nearby printed checkbox (misanchored);
+  * filled date fields next to an unhandled printed "20__" century stub
+    (split-date layout with no date_splits entry);
   * long printed rules with no overlapping field (missing-field candidates);
   * suspicious multi-widget chains with large unexplained gaps.
 """
@@ -32,6 +34,29 @@ GENERIC_RE = re.compile(
     r"(?:^|_)(?:unlabeled|orphan|unknown|text_p\d|field_\d|certification_text)",
     re.I,
 )
+
+# A printed century stub -- "20" optionally trailed by the underscore run that
+# forms a two-digit-year blank (e.g. "..., 20___"). Matched exactly so an
+# itemized row number "20" only qualifies when a filled date field shares its
+# row (see split_date_stub_unhandled below).
+YEAR_STUB_RE = re.compile(r"^20_*$")
+
+# Fill-strategy sources that mean the human writes the value by hand -- the
+# field is intentionally left blank, so a nearby printed year stub is a
+# hand-completed blank, not an orphaned split-date slot.
+_WET_SOURCES = {"wet_ink", "human", "left_blank", "court_completed", "human_required"}
+
+
+def _date_field_is_filled(field: dict) -> bool:
+    """A date field the fill layer writes into (so an adjacent printed "20__"
+    stub would be orphaned unless split). Wet-ink / court-completed date blanks
+    are left empty and need no split."""
+    if field.get("data_type") != "date":
+        return False
+    fs = field.get("fill_strategy") or {}
+    if fs.get("human_required"):
+        return False
+    return fs.get("source") not in _WET_SOURCES
 
 
 def horizontal_rules(page: fitz.Page) -> list[tuple[float, float, float]]:
@@ -414,6 +439,46 @@ def audit_form(form_id: str) -> list[dict]:
                         rect=[round(x0, 1), round(y - 13, 1), round(x1, 1), round(y, 1)],
                     )
                 )
+
+    # Split-date century stubs: a form that prints "..., 20__" splits the date
+    # across two slots (month/day on the main blank, two-digit year on the
+    # stub). A filled date field whose blank sits on the stub's row -- or the
+    # row directly above it -- must have a `date_splits` entry, or fill_pdf
+    # writes the whole date on the main blank and orphans the stub. Flags the
+    # gap so a newly added form with this layout is caught (see
+    # fill_pdf._split_date and tests/test_split_date.py).
+    split_handled = set((geometry.get("date_splits") or {}).keys())
+    for page_no, page in enumerate(doc):
+        filled_date_widgets = [
+            w
+            for w in all_widgets
+            if w["page"] == page_no
+            and w["field_id"] not in split_handled
+            and _date_field_is_filled(schema_by_id.get(w["field_id"], {}))
+        ]
+        if not filled_date_widgets:
+            continue
+        for word in page.get_text("words"):
+            if not YEAR_STUB_RE.match(word[4].strip()):
+                continue
+            stub_cy = (word[1] + word[3]) / 2
+            for w in filled_date_widgets:
+                field_cy = (w["rect"].y0 + w["rect"].y1) / 2
+                # blank on the stub's row (~0) or the row directly above (stub
+                # below the blank, delta up to a line height)
+                if -4 <= (stub_cy - field_cy) <= 20:
+                    findings.append(
+                        finding(
+                            form_id,
+                            "split_date_stub_unhandled",
+                            "medium",
+                            field_id=w["field_id"],
+                            page=page_no + 1,
+                            stub_rect=[round(word[i], 1) for i in range(4)],
+                        )
+                    )
+                    break
+
     doc.close()
     return findings
 

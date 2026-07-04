@@ -81,6 +81,20 @@ fall through untouched — the stub stays blank, exactly as before. Wired for
 MISC-102 paragraph 1 only (the unambiguous split); the deposition paragraph's
 multi-slot date is left as-is. Locked by `tests/test_split_date.py`.
 
+**Corpus sweep + permanent guard.** Swept every form's source for the
+century-stub signature (a printed "20" / "20__" token adjacent to a filled
+date field). The corpus holds exactly three bare "20" tokens: MISC-102's
+appearance clause (wired above) and the inventory *row numbers* on DE-405 /
+PP-406 (`intang_20_*` / `int_prop_20_*` — line item 20, not a year). The
+classic execution jurat "___ day of ____, 20___" carries **no** date widget
+anywhere in the corpus — those are wet-ink blanks, correctly unmapped. So the
+split-date pattern is already fully applied where it belongs. To keep it that
+way, `scripts/audit_form_geometry.py` gained a `split_date_stub_unhandled`
+check: a filled date field whose blank sits on a printed "20__" stub's row (or
+the row directly above) with no `date_splits` entry is flagged. It reads 0
+today and is added to the high-value regression gate, so a newly added form
+with this layout — or an accidental un-wiring of MISC-102 — fails CI.
+
 Not defects (adjudicated false positives, recorded so they are not
 "re-fixed"): GS-008/AD-008/GS-014 checkbox anchoring (boxes render fine —
 the parser could not see some printed boxes); AD-011

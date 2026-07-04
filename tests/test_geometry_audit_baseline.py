@@ -34,6 +34,7 @@ HIGH = {
     "widget_overruns_blank",
     "checkbox_off_printed_box",
     "county_label_collision",
+    "split_date_stub_unhandled",
     "generic_or_orphan_name",
     "choice_not_checkbox_sized",
     "text_is_checkbox_sized",
