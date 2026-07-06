@@ -91,6 +91,12 @@ def _typecheck(field: dict, value) -> list[dict]:
         if not DATE_RE.match(s):
             out.append(_v(fid, SEVERITY_ERR, "bad_date",
                           f"value {s!r} is not a recognized date"))
+        elif _parse_date(s) is None:
+            # Format matched but it is not a real calendar date
+            # (e.g. 13/45/2024, 2024-02-31). Regex alone cannot catch
+            # out-of-range month/day values or non-existent dates.
+            out.append(_v(fid, SEVERITY_ERR, "impossible_date",
+                          f"value {s!r} is not a valid calendar date"))
     elif dt == "email":
         if not EMAIL_RE.match(s):
             out.append(_v(fid, SEVERITY_ERR, "bad_email", f"{s!r}"))
@@ -324,10 +330,27 @@ def run_date_order(this_field: dict, values: dict,
     Example: decedent_date_of_death > decedent_date_of_birth.
     """
     fid = this_field["field_id"]
-    this_d = _parse_date(values.get(fid))
-    other_d = _parse_date(values.get(other_id))
+    this_raw = values.get(fid)
+    other_raw = values.get(other_id)
+    this_d = _parse_date(this_raw)
+    other_d = _parse_date(other_raw)
+    # A present-but-unparseable operand must be an error, not a silent
+    # pass: otherwise ordering constraints (e.g. died-before-born) never
+    # fire on garbage dates. Genuinely empty operands are still skipped —
+    # presence is enforced by required_when, not here.
+    out: list[dict] = []
+    if this_raw not in (None, "") and this_d is None:
+        out.append(_v(fid, SEVERITY_ERR, "date_order_unparseable",
+                      f"cannot compare date_order: value {this_raw!r} for "
+                      f"{fid} is not a valid date"))
+    if other_raw not in (None, "") and other_d is None:
+        out.append(_v(fid, SEVERITY_ERR, "date_order_unparseable",
+                      f"cannot compare date_order: value {other_raw!r} for "
+                      f"{other_id} is not a valid date"))
+    if out:
+        return out
     if this_d is None or other_d is None:
-        return []  # can't compare; skip
+        return []  # an operand is genuinely empty; can't compare; skip
     cmp_map = {
         "<":  lambda a, b: a < b,
         "<=": lambda a, b: a <= b,

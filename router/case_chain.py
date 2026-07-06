@@ -389,14 +389,28 @@ def main() -> int:
 
     # Summary
     print(f"\n=== chain summary for {args.case_id} ===")
+    # A step "failed" if it errored out of the chain (any status that is
+    # not "ok"/"dry_run", including the new "errors" status) OR completed
+    # but certified with a nonzero validator error count. Either way it is
+    # not a clean fill and must not be reported green.
+    failed = 0
     for i, r in enumerate(results, 1):
         ev = r["event"]
         fid = r.get("form_id", "-")
         errs = r.get("errors", "")
         conf = r.get("confidence", "")
+        status = r.get("status", "")
+        step_bad = (status not in ("ok", "dry_run", "")) or bool(
+            isinstance(errs, int) and errs > 0)
+        marker = "  FAIL" if step_bad else ""
+        if step_bad:
+            failed += 1
         print(f"  {i}. {ev['date']}  {ev['type']:30s} → "
-              f"{fid:8s} conf={conf} errors={errs}")
-    return 0
+              f"{fid:8s} conf={conf} errors={errs}{marker}")
+    if failed:
+        print(f"\n{failed}/{len(results)} step(s) did not produce a clean "
+              f"fill (errors>0 or chain failure).")
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ import json
 import pathlib
 import sys
 import urllib.request
+import zlib
 
 from router.schemas import (
     CANONICAL_EVENT_TYPES, CANONICAL_ROLES, CASE_TYPES,
@@ -110,7 +111,10 @@ SCENARIO_VARIANTS: dict[str, list[tuple[str, dict, str]]] = {
          {"filing_type": "interim_account"},
          "off-cycle interim accounting"),
     ],
-    "guardianship_minor": [("baseline", {}, "minor needs a guardian")],
+    # NOTE: "guardianship_minor" is defined once above (baseline +
+    # temporary). A second literal entry here previously re-declared it
+    # with only "baseline", silently overriding the first and killing the
+    # "temporary" variant. Merged into the single entry above.
     "adoption": [("baseline", {}, "stepparent or relative adoption")],
     "name_change": [("baseline", {}, "adult or minor name change")],
     "small_estate": [
@@ -472,7 +476,10 @@ def main() -> int:
     with args.out.open(open_mode) as fh:
         for ct in types:
             for i in range(args.count_per_type):
-                seed = hash(ct) % 1000 + i
+                # zlib.crc32 is stable across processes; builtin hash() is
+                # salted per-process (PYTHONHASHSEED) → non-reproducible
+                # corpora for the same case_type across runs.
+                seed = zlib.crc32(ct.encode()) % 1000 + i
                 try:
                     case = generate(ct, seed, args.url, args.model,
                                     forced_scenario=args.scenario)
