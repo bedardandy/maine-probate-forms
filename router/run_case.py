@@ -39,6 +39,15 @@ from router.schemas import from_dict_case, from_dict_event
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
+def _ok_status(err_count: int) -> str:
+    """Status for a fill that completed its chain. A nonzero validator
+    error count is NOT a success: downstream (chain summary, exit codes,
+    any consumer keying on status) must be able to tell a clean fill from
+    one that certified with errors. Returns "ok" only when err_count == 0,
+    else "errors". Kept additive: the `errors` count is still emitted."""
+    return "ok" if err_count == 0 else "errors"
+
+
 def _validate(schema: pathlib.Path, filled: pathlib.Path) -> tuple[int, str]:
     out = subprocess.run(
         ["python3", "scripts/validate_filled.py",
@@ -80,7 +89,8 @@ def _fill_and_validate(case, event, candidate, case_dict: dict,
         err_count, val_out = _validate(schema, cached_fixed)
         print(f"[cache] {form_id} {infix} errors={err_count}")
         return {
-            "status": "ok", "case_id": case_id, "form_id": form_id,
+            "status": _ok_status(err_count), "case_id": case_id,
+            "form_id": form_id,
             "confidence": candidate.confidence, "reasons": candidate.reasons,
             "filled": str(cached_fixed), "errors": err_count,
             "validator_output": val_out, "cached": True,
@@ -128,7 +138,7 @@ def _fill_and_validate(case, event, candidate, case_dict: dict,
     err_count, val_out = _validate(schema, fixed)
     print(f"[validate] {form_id} errors={err_count}")
     return {
-        "status": "ok", "case_id": case_id, "form_id": form_id,
+        "status": _ok_status(err_count), "case_id": case_id, "form_id": form_id,
         "confidence": candidate.confidence, "reasons": candidate.reasons,
         "filled": str(fixed), "errors": err_count,
         "validator_output": val_out,
@@ -263,7 +273,7 @@ def run_case(case_dict: dict, dry_run: bool = False, top_k: int = 5,
         err_count, val_out = _validate(schema, cached_fixed)
         print(f"[cache] {chosen.form_id} {infix} errors={err_count}")
         return {
-            "status": "ok", "case_id": case_id,
+            "status": _ok_status(err_count), "case_id": case_id,
             "form_id": chosen.form_id,
             "confidence": chosen.confidence, "reasons": chosen.reasons,
             "filled": str(cached_fixed), "errors": err_count,
@@ -312,7 +322,7 @@ def run_case(case_dict: dict, dry_run: bool = False, top_k: int = 5,
     print(f"[validate] {chosen.form_id} errors={err_count}")
 
     return {
-        "status": "ok",
+        "status": _ok_status(err_count),
         "case_id": case_id,
         "form_id": chosen.form_id,
         "confidence": chosen.confidence,
