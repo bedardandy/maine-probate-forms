@@ -4,6 +4,7 @@ maine-forms-engine @ git+https://github.com/bedardandy/maine-forms-engine@v0.6.0
                    # accessibility remediation (tools/accessibility/ are shims
                    # over it), and the MCP scaffold tools/agent_server.py
                    # builds on; the geometry fill path stays local
+# AGPL-3.0-or-commercial (Artifex) — see the licensing notice in README.md
 PyMuPDF>=1.24.0
 pdfplumber>=0.11.0
 Pillow>=10.2.0

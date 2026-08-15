@@ -2,6 +2,24 @@
 
 # Maine Probate Forms AcroForm Pipeline
 
+
+## ⚠ Licensing notice
+
+This repository is licensed **Apache-2.0**, but installing it pulls in **AGPL-3.0**
+code.
+
+PyMuPDF (imported as `fitz`) is dual-licensed **AGPL-3.0-or-commercial** by Artifex.
+It is a **required dependency** of this snapshot (`requirements.txt`) — the fill and verify paths import it.
+
+If you convey a work combining this code with PyMuPDF, or expose it to users over a
+network (AGPL-3.0 §13), the AGPL-3.0 terms attach to the combination. Artifex sells a
+commercial license if that is not acceptable for your deployment.
+
+This repository is **archived and read-only** — a snapshot frozen in July 2026, not
+maintained. This notice was added later to disclose a dependency term the Apache-2.0
+LICENSE alone does not mention. It does not change the license of this repository's
+own source, which remains Apache-2.0.
+
 > ⚠️ **Not legal advice — for professional use only.** This is software that
 > produces *draft* forms. It is meant to be used solely as one component of a
 > broader workflow that is implemented, supervised, and reviewed by a licensed
